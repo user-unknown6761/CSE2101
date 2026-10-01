@@ -1,0 +1,4418 @@
+[
+  {
+    "path": "SOURCE/2020_CSE2101_CSE_Data_Structures_and_Algorithms_Backlog.pdf",
+    "size": 744541,
+    "sha256": "427b828f8028033bd1ab7a6e19b4aaa6c3e4d34edcf3fc675d0821c1cd778f6a",
+    "page_count": 4,
+    "total_char_count": 6883,
+    "total_images": 3,
+    "header_sample": "B.TECH/CSE/3RD SEM/CSEN 2101 (BACKLOG)/2020 \n \nCSEN 2101  \n \n \n \n \n \n1 \n \nB.TECH/CSE/3RD SEM/CSEN 2101 (BACKLOG)/2020 \n \nDATA STRUCTURES & ALGORITHMS \n(CSEN 2101) \n \nTime Allotted : 3 hrs \n \n \n \n \n \n    \n       Full Marks : 70 \n \nFigures out of the right margin indicate full marks. \n \nCandidates are required to answer Group A and \nany 5 (five) from Group B to E, taking at least one from each group. \n \nCandidates are required to give answer in their own words as far as practicable. \n \nGroup \u2013 A \n(Multiple Choice Type Questions) \n \n1.  Choose the correct alternative for the following:  \n   10 \u00d7 ",
+    "pages_info": [
+      {
+        "page": 1,
+        "char_count": 1815,
+        "word_count": 279,
+        "image_count": 0,
+        "preview": "B.TECH/CSE/3RD SEM/CSEN 2101 (BACKLOG)/2020    CSEN 2101             1    B.TECH/CSE/3RD SEM/CSEN 2101 (BACKLOG)/2020    DATA STRUCTURES & ALGORITHMS "
+      },
+      {
+        "page": 2,
+        "char_count": 2295,
+        "word_count": 370,
+        "image_count": 0,
+        "preview": "B.TECH/CSE/3RD SEM/CSEN 2101 (BACKLOG)/2020    CSEN 2101             2    (b)  In push operation, if new nodes are pushed at the end, then in pop  ope"
+      },
+      {
+        "page": 3,
+        "char_count": 1800,
+        "word_count": 342,
+        "image_count": 1,
+        "preview": "B.TECH/CSE/3RD SEM/CSEN 2101 (BACKLOG)/2020    CSEN 2101             3    (D) Add a new element at the end of the list    (ii) Considered that a point"
+      },
+      {
+        "page": 4,
+        "char_count": 973,
+        "word_count": 154,
+        "image_count": 2,
+        "preview": "B.TECH/CSE/3RD SEM/CSEN 2101 (BACKLOG)/2020    CSEN 2101             4    7.  (a)  List the cut vertices in the following graph.        What is adjace"
+      }
+    ]
+  },
+  {
+    "path": "SOURCE/2021_CSE2101_CSE_Data_Structures_and_Algorithms.pdf",
+    "size": 716597,
+    "sha256": "4701c86c49301c5836aa08521d69e43733292e6abafd6c9b7d1ec9175d1bd256",
+    "page_count": 6,
+    "total_char_count": 13309,
+    "total_images": 8,
+    "header_sample": "B.TECH/CSE/3RD SEM/CSEN 2101/2021 \n \nCSEN 2101  \n \n \n \n \n \n1 \n \nB.TECH/CSE/3RD SEM/CSEN 2101/2021 \n \nDATA STRUCTURES AND ALGORITHMS   \n(CSEN 2101) \n \nTime Allotted : 3 hrs \n \n \n \n \n \n \nFull Marks : 70 \n \nFigures out of the right margin indicate full marks. \n \nCandidates are required to answer Group A and \nany 5 (five) from Group B to E, taking at least one from each group. \n \nCandidates are required to give answer in their own words as far as practicable. \n \nGroup \u2013 A \n(Multiple Choice Type Questions) \n \n1.  Choose the correct alternative for the following: \n10 \u00d7 1 = 10 \n \n(i) \nIn a 2D array i",
+    "pages_info": [
+      {
+        "page": 1,
+        "char_count": 1723,
+        "word_count": 271,
+        "image_count": 1,
+        "preview": "B.TECH/CSE/3RD SEM/CSEN 2101/2021    CSEN 2101             1    B.TECH/CSE/3RD SEM/CSEN 2101/2021    DATA STRUCTURES AND ALGORITHMS    (CSEN 2101)    "
+      },
+      {
+        "page": 2,
+        "char_count": 2454,
+        "word_count": 396,
+        "image_count": 2,
+        "preview": "B.TECH/CSE/3RD SEM/CSEN 2101/2021    CSEN 2101             2    (vi)  Secondary clustering is a result of  (a) Linear Probing        (b) Separate Chai"
+      },
+      {
+        "page": 3,
+        "char_count": 2587,
+        "word_count": 417,
+        "image_count": 1,
+        "preview": "B.TECH/CSE/3RD SEM/CSEN 2101/2021    CSEN 2101             3    (c)    Given a 2D matrix of dimension 100 x 200 and also given that the base address  "
+      },
+      {
+        "page": 4,
+        "char_count": 1849,
+        "word_count": 315,
+        "image_count": 2,
+        "preview": "B.TECH/CSE/3RD SEM/CSEN 2101/2021    CSEN 2101             4               The Professor wrote like this -             fiboTailRec(100, ?7, ?8) .     "
+      },
+      {
+        "page": 5,
+        "char_count": 2656,
+        "word_count": 445,
+        "image_count": 1,
+        "preview": "B.TECH/CSE/3RD SEM/CSEN 2101/2021    CSEN 2101             5    (ii)  Suppose you are dealing with a heap and it is stored in an array A starting  fro"
+      },
+      {
+        "page": 6,
+        "char_count": 2040,
+        "word_count": 269,
+        "image_count": 1,
+        "preview": "B.TECH/CSE/3RD SEM/CSEN 2101/2021    CSEN 2101             6                 (ii)  A compiler always needs a hash-table to do its operations. Name a j"
+      }
+    ]
+  },
+  {
+    "path": "SOURCE/2022_CSE2101_AIML_Data_Structures_and_Algorithms.pdf",
+    "size": 635828,
+    "sha256": "a6bf513644f8bec987ae0778005d4efc15b99aebae2cbf6ae27268e45f637d73",
+    "page_count": 4,
+    "total_char_count": 9699,
+    "total_images": 2,
+    "header_sample": "B.TECH/CSE/CSE(AI&ML)/CSE(DS)/3RD SEM/CSEN 2101/2022 \nCSEN 2101 \n \n \n \n \n \n   \n \n \n1 \n \nB.TECH/CSE/CSE(AI&ML)/CSE(DS)/3RD SEM/CSEN 2101/2022 \n \nDATA STRUCTURE AND ALGORITHMS \n(CSEN 2101) \n \nTime Allotted : 3 hrs \n \n \n \n \n \n \n \n \n \n \n \n \n   Full Marks : 70 \n \nFigures out of the right margin indicate full marks. \n \nCandidates are required to answer Group A and \nany 5 (five) from Group B to E, taking at least one from each group. \n \nCandidates are required to give answer in their own words as far as practicable. \n \nGroup \u2013 A \n(Multiple Choice Type Questions) \n \n1.  Choose the correct alternative ",
+    "pages_info": [
+      {
+        "page": 1,
+        "char_count": 2127,
+        "word_count": 344,
+        "image_count": 1,
+        "preview": "B.TECH/CSE/CSE(AI&ML)/CSE(DS)/3RD SEM/CSEN 2101/2022  CSEN 2101                    1    B.TECH/CSE/CSE(AI&ML)/CSE(DS)/3RD SEM/CSEN 2101/2022    DATA S"
+      },
+      {
+        "page": 2,
+        "char_count": 2680,
+        "word_count": 404,
+        "image_count": 0,
+        "preview": "B.TECH/CSE/CSE(AI&ML)/CSE(DS)/3RD SEM/CSEN 2101/2022  CSEN 2101                    2      (viii) Let G be an undirected graph with n vertices and 25 e"
+      },
+      {
+        "page": 3,
+        "char_count": 1879,
+        "word_count": 288,
+        "image_count": 1,
+        "preview": "B.TECH/CSE/CSE(AI&ML)/CSE(DS)/3RD SEM/CSEN 2101/2022  CSEN 2101                    3    5.   (a)   Consider the following code snippet and illustrate "
+      },
+      {
+        "page": 4,
+        "char_count": 3013,
+        "word_count": 447,
+        "image_count": 0,
+        "preview": "B.TECH/CSE/CSE(AI&ML)/CSE(DS)/3RD SEM/CSEN 2101/2022  CSEN 2101                    4    Group - E    8.  (a)  When should we use counting sort over ot"
+      }
+    ]
+  },
+  {
+    "path": "SOURCE/2022_CSE2101_CSE_Data_Structures_and_Algorithms.pdf",
+    "size": 635828,
+    "sha256": "a6bf513644f8bec987ae0778005d4efc15b99aebae2cbf6ae27268e45f637d73",
+    "page_count": 4,
+    "total_char_count": 9699,
+    "total_images": 2,
+    "header_sample": "B.TECH/CSE/CSE(AI&ML)/CSE(DS)/3RD SEM/CSEN 2101/2022 \nCSEN 2101 \n \n \n \n \n \n   \n \n \n1 \n \nB.TECH/CSE/CSE(AI&ML)/CSE(DS)/3RD SEM/CSEN 2101/2022 \n \nDATA STRUCTURE AND ALGORITHMS \n(CSEN 2101) \n \nTime Allotted : 3 hrs \n \n \n \n \n \n \n \n \n \n \n \n \n   Full Marks : 70 \n \nFigures out of the right margin indicate full marks. \n \nCandidates are required to answer Group A and \nany 5 (five) from Group B to E, taking at least one from each group. \n \nCandidates are required to give answer in their own words as far as practicable. \n \nGroup \u2013 A \n(Multiple Choice Type Questions) \n \n1.  Choose the correct alternative ",
+    "pages_info": [
+      {
+        "page": 1,
+        "char_count": 2127,
+        "word_count": 344,
+        "image_count": 1,
+        "preview": "B.TECH/CSE/CSE(AI&ML)/CSE(DS)/3RD SEM/CSEN 2101/2022  CSEN 2101                    1    B.TECH/CSE/CSE(AI&ML)/CSE(DS)/3RD SEM/CSEN 2101/2022    DATA S"
+      },
+      {
+        "page": 2,
+        "char_count": 2680,
+        "word_count": 404,
+        "image_count": 0,
+        "preview": "B.TECH/CSE/CSE(AI&ML)/CSE(DS)/3RD SEM/CSEN 2101/2022  CSEN 2101                    2      (viii) Let G be an undirected graph with n vertices and 25 e"
+      },
+      {
+        "page": 3,
+        "char_count": 1879,
+        "word_count": 288,
+        "image_count": 1,
+        "preview": "B.TECH/CSE/CSE(AI&ML)/CSE(DS)/3RD SEM/CSEN 2101/2022  CSEN 2101                    3    5.   (a)   Consider the following code snippet and illustrate "
+      },
+      {
+        "page": 4,
+        "char_count": 3013,
+        "word_count": 447,
+        "image_count": 0,
+        "preview": "B.TECH/CSE/CSE(AI&ML)/CSE(DS)/3RD SEM/CSEN 2101/2022  CSEN 2101                    4    Group - E    8.  (a)  When should we use counting sort over ot"
+      }
+    ]
+  },
+  {
+    "path": "SOURCE/2022_CSE2101_DS_Data_Structures_and_Algorithms.pdf",
+    "size": 635828,
+    "sha256": "a6bf513644f8bec987ae0778005d4efc15b99aebae2cbf6ae27268e45f637d73",
+    "page_count": 4,
+    "total_char_count": 9699,
+    "total_images": 2,
+    "header_sample": "B.TECH/CSE/CSE(AI&ML)/CSE(DS)/3RD SEM/CSEN 2101/2022 \nCSEN 2101 \n \n \n \n \n \n   \n \n \n1 \n \nB.TECH/CSE/CSE(AI&ML)/CSE(DS)/3RD SEM/CSEN 2101/2022 \n \nDATA STRUCTURE AND ALGORITHMS \n(CSEN 2101) \n \nTime Allotted : 3 hrs \n \n \n \n \n \n \n \n \n \n \n \n \n   Full Marks : 70 \n \nFigures out of the right margin indicate full marks. \n \nCandidates are required to answer Group A and \nany 5 (five) from Group B to E, taking at least one from each group. \n \nCandidates are required to give answer in their own words as far as practicable. \n \nGroup \u2013 A \n(Multiple Choice Type Questions) \n \n1.  Choose the correct alternative ",
+    "pages_info": [
+      {
+        "page": 1,
+        "char_count": 2127,
+        "word_count": 344,
+        "image_count": 1,
+        "preview": "B.TECH/CSE/CSE(AI&ML)/CSE(DS)/3RD SEM/CSEN 2101/2022  CSEN 2101                    1    B.TECH/CSE/CSE(AI&ML)/CSE(DS)/3RD SEM/CSEN 2101/2022    DATA S"
+      },
+      {
+        "page": 2,
+        "char_count": 2680,
+        "word_count": 404,
+        "image_count": 0,
+        "preview": "B.TECH/CSE/CSE(AI&ML)/CSE(DS)/3RD SEM/CSEN 2101/2022  CSEN 2101                    2      (viii) Let G be an undirected graph with n vertices and 25 e"
+      },
+      {
+        "page": 3,
+        "char_count": 1879,
+        "word_count": 288,
+        "image_count": 1,
+        "preview": "B.TECH/CSE/CSE(AI&ML)/CSE(DS)/3RD SEM/CSEN 2101/2022  CSEN 2101                    3    5.   (a)   Consider the following code snippet and illustrate "
+      },
+      {
+        "page": 4,
+        "char_count": 3013,
+        "word_count": 447,
+        "image_count": 0,
+        "preview": "B.TECH/CSE/CSE(AI&ML)/CSE(DS)/3RD SEM/CSEN 2101/2022  CSEN 2101                    4    Group - E    8.  (a)  When should we use counting sort over ot"
+      }
+    ]
+  },
+  {
+    "path": "SOURCE/2023_CSE2101_AIML_Data_Structures_and_Algorithms.pdf",
+    "size": 977079,
+    "sha256": "7f3fe80bdc63d64e49c7b34723a7e0d101ce26a54e3390588e0356cfbcb11c2e",
+    "page_count": 4,
+    "total_char_count": 9130,
+    "total_images": 1,
+    "header_sample": " \n1 \n \nB.TECH/CSE/CSE(AI&ML)/CSE(DS)/CSE(IOT)/3RD SEM/CSEN 2101/2023 \n \nDATA STRUCTURES AND ALGORITHMS \n(CSEN 2101) \n \nTime Allotted : 2\u00bd hrs  \n \n \n \n \n \n \n   Full Marks : 60 \n \nFigures out of the right margin indicate full marks. \n \nCandidates are required to answer Group A and \nany 4 (four) from Group B to E, taking one from each group. \n \nCandidates are required to give answer in their own words as far as practicable. \n \nGroup \u2013 A \n \n1.  Answer any twelve: \n       12 \u00d7 1 = 12 \n \nChoose the correct alternative for the following \n \n        (i) \nDeleting a node at the end of a double linked li",
+    "pages_info": [
+      {
+        "page": 1,
+        "char_count": 1798,
+        "word_count": 294,
+        "image_count": 0,
+        "preview": "  1    B.TECH/CSE/CSE(AI&ML)/CSE(DS)/CSE(IOT)/3RD SEM/CSEN 2101/2023    DATA STRUCTURES AND ALGORITHMS  (CSEN 2101)    Time Allotted : 2\u00bd hrs         "
+      },
+      {
+        "page": 2,
+        "char_count": 2059,
+        "word_count": 340,
+        "image_count": 1,
+        "preview": "  2    (viii) Suppose you place m items in a hash table with an array size of s. What is the  correct formula for the load factor?  (a) s / m         "
+      },
+      {
+        "page": 3,
+        "char_count": 2647,
+        "word_count": 389,
+        "image_count": 0,
+        "preview": "  3      (c)  Write the pseudo-code of inserting an element after a given value in a doubly  linked list. Your code should work for any position of th"
+      },
+      {
+        "page": 4,
+        "char_count": 2626,
+        "word_count": 400,
+        "image_count": 0,
+        "preview": "  4    Group - E    8.     (a)     If an array starts from 0, what will be the indices of the left child and right child  for a node in a binary heap "
+      }
+    ]
+  },
+  {
+    "path": "SOURCE/2023_CSE2101_CSE_Data_Structures_and_Algorithms.pdf",
+    "size": 977079,
+    "sha256": "7f3fe80bdc63d64e49c7b34723a7e0d101ce26a54e3390588e0356cfbcb11c2e",
+    "page_count": 4,
+    "total_char_count": 9130,
+    "total_images": 1,
+    "header_sample": " \n1 \n \nB.TECH/CSE/CSE(AI&ML)/CSE(DS)/CSE(IOT)/3RD SEM/CSEN 2101/2023 \n \nDATA STRUCTURES AND ALGORITHMS \n(CSEN 2101) \n \nTime Allotted : 2\u00bd hrs  \n \n \n \n \n \n \n   Full Marks : 60 \n \nFigures out of the right margin indicate full marks. \n \nCandidates are required to answer Group A and \nany 4 (four) from Group B to E, taking one from each group. \n \nCandidates are required to give answer in their own words as far as practicable. \n \nGroup \u2013 A \n \n1.  Answer any twelve: \n       12 \u00d7 1 = 12 \n \nChoose the correct alternative for the following \n \n        (i) \nDeleting a node at the end of a double linked li",
+    "pages_info": [
+      {
+        "page": 1,
+        "char_count": 1798,
+        "word_count": 294,
+        "image_count": 0,
+        "preview": "  1    B.TECH/CSE/CSE(AI&ML)/CSE(DS)/CSE(IOT)/3RD SEM/CSEN 2101/2023    DATA STRUCTURES AND ALGORITHMS  (CSEN 2101)    Time Allotted : 2\u00bd hrs         "
+      },
+      {
+        "page": 2,
+        "char_count": 2059,
+        "word_count": 340,
+        "image_count": 1,
+        "preview": "  2    (viii) Suppose you place m items in a hash table with an array size of s. What is the  correct formula for the load factor?  (a) s / m         "
+      },
+      {
+        "page": 3,
+        "char_count": 2647,
+        "word_count": 389,
+        "image_count": 0,
+        "preview": "  3      (c)  Write the pseudo-code of inserting an element after a given value in a doubly  linked list. Your code should work for any position of th"
+      },
+      {
+        "page": 4,
+        "char_count": 2626,
+        "word_count": 400,
+        "image_count": 0,
+        "preview": "  4    Group - E    8.     (a)     If an array starts from 0, what will be the indices of the left child and right child  for a node in a binary heap "
+      }
+    ]
+  },
+  {
+    "path": "SOURCE/2023_CSE2101_DS_Data_Structures_and_Algorithms.pdf",
+    "size": 977079,
+    "sha256": "7f3fe80bdc63d64e49c7b34723a7e0d101ce26a54e3390588e0356cfbcb11c2e",
+    "page_count": 4,
+    "total_char_count": 9130,
+    "total_images": 1,
+    "header_sample": " \n1 \n \nB.TECH/CSE/CSE(AI&ML)/CSE(DS)/CSE(IOT)/3RD SEM/CSEN 2101/2023 \n \nDATA STRUCTURES AND ALGORITHMS \n(CSEN 2101) \n \nTime Allotted : 2\u00bd hrs  \n \n \n \n \n \n \n   Full Marks : 60 \n \nFigures out of the right margin indicate full marks. \n \nCandidates are required to answer Group A and \nany 4 (four) from Group B to E, taking one from each group. \n \nCandidates are required to give answer in their own words as far as practicable. \n \nGroup \u2013 A \n \n1.  Answer any twelve: \n       12 \u00d7 1 = 12 \n \nChoose the correct alternative for the following \n \n        (i) \nDeleting a node at the end of a double linked li",
+    "pages_info": [
+      {
+        "page": 1,
+        "char_count": 1798,
+        "word_count": 294,
+        "image_count": 0,
+        "preview": "  1    B.TECH/CSE/CSE(AI&ML)/CSE(DS)/CSE(IOT)/3RD SEM/CSEN 2101/2023    DATA STRUCTURES AND ALGORITHMS  (CSEN 2101)    Time Allotted : 2\u00bd hrs         "
+      },
+      {
+        "page": 2,
+        "char_count": 2059,
+        "word_count": 340,
+        "image_count": 1,
+        "preview": "  2    (viii) Suppose you place m items in a hash table with an array size of s. What is the  correct formula for the load factor?  (a) s / m         "
+      },
+      {
+        "page": 3,
+        "char_count": 2647,
+        "word_count": 389,
+        "image_count": 0,
+        "preview": "  3      (c)  Write the pseudo-code of inserting an element after a given value in a doubly  linked list. Your code should work for any position of th"
+      },
+      {
+        "page": 4,
+        "char_count": 2626,
+        "word_count": 400,
+        "image_count": 0,
+        "preview": "  4    Group - E    8.     (a)     If an array starts from 0, what will be the indices of the left child and right child  for a node in a binary heap "
+      }
+    ]
+  },
+  {
+    "path": "SOURCE/2023_CSE2101_IOT_Data_Structures_and_Algorithms.pdf",
+    "size": 977079,
+    "sha256": "7f3fe80bdc63d64e49c7b34723a7e0d101ce26a54e3390588e0356cfbcb11c2e",
+    "page_count": 4,
+    "total_char_count": 9130,
+    "total_images": 1,
+    "header_sample": " \n1 \n \nB.TECH/CSE/CSE(AI&ML)/CSE(DS)/CSE(IOT)/3RD SEM/CSEN 2101/2023 \n \nDATA STRUCTURES AND ALGORITHMS \n(CSEN 2101) \n \nTime Allotted : 2\u00bd hrs  \n \n \n \n \n \n \n   Full Marks : 60 \n \nFigures out of the right margin indicate full marks. \n \nCandidates are required to answer Group A and \nany 4 (four) from Group B to E, taking one from each group. \n \nCandidates are required to give answer in their own words as far as practicable. \n \nGroup \u2013 A \n \n1.  Answer any twelve: \n       12 \u00d7 1 = 12 \n \nChoose the correct alternative for the following \n \n        (i) \nDeleting a node at the end of a double linked li",
+    "pages_info": [
+      {
+        "page": 1,
+        "char_count": 1798,
+        "word_count": 294,
+        "image_count": 0,
+        "preview": "  1    B.TECH/CSE/CSE(AI&ML)/CSE(DS)/CSE(IOT)/3RD SEM/CSEN 2101/2023    DATA STRUCTURES AND ALGORITHMS  (CSEN 2101)    Time Allotted : 2\u00bd hrs         "
+      },
+      {
+        "page": 2,
+        "char_count": 2059,
+        "word_count": 340,
+        "image_count": 1,
+        "preview": "  2    (viii) Suppose you place m items in a hash table with an array size of s. What is the  correct formula for the load factor?  (a) s / m         "
+      },
+      {
+        "page": 3,
+        "char_count": 2647,
+        "word_count": 389,
+        "image_count": 0,
+        "preview": "  3      (c)  Write the pseudo-code of inserting an element after a given value in a doubly  linked list. Your code should work for any position of th"
+      },
+      {
+        "page": 4,
+        "char_count": 2626,
+        "word_count": 400,
+        "image_count": 0,
+        "preview": "  4    Group - E    8.     (a)     If an array starts from 0, what will be the indices of the left child and right child  for a node in a binary heap "
+      }
+    ]
+  },
+  {
+    "path": "SOURCE/2024_CSE2101_AIML_Data_Structures_and_Algorithms.pdf",
+    "size": 231725,
+    "sha256": "c7aeb3295fdd06101a2552762e5b86a59dfdf08bfb0e62ba9f4b2a933d0df4ad",
+    "page_count": 4,
+    "total_char_count": 11704,
+    "total_images": 5,
+    "header_sample": " \n1 \n \nB.TECH/CSE/CSE(AI&ML)/CSE(DS)/CSE(IOT)/3RD SEM/CSE2101/2024 \n \nDATA STRUCTURES AND ALGORITHMS \n(CSE2101) \n \nTime Allotted : 2\u00bd hrs  \n \n \n \n \n \n \n   \n \n \n \n \n \n \n Full Marks : 60 \n \nFigures out of the right margin indicate full marks. \n \nCandidates are required to answer Group A and \nany 4 (four) from Group B to E, taking one from each group. \n \nCandidates are required to give answer in their own words as far as practicable. \n \nGroup \u2013 A \n \n1.  Answer any twelve: \n12 \u00d7 1 = 12 \n \nChoose the correct alternative for the following \n \n(i) \nLet A be a two-dimensional array declared as follows:",
+    "pages_info": [
+      {
+        "page": 1,
+        "char_count": 2626,
+        "word_count": 464,
+        "image_count": 2,
+        "preview": "  1    B.TECH/CSE/CSE(AI&ML)/CSE(DS)/CSE(IOT)/3RD SEM/CSE2101/2024    DATA STRUCTURES AND ALGORITHMS  (CSE2101)    Time Allotted : 2\u00bd hrs             "
+      },
+      {
+        "page": 2,
+        "char_count": 4146,
+        "word_count": 662,
+        "image_count": 1,
+        "preview": "  2    (ix)  Which of the following statement(/s) is (/are) correct?  Statement 1: Each B-Tree of order 2  will always be a Binary Search Tree  Statem"
+      },
+      {
+        "page": 3,
+        "char_count": 4364,
+        "word_count": 680,
+        "image_count": 2,
+        "preview": "  3      (c)    Stepwise show how the following infix expression is converted to its corresponding postfix expression.       ((5+7)-(4*3))+(6/3)/2-9  "
+      },
+      {
+        "page": 4,
+        "char_count": 568,
+        "word_count": 97,
+        "image_count": 0,
+        "preview": "  4      (c)    In a closed hashing we are using an array of size 10 whose 0, 1, 2, 5, 6, 9 indexed positions are already filled and the hash  functio"
+      }
+    ]
+  },
+  {
+    "path": "SOURCE/2024_CSE2101_CSE_Data_Structures_and_Algorithms.pdf",
+    "size": 231725,
+    "sha256": "c7aeb3295fdd06101a2552762e5b86a59dfdf08bfb0e62ba9f4b2a933d0df4ad",
+    "page_count": 4,
+    "total_char_count": 11704,
+    "total_images": 5,
+    "header_sample": " \n1 \n \nB.TECH/CSE/CSE(AI&ML)/CSE(DS)/CSE(IOT)/3RD SEM/CSE2101/2024 \n \nDATA STRUCTURES AND ALGORITHMS \n(CSE2101) \n \nTime Allotted : 2\u00bd hrs  \n \n \n \n \n \n \n   \n \n \n \n \n \n \n Full Marks : 60 \n \nFigures out of the right margin indicate full marks. \n \nCandidates are required to answer Group A and \nany 4 (four) from Group B to E, taking one from each group. \n \nCandidates are required to give answer in their own words as far as practicable. \n \nGroup \u2013 A \n \n1.  Answer any twelve: \n12 \u00d7 1 = 12 \n \nChoose the correct alternative for the following \n \n(i) \nLet A be a two-dimensional array declared as follows:",
+    "pages_info": [
+      {
+        "page": 1,
+        "char_count": 2626,
+        "word_count": 464,
+        "image_count": 2,
+        "preview": "  1    B.TECH/CSE/CSE(AI&ML)/CSE(DS)/CSE(IOT)/3RD SEM/CSE2101/2024    DATA STRUCTURES AND ALGORITHMS  (CSE2101)    Time Allotted : 2\u00bd hrs             "
+      },
+      {
+        "page": 2,
+        "char_count": 4146,
+        "word_count": 662,
+        "image_count": 1,
+        "preview": "  2    (ix)  Which of the following statement(/s) is (/are) correct?  Statement 1: Each B-Tree of order 2  will always be a Binary Search Tree  Statem"
+      },
+      {
+        "page": 3,
+        "char_count": 4364,
+        "word_count": 680,
+        "image_count": 2,
+        "preview": "  3      (c)    Stepwise show how the following infix expression is converted to its corresponding postfix expression.       ((5+7)-(4*3))+(6/3)/2-9  "
+      },
+      {
+        "page": 4,
+        "char_count": 568,
+        "word_count": 97,
+        "image_count": 0,
+        "preview": "  4      (c)    In a closed hashing we are using an array of size 10 whose 0, 1, 2, 5, 6, 9 indexed positions are already filled and the hash  functio"
+      }
+    ]
+  },
+  {
+    "path": "SOURCE/2024_CSE2101_DS_Data_Structures_and_Algorithms.pdf",
+    "size": 231725,
+    "sha256": "c7aeb3295fdd06101a2552762e5b86a59dfdf08bfb0e62ba9f4b2a933d0df4ad",
+    "page_count": 4,
+    "total_char_count": 11704,
+    "total_images": 5,
+    "header_sample": " \n1 \n \nB.TECH/CSE/CSE(AI&ML)/CSE(DS)/CSE(IOT)/3RD SEM/CSE2101/2024 \n \nDATA STRUCTURES AND ALGORITHMS \n(CSE2101) \n \nTime Allotted : 2\u00bd hrs  \n \n \n \n \n \n \n   \n \n \n \n \n \n \n Full Marks : 60 \n \nFigures out of the right margin indicate full marks. \n \nCandidates are required to answer Group A and \nany 4 (four) from Group B to E, taking one from each group. \n \nCandidates are required to give answer in their own words as far as practicable. \n \nGroup \u2013 A \n \n1.  Answer any twelve: \n12 \u00d7 1 = 12 \n \nChoose the correct alternative for the following \n \n(i) \nLet A be a two-dimensional array declared as follows:",
+    "pages_info": [
+      {
+        "page": 1,
+        "char_count": 2626,
+        "word_count": 464,
+        "image_count": 2,
+        "preview": "  1    B.TECH/CSE/CSE(AI&ML)/CSE(DS)/CSE(IOT)/3RD SEM/CSE2101/2024    DATA STRUCTURES AND ALGORITHMS  (CSE2101)    Time Allotted : 2\u00bd hrs             "
+      },
+      {
+        "page": 2,
+        "char_count": 4146,
+        "word_count": 662,
+        "image_count": 1,
+        "preview": "  2    (ix)  Which of the following statement(/s) is (/are) correct?  Statement 1: Each B-Tree of order 2  will always be a Binary Search Tree  Statem"
+      },
+      {
+        "page": 3,
+        "char_count": 4364,
+        "word_count": 680,
+        "image_count": 2,
+        "preview": "  3      (c)    Stepwise show how the following infix expression is converted to its corresponding postfix expression.       ((5+7)-(4*3))+(6/3)/2-9  "
+      },
+      {
+        "page": 4,
+        "char_count": 568,
+        "word_count": 97,
+        "image_count": 0,
+        "preview": "  4      (c)    In a closed hashing we are using an array of size 10 whose 0, 1, 2, 5, 6, 9 indexed positions are already filled and the hash  functio"
+      }
+    ]
+  },
+  {
+    "path": "SOURCE/2025_CSE2101_AIML_Data_Structures_and_Algorithms.pdf",
+    "size": 236840,
+    "sha256": "42f7de3408e62237a87926d45fac81f4bb479f6a9af4436aed1f5be7eb5b9290",
+    "page_count": 4,
+    "total_char_count": 11228,
+    "total_images": 2,
+    "header_sample": " \n1 \n \nB.TECH/CSE/CSE(AI&ML)/CSE(DS)/CSE(IOT)/3RD SEM/CSE2101/2025 \n \nDATA STRUCTURES AND ALGORITHMS \n(CSE2101) \n \nTime Allotted : 2\u00bd hrs  \n \n \n \n \n \n \n    \n \n \n \n \n \n \n Full Marks : 60 \n \nFigures out of the right margin indicate full marks. \n \nCandidates are required to answer Group A and \nany 4 (four) from Group B to E, taking one from each group. \n \nCandidates are required to give answer in their own words as far as practicable. \n \nGroup \u2013 A \n \n1.  Answer any twelve: \n12 \u00d7 1 = 12 \n \nChoose the correct alternative for the following \n \n(i) \nLet A be a two-dimensional array declared as follows",
+    "pages_info": [
+      {
+        "page": 1,
+        "char_count": 3167,
+        "word_count": 541,
+        "image_count": 1,
+        "preview": "  1    B.TECH/CSE/CSE(AI&ML)/CSE(DS)/CSE(IOT)/3RD SEM/CSE2101/2025    DATA STRUCTURES AND ALGORITHMS  (CSE2101)    Time Allotted : 2\u00bd hrs             "
+      },
+      {
+        "page": 2,
+        "char_count": 4122,
+        "word_count": 648,
+        "image_count": 1,
+        "preview": "  2    Fill in the blanks with the correct word    (xi)  A linked list having n nodes (n >= 1) where no node stores a NULL pointer is a ____________ l"
+      },
+      {
+        "page": 3,
+        "char_count": 3930,
+        "word_count": 598,
+        "image_count": 0,
+        "preview": "  3        Suggest an algorithm (/ pseudo code/ C-code) of a function (or procedure) which will delete a given key value from the  binary search tree,"
+      },
+      {
+        "page": 4,
+        "char_count": 9,
+        "word_count": 1,
+        "image_count": 0,
+        "preview": "  4      "
+      }
+    ]
+  },
+  {
+    "path": "SOURCE/2025_CSE2101_CSE_Data_Structures_and_Algorithms.pdf",
+    "size": 236840,
+    "sha256": "42f7de3408e62237a87926d45fac81f4bb479f6a9af4436aed1f5be7eb5b9290",
+    "page_count": 4,
+    "total_char_count": 11228,
+    "total_images": 2,
+    "header_sample": " \n1 \n \nB.TECH/CSE/CSE(AI&ML)/CSE(DS)/CSE(IOT)/3RD SEM/CSE2101/2025 \n \nDATA STRUCTURES AND ALGORITHMS \n(CSE2101) \n \nTime Allotted : 2\u00bd hrs  \n \n \n \n \n \n \n    \n \n \n \n \n \n \n Full Marks : 60 \n \nFigures out of the right margin indicate full marks. \n \nCandidates are required to answer Group A and \nany 4 (four) from Group B to E, taking one from each group. \n \nCandidates are required to give answer in their own words as far as practicable. \n \nGroup \u2013 A \n \n1.  Answer any twelve: \n12 \u00d7 1 = 12 \n \nChoose the correct alternative for the following \n \n(i) \nLet A be a two-dimensional array declared as follows",
+    "pages_info": [
+      {
+        "page": 1,
+        "char_count": 3167,
+        "word_count": 541,
+        "image_count": 1,
+        "preview": "  1    B.TECH/CSE/CSE(AI&ML)/CSE(DS)/CSE(IOT)/3RD SEM/CSE2101/2025    DATA STRUCTURES AND ALGORITHMS  (CSE2101)    Time Allotted : 2\u00bd hrs             "
+      },
+      {
+        "page": 2,
+        "char_count": 4122,
+        "word_count": 648,
+        "image_count": 1,
+        "preview": "  2    Fill in the blanks with the correct word    (xi)  A linked list having n nodes (n >= 1) where no node stores a NULL pointer is a ____________ l"
+      },
+      {
+        "page": 3,
+        "char_count": 3930,
+        "word_count": 598,
+        "image_count": 0,
+        "preview": "  3        Suggest an algorithm (/ pseudo code/ C-code) of a function (or procedure) which will delete a given key value from the  binary search tree,"
+      },
+      {
+        "page": 4,
+        "char_count": 9,
+        "word_count": 1,
+        "image_count": 0,
+        "preview": "  4      "
+      }
+    ]
+  },
+  {
+    "path": "SOURCE/2025_CSE2101_DS_Data_Structures_and_Algorithms.pdf",
+    "size": 236840,
+    "sha256": "42f7de3408e62237a87926d45fac81f4bb479f6a9af4436aed1f5be7eb5b9290",
+    "page_count": 4,
+    "total_char_count": 11228,
+    "total_images": 2,
+    "header_sample": " \n1 \n \nB.TECH/CSE/CSE(AI&ML)/CSE(DS)/CSE(IOT)/3RD SEM/CSE2101/2025 \n \nDATA STRUCTURES AND ALGORITHMS \n(CSE2101) \n \nTime Allotted : 2\u00bd hrs  \n \n \n \n \n \n \n    \n \n \n \n \n \n \n Full Marks : 60 \n \nFigures out of the right margin indicate full marks. \n \nCandidates are required to answer Group A and \nany 4 (four) from Group B to E, taking one from each group. \n \nCandidates are required to give answer in their own words as far as practicable. \n \nGroup \u2013 A \n \n1.  Answer any twelve: \n12 \u00d7 1 = 12 \n \nChoose the correct alternative for the following \n \n(i) \nLet A be a two-dimensional array declared as follows",
+    "pages_info": [
+      {
+        "page": 1,
+        "char_count": 3167,
+        "word_count": 541,
+        "image_count": 1,
+        "preview": "  1    B.TECH/CSE/CSE(AI&ML)/CSE(DS)/CSE(IOT)/3RD SEM/CSE2101/2025    DATA STRUCTURES AND ALGORITHMS  (CSE2101)    Time Allotted : 2\u00bd hrs             "
+      },
+      {
+        "page": 2,
+        "char_count": 4122,
+        "word_count": 648,
+        "image_count": 1,
+        "preview": "  2    Fill in the blanks with the correct word    (xi)  A linked list having n nodes (n >= 1) where no node stores a NULL pointer is a ____________ l"
+      },
+      {
+        "page": 3,
+        "char_count": 3930,
+        "word_count": 598,
+        "image_count": 0,
+        "preview": "  3        Suggest an algorithm (/ pseudo code/ C-code) of a function (or procedure) which will delete a given key value from the  binary search tree,"
+      },
+      {
+        "page": 4,
+        "char_count": 9,
+        "word_count": 1,
+        "image_count": 0,
+        "preview": "  4      "
+      }
+    ]
+  },
+  {
+    "path": "SOURCE/2025_CSE2101_IOT_Data_Structures_and_Algorithms.pdf",
+    "size": 236840,
+    "sha256": "42f7de3408e62237a87926d45fac81f4bb479f6a9af4436aed1f5be7eb5b9290",
+    "page_count": 4,
+    "total_char_count": 11228,
+    "total_images": 2,
+    "header_sample": " \n1 \n \nB.TECH/CSE/CSE(AI&ML)/CSE(DS)/CSE(IOT)/3RD SEM/CSE2101/2025 \n \nDATA STRUCTURES AND ALGORITHMS \n(CSE2101) \n \nTime Allotted : 2\u00bd hrs  \n \n \n \n \n \n \n    \n \n \n \n \n \n \n Full Marks : 60 \n \nFigures out of the right margin indicate full marks. \n \nCandidates are required to answer Group A and \nany 4 (four) from Group B to E, taking one from each group. \n \nCandidates are required to give answer in their own words as far as practicable. \n \nGroup \u2013 A \n \n1.  Answer any twelve: \n12 \u00d7 1 = 12 \n \nChoose the correct alternative for the following \n \n(i) \nLet A be a two-dimensional array declared as follows",
+    "pages_info": [
+      {
+        "page": 1,
+        "char_count": 3167,
+        "word_count": 541,
+        "image_count": 1,
+        "preview": "  1    B.TECH/CSE/CSE(AI&ML)/CSE(DS)/CSE(IOT)/3RD SEM/CSE2101/2025    DATA STRUCTURES AND ALGORITHMS  (CSE2101)    Time Allotted : 2\u00bd hrs             "
+      },
+      {
+        "page": 2,
+        "char_count": 4122,
+        "word_count": 648,
+        "image_count": 1,
+        "preview": "  2    Fill in the blanks with the correct word    (xi)  A linked list having n nodes (n >= 1) where no node stores a NULL pointer is a ____________ l"
+      },
+      {
+        "page": 3,
+        "char_count": 3930,
+        "word_count": 598,
+        "image_count": 0,
+        "preview": "  3        Suggest an algorithm (/ pseudo code/ C-code) of a function (or procedure) which will delete a given key value from the  binary search tree,"
+      },
+      {
+        "page": 4,
+        "char_count": 9,
+        "word_count": 1,
+        "image_count": 0,
+        "preview": "  4      "
+      }
+    ]
+  },
+  {
+    "path": "SOURCE/DSA-20260930T180448Z-1-001/DSA/1782225402814.pdf",
+    "size": 4675150,
+    "sha256": "f559b1f301a38e0b4594a37218354c5a653f963719d0c19493f7fa644261a696",
+    "page_count": 53,
+    "total_char_count": 40866,
+    "total_images": 660,
+    "header_sample": "DSA\nCheatSheet\n",
+    "pages_info": [
+      {
+        "page": 1,
+        "char_count": 15,
+        "word_count": 2,
+        "image_count": 2,
+        "preview": "DSA CheatSheet "
+      },
+      {
+        "page": 2,
+        "char_count": 1863,
+        "word_count": 321,
+        "image_count": 20,
+        "preview": "1. INTRODUCTION TO DSA 1.1 What is DSA? DSA = Data Structures + Algorithms. Data Structures are like containers to hold data. Imagine your data is lik"
+      },
+      {
+        "page": 3,
+        "char_count": 1360,
+        "word_count": 237,
+        "image_count": 24,
+        "preview": "2.3 Modular Arithmetic Imagine a clock \u2014 after 12 hours, it resets to 1. Modular arithmetic works the same way, \u201cwrapping around\u201d numbers. Useful to k"
+      },
+      {
+        "page": 4,
+        "char_count": 777,
+        "word_count": 159,
+        "image_count": 15,
+        "preview": "2.5 Fast Exponentiation If you want to calculate a^b (a to the power b), doing a * a * a... b times takes a long time. Fast exponentiation reduces the"
+      },
+      {
+        "page": 5,
+        "char_count": 1783,
+        "word_count": 297,
+        "image_count": 26,
+        "preview": "3.1 Introduction to Arrays An array is a collection of items stored next to each other in memory. You can access each item using its index (starting f"
+      },
+      {
+        "page": 6,
+        "char_count": 1328,
+        "word_count": 205,
+        "image_count": 30,
+        "preview": "4.1 String Basics and Operations A string is a sequence of characters, like \"hello\" or \"123abc\". Strings are stored as arrays of characters. Basic ope"
+      },
+      {
+        "page": 7,
+        "char_count": 415,
+        "word_count": 63,
+        "image_count": 6,
+        "preview": "4.6 Z-Algorithm Calculates an array (Z-array) which tells how many characters from a position match the prefix of the string. Helps in pattern searchi"
+      },
+      {
+        "page": 8,
+        "char_count": 1068,
+        "word_count": 179,
+        "image_count": 18,
+        "preview": "5.1 Singly Linked List A linked list is a chain of nodes. Each node has data and a pointer to the next node. Singly linked list means each node points"
+      },
+      {
+        "page": 9,
+        "char_count": 1446,
+        "word_count": 246,
+        "image_count": 24,
+        "preview": "6.1 Stack Basics Stack is a Last In, First Out (LIFO) data structure. Imagine a stack of books: the last book you put on top is the first one you take"
+      },
+      {
+        "page": 10,
+        "char_count": 988,
+        "word_count": 152,
+        "image_count": 27,
+        "preview": "7.1 Queue Basics Definition: A Queue is a linear data structure that follows the First In First Out (FIFO) principle. Analogy: Like people standing in"
+      },
+      {
+        "page": 11,
+        "char_count": 565,
+        "word_count": 92,
+        "image_count": 15,
+        "preview": "7.4 Priority Queue / Heap Priority Queue: Elements are served based on priority instead of order. Implementation: Usually done using a Heap. Types: Mi"
+      },
+      {
+        "page": 12,
+        "char_count": 936,
+        "word_count": 155,
+        "image_count": 17,
+        "preview": "8.1 Recursion Basics What is recursion? A function calling itself to solve smaller subproblems. Every recursive function has: Base case: Condition to "
+      },
+      {
+        "page": 13,
+        "char_count": 477,
+        "word_count": 77,
+        "image_count": 8,
+        "preview": "Permutations: Swap each element and recurse. Combinations: Choose k elements from n without caring about order. 8.5 Sudoku Solver Problem: Fill a 9x9 "
+      },
+      {
+        "page": 14,
+        "char_count": 1010,
+        "word_count": 176,
+        "image_count": 12,
+        "preview": "Time Complexity: Best Case: O(1) (if target is at the start) Worst Case: O(n) (if target is at the end or not found) Use Case: When the array is unsor"
+      },
+      {
+        "page": 15,
+        "char_count": 1159,
+        "word_count": 198,
+        "image_count": 8,
+        "preview": "9.2 Binary Search Time Complexity: Always: O(log n) Use Case: Only when the array is sorted. 9.3 Binary Search on Answer Definition: Used when you're "
+      },
+      {
+        "page": 16,
+        "char_count": 504,
+        "word_count": 80,
+        "image_count": 10,
+        "preview": "9.4 Search in Rotated Sorted Array Python Example: Time Complexity: O(log n) Use Case: Binary search-related problems. Frequency count, range queries,"
+      },
+      {
+        "page": 17,
+        "char_count": 658,
+        "word_count": 107,
+        "image_count": 6,
+        "preview": "Time: Always O(n\u00b2) Time: Best: O(n) (if already sorted) Worst: O(n\u00b2) 10.2 Selection Sort Idea: Select the minimum element and place it at the beginnin"
+      },
+      {
+        "page": 18,
+        "char_count": 485,
+        "word_count": 79,
+        "image_count": 6,
+        "preview": "10. SORTING ALGORITHMS Time: Always O(n log n) Space: O(n) Time: Best: O(n) Worst: O(n\u00b2) 10.4 Merge Sort Idea: Divide array into halves, sort each hal"
+      },
+      {
+        "page": 19,
+        "char_count": 506,
+        "word_count": 88,
+        "image_count": 10,
+        "preview": "10. SORTING ALGORITHMS Time: O(n + k) (k = max element) Time: Best: O(n log n) Worst: O(n\u00b2) (if badly chosen pivot) 10.6 Heap Sort Idea: Use a heap to"
+      },
+      {
+        "page": 20,
+        "char_count": 357,
+        "word_count": 56,
+        "image_count": 6,
+        "preview": "10. SORTING ALGORITHMS Time: O(n + k) 10.8 Radix Sort Idea: Sort numbers digit-by-digit using Counting Sort as a subroutine. Only for integers. Python"
+      },
+      {
+        "page": 21,
+        "char_count": 716,
+        "word_count": 118,
+        "image_count": 12,
+        "preview": "11. HASHING   Used in: Finding duplicates Anagram checking Word counters 11.3 HashSet vs HashMap Hashing is like a smart indexingsystem\u2014ithelps us sto"
+      },
+      {
+        "page": 22,
+        "char_count": 627,
+        "word_count": 108,
+        "image_count": 10,
+        "preview": "\u2705 Saves memory \u274cSlower as table fills \u2705 Easy to implement \u274cSlower if many collisions 2. Open Addressing Instead of a list, if a spot is full, find nex"
+      },
+      {
+        "page": 23,
+        "char_count": 939,
+        "word_count": 168,
+        "image_count": 20,
+        "preview": "12. TREES Each node has a left and right pointer. Python definition: 12.1 Tree Terminology Node: Basic unit of a tree containing data. Root: The topmo"
+      },
+      {
+        "page": 24,
+        "char_count": 613,
+        "word_count": 108,
+        "image_count": 14,
+        "preview": "12. TREES Diameter: 12.4 Tree Traversals Ways to visit each node in a tree: Inorder (Left, Root, Right): Used in BSTs to get sorted order. Preorder (R"
+      },
+      {
+        "page": 25,
+        "char_count": 750,
+        "word_count": 119,
+        "image_count": 10,
+        "preview": "12. TREES 12.7 Balanced Binary Tree A binary tree is balanced if for every node: Height of left and right subtrees differ by at most 1. Check if balan"
+      },
+      {
+        "page": 26,
+        "char_count": 818,
+        "word_count": 139,
+        "image_count": 14,
+        "preview": "13. TRIES (PREFIX TREE) Each path forms a word starting from the root. 13.2 Insert & Search Words Insert: Start from root. For each character in the w"
+      },
+      {
+        "page": 27,
+        "char_count": 622,
+        "word_count": 103,
+        "image_count": 9,
+        "preview": "13. TRIES (PREFIX TREE) If Trie contains [\"car\", \"cat\", \"cart\", \"care\"]: suggestions(\"ca\") \u2192 [\"car\", \"cart\", \"care\", \"cat\"] If you have stored [\"apple"
+      },
+      {
+        "page": 28,
+        "char_count": 557,
+        "word_count": 89,
+        "image_count": 11,
+        "preview": "14. GRAPHS 14.2 BFS & DFS BFS (Breadth-First Search) Level-by-level traversal. Uses queue. Good for shortest path in unweighted graphs. 2. Adjacency M"
+      },
+      {
+        "page": 29,
+        "char_count": 943,
+        "word_count": 152,
+        "image_count": 16,
+        "preview": "14. GRAPHS 14.2 BFS & DFS DFS (Depth-First Search) Goes deep before backtracking. Uses stack (or recursion). 14.3 Detect Cycle Undirected Graph: Use D"
+      },
+      {
+        "page": 30,
+        "char_count": 608,
+        "word_count": 92,
+        "image_count": 15,
+        "preview": "14.9 Bellman-Ford Algorithm Works with negative weights. Slower than Dijkstra. Runs V - 1 times over all edges (V = vertices). 14.10 Floyd-Warshall Al"
+      },
+      {
+        "page": 31,
+        "char_count": 223,
+        "word_count": 34,
+        "image_count": 5,
+        "preview": "14. GRAPHS 14.12 Union-Find (Disjoint Set Union) A structure to manage connected components efficiently. Supports: Find: Get root of a node. Union: Co"
+      },
+      {
+        "page": 32,
+        "char_count": 707,
+        "word_count": 113,
+        "image_count": 8,
+        "preview": "15. GREEDY ALGORITHMS 15.2 Fractional Knapsack Goal: Maximize profit by taking items with given weight and value, but you can take fractions of items."
+      },
+      {
+        "page": 33,
+        "char_count": 744,
+        "word_count": 120,
+        "image_count": 9,
+        "preview": "15.3 Huffman Encoding Goal: Compress data by assigning shorter binary codes to more frequent characters. Approach: Build a min heap of characters base"
+      },
+      {
+        "page": 34,
+        "char_count": 371,
+        "word_count": 60,
+        "image_count": 3,
+        "preview": "15. GREEDY ALGORITHMS Note: Greedy may not work for all coin sets (like [9, 6, 1]), where dynamic programming is better. 15.5 Coin Change (Greedy) Goa"
+      },
+      {
+        "page": 35,
+        "char_count": 637,
+        "word_count": 101,
+        "image_count": 11,
+        "preview": "Dynamic Programming is used to solve problems by breaking them into smaller subproblems and storing results to avoid recalculating. 16.1 Memoization v"
+      },
+      {
+        "page": 36,
+        "char_count": 772,
+        "word_count": 120,
+        "image_count": 14,
+        "preview": "16.4 Longest Increasing Subsequence (LIS) Find the length of the longest increasing subsequence in an array. 16.5 Matrix Chain Multiplication Given ma"
+      },
+      {
+        "page": 37,
+        "char_count": 293,
+        "word_count": 47,
+        "image_count": 8,
+        "preview": "17.1 Maximum Sum Subarray of Size K Find max sum of any subarray of size K. 17.2 Longest Substring Without Repeating Characters Find longest substring"
+      },
+      {
+        "page": 38,
+        "char_count": 146,
+        "word_count": 25,
+        "image_count": 3,
+        "preview": "17.4 Variable Window Size Problems Use when window size is not fixed. Example: Smallest window with a given sum. 17. SLIDING WINDOW & TWO POINTER "
+      },
+      {
+        "page": 39,
+        "char_count": 653,
+        "word_count": 141,
+        "image_count": 19,
+        "preview": "18.2 Checking Even/Odd Check last bit using AND with 1. If (n & 1) == 0 \u2192 even, else odd. 18.3 Set/Clear/Toggle Bits Set bit: Turn a bit ON \u2192 Use OR w"
+      },
+      {
+        "page": 40,
+        "char_count": 359,
+        "word_count": 71,
+        "image_count": 6,
+        "preview": "18.5 Power of Two Check A number is power of two if it has only 1 set bit. Check using n & (n-1) == 0 (and n > 0). 18.6 XOR Tricks (Single Number, Two"
+      },
+      {
+        "page": 41,
+        "char_count": 838,
+        "word_count": 146,
+        "image_count": 14,
+        "preview": "19.1 Min Heap / Max Heap Basics Heap is a complete binary tree with special order: Min heap: Parent \u2264 children. Max heap: Parent \u2265 children. Supports "
+      },
+      {
+        "page": 42,
+        "char_count": 1426,
+        "word_count": 275,
+        "image_count": 19,
+        "preview": "20.1 Range Sum/Min/Max Queries \u2013 Why Do We Need These? Let\u2019s say you have an array like this: arr = [2, 4, 5, 7, 8, 9, 1] Now imagine you're asked rep"
+      },
+      {
+        "page": 43,
+        "char_count": 594,
+        "word_count": 104,
+        "image_count": 7,
+        "preview": "20.4 Fenwick Tree (Binary Indexed Tree - BIT) A Fenwick Tree is another tree-like structure for prefix sums. It\u2019s smaller and easier than a Segment Tr"
+      },
+      {
+        "page": 44,
+        "char_count": 1140,
+        "word_count": 207,
+        "image_count": 21,
+        "preview": "DSU is a data structure that helps you manage a collection of disjoint sets. Used in problems where you need to: Check if two elements are in the same"
+      },
+      {
+        "page": 45,
+        "char_count": 1716,
+        "word_count": 288,
+        "image_count": 17,
+        "preview": "These are high-level topics usually seen in competitive programming or advanced algorithmic applications. Each has a unique use case and shines in spe"
+      },
+      {
+        "page": 46,
+        "char_count": 1421,
+        "word_count": 230,
+        "image_count": 22,
+        "preview": "22.4 Convex Hull \u2013 Geometry Problem Use Case: Given a set of points on a plane, find the smallest polygon (boundary) that encloses all points. Example"
+      },
+      {
+        "page": 47,
+        "char_count": 215,
+        "word_count": 35,
+        "image_count": 3,
+        "preview": "Final Thought: These algorithms might seem advanced at first, but you don't need to memorize them\u2014just understand: Where to use them Why they are effi"
+      },
+      {
+        "page": 48,
+        "char_count": 730,
+        "word_count": 104,
+        "image_count": 6,
+        "preview": "23.2 Recursion + Memoization Template Use Case: Problems that have overlapping subproblems, especially in Dynamic Programming, like: Fibonacci 0/1 Kna"
+      },
+      {
+        "page": 49,
+        "char_count": 502,
+        "word_count": 78,
+        "image_count": 12,
+        "preview": "23.3 BFS / DFS Template DFS Template (Recursive): Used for: Tree traversals Connected components Cycle detection BFS Template (Level Order): Used for:"
+      },
+      {
+        "page": 50,
+        "char_count": 178,
+        "word_count": 32,
+        "image_count": 2,
+        "preview": "23. COMMON PATTERNS & TEMPLATES Key Idea: Use binary search when: You can define a range (e.g., capacity, time, size) You have a function to check if "
+      },
+      {
+        "page": 51,
+        "char_count": 1197,
+        "word_count": 198,
+        "image_count": 17,
+        "preview": "24. COMMON BEGINNER MISTAKES IN DSA Learning Data Structures and Algorithms (DSA) is like learning a new language. Mistakes are normal\u2014but here are so"
+      },
+      {
+        "page": 52,
+        "char_count": 743,
+        "word_count": 125,
+        "image_count": 12,
+        "preview": "24. COMMON BEGINNER MISTAKES IN DSA 24.5 Ignoring Input Constraints Mistake: Using brute force when n is very large. Tip: Read constraints carefully: "
+      },
+      {
+        "page": 53,
+        "char_count": 368,
+        "word_count": 56,
+        "image_count": 1,
+        "preview": "24. COMMON BEGINNER MISTAKES IN DSA Final Advice: Mistake Off-by-one Indexing error Recursion bugs Duplicate issues Wrong complexity Wrong data struct"
+      }
+    ]
+  },
+  {
+    "path": "SOURCE/DSA-20260930T180448Z-1-001/DSA/2020 DSA Solution.pdf",
+    "size": 7636605,
+    "sha256": "b17fb2056ecbaac9cf7f2378c7f65ca842db45b669e59e3acc8c435adfe77489",
+    "page_count": 17,
+    "total_char_count": 8795,
+    "total_images": 16,
+    "header_sample": "B.TECH/CSE/3RD SEM/CSEN 2101/2020 \n \nCSEN 2101  \n \n \n \n \n \n1 \n \nB.TECH/CSE/3RD SEM/CSEN 2101/2020 \n \nDATA STRUCTURES AND ALGORITHMS  \n(CSEN 2101) \n \nTime Allotted : 3 hrs \n \n \n \n \n \n    \n       Full Marks : 70 \n \nFigures out of the right margin indicate full marks. \n \nCandidates are required to answer Group A and \nany 5 (five) from Group B to E, taking at least one from each group. \n \nCandidates are required to give answer in their own words as far as practicable. \n \nGroup \u2013 A \n(Multiple Choice Type Questions) \n \n1.  Choose the correct alternative for the following:  \n   10 \u00d7 1 = 10 \n \n \n(i)  ",
+    "pages_info": [
+      {
+        "page": 1,
+        "char_count": 1664,
+        "word_count": 295,
+        "image_count": 1,
+        "preview": "B.TECH/CSE/3RD SEM/CSEN 2101/2020    CSEN 2101             1    B.TECH/CSE/3RD SEM/CSEN 2101/2020    DATA STRUCTURES AND ALGORITHMS   (CSEN 2101)    T"
+      },
+      {
+        "page": 2,
+        "char_count": 1770,
+        "word_count": 275,
+        "image_count": 0,
+        "preview": "B.TECH/CSE/3RD SEM/CSEN 2101/2020    CSEN 2101             2      (iv)  What would be the Postfix notation for the given equation?      a+(b*c(d/e^f)*"
+      },
+      {
+        "page": 3,
+        "char_count": 2242,
+        "word_count": 424,
+        "image_count": 0,
+        "preview": "B.TECH/CSE/3RD SEM/CSEN 2101/2020    CSEN 2101             3    Group \u2013 B    2.  (a)   The running time of an algorithm, T(n), where \u2018n\u2019 is the input "
+      },
+      {
+        "page": 4,
+        "char_count": 1741,
+        "word_count": 337,
+        "image_count": 1,
+        "preview": "B.TECH/CSE/3RD SEM/CSEN 2101/2020    CSEN 2101             4        Move the disc # 4 from S to T      (b)   Now just write the output of your functio"
+      },
+      {
+        "page": 5,
+        "char_count": 1339,
+        "word_count": 183,
+        "image_count": 0,
+        "preview": "B.TECH/CSE/3RD SEM/CSEN 2101/2020    CSEN 2101             5    Group \u2013 E    8.  (a)   Construct a max-heap using the given sequence of elements, 2, 8"
+      },
+      {
+        "page": 6,
+        "char_count": 2,
+        "word_count": 0,
+        "image_count": 1,
+        "preview": "  "
+      },
+      {
+        "page": 7,
+        "char_count": 2,
+        "word_count": 0,
+        "image_count": 1,
+        "preview": "  "
+      },
+      {
+        "page": 8,
+        "char_count": 2,
+        "word_count": 0,
+        "image_count": 1,
+        "preview": "  "
+      },
+      {
+        "page": 9,
+        "char_count": 2,
+        "word_count": 0,
+        "image_count": 1,
+        "preview": "  "
+      },
+      {
+        "page": 10,
+        "char_count": 6,
+        "word_count": 0,
+        "image_count": 2,
+        "preview": "      "
+      },
+      {
+        "page": 11,
+        "char_count": 2,
+        "word_count": 0,
+        "image_count": 1,
+        "preview": "  "
+      },
+      {
+        "page": 12,
+        "char_count": 2,
+        "word_count": 0,
+        "image_count": 1,
+        "preview": "  "
+      },
+      {
+        "page": 13,
+        "char_count": 6,
+        "word_count": 0,
+        "image_count": 2,
+        "preview": "      "
+      },
+      {
+        "page": 14,
+        "char_count": 4,
+        "word_count": 0,
+        "image_count": 1,
+        "preview": "    "
+      },
+      {
+        "page": 15,
+        "char_count": 2,
+        "word_count": 0,
+        "image_count": 1,
+        "preview": "  "
+      },
+      {
+        "page": 16,
+        "char_count": 0,
+        "word_count": 0,
+        "image_count": 1,
+        "preview": ""
+      },
+      {
+        "page": 17,
+        "char_count": 9,
+        "word_count": 1,
+        "image_count": 1,
+        "preview": "  O(n2)  "
+      }
+    ]
+  },
+  {
+    "path": "SOURCE/DSA-20260930T180448Z-1-001/DSA/2021 DSA Solution.pdf",
+    "size": 481119,
+    "sha256": "db55fe1003ec358cebceb39461cf1d949343fc21688918db18fefae48253aafd",
+    "page_count": 17,
+    "total_char_count": 24493,
+    "total_images": 29,
+    "header_sample": "CONFIDENTIAL \n \nHERITAGE INSTITUTE OF TECHNOLOGY \n \nB. Tech Semester Examination: 2021  \n \n \n \n \n \nSession : 2021-2022 \n \nDiscipline : Computer Science and Engineering \n \nPaper Code : CSEN2101  \n \n \n         Paper Name : Data Structure & Algorithms \nPlease do not write questions below this line \nPaper setter:  \nTime Allotted : 3 hrs  \n \n \n \n \n \n \n              Full Marks : 70 \n \nFigures out of the right margin indicate full marks. \n \nCandidates are required to answer Group A and \nany 5 (five) from Group B to E, taking at least one from each group. \n \nCandidates are required to give answer in t",
+    "pages_info": [
+      {
+        "page": 1,
+        "char_count": 1384,
+        "word_count": 213,
+        "image_count": 1,
+        "preview": "CONFIDENTIAL    HERITAGE INSTITUTE OF TECHNOLOGY    B. Tech Semester Examination: 2021             Session : 2021-2022    Discipline : Computer Scienc"
+      },
+      {
+        "page": 2,
+        "char_count": 1059,
+        "word_count": 166,
+        "image_count": 1,
+        "preview": "CONFIDENTIAL    HERITAGE INSTITUTE OF TECHNOLOGY    B. Tech Semester Examination: 2021             Session : 2021-2022    Discipline : Computer Scienc"
+      },
+      {
+        "page": 3,
+        "char_count": 1335,
+        "word_count": 197,
+        "image_count": 2,
+        "preview": "CONFIDENTIAL    HERITAGE INSTITUTE OF TECHNOLOGY    B. Tech Semester Examination: 2021             Session : 2021-2022    Discipline : Computer Scienc"
+      },
+      {
+        "page": 4,
+        "char_count": 1232,
+        "word_count": 146,
+        "image_count": 2,
+        "preview": "CONFIDENTIAL    HERITAGE INSTITUTE OF TECHNOLOGY    B. Tech Semester Examination: 2021             Session : 2021-2022    Discipline : Computer Scienc"
+      },
+      {
+        "page": 5,
+        "char_count": 1597,
+        "word_count": 204,
+        "image_count": 2,
+        "preview": "CONFIDENTIAL    HERITAGE INSTITUTE OF TECHNOLOGY    B. Tech Semester Examination: 2021             Session : 2021-2022    Discipline : Computer Scienc"
+      },
+      {
+        "page": 6,
+        "char_count": 1255,
+        "word_count": 142,
+        "image_count": 2,
+        "preview": "CONFIDENTIAL    HERITAGE INSTITUTE OF TECHNOLOGY    B. Tech Semester Examination: 2021             Session : 2021-2022    Discipline : Computer Scienc"
+      },
+      {
+        "page": 7,
+        "char_count": 602,
+        "word_count": 69,
+        "image_count": 2,
+        "preview": "CONFIDENTIAL    HERITAGE INSTITUTE OF TECHNOLOGY    B. Tech Semester Examination: 2021             Session : 2021-2022    Discipline : Computer Scienc"
+      },
+      {
+        "page": 8,
+        "char_count": 2206,
+        "word_count": 333,
+        "image_count": 2,
+        "preview": "CONFIDENTIAL    HERITAGE INSTITUTE OF TECHNOLOGY    B. Tech Semester Examination: 2021             Session : 2021-2022    Discipline : Computer Scienc"
+      },
+      {
+        "page": 9,
+        "char_count": 2077,
+        "word_count": 295,
+        "image_count": 1,
+        "preview": "CONFIDENTIAL    HERITAGE INSTITUTE OF TECHNOLOGY    B. Tech Semester Examination: 2021             Session : 2021-2022    Discipline : Computer Scienc"
+      },
+      {
+        "page": 10,
+        "char_count": 317,
+        "word_count": 40,
+        "image_count": 3,
+        "preview": "CONFIDENTIAL    HERITAGE INSTITUTE OF TECHNOLOGY    B. Tech Semester Examination: 2021             Session : 2021-2022    Discipline : Computer Scienc"
+      },
+      {
+        "page": 11,
+        "char_count": 1296,
+        "word_count": 185,
+        "image_count": 2,
+        "preview": "CONFIDENTIAL    HERITAGE INSTITUTE OF TECHNOLOGY    B. Tech Semester Examination: 2021             Session : 2021-2022    Discipline : Computer Scienc"
+      },
+      {
+        "page": 12,
+        "char_count": 317,
+        "word_count": 40,
+        "image_count": 3,
+        "preview": "CONFIDENTIAL    HERITAGE INSTITUTE OF TECHNOLOGY    B. Tech Semester Examination: 2021             Session : 2021-2022    Discipline : Computer Scienc"
+      },
+      {
+        "page": 13,
+        "char_count": 892,
+        "word_count": 131,
+        "image_count": 2,
+        "preview": "CONFIDENTIAL    HERITAGE INSTITUTE OF TECHNOLOGY    B. Tech Semester Examination: 2021             Session : 2021-2022    Discipline : Computer Scienc"
+      },
+      {
+        "page": 14,
+        "char_count": 2329,
+        "word_count": 341,
+        "image_count": 1,
+        "preview": "CONFIDENTIAL    HERITAGE INSTITUTE OF TECHNOLOGY    B. Tech Semester Examination: 2021             Session : 2021-2022    Discipline : Computer Scienc"
+      },
+      {
+        "page": 15,
+        "char_count": 2340,
+        "word_count": 459,
+        "image_count": 1,
+        "preview": "CONFIDENTIAL    HERITAGE INSTITUTE OF TECHNOLOGY    B. Tech Semester Examination: 2021             Session : 2021-2022    Discipline : Computer Scienc"
+      },
+      {
+        "page": 16,
+        "char_count": 2554,
+        "word_count": 383,
+        "image_count": 1,
+        "preview": "CONFIDENTIAL    HERITAGE INSTITUTE OF TECHNOLOGY    B. Tech Semester Examination: 2021             Session : 2021-2022    Discipline : Computer Scienc"
+      },
+      {
+        "page": 17,
+        "char_count": 1701,
+        "word_count": 246,
+        "image_count": 1,
+        "preview": "CONFIDENTIAL    HERITAGE INSTITUTE OF TECHNOLOGY    B. Tech Semester Examination: 2021             Session : 2021-2022    Discipline : Computer Scienc"
+      }
+    ]
+  },
+  {
+    "path": "SOURCE/DSA-20260930T180448Z-1-001/DSA/2021.pdf",
+    "size": 716597,
+    "sha256": "4701c86c49301c5836aa08521d69e43733292e6abafd6c9b7d1ec9175d1bd256",
+    "page_count": 6,
+    "total_char_count": 13309,
+    "total_images": 8,
+    "header_sample": "B.TECH/CSE/3RD SEM/CSEN 2101/2021 \n \nCSEN 2101  \n \n \n \n \n \n1 \n \nB.TECH/CSE/3RD SEM/CSEN 2101/2021 \n \nDATA STRUCTURES AND ALGORITHMS   \n(CSEN 2101) \n \nTime Allotted : 3 hrs \n \n \n \n \n \n \nFull Marks : 70 \n \nFigures out of the right margin indicate full marks. \n \nCandidates are required to answer Group A and \nany 5 (five) from Group B to E, taking at least one from each group. \n \nCandidates are required to give answer in their own words as far as practicable. \n \nGroup \u2013 A \n(Multiple Choice Type Questions) \n \n1.  Choose the correct alternative for the following: \n10 \u00d7 1 = 10 \n \n(i) \nIn a 2D array i",
+    "pages_info": [
+      {
+        "page": 1,
+        "char_count": 1723,
+        "word_count": 271,
+        "image_count": 1,
+        "preview": "B.TECH/CSE/3RD SEM/CSEN 2101/2021    CSEN 2101             1    B.TECH/CSE/3RD SEM/CSEN 2101/2021    DATA STRUCTURES AND ALGORITHMS    (CSEN 2101)    "
+      },
+      {
+        "page": 2,
+        "char_count": 2454,
+        "word_count": 396,
+        "image_count": 2,
+        "preview": "B.TECH/CSE/3RD SEM/CSEN 2101/2021    CSEN 2101             2    (vi)  Secondary clustering is a result of  (a) Linear Probing        (b) Separate Chai"
+      },
+      {
+        "page": 3,
+        "char_count": 2587,
+        "word_count": 417,
+        "image_count": 1,
+        "preview": "B.TECH/CSE/3RD SEM/CSEN 2101/2021    CSEN 2101             3    (c)    Given a 2D matrix of dimension 100 x 200 and also given that the base address  "
+      },
+      {
+        "page": 4,
+        "char_count": 1849,
+        "word_count": 315,
+        "image_count": 2,
+        "preview": "B.TECH/CSE/3RD SEM/CSEN 2101/2021    CSEN 2101             4               The Professor wrote like this -             fiboTailRec(100, ?7, ?8) .     "
+      },
+      {
+        "page": 5,
+        "char_count": 2656,
+        "word_count": 445,
+        "image_count": 1,
+        "preview": "B.TECH/CSE/3RD SEM/CSEN 2101/2021    CSEN 2101             5    (ii)  Suppose you are dealing with a heap and it is stored in an array A starting  fro"
+      },
+      {
+        "page": 6,
+        "char_count": 2040,
+        "word_count": 269,
+        "image_count": 1,
+        "preview": "B.TECH/CSE/3RD SEM/CSEN 2101/2021    CSEN 2101             6                 (ii)  A compiler always needs a hash-table to do its operations. Name a j"
+      }
+    ]
+  },
+  {
+    "path": "SOURCE/DSA-20260930T180448Z-1-001/DSA/BACKLOG_2020.pdf",
+    "size": 744541,
+    "sha256": "427b828f8028033bd1ab7a6e19b4aaa6c3e4d34edcf3fc675d0821c1cd778f6a",
+    "page_count": 4,
+    "total_char_count": 6883,
+    "total_images": 3,
+    "header_sample": "B.TECH/CSE/3RD SEM/CSEN 2101 (BACKLOG)/2020 \n \nCSEN 2101  \n \n \n \n \n \n1 \n \nB.TECH/CSE/3RD SEM/CSEN 2101 (BACKLOG)/2020 \n \nDATA STRUCTURES & ALGORITHMS \n(CSEN 2101) \n \nTime Allotted : 3 hrs \n \n \n \n \n \n    \n       Full Marks : 70 \n \nFigures out of the right margin indicate full marks. \n \nCandidates are required to answer Group A and \nany 5 (five) from Group B to E, taking at least one from each group. \n \nCandidates are required to give answer in their own words as far as practicable. \n \nGroup \u2013 A \n(Multiple Choice Type Questions) \n \n1.  Choose the correct alternative for the following:  \n   10 \u00d7 ",
+    "pages_info": [
+      {
+        "page": 1,
+        "char_count": 1815,
+        "word_count": 279,
+        "image_count": 0,
+        "preview": "B.TECH/CSE/3RD SEM/CSEN 2101 (BACKLOG)/2020    CSEN 2101             1    B.TECH/CSE/3RD SEM/CSEN 2101 (BACKLOG)/2020    DATA STRUCTURES & ALGORITHMS "
+      },
+      {
+        "page": 2,
+        "char_count": 2295,
+        "word_count": 370,
+        "image_count": 0,
+        "preview": "B.TECH/CSE/3RD SEM/CSEN 2101 (BACKLOG)/2020    CSEN 2101             2    (b)  In push operation, if new nodes are pushed at the end, then in pop  ope"
+      },
+      {
+        "page": 3,
+        "char_count": 1800,
+        "word_count": 342,
+        "image_count": 1,
+        "preview": "B.TECH/CSE/3RD SEM/CSEN 2101 (BACKLOG)/2020    CSEN 2101             3    (D) Add a new element at the end of the list    (ii) Considered that a point"
+      },
+      {
+        "page": 4,
+        "char_count": 973,
+        "word_count": 154,
+        "image_count": 2,
+        "preview": "B.TECH/CSE/3RD SEM/CSEN 2101 (BACKLOG)/2020    CSEN 2101             4    7.  (a)  List the cut vertices in the following graph.        What is adjace"
+      }
+    ]
+  },
+  {
+    "path": "SOURCE/DSA-20260930T180448Z-1-001/DSA/BASIC_2021(1).pdf",
+    "size": 725920,
+    "sha256": "68b258c1b4eaeea2026b943ae2c3e824dea8f1359a08b7b0f8129abde8e2469d",
+    "page_count": 4,
+    "total_char_count": 7232,
+    "total_images": 0,
+    "header_sample": "B.TECH/AEIE/4TH SEM/CSEN 2004/2021 \n \nCSEN 2004  \n \n \n \n \n \n1 \n \nB.TECH/AEIE/4TH SEM/CSEN 2004/2021 \n \nDATA STRUCTURE AND BASIC ALGORITHMS \n(CSEN 2004) \n \nTime Allotted : 3 hrs \n \n \n \n \n \n    \n           Full Marks : 70 \n \nFigures out of the right margin indicate full marks. \n \nCandidates are required to answer Group A and \nany 5 (five) from Group B to E, taking at least one from each group. \n \nCandidates are required to give answer in their own words as far as practicable. \n \nGroup \u2013 A \n(Multiple Choice Type Questions) \n \n1.  Choose the correct alternative for the following:  \n     10 \u00d7 1 = 1",
+    "pages_info": [
+      {
+        "page": 1,
+        "char_count": 2177,
+        "word_count": 332,
+        "image_count": 0,
+        "preview": "B.TECH/AEIE/4TH SEM/CSEN 2004/2021    CSEN 2004             1    B.TECH/AEIE/4TH SEM/CSEN 2004/2021    DATA STRUCTURE AND BASIC ALGORITHMS  (CSEN 2004"
+      },
+      {
+        "page": 2,
+        "char_count": 2114,
+        "word_count": 371,
+        "image_count": 0,
+        "preview": "B.TECH/AEIE/4TH SEM/CSEN 2004/2021    CSEN 2004             2    (b)  Worst case and average case performance is \u039f(n2).  (c)  Can be compared to the w"
+      },
+      {
+        "page": 3,
+        "char_count": 1367,
+        "word_count": 217,
+        "image_count": 0,
+        "preview": "B.TECH/AEIE/4TH SEM/CSEN 2004/2021    CSEN 2004             3    5.  (a)   Write an algorithm to convert an infix expression to postfix. Convert the  "
+      },
+      {
+        "page": 4,
+        "char_count": 1574,
+        "word_count": 264,
+        "image_count": 0,
+        "preview": "B.TECH/AEIE/4TH SEM/CSEN 2004/2021    CSEN 2004             4    7.  (a)   Consider the AVL tree given below and insert 18, 81, 29, 15, 19, 25, 37, an"
+      }
+    ]
+  },
+  {
+    "path": "SOURCE/DSA-20260930T180448Z-1-001/DSA/BASIC_2021.pdf",
+    "size": 725920,
+    "sha256": "68b258c1b4eaeea2026b943ae2c3e824dea8f1359a08b7b0f8129abde8e2469d",
+    "page_count": 4,
+    "total_char_count": 7232,
+    "total_images": 0,
+    "header_sample": "B.TECH/AEIE/4TH SEM/CSEN 2004/2021 \n \nCSEN 2004  \n \n \n \n \n \n1 \n \nB.TECH/AEIE/4TH SEM/CSEN 2004/2021 \n \nDATA STRUCTURE AND BASIC ALGORITHMS \n(CSEN 2004) \n \nTime Allotted : 3 hrs \n \n \n \n \n \n    \n           Full Marks : 70 \n \nFigures out of the right margin indicate full marks. \n \nCandidates are required to answer Group A and \nany 5 (five) from Group B to E, taking at least one from each group. \n \nCandidates are required to give answer in their own words as far as practicable. \n \nGroup \u2013 A \n(Multiple Choice Type Questions) \n \n1.  Choose the correct alternative for the following:  \n     10 \u00d7 1 = 1",
+    "pages_info": [
+      {
+        "page": 1,
+        "char_count": 2177,
+        "word_count": 332,
+        "image_count": 0,
+        "preview": "B.TECH/AEIE/4TH SEM/CSEN 2004/2021    CSEN 2004             1    B.TECH/AEIE/4TH SEM/CSEN 2004/2021    DATA STRUCTURE AND BASIC ALGORITHMS  (CSEN 2004"
+      },
+      {
+        "page": 2,
+        "char_count": 2114,
+        "word_count": 371,
+        "image_count": 0,
+        "preview": "B.TECH/AEIE/4TH SEM/CSEN 2004/2021    CSEN 2004             2    (b)  Worst case and average case performance is \u039f(n2).  (c)  Can be compared to the w"
+      },
+      {
+        "page": 3,
+        "char_count": 1367,
+        "word_count": 217,
+        "image_count": 0,
+        "preview": "B.TECH/AEIE/4TH SEM/CSEN 2004/2021    CSEN 2004             3    5.  (a)   Write an algorithm to convert an infix expression to postfix. Convert the  "
+      },
+      {
+        "page": 4,
+        "char_count": 1574,
+        "word_count": 264,
+        "image_count": 0,
+        "preview": "B.TECH/AEIE/4TH SEM/CSEN 2004/2021    CSEN 2004             4    7.  (a)   Consider the AVL tree given below and insert 18, 81, 29, 15, 19, 25, 37, an"
+      }
+    ]
+  },
+  {
+    "path": "SOURCE/DSA-20260930T180448Z-1-001/DSA/BINARY TREE.pdf",
+    "size": 386143,
+    "sha256": "bcf46169758724e09ac39a2bf6f1e5bf2c0cb33fc17d54cc185f08bd56a02c6b",
+    "page_count": 9,
+    "total_char_count": 10870,
+    "total_images": 22,
+    "header_sample": "1\nBINARY TREE\nSome Definitions\n\uf0b7\nThe circles in a tree diagram are called vertices or nodes.\n\uf0b7\nThe top of the tree is called its root.\n\uf0b7\nThe vertices immediately below a given vertex are called the children of that \nvertex.\n\uf0b7\nThe vertex immediately above a given vertex is called its parent. (The root is the \nonly vertex in the tree that has no parent.)\n\uf0b7\nThe line connecting a vertex with one immediately above or below is called a \nbranch.\n\uf0b7\nSiblings are vertices with the same parent.\n\uf0b7\nA vertex with no children is called a leaf or an external vertex.\n\uf0b7\nTwo branches of a tree are adjacent if th",
+    "pages_info": [
+      {
+        "page": 1,
+        "char_count": 1435,
+        "word_count": 280,
+        "image_count": 1,
+        "preview": "1 BINARY TREE Some Definitions \uf0b7 The circles in a tree diagram are called vertices or nodes. \uf0b7 The top of the tree is called its root. \uf0b7 The vertices "
+      },
+      {
+        "page": 2,
+        "char_count": 777,
+        "word_count": 160,
+        "image_count": 2,
+        "preview": "Tree 2 Representation of binary tree: Using array Binary tree can be stored in an array, say, BT, as follows: (a) The root node is stored in BT[0], an"
+      },
+      {
+        "page": 3,
+        "char_count": 1291,
+        "word_count": 225,
+        "image_count": 0,
+        "preview": "Tree 3 Binary tree traversal Preorder traversal (a) Recursive \u2013 Pseudocode Preorder(node *p) { Print p->val; Preorder(p->left); Preorder(p->right); } "
+      },
+      {
+        "page": 4,
+        "char_count": 1369,
+        "word_count": 297,
+        "image_count": 4,
+        "preview": "Tree 4 Print p->val; } (b) Non-recursive \u2013 Algorithm 1. Push NULL into STACK and set PTR = ROOT.  2. Repeat steps 3 and 4 while PTR \u2260 NULL 3. Proceed "
+      },
+      {
+        "page": 5,
+        "char_count": 1810,
+        "word_count": 344,
+        "image_count": 4,
+        "preview": "Tree 5 (a) Let T be a binary tree with \uf06c levels. Then the number of leaves is at most 2 \uf06c-1. (b) Let T be a binary tree. For every k\u22650, there are no m"
+      },
+      {
+        "page": 6,
+        "char_count": 719,
+        "word_count": 132,
+        "image_count": 2,
+        "preview": "Tree 6 \uf0b7 The left and right subtree must each also be a binary search tree. \uf0b7 There must be no duplicate nodes. In BST, time to search for a value is "
+      },
+      {
+        "page": 7,
+        "char_count": 1202,
+        "word_count": 225,
+        "image_count": 1,
+        "preview": "Tree 7 Deleting a node from a binary search tree Deletion is a more involved procedure than insertion. There are a couple of cases to  consider. If th"
+      },
+      {
+        "page": 8,
+        "char_count": 436,
+        "word_count": 76,
+        "image_count": 8,
+        "preview": "Tree 8 return repl else  // both children present p.val = findMin(p.right).val // copy replacement p.right = delete(p.val, p.right) // delete replacem"
+      },
+      {
+        "page": 9,
+        "char_count": 1831,
+        "word_count": 331,
+        "image_count": 0,
+        "preview": "Tree 9   Analysis of Binary Search Tree It is not hard to see that all of the procedures find(), insert(), and delete() run in time that  is proportio"
+      }
+    ]
+  },
+  {
+    "path": "SOURCE/DSA-20260930T180448Z-1-001/DSA/BT_2021.pdf",
+    "size": 605216,
+    "sha256": "4c09b21661def3ed4367ca5c1f1a6e5a02be8950391e63b4dc59303b0f3b1dff",
+    "page_count": 3,
+    "total_char_count": 4741,
+    "total_images": 1,
+    "header_sample": "B.TECH/BT/4TH SEM/CSEN 2005/2021 \n \nCSEN 2005  \n \n \n \n \n \n1 \n \nB.TECH/BT/4TH SEM/CSEN 2005/2021 \n \nDATA STRUCTURE \n(CSEN 2005) \n \nTime Allotted : 3 hrs \n \n \n \n \n \n    \n           Full Marks : 70 \n \nFigures out of the right margin indicate full marks. \n \nCandidates are required to answer Group A and \nany 5 (five) from Group B to E, taking at least one from each group. \n \nCandidates are required to give answer in their own words as far as practicable. \n \nGroup \u2013 A \n(Multiple Choice Type Questions) \n \n1.  Choose the correct alternative for the following:  \n     10 \u00d7 1 = 10 \n \n \n(i) \nDegree of a l",
+    "pages_info": [
+      {
+        "page": 1,
+        "char_count": 1919,
+        "word_count": 282,
+        "image_count": 0,
+        "preview": "B.TECH/BT/4TH SEM/CSEN 2005/2021    CSEN 2005             1    B.TECH/BT/4TH SEM/CSEN 2005/2021    DATA STRUCTURE  (CSEN 2005)    Time Allotted : 3 hr"
+      },
+      {
+        "page": 2,
+        "char_count": 1847,
+        "word_count": 344,
+        "image_count": 0,
+        "preview": "B.TECH/BT/4TH SEM/CSEN 2005/2021    CSEN 2005             2    Group \u2013 B    2.  (a)   What do you understand by Time and Space complexity? How is Big-"
+      },
+      {
+        "page": 3,
+        "char_count": 975,
+        "word_count": 156,
+        "image_count": 1,
+        "preview": "B.TECH/BT/4TH SEM/CSEN 2005/2021    CSEN 2005             3      (b)   Consider the graph G given below with its adjacency list. Find out the order to"
+      }
+    ]
+  },
+  {
+    "path": "SOURCE/DSA-20260930T180448Z-1-001/DSA/DATA STRUCTURES AND ALGORITHMS CSEN 2101.pdf",
+    "size": 716597,
+    "sha256": "4701c86c49301c5836aa08521d69e43733292e6abafd6c9b7d1ec9175d1bd256",
+    "page_count": 6,
+    "total_char_count": 13309,
+    "total_images": 8,
+    "header_sample": "B.TECH/CSE/3RD SEM/CSEN 2101/2021 \n \nCSEN 2101  \n \n \n \n \n \n1 \n \nB.TECH/CSE/3RD SEM/CSEN 2101/2021 \n \nDATA STRUCTURES AND ALGORITHMS   \n(CSEN 2101) \n \nTime Allotted : 3 hrs \n \n \n \n \n \n \nFull Marks : 70 \n \nFigures out of the right margin indicate full marks. \n \nCandidates are required to answer Group A and \nany 5 (five) from Group B to E, taking at least one from each group. \n \nCandidates are required to give answer in their own words as far as practicable. \n \nGroup \u2013 A \n(Multiple Choice Type Questions) \n \n1.  Choose the correct alternative for the following: \n10 \u00d7 1 = 10 \n \n(i) \nIn a 2D array i",
+    "pages_info": [
+      {
+        "page": 1,
+        "char_count": 1723,
+        "word_count": 271,
+        "image_count": 1,
+        "preview": "B.TECH/CSE/3RD SEM/CSEN 2101/2021    CSEN 2101             1    B.TECH/CSE/3RD SEM/CSEN 2101/2021    DATA STRUCTURES AND ALGORITHMS    (CSEN 2101)    "
+      },
+      {
+        "page": 2,
+        "char_count": 2454,
+        "word_count": 396,
+        "image_count": 2,
+        "preview": "B.TECH/CSE/3RD SEM/CSEN 2101/2021    CSEN 2101             2    (vi)  Secondary clustering is a result of  (a) Linear Probing        (b) Separate Chai"
+      },
+      {
+        "page": 3,
+        "char_count": 2587,
+        "word_count": 417,
+        "image_count": 1,
+        "preview": "B.TECH/CSE/3RD SEM/CSEN 2101/2021    CSEN 2101             3    (c)    Given a 2D matrix of dimension 100 x 200 and also given that the base address  "
+      },
+      {
+        "page": 4,
+        "char_count": 1849,
+        "word_count": 315,
+        "image_count": 2,
+        "preview": "B.TECH/CSE/3RD SEM/CSEN 2101/2021    CSEN 2101             4               The Professor wrote like this -             fiboTailRec(100, ?7, ?8) .     "
+      },
+      {
+        "page": 5,
+        "char_count": 2656,
+        "word_count": 445,
+        "image_count": 1,
+        "preview": "B.TECH/CSE/3RD SEM/CSEN 2101/2021    CSEN 2101             5    (ii)  Suppose you are dealing with a heap and it is stored in an array A starting  fro"
+      },
+      {
+        "page": 6,
+        "char_count": 2040,
+        "word_count": 269,
+        "image_count": 1,
+        "preview": "B.TECH/CSE/3RD SEM/CSEN 2101/2021    CSEN 2101             6                 (ii)  A compiler always needs a hash-table to do its operations. Name a j"
+      }
+    ]
+  },
+  {
+    "path": "SOURCE/DSA-20260930T180448Z-1-001/DSA/DFS BFS.pdf",
+    "size": 901332,
+    "sha256": "0e1e581d35c05299406736939aabc18ee732479e6827c92a7bfd6cf3c7292a77",
+    "page_count": 50,
+    "total_char_count": 7339,
+    "total_images": 0,
+    "header_sample": "1.1\nData Structure and Algorithm\nLecture 8\n\u25cfDepth First Search (DFS)\n\u25cfBreadth First Search (BFS)\nTopics\nReference: Introduction to Algorithm by Cormen\nChapter 23: Elementary Graph Algorithm\n",
+    "pages_info": [
+      {
+        "page": 1,
+        "char_count": 190,
+        "word_count": 27,
+        "image_count": 0,
+        "preview": "1.1 Data Structure and Algorithm Lecture 8 \u25cfDepth First Search (DFS) \u25cfBreadth First Search (BFS) Topics Reference: Introduction to Algorithm by Cormen"
+      },
+      {
+        "page": 2,
+        "char_count": 473,
+        "word_count": 81,
+        "image_count": 0,
+        "preview": "1.2 Data Structure and Algorithm Graph Search (traversal) \u25cfHow do we search a graph? \u25cfAt a particular vertices, where shall we go next?  \u25cfTwo common f"
+      },
+      {
+        "page": 3,
+        "char_count": 378,
+        "word_count": 76,
+        "image_count": 0,
+        "preview": "1.3 Data Structure and Algorithm Depth-First Search (DFS) \u25cfThe basic idea behind this algorithm is that it traverses the  graph using recursion \u25cfGo as"
+      },
+      {
+        "page": 4,
+        "char_count": 146,
+        "word_count": 21,
+        "image_count": 0,
+        "preview": "1.4 Data Structure and Algorithm DFS: Color Scheme \u25cfVertices initially colored white \u25cfThen colored gray when discovered \u25cfThen black when finished "
+      },
+      {
+        "page": 5,
+        "char_count": 156,
+        "word_count": 26,
+        "image_count": 0,
+        "preview": "1.5 Data Structure and Algorithm DFS: Time Stamps \u25cfDiscover time d[u]:  when u is first  discovered  \u25cfFinish time f[u]: when backtrack from u  \u25cfd[u] <"
+      },
+      {
+        "page": 6,
+        "char_count": 59,
+        "word_count": 9,
+        "image_count": 0,
+        "preview": "1.6 Data Structure and Algorithm DFS Example source vertex "
+      },
+      {
+        "page": 7,
+        "char_count": 114,
+        "word_count": 20,
+        "image_count": 0,
+        "preview": "1.7 Data Structure and Algorithm DFS Example 1 |     |     |     |    |   |     |     |   source vertex d       f "
+      },
+      {
+        "page": 8,
+        "char_count": 114,
+        "word_count": 21,
+        "image_count": 0,
+        "preview": "1.8 Data Structure and Algorithm DFS Example 1 |     |     |     |    |   |   2 |     |   source vertex d       f "
+      },
+      {
+        "page": 9,
+        "char_count": 115,
+        "word_count": 22,
+        "image_count": 0,
+        "preview": "1.9 Data Structure and Algorithm DFS Example 1 |     |     |     |    |  3 |   2 |     |   source vertex d       f "
+      },
+      {
+        "page": 10,
+        "char_count": 117,
+        "word_count": 23,
+        "image_count": 0,
+        "preview": "1.10 Data Structure and Algorithm DFS Example 1 |     |     |     |    |  3 |  4 2 |     |   source vertex d       f "
+      },
+      {
+        "page": 11,
+        "char_count": 119,
+        "word_count": 24,
+        "image_count": 0,
+        "preview": "1.11 Data Structure and Algorithm DFS Example 1 |     |     |     |   5 |   3 |  4 2 |     |   source vertex d       f "
+      },
+      {
+        "page": 12,
+        "char_count": 120,
+        "word_count": 25,
+        "image_count": 0,
+        "preview": "1.12 Data Structure and Algorithm DFS Example 1 |     |     |     |   5 |  6 3 |  4 2 |     |   source vertex d       f "
+      },
+      {
+        "page": 13,
+        "char_count": 121,
+        "word_count": 26,
+        "image_count": 0,
+        "preview": "1.13 Data Structure and Algorithm DFS Example 1 |     |     |     |   5 |  6 3 |  4 2 |  7   |   source vertex d       f "
+      },
+      {
+        "page": 14,
+        "char_count": 121,
+        "word_count": 27,
+        "image_count": 0,
+        "preview": "1.14 Data Structure and Algorithm DFS Example 1 |   8 |     |     |   5 |  6 3 |  4 2 |  7   |   source vertex d       f "
+      },
+      {
+        "page": 15,
+        "char_count": 121,
+        "word_count": 28,
+        "image_count": 0,
+        "preview": "1.15 Data Structure and Algorithm DFS Example 1 |   8 |     |     |   5 |  6 3 |  4 2 |  7 9 |   source vertex d       f "
+      },
+      {
+        "page": 16,
+        "char_count": 122,
+        "word_count": 28,
+        "image_count": 0,
+        "preview": "1.16 Data Structure and Algorithm DFS Example 1 |   8 |     |     |   5 |  6 3 |  4 2 |  7 9  |10 source vertex d       f "
+      },
+      {
+        "page": 17,
+        "char_count": 123,
+        "word_count": 28,
+        "image_count": 0,
+        "preview": "1.17 Data Structure and Algorithm DFS Example 1 |   8  |11   |     |   5 |  6 3 |  4 2 |  7 9  |10 source vertex d       f "
+      },
+      {
+        "page": 18,
+        "char_count": 124,
+        "word_count": 28,
+        "image_count": 0,
+        "preview": "1.18 Data Structure and Algorithm DFS Example 1  |12 8  |11   |     |   5 |  6 3 |  4 2 |  7 9  |10 source vertex d       f "
+      },
+      {
+        "page": 19,
+        "char_count": 124,
+        "word_count": 28,
+        "image_count": 0,
+        "preview": "1.19 Data Structure and Algorithm DFS Example 1  |12 8  |11 13|     |   5 |  6 3 |  4 2 |  7 9  |10 source vertex d       f "
+      },
+      {
+        "page": 20,
+        "char_count": 124,
+        "word_count": 28,
+        "image_count": 0,
+        "preview": "1.20 Data Structure and Algorithm DFS Example 1  |12 8  |11 13|   14|   5 |  6 3 |  4 2 |  7 9  |10 source vertex d       f "
+      },
+      {
+        "page": 21,
+        "char_count": 125,
+        "word_count": 29,
+        "image_count": 0,
+        "preview": "1.21 Data Structure and Algorithm DFS Example 1  |12 8  |11 13|   14| 15 5 |  6 3 |  4 2 |  7 9  |10 source vertex d       f "
+      },
+      {
+        "page": 22,
+        "char_count": 126,
+        "word_count": 30,
+        "image_count": 0,
+        "preview": "1.22 Data Structure and Algorithm DFS Example 1  |12 8  |11 13| 16 14| 15 5 |  6 3 |  4 2 |  7 9  |10 source vertex d       f "
+      },
+      {
+        "page": 23,
+        "char_count": 193,
+        "word_count": 32,
+        "image_count": 0,
+        "preview": "1.23 Data Structure and Algorithm DFS: Algorithm DFS(G) \u25aa for each vertex u in V,  \u25aa     color[u]=white;  \u03c0[u]=NIL \u25aa  time=0; \u25aa  for each vertex u in "
+      },
+      {
+        "page": 24,
+        "char_count": 342,
+        "word_count": 53,
+        "image_count": 0,
+        "preview": "1.24 Data Structure and Algorithm DFS-VISIT(u) \u25aa       color[u]=gray; \u25aa       time = time + 1;  \u25aa       d[u] = time; \u25aa       for each v in Adj(u)  do "
+      },
+      {
+        "page": 25,
+        "char_count": 234,
+        "word_count": 37,
+        "image_count": 0,
+        "preview": "1.25 Data Structure and Algorithm DFS: Complexity Analysis DFS_VISIT is called exactly once for each vertex And DFS_VISIT scans all the edges which ca"
+      },
+      {
+        "page": 26,
+        "char_count": 99,
+        "word_count": 12,
+        "image_count": 0,
+        "preview": "1.26 Data Structure and Algorithm DFS: Application \u25cfTopological Sort \u25cfStrongly Connected Component "
+      },
+      {
+        "page": 27,
+        "char_count": 383,
+        "word_count": 62,
+        "image_count": 0,
+        "preview": "1.27 Data Structure and Algorithm Breadth-first Search (BFS) \u25cfSearch for all vertices  that are directly reachable  from the root (called level 1 vert"
+      },
+      {
+        "page": 28,
+        "char_count": 386,
+        "word_count": 60,
+        "image_count": 0,
+        "preview": "1.28 Data Structure and Algorithm BFS: the Color Scheme \u25cfWhite vertices have not been discovered \u25cfAll vertices start out white \u25cfGrey vertices are disc"
+      },
+      {
+        "page": 29,
+        "char_count": 77,
+        "word_count": 23,
+        "image_count": 0,
+        "preview": "1.29 Data Structure and Algorithm A O N M L K J E F G H D C B I P An Example "
+      },
+      {
+        "page": 30,
+        "char_count": 68,
+        "word_count": 22,
+        "image_count": 0,
+        "preview": "1.30 Data Structure and Algorithm A O N M L K J E F G H D C B I P 0 "
+      },
+      {
+        "page": 31,
+        "char_count": 74,
+        "word_count": 25,
+        "image_count": 0,
+        "preview": "1.31 Data Structure and Algorithm A O N M L K J E F G H D C B I P 0 1 1 1 "
+      },
+      {
+        "page": 32,
+        "char_count": 78,
+        "word_count": 27,
+        "image_count": 0,
+        "preview": "1.32 Data Structure and Algorithm A O N M L K J E F G H D C B I P 0 1 1 1 2 2 "
+      },
+      {
+        "page": 33,
+        "char_count": 88,
+        "word_count": 32,
+        "image_count": 0,
+        "preview": "1.33 Data Structure and Algorithm A O N M L K J E F G H D C B I P 0 1 1 1 2 2 3 3 3 3 3 "
+      },
+      {
+        "page": 34,
+        "char_count": 94,
+        "word_count": 35,
+        "image_count": 0,
+        "preview": "1.34 Data Structure and Algorithm A O N M L K J E F G H D C B I P 0 1 1 1 2 2 3 3 3 3 3 4 4 4 "
+      },
+      {
+        "page": 35,
+        "char_count": 98,
+        "word_count": 37,
+        "image_count": 0,
+        "preview": "1.35 Data Structure and Algorithm A O N M L K J E F G H D C B I P 0 1 1 1 2 2 3 3 3 3 3 4 4 4 5 5 "
+      },
+      {
+        "page": 36,
+        "char_count": 98,
+        "word_count": 37,
+        "image_count": 0,
+        "preview": "1.36 Data Structure and Algorithm A O N M L K J E F G H D C B I P 0 1 1 1 2 2 3 3 3 3 3 4 4 4 5 5 "
+      },
+      {
+        "page": 37,
+        "char_count": 98,
+        "word_count": 37,
+        "image_count": 0,
+        "preview": "1.37 Data Structure and Algorithm A O N M L K J E F G H D C B I P 0 1 1 1 2 2 3 3 3 3 3 4 4 4 5 5 "
+      },
+      {
+        "page": 38,
+        "char_count": 527,
+        "word_count": 88,
+        "image_count": 0,
+        "preview": "1.38 Data Structure and Algorithm BFS: Algorithm BFS(G, s) \u25aa For each vertex u in V \u2013 {s},  \u25aa color[u] = white;  \u25aa d[u] = infinity;  \u25aa \u03c0[u] = NIL \u25aa co"
+      },
+      {
+        "page": 39,
+        "char_count": 74,
+        "word_count": 22,
+        "image_count": 0,
+        "preview": "1.39 Data Structure and Algorithm Example \u221e \u221e \u221e \u221e \u221e \u221e \u221e \u221e r s t u v w x y "
+      },
+      {
+        "page": 40,
+        "char_count": 79,
+        "word_count": 24,
+        "image_count": 0,
+        "preview": "1.40 Data Structure and Algorithm Example \u221e \u221e 0 \u221e \u221e \u221e \u221e \u221e r s t u v w x y s Q: "
+      },
+      {
+        "page": 41,
+        "char_count": 81,
+        "word_count": 25,
+        "image_count": 0,
+        "preview": "1.41 Data Structure and Algorithm Example 1 \u221e 0 1 \u221e \u221e \u221e \u221e r s t u v w x y w Q: r "
+      },
+      {
+        "page": 42,
+        "char_count": 83,
+        "word_count": 26,
+        "image_count": 0,
+        "preview": "1.42 Data Structure and Algorithm Example 1 \u221e 0 1 2 2 \u221e \u221e r s t u v w x y r Q: t x "
+      },
+      {
+        "page": 43,
+        "char_count": 83,
+        "word_count": 26,
+        "image_count": 0,
+        "preview": "1.43 Data Structure and Algorithm Example 1 2 0 1 2 2 \u221e \u221e r s t u v w x y Q: t x v "
+      },
+      {
+        "page": 44,
+        "char_count": 83,
+        "word_count": 26,
+        "image_count": 0,
+        "preview": "1.44 Data Structure and Algorithm Example 1 2 0 1 2 2 3 \u221e r s t u v w x y Q: x v u "
+      },
+      {
+        "page": 45,
+        "char_count": 83,
+        "word_count": 26,
+        "image_count": 0,
+        "preview": "1.45 Data Structure and Algorithm Example 1 2 0 1 2 2 3 3 r s t u v w x y Q: v u y "
+      },
+      {
+        "page": 46,
+        "char_count": 81,
+        "word_count": 25,
+        "image_count": 0,
+        "preview": "1.46 Data Structure and Algorithm Example 1 2 0 1 2 2 3 3 r s t u v w x y Q: u y "
+      },
+      {
+        "page": 47,
+        "char_count": 79,
+        "word_count": 24,
+        "image_count": 0,
+        "preview": "1.47 Data Structure and Algorithm Example 1 2 0 1 2 2 3 3 r s t u v w x y Q: y "
+      },
+      {
+        "page": 48,
+        "char_count": 79,
+        "word_count": 24,
+        "image_count": 0,
+        "preview": "1.48 Data Structure and Algorithm Example 1 2 0 1 2 2 3 3 r s t u v w x y Q: \u00d8 "
+      },
+      {
+        "page": 49,
+        "char_count": 191,
+        "word_count": 30,
+        "image_count": 0,
+        "preview": "1.49 Data Structure and Algorithm BFS: Complexity Analysis \u25cfQueuing time is O(V) and scanning all  edges requires O(E) \u25cfOverhead for initialization is"
+      },
+      {
+        "page": 50,
+        "char_count": 74,
+        "word_count": 10,
+        "image_count": 0,
+        "preview": "1.50 Data Structure and Algorithm BFS: Application \u25cfShortest path problem "
+      }
+    ]
+  },
+  {
+    "path": "SOURCE/DSA-20260930T180448Z-1-001/DSA/DSA Practice Assignment.pdf",
+    "size": 224651,
+    "sha256": "339218c9b45b844e5143c143c0932825c97c12e41eac8258d2d3db6ecd9ede8a",
+    "page_count": 14,
+    "total_char_count": 31705,
+    "total_images": 8,
+    "header_sample": "DATA STRUCTURES AND ALGORITHMS ASSIGNMENT \nFor practice only \u2013 solve at home \n \n \nMultiple Choice Questions \n \n1. Let A be a two-dimensional array declared as follows: \nA: array [1\u202610] [1\u202615] of character; \nAssuming that each character takes one memory locations the array is stored in row-major \norder and the first element of the array is stored in location 100, what is the address of the \nelement A[i][j] ? \n(a) 15i + j + 84 \n(b) 15j + i + 84 \n(c) 10i + j + 89 \n(d) 10j + i + 89 \n \n2. Given a pointer to the first node of a singly linked list, which of the following operation can be \nimplemented",
+    "pages_info": [
+      {
+        "page": 1,
+        "char_count": 1536,
+        "word_count": 295,
+        "image_count": 0,
+        "preview": "DATA STRUCTURES AND ALGORITHMS ASSIGNMENT  For practice only \u2013 solve at home      Multiple Choice Questions    1. Let A be a two-dimensional array dec"
+      },
+      {
+        "page": 2,
+        "char_count": 1148,
+        "word_count": 231,
+        "image_count": 2,
+        "preview": "7. Which of the following state pointer?  (a) Both insertion and del (b) Only insertion at the fr (c) Only deletion from the (d) No insertion or delet"
+      },
+      {
+        "page": 3,
+        "char_count": 1878,
+        "word_count": 379,
+        "image_count": 0,
+        "preview": "  12. The number of edges in a complete undirected graph with n vertices is  (a) n(n-l)  (b) n(n-l)/2  (c) n2  (d) 2n-1    13. Which of the following "
+      },
+      {
+        "page": 4,
+        "char_count": 1922,
+        "word_count": 341,
+        "image_count": 0,
+        "preview": "(c) Binary Tree  (d) B-tree    20. Which of the following operations on a queue implemented by an array in a naive way has time  complexity O(n), wher"
+      },
+      {
+        "page": 5,
+        "char_count": 2426,
+        "word_count": 437,
+        "image_count": 0,
+        "preview": "(c) All values are non-uniformly distributed  (d) Never     28. Binary search can be applied to an array that is  (a) Not sorted  (b) Already sorted  "
+      },
+      {
+        "page": 6,
+        "char_count": 2343,
+        "word_count": 393,
+        "image_count": 0,
+        "preview": "15. The number of swaps required by selection sort is (greater/lesser)_________ than bubble sort.  16. The time complexity of building a max-heap is _"
+      },
+      {
+        "page": 7,
+        "char_count": 3002,
+        "word_count": 505,
+        "image_count": 0,
+        "preview": "13. Write an algorithm to merge eight sorted queues into one single queue in such a way that  duplicates are removed and the resultant queue is sorted"
+      },
+      {
+        "page": 8,
+        "char_count": 2230,
+        "word_count": 395,
+        "image_count": 2,
+        "preview": "  24. Write a small C function (no need for main, header files etc.) to print the moves of the well-known  Tower of Hanoi problem using recursion. Ass"
+      },
+      {
+        "page": 9,
+        "char_count": 2928,
+        "word_count": 510,
+        "image_count": 0,
+        "preview": "the end. (For example, if the number is 13579, then there will be 5 nodes in the list containing  nodes with values 1, 3, 5, 7, 9).    33. How can you"
+      },
+      {
+        "page": 10,
+        "char_count": 3129,
+        "word_count": 541,
+        "image_count": 0,
+        "preview": "43. Given an adjacency-list representation of a multi-graph G = (V, E), describe the outline of an  algorithm to compute the following representations"
+      },
+      {
+        "page": 11,
+        "char_count": 2836,
+        "word_count": 488,
+        "image_count": 0,
+        "preview": "52. Perform a DFS traversal on the following graph starting from  vertex H, i.e., d(H) = 1.  Just write  the discovery time d(u) and finishing times f"
+      },
+      {
+        "page": 12,
+        "char_count": 2057,
+        "word_count": 355,
+        "image_count": 2,
+        "preview": "number of edges between s to v. Explain how closeness centrality can be computed using BFS.  Analyze the running time of your algorithm.    62. Write "
+      },
+      {
+        "page": 13,
+        "char_count": 2484,
+        "word_count": 427,
+        "image_count": 2,
+        "preview": "                  Do a probabilistic analysis to show that the value of tj = (j + 1)/2 in the average case assuming a  uniform distribution for the in"
+      },
+      {
+        "page": 14,
+        "char_count": 1786,
+        "word_count": 294,
+        "image_count": 0,
+        "preview": "  76. Give an example of a situation where using counting sort is better than using any other  comparison-sort technique? State the asymptotic time-co"
+      }
+    ]
+  },
+  {
+    "path": "SOURCE/DSA-20260930T180448Z-1-001/DSA/HASHING.pdf",
+    "size": 825958,
+    "sha256": "56e1ecb2664c9539c5d8e1beb540e51923cb439d7a7c2c20bf530cbf26efb8dd",
+    "page_count": 52,
+    "total_char_count": 11422,
+    "total_images": 4,
+    "header_sample": "1\nHashing\nby\nAdlane Habed\nSchool of Computer Science\nUniversity of Windsor\nMay 6, 2005\n",
+    "pages_info": [
+      {
+        "page": 1,
+        "char_count": 87,
+        "word_count": 15,
+        "image_count": 0,
+        "preview": "1 Hashing by Adlane Habed School of Computer Science University of Windsor May 6, 2005 "
+      },
+      {
+        "page": 2,
+        "char_count": 9,
+        "word_count": 2,
+        "image_count": 0,
+        "preview": "2 Review "
+      },
+      {
+        "page": 3,
+        "char_count": 234,
+        "word_count": 38,
+        "image_count": 0,
+        "preview": "3 Review \u25a0Arrays, lists, queues, stacks and trees are used to  store and retrieve records. \u25a0A record looks like something like this \u25a0Each record has a"
+      },
+      {
+        "page": 4,
+        "char_count": 146,
+        "word_count": 38,
+        "image_count": 0,
+        "preview": "4 \u2026Review Binary search: key = 13 Sequential search: key = 13 1 3 5 7 9 11 13 15 17 19 21 3 comparisons 1 3 5 7 9 11 13 15 17 19 21 7 comparisons "
+      },
+      {
+        "page": 5,
+        "char_count": 113,
+        "word_count": 27,
+        "image_count": 0,
+        "preview": "5 \u2026Review Retrieve key=13 in a balanced Binary Search Tree 15 3 11 7 1 5 9 13 25 29 17 21 19 27 23 4 comparisons "
+      },
+      {
+        "page": 6,
+        "char_count": 167,
+        "word_count": 22,
+        "image_count": 0,
+        "preview": "6 \u2026Review Data  structure Complexity O(logn) O(n) Sorted array search insert, delete Sorted  linked-list search, insert,  delete  Balanced BST search,"
+      },
+      {
+        "page": 7,
+        "char_count": 112,
+        "word_count": 14,
+        "image_count": 0,
+        "preview": "7 Agenda \u25a0What is hashing? \u25a0Hash functions  \u25a0Collision-resolution strategies \u25a0Analysis \u25a0Problems to think about "
+      },
+      {
+        "page": 8,
+        "char_count": 113,
+        "word_count": 18,
+        "image_count": 0,
+        "preview": "8 What is hashing? 1. Basic idea 2. Definitions 3. Perfect hashing 4. Collisions 5. Open-addressing vs. Chaining "
+      },
+      {
+        "page": 9,
+        "char_count": 305,
+        "word_count": 55,
+        "image_count": 0,
+        "preview": "9 Basic idea \u25a0A data structure that allows insertion, deletion  and search in O(1) in average. \u25a0A data structure that requires a limited or no  search"
+      },
+      {
+        "page": 10,
+        "char_count": 282,
+        "word_count": 65,
+        "image_count": 0,
+        "preview": "10 \u2026Basic idea \u25a0Consider records  with  integer key values:  0, 1, 2, 3, 4, 5, 6, 7, 8, 9 \u25a0Create a table of 10 cells:  index of each cell in the  ran"
+      },
+      {
+        "page": 11,
+        "char_count": 369,
+        "word_count": 65,
+        "image_count": 0,
+        "preview": "11 Definitions \u25a0Hashing The process of accessing a record, stored in a table, by  mapping the value of its key to a position in the table. \u25a0Hash funct"
+      },
+      {
+        "page": 12,
+        "char_count": 122,
+        "word_count": 30,
+        "image_count": 0,
+        "preview": "12 Perfect hashing Key \u2026 \u2026 Hash  function: 0 1 2 3 4 5 6 7 8 9 8 H(key)=key H(8)=8 Key 8 2 H(2)=2 Key 2 Record Hash table "
+      },
+      {
+        "page": 13,
+        "char_count": 326,
+        "word_count": 57,
+        "image_count": 0,
+        "preview": "13 \u2026Perfect hashing \u25a0Each key value maps to a different position in  the table. \u25a0All the keys need to be known before the table is  created. \u25a0Problem:"
+      },
+      {
+        "page": 14,
+        "char_count": 353,
+        "word_count": 61,
+        "image_count": 0,
+        "preview": "14 \u2026Perfect hashing \u25a0Example: a company has 100 employees. Social  Insurance Number (SIN) is used as a key for a  each record. \u25a0Given a 9 digits SIN, "
+      },
+      {
+        "page": 15,
+        "char_count": 308,
+        "word_count": 55,
+        "image_count": 0,
+        "preview": "15 \u2026Perfect hashing \u25a0The birthday paradox:  what is the number of persons that need to be  together in a room in order to, \u201cmost likely\u201d,  have two of"
+      },
+      {
+        "page": 16,
+        "char_count": 225,
+        "word_count": 38,
+        "image_count": 0,
+        "preview": "16 \u2026Perfect hashing \u25a0Hash functions that allow perfect hashing are so  rare that it is worth looking for them only in  special circumstances. \u25a0In addi"
+      },
+      {
+        "page": 17,
+        "char_count": 300,
+        "word_count": 51,
+        "image_count": 0,
+        "preview": "17 Collisions \u25a0What if we cannot find a perfect hash function? Collision: more than one key will map to the  same location in the table!  \u25a0 Can we avo"
+      },
+      {
+        "page": 18,
+        "char_count": 246,
+        "word_count": 52,
+        "image_count": 0,
+        "preview": "18 \u2026Collisions Example: The keys are integers and the hash function is hashValue = key mod tableSize \u0000 If tableSize = 10, all records whose keys have "
+      },
+      {
+        "page": 19,
+        "char_count": 224,
+        "word_count": 29,
+        "image_count": 0,
+        "preview": "19 Open-addressing vs. chaining \u25a0Open-addressing: Storing the record directly in  the table. Deal with collisions using collision-resolution  strategi"
+      },
+      {
+        "page": 20,
+        "char_count": 165,
+        "word_count": 34,
+        "image_count": 0,
+        "preview": "20 \u2026Chaining 0 1 2 3 4 5 6 7 8 9 13 23 18 H(key)=key mod tableSize Insert 13 Insert 23 Insert 18 Collision is resolved by  inserting the elements in  "
+      },
+      {
+        "page": 21,
+        "char_count": 108,
+        "word_count": 18,
+        "image_count": 0,
+        "preview": "21 Hash functions 1. Hash functions 2. Division 3. Digits selection 4. Mid-square 5. Folding 6. String keys "
+      },
+      {
+        "page": 22,
+        "char_count": 295,
+        "word_count": 48,
+        "image_count": 0,
+        "preview": "22 Hash functions \u25a0Can we have a hash function that avoids  collisions? Collisions are nearly unavoidable! If we are  careful when selecting the hash "
+      },
+      {
+        "page": 23,
+        "char_count": 339,
+        "word_count": 56,
+        "image_count": 0,
+        "preview": "23 \u2026Hash functions \u25a0A poor hash function: Maps keys non-uniformly into table locations, or  maps a set of contiguous keys into clusters. \u25a0An ideal has"
+      },
+      {
+        "page": 24,
+        "char_count": 181,
+        "word_count": 28,
+        "image_count": 0,
+        "preview": "24 Hash functions: division \u25a0Division: H(key) = key mod tableSize      0 \u2264 key mod tableSize \u2264 tableSize-1 Empirical studies have shown that this func"
+      },
+      {
+        "page": 25,
+        "char_count": 308,
+        "word_count": 58,
+        "image_count": 0,
+        "preview": "25 \u2026division \u25a0Assume H(key) = key mod tableSize \u25a0All keys such that key mod tableSize = 0 map  into position 0 in the table. \u25a0All keys such that key m"
+      },
+      {
+        "page": 26,
+        "char_count": 294,
+        "word_count": 60,
+        "image_count": 0,
+        "preview": "26 \u2026division \u25a0Assume tableSize = 25 \u25a0All keys that are multiples of 5 will map into  positions 0, 5, 10, 15 and 20 in the table! \u25a0Why? because key and"
+      },
+      {
+        "page": 27,
+        "char_count": 228,
+        "word_count": 56,
+        "image_count": 0,
+        "preview": "27 \u2026 division \u25a0Choose tableSize as a prime number. \u25a0Example: tableSize = 29 (a prime number) 5 mod 29 = 5,   10 mod 29 = 10,   15 mod 29 = 15,   20 mo"
+      },
+      {
+        "page": 28,
+        "char_count": 200,
+        "word_count": 37,
+        "image_count": 0,
+        "preview": "28 Hash functions: digit selection \u25a0Digit(s) selection: key = d1 d2 d3 d4 d5 d6 d7 d8 d9 If the collection of records is known,  how to choose the dig"
+      },
+      {
+        "page": 29,
+        "char_count": 66,
+        "word_count": 11,
+        "image_count": 2,
+        "preview": "29 Digit selection: analysis Assume 10 records are to be stored:  "
+      },
+      {
+        "page": 30,
+        "char_count": 113,
+        "word_count": 15,
+        "image_count": 2,
+        "preview": "30 \u2026Digit selection: analysis Non-uniform distribution Uniform distribution Assume 100 records are to be stored: "
+      },
+      {
+        "page": 31,
+        "char_count": 313,
+        "word_count": 57,
+        "image_count": 0,
+        "preview": "31 \u2026Digit selection: analysis \u25a0Consider the hash function:  H(d1 d2 d3 d4 d5 d6 d7 d8 d9)=d5d7 d5 and  d7 are uniformly distributed \u2026but d5 = 3 and d7"
+      },
+      {
+        "page": 32,
+        "char_count": 290,
+        "word_count": 53,
+        "image_count": 0,
+        "preview": "32 Hash functions: mid-square \u25a0Mid-square: consider key = d1 d2 d3 d4 d5  d1 d2 d3 d4 d5 \u00d7     d1 d2 d3 d4 d5  ---------------------------------------"
+      },
+      {
+        "page": 33,
+        "char_count": 445,
+        "word_count": 44,
+        "image_count": 0,
+        "preview": "33 Mid-square: example 54321        \u00d754321  ------------------------------------------ 54321           108642               162963              217284"
+      },
+      {
+        "page": 34,
+        "char_count": 273,
+        "word_count": 52,
+        "image_count": 0,
+        "preview": "34 Hash functions: folding \u25a0Folding: consider key = d1 d2 d3 d4 d5 Combine portions of the key to form a smaller  result.   In general, folding is use"
+      },
+      {
+        "page": 35,
+        "char_count": 212,
+        "word_count": 40,
+        "image_count": 0,
+        "preview": "35 Folding: example \u25a0Consider a computer with 16-bit registers, i.e.  integers < 216 = 65536 \u25a0Assume the 9-digit SIN is used as a key. \u25a0SIN requires f"
+      },
+      {
+        "page": 36,
+        "char_count": 290,
+        "word_count": 49,
+        "image_count": 0,
+        "preview": "36 The key is a string \u25a0When the key is a string, the ASCII code of each  character in the string is considered. \u25a0The ASCII code is an integer value i"
+      },
+      {
+        "page": 37,
+        "char_count": 369,
+        "word_count": 56,
+        "image_count": 0,
+        "preview": "37 \u2026The key is a string This method generates huge numbers that the  machine might not store correctly. \u25a0Goal: reduce the number of arithmetic  operat"
+      },
+      {
+        "page": 38,
+        "char_count": 122,
+        "word_count": 16,
+        "image_count": 0,
+        "preview": "38 Collision-resolution  strategies in open  addressing 1. Linear probing: The problem of clustering 2. Quadratic probing "
+      },
+      {
+        "page": 39,
+        "char_count": 273,
+        "word_count": 52,
+        "image_count": 0,
+        "preview": "39 Linear probing If H(key) is already occupied:     Search sequentially (and by wrapping around the table  if necessary) until an empty position is f"
+      },
+      {
+        "page": 40,
+        "char_count": 200,
+        "word_count": 32,
+        "image_count": 0,
+        "preview": "40 \u2026Linear probing hashValue = H(key) Probe table positions  (hashValue + i) mod tableSize with i= 1,2,\u2026tableSize-1 Until an empty position is found i"
+      },
+      {
+        "page": 41,
+        "char_count": 324,
+        "word_count": 47,
+        "image_count": 0,
+        "preview": "41 Primary clustering \u25a0Linear probing makes that many items are stored  in a few areas creating clusters: This is known as primary clustering. \u25a0Contig"
+      },
+      {
+        "page": 42,
+        "char_count": 265,
+        "word_count": 35,
+        "image_count": 0,
+        "preview": "42 Quadratic probing \u25a0Collision-resolution strategy that eliminates  primary clustering. \u25a0It works as follows:    hashValue = H(key) if table[hashValu"
+      },
+      {
+        "page": 43,
+        "char_count": 231,
+        "word_count": 44,
+        "image_count": 0,
+        "preview": "43 \u2026Quadratic probing 0 1 2 3 4 5 6 7 8 9 89 Insert 89 Insert 18 18 49 Insert 49 Insert 58 58 Insert 9 9 Quadratic probing creates spaces between the "
+      },
+      {
+        "page": 44,
+        "char_count": 206,
+        "word_count": 35,
+        "image_count": 0,
+        "preview": "44 \u2026Quadratic probing \u25a0Very important result: If quadratic probing is used, tableSize is prime  and table is at least half empty, the insertion of a  "
+      },
+      {
+        "page": 45,
+        "char_count": 12,
+        "word_count": 2,
+        "image_count": 0,
+        "preview": "45 Analysis "
+      },
+      {
+        "page": 46,
+        "char_count": 157,
+        "word_count": 26,
+        "image_count": 0,
+        "preview": "46 Analysis We calculate the average number of  comparisons to search successfully S and  unsuccessfully U for a record given the load  factor of the "
+      },
+      {
+        "page": 47,
+        "char_count": 194,
+        "word_count": 25,
+        "image_count": 0,
+        "preview": "47 Analysis \u25a0U=unsuccessful search S=successful search \u25a0H, is uniform \u25a0Linear probing: U=(1+1/(1-\u03bb)2)/2 S=(1+1/(1-\u03bb))/2 \u25a0Quadratic probing: U=1/(1- \u03bb)"
+      },
+      {
+        "page": 48,
+        "char_count": 282,
+        "word_count": 54,
+        "image_count": 0,
+        "preview": "48 Comparison U S Linear probing \u03bb = 0.1        1.11 \u03bb = 0.5         2.50 \u03bb = 0.9        50.5 1.05 1.5 5.5 Quadratic probing \u03bb = 0.1        1.11 \u03bb = 0"
+      },
+      {
+        "page": 49,
+        "char_count": 28,
+        "word_count": 5,
+        "image_count": 0,
+        "preview": "49 Problems to think  about "
+      },
+      {
+        "page": 50,
+        "char_count": 187,
+        "word_count": 33,
+        "image_count": 0,
+        "preview": "50 Proofs \u25a0Proof of the birthday paradox. \u25a0In quadratic probing:  posi = (H(key)+i2) mod tableSize Show that: posi = (posi-1 + 2i \u2013 1) mod tableSize W"
+      },
+      {
+        "page": 51,
+        "char_count": 290,
+        "word_count": 42,
+        "image_count": 0,
+        "preview": "51 Implementation issues \u25a0Implementation of hash tables. \u25a0 Deletion in the case of open-addressing. \u25a0How to keep a table at least half empty? \u25a0Empiric"
+      },
+      {
+        "page": 52,
+        "char_count": 121,
+        "word_count": 19,
+        "image_count": 0,
+        "preview": "52 Other questions \u25a0What is the relationship between the number of  probes for an insertion and an unsuccessful  search? "
+      }
+    ]
+  },
+  {
+    "path": "SOURCE/DSA-20260930T180448Z-1-001/DSA/_Data Structures Using C Question Bank.pdf",
+    "size": 1051029,
+    "sha256": "34857c5d58242b343ee534ee486e364d28a2d33a32ad5813461ac05b74098b1c",
+    "page_count": 30,
+    "total_char_count": 41901,
+    "total_images": 21,
+    "header_sample": " \n                              Data Structures Using C Question Bank\n \n \nQ1. List out the areas in which data structures are applied extensively? \n  \nAns: Compiler Design, Operating System, Database Management System, Statistical \nanalysis package, Numerical Analysis, Graphics, Artificial Intelligence, Simulation \n \nQ2. What are the major data structures used in the following areas : RDBMS, Network \ndata model & Hierarchical data model. ? \n \nAns: The major data structures used are as follows: \n\u2022RDBMS - Array (i.e. Array of structures) \n \n\u2022Network data model - Graph \n\u2022Hierarchical data model -",
+    "pages_info": [
+      {
+        "page": 1,
+        "char_count": 1952,
+        "word_count": 302,
+        "image_count": 0,
+        "preview": "                                Data Structures Using C Question Bank     Q1. List out the areas in which data structures are applied extensively?    "
+      },
+      {
+        "page": 2,
+        "char_count": 703,
+        "word_count": 97,
+        "image_count": 1,
+        "preview": "                      It will have only 6 (ie,5+1) null branches.  A binary tree with n nodes has exactly n+1 null nodes.    Q8. What are the methods "
+      },
+      {
+        "page": 3,
+        "char_count": 1026,
+        "word_count": 182,
+        "image_count": 2,
+        "preview": "Q11.In tree construction which is the suitable efficient data  structure?   Ans: Linked list is the efficient data structure.    Q12.What is the type "
+      },
+      {
+        "page": 4,
+        "char_count": 1661,
+        "word_count": 282,
+        "image_count": 2,
+        "preview": "Ans: At location 6                            1  2   3 - - 4   -- 5                                                   Root LC1 RC1 LC2 RC2 LC3 RC3 LC4"
+      },
+      {
+        "page": 5,
+        "char_count": 1142,
+        "word_count": 185,
+        "image_count": 1,
+        "preview": "                            Ans:  \u2022  BFS: A X G H P E M Y J   \u2022  DFS: A X H P E Y M J G     Q18. Classify the Hashing Functions based on the various m"
+      },
+      {
+        "page": 6,
+        "char_count": 1033,
+        "word_count": 169,
+        "image_count": 3,
+        "preview": "Ans.                          Q22. What is a spanning Tree?    Ans: A spanning tree is a tree associated with a network. All the nodes of the graph  a"
+      },
+      {
+        "page": 7,
+        "char_count": 1060,
+        "word_count": 174,
+        "image_count": 2,
+        "preview": "                              Q27. For the following COBOL code, draw the Binary tree?  01 STUDENT_REC.    02 NAME.  03 FIRST_NAME PIC X(10).  03 LAST"
+      },
+      {
+        "page": 8,
+        "char_count": 1649,
+        "word_count": 257,
+        "image_count": 0,
+        "preview": "  Answer: (a) Length = 4  (b) ABCD, ABC,BCD, AB,BC, CD, A,B,C,D and null string     Q31.Consider the linear arrays AAA(5:50), BBB (-5:10) and CCC(18)."
+      },
+      {
+        "page": 9,
+        "char_count": 1360,
+        "word_count": 219,
+        "image_count": 0,
+        "preview": "  Q34.Translate infix expression into its equivalent post fix expression: (A-B)*(D/E)  Ans: (A-B)*(D/E) = [AB-]*[DE/] = AB-DE/*     Q35. Translate inf"
+      },
+      {
+        "page": 10,
+        "char_count": 1249,
+        "word_count": 196,
+        "image_count": 0,
+        "preview": " Ans: The list is as follows:     \u2022The  manipulation  of  Arithmetic  expression,   \u2022Symbol Table construction,     \u2022Syntax analysis.     Q41.What are"
+      },
+      {
+        "page": 11,
+        "char_count": 1554,
+        "word_count": 259,
+        "image_count": 0,
+        "preview": "  Q48. What is Brute Force algorithm?    Ans :Algorithm used to search the contents by comparing each element of array is  called Brute Force algorith"
+      },
+      {
+        "page": 12,
+        "char_count": 1746,
+        "word_count": 317,
+        "image_count": 0,
+        "preview": "    Q56.Write the syntax for pointing to next node?   Ans : Syntax:     node->link=node1;     Q57.What is sorting?     Ans : Sorting is the process of"
+      },
+      {
+        "page": 13,
+        "char_count": 1619,
+        "word_count": 269,
+        "image_count": 4,
+        "preview": "  Step 1. if a[0]>a[1] then swap a[0] and a[1].  Step 2. if a[1]>a[2] then swap a[1] and a[2].  \u2026  Step n-k. if a[n-(k+1)]>a[n-k] then swap a[n-(k+1)]"
+      },
+      {
+        "page": 14,
+        "char_count": 338,
+        "word_count": 36,
+        "image_count": 2,
+        "preview": "                                                                                                                Q64.What is the complexity of insertio"
+      },
+      {
+        "page": 15,
+        "char_count": 1984,
+        "word_count": 344,
+        "image_count": 0,
+        "preview": "pass will require 2 comparisons, and so on until the last pass which will require (n-1)  comparisons. In general, the kth pass will require k-1 compar"
+      },
+      {
+        "page": 16,
+        "char_count": 2592,
+        "word_count": 474,
+        "image_count": 0,
+        "preview": "  Ans : Suppose that the number of digits in the largest number of the given array is s  and the number of passes to be performed is n. Then, the numb"
+      },
+      {
+        "page": 17,
+        "char_count": 1639,
+        "word_count": 251,
+        "image_count": 0,
+        "preview": "  Q71. What is the complexity of quicksort algorithm?    Ans : Finding the location of the element that splits the array into two sections is an  O(n)"
+      },
+      {
+        "page": 18,
+        "char_count": 399,
+        "word_count": 52,
+        "image_count": 2,
+        "preview": "                                                                                                        Q75.What is the complexity of insertion sort? "
+      },
+      {
+        "page": 19,
+        "char_count": 1381,
+        "word_count": 214,
+        "image_count": 0,
+        "preview": "  Therefore, the total number of comparisons are:  F(n)=(n-1)+(n-2)+\u2026\u2026+(n-k)+\u20263+2+1    =n(n-1)/2  Thus, the complexity is O(n2)    Q76. Write a Sub Al"
+      },
+      {
+        "page": 20,
+        "char_count": 1892,
+        "word_count": 333,
+        "image_count": 0,
+        "preview": "  Q79.  Name some operations on Linked Lists.  The main operations that are performed on a linked list are the following:  \uf0b7  Traversing and searching"
+      },
+      {
+        "page": 21,
+        "char_count": 2522,
+        "word_count": 460,
+        "image_count": 0,
+        "preview": "  i.  Sort the vertices in V-S according to the current best estimate of  their distance from the source,     ii.  Add u, the closest vertex in V-S, t"
+      },
+      {
+        "page": 22,
+        "char_count": 1552,
+        "word_count": 265,
+        "image_count": 1,
+        "preview": "  Q89. List the steps to construct a  forest. Ans: The steps are:    1. Construct a forest - with each node in a separate tree.   2. Place the edges i"
+      },
+      {
+        "page": 23,
+        "char_count": 1774,
+        "word_count": 325,
+        "image_count": 1,
+        "preview": "  Q93. What are complete trees?  Ans:      This forms a complete tree,  whose height is defined as the  number of links from the root  to the deepest "
+      },
+      {
+        "page": 24,
+        "char_count": 1495,
+        "word_count": 337,
+        "image_count": 0,
+        "preview": "    gets ( str ) ;      name[i] = ( char * ) malloc ( strlen ( str ) + 1 ) ;      strcpy ( name[i], str ) ;    }      printf ( \"\\nThe strings are:\" ) "
+      },
+      {
+        "page": 25,
+        "char_count": 1241,
+        "word_count": 245,
+        "image_count": 0,
+        "preview": "    {        if ( temp -> data <= num && ( temp -> link -> data > num ||                       temp -> link ==  NULL ))        {          r -> link = "
+      },
+      {
+        "page": 26,
+        "char_count": 1502,
+        "word_count": 369,
+        "image_count": 0,
+        "preview": "  clrscr( ) ;      v1 = getnode_write ( 2 ) ;    arr[0] = v1 ;    v1 -> next = v2 = getnode_write ( 3 ) ;    v2 -> next = NULL ;      v1 = getnode_wri"
+      },
+      {
+        "page": 27,
+        "char_count": 1413,
+        "word_count": 309,
+        "image_count": 0,
+        "preview": "struct node * getnode_write ( int val )  {      struct node *newnode ;    newnode = ( struct node * ) malloc ( sizeof ( struct node ) ) ;    newnode -"
+      },
+      {
+        "page": 28,
+        "char_count": 1334,
+        "word_count": 311,
+        "image_count": 0,
+        "preview": "  temp -> v2 = 1 ;    temp -> cost = 4 ;    temp -> next = NULL ;      root = kminstree ( root, 5 ) ;      for ( i = 1 ; i <= 4 ; i++ )      printf ( "
+      },
+      {
+        "page": 29,
+        "char_count": 814,
+        "word_count": 161,
+        "image_count": 0,
+        "preview": "{    if ( count[i] < count[j] )      stree[i] = j ;    else    {      stree[j] = i ;      if ( count[i] == count[j] )        count[j]++ ;    }  }    v"
+      },
+      {
+        "page": 30,
+        "char_count": 275,
+        "word_count": 62,
+        "image_count": 0,
+        "preview": "    randomize( ) ;      for ( i = 0 ; i < noofr ; i++ )    {      j = random ( 1000 ) ;      fwrite ( &j, sizeof ( int ), 1, fp ) ;      printf ( \"%d\\"
+      }
+    ]
+  },
+  {
+    "path": "SOURCE/DSA-20260930T180448Z-1-001/DSA/_OBJECTIVE TYPE QUESTIONS.pdf",
+    "size": 889525,
+    "sha256": "bac19320c7a6474eab513aaff839bf1927f2e5d3457634c523b2a5c6b71d0c92",
+    "page_count": 187,
+    "total_char_count": 249472,
+    "total_images": 29,
+    "header_sample": "DC08                                                                                                                   DATA STRUCTURES \n \n \n1\n \nTYPICAL QUESTIONS & ANSWERS \n \nPART I \nOBJECTIVE TYPE QUESTIONS \n \nEach Question carries 2 marks. \n \nQ.1  If h is any hashing function and is used to hash n keys in to a table of size m, where n<=m, the \nexpected number of collisions involving a particular key x is : \n \n \n \n \n  \n(A)  less than 1. \n(B)  less than n. \n \n \n \n(C)  less than m. \n(D)  less than n/2. \n \n \n \n            Ans:A \nQ.2  \nLet A be an adjacency matrix of a graph G.  The \nth\nij\n entry",
+    "pages_info": [
+      {
+        "page": 1,
+        "char_count": 1843,
+        "word_count": 237,
+        "image_count": 0,
+        "preview": "DC08                                                                                                                   DATA STRUCTURES      1   TYPICA"
+      },
+      {
+        "page": 2,
+        "char_count": 1770,
+        "word_count": 281,
+        "image_count": 0,
+        "preview": "DC08                                                                                                                   DATA STRUCTURES      2 Q.5  You"
+      },
+      {
+        "page": 3,
+        "char_count": 1609,
+        "word_count": 253,
+        "image_count": 0,
+        "preview": "DC08                                                                                                                   DATA STRUCTURES      3    Ans: "
+      },
+      {
+        "page": 4,
+        "char_count": 1558,
+        "word_count": 243,
+        "image_count": 0,
+        "preview": "DC08                                                                                                                   DATA STRUCTURES      4 (C)  tre"
+      },
+      {
+        "page": 5,
+        "char_count": 1510,
+        "word_count": 211,
+        "image_count": 0,
+        "preview": "DC08                                                                                                                   DATA STRUCTURES      5         "
+      },
+      {
+        "page": 6,
+        "char_count": 1540,
+        "word_count": 230,
+        "image_count": 0,
+        "preview": "DC08                                                                                                                   DATA STRUCTURES      6 Q.35  On"
+      },
+      {
+        "page": 7,
+        "char_count": 1481,
+        "word_count": 212,
+        "image_count": 0,
+        "preview": "DC08                                                                                                                   DATA STRUCTURES      7         "
+      },
+      {
+        "page": 8,
+        "char_count": 1591,
+        "word_count": 268,
+        "image_count": 0,
+        "preview": "DC08                                                                                                                   DATA STRUCTURES      8 Q.50  Le"
+      },
+      {
+        "page": 9,
+        "char_count": 1566,
+        "word_count": 215,
+        "image_count": 0,
+        "preview": "DC08                                                                                                                   DATA STRUCTURES      9 Q.55  An"
+      },
+      {
+        "page": 10,
+        "char_count": 2109,
+        "word_count": 321,
+        "image_count": 0,
+        "preview": "DC08                                                                                                                   DATA STRUCTURES      10 Q.63  W"
+      },
+      {
+        "page": 11,
+        "char_count": 1660,
+        "word_count": 262,
+        "image_count": 0,
+        "preview": "DC08                                                                                                                   DATA STRUCTURES      11   Else "
+      },
+      {
+        "page": 12,
+        "char_count": 1434,
+        "word_count": 220,
+        "image_count": 0,
+        "preview": "DC08                                                                                                                   DATA STRUCTURES      12  Q.72  "
+      },
+      {
+        "page": 13,
+        "char_count": 1466,
+        "word_count": 219,
+        "image_count": 0,
+        "preview": "DC08                                                                                                                   DATA STRUCTURES      13 Q.79  A"
+      },
+      {
+        "page": 14,
+        "char_count": 1708,
+        "word_count": 243,
+        "image_count": 0,
+        "preview": "DC08                                                                                                                   DATA STRUCTURES      14       ("
+      },
+      {
+        "page": 15,
+        "char_count": 799,
+        "word_count": 124,
+        "image_count": 0,
+        "preview": "DC08                                                                                                                   DATA STRUCTURES      15 Q.93  T"
+      },
+      {
+        "page": 16,
+        "char_count": 2822,
+        "word_count": 450,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        16 PART II  DESCRIPTIVES      Q.1   What is an algorithm?  What are the characteristics of a good algorithm?  (4)    An"
+      },
+      {
+        "page": 17,
+        "char_count": 1578,
+        "word_count": 284,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        17 more time to complete its execution. Thus we may have to compromise one to  improve the other. That is, we may be ab"
+      },
+      {
+        "page": 18,
+        "char_count": 1227,
+        "word_count": 156,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        18 A function to find transpose of a sparse matrix is:  void  transpose(x,r,y)  int x[3][3],y[3][3],r;  {       int i,j"
+      },
+      {
+        "page": 19,
+        "char_count": 1903,
+        "word_count": 335,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        19 Q.6    Write an algorithm to evaluate a postfix expression.  Execute your algorithm  using the following postfix exp"
+      },
+      {
+        "page": 20,
+        "char_count": 1709,
+        "word_count": 288,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        20 insert(queue,n,front,rear,item)  This procedure inserts an element item into a queue.  1. If front = 1 and rear = n,"
+      },
+      {
+        "page": 21,
+        "char_count": 1842,
+        "word_count": 320,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        21 5. if the pointer to the left is not NULL move  the pointer to the node on the left  6. if the pointer to the left i"
+      },
+      {
+        "page": 22,
+        "char_count": 1016,
+        "word_count": 113,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        22    if(*s= =NULL)     {     *s=(struct link *)malloc(sizeof(struct node *z));       z=*s;     }     else     {  z-->l"
+      },
+      {
+        "page": 23,
+        "char_count": 1431,
+        "word_count": 248,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        23  Ans:       A binary search tree B is a binary tree each node of which satisfies the following  conditions:  1. The "
+      },
+      {
+        "page": 24,
+        "char_count": 1379,
+        "word_count": 253,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        24 The expression tree for the expression: (a \u2013 b ) / ( ( c * d ) + e))                                     The travers"
+      },
+      {
+        "page": 25,
+        "char_count": 1026,
+        "word_count": 179,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        25           2. In the following tree, after inserting 10 the balance factor of tree at root node  is +2 so the tree is"
+      },
+      {
+        "page": 26,
+        "char_count": 912,
+        "word_count": 164,
+        "image_count": 1,
+        "preview": "DC08    DATA STRUCTURES        26 (c) Rotate the resultant tree 450 to mark clearly left and right subtrees.   A general tree shown in figure (a) conv"
+      },
+      {
+        "page": 27,
+        "char_count": 909,
+        "word_count": 119,
+        "image_count": 1,
+        "preview": "DC08    DATA STRUCTURES        27                       Adjacency Matrix representation: This representation consists of |V|*|V| matrix  A= (aij) such"
+      },
+      {
+        "page": 28,
+        "char_count": 1114,
+        "word_count": 166,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        28   Ans:                      Depth first search (DFS):                                      Depth first search (DFS) "
+      },
+      {
+        "page": 29,
+        "char_count": 1239,
+        "word_count": 167,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        29   For n=4, let A, B and C denotes the initial, temp and final peg. Using above  algorithm, the recursive solution fo"
+      },
+      {
+        "page": 30,
+        "char_count": 832,
+        "word_count": 120,
+        "image_count": 3,
+        "preview": "DC08    DATA STRUCTURES        30       Ans:    The different ways of representing a graph is:  Adjacency list representation: This representation of "
+      },
+      {
+        "page": 31,
+        "char_count": 2998,
+        "word_count": 527,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        31 Q.19   Write short notes on any FOUR:-  (i)  B Tree.  (ii)  Time Complexity, Big O notation.  (iii)  Merge Sort.  (i"
+      },
+      {
+        "page": 32,
+        "char_count": 1947,
+        "word_count": 339,
+        "image_count": 2,
+        "preview": "DC08    DATA STRUCTURES        32 called threaded binary tree. There are many ways to thread a binary tree each of  these ways either correspond eithe"
+      },
+      {
+        "page": 33,
+        "char_count": 2431,
+        "word_count": 406,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        33 similar to one variable except it is identified by an index value instead of a name.  An index value is a number use"
+      },
+      {
+        "page": 34,
+        "char_count": 830,
+        "word_count": 106,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        34  Ans:                The expression is:       ((a+b)+c*(d+e)+f)*(g+h)                          The postfix expressio"
+      },
+      {
+        "page": 35,
+        "char_count": 1253,
+        "word_count": 208,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        35 inserting an element is as follows:   insert(q,x)  {   p=getnode();   info(p) = x;   next(p) = null;   if(q.rear == "
+      },
+      {
+        "page": 36,
+        "char_count": 2128,
+        "word_count": 349,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        36 Q.25   Two Binary Trees are similar if they are both empty or if they are both non- empty and left and right sub tre"
+      },
+      {
+        "page": 37,
+        "char_count": 847,
+        "word_count": 154,
+        "image_count": 1,
+        "preview": "DC08    DATA STRUCTURES        37                                     Ans:    Adjacency matrix for the given graph     A  B  C  D  E  F  G  H  I      "
+      },
+      {
+        "page": 38,
+        "char_count": 688,
+        "word_count": 77,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        38 iii. Three vertices:-                           A                B                         C  iv. Four vertices:-   "
+      },
+      {
+        "page": 39,
+        "char_count": 1474,
+        "word_count": 223,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        39 =3(3-1)/2  =3(2)/2  =6/2  =3  Therefore, number of edges = 3.  iv. When n=4,  Then number of edges  =n(n-1)/2  =4(4-"
+      },
+      {
+        "page": 40,
+        "char_count": 1605,
+        "word_count": 299,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        40      x[j+1]=hold;     }   }  }    Q.31   Which sorting algorithm is easily adaptable to singly linked lists? Explain"
+      },
+      {
+        "page": 41,
+        "char_count": 2452,
+        "word_count": 402,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        41 Q.34   What do you mean by complexity of an algorithm?  Explain the meaning of  worst case analysis and best case an"
+      },
+      {
+        "page": 42,
+        "char_count": 1469,
+        "word_count": 273,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        42                 Ans:     A header linked list is a linked list which always contains a special node, called  the hea"
+      },
+      {
+        "page": 43,
+        "char_count": 1471,
+        "word_count": 415,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        43  printf ( \"%d\\t\", v ) ;   q = * ( p + v - 1 ) ;   while ( q != NULL )   {     if ( visited[q -> data - 1] == FALSE )"
+      },
+      {
+        "page": 44,
+        "char_count": 1231,
+        "word_count": 224,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        44 dividing element. Then the algorithm is repeated separately for these two sub  array.  The given data is :-         "
+      },
+      {
+        "page": 45,
+        "char_count": 708,
+        "word_count": 120,
+        "image_count": 1,
+        "preview": "DC08    DATA STRUCTURES        45   Q.43   The following values are to be stored in a hash table        25, 42, 96, 101, 102, 162, 197       Describe "
+      },
+      {
+        "page": 46,
+        "char_count": 1463,
+        "word_count": 297,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        46 Ans:   /* structure containing a data part and link part */  struct node  {   int data ;   struct node *link ;  } ; "
+      },
+      {
+        "page": 47,
+        "char_count": 2418,
+        "word_count": 418,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        47 with a right child R(N) is processed, set PTR =  R(N) (by assigning PTR = RIGHT[PTR] and return  to Step(a)).    Q.4"
+      },
+      {
+        "page": 48,
+        "char_count": 1230,
+        "word_count": 200,
+        "image_count": 1,
+        "preview": "DC08    DATA STRUCTURES        48 traversal. Furthermore, we can define the depth of a given vertex to be the length  of the shortest path from the st"
+      },
+      {
+        "page": 49,
+        "char_count": 3420,
+        "word_count": 601,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        49 operations are all O(log n), where n is the number of items in the tree. The shapes  of B-Trees are constrained for "
+      },
+      {
+        "page": 50,
+        "char_count": 2977,
+        "word_count": 486,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        50 Ans:         The running time of an algorithm depends upon various characteristics and slight  variation in the char"
+      },
+      {
+        "page": 51,
+        "char_count": 1210,
+        "word_count": 186,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        51 The postfix expression is:-  (ab+cd+*ef+g^/)    Q.52  Let P be a pointer to a singly linked list. Show how this list"
+      },
+      {
+        "page": 52,
+        "char_count": 1589,
+        "word_count": 222,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        52             fatal_error(\"Out of space!!!\");        else       {              tmp_cell->element = x;              tmp"
+      },
+      {
+        "page": 53,
+        "char_count": 1016,
+        "word_count": 188,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        53         parent=s div 2;  }    Q.55   Construct a binary tree whose nodes in inorder and preorder are given as  follo"
+      },
+      {
+        "page": 54,
+        "char_count": 1146,
+        "word_count": 175,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        54   *    *        mn+    (    *(       mn+    k    *(       mn+k    +    *(+       mn+k    p    *(+       mn+kp    )  "
+      },
+      {
+        "page": 55,
+        "char_count": 1808,
+        "word_count": 359,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        55 {    int arr[MAX] ;    int front, rear, i, n ;    clrscr( ) ;    /* initialises data members */    front = rear = -1"
+      },
+      {
+        "page": 56,
+        "char_count": 994,
+        "word_count": 204,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        56  {     printf ( \"\\nDeque is full.\\n\" ) ;     return ;  }   if ( *pfront == -1 )   {     *pfront = *prear = 0 ;     a"
+      },
+      {
+        "page": 57,
+        "char_count": 1080,
+        "word_count": 195,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        57     {        k = i ;        if ( k == MAX - 1 )          arr[k] = 0 ;        else          arr[k] = arr[i + 1] ;    "
+      },
+      {
+        "page": 58,
+        "char_count": 2245,
+        "word_count": 397,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        58 {                         /* displays elements of a  deque */   int i ;   printf ( \"\\n front->\" ) ;   for ( i = 0 ; "
+      },
+      {
+        "page": 59,
+        "char_count": 1969,
+        "word_count": 364,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        59 to the address 1247 by selecting digits in position 1,2,4 and 7 then by reversing  their order.    Q.59   What is th"
+      },
+      {
+        "page": 60,
+        "char_count": 1044,
+        "word_count": 151,
+        "image_count": 1,
+        "preview": "DC08    DATA STRUCTURES        60 Where w(v, x) is the weight of the edge joining the  vertex v and x. If there is no direct edge joining  v and x the"
+      },
+      {
+        "page": 61,
+        "char_count": 1434,
+        "word_count": 159,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        61       P={A,B,E}, T={C,D,F,G,H,I,J,K,L,M,Z}  B\u2260Z so calculate new labels for vertices in T  L(C)=min(6, 2+\u221e)=6  L(J)="
+      },
+      {
+        "page": 62,
+        "char_count": 1843,
+        "word_count": 259,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        62 L\u2260Z so calculate new labels for vertices in T  L(C)=min(6, 5+\u221e)=6  L(J)= min(10,5+2)=7  L(D)=\u221e  L(M)=min(7,5+3)=7  L"
+      },
+      {
+        "page": 63,
+        "char_count": 2133,
+        "word_count": 384,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        63      F, S, Q, K, C, L, H, T, V, W, M, R, N , P, A, B, X, Y, D, Z, E  in the order to  an empty B-tree of degree-3.  "
+      },
+      {
+        "page": 64,
+        "char_count": 1753,
+        "word_count": 246,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        64     if stack is empty                flag=false;                printf(\u201cMore right parenthesis than left  parenthise"
+      },
+      {
+        "page": 65,
+        "char_count": 663,
+        "word_count": 85,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        65 c[k]=a[i];  i++;  k++;  }  if(a[i]>b[j])  {  c[k]=b[j];  j++;  k++;  }  if(a[i]==b[j])  {  c[k]=a[i];  k++;  i++;  j"
+      },
+      {
+        "page": 66,
+        "char_count": 1168,
+        "word_count": 166,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        66 {   int data;   struct node *link  }  struct node *p,*q;  //Inserting a node at the end(append)  append(struct node "
+      },
+      {
+        "page": 67,
+        "char_count": 1109,
+        "word_count": 189,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        67   1  0  5   2  2  6    2  3  9    where first row represent the dimension of matrix and last column tells the  numbe"
+      },
+      {
+        "page": 68,
+        "char_count": 1655,
+        "word_count": 369,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        68 void initsparse ( struct sparse *p )             /*  initializes structure elements */  {      int i ;  for ( i = 0 "
+      },
+      {
+        "page": 69,
+        "char_count": 1124,
+        "word_count": 202,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        69    * ( p -> sp + i ) = n ;   }  }    Q.69   Given the following inorder and preorder traversal reconstruct a binary "
+      },
+      {
+        "page": 70,
+        "char_count": 1559,
+        "word_count": 258,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        70  head = temp;  }  else if(p == tail)  {   temp->left = tail;   temp->right = NULL;   tail->right = temp;   tail = te"
+      },
+      {
+        "page": 71,
+        "char_count": 1795,
+        "word_count": 295,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        71 The idea is to place the record in the next available position in the array. This  method is called linear probing. "
+      },
+      {
+        "page": 72,
+        "char_count": 1382,
+        "word_count": 253,
+        "image_count": 1,
+        "preview": "DC08    DATA STRUCTURES        72     Ans:         A binary tree is a tree in which no node can have more than two children.   Figure below shows that"
+      },
+      {
+        "page": 73,
+        "char_count": 780,
+        "word_count": 156,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        73 If graph has n vertices then spanning tree has exactly n-1 edges.  A minimum spanning tree of an undirected graph G "
+      },
+      {
+        "page": 74,
+        "char_count": 906,
+        "word_count": 170,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        74 10.  (b,c)  10  Add to T     T is required spanning tree.    Q.75   What are B-trees? Draw a B-tree of order 3 for t"
+      },
+      {
+        "page": 75,
+        "char_count": 455,
+        "word_count": 92,
+        "image_count": 2,
+        "preview": "DC08    DATA STRUCTURES        75 Ans:    Depth First Transversal     1 \u2013            Mark 1  1 \u2013 3          Mark 3  1 \u2013 3 \u2013 2    Mark 2          1 is "
+      },
+      {
+        "page": 76,
+        "char_count": 1064,
+        "word_count": 178,
+        "image_count": 1,
+        "preview": "DC08    DATA STRUCTURES        76 Breadth First Transversal is:                     1 \u2013 3 \u2013 2 \u2013 4 - 6 \u2013 5     Q.77   Construct a complete binary tree "
+      },
+      {
+        "page": 77,
+        "char_count": 1849,
+        "word_count": 342,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        77 \u2022  Floating-point Stores real numbers (fractional values). Perfect for storing  bank deposits where pennies (fractio"
+      },
+      {
+        "page": 78,
+        "char_count": 1783,
+        "word_count": 282,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        78     +      [ ( +        B      [ ( +      AB      )      [        AB+      /      [ /           (      [ / (      C "
+      },
+      {
+        "page": 79,
+        "char_count": 2130,
+        "word_count": 354,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        79  int i ;   for ( i = MAX - 1 ; i >= pos ; i-- )     arr[i] = arr[i - 1] ;   arr[i] = num ;  }  void del ( int *arr, "
+      },
+      {
+        "page": 80,
+        "char_count": 1671,
+        "word_count": 307,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        80   Q.83   Show the various passes of bubble sort on an unsorted list 11, 15, 2, 13, 6  (8)    Ans:    The given data "
+      },
+      {
+        "page": 81,
+        "char_count": 2086,
+        "word_count": 357,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        81 denote by 1. Otherwise, the time to mergesort n numbers is equal to the time to do  two recursive mergesorts of size"
+      },
+      {
+        "page": 82,
+        "char_count": 2514,
+        "word_count": 421,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        82 Q.86   Describe the concept of binary search technique? Is it efficient than sequential  search?    (8)    Ans:     "
+      },
+      {
+        "page": 83,
+        "char_count": 1592,
+        "word_count": 236,
+        "image_count": 1,
+        "preview": "DC08    DATA STRUCTURES        83     Ans:  The algorithm walks through the tree data structure and performs some  computation at each node in the tre"
+      },
+      {
+        "page": 84,
+        "char_count": 1432,
+        "word_count": 244,
+        "image_count": 1,
+        "preview": "DC08    DATA STRUCTURES        84   }    }            Q.90   Explain insertion into a B-tree.                                                        ("
+      },
+      {
+        "page": 85,
+        "char_count": 617,
+        "word_count": 71,
+        "image_count": 2,
+        "preview": "DC08    DATA STRUCTURES        85   Ans:    Adjacency Matrix representation: This representation consists of |V|*|V| matrix  A=(aij) such that        "
+      },
+      {
+        "page": 86,
+        "char_count": 2491,
+        "word_count": 370,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        86 1. Top down-A top down design approach starts by identifying the major  components of the system, decomposing them i"
+      },
+      {
+        "page": 87,
+        "char_count": 1420,
+        "word_count": 233,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        87 S3 : for (k=1; k<= j; k++)  S4 :  y++;  Frequency counts of                 S1=n                 S2 = 1+ (1+2)+ (1+2"
+      },
+      {
+        "page": 88,
+        "char_count": 2214,
+        "word_count": 384,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        88  Ans.  (i)  Conversion of infix to postfix form  (ii)  Reversing of a line.  (iii)  Removal of recursion  (iv)  Eval"
+      },
+      {
+        "page": 89,
+        "char_count": 1321,
+        "word_count": 221,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        89  q = upper ;   i = a[lower] ;   while ( q >= p )   {     while ( a[p] < i )       p++ ;     while ( a[q] > i )      "
+      },
+      {
+        "page": 90,
+        "char_count": 1580,
+        "word_count": 296,
+        "image_count": 1,
+        "preview": "DC08    DATA STRUCTURES        90 Ans.  table size is 11  h(12) = (24+5) mod 11 = 29 mod 11 = 7  h(44) = (88+5) mod 11 = 93 mod 11 = 5  h(13) = (26+5)"
+      },
+      {
+        "page": 91,
+        "char_count": 980,
+        "word_count": 151,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        91 3)  Similarly the right subtree RTA of G consists of the nodes P,D,E,R,H and P  is  the root of RTA, that is P is th"
+      },
+      {
+        "page": 92,
+        "char_count": 242,
+        "word_count": 45,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        92 Root B                        Let us consider RTB              Pre :     In:         Root is A                      "
+      },
+      {
+        "page": 93,
+        "char_count": 321,
+        "word_count": 62,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        93 Let us consider     Pre:               In :                   Now let us consider RTA      Pre:         In:         "
+      },
+      {
+        "page": 94,
+        "char_count": 649,
+        "word_count": 122,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        94   let us now consider HR    Pre:       In:                                 Q105.  Convert the following infix expres"
+      },
+      {
+        "page": 95,
+        "char_count": 1530,
+        "word_count": 238,
+        "image_count": 1,
+        "preview": "DC08    DATA STRUCTURES        95 Q106.  Write an algorithm to delete a particular node from binary search tree. Trace  your algorithm to delete a nod"
+      },
+      {
+        "page": 96,
+        "char_count": 1497,
+        "word_count": 250,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        96 Set SAVE:=PTR and PTR:=LEFT[PTR].     [End of loop.]  (c) Set SUC : = PTR and PARSUC:=SAVE.  2. [Delete inorder succ"
+      },
+      {
+        "page": 97,
+        "char_count": 859,
+        "word_count": 170,
+        "image_count": 1,
+        "preview": "DC08    DATA STRUCTURES        97       Address of 12   SAVE: = address of 10  SAVE: = address of 12  PTR = address of 11  SUC = ADDRESS OF 11  PAR SU"
+      },
+      {
+        "page": 98,
+        "char_count": 1353,
+        "word_count": 237,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        98       (ii) Reachability Matrix (Path Matrix)            1  2  3  4  5  6                         1  0  1  1  1  0  1"
+      },
+      {
+        "page": 99,
+        "char_count": 2039,
+        "word_count": 331,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        99 4.  EXIT  MIN (A, K, N, LOC)  An array A is in memory. This procedure finds the  location LOC of the smallest elemen"
+      },
+      {
+        "page": 100,
+        "char_count": 1631,
+        "word_count": 311,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        100                  (ii)  Column Major Ordering for Array                Let a be a 2 dimensional m x n array      Col"
+      },
+      {
+        "page": 101,
+        "char_count": 1336,
+        "word_count": 223,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        101   Where M is a one bit mark field to indicate whether or no edge has been  examined.  Let the graph be             "
+      },
+      {
+        "page": 102,
+        "char_count": 1918,
+        "word_count": 314,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        102                     X   O                       X                          O              X  O  X    X  O      X  O"
+      },
+      {
+        "page": 103,
+        "char_count": 1376,
+        "word_count": 95,
+        "image_count": 1,
+        "preview": "DC08    DATA STRUCTURES        103 First fit method    Start Address  Length                 0                              a                         "
+      },
+      {
+        "page": 104,
+        "char_count": 2092,
+        "word_count": 346,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        104   Q112. How memory is freed using Boundary tag method in the context of Dynamic     memory management?             "
+      },
+      {
+        "page": 105,
+        "char_count": 1106,
+        "word_count": 137,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        105 int top1=-1,top2=MAX;  void push1(int elm)   {    if((top2-top1)==1)     {      clrscr();      printf(\"\\n Array has"
+      },
+      {
+        "page": 106,
+        "char_count": 1383,
+        "word_count": 191,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        106 Ans.  Add an element in Circular Queue  # define  MAXQUEUE 100  struct queue{    int items[MAXQUEUE];    int front,"
+      },
+      {
+        "page": 107,
+        "char_count": 734,
+        "word_count": 114,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        107 the left subtrees has height greater than, equal to, or less than that of the right  subtree.  The definition does "
+      },
+      {
+        "page": 108,
+        "char_count": 1203,
+        "word_count": 209,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        108   Item x is right high. The action needed in this case is called a left  rotation; we have rotated the node x upwar"
+      },
+      {
+        "page": 109,
+        "char_count": 1149,
+        "word_count": 195,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        109 The new balance factors for r and x depends on the previous balance factor from  w.    Q116. Show the linked repres"
+      },
+      {
+        "page": 110,
+        "char_count": 755,
+        "word_count": 126,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        110 {    coef = ptr1 -> coeff;  powe = ptr1 -> power;  ptr1 = ptr1-> next;  }  else if(ptr1 -> power < ptr2-> power)  {"
+      },
+      {
+        "page": 111,
+        "char_count": 1285,
+        "word_count": 217,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        111             Like this we keep continuing and finally we get                       Q117. Write short notes on the fo"
+      },
+      {
+        "page": 112,
+        "char_count": 1816,
+        "word_count": 327,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        112 (ii) Graph Traversal  In many problems we wish to investigate all the vertices in a graph in some  systematic order"
+      },
+      {
+        "page": 113,
+        "char_count": 221,
+        "word_count": 32,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        113                                       FOREST                                              BINARY TREE              "
+      },
+      {
+        "page": 114,
+        "char_count": 2491,
+        "word_count": 396,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        114 (iv)  Double Linked List  In a doubly linked list, also called as 2 way list, each node is divided into 3 parts.  T"
+      },
+      {
+        "page": 115,
+        "char_count": 2588,
+        "word_count": 431,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        115 First it specifies the amount of storage that must be set aside for object declared  with that type.   Second it sp"
+      },
+      {
+        "page": 116,
+        "char_count": 1634,
+        "word_count": 321,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        116 A m x n matrix A is said to be sparse if MOST of its elements are zero. A matrix  that is not sparse is called dens"
+      },
+      {
+        "page": 117,
+        "char_count": 1663,
+        "word_count": 295,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        117   Method to calculate address of any element ajk of a matrix  stored in  memory.  Let us consider 2 dimensional arr"
+      },
+      {
+        "page": 118,
+        "char_count": 672,
+        "word_count": 77,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        118          printf(\"\\n\\n  %d Is Being Deleted ...\",root->item);           free(root);           return;          }    "
+      },
+      {
+        "page": 119,
+        "char_count": 209,
+        "word_count": 24,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        119       72                    35                                                                        50  33  22  4"
+      },
+      {
+        "page": 120,
+        "char_count": 971,
+        "word_count": 143,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        120       40                                    Q124.  Can a Queue be represented by circular linked list with only one"
+      },
+      {
+        "page": 121,
+        "char_count": 1838,
+        "word_count": 312,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        121             Where a node of the form    Coefficient of the term Power of x Link to next node   A linked list can be"
+      },
+      {
+        "page": 122,
+        "char_count": 2448,
+        "word_count": 442,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        122 2)  It should distribute the keys uniformly across the hash table i.e. it should  keep the number. of collisions as"
+      },
+      {
+        "page": 123,
+        "char_count": 1159,
+        "word_count": 172,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        123 functions. The nodes of the list are scattered in the memory with links to give  linear order to the list.  (i)    "
+      },
+      {
+        "page": 124,
+        "char_count": 1405,
+        "word_count": 240,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        124 Set FRONT : = 1 and REAR : = 1,  Else if REAR = N then;  Set REAR : = 1  Else:   Set REAR : = REAR + 1  [End of if "
+      },
+      {
+        "page": 125,
+        "char_count": 1912,
+        "word_count": 210,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        125           5                                                                                                  4    6"
+      },
+      {
+        "page": 126,
+        "char_count": 506,
+        "word_count": 91,
+        "image_count": 1,
+        "preview": "DC08    DATA STRUCTURES        126    First we create the heap from the above binary tree:-                          Now the above tree is a heap. The"
+      },
+      {
+        "page": 127,
+        "char_count": 301,
+        "word_count": 49,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        127 After reheapifying                          13  12 6  10  15  20  25                          12  10 6  13  15  20 "
+      },
+      {
+        "page": 128,
+        "char_count": 1335,
+        "word_count": 201,
+        "image_count": 1,
+        "preview": "DC08    DATA STRUCTURES        128 Q132.  Give the binary search algorithm.                   (7)     Ans.    Binary Search Algorithm  1. if (low > hi"
+      },
+      {
+        "page": 129,
+        "char_count": 130,
+        "word_count": 7,
+        "image_count": 2,
+        "preview": "DC08    DATA STRUCTURES        129         Ans.                                           Adjacency Matrix                        "
+      },
+      {
+        "page": 130,
+        "char_count": 1080,
+        "word_count": 89,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        130 Adjacency List                                                                                                     "
+      },
+      {
+        "page": 131,
+        "char_count": 744,
+        "word_count": 108,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        131                   (i)  (5x - 2) * (3a - b)^ 2                            ii) the scope of exponential(^) is the tre"
+      },
+      {
+        "page": 132,
+        "char_count": 1581,
+        "word_count": 256,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        132  symb  = next input character;   if (symb is an operand)   push (opndstk, symb);   else      {      /* symb is an o"
+      },
+      {
+        "page": 133,
+        "char_count": 1191,
+        "word_count": 215,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        133 An ordinary variable ofa  simple data type can store a single element only  Representation of Array in memory  Let "
+      },
+      {
+        "page": 134,
+        "char_count": 1495,
+        "word_count": 267,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        134 Ans.    A[20, 10]    W = 4 words    Base (A) = 100    A [11, 5]  \u2192 in row major m x n  loc [ a [i] [j] = base (a) +"
+      },
+      {
+        "page": 135,
+        "char_count": 804,
+        "word_count": 86,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        135 int top1=-1,top2=MAX;  void push1(int elm)   {    if((top2-top1)==1)     {      clrscr();      printf(\"\\n Array has"
+      },
+      {
+        "page": 136,
+        "char_count": 1442,
+        "word_count": 233,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        136 Q141.  Write an algorithm to insert a node p at the end of a linked list.      (5)    Ans.    Algorithm to Insert a"
+      },
+      {
+        "page": 137,
+        "char_count": 468,
+        "word_count": 67,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        137 Ans.   Inorder :       LTA    Root      RTA  d,b,g,e,h    a                 c,n,f    Preorder :    Root   LTA      "
+      },
+      {
+        "page": 138,
+        "char_count": 352,
+        "word_count": 61,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        138                               Let us consider RTA  In order : c,n,f,RTC  Pre order :  c, F  , n  Hence the tree is "
+      },
+      {
+        "page": 139,
+        "char_count": 1653,
+        "word_count": 260,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        139   Q144.  Write an algorithm that counts number of nodes in a linked list.       (5)    Ans.  Algorithm to Count No."
+      },
+      {
+        "page": 140,
+        "char_count": 1797,
+        "word_count": 253,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        140 2. [Return node to AVAJL list]  Set FORW[LOC]:=AVAIL & AVAIL:=LOC  3. Exit.    Q147.    Write an algorithm to sort "
+      },
+      {
+        "page": 141,
+        "char_count": 1146,
+        "word_count": 188,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        141 If  N>1, then: TOP+1,LOWER [1]:=1, UPPER [1]: =N  3. Repeat steps 4 to 7 while TOP != NULL.  4. [Pop sublist from s"
+      },
+      {
+        "page": 142,
+        "char_count": 305,
+        "word_count": 46,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        142 First let us make the heap.                                                                                        "
+      },
+      {
+        "page": 143,
+        "char_count": 536,
+        "word_count": 82,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        143   The above is new heap satisfying all conditions of heap.          Place 88 at its proper position and replace 40 "
+      },
+      {
+        "page": 144,
+        "char_count": 347,
+        "word_count": 47,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        144           66                                      65                                                  65  50  60  3"
+      },
+      {
+        "page": 145,
+        "char_count": 424,
+        "word_count": 61,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        145             60                                50                                45                      50  45  40 "
+      },
+      {
+        "page": 146,
+        "char_count": 485,
+        "word_count": 69,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        146           40                                33                        30                  20          Finally we ha"
+      },
+      {
+        "page": 147,
+        "char_count": 1760,
+        "word_count": 317,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        147   Q149.   Write a recursive function to count the number of nodes in a binary tree.         (7)      Ans.          "
+      },
+      {
+        "page": 148,
+        "char_count": 1302,
+        "word_count": 246,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        148 threads we shall find it easy to do an inorder traversal of the tree, since we need  only follow either an ordinary"
+      },
+      {
+        "page": 149,
+        "char_count": 1507,
+        "word_count": 260,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        149 \u0002 The key in the root precedes all keys (if any) in its right sub tree.  \u0002 The left and right sub trees of the root"
+      },
+      {
+        "page": 150,
+        "char_count": 2115,
+        "word_count": 375,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        150 Hash Function  A hash function h is simply a mathematical formula that manipulates the key in  some form to compute"
+      },
+      {
+        "page": 151,
+        "char_count": 1726,
+        "word_count": 277,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        151       1      2    3                    9      5      4                          6      7      8                    "
+      },
+      {
+        "page": 152,
+        "char_count": 1740,
+        "word_count": 294,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        152                     X  O                        X                          O              X  O  X    X  O      X  O"
+      },
+      {
+        "page": 153,
+        "char_count": 1619,
+        "word_count": 281,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        153 8x100+10x+6  8x3-7x2+5x+15      Ans.  3 methods of representing polynomials using arrays are as follows  (1) if max"
+      },
+      {
+        "page": 154,
+        "char_count": 1431,
+        "word_count": 265,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        154 }  while (p1!= NULL && p2 != NULL)   {     p3       next = p2 ;          p2=p2         next;     p3=p3  next;     p"
+      },
+      {
+        "page": 155,
+        "char_count": 1304,
+        "word_count": 203,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        155 Step 6: Return  Deletion Algorithm for dequeue  Step 1: [check for underflow]      If front = 0 and rear = 0      O"
+      },
+      {
+        "page": 156,
+        "char_count": 1364,
+        "word_count": 175,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        156   Q160.    Implement a stack using linked list. Show both the  PUSH and POP operations.                            "
+      },
+      {
+        "page": 157,
+        "char_count": 1545,
+        "word_count": 290,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        157   13  30  62  73  88  91  0      1      2        3        4      5    To begin with we take low = 0 and high = 5  t"
+      },
+      {
+        "page": 158,
+        "char_count": 249,
+        "word_count": 34,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        158                                                                 81:                                  12  23  88  91"
+      },
+      {
+        "page": 159,
+        "char_count": 229,
+        "word_count": 28,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        159 Heap:                                        Delete 91                                                          23 "
+      },
+      {
+        "page": 160,
+        "char_count": 256,
+        "word_count": 34,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        160   Delete 88                                  Delete 81                                Delete 55                    "
+      },
+      {
+        "page": 161,
+        "char_count": 253,
+        "word_count": 33,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        161 Delete 45                          Delete 39                        Delete 36                        Delete 23     "
+      },
+      {
+        "page": 162,
+        "char_count": 889,
+        "word_count": 158,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        162             Delete 12         Delete 10       List is 10,12,15,23,36,39,45,55,81,88,91.    Q163. What is a Binary S"
+      },
+      {
+        "page": 163,
+        "char_count": 1871,
+        "word_count": 371,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        163 Q164.  Traverse the Binary Search Tree created above in Preorder, Inorder and Postorder.   (7)  Ans.  Preorder:  VL"
+      },
+      {
+        "page": 164,
+        "char_count": 1087,
+        "word_count": 178,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        164 Memory declaration will be   # define Max 50  struct triplet  {  int row;   int col;   float element;  }  struct tr"
+      },
+      {
+        "page": 165,
+        "char_count": 505,
+        "word_count": 40,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        165                                                   X                           Y                                  Z "
+      },
+      {
+        "page": 166,
+        "char_count": 609,
+        "word_count": 47,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        166                                                          X                        Y                              Z "
+      },
+      {
+        "page": 167,
+        "char_count": 489,
+        "word_count": 45,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        167 Move from  X to Y                                      X                                        Y                  "
+      },
+      {
+        "page": 168,
+        "char_count": 455,
+        "word_count": 35,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        168                                       X                                        Y                                 Z "
+      },
+      {
+        "page": 169,
+        "char_count": 1245,
+        "word_count": 215,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        169 Move from  X to Y                                  X                                        Y                      "
+      },
+      {
+        "page": 170,
+        "char_count": 1552,
+        "word_count": 310,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        170 (a)  [Assign element from B to C.] Set C[PTR]  := B[NB].  (b)  [Update pointers.] Set PTR :=  PTR + 1 and  NB := NB"
+      },
+      {
+        "page": 171,
+        "char_count": 2412,
+        "word_count": 424,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        171    [End of If structure.]  4.  Return.  Procedure 4 MERGESORT( A, N)  This algorithm sorts the Nth element array A "
+      },
+      {
+        "page": 172,
+        "char_count": 1588,
+        "word_count": 294,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        172 Methods of Collision Resolution  1)  Collision Resolution by separate chaining   2)  Collision Resolution by open a"
+      },
+      {
+        "page": 173,
+        "char_count": 1183,
+        "word_count": 212,
+        "image_count": 1,
+        "preview": "DC08    DATA STRUCTURES        173 c)   Similarly, the right subtree T2 of F consists of the nodes H, D, B and G,  and D is the root of T2, that is, D"
+      },
+      {
+        "page": 174,
+        "char_count": 397,
+        "word_count": 67,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        174   25:            40:                 132:              100:                    145:                  7:            "
+      },
+      {
+        "page": 175,
+        "char_count": 853,
+        "word_count": 128,
+        "image_count": 1,
+        "preview": "DC08    DATA STRUCTURES        175 18:                    Q171. What is the difference between Prims algorithm and Kruskals algorithm for     finding "
+      },
+      {
+        "page": 176,
+        "char_count": 506,
+        "word_count": 75,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        176   Let us assume distance between H and G to be 0 since distance between them is  not given.    Using Kruskal\u2019s Meth"
+      },
+      {
+        "page": 177,
+        "char_count": 782,
+        "word_count": 190,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        177 Using Prim\u2019s Algorithm    Step 1, 2, 3 are       A  B  C  D  E  F  G  H     A  _  3  \u221d  4  \u221d  \u221d  \u221d  \u221d  B  3  _  1  "
+      },
+      {
+        "page": 178,
+        "char_count": 385,
+        "word_count": 70,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        178  A       3         B         1           C    7                            H       A  B  C  D  E  F  G  H     A  _ "
+      },
+      {
+        "page": 179,
+        "char_count": 825,
+        "word_count": 214,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        179    A  B  C  D  E  F  G  H     A  _  3  \u221d  4  \u221d  \u221d  \u221d  \u221d  B  3  _  1  5  \u221d  \u221d  \u221d  \u221d  C  \u221d  1  _  \u221d  \u221d  8  \u221d  7  H  \u221d"
+      },
+      {
+        "page": 180,
+        "char_count": 679,
+        "word_count": 118,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        180        A           D                B                C                  F                            G             "
+      },
+      {
+        "page": 181,
+        "char_count": 886,
+        "word_count": 180,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        181 Min cost = 2+4+3+1+7+0+3= 20 units      Q172.  Show the result of running BFS on a complete Binary Tree of depth 3."
+      },
+      {
+        "page": 182,
+        "char_count": 877,
+        "word_count": 194,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        182 Delete node G from queue and add nodes adjacent to G i.e N, O        Delete node H from queue. Since no nodes are a"
+      },
+      {
+        "page": 183,
+        "char_count": 1498,
+        "word_count": 210,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        183 Ans.   The algorithm to test whether a Binary tree is as Binary Search tree is as  follows:  bstree(*tree)  {  whil"
+      },
+      {
+        "page": 184,
+        "char_count": 1752,
+        "word_count": 297,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        184   P2 = P2->next;    temp = P2->next; }    printf(\u201cLoop is from %d to %d\u201d, P2->node_count,  temp->node_count);  }   "
+      },
+      {
+        "page": 185,
+        "char_count": 1131,
+        "word_count": 273,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        185 Similarly sort 2nd array also, such that we get after few steps as a sorted list  4  5  7  8  11 12 14    15   21  "
+      },
+      {
+        "page": 186,
+        "char_count": 1386,
+        "word_count": 271,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        186 1 1  2  3  3  4  (5) 5  5  (6 8) 9    Pass 9:-  1 1  2  3  3  4  5   5  5  (6 8) 9    Pass 10:-  1 1  2  3  3  4   "
+      },
+      {
+        "page": 187,
+        "char_count": 1396,
+        "word_count": 257,
+        "image_count": 0,
+        "preview": "DC08    DATA STRUCTURES        187 Pass 2:-  Taking the left partition:-  a=x[lb]=30  (30  33 40 20 50 65 60 11 45) 66 (77       88)  d               "
+      }
+    ]
+  },
+  {
+    "path": "SOURCE/DSA-20260930T180448Z-1-001/DSA/stack.pdf",
+    "size": 1642070,
+    "sha256": "20ad804e230970afaf92298040d484d9d6f410b915e3c18bdedf06a1052f0e97",
+    "page_count": 23,
+    "total_char_count": 6859,
+    "total_images": 15,
+    "header_sample": " Stack\n",
+    "pages_info": [
+      {
+        "page": 1,
+        "char_count": 7,
+        "word_count": 1,
+        "image_count": 0,
+        "preview": " Stack "
+      },
+      {
+        "page": 2,
+        "char_count": 138,
+        "word_count": 24,
+        "image_count": 1,
+        "preview": "Stack Overview \u2022 Stack ADT \u2022 Basic operations of stack \u2013 Pushing, popping etc.. \u2022 Implementations of stacks using  \u2013 array  \u2013 linked list "
+      },
+      {
+        "page": 3,
+        "char_count": 329,
+        "word_count": 59,
+        "image_count": 1,
+        "preview": "The Stack ADT \u2022 A stack is a list with the restriction  \u2013 that insertions and deletions can only be performed at the top of the  list \u2013 The other end "
+      },
+      {
+        "page": 4,
+        "char_count": 201,
+        "word_count": 38,
+        "image_count": 0,
+        "preview": "Stack ADT \u2022 Stacks are less flexible \u2714but are more efficient and easy to implement \u2022 Stacks are known as LIFO (Last In, First Out) lists. \u2013 The last e"
+      },
+      {
+        "page": 5,
+        "char_count": 425,
+        "word_count": 87,
+        "image_count": 0,
+        "preview": "Operations Primary operations: Push and Pop \u2022 Push - Add an element to the top of the stack \u2022 Pop - Returns and removes the element at the top of the "
+      },
+      {
+        "page": 6,
+        "char_count": 311,
+        "word_count": 55,
+        "image_count": 0,
+        "preview": "Implementation of Stacks \u2022 Any list implementation could be used to implement a stack \u2013 Arrays (static: the size of stack is given initially) \u2013 Linked"
+      },
+      {
+        "page": 7,
+        "char_count": 371,
+        "word_count": 66,
+        "image_count": 0,
+        "preview": "Array Implementation \u2022 Need to declare an array size ahead of time \u2022 Associated with each stack is topOfStack \u2013 for an empty stack, set topOfStack to "
+      },
+      {
+        "page": 8,
+        "char_count": 310,
+        "word_count": 66,
+        "image_count": 0,
+        "preview": "Array Implementation Stack of five elements created 1.  Pop (underflow) top top = -1 2.  Push  23 23 3.  Push  34 34 top 0 1 2 3 4 4.  Top  (returns 3"
+      },
+      {
+        "page": 9,
+        "char_count": 176,
+        "word_count": 28,
+        "image_count": 0,
+        "preview": "Applications of Stack \u2022 Recursion \u2022 Back-tracking \u2022 As auxiliary data structures    Specific examples- \u2013 Page-visited history in a Web browser \u2013 Undo "
+      },
+      {
+        "page": 10,
+        "char_count": 35,
+        "word_count": 5,
+        "image_count": 1,
+        "preview": "Linked list  representation \u2022 Push "
+      },
+      {
+        "page": 11,
+        "char_count": 115,
+        "word_count": 19,
+        "image_count": 1,
+        "preview": "\u2022 The order of changing the pointers is very  important !! Linked list representation Pushing in a non-empty stack "
+      },
+      {
+        "page": 12,
+        "char_count": 54,
+        "word_count": 8,
+        "image_count": 1,
+        "preview": "Pushing on an empty stack  Linked list representation "
+      },
+      {
+        "page": 13,
+        "char_count": 24,
+        "word_count": 4,
+        "image_count": 1,
+        "preview": "Popping the top element "
+      },
+      {
+        "page": 14,
+        "char_count": 59,
+        "word_count": 10,
+        "image_count": 1,
+        "preview": "Popping the  top element Need to use a  temporary pointer  "
+      },
+      {
+        "page": 15,
+        "char_count": 39,
+        "word_count": 7,
+        "image_count": 1,
+        "preview": "Popping the last element on the stack  "
+      },
+      {
+        "page": 16,
+        "char_count": 215,
+        "word_count": 50,
+        "image_count": 0,
+        "preview": "Arithmetic Expressions Postfix or reverse Polish notation :     (A * (B + C) )/ D A B C +* D / Prefix or Polish notation :                     (A * (B"
+      },
+      {
+        "page": 17,
+        "char_count": 656,
+        "word_count": 69,
+        "image_count": 0,
+        "preview": "Building an Arithmetic Expression Evaluator Infix and Postfix Expressions:  Infix Expression                              Equivalent Postfix  Expressi"
+      },
+      {
+        "page": 18,
+        "char_count": 983,
+        "word_count": 129,
+        "image_count": 0,
+        "preview": "Building an Arithmetic Expression Evaluator Postfix Expression String Processing Assume 1-digit integer  operands, the binary  operators + - * / only,"
+      },
+      {
+        "page": 19,
+        "char_count": 0,
+        "word_count": 0,
+        "image_count": 1,
+        "preview": ""
+      },
+      {
+        "page": 20,
+        "char_count": 975,
+        "word_count": 181,
+        "image_count": 0,
+        "preview": "Building an Arithmetic Expression Evaluator Infix to Postfix Conversion Assume 1-digit integer  operands, the binary  operators + - * / only, and  the"
+      },
+      {
+        "page": 21,
+        "char_count": 1231,
+        "word_count": 90,
+        "image_count": 0,
+        "preview": "Infix to Postfix Conversion (continued) An Example: 7-(2*3+5)*(8-4/2) \u0000 723*5+842/-*-  Remaining Infix String              char Stack         Postfix "
+      },
+      {
+        "page": 22,
+        "char_count": 0,
+        "word_count": 0,
+        "image_count": 2,
+        "preview": ""
+      },
+      {
+        "page": 23,
+        "char_count": 205,
+        "word_count": 40,
+        "image_count": 4,
+        "preview": "\u2022 Example:   evaluate  6  5  2  3  +  8  *  +  3  +  * \u2022 The time to evaluate a postfix expression is O(n) \u2013 processing each element in the input cons"
+      }
+    ]
+  },
+  {
+    "path": "SOURCE/DSA-20260930T180448Z-1-001/DSA/time complexity.pdf",
+    "size": 793797,
+    "sha256": "026c0f211fd50a3ba7060ba90617f1ea8d20f266aee0872f07788179d510075d",
+    "page_count": 34,
+    "total_char_count": 8011,
+    "total_images": 21,
+    "header_sample": "Chapter I\nMotivation for Studying Data \nStructure\n",
+    "pages_info": [
+      {
+        "page": 1,
+        "char_count": 50,
+        "word_count": 7,
+        "image_count": 0,
+        "preview": "Chapter I Motivation for Studying Data  Structure "
+      },
+      {
+        "page": 2,
+        "char_count": 241,
+        "word_count": 39,
+        "image_count": 0,
+        "preview": "Program (A set of instructions to  perform certain task) Data Structures (Representation  of the data that  needs to be used  in the program) Algorith"
+      },
+      {
+        "page": 3,
+        "char_count": 167,
+        "word_count": 27,
+        "image_count": 3,
+        "preview": "An Example \u2022 Building a house \u2022 Bricks: data/ input, House: output \u2022 Temporary structures to keep bricks: Data structure \u2022 Carrying bricks: Optimized "
+      },
+      {
+        "page": 4,
+        "char_count": 390,
+        "word_count": 73,
+        "image_count": 0,
+        "preview": "\u2022 Proper usage of storage area IEEE-754 standards integer/ float 4 bytes Say, we have to store 1 million float values,  this will take 1,000,000 X 4 b"
+      },
+      {
+        "page": 5,
+        "char_count": 286,
+        "word_count": 48,
+        "image_count": 0,
+        "preview": "\u2022 Efficient manipulation of data \u2022 Help reducing the time taken by algorithm --- this is the time complexity of the  algorithm. Different data structu"
+      },
+      {
+        "page": 6,
+        "char_count": 380,
+        "word_count": 65,
+        "image_count": 1,
+        "preview": "  Time complexity \u2022 Started eating at 4:00 p.m.  Maximum time taken to get prepared  (among all five): 45 mins  Taxi takes 30 mins  Reaches station at"
+      },
+      {
+        "page": 7,
+        "char_count": 263,
+        "word_count": 50,
+        "image_count": 0,
+        "preview": "Time complexity 5 23 15 8 31 19 Worst case run-time: for worst  possible input sequence (upper bound) Average case run-time: for \u2018average\u2019  input. All"
+      },
+      {
+        "page": 8,
+        "char_count": 342,
+        "word_count": 56,
+        "image_count": 0,
+        "preview": "Time complexity Worst case time-complexity is denoted by  T(n) = O(\u2026)      Big-Oh (means order of..) Definition of Big-Oh notation: Given two non-nega"
+      },
+      {
+        "page": 9,
+        "char_count": 337,
+        "word_count": 53,
+        "image_count": 0,
+        "preview": "Time complexity Best case time-complexity is denoted by  T(n) = \u03a9(\u2026)                Big-Omega Definition of Big-Omega notation: Given two non-negative"
+      },
+      {
+        "page": 10,
+        "char_count": 168,
+        "word_count": 20,
+        "image_count": 0,
+        "preview": "Time complexity Combining Big-Oh and Big-Omega, k1.|g(n)|  \u2265  f(n)  \u2265  k2.|g(n)|  Big-Oh   Big-Omega  U                                 \u2026.is called Bi"
+      },
+      {
+        "page": 11,
+        "char_count": 26,
+        "word_count": 5,
+        "image_count": 3,
+        "preview": "Relations Between \u0398, O, \u03a9 "
+      },
+      {
+        "page": 12,
+        "char_count": 414,
+        "word_count": 67,
+        "image_count": 0,
+        "preview": "Time complexity O(f): Function grows no faster than f                           (slower OR equal) \u03a9(f): Function grows no slower than f               "
+      },
+      {
+        "page": 13,
+        "char_count": 367,
+        "word_count": 54,
+        "image_count": 0,
+        "preview": "Time complexity Constant time - O(1): Accessing elements of an array (independent on input size) Double logarithmic time \u2013 O(log2(log2n)):  (eg. inter"
+      },
+      {
+        "page": 14,
+        "char_count": 494,
+        "word_count": 78,
+        "image_count": 0,
+        "preview": "Loglinear time \u2013 O(n.log2n): two nested loops \u2013 one  with linear iteration and the other with iterative halving. In which order? does not matter (eg. "
+      },
+      {
+        "page": 15,
+        "char_count": 45,
+        "word_count": 6,
+        "image_count": 1,
+        "preview": "Comparing time complexities   Values  of   n "
+      },
+      {
+        "page": 16,
+        "char_count": 426,
+        "word_count": 92,
+        "image_count": 0,
+        "preview": "Infinite Asymptotics T(n) needs to be judged based on the rate of growth Say, for T(n) = 4.n2 - 8.n + 2 n2  will dominate over n as the value of n (si"
+      },
+      {
+        "page": 17,
+        "char_count": 187,
+        "word_count": 37,
+        "image_count": 0,
+        "preview": "Properties \u2022 O( f(n) + g(n) ) = O( max(f(n), g(n)) ) \u2022 if f(n) = O(g(n)) and g(n) = O(h(n)) then,     f(n) = O(h(n))   ......(transitivity) \u2022 f(n) = O"
+      },
+      {
+        "page": 18,
+        "char_count": 311,
+        "word_count": 51,
+        "image_count": 0,
+        "preview": "Data Types vs.  Abstract Data Types \u2022 ADT: Mathematical model for certain class  of data structure.  - Usually theoretical - ADT is defined by the ope"
+      },
+      {
+        "page": 19,
+        "char_count": 402,
+        "word_count": 54,
+        "image_count": 0,
+        "preview": "How to write pseudo-code \u2022 First few lines: /* Name of the program */ ------------------------------------- Input: in writing Output: in writing -----"
+      },
+      {
+        "page": 20,
+        "char_count": 350,
+        "word_count": 37,
+        "image_count": 0,
+        "preview": "How to write pseudo-code \u2022Case statements:        case  condition  of                 condition 1 : statement                 condition 2 : statement "
+      },
+      {
+        "page": 21,
+        "char_count": 34,
+        "word_count": 5,
+        "image_count": 0,
+        "preview": "Chapter II Linear Data Structures "
+      },
+      {
+        "page": 22,
+        "char_count": 83,
+        "word_count": 15,
+        "image_count": 0,
+        "preview": "Linear Data Structure \u2022 Lists \u2013 Arrays, Linked lists \u2022 Stack (LIFO) \u2022 Queue (FIFO) "
+      },
+      {
+        "page": 23,
+        "char_count": 257,
+        "word_count": 41,
+        "image_count": 2,
+        "preview": "Arrays \u2022 Arrays can be multi-dimensional in structure, but  memory is linear \u2022 A multi-dimension to single dimension structure  conversion is needed f"
+      },
+      {
+        "page": 24,
+        "char_count": 140,
+        "word_count": 25,
+        "image_count": 1,
+        "preview": "Arrays \u2022 Row-major ordering \u2013   Elements are stored by accessing one row at a time Most HLLs like Pascal, C/C++, Java use this method Stack "
+      },
+      {
+        "page": 25,
+        "char_count": 368,
+        "word_count": 87,
+        "image_count": 0,
+        "preview": "Arrays \u2022 Row-major ordering \u2013    0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15  0 1 2 3 8 9 10 11 4 5 6 7 12 13 14 15 Say, we have a base  address\u2026.can we fin"
+      },
+      {
+        "page": 26,
+        "char_count": 138,
+        "word_count": 25,
+        "image_count": 1,
+        "preview": "Arrays \u2022 Column-major ordering \u2013 Elements are stored by accessing one column at a  time One a few rare HLLs like FORTRAN and MATLAB Stack "
+      },
+      {
+        "page": 27,
+        "char_count": 368,
+        "word_count": 87,
+        "image_count": 0,
+        "preview": "Arrays \u2022 Column-major ordering \u2013    0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15  0 4 8 12 2 6 10 14 1 5 9 13 3 7 11 15 Say, we have a base  address\u2026.can we "
+      },
+      {
+        "page": 28,
+        "char_count": 121,
+        "word_count": 21,
+        "image_count": 1,
+        "preview": "Sparse Matrix \u2022 How sparse is \u201csparse\u201d enough \u2013  Existence of non-zero elements - a lot less than  maximum possible (n2) "
+      },
+      {
+        "page": 29,
+        "char_count": 269,
+        "word_count": 40,
+        "image_count": 2,
+        "preview": "Sparse Representation \u2022 Triple format \u2013                               Triple is a tuple with three attributes 0-th triple  denotes  info about  the ma"
+      },
+      {
+        "page": 30,
+        "char_count": 269,
+        "word_count": 50,
+        "image_count": 2,
+        "preview": "Sparse Representation \u2022 Easy to manipulate \u2013      Transpose of a matrix (row and column indices  are swapped and put in a sorted order)  Triple format"
+      },
+      {
+        "page": 31,
+        "char_count": 318,
+        "word_count": 41,
+        "image_count": 1,
+        "preview": "Polynomial Addition Using Array \u2022 Use one global array to store all polynomials A(X) = 2.X1000 + 1 B(X) = X4 + 10.X3 + 3.X2 + 1 coeff  exp     starta "
+      },
+      {
+        "page": 32,
+        "char_count": 0,
+        "word_count": 0,
+        "image_count": 1,
+        "preview": ""
+      },
+      {
+        "page": 33,
+        "char_count": 0,
+        "word_count": 0,
+        "image_count": 1,
+        "preview": ""
+      },
+      {
+        "page": 34,
+        "char_count": 0,
+        "word_count": 0,
+        "image_count": 1,
+        "preview": ""
+      }
+    ]
+  }
+]

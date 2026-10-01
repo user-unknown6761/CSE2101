@@ -1,0 +1,62 @@
+[
+  {
+    "rule": 1,
+    "description": "Every inventory PDF has SHA-256",
+    "status": "PASS",
+    "details": "Verified across 33 documents."
+  },
+  {
+    "rule": 2,
+    "description": "Every source question has a source document",
+    "status": "PASS",
+    "details": "All 1584 question instances map to known document IDs."
+  },
+  {
+    "rule": 3,
+    "description": "Every question occurrence has page/source provenance",
+    "status": "PASS",
+    "details": "All 1584 question instances have explicit page and source file provenance."
+  },
+  {
+    "rule": 4,
+    "description": "No question has fabricated default marks",
+    "status": "PASS",
+    "details": "Marks are either physically established or explicitly null with not_specified status."
+  },
+  {
+    "rule": 5,
+    "description": "No unknown provenance is replaced with placeholder guesses",
+    "status": "PASS",
+    "details": "Unknown provenance attributes are strictly preserved as null."
+  },
+  {
+    "rule": 6,
+    "description": "Every incomplete item exists in the damage audit",
+    "status": "PASS",
+    "details": "0 incomplete items in corpus; 0 recorded in audit."
+  },
+  {
+    "rule": 7,
+    "description": "Every extracted question has a valid wording state",
+    "status": "PASS",
+    "details": "Wording states verified across 1584 items."
+  },
+  {
+    "rule": 8,
+    "description": "No solution/reference material accidentally assigned to Tier 1",
+    "status": "PASS",
+    "details": "All solution and study notes strictly isolated at Tier 4."
+  },
+  {
+    "rule": 9,
+    "description": "No active/in-scope/syllabus fields introduced in Phase 1",
+    "status": "PASS",
+    "details": "Forbidden fields checked: ['is_active', 'in_syllabus', 'canonical_id', 'module_number', 'topic_id', 'difficulty_score']."
+  },
+  {
+    "rule": 10,
+    "description": "No canonical question relationships or deduplication created",
+    "status": "PASS",
+    "details": "All physical source occurrences remain fully independent."
+  }
+]

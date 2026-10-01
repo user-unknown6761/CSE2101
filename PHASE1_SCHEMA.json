@@ -1,0 +1,446 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "CSE2101_Phase1_Corpus_Schema",
+  "description": "Authoritative machine-readable schema for Phase 1 Source Corpus Audit & Ingestion deliverables.",
+  "definitions": {
+    "Document": {
+      "type": "object",
+      "required": [
+        "document_id",
+        "filename",
+        "relative_path",
+        "file_size",
+        "sha256",
+        "page_count",
+        "document_classification",
+        "source_tier",
+        "classification_confidence",
+        "content_type",
+        "text_extraction_status"
+      ],
+      "properties": {
+        "document_id": {
+          "type": "string",
+          "pattern": "^DOC-\\d{2}$"
+        },
+        "filename": {
+          "type": "string"
+        },
+        "relative_path": {
+          "type": "string"
+        },
+        "file_size": {
+          "type": "integer"
+        },
+        "sha256": {
+          "type": "string",
+          "minLength": 64,
+          "maxLength": 64
+        },
+        "page_count": {
+          "type": "integer"
+        },
+        "document_classification": {
+          "type": "string",
+          "enum": [
+            "University Examination Paper",
+            "Backlog / Special Examination Paper",
+            "Official / Institutional Question Bank",
+            "Practice / Problem Set",
+            "Assignment",
+            "Solution Document / Answer Key",
+            "Notes / Study Material",
+            "Objective Question Bank",
+            "Mixed Academic Document",
+            "Unknown / Needs Review"
+          ]
+        },
+        "source_tier": {
+          "type": "integer",
+          "enum": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        "classification_confidence": {
+          "type": "string",
+          "enum": [
+            "HIGH",
+            "MEDIUM",
+            "FLAGGED"
+          ]
+        },
+        "classification_evidence": {
+          "type": "string"
+        },
+        "content_type": {
+          "type": "string",
+          "enum": [
+            "question-bearing",
+            "solution-bearing",
+            "mixed",
+            "non-question academic material"
+          ]
+        },
+        "apparent_year": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "apparent_branch": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "apparent_semester": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "apparent_course_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "apparent_course_name": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "apparent_exam_type": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "apparent_time_allotted": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "apparent_full_marks": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "duplicate_group": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "is_duplicate_of": {
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "QuestionOccurrence": {
+      "type": "object",
+      "required": [
+        "question_instance_id",
+        "document_id",
+        "source_file",
+        "page_start",
+        "page_end",
+        "official_question_number",
+        "raw_text",
+        "wording_state",
+        "wording_status",
+        "completeness_status",
+        "extraction_confidence",
+        "source_tier",
+        "source_type",
+        "marks_status"
+      ],
+      "properties": {
+        "question_instance_id": {
+          "type": "string"
+        },
+        "document_id": {
+          "type": "string"
+        },
+        "source_file": {
+          "type": "string"
+        },
+        "page_start": {
+          "type": "integer"
+        },
+        "page_end": {
+          "type": "integer"
+        },
+        "group_or_section": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "official_question_number": {
+          "type": "string"
+        },
+        "sub_question_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "parent_question_instance_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "raw_text": {
+          "type": "string"
+        },
+        "wording_state": {
+          "type": "string",
+          "enum": [
+            "STATE A \u2014 EXACT",
+            "STATE B \u2014 RECONSTRUCTED",
+            "STATE C \u2014 SOURCE-INCOMPLETE"
+          ]
+        },
+        "wording_status": {
+          "type": "string",
+          "enum": [
+            "exact_source",
+            "reconstructed_from_source",
+            "incomplete_source"
+          ]
+        },
+        "completeness_status": {
+          "type": "string",
+          "enum": [
+            "COMPLETE",
+            "INCOMPLETE"
+          ]
+        },
+        "extraction_confidence": {
+          "type": "string",
+          "enum": [
+            "HIGH",
+            "MEDIUM",
+            "FLAGGED"
+          ]
+        },
+        "source_tier": {
+          "type": "integer",
+          "enum": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        "source_type": {
+          "type": "string"
+        },
+        "source_established_metadata": {
+          "type": "object",
+          "properties": {
+            "year": {
+              "type": [
+                "integer",
+                "null"
+              ]
+            },
+            "branch": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "semester": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "course_code": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "course_name": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "exam_type": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "time_allotted": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "full_marks": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          }
+        },
+        "marks": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "marks_status": {
+          "type": "string",
+          "enum": [
+            "physically_established",
+            "not_specified"
+          ]
+        },
+        "has_diagram_or_image": {
+          "type": "boolean"
+        },
+        "possible_repeat_observation": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "PageAudit": {
+      "type": "object",
+      "required": [
+        "document_id",
+        "filename",
+        "relative_path",
+        "page_number",
+        "character_count",
+        "text_extraction_status",
+        "visual_inspection_required",
+        "ocr_used",
+        "confidence"
+      ],
+      "properties": {
+        "document_id": {
+          "type": "string"
+        },
+        "filename": {
+          "type": "string"
+        },
+        "relative_path": {
+          "type": "string"
+        },
+        "page_number": {
+          "type": "integer"
+        },
+        "character_count": {
+          "type": "integer"
+        },
+        "text_extraction_status": {
+          "type": "string"
+        },
+        "visual_inspection_required": {
+          "type": "boolean"
+        },
+        "ocr_used": {
+          "type": "boolean"
+        },
+        "ocr_recommended": {
+          "type": "boolean"
+        },
+        "unreadable_area": {
+          "type": "boolean"
+        },
+        "raster_images_count": {
+          "type": "integer"
+        },
+        "vector_drawings_count": {
+          "type": "integer"
+        },
+        "diagram_present": {
+          "type": "boolean"
+        },
+        "table_present": {
+          "type": "boolean"
+        },
+        "equation_or_formula_present": {
+          "type": "boolean"
+        },
+        "question_numbering_clarity": {
+          "type": "string"
+        },
+        "confidence": {
+          "type": "string"
+        }
+      }
+    },
+    "DamageAudit": {
+      "type": "object",
+      "required": [
+        "question_instance_id",
+        "document_id",
+        "page",
+        "source_file",
+        "visible_content",
+        "missing_component",
+        "exclusion_reason",
+        "severity",
+        "complete_occurrence_exists_elsewhere"
+      ],
+      "properties": {
+        "question_instance_id": {
+          "type": "string"
+        },
+        "document_id": {
+          "type": "string"
+        },
+        "page": {
+          "type": "integer"
+        },
+        "source_file": {
+          "type": "string"
+        },
+        "visible_content": {
+          "type": "string"
+        },
+        "missing_component": {
+          "type": "string"
+        },
+        "exclusion_reason": {
+          "type": "string"
+        },
+        "severity": {
+          "type": "string",
+          "enum": [
+            "FATAL",
+            "HIGH",
+            "MEDIUM"
+          ]
+        },
+        "complete_occurrence_exists_elsewhere": {
+          "type": "boolean"
+        }
+      }
+    }
+  }
+}
