@@ -11,8 +11,8 @@
 - **Repository:** `https://github.com/user-unknown6761/CSE2101`
 - **Branch:** `phase-1-source-corpus-audit`
 - **Branch URL:** `https://github.com/user-unknown6761/CSE2101/tree/phase-1-source-corpus-audit`
-- **Commit SHA:** `2f04c89`
-- **Commit URL:** `https://github.com/user-unknown6761/CSE2101/commit/2f04c89`
+- **Commit SHA:** `7257cee`
+- **Commit URL:** `https://github.com/user-unknown6761/CSE2101/commit/7257cee`
 
 ---
 
