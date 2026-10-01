@@ -20,9 +20,10 @@ This manifest accompanies the **Prompt 0.1 Corrected Governance Baseline**. It p
 | :--- | :--- | :--- | :--- |
 | **Governance Review Bundle (ZIP)** | [Download Review ZIP](https://tmpfiles.org/dl/wBAeAUBSH15z/cse2101_governance_review_bundle.zip) | `a36cf345ea6434209eeb0273ef73be3ed6c13a4b23acadba1300b8d4d7066b90` | 30.1 KB |
 | **Governance Review Web View** | [View on tmpfiles.org](https://tmpfiles.org/wBAeAUBSH15z/cse2101_governance_review_bundle.zip) | — | — |
+| **GitHub Public Repository** | [https://github.com/user-unknown6761/CSE2101](https://github.com/user-unknown6761/CSE2101) | Main branch @ `6dd5ed8` | Live |
 | **Full Project Archive (ZIP)** | [Download Full Project ZIP](https://tmpfiles.org/dl/wMAXAkGC48Hn/cse2101_project.zip) | *(Includes 33 source PDFs + Governance)* | 28.5 MB |
 | **Raw Source Corpus Archive (ZIP)** | [Download Source ZIP](https://tmpfiles.org/dl/w8AWAgJDPsON/source.zip) | *(Contains 33 physical PDFs in SOURCE)* | 28.5 MB |
-| **Local Repository Path** | `d:\DOWNLOADS\CSE2101\` | Git branch: `master` @ commit `6dd5ed8` | — |
+| **Local Repository Path** | `d:\DOWNLOADS\CSE2101\` | Git branch: `main` | — |
 
 ---
 
