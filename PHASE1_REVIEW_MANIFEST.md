@@ -11,8 +11,8 @@
 - **Repository:** `https://github.com/user-unknown6761/CSE2101`
 - **Branch:** `phase-1-source-corpus-audit`
 - **Branch URL:** `https://github.com/user-unknown6761/CSE2101/tree/phase-1-source-corpus-audit`
-- **Final Release Commit:** `[FINAL_RELEASE_COMMIT_SHA]`
-- **Commit URL:** `https://github.com/user-unknown6761/CSE2101/commit/[FINAL_RELEASE_COMMIT_SHA]`
+- **Final Release Commit:** `5d6c486367238fabc7c5d756ffbb2a12f3d59877` (`5d6c486`)
+- **Commit URL:** `https://github.com/user-unknown6761/CSE2101/commit/5d6c486367238fabc7c5d756ffbb2a12f3d59877`
 
 ---
 
