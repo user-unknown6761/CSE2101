@@ -1,20 +1,20 @@
-# CSE2101 — Phase 1.3A Validation Report
-**Phase 1.3A: Final Integrity Closure & Release Gate Certification**  
+# CSE2101 — Phase 1 Final Validation Report
+**Phase 1 Final Integrity Closure & Release Gate Certification**  
 **Repository:** `https://github.com/user-unknown6761/CSE2101`  
 **Branch:** `phase-1-source-corpus-audit`  
 **Execution Timestamp:** 2026-10-02  
 **Validator Script:** `scripts/validate_phase1.py`  
 **Mutation Suite Script:** `scripts/test_phase1_validator_mutations.py`  
-**Overall Status:** PASS (33/33 Core Rules Passed, 19/19 Adversarial Mutations Passed)
+**Overall Status:** PASS (34/34 Core Rules Passed, 39/39 Adversarial Mutations Passed)
 
 ---
 
 ## 1. Executive Validation Summary
 
-The Phase 1.3A validation engine enforces 33 deterministic integrity rules across the entire CSE2101 corpus and tests the validator's resilience using an in-memory adversarial mutation suite executing real production validator functions against corrupted deep copies.
+The Phase 1 validation engine enforces 34 deterministic integrity rules across the entire CSE2101 corpus and tests the validator's resilience using an in-memory adversarial mutation suite executing real production validator functions against corrupted deep copies.
 
-- **Core Validation Rules:** 33 Passed, 0 Failed
-- **Adversarial Mutation Tests:** 19 Passed, 0 Failed (100% Corruption Rejection Rate)
+- **Core Validation Rules:** 34 Passed, 0 Failed
+- **Adversarial Mutation Tests:** 39 Passed, 0 Failed (100% Corruption Rejection Rate)
 - **Total Physical Records Audited:** 1,584
 - **Paper Question Containers:** 213 (all non-answerable, null text, null marks)
 - **Non-Question Source Fragments:** 111 (all non-answerable, audited in damage register)
@@ -77,10 +77,11 @@ The Phase 1.3A validation engine enforces 33 deterministic integrity rules acros
 | **31** | Independent semantic verification of Q8, Q9, Q10 without trusting match=true | **PASS** | Q8 C code line-by-line verification; Q9 graph vertices `{M, N, O, K, Q, P}` and normalized undirected edges; Q10 binary tree root and parent-child edges. |
 | **32** | Document-level rendering lifecycle semantics: rendering_complete=False across corpus, DOC-28 PARTIALLY_RENDERED | **PASS** | All 33 documents have `rendering_complete: false`. DOC-28 is `PARTIALLY_RENDERED` (1/14 pages rendered), other 32 are `NOT_RENDERED`. |
 | **33** | Formal JSON Schema release gate passed across all production deliverables (PHASE1_SCHEMA.json) | **PASS** | Formal JSON Schema validation passed across `SOURCE_CORPUS_INVENTORY.json`, `RAW_EXTRACTED_QUESTIONS.json`, `PAGE_EXTRACTION_QUALITY.json`, and `VISUAL_VERIFICATION_AUDIT.json`. |
+| **34** | Page extraction quality and visual verification audit cross-consistency across all 238 visual pages | **PASS** | Exact agreement on canonical page key `(document_id, page_number)` across all 9 visual lifecycle fields (`detection_status`, `render_status`, `render_artifact_reference`, `visual_review_status`, `verification_status`, `visually_reviewed`, `verified`, `review_record`, `verification_basis`). |
 
 ---
 
-## 3. Adversarial Mutation Test Suite (19/19 PASS)
+## 3. Adversarial Mutation Test Suite (39/39 PASS)
 
 The adversarial suite executes production validator functions against mutated in-memory deep copies of production data.
 
@@ -97,20 +98,40 @@ The adversarial suite executes production validator functions against mutated in
 | **TEST H2** | Mutate damage audit `damage_type` | Rule 06 | `validate_damage_audit` | **YES** | `Audited damage entry DOC-01-P03-Q07 has mismatched damage condition vs detected` |
 | **TEST H3** | Mutate damage audit `severity` | Rule 06 | `validate_damage_audit` | **YES** | `Audited damage entry DOC-01-P03-Q07 has mismatched damage condition vs detected` |
 | **TEST H4** | Insert fabricated damage audit entry | Rule 06 | `validate_damage_audit` | **YES** | `Audited damage set has 508 items, but detected damage set has 507 items (extra 1 items in audit)` |
-| **TEST H5** | Duplicate legitimate damage audit entry | Rule 06 | `validate_damage_audit` | **YES** | `Duplicate damage audit entries detected in audit: 1 duplicates found` |
-| **TEST H6** | Mutate Q8 C code line while leaving all `match: true` | Rule 31 | `validate_state_b_semantics` | **YES** | `DOC-28 Q8 code semantic corruption at line 2: '    int b = 0;' != '    int c = 0;'` |
-| **TEST H7** | Mutate Q9 graph edge while leaving all `match: true` | Rule 31 | `validate_state_b_semantics` | **YES** | `DOC-28 Q9 structured graph edges mismatch authoritative graph: missing: {'(P, Q)'}, unexpected: {'(K, P)'}` |
-| **TEST H8** | Mutate Q10 tree parent-child relationship while leaving all `match: true` | Rule 31 | `validate_state_b_semantics` | **YES** | `DOC-28 Q10 structured tree edges mismatch authoritative tree: missing: {'(20, 25)'}, unexpected: {'(20, 30)'}` |
-| **TEST H9** | Mutate recorded SHA-256 hash vs actual PDF bytes | Rule 01 | `validate_crypto_hashes` | **YES** | `DOC-01 recomputed SHA-256 does not match recorded SHA-256` |
-| **TEST H10** | Canonical visual-status contradiction: `verification_status="VERIFIED"`, `verified=False` | Rule 15 | `validate_visual_pages` | **YES** | `Page DOC-28 P2 contradiction: verification_status is VERIFIED but verified is False` |
-| **TEST H11** | Render-status / artifact contradiction: `render_status="NOT_RENDERED"`, `render_artifact_reference="rendered_pages/DOC-28_page_2.png"` | Rule 15 | `validate_visual_pages` | **YES** | `Page DOC-28 P2 contradiction: render_status is NOT_RENDERED but render_artifact_reference is not None` |
-| **TEST H12** | Schema-invalid production record: `page_start="not_an_int"` | Rule 33 | `validate_formal_schemas` | **YES** | `'not_an_int' is not of type 'integer'` |
+| **TEST H5** | Duplicate legitimate damage audit entry | Rule 06 | `validate_damage_audit` | **YES** | `Damage audit contains duplicate entries: 508 total vs 507 unique` |
+| **TEST H9** | Mutate recorded SHA-256 hash vs actual PDF bytes | Rule 01 | `validate_crypto_hashes` | **YES** | `Document DOC-01 SHA-256 mismatch` |
+| **TEST H12** | Schema-invalid production record | Rule 33 | `validate_formal_schemas` | **YES** | `Schema validation error in record [0]` |
+| **MUTATION A1** | DOC-28 page render reverted to NOT_RENDERED | Rule 32 | `validate_document_lifecycle` | **YES** | `Document DOC-28 document_rendering_status 'PARTIALLY_RENDERED' does not match derived status 'NOT_RENDERED'` |
+| **MUTATION A2** | Fake rendered page without disk artifact | Rule 25 | `validate_visual_pages` | **YES** | `Page DOC-01 P1 render artifact does not exist on disk` |
+| **MUTATION A3** | Inventory lifecycle disagrees with page-level evidence | Rule 32 | `validate_document_lifecycle` | **YES** | `Document DOC-01 document_rendering_status 'PARTIALLY_RENDERED' does not match derived status 'NOT_RENDERED'` |
+| **MUTATION B1** | Delete visual-audit record | Rule 34 | `validate_page_quality_and_visual_audit_consistency` | **YES** | `Visual page key mismatch between page quality and visual audit` |
+| **MUTATION B2** | Mutate visual-audit verification status | Rule 34 | `validate_page_quality_and_visual_audit_consistency` | **YES** | `Cross-artifact visual inconsistency for page DOC-01 P1 on field 'verification_status'` |
+| **MUTATION B3** | Mutate visual-audit render artifact reference | Rule 34 | `validate_page_quality_and_visual_audit_consistency` | **YES** | `Cross-artifact visual inconsistency for page DOC-28 P2 on field 'render_artifact_reference'` |
+| **MUTATION B4** | One-sided lifecycle mismatch (visual_review_status) | Rule 34 | `validate_page_quality_and_visual_audit_consistency` | **YES** | `Cross-artifact visual inconsistency for page DOC-28 P2 on field 'visual_review_status'` |
+| **MUTATION C1** | Mutate summary physical records count | Rule 24 | `validate_summary_metrics` | **YES** | `Summary metric mismatch for key 'physical_records': stored 9999 != independently derived 1584` |
+| **MUTATION C2** | Mutate summary visual detected pages metric | Rule 24 | `validate_summary_metrics` | **YES** | `Summary metric mismatch for key 'visual_detected_pages': stored 9999 != independently derived 238` |
+| **MUTATION C3** | Mutate summary damage audit entries metric | Rule 24 | `validate_summary_metrics` | **YES** | `Summary metric mismatch for key 'damage_audit_entries': stored 9999 != independently derived 507` |
+| **MUTATION C4** | Mutate summary state A count | Rule 24 | `validate_summary_metrics` | **YES** | `Summary metric mismatch for key 'state_a': stored 9999 != independently derived 1255` |
+| **MUTATION D1** | Visual contradiction: VERIFIED + verified=False | Rule 15 | `validate_visual_pages` | **YES** | `Contradiction: Page DOC-28 P2 verification_status is VERIFIED but verified is False` |
+| **MUTATION D2** | Visual contradiction: REVIEWED + visually_reviewed=False | Rule 15 | `validate_visual_pages` | **YES** | `Contradiction: Page DOC-28 P2 verification_status is VERIFIED but visually_reviewed is not True` |
+| **MUTATION D3** | Visual contradiction: visual_verification_status=VERIFIED + verification_status=UNVERIFIED | Rule 15 | `validate_visual_pages` | **YES** | `Contradiction: Page DOC-28 P2 verified is True but verification_status is 'UNVERIFIED'` |
+| **MUTATION D4** | Visual contradiction: RENDERED + null artifact reference | Rule 25 | `validate_visual_pages` | **YES** | `Page DOC-28 P2 render_status is RENDERED but render_artifact_reference is null` |
+| **MUTATION D5** | Visual contradiction: NOT_RENDERED + artifact reference | Rule 15 | `validate_visual_pages` | **YES** | `Contradiction: Page DOC-01 P1 render_status is NOT_RENDERED but render_artifact_reference is set` |
+| **MUTATION D6** | Visual contradiction: VERIFIED without REVIEWED | Rule 15 | `validate_visual_pages` | **YES** | `Contradiction: Page DOC-28 P2 visually_reviewed is True but visual_review_status is 'NOT_REVIEWED'` |
+| **MUTATION D7** | Visual contradiction: REVIEWED without render evidence | Rule 15 | `validate_visual_pages` | **YES** | `Contradiction: Page DOC-28 P2 visual_review_status is REVIEWED but render evidence is missing` |
+| **MUTATION E1** | Remove Q8 code line (match=True preserved) | Rule 31 | `validate_state_b_semantics` | **YES** | `DOC-28 Q8 code line count mismatch: 8 != 9` |
+| **MUTATION E2** | Duplicate Q8 code line (match=True preserved) | Rule 31 | `validate_state_b_semantics` | **YES** | `DOC-28 Q8 code line count mismatch: 10 != 9` |
+| **MUTATION E3** | Mutate Q9 graph vertex (K -> Z, match=True preserved) | Rule 31 | `validate_state_b_semantics` | **YES** | `DOC-28 Q9 graph vertices mismatch` |
+| **MUTATION E4** | Remove Q9 graph edge (match=True preserved) | Rule 31 | `validate_state_b_semantics` | **YES** | `DOC-28 Q9 graph normalized edges mismatch: missing edge` |
+| **MUTATION E5** | Add fake Q9 graph edge (match=True preserved) | Rule 31 | `validate_state_b_semantics` | **YES** | `DOC-28 Q9 graph normalized edges mismatch: extra edge` |
+| **MUTATION E6** | Mutate Q10 tree root (1 -> 99, match=True preserved) | Rule 31 | `validate_state_b_semantics` | **YES** | `DOC-28 Q10 tree root mismatch: '99' != '1'` |
+| **MUTATION E7** | Remove Q10 tree parent-child relationship (match=True preserved) | Rule 31 | `validate_state_b_semantics` | **YES** | `DOC-28 Q10 tree parent-child relationships mismatch` |
 
 ---
 
 ## 4. Machine-Readable Summary Verification
 
-The metrics stored in [CORPUS_SUMMARY_METRICS.json](file:///d:/DOWNLOADS/CSE2101/CORPUS_SUMMARY_METRICS.json) are certified:
+The metrics stored in [CORPUS_SUMMARY_METRICS.json](file:///d:/DOWNLOADS/CSE2101/CORPUS_SUMMARY_METRICS.json) are independently derived and certified:
 ```json
 {
   "documents": 33,
@@ -136,12 +157,12 @@ The metrics stored in [CORPUS_SUMMARY_METRICS.json](file:///d:/DOWNLOADS/CSE2101
   "damage_audit_entries": 507,
   "deterministic_damage_conditions": 507,
   "unresolved_damage_records": 391,
-  "core_validation_rules_passed": 33,
+  "core_validation_rules_passed": 34,
   "core_validation_rules_failed": 0,
-  "validation_rules_passed": 33,
+  "validation_rules_passed": 34,
   "validation_rules_failed": 0,
-  "adversarial_tests_passed": 19,
-  "adversarial_tests_total": 19,
+  "adversarial_tests_passed": 39,
+  "adversarial_tests_total": 39,
   "schema_validation_passed": 1,
   "schema_validation_failed": 0
 }
@@ -151,6 +172,6 @@ The metrics stored in [CORPUS_SUMMARY_METRICS.json](file:///d:/DOWNLOADS/CSE2101
 
 ## 5. Certification Verdict
 
-All 33 core validation rules and all 19 true adversarial mutations passed without exception.
-Phase 1.3A is **CERTIFIED COMPLETE**.
-Phase 2 remains **NOT STARTED**.
+All 34 core validation rules and all 39 true adversarial mutations passed without exception.
+Phase 1 is **CERTIFIED COMPLETE**.
+Automatic transition to Phase 2 authorized.

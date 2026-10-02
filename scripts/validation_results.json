@@ -106,7 +106,7 @@
       "rule": 18,
       "description": "All question records have valid record_type",
       "status": "PASS",
-      "details": "All 1584 records have record_type in {'non_question_source_fragment', 'question_occurrence', 'paper_question_container'}."
+      "details": "All 1584 records have record_type in {'question_occurrence', 'non_question_source_fragment', 'paper_question_container'}."
     },
     {
       "rule": 19,
@@ -140,9 +140,9 @@
     },
     {
       "rule": 24,
-      "description": "Machine-readable summary metrics synchronize exactly with JSON dataset",
+      "description": "Machine-readable summary metrics independently derived and verified across all metrics",
       "status": "PASS",
-      "details": "Derived metrics match corpus: 1584 physical records, 213 containers, 1260 questions."
+      "details": "All 23 summary metrics verified equal to independently derived values."
     },
     {
       "rule": 25,
@@ -188,19 +188,25 @@
     },
     {
       "rule": 32,
-      "description": "Document-level rendering lifecycle semantics: rendering_complete=False across corpus, DOC-28 PARTIALLY_RENDERED",
+      "description": "Document-level rendering lifecycle dynamically derived from page quality dataset",
       "status": "PASS",
-      "details": "Document rendering lifecycle semantics validated: all 33 documents rendering_complete=False, DOC-28 PARTIALLY_RENDERED, 32 docs NOT_RENDERED."
+      "details": "Document rendering lifecycle dynamically derived from page quality dataset and verified across all inventory documents."
     },
     {
       "rule": 33,
       "description": "Formal JSON Schema release gate passed across all production deliverables (PHASE1_SCHEMA.json)",
       "status": "PASS",
       "details": "Formal schema validation passed for all 5 production datasets against PHASE1_SCHEMA.json."
+    },
+    {
+      "rule": 34,
+      "description": "Cross-artifact visual evidence consistency between PAGE_EXTRACTION_QUALITY and VISUAL_VERIFICATION_AUDIT",
+      "status": "PASS",
+      "details": "Cross-artifact consistency verified: all 238 visual pages agree exactly across all 9 canonical fields."
     }
   ],
-  "passed_rules": 33,
+  "passed_rules": 34,
   "failed_rules": 0,
-  "adversarial_passed": 19,
-  "adversarial_total": 19
+  "adversarial_passed": 39,
+  "adversarial_total": 39
 }
