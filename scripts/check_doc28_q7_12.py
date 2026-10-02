@@ -82,6 +82,14 @@ for q in doc28_mcq_7_12:
         assert v_req is True and q['source_visual_page'] == 2, "Q9 must have source visual required on page 2"
         assert marks is None and marks_st == "not_specified"
         assert comp == "COMPLETE" and conf == "HIGH"
+        # Prompt 1.3 requirement: verify vertex K and edge (M,K), and absence of R in graph
+        assert "6 nodes {M, N, O, K, Q, P}" in raw_text, "Q9 must contain faithful vertex K in {M, N, O, K, Q, P}"
+        assert "(M,K)" in raw_text, "Q9 must contain edge (M,K)"
+        assert "6 nodes {M, N, O, R, Q, P}" not in raw_text and "(M,R)" not in raw_text, "Q9 must not contain erroneous vertex R"
+        rec_meta = q.get('reconstruction_metadata', {})
+        sem = rec_meta.get('visual_semantic_verification', {})
+        assert sem.get('status') == 'VERIFIED', "Q9 visual semantic verification status must be VERIFIED"
+        assert any(f.get('element') == 'vertex_labels' and 'K' in f.get('reconstructed', '') and f.get('match') for f in sem.get('element_level_findings', [])), "Q9 vertex_labels finding must verify K"
         assert any(d['damage_type'] == 'missing_referenced_visual' and d['resolution_status'] == 'RESOLVED' for d in dmg)
     elif q_num == 10:
         assert page == 2, f"Q10 page must be 2, got {page}"

@@ -80,6 +80,22 @@ As mandated by Prompt 1 Section 6, physical duplicates in the repository are pre
 
 ---
 
-## 4. Governance Compliance Statement
+## 4. Document-Level Visual Review & Rendering Semantics (Phase 1.3 Decoupling)
+
+In compliance with Phase 1.3 Section 10, document-level metadata strictly avoids blanket "VERIFIED" claims. The pipeline decouples four independent lifecycle properties:
+
+1. **Extraction Complete (`extraction_complete`):** Programmatic text stream parsed via PyMuPDF. All 33 documents: `True`.
+2. **Rendering Complete (`rendering_complete`):** Physical rendered page/region images exist on disk in `rendered_pages/`. Only `DOC-28` has verified render artifacts (`rendered_pages/DOC-28_page_2.png`, `rendered_pages/DOC-28_Q9_graph_600dpi.png`). Other 32 documents: `False`.
+3. **Visual Review Complete (`visual_review_complete`):** Document-wide manual visual audit conducted across 100% of pages. For this phase: `False` for all documents (no full document-wide claim).
+4. **Verification Complete (`verification_complete`):** Complete formal verification across all visual elements. For this phase: `False` for all documents.
+5. **Document Visual Review Status (`document_visual_review_status`):**
+   - `DOC-28`: `PARTIALLY_REVIEWED` (Page 2 physically rendered at 150/600 DPI and semantically audited in [DOC28_PAGE2_RECONSTRUCTION_AUDIT.md](file:///d:/DOWNLOADS/CSE2101/DOC28_PAGE2_RECONSTRUCTION_AUDIT.md) and [DOC28_Q9_VISUAL_SEMANTIC_AUDIT.md](file:///d:/DOWNLOADS/CSE2101/DOC28_Q9_VISUAL_SEMANTIC_AUDIT.md)).
+   - Remaining 32 Documents (`DOC-01` to `DOC-27`, `DOC-29` to `DOC-33`): `NOT_ESTABLISHED` (retaining raw detected visual counts without unsubstantiated verification claims).
+
+---
+
+## 5. Governance Compliance Statement
 No source PDF has been renamed, altered, rewritten, or compressed. Canonical physical file instances remain completely immutable.
 Practice assignments and unconfirmed question banks are strictly isolated from official exam tiers and possess `apparent_exam_type: null`.
+Blanket document-wide visual verification assertions have been completely eliminated.
+

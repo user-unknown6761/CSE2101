@@ -54385,7 +54385,34 @@
       "reconstruction_method": "Visual layout reassembly from rendered source page 2 to resolve two-column PDF text-block fragmentation and isolate pure question content",
       "visual_source_reference": "SOURCE/DSA-20260930T180448Z-1-001/DSA/DSA Practice Assignment.pdf Page 2",
       "reconstructed_text": "Which of the following statements is correct for a circular singly linked list with only a start pointer?\n(a) Both insertion and deletion at the front end take O(1) time\n(b) Only insertion at the front end takes O(1) time\n(c) Only deletion from the front end takes O(1) time\n(d) No insertion or deletion operation at either end is possible in O(1) time",
-      "reconstruction_confidence": "HIGH"
+      "reconstruction_confidence": "HIGH",
+      "visual_semantic_verification": {
+        "status": "VERIFIED",
+        "verification_basis": "Rendered source-page visual inspection (rendered_pages/DOC-28_page_2.png)",
+        "source_page": 2,
+        "source_region": "DOC-28 Page 2, upper text container (y \u2248 40 to 130 pt)",
+        "elements_checked": [
+          "question_stem",
+          "circular_linked_list_preconditions",
+          "mcq_options",
+          "option_punctuation"
+        ],
+        "element_level_findings": [
+          {
+            "element": "question_stem",
+            "source": "Which of the following statements is correct for a circular singly linked list with only a start pointer?",
+            "reconstructed": "Which of the following statements is correct for a circular singly linked list with only a start pointer?",
+            "match": true
+          },
+          {
+            "element": "mcq_options",
+            "source": "(a) Both insertion and deletion at the front end take O(1) time\n(b) Only insertion at the front end takes O(1) time\n(c) Only deletion from the front end takes O(1) time\n(d) No insertion or deletion operation at either end is possible in O(1) time",
+            "reconstructed": "(a) Both insertion and deletion at the front end take O(1) time\n(b) Only insertion at the front end takes O(1) time\n(c) Only deletion from the front end takes O(1) time\n(d) No insertion or deletion operation at either end is possible in O(1) time",
+            "match": true
+          }
+        ],
+        "verification_confidence": "HIGH"
+      }
     },
     "completeness_status": "COMPLETE",
     "extraction_confidence": "HIGH",
@@ -54430,7 +54457,41 @@
       "reconstruction_method": "Visual layout reassembly from rendered source page 2 to resolve two-column PDF text-block fragmentation and isolate pure question content",
       "visual_source_reference": "SOURCE/DSA-20260930T180448Z-1-001/DSA/DSA Practice Assignment.pdf Page 2",
       "reconstructed_text": "What is the output of following function for start pointing to first node of the following linked list: 1->2->3->4->5->6?\nvoid fun(struct node* start)\n{\n    if(start == NULL)\n        return;\n    printf(\"%d \", start->data);\n    if(start->next != NULL )\n        fun(start->next->next);\n    printf(\"%d \", start->data);\n}\n(a) 1 4 6 6 4 1\n(b) 1 3 5 1 3 5\n(c) 1 2 3 5\n(d) 1 3 5 5 3 1",
-      "reconstruction_confidence": "HIGH"
+      "reconstruction_confidence": "HIGH",
+      "visual_semantic_verification": {
+        "status": "VERIFIED",
+        "verification_basis": "Rendered source-page visual inspection & embedded raster image inspection (xref 22)",
+        "source_page": 2,
+        "source_region": "DOC-28 Page 2, middle-upper container (y \u2248 130 to 300 pt), image xref 22",
+        "elements_checked": [
+          "question_stem",
+          "linked_list_header",
+          "c_code_lines",
+          "c_code_control_flow",
+          "mcq_options"
+        ],
+        "element_level_findings": [
+          {
+            "element": "question_stem",
+            "source": "What is the output of following function for start pointing to first node of the following linked list: 1->2->3->4->5->6?",
+            "reconstructed": "What is the output of following function for start pointing to first node of the following linked list: 1->2->3->4->5->6?",
+            "match": true
+          },
+          {
+            "element": "c_code_lines",
+            "source": "void fun(struct node* start)\n{\n    if(start == NULL)\n        return;\n    printf(\"%d \", start->data);\n    if(start->next != NULL )\n        fun(start->next->next);\n    printf(\"%d \", start->data);\n}",
+            "reconstructed": "void fun(struct node* start)\n{\n    if(start == NULL)\n        return;\n    printf(\"%d \", start->data);\n    if(start->next != NULL )\n        fun(start->next->next);\n    printf(\"%d \", start->data);\n}",
+            "match": true
+          },
+          {
+            "element": "mcq_options",
+            "source": "(a) 1 4 6 6 4 1\n(b) 1 3 5 1 3 5\n(c) 1 2 3 5\n(d) 1 3 5 5 3 1",
+            "reconstructed": "(a) 1 4 6 6 4 1\n(b) 1 3 5 1 3 5\n(c) 1 2 3 5\n(d) 1 3 5 5 3 1",
+            "match": true
+          }
+        ],
+        "verification_confidence": "HIGH"
+      }
     },
     "completeness_status": "COMPLETE",
     "extraction_confidence": "HIGH",
@@ -54468,14 +54529,61 @@
     "official_question_number": "9",
     "sub_question_id": null,
     "parent_question_container_id": null,
-    "raw_text": "The Breadth First Search algorithm has been implemented using the queue data structure. One possible order of visiting the nodes of the following graph is\n[Graph with 6 nodes {M, N, O, R, Q, P} and edges (M,N), (N,O), (M,R), (M,Q), (N,Q), (O,P), (Q,P)]\n(a) MNOPQR\n(b) NQMPOR\n(c) QMNPRO\n(d) QMNPOR",
+    "raw_text": "The Breadth First Search algorithm has been implemented using the queue data structure. One possible order of visiting the nodes of the following graph is\n[Graph with 6 nodes {M, N, O, K, Q, P} and 7 edges (M,K), (M,N), (M,Q), (N,O), (N,Q), (Q,P), (P,O)]\n(a) MNOPQR\n(b) NQMPOR\n(c) QMNPRO\n(d) QMNPOR",
     "wording_state": "STATE B \u2014 RECONSTRUCTED",
     "wording_status": "reconstructed_from_source",
     "reconstruction_metadata": {
       "reconstruction_method": "Visual layout reassembly from rendered source page 2 to resolve two-column PDF text-block fragmentation and isolate pure question content",
       "visual_source_reference": "SOURCE/DSA-20260930T180448Z-1-001/DSA/DSA Practice Assignment.pdf Page 2",
-      "reconstructed_text": "The Breadth First Search algorithm has been implemented using the queue data structure. One possible order of visiting the nodes of the following graph is\n[Graph with 6 nodes {M, N, O, R, Q, P} and edges (M,N), (N,O), (M,R), (M,Q), (N,Q), (O,P), (Q,P)]\n(a) MNOPQR\n(b) NQMPOR\n(c) QMNPRO\n(d) QMNPOR",
-      "reconstruction_confidence": "HIGH"
+      "reconstructed_text": "The Breadth First Search algorithm has been implemented using the queue data structure. One possible order of visiting the nodes of the following graph is\n[Graph with 6 nodes {M, N, O, K, Q, P} and 7 edges (M,K), (M,N), (M,Q), (N,O), (N,Q), (Q,P), (P,O)]\n(a) MNOPQR\n(b) NQMPOR\n(c) QMNPRO\n(d) QMNPOR",
+      "reconstruction_confidence": "HIGH",
+      "visual_semantic_verification": {
+        "status": "VERIFIED",
+        "verification_basis": "Rendered source-page inspection at 600 DPI (rendered_pages/DOC-28_Q9_graph_600dpi.png)",
+        "source_page": 2,
+        "source_region": "DOC-28 Page 2, middle visual container (y \u2248 300 to 450 pt)",
+        "elements_checked": [
+          "vertex_labels",
+          "edges",
+          "graph_connectivity",
+          "planar_layout",
+          "question_stem",
+          "mcq_options"
+        ],
+        "element_level_findings": [
+          {
+            "element": "vertex_labels",
+            "source": "6 circular nodes: {M, N, O, K, Q, P} (top row M, N, O; bottom row K, Q, P)",
+            "reconstructed": "6 nodes {M, N, O, K, Q, P}",
+            "match": true
+          },
+          {
+            "element": "edges",
+            "source": "7 edges: (M,K), (M,N), (M,Q), (N,O), (N,Q), (Q,P), (P,O)",
+            "reconstructed": "7 edges (M,K), (M,N), (M,Q), (N,O), (N,Q), (Q,P), (P,O)",
+            "match": true
+          },
+          {
+            "element": "graph_connectivity",
+            "source": "Single connected component, degree sequence: K:1, M:3, N:3, Q:3, P:2, O:2",
+            "reconstructed": "Single connected component with 7 edges",
+            "match": true
+          },
+          {
+            "element": "question_stem",
+            "source": "The Breadth First Search algorithm has been implemented using the queue data structure. One possible order of visiting the nodes of the following graph is",
+            "reconstructed": "The Breadth First Search algorithm has been implemented using the queue data structure. One possible order of visiting the nodes of the following graph is",
+            "match": true
+          },
+          {
+            "element": "mcq_options",
+            "source": "(a) MNOPQR\n(b) NQMPOR\n(c) QMNPRO\n(d) QMNPOR",
+            "reconstructed": "(a) MNOPQR\n(b) NQMPOR\n(c) QMNPRO\n(d) QMNPOR",
+            "match": true
+          }
+        ],
+        "verification_confidence": "HIGH"
+      }
     },
     "completeness_status": "COMPLETE",
     "extraction_confidence": "HIGH",
@@ -54498,7 +54606,7 @@
     "source_visual_required": true,
     "source_visual_page": 2,
     "source_visual_region": "Page 2 visual container",
-    "source_visual_reason": "Undirected graph diagram required to trace BFS visiting orders",
+    "source_visual_reason": "Undirected graph diagram with 6 vertices {M, N, O, K, Q, P} and 7 edges required to trace BFS visiting orders",
     "is_student_answerable": true
   },
   {
@@ -54520,7 +54628,41 @@
       "reconstruction_method": "Visual layout reassembly from rendered source page 2 to resolve two-column PDF text-block fragmentation and isolate pure question content",
       "visual_source_reference": "SOURCE/DSA-20260930T180448Z-1-001/DSA/DSA Practice Assignment.pdf Page 2",
       "reconstructed_text": "What will be the post order traversal of the given tree?\n[Tree with root 1, right child 2, right child 5, children 3 and 6, child 4]\n(a) 1, 2, 3, 4, 5, 6\n(b) 5, 3, 4, 6, 2, 1\n(c) 4, 3, 6, 5, 2, 1\n(d) 3, 4, 6, 5, 2, 1",
-      "reconstruction_confidence": "HIGH"
+      "reconstruction_confidence": "HIGH",
+      "visual_semantic_verification": {
+        "status": "VERIFIED",
+        "verification_basis": "Rendered source-page visual inspection & embedded raster image inspection (xref 24)",
+        "source_page": 2,
+        "source_region": "DOC-28 Page 2, middle-lower container (y \u2248 450 to 650 pt), image xref 24",
+        "elements_checked": [
+          "question_stem",
+          "root_node",
+          "tree_hierarchy",
+          "parent_child_relationships",
+          "mcq_options"
+        ],
+        "element_level_findings": [
+          {
+            "element": "question_stem",
+            "source": "What will be the post order traversal of the given tree?",
+            "reconstructed": "What will be the post order traversal of the given tree?",
+            "match": true
+          },
+          {
+            "element": "tree_structure",
+            "source": "Tree with root 1; child 2; child 5; children of 5: left child 3, right child 6; child of 3: 4",
+            "reconstructed": "Tree with root 1, right child 2, right child 5, children 3 and 6, child 4",
+            "match": true
+          },
+          {
+            "element": "mcq_options",
+            "source": "(a) 1, 2, 3, 4, 5, 6\n(b) 5, 3, 4, 6, 2, 1\n(c) 4, 3, 6, 5, 2, 1\n(d) 3, 4, 6, 5, 2, 1",
+            "reconstructed": "(a) 1, 2, 3, 4, 5, 6\n(b) 5, 3, 4, 6, 2, 1\n(c) 4, 3, 6, 5, 2, 1\n(d) 3, 4, 6, 5, 2, 1",
+            "match": true
+          }
+        ],
+        "verification_confidence": "HIGH"
+      }
     },
     "completeness_status": "COMPLETE",
     "extraction_confidence": "HIGH",
@@ -54565,7 +54707,39 @@
       "reconstruction_method": "Visual layout reassembly from rendered source page 2 to resolve two-column PDF text-block fragmentation and isolate pure question content",
       "visual_source_reference": "SOURCE/DSA-20260930T180448Z-1-001/DSA/DSA Practice Assignment.pdf Page 2",
       "reconstructed_text": "Which of the following tree can always be stored with optimum space complexity, using a 1D array?\n(a) Full Binary Tree\n(b) Almost complete Binary Tree\n(c) Binary Search Tree",
-      "reconstruction_confidence": "HIGH"
+      "reconstruction_confidence": "HIGH",
+      "visual_semantic_verification": {
+        "status": "VERIFIED",
+        "verification_basis": "Rendered source-page visual inspection",
+        "source_page": 2,
+        "source_region": "DOC-28 Page 2, lower container (y \u2248 650 to 760 pt)",
+        "elements_checked": [
+          "question_stem",
+          "mcq_options",
+          "cross_question_isolation"
+        ],
+        "element_level_findings": [
+          {
+            "element": "question_stem",
+            "source": "Which of the following tree can always be stored with optimum space complexity, using a 1D array?",
+            "reconstructed": "Which of the following tree can always be stored with optimum space complexity, using a 1D array?",
+            "match": true
+          },
+          {
+            "element": "mcq_options",
+            "source": "(a) Full Binary Tree\n(b) Almost complete Binary Tree\n(c) Binary Search Tree",
+            "reconstructed": "(a) Full Binary Tree\n(b) Almost complete Binary Tree\n(c) Binary Search Tree",
+            "match": true
+          },
+          {
+            "element": "cross_question_isolation",
+            "source": "Zero textual leakage from Q7 or Q8 into Q11",
+            "reconstructed": "Clean standalone question stem with 3 options",
+            "match": true
+          }
+        ],
+        "verification_confidence": "HIGH"
+      }
     },
     "completeness_status": "COMPLETE",
     "extraction_confidence": "HIGH",

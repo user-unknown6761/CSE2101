@@ -1,0 +1,62 @@
+{
+  "adversarial_passed": 7,
+  "adversarial_total": 7,
+  "test_results": [
+    {
+      "test_id": "TEST A",
+      "name": "Fabricated Marks with Null Evidence",
+      "rule_failed": "Rule 04",
+      "caught": true,
+      "status": "PASS",
+      "validator_rejection_reason": "Record DOC-01-P01-Q01-sub-i marked physically_established but marks_source_evidence is None"
+    },
+    {
+      "test_id": "TEST B",
+      "name": "Incomplete Marks Evidence (Missing evidence_text)",
+      "rule_failed": "Rule 04",
+      "caught": true,
+      "status": "PASS",
+      "validator_rejection_reason": "Record DOC-01-P01-Q01-sub-i marks_source_evidence missing evidence_text"
+    },
+    {
+      "test_id": "TEST C",
+      "name": "Answerable Source Fragment Corruption",
+      "rule_failed": "Rule 12",
+      "caught": true,
+      "status": "PASS",
+      "validator_rejection_reason": "Source fragment DOC-01-P03-Q07 has is_student_answerable = True (expected False)"
+    },
+    {
+      "test_id": "TEST D",
+      "name": "Fake Visual Verification Without Review Evidence",
+      "rule_failed": "Rules 14 & 27",
+      "caught": true,
+      "status": "PASS",
+      "validator_rejection_reason": "Page DOC-01 P1 is marked VERIFIED without full review record and verification basis"
+    },
+    {
+      "test_id": "TEST E",
+      "name": "Empty Damage Audit Mutation",
+      "rule_failed": "Rule 06",
+      "caught": true,
+      "status": "PASS",
+      "validator_rejection_reason": "Damage audit is empty while deterministic damage candidates exist in corpus."
+    },
+    {
+      "test_id": "TEST F",
+      "name": "Classification Mismatch (DOC-31 Tier 2 Promotion)",
+      "rule_failed": "Rules 17 & 22",
+      "caught": true,
+      "status": "PASS",
+      "validator_rejection_reason": "DOC-31 inventory not classified as Tier 3 Authority Unconfirmed: 2, Objective Question Bank \u2014 Authority Unconfirmed"
+    },
+    {
+      "test_id": "TEST G",
+      "name": "Incorrect STATE B Visual Semantics (DOC-28 Q9 Vertex K -> R)",
+      "rule_failed": "Rule 31",
+      "caught": true,
+      "status": "PASS",
+      "validator_rejection_reason": "DOC-28 Q9 raw_text does not contain faithful vertex 'K' and edge '(M,K)'"
+    }
+  ]
+}

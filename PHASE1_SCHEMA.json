@@ -16,7 +16,12 @@
         "source_tier",
         "classification_confidence",
         "content_type",
-        "text_extraction_status"
+        "text_extraction_status",
+        "extraction_complete",
+        "rendering_complete",
+        "visual_review_complete",
+        "verification_complete",
+        "document_visual_review_status"
       ],
       "properties": {
         "document_id": {
@@ -104,6 +109,25 @@
         "text_extraction_status": {
           "type": "string",
           "enum": ["SUCCESS", "PARTIAL", "FAILED"]
+        },
+        "ocr_needed_status": {
+          "type": "boolean"
+        },
+        "extraction_complete": {
+          "type": "boolean"
+        },
+        "rendering_complete": {
+          "type": "boolean"
+        },
+        "visual_review_complete": {
+          "type": "boolean"
+        },
+        "verification_complete": {
+          "type": "boolean"
+        },
+        "document_visual_review_status": {
+          "type": "string",
+          "enum": ["NOT_ESTABLISHED", "PARTIALLY_REVIEWED", "FULLY_REVIEWED", "VERIFIED"]
         },
         "visual_presence": {
           "type": "boolean"
@@ -328,7 +352,32 @@
             "reconstruction_method": { "type": "string" },
             "visual_source_reference": { "type": "string" },
             "reconstructed_text": { "type": "string" },
-            "reconstruction_confidence": { "type": "string", "enum": ["HIGH", "MEDIUM", "LOW"] }
+            "reconstruction_confidence": { "type": "string", "enum": ["HIGH", "MEDIUM", "LOW"] },
+            "visual_semantic_verification": {
+              "type": ["object", "null"],
+              "properties": {
+                "status": { "type": "string", "enum": ["VERIFIED", "FLAGGED", "UNVERIFIED"] },
+                "verification_basis": { "type": "string" },
+                "source_page": { "type": "integer" },
+                "source_region": { "type": ["string", "null"] },
+                "elements_checked": { "type": "array", "items": { "type": "string" } },
+                "element_level_findings": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "element": { "type": "string" },
+                      "source": { "type": "string" },
+                      "reconstructed": { "type": "string" },
+                      "match": { "type": "boolean" }
+                    },
+                    "required": ["element", "source", "reconstructed", "match"]
+                  }
+                },
+                "verification_confidence": { "type": "string", "enum": ["HIGH", "MEDIUM", "LOW"] }
+              },
+              "required": ["status", "verification_basis", "source_page", "elements_checked", "element_level_findings", "verification_confidence"]
+            }
           }
         },
         "completeness_status": {
@@ -531,6 +580,10 @@
         "character_count",
         "text_extraction_status",
         "text_extraction_confidence",
+        "detection_status",
+        "render_status",
+        "visual_review_status",
+        "verification_status",
         "visual_inspection_required",
         "visual_verification_status",
         "visually_reviewed",
@@ -553,6 +606,11 @@
         "character_count": { "type": "integer" },
         "text_extraction_status": { "type": "string" },
         "text_extraction_confidence": { "type": "string", "enum": ["HIGH", "MEDIUM", "LOW"] },
+        "detection_status": { "type": "string", "enum": ["DETECTED", "NOT_DETECTED"] },
+        "render_status": { "type": "string", "enum": ["NOT_RENDERED", "RENDERED", "FAILED"] },
+        "render_artifact_reference": { "type": ["string", "null"] },
+        "visual_review_status": { "type": "string", "enum": ["NOT_REQUIRED", "NOT_REVIEWED", "REVIEWED"] },
+        "verification_status": { "type": "string", "enum": ["NOT_APPLICABLE", "UNVERIFIED", "VERIFIED", "FLAGGED"] },
         "visual_inspection_required": { "type": "boolean" },
         "visual_verification_status": {
           "type": "string",
@@ -581,6 +639,10 @@
         "document_id",
         "filename",
         "page_number",
+        "detection_status",
+        "render_status",
+        "visual_review_status",
+        "verification_status",
         "visual_element_type",
         "raster_images_count",
         "vector_drawings_count",
@@ -595,6 +657,11 @@
         "document_id": { "type": "string" },
         "filename": { "type": "string" },
         "page_number": { "type": "integer" },
+        "detection_status": { "type": "string", "enum": ["DETECTED", "NOT_DETECTED"] },
+        "render_status": { "type": "string", "enum": ["NOT_RENDERED", "RENDERED", "FAILED"] },
+        "render_artifact_reference": { "type": ["string", "null"] },
+        "visual_review_status": { "type": "string", "enum": ["NOT_REQUIRED", "NOT_REVIEWED", "REVIEWED"] },
+        "verification_status": { "type": "string", "enum": ["NOT_APPLICABLE", "UNVERIFIED", "VERIFIED", "FLAGGED"] },
         "visual_element_type": { "type": "string" },
         "raster_images_count": { "type": "integer" },
         "vector_drawings_count": { "type": "integer" },

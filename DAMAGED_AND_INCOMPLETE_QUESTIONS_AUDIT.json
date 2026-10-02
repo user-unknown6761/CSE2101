@@ -1361,11 +1361,11 @@
     "page": 2,
     "damage_type": "missing_referenced_visual",
     "severity": "MAJOR",
-    "evidence": "Referenced 6-vertex BFS graph diagram located in vector drawing band y=336-398",
+    "evidence": "Referenced 6-vertex BFS graph diagram with vertices {M, N, O, K, Q, P} located in visual container y=300-450",
     "resolution_status": "RESOLVED",
-    "resolution_method": "Linked vector graph diagram region via visual layout reassembly (STATE B)",
-    "source_visual_reference": "SOURCE/DSA-20260930T180448Z-1-001/DSA/DSA Practice Assignment.pdf Page 2 y=336-398",
-    "notes": "Visual dependency linked to source vector drawing region"
+    "resolution_method": "Linked visual graph diagram region via visual layout reassembly (STATE B) with vertex K and 7 edges",
+    "source_visual_reference": "SOURCE/DSA-20260930T180448Z-1-001/DSA/DSA Practice Assignment.pdf Page 2 y=300-450",
+    "notes": "Visual dependency linked to source visual container; verified against 600 DPI render (DOC28_Q9_VISUAL_SEMANTIC_AUDIT.md)"
   },
   {
     "question_instance_id": "DOC-28-P02-MCQ-Q10",

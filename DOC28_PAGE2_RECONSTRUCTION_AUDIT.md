@@ -85,27 +85,28 @@ Below is the verified audit demonstrating compliance with Prompt 1.1 Section 15.
 
 ---
 
-### Question 9: BFS Traversal Order on Graph (Graph Preserved)
+### Question 9: BFS Traversal Order on Graph (Graph Preserved — Corrected R → K)
 - **Question Instance ID:** `DOC-28-P02-MCQ-Q09`
 - **Physical Page:** Page 2
 - **Wording State:** `STATE B — RECONSTRUCTED`
 - **Source Visual Required:** `true`
 - **Source Visual Page:** `2`
-- **Source Visual Region:** `Page 2 y=336-398 vector graph diagram region`
-- **Source Visual Reason:** `Undirected graph diagram with 6 vertices {M, N, O, P, Q, R} required to trace BFS visiting orders`
-- **Reconstruction Method:** Visual layout reassembly from rendered source page 2 linking referenced graph diagram and reassembling options.
+- **Source Visual Region:** `DOC-28 Page 2, middle visual container (y ≈ 300 to 450 pt)`
+- **Source Visual Reason:** `Undirected graph diagram with 6 vertices {M, N, O, K, Q, P} and 7 edges required to trace BFS visiting orders`
+- **Reconstruction Method:** Visual layout reassembly from rendered source page 2 linking referenced graph diagram and reassembling options. Corrected vertex `R` to `K` following 600 DPI forensic inspection in [DOC28_Q9_VISUAL_SEMANTIC_AUDIT.md](file:///d:/DOWNLOADS/CSE2101/DOC28_Q9_VISUAL_SEMANTIC_AUDIT.md).
 - **Visual Source Reference:** `SOURCE/DSA-20260930T180448Z-1-001/DSA/DSA Practice Assignment.pdf Page 2`
+- **Render Artifact Reference:** `rendered_pages/DOC-28_Q9_graph_600dpi.png`
 - **Reconstruction Confidence:** `HIGH`
 - **Reconstructed Question Text:**
   ```text
   The Breadth First Search algorithm has been implemented using the queue data structure. One possible order of visiting the nodes of the following graph is
-  [Graph with 6 nodes {M, N, O, R, Q, P} and edges (M,N), (N,O), (M,R), (M,Q), (N,Q), (O,P), (Q,P)]
+  [Graph with 6 nodes {M, N, O, K, Q, P} and 7 edges (M,K), (M,N), (M,Q), (N,O), (N,Q), (Q,P), (P,O)]
   (a) MNOPQR
   (b) NQMPOR
   (c) QMNPRO
   (d) QMNPOR
   ```
-- **Audit Verdict:** **PASS — Graph reference explicitly captured with visual metadata**.
+- **Audit Verdict:** **PASS — Source visual verified at 600 DPI; vertex K and 7 edges established with complete semantic provenance**. See [DOC28_Q9_VISUAL_SEMANTIC_AUDIT.md](file:///d:/DOWNLOADS/CSE2101/DOC28_Q9_VISUAL_SEMANTIC_AUDIT.md).
 
 ---
 
@@ -176,7 +177,7 @@ Below is the verified audit demonstrating compliance with Prompt 1.1 Section 15.
 | :---: | :---: | :---: | :--- | :---: | :---: | :--- |
 | **Q7** | Page 1 *(erroneous)* | STATE B | Truncated options, misassigned to Page 1 | **Page 2** | **STATE B** | Fully intact text & options reassembled |
 | **Q8** | Page 2 | STATE B | Missing C code block | **Page 2** | **STATE B** | Embedded C code snippet preserved; xref 22 |
-| **Q9** | Page 2 | STATE B | Unreferenced graph | **Page 2** | **STATE B** | BFS graph diagram region preserved |
+| **Q9** | Page 2 | STATE B | Erroneous node label 'R' instead of 'K' | **Page 2** | **STATE B** | BFS graph diagram verified at 600 DPI; vertex K & 7 edges |
 | **Q10** | Page 2 | STATE B | Unreferenced tree | **Page 2** | **STATE B** | Tree diagram preserved; xref 24 |
 | **Q11** | Page 2 | STATE B | Contaminated with Q7/Q8 fragments | **Page 2** | **STATE B** | Purged; contains ONLY genuine Q11 content |
 | **Q12** | Page 2 *(erroneous)* | STATE B *(erroneous)* | Misattributed to P2 and labeled State B | **Page 3** | **STATE A** | Verbatim text extraction from Page 3 |

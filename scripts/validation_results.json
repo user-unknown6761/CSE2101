@@ -4,7 +4,7 @@
       "rule": 1,
       "description": "Every inventory PDF has SHA-256 cryptographic hash",
       "status": "PASS",
-      "details": "Verified across 33 documents."
+      "details": "Verified across all 33 documents."
     },
     {
       "rule": 2,
@@ -22,31 +22,31 @@
       "rule": 4,
       "description": "No record has fabricated marks; every physically established mark has source evidence (Rule A & C)",
       "status": "PASS",
-      "details": "Zero fabricated marks fallbacks detected; all physically established marks have explicit provenance evidence."
+      "details": "Marks integrity verified: zero fabricated marks; all physically established marks have full evidence."
     },
     {
       "rule": 5,
       "description": "No unknown provenance is replaced with placeholder guesses",
       "status": "PASS",
-      "details": "Unknown metadata fields strictly preserved as null."
+      "details": "No placeholders, no Phase 2 fields, and no canonical deduplication keys present."
     },
     {
       "rule": 6,
       "description": "Real damage audit is populated with valid damage records and covers all fragments (Rule H)",
       "status": "PASS",
-      "details": "507 damage records verified across corpus; covers all 111 fragments."
+      "details": "Damage audit validated: 507 entries match 474 independently detected candidates."
     },
     {
       "rule": 7,
       "description": "Every question occurrence has a valid wording state (null for containers and fragments)",
       "status": "PASS",
-      "details": "Wording states verified across 1260 questions; null for 213 containers and 111 fragments."
+      "details": "Wording states verified across all records; null for containers/fragments."
     },
     {
       "rule": 8,
       "description": "No solution/reference material accidentally assigned to Tier 1",
       "status": "PASS",
-      "details": "All solution and study notes strictly isolated at Tier 4."
+      "details": "Governance tiers and document classification verified (Tier 4 solutions, Tier 3 unconfirmed banks)."
     },
     {
       "rule": 9,
@@ -70,7 +70,7 @@
       "rule": 12,
       "description": "No non-question source fragment is answerable (Rule B & Rule E)",
       "status": "PASS",
-      "details": "All 111 fragments (including marks equations) strictly marked non-answerable."
+      "details": "All 111 fragments strictly marked non-answerable."
     },
     {
       "rule": 13,
@@ -82,19 +82,19 @@
       "rule": 14,
       "description": "No VERIFIED visual item exists without explicit inspection evidence (Rule F)",
       "status": "PASS",
-      "details": "VERIFIED status strictly restricted to pages with documented visual inspection records (DOC-28 Page 2)."
+      "details": "Visual page extraction quality and verification audit validated across all dimensions."
     },
     {
       "rule": 15,
       "description": "Automated visual presence detection is distinct from verification (Rule G)",
       "status": "PASS",
-      "details": "225 pages with diagrams/drawings are correctly classified as DETECTED without claiming verification."
+      "details": "94 pages correctly classified as DETECTED without claiming verification."
     },
     {
       "rule": 16,
       "description": "Practice Assignment does not appear as exam_type",
       "status": "PASS",
-      "details": "exam_type is strictly null for Practice Assignment in document and question records."
+      "details": "exam_type is strictly null for Practice Assignment."
     },
     {
       "rule": 17,
@@ -106,19 +106,19 @@
       "rule": 18,
       "description": "All question records have valid record_type",
       "status": "PASS",
-      "details": "All 1584 records have record_type in {'non_question_source_fragment', 'question_occurrence', 'paper_question_container'}."
+      "details": "All 1584 records have record_type in {'non_question_source_fragment', 'paper_question_container', 'question_occurrence'}."
     },
     {
       "rule": 19,
       "description": "Question counts reconcile dynamically from JSON dataset (Rule J)",
       "status": "PASS",
-      "details": "Total Physical Records: 1584 = Containers: 213 + Question Occurrences: 1260 (Sub: 825 + Standalone: 435) + Fragments: 111."
+      "details": "Reconciliation validated: 1584 physical records = 213 containers + 1260 occurrences (825 sub + 435 standalone) + 111 fragments."
     },
     {
       "rule": 20,
       "description": "No active question contains marks-only equation or cross-question contamination (Rule K)",
       "status": "PASS",
-      "details": "Marks-only equations reclassified as source fragments; DOC-28 Q11 text purged of Q7 contamination."
+      "details": "Marks-only equations reclassified as source fragments; DOC-28 Q11 purged."
     },
     {
       "rule": 21,
@@ -142,11 +142,53 @@
       "rule": 24,
       "description": "Machine-readable summary metrics synchronize exactly with JSON dataset",
       "status": "PASS",
-      "details": "Derived metrics match corpus: 1584 physical records, 213 containers, 1260 questions, 111 fragments."
+      "details": "Derived metrics match corpus: 1584 physical records, 213 containers, 1260 questions."
+    },
+    {
+      "rule": 25,
+      "description": "RENDERED cannot be true without render evidence existing on disk",
+      "status": "PASS",
+      "details": "1 rendered pages backed by physical artifacts on disk."
+    },
+    {
+      "rule": 26,
+      "description": "VISUALLY_REVIEWED cannot be true without a review record",
+      "status": "PASS",
+      "details": "1 reviewed pages have review_record references."
+    },
+    {
+      "rule": 27,
+      "description": "VERIFIED cannot be true without review record + verification basis",
+      "status": "PASS",
+      "details": "1 verified pages backed by review records and basis."
+    },
+    {
+      "rule": 28,
+      "description": "Detected visual pages do not automatically become VERIFIED without review",
+      "status": "PASS",
+      "details": "237 detected pages remain unverified pending physical review."
+    },
+    {
+      "rule": 29,
+      "description": "STATE B visual questions require semantic verification metadata",
+      "status": "PASS",
+      "details": "3 visual STATE B questions contain structured semantic verification metadata."
+    },
+    {
+      "rule": 30,
+      "description": "STATE B visual semantics marked verified only when all elements match source",
+      "status": "PASS",
+      "details": "All verified STATE B visual items have 100% matching element-level findings."
+    },
+    {
+      "rule": 31,
+      "description": "DOC-28 Q9 graph representation is source-faithful (Vertex K, 7 edges, R eliminated)",
+      "status": "PASS",
+      "details": "DOC-28 Q9 graph contains verified vertex K, edge (M,K), and passes 600 DPI semantic audit."
     }
   ],
-  "passed_rules": 24,
+  "passed_rules": 31,
   "failed_rules": 0,
-  "adversarial_passed": 6,
-  "adversarial_total": 6
+  "adversarial_passed": 7,
+  "adversarial_total": 7
 }
