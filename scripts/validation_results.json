@@ -106,7 +106,7 @@
       "rule": 18,
       "description": "All question records have valid record_type",
       "status": "PASS",
-      "details": "All 1584 records have record_type in {'question_occurrence', 'non_question_source_fragment', 'paper_question_container'}."
+      "details": "All 1584 records have record_type in {'question_occurrence', 'paper_question_container', 'non_question_source_fragment'}."
     },
     {
       "rule": 19,
@@ -142,7 +142,7 @@
       "rule": 24,
       "description": "Machine-readable summary metrics independently derived and verified across all metrics",
       "status": "PASS",
-      "details": "All 23 summary metrics verified equal to independently derived values."
+      "details": "All 31 summary metrics verified equal to independently derived values."
     },
     {
       "rule": 25,
@@ -202,11 +202,11 @@
       "rule": 34,
       "description": "Cross-artifact visual evidence consistency between PAGE_EXTRACTION_QUALITY and VISUAL_VERIFICATION_AUDIT",
       "status": "PASS",
-      "details": "Cross-artifact consistency verified: all 238 visual pages agree exactly across all 9 canonical fields."
+      "details": "Page audit bijection validated: all 238 visual pages agree exactly across all canonical fields."
     }
   ],
   "passed_rules": 34,
   "failed_rules": 0,
-  "adversarial_passed": 39,
-  "adversarial_total": 39
+  "adversarial_passed": 36,
+  "adversarial_total": 36
 }

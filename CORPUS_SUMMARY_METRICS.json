@@ -34,8 +34,8 @@
   "core_validation_rules_failed": 0,
   "validation_rules_passed": 34,
   "validation_rules_failed": 0,
-  "adversarial_tests_passed": 39,
-  "adversarial_tests_total": 39,
+  "adversarial_tests_passed": 36,
+  "adversarial_tests_total": 36,
   "schema_validation_passed": 1,
   "schema_validation_failed": 0
 }

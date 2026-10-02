@@ -4,6 +4,7 @@ import sys
 import re
 import copy
 import hashlib
+from collections import defaultdict
 import jsonschema
 
 if hasattr(sys.stdout, 'reconfigure'):
@@ -680,9 +681,9 @@ def validate_state_b_semantics(records, raise_on_error=False):
     return True, "STATE B reconstruction provenance and independent semantic representations validated."
 
 
-def validate_visual_pages(page_quality, visual_audit, raise_on_error=False):
+def validate_visual_state_consistency(page_quality, visual_audit, raise_on_error=False):
     """
-    Rules 14, 15, 25, 26, 27, 28:
+    Rules 14, 15, 25, 26, 27, 28 / Fix D: Complete Canonical <-> Legacy Visual State Consistency.
     - Canonical visual lifecycle states: detection_status, render_status, visual_review_status, verification_status.
     - Contradiction rejection against legacy fields (verified, visually_reviewed, render_artifact_reference).
     - RENDERED requires physical artifact on disk.
@@ -869,39 +870,70 @@ def validate_visual_pages(page_quality, visual_audit, raise_on_error=False):
                 return False, msg
 
     return True, "Visual page extraction quality and verification audit validated across all dimensions."
+validate_visual_pages = validate_visual_state_consistency
+
+
+def derive_document_rendering_lifecycle(page_quality):
+    """
+    Fix B: Document Rendering Lifecycle Derivation.
+    Derives document-level rendering lifecycle strictly from page_quality page-level evidence.
+    Returns: dict mapping doc_id -> {
+        'total_pages': int,
+        'rendered_pages': int,
+        'reviewed_pages': int,
+        'verified_pages': int,
+        'document_rendering_status': 'NOT_RENDERED' | 'PARTIALLY_RENDERED' | 'FULLY_RENDERED',
+        'rendering_complete': bool
+    }
+    """
+    doc_groups = defaultdict(list)
+    for p in page_quality:
+        doc_groups[p.get('document_id')].append(p)
+
+    lifecycle_map = {}
+    for doc_id, pages in doc_groups.items():
+        total_pages = len(pages)
+        rendered_pages = sum(1 for p in pages if p.get('render_status') == "RENDERED")
+        reviewed_pages = sum(1 for p in pages if p.get('visual_review_status') == "REVIEWED" or p.get('visually_reviewed') is True)
+        verified_pages = sum(1 for p in pages if p.get('verification_status') == "VERIFIED" or p.get('verified') is True)
+
+        if rendered_pages == 0:
+            lifecycle = "NOT_RENDERED"
+        elif rendered_pages == total_pages and total_pages > 0:
+            lifecycle = "FULLY_RENDERED"
+        else:
+            lifecycle = "PARTIALLY_RENDERED"
+
+        rendering_complete = (rendered_pages == total_pages and total_pages > 0)
+        lifecycle_map[doc_id] = {
+            'total_pages': total_pages,
+            'rendered_pages': rendered_pages,
+            'reviewed_pages': reviewed_pages,
+            'verified_pages': verified_pages,
+            'document_rendering_status': lifecycle,
+            'rendering_complete': rendering_complete
+        }
+    return lifecycle_map
 
 
 def derive_document_rendering_status(doc_id, page_quality):
     """
-    Helper function to dynamically derive document rendering lifecycle from page-level dataset.
+    Helper function to dynamically derive document rendering lifecycle for a single document.
     """
-    doc_pages = [p for p in page_quality if p.get('document_id') == doc_id]
-    total_pages = len(doc_pages)
-    rendered_pages = sum(1 for p in doc_pages if p.get('render_status') == "RENDERED")
-    reviewed_pages = sum(1 for p in doc_pages if p.get('visual_review_status') == "REVIEWED" or p.get('visually_reviewed') is True)
-    verified_pages = sum(1 for p in doc_pages if p.get('verification_status') == "VERIFIED" or p.get('verified') is True)
-
-    if rendered_pages == 0:
-        lifecycle = "NOT_RENDERED"
-    elif rendered_pages == total_pages and total_pages > 0:
-        lifecycle = "FULLY_RENDERED"
-    else:
-        lifecycle = "PARTIALLY_RENDERED"
-
-    rendering_complete = (rendered_pages == total_pages and total_pages > 0)
-    return {
-        'total_pages': total_pages,
-        'rendered_pages': rendered_pages,
-        'reviewed_pages': reviewed_pages,
-        'verified_pages': verified_pages,
-        'document_rendering_status': lifecycle,
-        'rendering_complete': rendering_complete
-    }
+    lmap = derive_document_rendering_lifecycle(page_quality)
+    return lmap.get(doc_id, {
+        'total_pages': 0,
+        'rendered_pages': 0,
+        'reviewed_pages': 0,
+        'verified_pages': 0,
+        'document_rendering_status': "NOT_RENDERED",
+        'rendering_complete': False
+    })
 
 
 def validate_document_lifecycle(inventory, page_quality, raise_on_error=False):
     """
-    Rule 32: Document-Level Rendering Lifecycle Derivation (Prompt Master Part A1).
+    Rule 32 / Fix B: Document-Level Rendering Lifecycle Derivation.
     - Derives total_pages, rendered_pages, reviewed_pages, verified_pages from page_quality.
     - Derives NOT_RENDERED, PARTIALLY_RENDERED, FULLY_RENDERED dynamically.
     - Invariant: inventory.document_rendering_status == derived_status
@@ -909,10 +941,16 @@ def validate_document_lifecycle(inventory, page_quality, raise_on_error=False):
     - Zero hardcoding of any document ID.
     """
     valid_lifecycle_statuses = {"NOT_RENDERED", "PARTIALLY_RENDERED", "FULLY_RENDERED"}
+    lifecycle_map = derive_document_rendering_lifecycle(page_quality)
 
     for d in inventory:
         doc_id = d.get('document_id')
-        derived = derive_document_rendering_status(doc_id, page_quality)
+        derived = lifecycle_map.get(doc_id)
+        if not derived:
+            msg = f"Document {doc_id} in inventory has no corresponding pages in PAGE_EXTRACTION_QUALITY"
+            if raise_on_error:
+                raise AssertionError(msg)
+            return False, msg
 
         doc_ren_st = d.get('document_rendering_status')
         ren_comp = d.get('rendering_complete')
@@ -938,24 +976,67 @@ def validate_document_lifecycle(inventory, page_quality, raise_on_error=False):
     return True, "Document rendering lifecycle dynamically derived from page quality dataset and verified across all inventory documents."
 
 
-def validate_page_quality_and_visual_audit_consistency(page_quality, visual_audit, raise_on_error=False):
+def validate_page_audit_bijection(page_quality, visual_audit, raise_on_error=False):
     """
-    Rule 34: Cross-Artifact Visual Evidence Consistency (Prompt Master Part A2).
-    - Canonical key: (document_id, page_number)
-    - visual_page_keys_page_quality == visual_page_keys_visual_audit
-    - Compares 9 canonical fields:
-      detection_status, render_status, render_artifact_reference, visual_review_status,
-      verification_status, visually_reviewed, verified, review_record, verification_basis.
+    Rule 34 / Fix A: Page Dataset <-> Visual Audit Bijection.
+    Canonical page identity: (document_id, page_number)
+    Invariants:
+    1. Every PAGE_EXTRACTION_QUALITY detected page key exists exactly once in VISUAL_VERIFICATION_AUDIT.
+    2. Every VISUAL_VERIFICATION_AUDIT page key exists exactly once in PAGE_EXTRACTION_QUALITY (and has detection_status == 'DETECTED').
+    3. No duplicate canonical page keys exist in either dataset.
+    4. For every matching page key, all fields that are intended to represent the same lifecycle state must agree.
+    5. At minimum reconcile:
+       - detection_status
+       - render_status
+       - render_artifact_reference
+       - visual_review_status
+       - verification_status
+       - visually_reviewed
+       - verified
+       - review_record
+       - verification_basis
+       - legacy visual_verification_status, where present
+    6. Do not compare irrelevant descriptive metadata merely because it exists.
+    7. The validator must derive the comparison from actual records, not hard-coded page counts.
     """
+    # 1. Check duplicate keys in page_quality
+    pq_keys = [(p.get('document_id'), p.get('page_number')) for p in page_quality]
+    if len(pq_keys) != len(set(pq_keys)):
+        seen = set()
+        dups = set()
+        for k in pq_keys:
+            if k in seen:
+                dups.add(k)
+            seen.add(k)
+        msg = f"Duplicate canonical page keys found in PAGE_EXTRACTION_QUALITY: {dups}"
+        if raise_on_error:
+            raise AssertionError(msg)
+        return False, msg
+
+    # 2. Check duplicate keys in visual_audit
+    va_keys = [(v.get('document_id'), v.get('page_number')) for v in visual_audit]
+    if len(va_keys) != len(set(va_keys)):
+        seen = set()
+        dups = set()
+        for k in va_keys:
+            if k in seen:
+                dups.add(k)
+            seen.add(k)
+        msg = f"Duplicate canonical page keys found in VISUAL_VERIFICATION_AUDIT: {dups}"
+        if raise_on_error:
+            raise AssertionError(msg)
+        return False, msg
+
+    # 3. Exact bijection between detected visual pages
     pq_vis = { (p['document_id'], p['page_number']): p for p in page_quality if p.get('detection_status') == 'DETECTED' }
     va_map = { (v['document_id'], v['page_number']): v for v in visual_audit }
 
-    pq_keys = set(pq_vis.keys())
-    va_keys = set(va_map.keys())
+    pq_keys_set = set(pq_vis.keys())
+    va_keys_set = set(va_map.keys())
 
-    if pq_keys != va_keys:
-        missing_in_va = pq_keys - va_keys
-        extra_in_va = va_keys - pq_keys
+    if pq_keys_set != va_keys_set:
+        missing_in_va = pq_keys_set - va_keys_set
+        extra_in_va = va_keys_set - pq_keys_set
         msg = f"Visual page key mismatch between page quality and visual audit: missing in audit: {missing_in_va}, extra in audit: {extra_in_va}"
         if raise_on_error:
             raise AssertionError(msg)
@@ -970,22 +1051,26 @@ def validate_page_quality_and_visual_audit_consistency(page_quality, visual_audi
         'visually_reviewed',
         'verified',
         'review_record',
-        'verification_basis'
+        'verification_basis',
+        'visual_verification_status'
     ]
 
-    for k in sorted(pq_keys):
+    for k in sorted(pq_keys_set):
         p_rec = pq_vis[k]
         v_rec = va_map[k]
         for f in fields_to_compare:
-            p_val = p_rec.get(f)
-            v_val = v_rec.get(f)
-            if p_val != v_val:
-                msg = f"Cross-artifact visual inconsistency for page {k[0]} P{k[1]} on field '{f}': page_quality has '{p_val}', visual_audit has '{v_val}'"
-                if raise_on_error:
-                    raise AssertionError(msg)
-                return False, msg
+            if f in p_rec or f in v_rec:
+                p_val = p_rec.get(f)
+                v_val = v_rec.get(f)
+                if p_val != v_val:
+                    msg = f"Cross-artifact visual inconsistency for page {k[0]} P{k[1]} on field '{f}': page_quality has '{p_val}', visual_audit has '{v_val}'"
+                    if raise_on_error:
+                        raise AssertionError(msg)
+                    return False, msg
 
-    return True, f"Cross-artifact consistency verified: all {len(pq_keys)} visual pages agree exactly across all 9 canonical fields."
+    return True, f"Page audit bijection validated: all {len(pq_keys_set)} visual pages agree exactly across all canonical fields."
+
+validate_page_quality_and_visual_audit_consistency = validate_page_audit_bijection
 
 
 def validate_formal_schemas(inventory, records, page_quality, visual_audit, damaged, schema_path='PHASE1_SCHEMA.json', raise_on_error=False):
@@ -1116,8 +1201,9 @@ def validate_reconciliation_and_counts(records, metrics, raise_on_error=False):
     return True, f"Reconciliation validated: {total_cnt} physical records = {cont_cnt} containers + {true_cnt} occurrences ({sub_cnt} sub + {stand_cnt} standalone) + {frag_cnt} fragments."
 
 
-def derive_summary_metrics(inventory, records, page_quality, visual_audit, damaged):
+def recompute_summary_metrics(inventory, records, page_quality, visual_audit, damage_audit, suspicious_audit=None):
     """
+    Fix C: Summary Metrics Independent Recomputation.
     Independently derive all summary metrics from raw production datasets.
     """
     containers = [r for r in records if r.get('record_type') == 'paper_question_container']
@@ -1141,7 +1227,7 @@ def derive_summary_metrics(inventory, records, page_quality, visual_audit, damag
     v_verified = sum(1 for p in page_quality if p.get('verification_status') == "VERIFIED" or p.get('verified') is True)
     v_flagged = sum(1 for p in page_quality if p.get('verification_status') == "FLAGGED")
 
-    unresolved_dmg = sum(1 for d in damaged if d.get('resolution_status') == 'UNRESOLVED')
+    unresolved_dmg = sum(1 for d in damage_audit if d.get('resolution_status') == 'UNRESOLVED')
 
     return {
         "documents": len(inventory),
@@ -1158,27 +1244,37 @@ def derive_summary_metrics(inventory, records, page_quality, visual_audit, damag
         "complete_questions": complete_cnt,
         "incomplete_questions": incomplete_cnt,
         "flagged_questions": flagged_ext,
+        "complete": complete_cnt,
+        "incomplete": incomplete_cnt,
+        "flagged_extraction": flagged_ext,
         "visual_detected_pages": v_detected,
         "visual_rendered_pages": v_rendered,
         "visual_reviewed_pages": v_reviewed,
         "visual_verified_pages": v_verified,
         "visual_flagged_pages": v_flagged,
-        "damage_records": len(damaged),
-        "damage_audit_entries": len(damaged),
-        "deterministic_damage_conditions": len(damaged),
+        "visual_detected": v_detected,
+        "visual_rendered": v_rendered,
+        "visual_reviewed": v_reviewed,
+        "visual_verified": v_verified,
+        "visual_flagged": v_flagged,
+        "damage_records": len(damage_audit),
+        "damage_audit_entries": len(damage_audit),
+        "deterministic_damage_conditions": len(damage_audit),
         "unresolved_damage_records": unresolved_dmg
     }
+
+derive_summary_metrics = recompute_summary_metrics
 
 
 def validate_summary_metrics(metrics, inventory, records, page_quality, visual_audit, damaged, raise_on_error=False):
     """
-    Rule 24: Summary Metrics Independence & Full Derivation (Prompt Master Part A3).
+    Rule 24 / Fix C: Summary Metrics Independence & Full Derivation.
     - CORPUS_SUMMARY_METRICS.json treated as output, not evidence.
     - Recomputes and compares every reported metric against independently derived values.
     """
-    derived = derive_summary_metrics(inventory, records, page_quality, visual_audit, damaged)
+    recomputed = recompute_summary_metrics(inventory, records, page_quality, visual_audit, damaged)
 
-    for k, expected_val in derived.items():
+    for k, expected_val in recomputed.items():
         stored_val = metrics.get(k)
         if stored_val != expected_val:
             msg = f"Summary metric mismatch for key '{k}': stored {stored_val} != independently derived {expected_val}"
@@ -1186,7 +1282,7 @@ def validate_summary_metrics(metrics, inventory, records, page_quality, visual_a
                 raise AssertionError(msg)
             return False, msg
 
-    return True, f"All {len(derived)} summary metrics verified equal to independently derived values."
+    return True, f"All {len(recomputed)} summary metrics verified equal to independently derived values."
 
 
 # ==============================================================================
@@ -1429,10 +1525,7 @@ def main():
     with open('CORPUS_SUMMARY_METRICS.json', 'r', encoding='utf-8') as f:
         metrics = json.load(f)
 
-    # Pre-sync metrics from source datasets
-    derived = derive_summary_metrics(inventory, all_records, page_quality, visual_audit, damaged)
-    for k, v in derived.items():
-        metrics[k] = v
+    # Note: We do NOT pre-sync metrics in memory. Stored metrics are validated as-is against independent recomputation.
 
     passed_checks, failed_checks, results = run_all_validation_rules(
         inventory, all_records, page_quality, damaged, visual_audit, suspicious, metrics

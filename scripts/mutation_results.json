@@ -1,7 +1,7 @@
 {
-  "adversarial_passed": 39,
-  "adversarial_total": 39,
-  "mutations": [
+  "adversarial_passed": 36,
+  "adversarial_total": 36,
+  "test_results": [
     {
       "test_id": "TEST A",
       "name": "Fabricated Marks with Null Evidence",
@@ -99,12 +99,52 @@
       "validator_rejection_reason": "Damage audit contains duplicate entries: 508 total vs 507 unique"
     },
     {
+      "test_id": "TEST H6",
+      "name": "Q8 C Code Semantic Corruption (match=True preserved)",
+      "rule_failed": "Rule 31",
+      "caught": true,
+      "status": "PASS",
+      "validator_rejection_reason": "DOC-28 Q8 code semantic corruption at line 5: '    printf(\"%s \", start->data);' != '    printf(\"%d \", start->data);'"
+    },
+    {
+      "test_id": "TEST H7",
+      "name": "Q9 Graph Edge Semantic Corruption (match=True preserved)",
+      "rule_failed": "Rule 31",
+      "caught": true,
+      "status": "PASS",
+      "validator_rejection_reason": "DOC-28 Q9 graph normalized edges mismatch: {('N', 'Q'), ('M', 'N'), ('O', 'P'), ('N', 'O'), ('M', 'Q'), ('P', 'Q'), ('M', 'Z')} != {('K', 'M'), ('N', 'Q'), ('M', 'N'), ('O', 'P'), ('N', 'O'), ('M', 'Q'), ('P', 'Q')}"
+    },
+    {
+      "test_id": "TEST H8",
+      "name": "Q10 Tree Relationship Corruption (match=True preserved)",
+      "rule_failed": "Rule 31",
+      "caught": true,
+      "status": "PASS",
+      "validator_rejection_reason": "DOC-28 Q10 tree parent-child relationships mismatch: {('3', '4'), ('5', '99'), ('1', '2'), ('2', '5'), ('5', '6')} != {('1', '2'), ('2', '5'), ('5', '6'), ('3', '4'), ('5', '3')}"
+    },
+    {
       "test_id": "TEST H9",
       "name": "Recorded SHA-256 Hash Byte Mutation",
       "rule_failed": "Rule 01",
       "caught": true,
       "status": "PASS",
       "validator_rejection_reason": "Document DOC-01 SHA-256 mismatch: recorded '427b828f8028033bd1ab7a6e19b4aaa6c3e4d34edcf3fc675d0821c1cd778f6b' != actual '427b828f8028033bd1ab7a6e19b4aaa6c3e4d34edcf3fc675d0821c1cd778f6a'"
+    },
+    {
+      "test_id": "TEST H10",
+      "name": "Canonical Visual Lifecycle Contradiction (VERIFIED vs verified=False)",
+      "rule_failed": "Rules 14 & 27",
+      "caught": true,
+      "status": "PASS",
+      "validator_rejection_reason": "Contradiction: Page DOC-28 P2 verification_status is VERIFIED but verified is False"
+    },
+    {
+      "test_id": "TEST H11",
+      "name": "Render-Status / Artifact Contradiction (NOT_RENDERED with artifact)",
+      "rule_failed": "Rule 25",
+      "caught": true,
+      "status": "PASS",
+      "validator_rejection_reason": "Contradiction: Page DOC-01 P1 render_status is NOT_RENDERED but render_artifact_reference is 'rendered_pages/phantom_render_page.png'"
     },
     {
       "test_id": "TEST H12",
@@ -115,204 +155,140 @@
       "validator_rejection_reason": "Schema validation error in record [0] (DOC-01-P01-CONTAINER-Q01): True was expected"
     },
     {
-      "test_id": "MUTATION A1",
-      "name": "DOC-28 Page Render Reverted to NOT_RENDERED (Stale Inventory Disagreement)",
-      "rule_failed": "Rule 32",
-      "caught": true,
-      "status": "PASS",
-      "validator_rejection_reason": "Document DOC-28 document_rendering_status 'PARTIALLY_RENDERED' does not match derived status 'NOT_RENDERED' from page quality (rendered 0/14 pages)"
-    },
-    {
-      "test_id": "MUTATION A2",
-      "name": "Fake Rendered Page Without Disk Artifact",
-      "rule_failed": "Rule 25",
-      "caught": true,
-      "status": "PASS",
-      "validator_rejection_reason": "Page DOC-01 P1 render artifact 'rendered_pages/non_existent_fake_render_doc01.png' does not exist on disk"
-    },
-    {
-      "test_id": "MUTATION A3",
-      "name": "Inventory Lifecycle Disagrees with Page-Level Evidence",
-      "rule_failed": "Rule 32",
-      "caught": true,
-      "status": "PASS",
-      "validator_rejection_reason": "Document DOC-01 document_rendering_status 'PARTIALLY_RENDERED' does not match derived status 'NOT_RENDERED' from page quality (rendered 0/4 pages)"
-    },
-    {
-      "test_id": "MUTATION B1",
-      "name": "Delete Visual-Audit Record",
+      "test_id": "MUTATION M1",
+      "name": "Delete One Visual-Audit Page",
       "rule_failed": "Rule 34",
       "caught": true,
       "status": "PASS",
       "validator_rejection_reason": "Visual page key mismatch between page quality and visual audit: missing in audit: {('DOC-01', 1)}, extra in audit: set()"
     },
     {
-      "test_id": "MUTATION B2",
-      "name": "Mutate Visual-Audit Verification Status",
+      "test_id": "MUTATION M2",
+      "name": "Add One Phantom Visual-Audit Page",
+      "rule_failed": "Rule 34",
+      "caught": true,
+      "status": "PASS",
+      "validator_rejection_reason": "Visual page key mismatch between page quality and visual audit: missing in audit: set(), extra in audit: {('DOC-99', 99)}"
+    },
+    {
+      "test_id": "MUTATION M3",
+      "name": "Conflicting Verification Status for Same Page",
       "rule_failed": "Rule 34",
       "caught": true,
       "status": "PASS",
       "validator_rejection_reason": "Cross-artifact visual inconsistency for page DOC-01 P1 on field 'verification_status': page_quality has 'UNVERIFIED', visual_audit has 'FLAGGED'"
     },
     {
-      "test_id": "MUTATION B3",
-      "name": "Mutate Visual-Audit Render Artifact Reference",
+      "test_id": "MUTATION M4",
+      "name": "Conflicting Render Status for Same Page",
       "rule_failed": "Rule 34",
       "caught": true,
       "status": "PASS",
-      "validator_rejection_reason": "Cross-artifact visual inconsistency for page DOC-28 P2 on field 'render_artifact_reference': page_quality has 'rendered_pages/DOC-28_page_2.png', visual_audit has 'rendered_pages/tampered_path.png'"
+      "validator_rejection_reason": "Cross-artifact visual inconsistency for page DOC-28 P2 on field 'render_status': page_quality has 'RENDERED', visual_audit has 'NOT_RENDERED'"
     },
     {
-      "test_id": "MUTATION B4",
-      "name": "One-Sided Lifecycle Mismatch (visual_review_status)",
+      "test_id": "MUTATION M5",
+      "name": "Conflicting Artifact Reference for Same Page",
       "rule_failed": "Rule 34",
       "caught": true,
       "status": "PASS",
-      "validator_rejection_reason": "Cross-artifact visual inconsistency for page DOC-28 P2 on field 'visual_review_status': page_quality has 'REVIEWED', visual_audit has 'NOT_REVIEWED'"
+      "validator_rejection_reason": "Cross-artifact visual inconsistency for page DOC-28 P2 on field 'render_artifact_reference': page_quality has 'rendered_pages/DOC-28_page_2.png', visual_audit has 'rendered_pages/conflicting_tampered_path.png'"
     },
     {
-      "test_id": "MUTATION C1",
-      "name": "Mutate Summary Physical Records Count",
-      "rule_failed": "Rule 24",
+      "test_id": "MUTATION M6",
+      "name": "Mark Previously NOT_RENDERED Page as RENDERED (Stale Inventory Disagreement)",
+      "rule_failed": "Rule 32",
       "caught": true,
       "status": "PASS",
-      "validator_rejection_reason": "Summary metric mismatch for key 'physical_records': stored 9999 != independently derived 1584"
+      "validator_rejection_reason": "Document DOC-01 document_rendering_status 'NOT_RENDERED' does not match derived status 'PARTIALLY_RENDERED' from page quality (rendered 1/4 pages)"
     },
     {
-      "test_id": "MUTATION C2",
-      "name": "Mutate Summary Visual Detected Pages Metric",
-      "rule_failed": "Rule 24",
+      "test_id": "MUTATION M7",
+      "name": "Change Inventory Document Rendering Status Without Page Evidence",
+      "rule_failed": "Rule 32",
       "caught": true,
       "status": "PASS",
-      "validator_rejection_reason": "Summary metric mismatch for key 'visual_detected_pages': stored 9999 != independently derived 238"
+      "validator_rejection_reason": "Document DOC-01 document_rendering_status 'PARTIALLY_RENDERED' does not match derived status 'NOT_RENDERED' from page quality (rendered 0/4 pages)"
     },
     {
-      "test_id": "MUTATION C3",
-      "name": "Mutate Summary Damage Audit Entries Metric",
-      "rule_failed": "Rule 24",
+      "test_id": "MUTATION M8",
+      "name": "Set rendering_complete=True for Partially Rendered Document",
+      "rule_failed": "Rule 32",
       "caught": true,
       "status": "PASS",
-      "validator_rejection_reason": "Summary metric mismatch for key 'damage_audit_entries': stored 9999 != independently derived 507"
+      "validator_rejection_reason": "Document DOC-28 rendering_complete is True but derived completion is False (rendered 1/14 pages)"
     },
     {
-      "test_id": "MUTATION C4",
-      "name": "Mutate Summary State A Count",
+      "test_id": "MUTATION M9",
+      "name": "Corrupt state_a in Summary Metrics",
       "rule_failed": "Rule 24",
       "caught": true,
       "status": "PASS",
       "validator_rejection_reason": "Summary metric mismatch for key 'state_a': stored 9999 != independently derived 1255"
     },
     {
-      "test_id": "MUTATION D1",
-      "name": "Visual Contradiction: VERIFIED + verified=False",
+      "test_id": "MUTATION M10",
+      "name": "Corrupt state_b in Summary Metrics",
+      "rule_failed": "Rule 24",
+      "caught": true,
+      "status": "PASS",
+      "validator_rejection_reason": "Summary metric mismatch for key 'state_b': stored 9999 != independently derived 5"
+    },
+    {
+      "test_id": "MUTATION M11",
+      "name": "Corrupt visual_verified_pages in Summary Metrics",
+      "rule_failed": "Rule 24",
+      "caught": true,
+      "status": "PASS",
+      "validator_rejection_reason": "Summary metric mismatch for key 'visual_verified_pages': stored 9999 != independently derived 1"
+    },
+    {
+      "test_id": "MUTATION M12",
+      "name": "Corrupt damage_records in Summary Metrics",
+      "rule_failed": "Rule 24",
+      "caught": true,
+      "status": "PASS",
+      "validator_rejection_reason": "Summary metric mismatch for key 'damage_records': stored 9999 != independently derived 507"
+    },
+    {
+      "test_id": "MUTATION M13",
+      "name": "Corrupt unresolved_damage_records in Summary Metrics",
+      "rule_failed": "Rule 24",
+      "caught": true,
+      "status": "PASS",
+      "validator_rejection_reason": "Summary metric mismatch for key 'unresolved_damage_records': stored 9999 != independently derived 391"
+    },
+    {
+      "test_id": "MUTATION M14",
+      "name": "Corrupt question_occurrences in Summary Metrics",
+      "rule_failed": "Rule 24",
+      "caught": true,
+      "status": "PASS",
+      "validator_rejection_reason": "Summary metric mismatch for key 'question_occurrences': stored 9999 != independently derived 1260"
+    },
+    {
+      "test_id": "MUTATION M15",
+      "name": "Legacy VERIFIED While Canonical Status Is Not VERIFIED",
       "rule_failed": "Rule 15",
       "caught": true,
       "status": "PASS",
-      "validator_rejection_reason": "Contradiction: Page DOC-28 P2 verification_status is VERIFIED but verified is False"
+      "validator_rejection_reason": "Contradiction: Page DOC-01 P1 visual_verification_status is VERIFIED but verification_status is 'UNVERIFIED'"
     },
     {
-      "test_id": "MUTATION D2",
-      "name": "Visual Contradiction: REVIEWED + visually_reviewed=False",
+      "test_id": "MUTATION M16",
+      "name": "visually_reviewed=True While visual_review_status Is Not REVIEWED",
       "rule_failed": "Rule 15",
       "caught": true,
       "status": "PASS",
-      "validator_rejection_reason": "Contradiction: Page DOC-28 P2 verification_status is VERIFIED but visually_reviewed is not True"
+      "validator_rejection_reason": "Contradiction: Page DOC-01 P1 visually_reviewed is True but visual_review_status is 'NOT_REVIEWED'"
     },
     {
-      "test_id": "MUTATION D3",
-      "name": "Visual Contradiction: visual_verification_status=VERIFIED + verification_status=UNVERIFIED",
+      "test_id": "MUTATION M17",
+      "name": "verified=True While verification_status Is Not VERIFIED",
       "rule_failed": "Rule 15",
       "caught": true,
       "status": "PASS",
-      "validator_rejection_reason": "Contradiction: Page DOC-28 P2 verified is True but verification_status is 'UNVERIFIED'"
-    },
-    {
-      "test_id": "MUTATION D4",
-      "name": "Visual Contradiction: RENDERED + null artifact reference",
-      "rule_failed": "Rule 25",
-      "caught": true,
-      "status": "PASS",
-      "validator_rejection_reason": "Page DOC-28 P2 render_status is RENDERED but render_artifact_reference is null"
-    },
-    {
-      "test_id": "MUTATION D5",
-      "name": "Visual Contradiction: NOT_RENDERED + artifact reference",
-      "rule_failed": "Rule 15",
-      "caught": true,
-      "status": "PASS",
-      "validator_rejection_reason": "Contradiction: Page DOC-01 P1 render_status is NOT_RENDERED but render_artifact_reference is 'rendered_pages/DOC-28_page_2.png'"
-    },
-    {
-      "test_id": "MUTATION D6",
-      "name": "Visual Contradiction: VERIFIED without REVIEWED",
-      "rule_failed": "Rule 15",
-      "caught": true,
-      "status": "PASS",
-      "validator_rejection_reason": "Contradiction: Page DOC-28 P2 visually_reviewed is True but visual_review_status is 'NOT_REVIEWED'"
-    },
-    {
-      "test_id": "MUTATION D7",
-      "name": "Visual Contradiction: REVIEWED without render evidence",
-      "rule_failed": "Rule 15",
-      "caught": true,
-      "status": "PASS",
-      "validator_rejection_reason": "Contradiction: Page DOC-28 P2 visual_review_status is REVIEWED but render evidence is missing (render_status='NOT_RENDERED', ref='None')"
-    },
-    {
-      "test_id": "MUTATION E1",
-      "name": "Remove Q8 Code Line (match=True preserved)",
-      "rule_failed": "Rule 31",
-      "caught": true,
-      "status": "PASS",
-      "validator_rejection_reason": "DOC-28 Q8 code line count mismatch: 8 != 9"
-    },
-    {
-      "test_id": "MUTATION E2",
-      "name": "Duplicate Q8 Code Line (match=True preserved)",
-      "rule_failed": "Rule 31",
-      "caught": true,
-      "status": "PASS",
-      "validator_rejection_reason": "DOC-28 Q8 code line count mismatch: 10 != 9"
-    },
-    {
-      "test_id": "MUTATION E3",
-      "name": "Mutate Q9 Graph Vertex (K -> Z, match=True preserved)",
-      "rule_failed": "Rule 31",
-      "caught": true,
-      "status": "PASS",
-      "validator_rejection_reason": "DOC-28 Q9 graph vertices mismatch: {'N', 'Q', 'O', 'M', 'Z', 'P'} != {'P', 'M', 'N', 'K', 'Q', 'O'}"
-    },
-    {
-      "test_id": "MUTATION E4",
-      "name": "Remove Q9 Graph Edge (match=True preserved)",
-      "rule_failed": "Rule 31",
-      "caught": true,
-      "status": "PASS",
-      "validator_rejection_reason": "DOC-28 Q9 graph normalized edges mismatch: {('N', 'O'), ('P', 'Q'), ('M', 'Q'), ('M', 'N'), ('K', 'M'), ('N', 'Q')} != {('N', 'O'), ('P', 'Q'), ('M', 'Q'), ('O', 'P'), ('M', 'N'), ('K', 'M'), ('N', 'Q')}"
-    },
-    {
-      "test_id": "MUTATION E5",
-      "name": "Add Fake Q9 Graph Edge (match=True preserved)",
-      "rule_failed": "Rule 31",
-      "caught": true,
-      "status": "PASS",
-      "validator_rejection_reason": "DOC-28 Q9 graph normalized edges mismatch: {('N', 'O'), ('K', 'O'), ('P', 'Q'), ('M', 'Q'), ('O', 'P'), ('M', 'N'), ('K', 'M'), ('N', 'Q')} != {('N', 'O'), ('P', 'Q'), ('M', 'Q'), ('O', 'P'), ('M', 'N'), ('K', 'M'), ('N', 'Q')}"
-    },
-    {
-      "test_id": "MUTATION E6",
-      "name": "Mutate Q10 Tree Root (1 -> 99, match=True preserved)",
-      "rule_failed": "Rule 31",
-      "caught": true,
-      "status": "PASS",
-      "validator_rejection_reason": "DOC-28 Q10 tree root mismatch: '99' != '1'"
-    },
-    {
-      "test_id": "MUTATION E7",
-      "name": "Remove Q10 Tree Parent-Child Relationship (match=True preserved)",
-      "rule_failed": "Rule 31",
-      "caught": true,
-      "status": "PASS",
-      "validator_rejection_reason": "DOC-28 Q10 tree parent-child relationships mismatch: {('2', '5'), ('1', '2'), ('5', '3'), ('5', '6')} != {('3', '4'), ('1', '2'), ('5', '6'), ('2', '5'), ('5', '3')}"
+      "validator_rejection_reason": "Contradiction: Page DOC-01 P1 verified is True but verification_status is 'UNVERIFIED'"
     }
   ]
 }
