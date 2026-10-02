@@ -487,10 +487,10 @@ Per Prompt 1 Section 3 & 4:
 
 ### `DOC-30`: `_Data Structures Using C Question Bank.pdf`
 - **Relative Path:** `SOURCE/DSA-20260930T180448Z-1-001/DSA/_Data Structures Using C Question Bank.pdf`
-- **Document Classification:** Official / Institutional Question Bank
-- **Source Tier:** Tier 2
+- **Document Classification:** Question Bank — Authority Unconfirmed
+- **Source Tier:** Tier 3
 - **Classification Confidence:** `HIGH`
-- **Physical Evidence:** Institutional topic-wise Data Structures Using C question and answer bank
+- **Physical Evidence:** Supplied topic-wise Data Structures Using C question and answer bank; contains no institutional seal, university course code (e.g. CSEN 2101), or faculty affiliation; unconfirmed institutional authority against official university syllabus.
 - **Content Type:** `mixed`
 - **Physical Header Evidence:**
   - Apparent Year: `null`
@@ -499,15 +499,15 @@ Per Prompt 1 Section 3 & 4:
   - Apparent Course Code: `null`
   - Apparent Course Name: `Data Structures Using C`
   - Apparent Examination Type: `null`
-- **Potential Ambiguity / Notes:** None; unique source artifact.
+- **Potential Ambiguity / Notes:** Relegated to Tier 3 per governance rules; unconfirmed institutional authority.
 
 ### `DOC-31`: `_OBJECTIVE TYPE QUESTIONS.pdf`
 - **Relative Path:** `SOURCE/DSA-20260930T180448Z-1-001/DSA/_OBJECTIVE TYPE QUESTIONS.pdf`
-- **Document Classification:** Unknown / Needs Review
+- **Document Classification:** Objective Question Bank — Authority Unconfirmed
 - **Source Tier:** Tier 3
 - **Classification Confidence:** `HIGH`
-- **Physical Evidence:** 
-- **Content Type:** `question-bearing`
+- **Physical Evidence:** Comprehensive objective & descriptive question bank with answers for course code DC08 (IETE curriculum); authority unconfirmed against official university CSEN 2101 syllabus.
+- **Content Type:** `mixed`
 - **Physical Header Evidence:**
   - Apparent Year: `null`
   - Apparent Branch: `null`
@@ -515,7 +515,7 @@ Per Prompt 1 Section 3 & 4:
   - Apparent Course Code: `DC08`
   - Apparent Course Name: `DATA STRUCTURES`
   - Apparent Examination Type: `null`
-- **Potential Ambiguity / Notes:** None; unique source artifact.
+- **Potential Ambiguity / Notes:** Relegated to Tier 3 per governance rules; unconfirmed institutional authority.
 
 ### `DOC-32`: `stack.pdf`
 - **Relative Path:** `SOURCE/DSA-20260930T180448Z-1-001/DSA/stack.pdf`

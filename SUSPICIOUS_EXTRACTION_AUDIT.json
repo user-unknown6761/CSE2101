@@ -1,0 +1,884 @@
+[
+  {
+    "question_instance_id": "DOC-01-P03-Q07",
+    "document_id": "DOC-01",
+    "page": 3,
+    "issues": [
+      "Extremely short text / arithmetic fragment: '+ (1 + (2 + 2)) = 12'"
+    ],
+    "text_snippet": "+ (1 + (2 + 2)) = 12"
+  },
+  {
+    "question_instance_id": "DOC-02-P03-Q03",
+    "document_id": "DOC-02",
+    "page": 3,
+    "issues": [
+      "Extremely short text / arithmetic fragment: '+ 6 + 3 = 12'"
+    ],
+    "text_snippet": "+ 6 + 3 = 12"
+  },
+  {
+    "question_instance_id": "DOC-02-P04-Q04",
+    "document_id": "DOC-02",
+    "page": 4,
+    "issues": [
+      "Extremely short text / arithmetic fragment: '+ 2 + (5 + 1) = 12'"
+    ],
+    "text_snippet": "+ 2 + (5 + 1) = 12"
+  },
+  {
+    "question_instance_id": "DOC-02-P04-Q06",
+    "document_id": "DOC-02",
+    "page": 4,
+    "issues": [
+      "Extremely short text / arithmetic fragment: '+ (3 + 3) = 12'"
+    ],
+    "text_snippet": "+ (3 + 3) = 12"
+  },
+  {
+    "question_instance_id": "DOC-02-P06-Q04",
+    "document_id": "DOC-02",
+    "page": 6,
+    "issues": [
+      "Extremely short text / arithmetic fragment: '+ (2 + 2) + (3 + 1) = 12 Cognition Level LOCQ IOCQ HOCQ Percentage distribution 21.35% 57.3% 21.35% Course Outcome (CO): After the completion of this course students will be able to CO 1:  Understand and remember the basics of data structures and how time complexity analysis is applicable to different types of algorithms. CO 2: Understand the significance and utility of different data structures and the context of their application. (For example, the queue in front of ticket counters uses first-in-first-out paradigm in a linear data structure) CO 3:  Apply different types of data structures in algorithms and understand how the data structures can be useful in those algorithms. CO 4:  Analyze the behaviour of different data structures in algorithms. (For example, given an algorithm that uses a particular data structure, how to calculate its space and time complexity.) CO 5: Evaluate solutions of a problem with different data structures and thereby understand how to select suitable data structures for a solution. (For example, what are the different ways to find the second largest number from a list of integers and which solution is the best.) CO 6:  Evaluate different types of solutions (e.g. sorting) to the same problem. *LOCQ: Lower Order Cognitive Question; IOCQ: Intermediate Order Cognitive Question; HOCQ: Higher Order Cognitive Question Department & Section Submission Link CSE - A https://classroom.google.com/c/NDA1MjAwMDY1NjAw/a/NDc0ODQzNDc4NDk1/details CSE - B https://classroom.google.com/c/NDA1MjUyMDYzMDM5/a/NDc0ODI5MTg5NDk0/details CSE - C https://classroom.google.com/c/NDA1MjA1MzAxNzQz/a/NDc0ODI5MDM2MzQ4/details'"
+    ],
+    "text_snippet": "+ (2 + 2) + (3 + 1) = 12 Cognition Level LOCQ IOCQ HOCQ Percentage distribution 21.35% 57.3% 21.35% Course Outcome (CO):"
+  },
+  {
+    "question_instance_id": "DOC-03-P02-Q06",
+    "document_id": "DOC-03",
+    "page": 2,
+    "issues": [
+      "Extremely short text / arithmetic fragment: '+ 6 = 12'"
+    ],
+    "text_snippet": "+ 6 = 12"
+  },
+  {
+    "question_instance_id": "DOC-03-P02-Q03",
+    "document_id": "DOC-03",
+    "page": 2,
+    "issues": [
+      "Extremely short text / arithmetic fragment: '+ (3 + 2) + 4 = 12'"
+    ],
+    "text_snippet": "+ (3 + 2) + 4 = 12"
+  },
+  {
+    "question_instance_id": "DOC-03-P03-Q04",
+    "document_id": "DOC-03",
+    "page": 3,
+    "issues": [
+      "Extremely short text / arithmetic fragment: '+ 4 + 4 = 12'"
+    ],
+    "text_snippet": "+ 4 + 4 = 12"
+  },
+  {
+    "question_instance_id": "DOC-03-P03-Q04",
+    "document_id": "DOC-03",
+    "page": 3,
+    "issues": [
+      "Extremely short text / arithmetic fragment: '+ 5 + 3 = 12'"
+    ],
+    "text_snippet": "+ 5 + 3 = 12"
+  },
+  {
+    "question_instance_id": "DOC-03-P03-Q06",
+    "document_id": "DOC-03",
+    "page": 3,
+    "issues": [
+      "Extremely short text / arithmetic fragment: '+ 6 = 12'"
+    ],
+    "text_snippet": "+ 6 = 12"
+  },
+  {
+    "question_instance_id": "DOC-03-P04-Q06",
+    "document_id": "DOC-03",
+    "page": 4,
+    "issues": [
+      "Extremely short text / arithmetic fragment: '+ 3 + 3 = 12'"
+    ],
+    "text_snippet": "+ 3 + 3 = 12"
+  },
+  {
+    "question_instance_id": "DOC-03-P04-Q06",
+    "document_id": "DOC-03",
+    "page": 4,
+    "issues": [
+      "Extremely short text / arithmetic fragment: '+ 4 + 2 = 12 Cognition Level LOCQ IOCQ HOCQ Percentage distribution 40 31 29 Course Outcome (CO): After the completion of the course students will be able to CSEN2101.1 Understand and remember the basics of data structures and how time complexity analysis is applicable to different types of algorithms. CSEN2101.2 Understand the significance and utility of different data structures and the context of their application. (For example, the queue in front of ticket counters uses first-in-first-out paradigm in a linear data structure) CSEN2101.3Apply different types of data structures in algorithms and understand how the data structures can be useful in those algorithms. CSEN2101.4 Analyse the behaviour of different data structures in algorithms. (For example, given an algorithm that uses a particular data structure, how to calculate its space and time complexity.) CSEN2101.5 Evaluate solutions of a problem with different data structures and thereby understand how to select suitable data structures for a solution. (For example, what are the different ways to find the second largest number from a list of integers and which solution is the best.) CSEN2101.6 Evaluate different types of solutions (e.g. sorting) to the same problem. *LOCQ: Lower Order Cognitive Question; IOCQ: Intermediate Order Cognitive Question; HOCQ: Higher Order Cognitive Question;'"
+    ],
+    "text_snippet": "+ 4 + 2 = 12 Cognition Level LOCQ IOCQ HOCQ Percentage distribution 40 31 29 Course Outcome (CO): After the completion o"
+  },
+  {
+    "question_instance_id": "DOC-04-P02-Q06",
+    "document_id": "DOC-04",
+    "page": 2,
+    "issues": [
+      "Extremely short text / arithmetic fragment: '+ 6 = 12'"
+    ],
+    "text_snippet": "+ 6 = 12"
+  },
+  {
+    "question_instance_id": "DOC-04-P02-Q03",
+    "document_id": "DOC-04",
+    "page": 2,
+    "issues": [
+      "Extremely short text / arithmetic fragment: '+ (3 + 2) + 4 = 12'"
+    ],
+    "text_snippet": "+ (3 + 2) + 4 = 12"
+  },
+  {
+    "question_instance_id": "DOC-04-P03-Q04",
+    "document_id": "DOC-04",
+    "page": 3,
+    "issues": [
+      "Extremely short text / arithmetic fragment: '+ 4 + 4 = 12'"
+    ],
+    "text_snippet": "+ 4 + 4 = 12"
+  },
+  {
+    "question_instance_id": "DOC-04-P03-Q04",
+    "document_id": "DOC-04",
+    "page": 3,
+    "issues": [
+      "Extremely short text / arithmetic fragment: '+ 5 + 3 = 12'"
+    ],
+    "text_snippet": "+ 5 + 3 = 12"
+  },
+  {
+    "question_instance_id": "DOC-04-P03-Q06",
+    "document_id": "DOC-04",
+    "page": 3,
+    "issues": [
+      "Extremely short text / arithmetic fragment: '+ 6 = 12'"
+    ],
+    "text_snippet": "+ 6 = 12"
+  },
+  {
+    "question_instance_id": "DOC-04-P04-Q06",
+    "document_id": "DOC-04",
+    "page": 4,
+    "issues": [
+      "Extremely short text / arithmetic fragment: '+ 3 + 3 = 12'"
+    ],
+    "text_snippet": "+ 3 + 3 = 12"
+  },
+  {
+    "question_instance_id": "DOC-04-P04-Q06",
+    "document_id": "DOC-04",
+    "page": 4,
+    "issues": [
+      "Extremely short text / arithmetic fragment: '+ 4 + 2 = 12 Cognition Level LOCQ IOCQ HOCQ Percentage distribution 40 31 29 Course Outcome (CO): After the completion of the course students will be able to CSEN2101.1 Understand and remember the basics of data structures and how time complexity analysis is applicable to different types of algorithms. CSEN2101.2 Understand the significance and utility of different data structures and the context of their application. (For example, the queue in front of ticket counters uses first-in-first-out paradigm in a linear data structure) CSEN2101.3Apply different types of data structures in algorithms and understand how the data structures can be useful in those algorithms. CSEN2101.4 Analyse the behaviour of different data structures in algorithms. (For example, given an algorithm that uses a particular data structure, how to calculate its space and time complexity.) CSEN2101.5 Evaluate solutions of a problem with different data structures and thereby understand how to select suitable data structures for a solution. (For example, what are the different ways to find the second largest number from a list of integers and which solution is the best.) CSEN2101.6 Evaluate different types of solutions (e.g. sorting) to the same problem. *LOCQ: Lower Order Cognitive Question; IOCQ: Intermediate Order Cognitive Question; HOCQ: Higher Order Cognitive Question;'"
+    ],
+    "text_snippet": "+ 4 + 2 = 12 Cognition Level LOCQ IOCQ HOCQ Percentage distribution 40 31 29 Course Outcome (CO): After the completion o"
+  },
+  {
+    "question_instance_id": "DOC-05-P02-Q06",
+    "document_id": "DOC-05",
+    "page": 2,
+    "issues": [
+      "Extremely short text / arithmetic fragment: '+ 6 = 12'"
+    ],
+    "text_snippet": "+ 6 = 12"
+  },
+  {
+    "question_instance_id": "DOC-05-P02-Q03",
+    "document_id": "DOC-05",
+    "page": 2,
+    "issues": [
+      "Extremely short text / arithmetic fragment: '+ (3 + 2) + 4 = 12'"
+    ],
+    "text_snippet": "+ (3 + 2) + 4 = 12"
+  },
+  {
+    "question_instance_id": "DOC-05-P03-Q04",
+    "document_id": "DOC-05",
+    "page": 3,
+    "issues": [
+      "Extremely short text / arithmetic fragment: '+ 4 + 4 = 12'"
+    ],
+    "text_snippet": "+ 4 + 4 = 12"
+  },
+  {
+    "question_instance_id": "DOC-05-P03-Q04",
+    "document_id": "DOC-05",
+    "page": 3,
+    "issues": [
+      "Extremely short text / arithmetic fragment: '+ 5 + 3 = 12'"
+    ],
+    "text_snippet": "+ 5 + 3 = 12"
+  },
+  {
+    "question_instance_id": "DOC-05-P03-Q06",
+    "document_id": "DOC-05",
+    "page": 3,
+    "issues": [
+      "Extremely short text / arithmetic fragment: '+ 6 = 12'"
+    ],
+    "text_snippet": "+ 6 = 12"
+  },
+  {
+    "question_instance_id": "DOC-05-P04-Q06",
+    "document_id": "DOC-05",
+    "page": 4,
+    "issues": [
+      "Extremely short text / arithmetic fragment: '+ 3 + 3 = 12'"
+    ],
+    "text_snippet": "+ 3 + 3 = 12"
+  },
+  {
+    "question_instance_id": "DOC-05-P04-Q06",
+    "document_id": "DOC-05",
+    "page": 4,
+    "issues": [
+      "Extremely short text / arithmetic fragment: '+ 4 + 2 = 12 Cognition Level LOCQ IOCQ HOCQ Percentage distribution 40 31 29 Course Outcome (CO): After the completion of the course students will be able to CSEN2101.1 Understand and remember the basics of data structures and how time complexity analysis is applicable to different types of algorithms. CSEN2101.2 Understand the significance and utility of different data structures and the context of their application. (For example, the queue in front of ticket counters uses first-in-first-out paradigm in a linear data structure) CSEN2101.3Apply different types of data structures in algorithms and understand how the data structures can be useful in those algorithms. CSEN2101.4 Analyse the behaviour of different data structures in algorithms. (For example, given an algorithm that uses a particular data structure, how to calculate its space and time complexity.) CSEN2101.5 Evaluate solutions of a problem with different data structures and thereby understand how to select suitable data structures for a solution. (For example, what are the different ways to find the second largest number from a list of integers and which solution is the best.) CSEN2101.6 Evaluate different types of solutions (e.g. sorting) to the same problem. *LOCQ: Lower Order Cognitive Question; IOCQ: Intermediate Order Cognitive Question; HOCQ: Higher Order Cognitive Question;'"
+    ],
+    "text_snippet": "+ 4 + 2 = 12 Cognition Level LOCQ IOCQ HOCQ Percentage distribution 40 31 29 Course Outcome (CO): After the completion o"
+  },
+  {
+    "question_instance_id": "DOC-06-P02-Q06",
+    "document_id": "DOC-06",
+    "page": 2,
+    "issues": [
+      "Extremely short text / arithmetic fragment: '+ 6 = 12'"
+    ],
+    "text_snippet": "+ 6 = 12"
+  },
+  {
+    "question_instance_id": "DOC-06-P03-Q06",
+    "document_id": "DOC-06",
+    "page": 3,
+    "issues": [
+      "Extremely short text / arithmetic fragment: '+ 3 + 3 = 12'"
+    ],
+    "text_snippet": "+ 3 + 3 = 12"
+  },
+  {
+    "question_instance_id": "DOC-06-P03-Q06",
+    "document_id": "DOC-06",
+    "page": 3,
+    "issues": [
+      "Extremely short text / arithmetic fragment: '+ 6 = 12'"
+    ],
+    "text_snippet": "+ 6 = 12"
+  },
+  {
+    "question_instance_id": "DOC-06-P03-Q02",
+    "document_id": "DOC-06",
+    "page": 3,
+    "issues": [
+      "Extremely short text / arithmetic fragment: '+ 6 + 4 = 12'"
+    ],
+    "text_snippet": "+ 6 + 4 = 12"
+  },
+  {
+    "question_instance_id": "DOC-06-P04-Q03",
+    "document_id": "DOC-06",
+    "page": 4,
+    "issues": [
+      "Extremely short text / arithmetic fragment: '+ 4 + 5 = 12'"
+    ],
+    "text_snippet": "+ 4 + 5 = 12"
+  },
+  {
+    "question_instance_id": "DOC-06-P04-Q06",
+    "document_id": "DOC-06",
+    "page": 4,
+    "issues": [
+      "Extremely short text / arithmetic fragment: '+ 6 = 12 ______________________________________________________________________________________________________ Cognition Level LOCQ IOCQ HOCQ Percentage distribution 53.13 39.58'"
+    ],
+    "text_snippet": "+ 6 = 12 ______________________________________________________________________________________________________ Cognitio"
+  },
+  {
+    "question_instance_id": "DOC-07-P02-Q06",
+    "document_id": "DOC-07",
+    "page": 2,
+    "issues": [
+      "Extremely short text / arithmetic fragment: '+ 6 = 12'"
+    ],
+    "text_snippet": "+ 6 = 12"
+  },
+  {
+    "question_instance_id": "DOC-07-P03-Q06",
+    "document_id": "DOC-07",
+    "page": 3,
+    "issues": [
+      "Extremely short text / arithmetic fragment: '+ 3 + 3 = 12'"
+    ],
+    "text_snippet": "+ 3 + 3 = 12"
+  },
+  {
+    "question_instance_id": "DOC-07-P03-Q06",
+    "document_id": "DOC-07",
+    "page": 3,
+    "issues": [
+      "Extremely short text / arithmetic fragment: '+ 6 = 12'"
+    ],
+    "text_snippet": "+ 6 = 12"
+  },
+  {
+    "question_instance_id": "DOC-07-P03-Q02",
+    "document_id": "DOC-07",
+    "page": 3,
+    "issues": [
+      "Extremely short text / arithmetic fragment: '+ 6 + 4 = 12'"
+    ],
+    "text_snippet": "+ 6 + 4 = 12"
+  },
+  {
+    "question_instance_id": "DOC-07-P04-Q03",
+    "document_id": "DOC-07",
+    "page": 4,
+    "issues": [
+      "Extremely short text / arithmetic fragment: '+ 4 + 5 = 12'"
+    ],
+    "text_snippet": "+ 4 + 5 = 12"
+  },
+  {
+    "question_instance_id": "DOC-07-P04-Q06",
+    "document_id": "DOC-07",
+    "page": 4,
+    "issues": [
+      "Extremely short text / arithmetic fragment: '+ 6 = 12 ______________________________________________________________________________________________________ Cognition Level LOCQ IOCQ HOCQ Percentage distribution 53.13 39.58'"
+    ],
+    "text_snippet": "+ 6 = 12 ______________________________________________________________________________________________________ Cognitio"
+  },
+  {
+    "question_instance_id": "DOC-08-P02-Q06",
+    "document_id": "DOC-08",
+    "page": 2,
+    "issues": [
+      "Extremely short text / arithmetic fragment: '+ 6 = 12'"
+    ],
+    "text_snippet": "+ 6 = 12"
+  },
+  {
+    "question_instance_id": "DOC-08-P03-Q06",
+    "document_id": "DOC-08",
+    "page": 3,
+    "issues": [
+      "Extremely short text / arithmetic fragment: '+ 3 + 3 = 12'"
+    ],
+    "text_snippet": "+ 3 + 3 = 12"
+  },
+  {
+    "question_instance_id": "DOC-08-P03-Q06",
+    "document_id": "DOC-08",
+    "page": 3,
+    "issues": [
+      "Extremely short text / arithmetic fragment: '+ 6 = 12'"
+    ],
+    "text_snippet": "+ 6 = 12"
+  },
+  {
+    "question_instance_id": "DOC-08-P03-Q02",
+    "document_id": "DOC-08",
+    "page": 3,
+    "issues": [
+      "Extremely short text / arithmetic fragment: '+ 6 + 4 = 12'"
+    ],
+    "text_snippet": "+ 6 + 4 = 12"
+  },
+  {
+    "question_instance_id": "DOC-08-P04-Q03",
+    "document_id": "DOC-08",
+    "page": 4,
+    "issues": [
+      "Extremely short text / arithmetic fragment: '+ 4 + 5 = 12'"
+    ],
+    "text_snippet": "+ 4 + 5 = 12"
+  },
+  {
+    "question_instance_id": "DOC-08-P04-Q06",
+    "document_id": "DOC-08",
+    "page": 4,
+    "issues": [
+      "Extremely short text / arithmetic fragment: '+ 6 = 12 ______________________________________________________________________________________________________ Cognition Level LOCQ IOCQ HOCQ Percentage distribution 53.13 39.58'"
+    ],
+    "text_snippet": "+ 6 = 12 ______________________________________________________________________________________________________ Cognitio"
+  },
+  {
+    "question_instance_id": "DOC-09-P02-Q06",
+    "document_id": "DOC-09",
+    "page": 2,
+    "issues": [
+      "Extremely short text / arithmetic fragment: '+ 6 = 12'"
+    ],
+    "text_snippet": "+ 6 = 12"
+  },
+  {
+    "question_instance_id": "DOC-09-P03-Q06",
+    "document_id": "DOC-09",
+    "page": 3,
+    "issues": [
+      "Extremely short text / arithmetic fragment: '+ 3 + 3 = 12'"
+    ],
+    "text_snippet": "+ 3 + 3 = 12"
+  },
+  {
+    "question_instance_id": "DOC-09-P03-Q06",
+    "document_id": "DOC-09",
+    "page": 3,
+    "issues": [
+      "Extremely short text / arithmetic fragment: '+ 6 = 12'"
+    ],
+    "text_snippet": "+ 6 = 12"
+  },
+  {
+    "question_instance_id": "DOC-09-P03-Q02",
+    "document_id": "DOC-09",
+    "page": 3,
+    "issues": [
+      "Extremely short text / arithmetic fragment: '+ 6 + 4 = 12'"
+    ],
+    "text_snippet": "+ 6 + 4 = 12"
+  },
+  {
+    "question_instance_id": "DOC-09-P04-Q03",
+    "document_id": "DOC-09",
+    "page": 4,
+    "issues": [
+      "Extremely short text / arithmetic fragment: '+ 4 + 5 = 12'"
+    ],
+    "text_snippet": "+ 4 + 5 = 12"
+  },
+  {
+    "question_instance_id": "DOC-09-P04-Q06",
+    "document_id": "DOC-09",
+    "page": 4,
+    "issues": [
+      "Extremely short text / arithmetic fragment: '+ 6 = 12 ______________________________________________________________________________________________________ Cognition Level LOCQ IOCQ HOCQ Percentage distribution 53.13 39.58'"
+    ],
+    "text_snippet": "+ 6 = 12 ______________________________________________________________________________________________________ Cognitio"
+  },
+  {
+    "question_instance_id": "DOC-10-P02-Q05",
+    "document_id": "DOC-10",
+    "page": 2,
+    "issues": [
+      "Extremely short text / arithmetic fragment: '+ 2 + (4 + 1) = 12'"
+    ],
+    "text_snippet": "+ 2 + (4 + 1) = 12"
+  },
+  {
+    "question_instance_id": "DOC-11-P02-Q05",
+    "document_id": "DOC-11",
+    "page": 2,
+    "issues": [
+      "Extremely short text / arithmetic fragment: '+ 2 + (4 + 1) = 12'"
+    ],
+    "text_snippet": "+ 2 + (4 + 1) = 12"
+  },
+  {
+    "question_instance_id": "DOC-12-P02-Q05",
+    "document_id": "DOC-12",
+    "page": 2,
+    "issues": [
+      "Extremely short text / arithmetic fragment: '+ 2 + (4 + 1) = 12'"
+    ],
+    "text_snippet": "+ 2 + (4 + 1) = 12"
+  },
+  {
+    "question_instance_id": "DOC-13-P02-Q04",
+    "document_id": "DOC-13",
+    "page": 2,
+    "issues": [
+      "Extremely short text / arithmetic fragment: '+ 4 + (1 + 1 + 2) = 12'"
+    ],
+    "text_snippet": "+ 4 + (1 + 1 + 2) = 12"
+  },
+  {
+    "question_instance_id": "DOC-13-P02-Q07",
+    "document_id": "DOC-13",
+    "page": 2,
+    "issues": [
+      "Extremely short text / arithmetic fragment: '+ (2 + 3) = 12'"
+    ],
+    "text_snippet": "+ (2 + 3) = 12"
+  },
+  {
+    "question_instance_id": "DOC-13-P02-Q04",
+    "document_id": "DOC-13",
+    "page": 2,
+    "issues": [
+      "Extremely short text / arithmetic fragment: '+ 4 + 4 = 12'"
+    ],
+    "text_snippet": "+ 4 + 4 = 12"
+  },
+  {
+    "question_instance_id": "DOC-13-P03-Q03",
+    "document_id": "DOC-13",
+    "page": 3,
+    "issues": [
+      "Extremely short text / arithmetic fragment: '+ 5 + 4 = 12'"
+    ],
+    "text_snippet": "+ 5 + 4 = 12"
+  },
+  {
+    "question_instance_id": "DOC-13-P03-Q02",
+    "document_id": "DOC-13",
+    "page": 3,
+    "issues": [
+      "Extremely short text / arithmetic fragment: '+ (5 + 1) + 4 = 12'"
+    ],
+    "text_snippet": "+ (5 + 1) + 4 = 12"
+  },
+  {
+    "question_instance_id": "DOC-14-P02-Q04",
+    "document_id": "DOC-14",
+    "page": 2,
+    "issues": [
+      "Extremely short text / arithmetic fragment: '+ 4 + (1 + 1 + 2) = 12'"
+    ],
+    "text_snippet": "+ 4 + (1 + 1 + 2) = 12"
+  },
+  {
+    "question_instance_id": "DOC-14-P02-Q07",
+    "document_id": "DOC-14",
+    "page": 2,
+    "issues": [
+      "Extremely short text / arithmetic fragment: '+ (2 + 3) = 12'"
+    ],
+    "text_snippet": "+ (2 + 3) = 12"
+  },
+  {
+    "question_instance_id": "DOC-14-P02-Q04",
+    "document_id": "DOC-14",
+    "page": 2,
+    "issues": [
+      "Extremely short text / arithmetic fragment: '+ 4 + 4 = 12'"
+    ],
+    "text_snippet": "+ 4 + 4 = 12"
+  },
+  {
+    "question_instance_id": "DOC-14-P03-Q03",
+    "document_id": "DOC-14",
+    "page": 3,
+    "issues": [
+      "Extremely short text / arithmetic fragment: '+ 5 + 4 = 12'"
+    ],
+    "text_snippet": "+ 5 + 4 = 12"
+  },
+  {
+    "question_instance_id": "DOC-14-P03-Q02",
+    "document_id": "DOC-14",
+    "page": 3,
+    "issues": [
+      "Extremely short text / arithmetic fragment: '+ (5 + 1) + 4 = 12'"
+    ],
+    "text_snippet": "+ (5 + 1) + 4 = 12"
+  },
+  {
+    "question_instance_id": "DOC-15-P02-Q04",
+    "document_id": "DOC-15",
+    "page": 2,
+    "issues": [
+      "Extremely short text / arithmetic fragment: '+ 4 + (1 + 1 + 2) = 12'"
+    ],
+    "text_snippet": "+ 4 + (1 + 1 + 2) = 12"
+  },
+  {
+    "question_instance_id": "DOC-15-P02-Q07",
+    "document_id": "DOC-15",
+    "page": 2,
+    "issues": [
+      "Extremely short text / arithmetic fragment: '+ (2 + 3) = 12'"
+    ],
+    "text_snippet": "+ (2 + 3) = 12"
+  },
+  {
+    "question_instance_id": "DOC-15-P02-Q04",
+    "document_id": "DOC-15",
+    "page": 2,
+    "issues": [
+      "Extremely short text / arithmetic fragment: '+ 4 + 4 = 12'"
+    ],
+    "text_snippet": "+ 4 + 4 = 12"
+  },
+  {
+    "question_instance_id": "DOC-15-P03-Q03",
+    "document_id": "DOC-15",
+    "page": 3,
+    "issues": [
+      "Extremely short text / arithmetic fragment: '+ 5 + 4 = 12'"
+    ],
+    "text_snippet": "+ 5 + 4 = 12"
+  },
+  {
+    "question_instance_id": "DOC-15-P03-Q02",
+    "document_id": "DOC-15",
+    "page": 3,
+    "issues": [
+      "Extremely short text / arithmetic fragment: '+ (5 + 1) + 4 = 12'"
+    ],
+    "text_snippet": "+ (5 + 1) + 4 = 12"
+  },
+  {
+    "question_instance_id": "DOC-16-P02-Q04",
+    "document_id": "DOC-16",
+    "page": 2,
+    "issues": [
+      "Extremely short text / arithmetic fragment: '+ 4 + (1 + 1 + 2) = 12'"
+    ],
+    "text_snippet": "+ 4 + (1 + 1 + 2) = 12"
+  },
+  {
+    "question_instance_id": "DOC-16-P02-Q07",
+    "document_id": "DOC-16",
+    "page": 2,
+    "issues": [
+      "Extremely short text / arithmetic fragment: '+ (2 + 3) = 12'"
+    ],
+    "text_snippet": "+ (2 + 3) = 12"
+  },
+  {
+    "question_instance_id": "DOC-16-P02-Q04",
+    "document_id": "DOC-16",
+    "page": 2,
+    "issues": [
+      "Extremely short text / arithmetic fragment: '+ 4 + 4 = 12'"
+    ],
+    "text_snippet": "+ 4 + 4 = 12"
+  },
+  {
+    "question_instance_id": "DOC-16-P03-Q03",
+    "document_id": "DOC-16",
+    "page": 3,
+    "issues": [
+      "Extremely short text / arithmetic fragment: '+ 5 + 4 = 12'"
+    ],
+    "text_snippet": "+ 5 + 4 = 12"
+  },
+  {
+    "question_instance_id": "DOC-16-P03-Q02",
+    "document_id": "DOC-16",
+    "page": 3,
+    "issues": [
+      "Extremely short text / arithmetic fragment: '+ (5 + 1) + 4 = 12'"
+    ],
+    "text_snippet": "+ (5 + 1) + 4 = 12"
+  },
+  {
+    "question_instance_id": "DOC-18-P04-Q05",
+    "document_id": "DOC-18",
+    "page": 4,
+    "issues": [
+      "Extremely short text / arithmetic fragment: '+ 2 + (4 + 1) = 12'"
+    ],
+    "text_snippet": "+ 2 + (4 + 1) = 12"
+  },
+  {
+    "question_instance_id": "DOC-18-P05-Q03",
+    "document_id": "DOC-18",
+    "page": 5,
+    "issues": [
+      "Extremely short text / arithmetic fragment: '+ 4 + 5 = 12'"
+    ],
+    "text_snippet": "+ 4 + 5 = 12"
+  },
+  {
+    "question_instance_id": "DOC-18-P05-Q06",
+    "document_id": "DOC-18",
+    "page": 5,
+    "issues": [
+      "Extremely short text / arithmetic fragment: '+ (4 + 1) + 1 = 12 Department & Section Submission Link CSE A https://classroom.google.com/c/MjYzNzg3MDAw/a/Mjg4NDMzNzM3 MjA5/details CSE B https://classroom.google.com/c/MTE4NzY4MjM4NjM4/a/Mjg4NDI0O DA2NzY5/details CSE C https://classroom.google.com/u/0/w/MTMwMDU2NDk2NDI1/tc/Mjk 0MzczNjYwMTc4 LATERAL https://classroom.google.com/c/MjUzMzUzMDg1MzI1/a/Mjg4NDI3Mz gwNTQy/details'"
+    ],
+    "text_snippet": "+ (4 + 1) + 1 = 12 Department & Section Submission Link CSE A https://classroom.google.com/c/MjYzNzg3MDAw/a/Mjg4NDMzNzM3"
+  },
+  {
+    "question_instance_id": "DOC-19-P13-Q02",
+    "document_id": "DOC-19",
+    "page": 13,
+    "issues": [
+      "Extremely short text / arithmetic fragment: 'r \u2190 RIGHT(i)'"
+    ],
+    "text_snippet": "r \u2190 RIGHT(i)"
+  },
+  {
+    "question_instance_id": "DOC-19-P13-Q04",
+    "document_id": "DOC-19",
+    "page": 13,
+    "issues": [
+      "Extremely short text / arithmetic fragment: 'smallest \u2190 l'"
+    ],
+    "text_snippet": "smallest \u2190 l"
+  },
+  {
+    "question_instance_id": "DOC-19-P13-Q05",
+    "document_id": "DOC-19",
+    "page": 13,
+    "issues": [
+      "Extremely short text / arithmetic fragment: 'else'"
+    ],
+    "text_snippet": "else"
+  },
+  {
+    "question_instance_id": "DOC-19-P13-Q06",
+    "document_id": "DOC-19",
+    "page": 13,
+    "issues": [
+      "Extremely short text / arithmetic fragment: 'smallest \u2190 i'"
+    ],
+    "text_snippet": "smallest \u2190 i"
+  },
+  {
+    "question_instance_id": "DOC-20-P03-Q03",
+    "document_id": "DOC-20",
+    "page": 3,
+    "issues": [
+      "Extremely short text / arithmetic fragment: '+ 6 + 3 = 12'"
+    ],
+    "text_snippet": "+ 6 + 3 = 12"
+  },
+  {
+    "question_instance_id": "DOC-20-P04-Q04",
+    "document_id": "DOC-20",
+    "page": 4,
+    "issues": [
+      "Extremely short text / arithmetic fragment: '+ 2 + (5 + 1) = 12'"
+    ],
+    "text_snippet": "+ 2 + (5 + 1) = 12"
+  },
+  {
+    "question_instance_id": "DOC-20-P04-Q06",
+    "document_id": "DOC-20",
+    "page": 4,
+    "issues": [
+      "Extremely short text / arithmetic fragment: '+ (3 + 3) = 12'"
+    ],
+    "text_snippet": "+ (3 + 3) = 12"
+  },
+  {
+    "question_instance_id": "DOC-20-P06-Q04",
+    "document_id": "DOC-20",
+    "page": 6,
+    "issues": [
+      "Extremely short text / arithmetic fragment: '+ (2 + 2) + (3 + 1) = 12 Cognition Level LOCQ IOCQ HOCQ Percentage distribution 21.35% 57.3% 21.35% Course Outcome (CO): After the completion of this course students will be able to CO 1:  Understand and remember the basics of data structures and how time complexity analysis is applicable to different types of algorithms. CO 2: Understand the significance and utility of different data structures and the context of their application. (For example, the queue in front of ticket counters uses first-in-first-out paradigm in a linear data structure) CO 3:  Apply different types of data structures in algorithms and understand how the data structures can be useful in those algorithms. CO 4:  Analyze the behaviour of different data structures in algorithms. (For example, given an algorithm that uses a particular data structure, how to calculate its space and time complexity.) CO 5: Evaluate solutions of a problem with different data structures and thereby understand how to select suitable data structures for a solution. (For example, what are the different ways to find the second largest number from a list of integers and which solution is the best.) CO 6:  Evaluate different types of solutions (e.g. sorting) to the same problem. *LOCQ: Lower Order Cognitive Question; IOCQ: Intermediate Order Cognitive Question; HOCQ: Higher Order Cognitive Question Department & Section Submission Link CSE - A https://classroom.google.com/c/NDA1MjAwMDY1NjAw/a/NDc0ODQzNDc4NDk1/details CSE - B https://classroom.google.com/c/NDA1MjUyMDYzMDM5/a/NDc0ODI5MTg5NDk0/details CSE - C https://classroom.google.com/c/NDA1MjA1MzAxNzQz/a/NDc0ODI5MDM2MzQ4/details'"
+    ],
+    "text_snippet": "+ (2 + 2) + (3 + 1) = 12 Cognition Level LOCQ IOCQ HOCQ Percentage distribution 21.35% 57.3% 21.35% Course Outcome (CO):"
+  },
+  {
+    "question_instance_id": "DOC-21-P03-Q07",
+    "document_id": "DOC-21",
+    "page": 3,
+    "issues": [
+      "Extremely short text / arithmetic fragment: '+ (1 + (2 + 2)) = 12'"
+    ],
+    "text_snippet": "+ (1 + (2 + 2)) = 12"
+  },
+  {
+    "question_instance_id": "DOC-22-P02-Q04",
+    "document_id": "DOC-22",
+    "page": 2,
+    "issues": [
+      "Extremely short text / arithmetic fragment: '+ 4 + (2 + 2) = 12'"
+    ],
+    "text_snippet": "+ 4 + (2 + 2) = 12"
+  },
+  {
+    "question_instance_id": "DOC-22-P02-Q05",
+    "document_id": "DOC-22",
+    "page": 2,
+    "issues": [
+      "Extremely short text / arithmetic fragment: '+ 4 + (1 + 2) = 12'"
+    ],
+    "text_snippet": "+ 4 + (1 + 2) = 12"
+  },
+  {
+    "question_instance_id": "DOC-22-P03-Q02",
+    "document_id": "DOC-22",
+    "page": 3,
+    "issues": [
+      "Extremely short text / arithmetic fragment: '+ 3 + 5 + 2 =12 g c h f e d b a'"
+    ],
+    "text_snippet": "+ 3 + 5 + 2 =12 g c h f e d b a"
+  },
+  {
+    "question_instance_id": "DOC-23-P02-Q04",
+    "document_id": "DOC-23",
+    "page": 2,
+    "issues": [
+      "Extremely short text / arithmetic fragment: '+ 4 + (2 + 2) = 12'"
+    ],
+    "text_snippet": "+ 4 + (2 + 2) = 12"
+  },
+  {
+    "question_instance_id": "DOC-23-P02-Q05",
+    "document_id": "DOC-23",
+    "page": 2,
+    "issues": [
+      "Extremely short text / arithmetic fragment: '+ 4 + (1 + 2) = 12'"
+    ],
+    "text_snippet": "+ 4 + (1 + 2) = 12"
+  },
+  {
+    "question_instance_id": "DOC-23-P03-Q02",
+    "document_id": "DOC-23",
+    "page": 3,
+    "issues": [
+      "Extremely short text / arithmetic fragment: '+ 3 + 5 + 2 =12 g c h f e d b a'"
+    ],
+    "text_snippet": "+ 3 + 5 + 2 =12 g c h f e d b a"
+  },
+  {
+    "question_instance_id": "DOC-25-P02-Q06",
+    "document_id": "DOC-25",
+    "page": 2,
+    "issues": [
+      "Extremely short text / arithmetic fragment: '+ (2 + 4) = 12'"
+    ],
+    "text_snippet": "+ (2 + 4) = 12"
+  },
+  {
+    "question_instance_id": "DOC-25-P02-Q08",
+    "document_id": "DOC-25",
+    "page": 2,
+    "issues": [
+      "Extremely short text / arithmetic fragment: '+ 4 = 12'"
+    ],
+    "text_snippet": "+ 4 = 12"
+  },
+  {
+    "question_instance_id": "DOC-25-P03-Q04",
+    "document_id": "DOC-25",
+    "page": 3,
+    "issues": [
+      "Extremely short text / arithmetic fragment: '+ (7 + 1) = 12'"
+    ],
+    "text_snippet": "+ (7 + 1) = 12"
+  },
+  {
+    "question_instance_id": "DOC-26-P03-Q03",
+    "document_id": "DOC-26",
+    "page": 3,
+    "issues": [
+      "Extremely short text / arithmetic fragment: '+ 6 + 3 = 12'"
+    ],
+    "text_snippet": "+ 6 + 3 = 12"
+  },
+  {
+    "question_instance_id": "DOC-26-P04-Q04",
+    "document_id": "DOC-26",
+    "page": 4,
+    "issues": [
+      "Extremely short text / arithmetic fragment: '+ 2 + (5 + 1) = 12'"
+    ],
+    "text_snippet": "+ 2 + (5 + 1) = 12"
+  },
+  {
+    "question_instance_id": "DOC-26-P04-Q06",
+    "document_id": "DOC-26",
+    "page": 4,
+    "issues": [
+      "Extremely short text / arithmetic fragment: '+ (3 + 3) = 12'"
+    ],
+    "text_snippet": "+ (3 + 3) = 12"
+  },
+  {
+    "question_instance_id": "DOC-26-P06-Q04",
+    "document_id": "DOC-26",
+    "page": 6,
+    "issues": [
+      "Extremely short text / arithmetic fragment: '+ (2 + 2) + (3 + 1) = 12 Cognition Level LOCQ IOCQ HOCQ Percentage distribution 21.35% 57.3% 21.35% Course Outcome (CO): After the completion of this course students will be able to CO 1:  Understand and remember the basics of data structures and how time complexity analysis is applicable to different types of algorithms. CO 2: Understand the significance and utility of different data structures and the context of their application. (For example, the queue in front of ticket counters uses first-in-first-out paradigm in a linear data structure) CO 3:  Apply different types of data structures in algorithms and understand how the data structures can be useful in those algorithms. CO 4:  Analyze the behaviour of different data structures in algorithms. (For example, given an algorithm that uses a particular data structure, how to calculate its space and time complexity.) CO 5: Evaluate solutions of a problem with different data structures and thereby understand how to select suitable data structures for a solution. (For example, what are the different ways to find the second largest number from a list of integers and which solution is the best.) CO 6:  Evaluate different types of solutions (e.g. sorting) to the same problem. *LOCQ: Lower Order Cognitive Question; IOCQ: Intermediate Order Cognitive Question; HOCQ: Higher Order Cognitive Question Department & Section Submission Link CSE - A https://classroom.google.com/c/NDA1MjAwMDY1NjAw/a/NDc0ODQzNDc4NDk1/details CSE - B https://classroom.google.com/c/NDA1MjUyMDYzMDM5/a/NDc0ODI5MTg5NDk0/details CSE - C https://classroom.google.com/c/NDA1MjA1MzAxNzQz/a/NDc0ODI5MDM2MzQ4/details'"
+    ],
+    "text_snippet": "+ (2 + 2) + (3 + 1) = 12 Cognition Level LOCQ IOCQ HOCQ Percentage distribution 21.35% 57.3% 21.35% Course Outcome (CO):"
+  }
+]

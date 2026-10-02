@@ -1,45 +1,45 @@
 [
   {
     "rule": 1,
-    "description": "Every inventory PDF has SHA-256",
+    "description": "Every inventory PDF has SHA-256 cryptographic hash",
     "status": "PASS",
     "details": "Verified across 33 documents."
   },
   {
     "rule": 2,
-    "description": "Every source question has a source document",
+    "description": "Every source record maps to an existing source document ID",
     "status": "PASS",
-    "details": "All 1584 question instances map to known document IDs."
+    "details": "All 1584 records map to registered documents."
   },
   {
     "rule": 3,
-    "description": "Every question occurrence has page/source provenance",
+    "description": "Every record has physical page and source file provenance",
     "status": "PASS",
-    "details": "All 1584 question instances have explicit page and source file provenance."
+    "details": "Page and file provenance verified for 1584 records."
   },
   {
     "rule": 4,
-    "description": "No question has fabricated default marks",
+    "description": "No question or container has fabricated default marks",
     "status": "PASS",
-    "details": "Marks are either physically established or explicitly null with not_specified status."
+    "details": "Marks are physically established, null, or container unallocated."
   },
   {
     "rule": 5,
     "description": "No unknown provenance is replaced with placeholder guesses",
     "status": "PASS",
-    "details": "Unknown provenance attributes are strictly preserved as null."
+    "details": "Unknown metadata fields strictly preserved as null."
   },
   {
     "rule": 6,
     "description": "Every incomplete item exists in the damage audit",
     "status": "PASS",
-    "details": "0 incomplete items in corpus; 0 recorded in audit."
+    "details": "0 incomplete questions in corpus; 0 recorded in audit."
   },
   {
     "rule": 7,
-    "description": "Every extracted question has a valid wording state",
+    "description": "Every question occurrence has a valid wording state",
     "status": "PASS",
-    "details": "Wording states verified across 1584 items."
+    "details": "Wording states verified across 1357 questions; null for 227 containers."
   },
   {
     "rule": 8,
@@ -51,12 +51,84 @@
     "rule": 9,
     "description": "No active/in-scope/syllabus fields introduced in Phase 1",
     "status": "PASS",
-    "details": "Forbidden fields checked: ['is_active', 'in_syllabus', 'canonical_id', 'module_number', 'topic_id', 'difficulty_score']."
+    "details": "Forbidden fields absent: ['is_active', 'in_syllabus', 'canonical_id', 'module_number', 'topic_id', 'difficulty_score']."
   },
   {
     "rule": 10,
     "description": "No canonical question relationships or deduplication created",
     "status": "PASS",
     "details": "All physical source occurrences remain fully independent."
+  },
+  {
+    "rule": 11,
+    "description": "No structural parent container is counted as an answerable question",
+    "status": "PASS",
+    "details": "227 containers marked non-answerable; 1357 question occurrences are answerable."
+  },
+  {
+    "rule": 12,
+    "description": "No placeholder 'Question N' is treated as actual question text",
+    "status": "PASS",
+    "details": "Parent containers have raw_text=null; all questions contain substantive source text."
+  },
+  {
+    "rule": 13,
+    "description": "Every reconstructed question has source visual provenance",
+    "status": "PASS",
+    "details": "Verified across 5 STATE B questions."
+  },
+  {
+    "rule": 14,
+    "description": "Every STATE B question has complete verified reconstruction metadata",
+    "status": "PASS",
+    "details": "Reconstruction metadata verified for 5 items."
+  },
+  {
+    "rule": 15,
+    "description": "No question marked HIGH overall confidence has unverified required visual content",
+    "status": "PASS",
+    "details": "All required visual pages verified."
+  },
+  {
+    "rule": 16,
+    "description": "Practice Assignment does not appear as exam_type",
+    "status": "PASS",
+    "details": "exam_type is strictly null for Practice Assignment in document and question records."
+  },
+  {
+    "rule": 17,
+    "description": "Unverified Question Bank authority is not promoted to Tier 2",
+    "status": "PASS",
+    "details": "DOC-30 and DOC-31 classified as Authority Unconfirmed at Tier 3."
+  },
+  {
+    "rule": 18,
+    "description": "All question records have valid record_type",
+    "status": "PASS",
+    "details": "All 1584 records have record_type in {'paper_question_container', 'question_occurrence'}."
+  },
+  {
+    "rule": 19,
+    "description": "Question counts reconcile exactly across containers, sub-questions, and standalone occurrences",
+    "status": "PASS",
+    "details": "Total: 1584 = Containers: 227 + Sub: 825 + Standalone: 532"
+  },
+  {
+    "rule": 20,
+    "description": "No extracted question contains obvious cross-question fragment contamination",
+    "status": "PASS",
+    "details": "DOC-28 Q11 isolated; 0 cross-contamination issues found."
+  },
+  {
+    "rule": 21,
+    "description": "Every question referencing an essential visual has source-visual metadata",
+    "status": "PASS",
+    "details": "212 visual questions have explicit source page and reason metadata."
+  },
+  {
+    "rule": 22,
+    "description": "Damage detection actually performs nontrivial checks and flags anomalies",
+    "status": "PASS",
+    "details": "Nontrivial scan identified and flagged 98 suspicious question items without data loss."
   }
 ]
