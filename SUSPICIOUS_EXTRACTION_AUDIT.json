@@ -1,884 +1,3521 @@
 [
   {
-    "question_instance_id": "DOC-01-P03-Q07",
-    "document_id": "DOC-01",
-    "page": 3,
+    "question_instance_id": "DOC-02-P02-Q02-sub-a",
+    "document_id": "DOC-02",
+    "page": 2,
     "issues": [
-      "Extremely short text / arithmetic fragment: '+ (1 + (2 + 2)) = 12'"
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
     ],
-    "text_snippet": "+ (1 + (2 + 2)) = 12"
+    "text_snippet": "What is a sparse matrix?     [(CO1) (Remember/LOCQ)] Given the following 4 \u00d7 5 matrix: 0  0  6  0  0 0  0  0  0  0"
   },
   {
-    "question_instance_id": "DOC-02-P03-Q03",
+    "question_instance_id": "DOC-02-P02-Q04",
+    "document_id": "DOC-02",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "0  2  0  0 0  3  0  7  0 Compute its triplet array equivalent.  [(CO1) (Compute/LOCQ)] Is it beneficial to store this ma"
+  },
+  {
+    "question_instance_id": "DOC-02-P02-Q04-sub-b",
+    "document_id": "DOC-02",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Given a singly-linked list with an odd number of elements, develop a pseudo- code or C-code  to split it into two nearly"
+  },
+  {
+    "question_instance_id": "DOC-02-P02-Q04-sub-c",
+    "document_id": "DOC-02",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "If for an algorithm, f(n) = 3n2+10, state the worst case asymptotic time complexity of the algorithm. Show that it follo"
+  },
+  {
+    "question_instance_id": "DOC-02-P02-Q03-sub-a",
+    "document_id": "DOC-02",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "State if the following statement is correct. Justify your answer. O(n2) = 2n2+100. [(CO1) (Apply/IOCQ)]"
+  },
+  {
+    "question_instance_id": "DOC-02-P02-Q03-sub-b",
+    "document_id": "DOC-02",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Construct a an iterative function in C named reverse() that accepts the start node of a doubly-linked list as argument a"
+  },
+  {
+    "question_instance_id": "DOC-02-P03-Q03-sub-c",
     "document_id": "DOC-02",
     "page": 3,
     "issues": [
-      "Extremely short text / arithmetic fragment: '+ 6 + 3 = 12'"
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
     ],
-    "text_snippet": "+ 6 + 3 = 12"
+    "text_snippet": "Given a 2D matrix of dimension 100 x 200 and also given that the base address of the 2D array is 2020. Assume that the a"
   },
   {
-    "question_instance_id": "DOC-02-P04-Q04",
+    "question_instance_id": "DOC-02-P03-Q04-sub-a",
+    "document_id": "DOC-02",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Why is it beneficial to use a circular array to implement a queue? Explain with an example.     [(CO4) (Remember/LOCQ)]"
+  },
+  {
+    "question_instance_id": "DOC-02-P03-Q04-sub-b",
+    "document_id": "DOC-02",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "How is a circular linked list with a head pointer different from a circular linked list with a tail pointer? Which of th"
+  },
+  {
+    "question_instance_id": "DOC-02-P03-Q04-sub-c",
+    "document_id": "DOC-02",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Stepwise show how the following infix expression is converted to its corresponding postfix expression. ((5+7)-(4*3))+(6/"
+  },
+  {
+    "question_instance_id": "DOC-02-P03-Q05-sub-a",
+    "document_id": "DOC-02",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Implement (either pseudo-code or c-code is fine) the functionality of a queue using 2 stacks.  You will only get full-ma"
+  },
+  {
+    "question_instance_id": "DOC-02-P03-Q05-sub-b",
+    "document_id": "DOC-02",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Why is a Tail recursive function more efficient compared to normal recursive function? [(CO1) (Remember/LOCQ)]"
+  },
+  {
+    "question_instance_id": "DOC-02-P04-Q06-sub-a",
     "document_id": "DOC-02",
     "page": 4,
     "issues": [
-      "Extremely short text / arithmetic fragment: '+ 2 + (5 + 1) = 12'"
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
     ],
-    "text_snippet": "+ 2 + (5 + 1) = 12"
+    "text_snippet": "What are the most well-known two ways of representing a graph? State their mutual benefits and drawbacks. State the time"
   },
   {
-    "question_instance_id": "DOC-02-P04-Q06",
+    "question_instance_id": "DOC-02-P04-Q06-sub-b",
     "document_id": "DOC-02",
     "page": 4,
     "issues": [
-      "Extremely short text / arithmetic fragment: '+ (3 + 3) = 12'"
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
     ],
-    "text_snippet": "+ (3 + 3) = 12"
+    "text_snippet": "Construct a Binary Search Tree, an AVL tree and a B-Tree (m = 2) using the following keys.  [(CO5) ( Apply/IOCQ)] Which "
   },
   {
-    "question_instance_id": "DOC-02-P06-Q04",
+    "question_instance_id": "DOC-02-P04-Q07-sub-a",
     "document_id": "DOC-02",
-    "page": 6,
+    "page": 4,
     "issues": [
-      "Extremely short text / arithmetic fragment: '+ (2 + 2) + (3 + 1) = 12 Cognition Level LOCQ IOCQ HOCQ Percentage distribution 21.35% 57.3% 21.35% Course Outcome (CO): After the completion of this course students will be able to CO 1:  Understand and remember the basics of data structures and how time complexity analysis is applicable to different types of algorithms. CO 2: Understand the significance and utility of different data structures and the context of their application. (For example, the queue in front of ticket counters uses first-in-first-out paradigm in a linear data structure) CO 3:  Apply different types of data structures in algorithms and understand how the data structures can be useful in those algorithms. CO 4:  Analyze the behaviour of different data structures in algorithms. (For example, given an algorithm that uses a particular data structure, how to calculate its space and time complexity.) CO 5: Evaluate solutions of a problem with different data structures and thereby understand how to select suitable data structures for a solution. (For example, what are the different ways to find the second largest number from a list of integers and which solution is the best.) CO 6:  Evaluate different types of solutions (e.g. sorting) to the same problem. *LOCQ: Lower Order Cognitive Question; IOCQ: Intermediate Order Cognitive Question; HOCQ: Higher Order Cognitive Question Department & Section Submission Link CSE - A https://classroom.google.com/c/NDA1MjAwMDY1NjAw/a/NDc0ODQzNDc4NDk1/details CSE - B https://classroom.google.com/c/NDA1MjUyMDYzMDM5/a/NDc0ODI5MTg5NDk0/details CSE - C https://classroom.google.com/c/NDA1MjA1MzAxNzQz/a/NDc0ODI5MDM2MzQ4/details'"
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
     ],
-    "text_snippet": "+ (2 + 2) + (3 + 1) = 12 Cognition Level LOCQ IOCQ HOCQ Percentage distribution 21.35% 57.3% 21.35% Course Outcome (CO):"
+    "text_snippet": "Perform depth-first traversal on the given graph, with A as the starting node. If more than one vertex can be visited at"
   },
   {
-    "question_instance_id": "DOC-03-P02-Q06",
+    "question_instance_id": "DOC-02-P04-Q07-sub-b",
+    "document_id": "DOC-02",
+    "page": 4,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "(i)  Construct a Binary Search Tree using the following traversals. Inorder: 7, 11, 20, 23, 30, 45, 56, 59, 60, 76, 92, "
+  },
+  {
+    "question_instance_id": "DOC-02-P04-Q08-sub-a",
+    "document_id": "DOC-02",
+    "page": 4,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "(i)  Write the pseudo-code for Min-heapify(A, i) routine, where A is an array containing integers and i is an index of t"
+  },
+  {
+    "question_instance_id": "DOC-02-P05-Q08-sub-b",
+    "document_id": "DOC-02",
+    "page": 5,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Fill up the table with asymptotic time complexities, some of them are shown for you \u2013 Best case Average Case Worst Case "
+  },
+  {
+    "question_instance_id": "DOC-02-P05-Q08-sub-c",
+    "document_id": "DOC-02",
+    "page": 5,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "(i) Suppose you are performing an insertion sort on the following elements stored in an array. 22, 29, 35, 42, 39, 25, 1"
+  },
+  {
+    "question_instance_id": "DOC-02-P05-Q09-sub-a",
+    "document_id": "DOC-02",
+    "page": 5,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Do an average case analysis for finding the time complexity  of Binary Search. Assume that the element you are trying to"
+  },
+  {
+    "question_instance_id": "DOC-02-P05-Q09-sub-b",
+    "document_id": "DOC-02",
+    "page": 5,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "(i)  Suppose we are doing Radix Sort of 128 integers and the integers have hexadecimal digits,  how would we lose if do "
+  },
+  {
+    "question_instance_id": "DOC-02-P05-Q09-sub-c",
+    "document_id": "DOC-02",
+    "page": 5,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "(i)  Use \u2018linear probing with skipping\u2019 method to insert the following numbers in a table of size 6 in the order given: "
+  },
+  {
+    "question_instance_id": "DOC-03-P02-Q02-sub-a",
     "document_id": "DOC-03",
     "page": 2,
     "issues": [
-      "Extremely short text / arithmetic fragment: '+ 6 = 12'"
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
     ],
-    "text_snippet": "+ 6 = 12"
+    "text_snippet": "An unsorted array contains 2n+1 integers such taht all but one element occur twice each. Write a program/pseudo-code/alg"
   },
   {
-    "question_instance_id": "DOC-03-P02-Q03",
+    "question_instance_id": "DOC-03-P02-Q02-sub-b",
     "document_id": "DOC-03",
     "page": 2,
     "issues": [
-      "Extremely short text / arithmetic fragment: '+ (3 + 2) + 4 = 12'"
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
     ],
-    "text_snippet": "+ (3 + 2) + 4 = 12"
+    "text_snippet": "Write a program or pseudo code or algorithm to display node values in reverse order for a double linked list? [(CO4)(Und"
   },
   {
-    "question_instance_id": "DOC-03-P03-Q04",
+    "question_instance_id": "DOC-03-P02-Q02-sub-c",
+    "document_id": "DOC-03",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "A sorting method with time complexity O(n log n) spends exactly 1 millisecond to sort 1,000 data items. Assuming that ti"
+  },
+  {
+    "question_instance_id": "DOC-03-P02-Q03-sub-a",
+    "document_id": "DOC-03",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Can you implement an algorithm, which can perform \u201cdelete at front\u201d of a circular linked list in constant time? Justify "
+  },
+  {
+    "question_instance_id": "DOC-03-P02-Q03-sub-b",
+    "document_id": "DOC-03",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Write a pseudo-code/C program to reverse a singly linked list. [(CO2, CO3)(Apply/LOCQ)]"
+  },
+  {
+    "question_instance_id": "DOC-03-P02-Q04-sub-a",
+    "document_id": "DOC-03",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "To implement a queue using Stack, show how to implement ENQUEUE and DEQUEUE operations using a sequence of given operati"
+  },
+  {
+    "question_instance_id": "DOC-03-P02-Q04-sub-b",
+    "document_id": "DOC-03",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Write a function \u201cinsert\u201d that is tail recursive. It should take in a list \u201clst\u201d, an \u201citem\u201d, and an \u201cindex\u201d, and insert "
+  },
+  {
+    "question_instance_id": "DOC-03-P02-Q04-sub-c",
+    "document_id": "DOC-03",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Write a program or pseudo code or algorithm that should continue removing adjacent duplicates from the string given a st"
+  },
+  {
+    "question_instance_id": "DOC-03-P03-Q05-sub-a",
     "document_id": "DOC-03",
     "page": 3,
     "issues": [
-      "Extremely short text / arithmetic fragment: '+ 4 + 4 = 12'"
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
     ],
-    "text_snippet": "+ 4 + 4 = 12"
+    "text_snippet": "Consider the following code snippet and illustrate in detail how f(5) is calculated? int f(int n) { static int r=0; if(n"
   },
   {
-    "question_instance_id": "DOC-03-P03-Q04",
+    "question_instance_id": "DOC-03-P03-Q05-sub-b",
     "document_id": "DOC-03",
     "page": 3,
     "issues": [
-      "Extremely short text / arithmetic fragment: '+ 5 + 3 = 12'"
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
     ],
-    "text_snippet": "+ 5 + 3 = 12"
+    "text_snippet": "Write a program or pseudo code or algorithm to design a stack that returns a minimum element without using an auxiliary "
   },
   {
-    "question_instance_id": "DOC-03-P03-Q06",
+    "question_instance_id": "DOC-03-P03-Q05-sub-c",
     "document_id": "DOC-03",
     "page": 3,
     "issues": [
-      "Extremely short text / arithmetic fragment: '+ 6 = 12'"
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
     ],
-    "text_snippet": "+ 6 = 12"
+    "text_snippet": "Write a program or pseudo code or algorithm to generate binary numbers between 1 to `n` using a queue. (CO4)(Analyze/LOC"
   },
   {
-    "question_instance_id": "DOC-03-P04-Q06",
+    "question_instance_id": "DOC-03-P03-Q06-sub-a",
+    "document_id": "DOC-03",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "What will be resultant Max-Heap when the elements: 32, 15, 20, 30, 12, 25, 16 are inserted one by one? [(CO2)(Understand"
+  },
+  {
+    "question_instance_id": "DOC-03-P03-Q06-sub-b",
+    "document_id": "DOC-03",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Consider the following New-order strategy for traversing a binary tree: \uf0b7 Visit the root \uf0b7 Visit the right sub-tree usin"
+  },
+  {
+    "question_instance_id": "DOC-03-P03-Q06-sub-c",
+    "document_id": "DOC-03",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "The in-order traversal and pre-order traversal of a binary tree are \u201cdbeafcg\u201d and \u201cabdecfg\u201d respectively. What would be "
+  },
+  {
+    "question_instance_id": "DOC-03-P03-Q07-sub-a",
+    "document_id": "DOC-03",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Provide a pseudo code to perform a Level order traversal of a rooted tree. What is the data structure that you have used"
+  },
+  {
+    "question_instance_id": "DOC-03-P03-Q07-sub-b",
+    "document_id": "DOC-03",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Provide a pseudo code to count the number of leaf nodes of a binary tree. [(CO3) (Apply/IOCQ)]"
+  },
+  {
+    "question_instance_id": "DOC-03-P04-Q08-sub-a",
     "document_id": "DOC-03",
     "page": 4,
     "issues": [
-      "Extremely short text / arithmetic fragment: '+ 3 + 3 = 12'"
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
     ],
-    "text_snippet": "+ 3 + 3 = 12"
+    "text_snippet": "When should we use counting sort over other sorting methods? Explain the algorithm for counting sort and explain its tim"
   },
   {
-    "question_instance_id": "DOC-03-P04-Q06",
+    "question_instance_id": "DOC-03-P04-Q08-sub-b",
     "document_id": "DOC-03",
     "page": 4,
     "issues": [
-      "Extremely short text / arithmetic fragment: '+ 4 + 2 = 12 Cognition Level LOCQ IOCQ HOCQ Percentage distribution 40 31 29 Course Outcome (CO): After the completion of the course students will be able to CSEN2101.1 Understand and remember the basics of data structures and how time complexity analysis is applicable to different types of algorithms. CSEN2101.2 Understand the significance and utility of different data structures and the context of their application. (For example, the queue in front of ticket counters uses first-in-first-out paradigm in a linear data structure) CSEN2101.3Apply different types of data structures in algorithms and understand how the data structures can be useful in those algorithms. CSEN2101.4 Analyse the behaviour of different data structures in algorithms. (For example, given an algorithm that uses a particular data structure, how to calculate its space and time complexity.) CSEN2101.5 Evaluate solutions of a problem with different data structures and thereby understand how to select suitable data structures for a solution. (For example, what are the different ways to find the second largest number from a list of integers and which solution is the best.) CSEN2101.6 Evaluate different types of solutions (e.g. sorting) to the same problem. *LOCQ: Lower Order Cognitive Question; IOCQ: Intermediate Order Cognitive Question; HOCQ: Higher Order Cognitive Question;'"
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
     ],
-    "text_snippet": "+ 4 + 2 = 12 Cognition Level LOCQ IOCQ HOCQ Percentage distribution 40 31 29 Course Outcome (CO): After the completion o"
+    "text_snippet": "When does interpolation search perform like a linear search? Explain with an example. [(CO1, C02)(Understand/LOCQ)]"
   },
   {
-    "question_instance_id": "DOC-04-P02-Q06",
+    "question_instance_id": "DOC-03-P04-Q08-sub-c",
+    "document_id": "DOC-03",
+    "page": 4,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Consider a hash table of size seven with starting index zero and a hash function (3x + 4) % 7 (x is the item that you wa"
+  },
+  {
+    "question_instance_id": "DOC-03-P04-Q09-sub-a",
+    "document_id": "DOC-03",
+    "page": 4,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Say you have a data set of size n and you want to find the second largest element form the data set. Suggest an algorith"
+  },
+  {
+    "question_instance_id": "DOC-03-P04-Q09-sub-b",
+    "document_id": "DOC-03",
+    "page": 4,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "In a closed hashing we are using an array of size 10 whose 0, 1, 2, 5, 6, 7 indexed positions are already filled and the"
+  },
+  {
+    "question_instance_id": "DOC-03-P04-Q09-sub-c",
+    "document_id": "DOC-03",
+    "page": 4,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "What is stable sort? [(CO1, CO2)(Understand/LOCQ)]"
+  },
+  {
+    "question_instance_id": "DOC-04-P02-Q02-sub-a",
     "document_id": "DOC-04",
     "page": 2,
     "issues": [
-      "Extremely short text / arithmetic fragment: '+ 6 = 12'"
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
     ],
-    "text_snippet": "+ 6 = 12"
+    "text_snippet": "An unsorted array contains 2n+1 integers such taht all but one element occur twice each. Write a program/pseudo-code/alg"
   },
   {
-    "question_instance_id": "DOC-04-P02-Q03",
+    "question_instance_id": "DOC-04-P02-Q02-sub-b",
     "document_id": "DOC-04",
     "page": 2,
     "issues": [
-      "Extremely short text / arithmetic fragment: '+ (3 + 2) + 4 = 12'"
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
     ],
-    "text_snippet": "+ (3 + 2) + 4 = 12"
+    "text_snippet": "Write a program or pseudo code or algorithm to display node values in reverse order for a double linked list? [(CO4)(Und"
   },
   {
-    "question_instance_id": "DOC-04-P03-Q04",
+    "question_instance_id": "DOC-04-P02-Q02-sub-c",
+    "document_id": "DOC-04",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "A sorting method with time complexity O(n log n) spends exactly 1 millisecond to sort 1,000 data items. Assuming that ti"
+  },
+  {
+    "question_instance_id": "DOC-04-P02-Q03-sub-a",
+    "document_id": "DOC-04",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Can you implement an algorithm, which can perform \u201cdelete at front\u201d of a circular linked list in constant time? Justify "
+  },
+  {
+    "question_instance_id": "DOC-04-P02-Q03-sub-b",
+    "document_id": "DOC-04",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Write a pseudo-code/C program to reverse a singly linked list. [(CO2, CO3)(Apply/LOCQ)]"
+  },
+  {
+    "question_instance_id": "DOC-04-P02-Q04-sub-a",
+    "document_id": "DOC-04",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "To implement a queue using Stack, show how to implement ENQUEUE and DEQUEUE operations using a sequence of given operati"
+  },
+  {
+    "question_instance_id": "DOC-04-P02-Q04-sub-b",
+    "document_id": "DOC-04",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Write a function \u201cinsert\u201d that is tail recursive. It should take in a list \u201clst\u201d, an \u201citem\u201d, and an \u201cindex\u201d, and insert "
+  },
+  {
+    "question_instance_id": "DOC-04-P02-Q04-sub-c",
+    "document_id": "DOC-04",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Write a program or pseudo code or algorithm that should continue removing adjacent duplicates from the string given a st"
+  },
+  {
+    "question_instance_id": "DOC-04-P03-Q05-sub-a",
     "document_id": "DOC-04",
     "page": 3,
     "issues": [
-      "Extremely short text / arithmetic fragment: '+ 4 + 4 = 12'"
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
     ],
-    "text_snippet": "+ 4 + 4 = 12"
+    "text_snippet": "Consider the following code snippet and illustrate in detail how f(5) is calculated? int f(int n) { static int r=0; if(n"
   },
   {
-    "question_instance_id": "DOC-04-P03-Q04",
+    "question_instance_id": "DOC-04-P03-Q05-sub-b",
     "document_id": "DOC-04",
     "page": 3,
     "issues": [
-      "Extremely short text / arithmetic fragment: '+ 5 + 3 = 12'"
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
     ],
-    "text_snippet": "+ 5 + 3 = 12"
+    "text_snippet": "Write a program or pseudo code or algorithm to design a stack that returns a minimum element without using an auxiliary "
   },
   {
-    "question_instance_id": "DOC-04-P03-Q06",
+    "question_instance_id": "DOC-04-P03-Q05-sub-c",
     "document_id": "DOC-04",
     "page": 3,
     "issues": [
-      "Extremely short text / arithmetic fragment: '+ 6 = 12'"
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
     ],
-    "text_snippet": "+ 6 = 12"
+    "text_snippet": "Write a program or pseudo code or algorithm to generate binary numbers between 1 to `n` using a queue. (CO4)(Analyze/LOC"
   },
   {
-    "question_instance_id": "DOC-04-P04-Q06",
+    "question_instance_id": "DOC-04-P03-Q06-sub-a",
+    "document_id": "DOC-04",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "What will be resultant Max-Heap when the elements: 32, 15, 20, 30, 12, 25, 16 are inserted one by one? [(CO2)(Understand"
+  },
+  {
+    "question_instance_id": "DOC-04-P03-Q06-sub-b",
+    "document_id": "DOC-04",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Consider the following New-order strategy for traversing a binary tree: \uf0b7 Visit the root \uf0b7 Visit the right sub-tree usin"
+  },
+  {
+    "question_instance_id": "DOC-04-P03-Q06-sub-c",
+    "document_id": "DOC-04",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "The in-order traversal and pre-order traversal of a binary tree are \u201cdbeafcg\u201d and \u201cabdecfg\u201d respectively. What would be "
+  },
+  {
+    "question_instance_id": "DOC-04-P03-Q07-sub-a",
+    "document_id": "DOC-04",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Provide a pseudo code to perform a Level order traversal of a rooted tree. What is the data structure that you have used"
+  },
+  {
+    "question_instance_id": "DOC-04-P03-Q07-sub-b",
+    "document_id": "DOC-04",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Provide a pseudo code to count the number of leaf nodes of a binary tree. [(CO3) (Apply/IOCQ)]"
+  },
+  {
+    "question_instance_id": "DOC-04-P04-Q08-sub-a",
     "document_id": "DOC-04",
     "page": 4,
     "issues": [
-      "Extremely short text / arithmetic fragment: '+ 3 + 3 = 12'"
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
     ],
-    "text_snippet": "+ 3 + 3 = 12"
+    "text_snippet": "When should we use counting sort over other sorting methods? Explain the algorithm for counting sort and explain its tim"
   },
   {
-    "question_instance_id": "DOC-04-P04-Q06",
+    "question_instance_id": "DOC-04-P04-Q08-sub-b",
     "document_id": "DOC-04",
     "page": 4,
     "issues": [
-      "Extremely short text / arithmetic fragment: '+ 4 + 2 = 12 Cognition Level LOCQ IOCQ HOCQ Percentage distribution 40 31 29 Course Outcome (CO): After the completion of the course students will be able to CSEN2101.1 Understand and remember the basics of data structures and how time complexity analysis is applicable to different types of algorithms. CSEN2101.2 Understand the significance and utility of different data structures and the context of their application. (For example, the queue in front of ticket counters uses first-in-first-out paradigm in a linear data structure) CSEN2101.3Apply different types of data structures in algorithms and understand how the data structures can be useful in those algorithms. CSEN2101.4 Analyse the behaviour of different data structures in algorithms. (For example, given an algorithm that uses a particular data structure, how to calculate its space and time complexity.) CSEN2101.5 Evaluate solutions of a problem with different data structures and thereby understand how to select suitable data structures for a solution. (For example, what are the different ways to find the second largest number from a list of integers and which solution is the best.) CSEN2101.6 Evaluate different types of solutions (e.g. sorting) to the same problem. *LOCQ: Lower Order Cognitive Question; IOCQ: Intermediate Order Cognitive Question; HOCQ: Higher Order Cognitive Question;'"
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
     ],
-    "text_snippet": "+ 4 + 2 = 12 Cognition Level LOCQ IOCQ HOCQ Percentage distribution 40 31 29 Course Outcome (CO): After the completion o"
+    "text_snippet": "When does interpolation search perform like a linear search? Explain with an example. [(CO1, C02)(Understand/LOCQ)]"
   },
   {
-    "question_instance_id": "DOC-05-P02-Q06",
+    "question_instance_id": "DOC-04-P04-Q08-sub-c",
+    "document_id": "DOC-04",
+    "page": 4,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Consider a hash table of size seven with starting index zero and a hash function (3x + 4) % 7 (x is the item that you wa"
+  },
+  {
+    "question_instance_id": "DOC-04-P04-Q09-sub-a",
+    "document_id": "DOC-04",
+    "page": 4,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Say you have a data set of size n and you want to find the second largest element form the data set. Suggest an algorith"
+  },
+  {
+    "question_instance_id": "DOC-04-P04-Q09-sub-b",
+    "document_id": "DOC-04",
+    "page": 4,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "In a closed hashing we are using an array of size 10 whose 0, 1, 2, 5, 6, 7 indexed positions are already filled and the"
+  },
+  {
+    "question_instance_id": "DOC-04-P04-Q09-sub-c",
+    "document_id": "DOC-04",
+    "page": 4,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "What is stable sort? [(CO1, CO2)(Understand/LOCQ)]"
+  },
+  {
+    "question_instance_id": "DOC-05-P02-Q02-sub-a",
     "document_id": "DOC-05",
     "page": 2,
     "issues": [
-      "Extremely short text / arithmetic fragment: '+ 6 = 12'"
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
     ],
-    "text_snippet": "+ 6 = 12"
+    "text_snippet": "An unsorted array contains 2n+1 integers such taht all but one element occur twice each. Write a program/pseudo-code/alg"
   },
   {
-    "question_instance_id": "DOC-05-P02-Q03",
+    "question_instance_id": "DOC-05-P02-Q02-sub-b",
     "document_id": "DOC-05",
     "page": 2,
     "issues": [
-      "Extremely short text / arithmetic fragment: '+ (3 + 2) + 4 = 12'"
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
     ],
-    "text_snippet": "+ (3 + 2) + 4 = 12"
+    "text_snippet": "Write a program or pseudo code or algorithm to display node values in reverse order for a double linked list? [(CO4)(Und"
   },
   {
-    "question_instance_id": "DOC-05-P03-Q04",
+    "question_instance_id": "DOC-05-P02-Q02-sub-c",
+    "document_id": "DOC-05",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "A sorting method with time complexity O(n log n) spends exactly 1 millisecond to sort 1,000 data items. Assuming that ti"
+  },
+  {
+    "question_instance_id": "DOC-05-P02-Q03-sub-a",
+    "document_id": "DOC-05",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Can you implement an algorithm, which can perform \u201cdelete at front\u201d of a circular linked list in constant time? Justify "
+  },
+  {
+    "question_instance_id": "DOC-05-P02-Q03-sub-b",
+    "document_id": "DOC-05",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Write a pseudo-code/C program to reverse a singly linked list. [(CO2, CO3)(Apply/LOCQ)]"
+  },
+  {
+    "question_instance_id": "DOC-05-P02-Q04-sub-a",
+    "document_id": "DOC-05",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "To implement a queue using Stack, show how to implement ENQUEUE and DEQUEUE operations using a sequence of given operati"
+  },
+  {
+    "question_instance_id": "DOC-05-P02-Q04-sub-b",
+    "document_id": "DOC-05",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Write a function \u201cinsert\u201d that is tail recursive. It should take in a list \u201clst\u201d, an \u201citem\u201d, and an \u201cindex\u201d, and insert "
+  },
+  {
+    "question_instance_id": "DOC-05-P02-Q04-sub-c",
+    "document_id": "DOC-05",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Write a program or pseudo code or algorithm that should continue removing adjacent duplicates from the string given a st"
+  },
+  {
+    "question_instance_id": "DOC-05-P03-Q05-sub-a",
     "document_id": "DOC-05",
     "page": 3,
     "issues": [
-      "Extremely short text / arithmetic fragment: '+ 4 + 4 = 12'"
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
     ],
-    "text_snippet": "+ 4 + 4 = 12"
+    "text_snippet": "Consider the following code snippet and illustrate in detail how f(5) is calculated? int f(int n) { static int r=0; if(n"
   },
   {
-    "question_instance_id": "DOC-05-P03-Q04",
+    "question_instance_id": "DOC-05-P03-Q05-sub-b",
     "document_id": "DOC-05",
     "page": 3,
     "issues": [
-      "Extremely short text / arithmetic fragment: '+ 5 + 3 = 12'"
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
     ],
-    "text_snippet": "+ 5 + 3 = 12"
+    "text_snippet": "Write a program or pseudo code or algorithm to design a stack that returns a minimum element without using an auxiliary "
   },
   {
-    "question_instance_id": "DOC-05-P03-Q06",
+    "question_instance_id": "DOC-05-P03-Q05-sub-c",
     "document_id": "DOC-05",
     "page": 3,
     "issues": [
-      "Extremely short text / arithmetic fragment: '+ 6 = 12'"
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
     ],
-    "text_snippet": "+ 6 = 12"
+    "text_snippet": "Write a program or pseudo code or algorithm to generate binary numbers between 1 to `n` using a queue. (CO4)(Analyze/LOC"
   },
   {
-    "question_instance_id": "DOC-05-P04-Q06",
+    "question_instance_id": "DOC-05-P03-Q06-sub-a",
+    "document_id": "DOC-05",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "What will be resultant Max-Heap when the elements: 32, 15, 20, 30, 12, 25, 16 are inserted one by one? [(CO2)(Understand"
+  },
+  {
+    "question_instance_id": "DOC-05-P03-Q06-sub-b",
+    "document_id": "DOC-05",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Consider the following New-order strategy for traversing a binary tree: \uf0b7 Visit the root \uf0b7 Visit the right sub-tree usin"
+  },
+  {
+    "question_instance_id": "DOC-05-P03-Q06-sub-c",
+    "document_id": "DOC-05",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "The in-order traversal and pre-order traversal of a binary tree are \u201cdbeafcg\u201d and \u201cabdecfg\u201d respectively. What would be "
+  },
+  {
+    "question_instance_id": "DOC-05-P03-Q07-sub-a",
+    "document_id": "DOC-05",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Provide a pseudo code to perform a Level order traversal of a rooted tree. What is the data structure that you have used"
+  },
+  {
+    "question_instance_id": "DOC-05-P03-Q07-sub-b",
+    "document_id": "DOC-05",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Provide a pseudo code to count the number of leaf nodes of a binary tree. [(CO3) (Apply/IOCQ)]"
+  },
+  {
+    "question_instance_id": "DOC-05-P04-Q08-sub-a",
     "document_id": "DOC-05",
     "page": 4,
     "issues": [
-      "Extremely short text / arithmetic fragment: '+ 3 + 3 = 12'"
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
     ],
-    "text_snippet": "+ 3 + 3 = 12"
+    "text_snippet": "When should we use counting sort over other sorting methods? Explain the algorithm for counting sort and explain its tim"
   },
   {
-    "question_instance_id": "DOC-05-P04-Q06",
+    "question_instance_id": "DOC-05-P04-Q08-sub-b",
     "document_id": "DOC-05",
     "page": 4,
     "issues": [
-      "Extremely short text / arithmetic fragment: '+ 4 + 2 = 12 Cognition Level LOCQ IOCQ HOCQ Percentage distribution 40 31 29 Course Outcome (CO): After the completion of the course students will be able to CSEN2101.1 Understand and remember the basics of data structures and how time complexity analysis is applicable to different types of algorithms. CSEN2101.2 Understand the significance and utility of different data structures and the context of their application. (For example, the queue in front of ticket counters uses first-in-first-out paradigm in a linear data structure) CSEN2101.3Apply different types of data structures in algorithms and understand how the data structures can be useful in those algorithms. CSEN2101.4 Analyse the behaviour of different data structures in algorithms. (For example, given an algorithm that uses a particular data structure, how to calculate its space and time complexity.) CSEN2101.5 Evaluate solutions of a problem with different data structures and thereby understand how to select suitable data structures for a solution. (For example, what are the different ways to find the second largest number from a list of integers and which solution is the best.) CSEN2101.6 Evaluate different types of solutions (e.g. sorting) to the same problem. *LOCQ: Lower Order Cognitive Question; IOCQ: Intermediate Order Cognitive Question; HOCQ: Higher Order Cognitive Question;'"
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
     ],
-    "text_snippet": "+ 4 + 2 = 12 Cognition Level LOCQ IOCQ HOCQ Percentage distribution 40 31 29 Course Outcome (CO): After the completion o"
+    "text_snippet": "When does interpolation search perform like a linear search? Explain with an example. [(CO1, C02)(Understand/LOCQ)]"
   },
   {
-    "question_instance_id": "DOC-06-P02-Q06",
+    "question_instance_id": "DOC-05-P04-Q08-sub-c",
+    "document_id": "DOC-05",
+    "page": 4,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Consider a hash table of size seven with starting index zero and a hash function (3x + 4) % 7 (x is the item that you wa"
+  },
+  {
+    "question_instance_id": "DOC-05-P04-Q09-sub-a",
+    "document_id": "DOC-05",
+    "page": 4,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Say you have a data set of size n and you want to find the second largest element form the data set. Suggest an algorith"
+  },
+  {
+    "question_instance_id": "DOC-05-P04-Q09-sub-b",
+    "document_id": "DOC-05",
+    "page": 4,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "In a closed hashing we are using an array of size 10 whose 0, 1, 2, 5, 6, 7 indexed positions are already filled and the"
+  },
+  {
+    "question_instance_id": "DOC-05-P04-Q09-sub-c",
+    "document_id": "DOC-05",
+    "page": 4,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "What is stable sort? [(CO1, CO2)(Understand/LOCQ)]"
+  },
+  {
+    "question_instance_id": "DOC-06-P02-Q02-sub-a",
     "document_id": "DOC-06",
     "page": 2,
     "issues": [
-      "Extremely short text / arithmetic fragment: '+ 6 = 12'"
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
     ],
-    "text_snippet": "+ 6 = 12"
+    "text_snippet": "Write a function in C/pseudo-code to delete all the nodes that contains the certain value v, from a singly linked list i"
   },
   {
-    "question_instance_id": "DOC-06-P03-Q06",
+    "question_instance_id": "DOC-06-P02-Q02-sub-b",
+    "document_id": "DOC-06",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Define Big-Oh, Big-Omega and Big-Theta with example. [(CSEN2101.1)(Remember/LOCQ)]"
+  },
+  {
+    "question_instance_id": "DOC-06-P02-Q03-sub-a",
+    "document_id": "DOC-06",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Prove: n2 + 100 n  =  \uf071(n2). [(CO1)(Understand and Remember/LOCQ)]"
+  },
+  {
+    "question_instance_id": "DOC-06-P02-Q03-sub-b",
+    "document_id": "DOC-06",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "If the base address of an array Z with dimension 10X20 is 2023 and the array elements are stored in column-major orderin"
+  },
+  {
+    "question_instance_id": "DOC-06-P03-Q03-sub-c",
     "document_id": "DOC-06",
     "page": 3,
     "issues": [
-      "Extremely short text / arithmetic fragment: '+ 3 + 3 = 12'"
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
     ],
-    "text_snippet": "+ 3 + 3 = 12"
+    "text_snippet": "Write the pseudo-code of inserting an element after a given value in a doubly linked list. Your code should work for any"
   },
   {
-    "question_instance_id": "DOC-06-P03-Q06",
+    "question_instance_id": "DOC-06-P03-Q04-sub-a",
     "document_id": "DOC-06",
     "page": 3,
     "issues": [
-      "Extremely short text / arithmetic fragment: '+ 6 = 12'"
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
     ],
-    "text_snippet": "+ 6 = 12"
+    "text_snippet": "Write a pseudo-code/C program to determine whether a singly linked list is a palindrome or not. Return 1 if it is a pali"
   },
   {
-    "question_instance_id": "DOC-06-P03-Q02",
+    "question_instance_id": "DOC-06-P03-Q04-sub-b",
     "document_id": "DOC-06",
     "page": 3,
     "issues": [
-      "Extremely short text / arithmetic fragment: '+ 6 + 4 = 12'"
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
     ],
-    "text_snippet": "+ 6 + 4 = 12"
+    "text_snippet": "What will be the postfix expression of the following infix expression? (a + b) ^ d ^ e * f [(CSEN2101.2, CSEN2101.3)(Und"
   },
   {
-    "question_instance_id": "DOC-06-P04-Q03",
+    "question_instance_id": "DOC-06-P03-Q04-sub-c",
+    "document_id": "DOC-06",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Show the different passes of the stack (Value Stack) while evaluating the following expression: 3 * 4 + 14 / 7 * -3. [(C"
+  },
+  {
+    "question_instance_id": "DOC-06-P03-Q05-sub-a",
+    "document_id": "DOC-06",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Represent the following equation in post-fix form and evaluate the value. Use a stack data structure and show each step."
+  },
+  {
+    "question_instance_id": "DOC-06-P03-Q05-sub-b",
+    "document_id": "DOC-06",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Write the pseudo-code of insertion and deletion of an element from an input- restricted doubly-ended queue. The deque is"
+  },
+  {
+    "question_instance_id": "DOC-06-P03-Q06-sub-a",
+    "document_id": "DOC-06",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Write a linear time algorithm to find whether a graph is cyclic or acyclic (give proper justification of your answer). W"
+  },
+  {
+    "question_instance_id": "DOC-06-P03-Q06-sub-b",
+    "document_id": "DOC-06",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Is it possible to create a binary tree, whose pre-order and post-order traversal sequences are given? Justify your answe"
+  },
+  {
+    "question_instance_id": "DOC-06-P03-Q06-sub-c",
+    "document_id": "DOC-06",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Suppose you have implemented a Binary Search Tree using linked list, where every node contains the addresses of left chi"
+  },
+  {
+    "question_instance_id": "DOC-06-P03-Q07-sub-a",
+    "document_id": "DOC-06",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Add the following list of numbers to an initially empty min-binary heap: 12, 5, 15, 9, 13, 7, 15, 10, 3, 20, 4. [(CSEN21"
+  },
+  {
+    "question_instance_id": "DOC-06-P03-Q07-sub-b",
+    "document_id": "DOC-06",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Draw an AVL tree by inserting nodes in the following sequence \u2013 15, 10, 25, 12, 65, 45, 75, 55, 70, 90, 105 [(CSEN2101.2"
+  },
+  {
+    "question_instance_id": "DOC-06-P03-Q07-sub-c",
+    "document_id": "DOC-06",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Write a pseudo-code/C program to find the maximum element of a Binary Search Tree. [(CSEN2101.4)(Understand/LOCQ)]"
+  },
+  {
+    "question_instance_id": "DOC-06-P04-Q08-sub-a",
     "document_id": "DOC-06",
     "page": 4,
     "issues": [
-      "Extremely short text / arithmetic fragment: '+ 4 + 5 = 12'"
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
     ],
-    "text_snippet": "+ 4 + 5 = 12"
+    "text_snippet": "If an array starts from 0, what will be the indices of the left child and right child for a node in a binary heap whose "
   },
   {
-    "question_instance_id": "DOC-06-P04-Q06",
+    "question_instance_id": "DOC-06-P04-Q08-sub-b",
     "document_id": "DOC-06",
     "page": 4,
     "issues": [
-      "Extremely short text / arithmetic fragment: '+ 6 = 12 ______________________________________________________________________________________________________ Cognition Level LOCQ IOCQ HOCQ Percentage distribution 53.13 39.58'"
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
     ],
-    "text_snippet": "+ 6 = 12 ______________________________________________________________________________________________________ Cognitio"
+    "text_snippet": "Prove that h 2\u210e \u221e \u210e=0 = 2. [(CO1)(Analyze/IOCQ)]"
   },
   {
-    "question_instance_id": "DOC-07-P02-Q06",
+    "question_instance_id": "DOC-06-P04-Q08-sub-c",
+    "document_id": "DOC-06",
+    "page": 4,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Using the above result, justify that a max-heap can be generated in O(n) time from a set of n elements. You may assume t"
+  },
+  {
+    "question_instance_id": "DOC-06-P04-Q09-sub-a",
+    "document_id": "DOC-06",
+    "page": 4,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Show that the expected number of comparisons required to find an element from an array of n elements if the element occu"
+  },
+  {
+    "question_instance_id": "DOC-06-P04-Q09-sub-b",
+    "document_id": "DOC-06",
+    "page": 4,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "The keys 12, 18, 13, 2, 3, 23, 5 and 15 are inserted into an initially empty hash table of length 10 using open addressi"
+  },
+  {
+    "question_instance_id": "DOC-07-P02-Q02-sub-a",
     "document_id": "DOC-07",
     "page": 2,
     "issues": [
-      "Extremely short text / arithmetic fragment: '+ 6 = 12'"
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
     ],
-    "text_snippet": "+ 6 = 12"
+    "text_snippet": "Write a function in C/pseudo-code to delete all the nodes that contains the certain value v, from a singly linked list i"
   },
   {
-    "question_instance_id": "DOC-07-P03-Q06",
+    "question_instance_id": "DOC-07-P02-Q02-sub-b",
+    "document_id": "DOC-07",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Define Big-Oh, Big-Omega and Big-Theta with example. [(CSEN2101.1)(Remember/LOCQ)]"
+  },
+  {
+    "question_instance_id": "DOC-07-P02-Q03-sub-a",
+    "document_id": "DOC-07",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Prove: n2 + 100 n  =  \uf071(n2). [(CO1)(Understand and Remember/LOCQ)]"
+  },
+  {
+    "question_instance_id": "DOC-07-P02-Q03-sub-b",
+    "document_id": "DOC-07",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "If the base address of an array Z with dimension 10X20 is 2023 and the array elements are stored in column-major orderin"
+  },
+  {
+    "question_instance_id": "DOC-07-P03-Q03-sub-c",
     "document_id": "DOC-07",
     "page": 3,
     "issues": [
-      "Extremely short text / arithmetic fragment: '+ 3 + 3 = 12'"
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
     ],
-    "text_snippet": "+ 3 + 3 = 12"
+    "text_snippet": "Write the pseudo-code of inserting an element after a given value in a doubly linked list. Your code should work for any"
   },
   {
-    "question_instance_id": "DOC-07-P03-Q06",
+    "question_instance_id": "DOC-07-P03-Q04-sub-a",
     "document_id": "DOC-07",
     "page": 3,
     "issues": [
-      "Extremely short text / arithmetic fragment: '+ 6 = 12'"
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
     ],
-    "text_snippet": "+ 6 = 12"
+    "text_snippet": "Write a pseudo-code/C program to determine whether a singly linked list is a palindrome or not. Return 1 if it is a pali"
   },
   {
-    "question_instance_id": "DOC-07-P03-Q02",
+    "question_instance_id": "DOC-07-P03-Q04-sub-b",
     "document_id": "DOC-07",
     "page": 3,
     "issues": [
-      "Extremely short text / arithmetic fragment: '+ 6 + 4 = 12'"
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
     ],
-    "text_snippet": "+ 6 + 4 = 12"
+    "text_snippet": "What will be the postfix expression of the following infix expression? (a + b) ^ d ^ e * f [(CSEN2101.2, CSEN2101.3)(Und"
   },
   {
-    "question_instance_id": "DOC-07-P04-Q03",
+    "question_instance_id": "DOC-07-P03-Q04-sub-c",
+    "document_id": "DOC-07",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Show the different passes of the stack (Value Stack) while evaluating the following expression: 3 * 4 + 14 / 7 * -3. [(C"
+  },
+  {
+    "question_instance_id": "DOC-07-P03-Q05-sub-a",
+    "document_id": "DOC-07",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Represent the following equation in post-fix form and evaluate the value. Use a stack data structure and show each step."
+  },
+  {
+    "question_instance_id": "DOC-07-P03-Q05-sub-b",
+    "document_id": "DOC-07",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Write the pseudo-code of insertion and deletion of an element from an input- restricted doubly-ended queue. The deque is"
+  },
+  {
+    "question_instance_id": "DOC-07-P03-Q06-sub-a",
+    "document_id": "DOC-07",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Write a linear time algorithm to find whether a graph is cyclic or acyclic (give proper justification of your answer). W"
+  },
+  {
+    "question_instance_id": "DOC-07-P03-Q06-sub-b",
+    "document_id": "DOC-07",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Is it possible to create a binary tree, whose pre-order and post-order traversal sequences are given? Justify your answe"
+  },
+  {
+    "question_instance_id": "DOC-07-P03-Q06-sub-c",
+    "document_id": "DOC-07",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Suppose you have implemented a Binary Search Tree using linked list, where every node contains the addresses of left chi"
+  },
+  {
+    "question_instance_id": "DOC-07-P03-Q07-sub-a",
+    "document_id": "DOC-07",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Add the following list of numbers to an initially empty min-binary heap: 12, 5, 15, 9, 13, 7, 15, 10, 3, 20, 4. [(CSEN21"
+  },
+  {
+    "question_instance_id": "DOC-07-P03-Q07-sub-b",
+    "document_id": "DOC-07",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Draw an AVL tree by inserting nodes in the following sequence \u2013 15, 10, 25, 12, 65, 45, 75, 55, 70, 90, 105 [(CSEN2101.2"
+  },
+  {
+    "question_instance_id": "DOC-07-P03-Q07-sub-c",
+    "document_id": "DOC-07",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Write a pseudo-code/C program to find the maximum element of a Binary Search Tree. [(CSEN2101.4)(Understand/LOCQ)]"
+  },
+  {
+    "question_instance_id": "DOC-07-P04-Q08-sub-a",
     "document_id": "DOC-07",
     "page": 4,
     "issues": [
-      "Extremely short text / arithmetic fragment: '+ 4 + 5 = 12'"
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
     ],
-    "text_snippet": "+ 4 + 5 = 12"
+    "text_snippet": "If an array starts from 0, what will be the indices of the left child and right child for a node in a binary heap whose "
   },
   {
-    "question_instance_id": "DOC-07-P04-Q06",
+    "question_instance_id": "DOC-07-P04-Q08-sub-b",
     "document_id": "DOC-07",
     "page": 4,
     "issues": [
-      "Extremely short text / arithmetic fragment: '+ 6 = 12 ______________________________________________________________________________________________________ Cognition Level LOCQ IOCQ HOCQ Percentage distribution 53.13 39.58'"
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
     ],
-    "text_snippet": "+ 6 = 12 ______________________________________________________________________________________________________ Cognitio"
+    "text_snippet": "Prove that h 2\u210e \u221e \u210e=0 = 2. [(CO1)(Analyze/IOCQ)]"
   },
   {
-    "question_instance_id": "DOC-08-P02-Q06",
+    "question_instance_id": "DOC-07-P04-Q08-sub-c",
+    "document_id": "DOC-07",
+    "page": 4,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Using the above result, justify that a max-heap can be generated in O(n) time from a set of n elements. You may assume t"
+  },
+  {
+    "question_instance_id": "DOC-07-P04-Q09-sub-a",
+    "document_id": "DOC-07",
+    "page": 4,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Show that the expected number of comparisons required to find an element from an array of n elements if the element occu"
+  },
+  {
+    "question_instance_id": "DOC-07-P04-Q09-sub-b",
+    "document_id": "DOC-07",
+    "page": 4,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "The keys 12, 18, 13, 2, 3, 23, 5 and 15 are inserted into an initially empty hash table of length 10 using open addressi"
+  },
+  {
+    "question_instance_id": "DOC-08-P02-Q02-sub-a",
     "document_id": "DOC-08",
     "page": 2,
     "issues": [
-      "Extremely short text / arithmetic fragment: '+ 6 = 12'"
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
     ],
-    "text_snippet": "+ 6 = 12"
+    "text_snippet": "Write a function in C/pseudo-code to delete all the nodes that contains the certain value v, from a singly linked list i"
   },
   {
-    "question_instance_id": "DOC-08-P03-Q06",
+    "question_instance_id": "DOC-08-P02-Q02-sub-b",
+    "document_id": "DOC-08",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Define Big-Oh, Big-Omega and Big-Theta with example. [(CSEN2101.1)(Remember/LOCQ)]"
+  },
+  {
+    "question_instance_id": "DOC-08-P02-Q03-sub-a",
+    "document_id": "DOC-08",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Prove: n2 + 100 n  =  \uf071(n2). [(CO1)(Understand and Remember/LOCQ)]"
+  },
+  {
+    "question_instance_id": "DOC-08-P02-Q03-sub-b",
+    "document_id": "DOC-08",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "If the base address of an array Z with dimension 10X20 is 2023 and the array elements are stored in column-major orderin"
+  },
+  {
+    "question_instance_id": "DOC-08-P03-Q03-sub-c",
     "document_id": "DOC-08",
     "page": 3,
     "issues": [
-      "Extremely short text / arithmetic fragment: '+ 3 + 3 = 12'"
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
     ],
-    "text_snippet": "+ 3 + 3 = 12"
+    "text_snippet": "Write the pseudo-code of inserting an element after a given value in a doubly linked list. Your code should work for any"
   },
   {
-    "question_instance_id": "DOC-08-P03-Q06",
+    "question_instance_id": "DOC-08-P03-Q04-sub-a",
     "document_id": "DOC-08",
     "page": 3,
     "issues": [
-      "Extremely short text / arithmetic fragment: '+ 6 = 12'"
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
     ],
-    "text_snippet": "+ 6 = 12"
+    "text_snippet": "Write a pseudo-code/C program to determine whether a singly linked list is a palindrome or not. Return 1 if it is a pali"
   },
   {
-    "question_instance_id": "DOC-08-P03-Q02",
+    "question_instance_id": "DOC-08-P03-Q04-sub-b",
     "document_id": "DOC-08",
     "page": 3,
     "issues": [
-      "Extremely short text / arithmetic fragment: '+ 6 + 4 = 12'"
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
     ],
-    "text_snippet": "+ 6 + 4 = 12"
+    "text_snippet": "What will be the postfix expression of the following infix expression? (a + b) ^ d ^ e * f [(CSEN2101.2, CSEN2101.3)(Und"
   },
   {
-    "question_instance_id": "DOC-08-P04-Q03",
+    "question_instance_id": "DOC-08-P03-Q04-sub-c",
+    "document_id": "DOC-08",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Show the different passes of the stack (Value Stack) while evaluating the following expression: 3 * 4 + 14 / 7 * -3. [(C"
+  },
+  {
+    "question_instance_id": "DOC-08-P03-Q05-sub-a",
+    "document_id": "DOC-08",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Represent the following equation in post-fix form and evaluate the value. Use a stack data structure and show each step."
+  },
+  {
+    "question_instance_id": "DOC-08-P03-Q05-sub-b",
+    "document_id": "DOC-08",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Write the pseudo-code of insertion and deletion of an element from an input- restricted doubly-ended queue. The deque is"
+  },
+  {
+    "question_instance_id": "DOC-08-P03-Q06-sub-a",
+    "document_id": "DOC-08",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Write a linear time algorithm to find whether a graph is cyclic or acyclic (give proper justification of your answer). W"
+  },
+  {
+    "question_instance_id": "DOC-08-P03-Q06-sub-b",
+    "document_id": "DOC-08",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Is it possible to create a binary tree, whose pre-order and post-order traversal sequences are given? Justify your answe"
+  },
+  {
+    "question_instance_id": "DOC-08-P03-Q06-sub-c",
+    "document_id": "DOC-08",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Suppose you have implemented a Binary Search Tree using linked list, where every node contains the addresses of left chi"
+  },
+  {
+    "question_instance_id": "DOC-08-P03-Q07-sub-a",
+    "document_id": "DOC-08",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Add the following list of numbers to an initially empty min-binary heap: 12, 5, 15, 9, 13, 7, 15, 10, 3, 20, 4. [(CSEN21"
+  },
+  {
+    "question_instance_id": "DOC-08-P03-Q07-sub-b",
+    "document_id": "DOC-08",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Draw an AVL tree by inserting nodes in the following sequence \u2013 15, 10, 25, 12, 65, 45, 75, 55, 70, 90, 105 [(CSEN2101.2"
+  },
+  {
+    "question_instance_id": "DOC-08-P03-Q07-sub-c",
+    "document_id": "DOC-08",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Write a pseudo-code/C program to find the maximum element of a Binary Search Tree. [(CSEN2101.4)(Understand/LOCQ)]"
+  },
+  {
+    "question_instance_id": "DOC-08-P04-Q08-sub-a",
     "document_id": "DOC-08",
     "page": 4,
     "issues": [
-      "Extremely short text / arithmetic fragment: '+ 4 + 5 = 12'"
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
     ],
-    "text_snippet": "+ 4 + 5 = 12"
+    "text_snippet": "If an array starts from 0, what will be the indices of the left child and right child for a node in a binary heap whose "
   },
   {
-    "question_instance_id": "DOC-08-P04-Q06",
+    "question_instance_id": "DOC-08-P04-Q08-sub-b",
     "document_id": "DOC-08",
     "page": 4,
     "issues": [
-      "Extremely short text / arithmetic fragment: '+ 6 = 12 ______________________________________________________________________________________________________ Cognition Level LOCQ IOCQ HOCQ Percentage distribution 53.13 39.58'"
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
     ],
-    "text_snippet": "+ 6 = 12 ______________________________________________________________________________________________________ Cognitio"
+    "text_snippet": "Prove that h 2\u210e \u221e \u210e=0 = 2. [(CO1)(Analyze/IOCQ)]"
   },
   {
-    "question_instance_id": "DOC-09-P02-Q06",
+    "question_instance_id": "DOC-08-P04-Q08-sub-c",
+    "document_id": "DOC-08",
+    "page": 4,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Using the above result, justify that a max-heap can be generated in O(n) time from a set of n elements. You may assume t"
+  },
+  {
+    "question_instance_id": "DOC-08-P04-Q09-sub-a",
+    "document_id": "DOC-08",
+    "page": 4,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Show that the expected number of comparisons required to find an element from an array of n elements if the element occu"
+  },
+  {
+    "question_instance_id": "DOC-08-P04-Q09-sub-b",
+    "document_id": "DOC-08",
+    "page": 4,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "The keys 12, 18, 13, 2, 3, 23, 5 and 15 are inserted into an initially empty hash table of length 10 using open addressi"
+  },
+  {
+    "question_instance_id": "DOC-09-P02-Q02-sub-a",
     "document_id": "DOC-09",
     "page": 2,
     "issues": [
-      "Extremely short text / arithmetic fragment: '+ 6 = 12'"
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
     ],
-    "text_snippet": "+ 6 = 12"
+    "text_snippet": "Write a function in C/pseudo-code to delete all the nodes that contains the certain value v, from a singly linked list i"
   },
   {
-    "question_instance_id": "DOC-09-P03-Q06",
+    "question_instance_id": "DOC-09-P02-Q02-sub-b",
+    "document_id": "DOC-09",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Define Big-Oh, Big-Omega and Big-Theta with example. [(CSEN2101.1)(Remember/LOCQ)]"
+  },
+  {
+    "question_instance_id": "DOC-09-P02-Q03-sub-a",
+    "document_id": "DOC-09",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Prove: n2 + 100 n  =  \uf071(n2). [(CO1)(Understand and Remember/LOCQ)]"
+  },
+  {
+    "question_instance_id": "DOC-09-P02-Q03-sub-b",
+    "document_id": "DOC-09",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "If the base address of an array Z with dimension 10X20 is 2023 and the array elements are stored in column-major orderin"
+  },
+  {
+    "question_instance_id": "DOC-09-P03-Q03-sub-c",
     "document_id": "DOC-09",
     "page": 3,
     "issues": [
-      "Extremely short text / arithmetic fragment: '+ 3 + 3 = 12'"
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
     ],
-    "text_snippet": "+ 3 + 3 = 12"
+    "text_snippet": "Write the pseudo-code of inserting an element after a given value in a doubly linked list. Your code should work for any"
   },
   {
-    "question_instance_id": "DOC-09-P03-Q06",
+    "question_instance_id": "DOC-09-P03-Q04-sub-a",
     "document_id": "DOC-09",
     "page": 3,
     "issues": [
-      "Extremely short text / arithmetic fragment: '+ 6 = 12'"
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
     ],
-    "text_snippet": "+ 6 = 12"
+    "text_snippet": "Write a pseudo-code/C program to determine whether a singly linked list is a palindrome or not. Return 1 if it is a pali"
   },
   {
-    "question_instance_id": "DOC-09-P03-Q02",
+    "question_instance_id": "DOC-09-P03-Q04-sub-b",
     "document_id": "DOC-09",
     "page": 3,
     "issues": [
-      "Extremely short text / arithmetic fragment: '+ 6 + 4 = 12'"
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
     ],
-    "text_snippet": "+ 6 + 4 = 12"
+    "text_snippet": "What will be the postfix expression of the following infix expression? (a + b) ^ d ^ e * f [(CSEN2101.2, CSEN2101.3)(Und"
   },
   {
-    "question_instance_id": "DOC-09-P04-Q03",
+    "question_instance_id": "DOC-09-P03-Q04-sub-c",
+    "document_id": "DOC-09",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Show the different passes of the stack (Value Stack) while evaluating the following expression: 3 * 4 + 14 / 7 * -3. [(C"
+  },
+  {
+    "question_instance_id": "DOC-09-P03-Q05-sub-a",
+    "document_id": "DOC-09",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Represent the following equation in post-fix form and evaluate the value. Use a stack data structure and show each step."
+  },
+  {
+    "question_instance_id": "DOC-09-P03-Q05-sub-b",
+    "document_id": "DOC-09",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Write the pseudo-code of insertion and deletion of an element from an input- restricted doubly-ended queue. The deque is"
+  },
+  {
+    "question_instance_id": "DOC-09-P03-Q06-sub-a",
+    "document_id": "DOC-09",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Write a linear time algorithm to find whether a graph is cyclic or acyclic (give proper justification of your answer). W"
+  },
+  {
+    "question_instance_id": "DOC-09-P03-Q06-sub-b",
+    "document_id": "DOC-09",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Is it possible to create a binary tree, whose pre-order and post-order traversal sequences are given? Justify your answe"
+  },
+  {
+    "question_instance_id": "DOC-09-P03-Q06-sub-c",
+    "document_id": "DOC-09",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Suppose you have implemented a Binary Search Tree using linked list, where every node contains the addresses of left chi"
+  },
+  {
+    "question_instance_id": "DOC-09-P03-Q07-sub-a",
+    "document_id": "DOC-09",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Add the following list of numbers to an initially empty min-binary heap: 12, 5, 15, 9, 13, 7, 15, 10, 3, 20, 4. [(CSEN21"
+  },
+  {
+    "question_instance_id": "DOC-09-P03-Q07-sub-b",
+    "document_id": "DOC-09",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Draw an AVL tree by inserting nodes in the following sequence \u2013 15, 10, 25, 12, 65, 45, 75, 55, 70, 90, 105 [(CSEN2101.2"
+  },
+  {
+    "question_instance_id": "DOC-09-P03-Q07-sub-c",
+    "document_id": "DOC-09",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Write a pseudo-code/C program to find the maximum element of a Binary Search Tree. [(CSEN2101.4)(Understand/LOCQ)]"
+  },
+  {
+    "question_instance_id": "DOC-09-P04-Q08-sub-a",
     "document_id": "DOC-09",
     "page": 4,
     "issues": [
-      "Extremely short text / arithmetic fragment: '+ 4 + 5 = 12'"
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
     ],
-    "text_snippet": "+ 4 + 5 = 12"
+    "text_snippet": "If an array starts from 0, what will be the indices of the left child and right child for a node in a binary heap whose "
   },
   {
-    "question_instance_id": "DOC-09-P04-Q06",
+    "question_instance_id": "DOC-09-P04-Q08-sub-b",
     "document_id": "DOC-09",
     "page": 4,
     "issues": [
-      "Extremely short text / arithmetic fragment: '+ 6 = 12 ______________________________________________________________________________________________________ Cognition Level LOCQ IOCQ HOCQ Percentage distribution 53.13 39.58'"
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
     ],
-    "text_snippet": "+ 6 = 12 ______________________________________________________________________________________________________ Cognitio"
+    "text_snippet": "Prove that h 2\u210e \u221e \u210e=0 = 2. [(CO1)(Analyze/IOCQ)]"
   },
   {
-    "question_instance_id": "DOC-10-P02-Q05",
+    "question_instance_id": "DOC-09-P04-Q08-sub-c",
+    "document_id": "DOC-09",
+    "page": 4,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Using the above result, justify that a max-heap can be generated in O(n) time from a set of n elements. You may assume t"
+  },
+  {
+    "question_instance_id": "DOC-09-P04-Q09-sub-a",
+    "document_id": "DOC-09",
+    "page": 4,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Show that the expected number of comparisons required to find an element from an array of n elements if the element occu"
+  },
+  {
+    "question_instance_id": "DOC-09-P04-Q09-sub-b",
+    "document_id": "DOC-09",
+    "page": 4,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "The keys 12, 18, 13, 2, 3, 23, 5 and 15 are inserted into an initially empty hash table of length 10 using open addressi"
+  },
+  {
+    "question_instance_id": "DOC-10-P02-Q02-sub-a",
     "document_id": "DOC-10",
     "page": 2,
     "issues": [
-      "Extremely short text / arithmetic fragment: '+ 2 + (4 + 1) = 12'"
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
     ],
-    "text_snippet": "+ 2 + (4 + 1) = 12"
+    "text_snippet": "Propose an algorithm to remove duplicates from an ordered array, without using any second array. For example, if the ori"
   },
   {
-    "question_instance_id": "DOC-11-P02-Q05",
+    "question_instance_id": "DOC-10-P02-Q02-sub-b",
+    "document_id": "DOC-10",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "If the number of nonzero elements in the triple representation of a sparse matrix of m \u00d7 n dimension is K, then what is "
+  },
+  {
+    "question_instance_id": "DOC-10-P02-Q02-sub-c",
+    "document_id": "DOC-10",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Write an algorithm/C-like pseudo code to delete the last element from a circular singly linked list. What is the time co"
+  },
+  {
+    "question_instance_id": "DOC-10-P02-Q03-sub-a",
+    "document_id": "DOC-10",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "How do you merge two sorted linked lists into a single sorted linked list? Provide an algorithm and analyze its time com"
+  },
+  {
+    "question_instance_id": "DOC-10-P02-Q03-sub-b",
+    "document_id": "DOC-10",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "State the advantages and disadvantages of linked list over array. [(CO4)(Remember/LOCQ)]"
+  },
+  {
+    "question_instance_id": "DOC-10-P02-Q03-sub-c",
+    "document_id": "DOC-10",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Find the Big-Oh for T(n) = 48n100+ 2n+2 + 3n2 + 100. [(CO2)(Apply/IOCQ)] (6 + 1) + 3 + 2 = 12"
+  },
+  {
+    "question_instance_id": "DOC-10-P02-Q04-sub-a",
+    "document_id": "DOC-10",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Write a small C function (no need for main, header files etc.) to print the moves of the well-known Tower of Hanoi probl"
+  },
+  {
+    "question_instance_id": "DOC-10-P02-Q04-sub-b",
+    "document_id": "DOC-10",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Now just write the output of your function if it is called with n = 4, where n is the number of discs. [(CO3)(Apply/IOCQ"
+  },
+  {
+    "question_instance_id": "DOC-10-P02-Q04-sub-c",
+    "document_id": "DOC-10",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "What will the following function return if it is called from the main as fun(5, 0, 1)? Can you identify what the followi"
+  },
+  {
+    "question_instance_id": "DOC-10-P02-Q05-sub-a",
+    "document_id": "DOC-10",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Why is it beneficial to use a circular array to implement a queue? Explain with an example. [(CO4)(Remember/LOCQ)]"
+  },
+  {
+    "question_instance_id": "DOC-10-P02-Q05-sub-b",
+    "document_id": "DOC-10",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "How is a circular linked list with a head pointer different from a circular linked list with a tail pointer? Which of th"
+  },
+  {
+    "question_instance_id": "DOC-10-P03-Q05-sub-c",
+    "document_id": "DOC-10",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Stepwise show how the following infix expression is converted to its corresponding postfix expression. ((5+7)-(4*3))+(6/"
+  },
+  {
+    "question_instance_id": "DOC-10-P03-Q06-sub-a",
+    "document_id": "DOC-10",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Define Binary Search Tree. [(CO1)(Remember/LOCQ)] Consider a Binary Search Tree (BST) consisting of distinct integers ly"
+  },
+  {
+    "question_instance_id": "DOC-10-P03-Q06-sub-b",
+    "document_id": "DOC-10",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "The square of a directed graph G=(V,E) is the graph G2 =(V,E2) such that (u,w) in E2 if and only if for some v in V, bot"
+  },
+  {
+    "question_instance_id": "DOC-10-P03-Q07-sub-a",
+    "document_id": "DOC-10",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "(i) Consider a binary tree with n (i.e., n >= 0) nodes, which has been constructed using linked representation, where th"
+  },
+  {
+    "question_instance_id": "DOC-10-P03-Q07-sub-b",
+    "document_id": "DOC-10",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Consider a search binary tree with n (i.e., n >= 0) nodes, which has been constructed using linked representation, where"
+  },
+  {
+    "question_instance_id": "DOC-10-P03-Q07-sub-c",
+    "document_id": "DOC-10",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Given an undirected graph G=(V,E), let d(u, v) be the minimum number of edges on a path between u and v. Let the diamete"
+  },
+  {
+    "question_instance_id": "DOC-10-P03-Q08-sub-a",
+    "document_id": "DOC-10",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Show that the expected number of comparisons required to find an element from an array of n elements using sequential se"
+  },
+  {
+    "question_instance_id": "DOC-10-P03-Q08-sub-b",
+    "document_id": "DOC-10",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "In the following pseudo-code for Heapsort, it is assumed that the array index starts from 1. Can you write the modified "
+  },
+  {
+    "question_instance_id": "DOC-10-P03-Q08-sub-c",
+    "document_id": "DOC-10",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "If a Heap is stored in an array starting with index = 1, (i) What will be the index of the left child of a node whose in"
+  },
+  {
+    "question_instance_id": "DOC-10-P03-Q09-sub-a",
+    "document_id": "DOC-10",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Write the non-recursive pseudo-code for Binary-search? State its best-case and average case complexity. [(CO2)(Remember/"
+  },
+  {
+    "question_instance_id": "DOC-10-P03-Q09-sub-b",
+    "document_id": "DOC-10",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Give an example of a situation where using counting sort is better than using any other comparison-sort technique? State"
+  },
+  {
+    "question_instance_id": "DOC-10-P04-Q09-sub-c",
+    "document_id": "DOC-10",
+    "page": 4,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "In a closed hashing we are using an array of size 10 whose 0, 1, 2, 5, 6, 9 indexed positions are already filled and the"
+  },
+  {
+    "question_instance_id": "DOC-11-P02-Q02-sub-a",
     "document_id": "DOC-11",
     "page": 2,
     "issues": [
-      "Extremely short text / arithmetic fragment: '+ 2 + (4 + 1) = 12'"
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
     ],
-    "text_snippet": "+ 2 + (4 + 1) = 12"
+    "text_snippet": "Propose an algorithm to remove duplicates from an ordered array, without using any second array. For example, if the ori"
   },
   {
-    "question_instance_id": "DOC-12-P02-Q05",
+    "question_instance_id": "DOC-11-P02-Q02-sub-b",
+    "document_id": "DOC-11",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "If the number of nonzero elements in the triple representation of a sparse matrix of m \u00d7 n dimension is K, then what is "
+  },
+  {
+    "question_instance_id": "DOC-11-P02-Q02-sub-c",
+    "document_id": "DOC-11",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Write an algorithm/C-like pseudo code to delete the last element from a circular singly linked list. What is the time co"
+  },
+  {
+    "question_instance_id": "DOC-11-P02-Q03-sub-a",
+    "document_id": "DOC-11",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "How do you merge two sorted linked lists into a single sorted linked list? Provide an algorithm and analyze its time com"
+  },
+  {
+    "question_instance_id": "DOC-11-P02-Q03-sub-b",
+    "document_id": "DOC-11",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "State the advantages and disadvantages of linked list over array. [(CO4)(Remember/LOCQ)]"
+  },
+  {
+    "question_instance_id": "DOC-11-P02-Q03-sub-c",
+    "document_id": "DOC-11",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Find the Big-Oh for T(n) = 48n100+ 2n+2 + 3n2 + 100. [(CO2)(Apply/IOCQ)] (6 + 1) + 3 + 2 = 12"
+  },
+  {
+    "question_instance_id": "DOC-11-P02-Q04-sub-a",
+    "document_id": "DOC-11",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Write a small C function (no need for main, header files etc.) to print the moves of the well-known Tower of Hanoi probl"
+  },
+  {
+    "question_instance_id": "DOC-11-P02-Q04-sub-b",
+    "document_id": "DOC-11",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Now just write the output of your function if it is called with n = 4, where n is the number of discs. [(CO3)(Apply/IOCQ"
+  },
+  {
+    "question_instance_id": "DOC-11-P02-Q04-sub-c",
+    "document_id": "DOC-11",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "What will the following function return if it is called from the main as fun(5, 0, 1)? Can you identify what the followi"
+  },
+  {
+    "question_instance_id": "DOC-11-P02-Q05-sub-a",
+    "document_id": "DOC-11",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Why is it beneficial to use a circular array to implement a queue? Explain with an example. [(CO4)(Remember/LOCQ)]"
+  },
+  {
+    "question_instance_id": "DOC-11-P02-Q05-sub-b",
+    "document_id": "DOC-11",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "How is a circular linked list with a head pointer different from a circular linked list with a tail pointer? Which of th"
+  },
+  {
+    "question_instance_id": "DOC-11-P03-Q05-sub-c",
+    "document_id": "DOC-11",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Stepwise show how the following infix expression is converted to its corresponding postfix expression. ((5+7)-(4*3))+(6/"
+  },
+  {
+    "question_instance_id": "DOC-11-P03-Q06-sub-a",
+    "document_id": "DOC-11",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Define Binary Search Tree. [(CO1)(Remember/LOCQ)] Consider a Binary Search Tree (BST) consisting of distinct integers ly"
+  },
+  {
+    "question_instance_id": "DOC-11-P03-Q06-sub-b",
+    "document_id": "DOC-11",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "The square of a directed graph G=(V,E) is the graph G2 =(V,E2) such that (u,w) in E2 if and only if for some v in V, bot"
+  },
+  {
+    "question_instance_id": "DOC-11-P03-Q07-sub-a",
+    "document_id": "DOC-11",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "(i) Consider a binary tree with n (i.e., n >= 0) nodes, which has been constructed using linked representation, where th"
+  },
+  {
+    "question_instance_id": "DOC-11-P03-Q07-sub-b",
+    "document_id": "DOC-11",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Consider a search binary tree with n (i.e., n >= 0) nodes, which has been constructed using linked representation, where"
+  },
+  {
+    "question_instance_id": "DOC-11-P03-Q07-sub-c",
+    "document_id": "DOC-11",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Given an undirected graph G=(V,E), let d(u, v) be the minimum number of edges on a path between u and v. Let the diamete"
+  },
+  {
+    "question_instance_id": "DOC-11-P03-Q08-sub-a",
+    "document_id": "DOC-11",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Show that the expected number of comparisons required to find an element from an array of n elements using sequential se"
+  },
+  {
+    "question_instance_id": "DOC-11-P03-Q08-sub-b",
+    "document_id": "DOC-11",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "In the following pseudo-code for Heapsort, it is assumed that the array index starts from 1. Can you write the modified "
+  },
+  {
+    "question_instance_id": "DOC-11-P03-Q08-sub-c",
+    "document_id": "DOC-11",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "If a Heap is stored in an array starting with index = 1, (i) What will be the index of the left child of a node whose in"
+  },
+  {
+    "question_instance_id": "DOC-11-P03-Q09-sub-a",
+    "document_id": "DOC-11",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Write the non-recursive pseudo-code for Binary-search? State its best-case and average case complexity. [(CO2)(Remember/"
+  },
+  {
+    "question_instance_id": "DOC-11-P03-Q09-sub-b",
+    "document_id": "DOC-11",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Give an example of a situation where using counting sort is better than using any other comparison-sort technique? State"
+  },
+  {
+    "question_instance_id": "DOC-11-P04-Q09-sub-c",
+    "document_id": "DOC-11",
+    "page": 4,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "In a closed hashing we are using an array of size 10 whose 0, 1, 2, 5, 6, 9 indexed positions are already filled and the"
+  },
+  {
+    "question_instance_id": "DOC-12-P02-Q02-sub-a",
     "document_id": "DOC-12",
     "page": 2,
     "issues": [
-      "Extremely short text / arithmetic fragment: '+ 2 + (4 + 1) = 12'"
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
     ],
-    "text_snippet": "+ 2 + (4 + 1) = 12"
+    "text_snippet": "Propose an algorithm to remove duplicates from an ordered array, without using any second array. For example, if the ori"
+  },
+  {
+    "question_instance_id": "DOC-12-P02-Q02-sub-b",
+    "document_id": "DOC-12",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "If the number of nonzero elements in the triple representation of a sparse matrix of m \u00d7 n dimension is K, then what is "
+  },
+  {
+    "question_instance_id": "DOC-12-P02-Q02-sub-c",
+    "document_id": "DOC-12",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Write an algorithm/C-like pseudo code to delete the last element from a circular singly linked list. What is the time co"
+  },
+  {
+    "question_instance_id": "DOC-12-P02-Q03-sub-a",
+    "document_id": "DOC-12",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "How do you merge two sorted linked lists into a single sorted linked list? Provide an algorithm and analyze its time com"
+  },
+  {
+    "question_instance_id": "DOC-12-P02-Q03-sub-b",
+    "document_id": "DOC-12",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "State the advantages and disadvantages of linked list over array. [(CO4)(Remember/LOCQ)]"
+  },
+  {
+    "question_instance_id": "DOC-12-P02-Q03-sub-c",
+    "document_id": "DOC-12",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Find the Big-Oh for T(n) = 48n100+ 2n+2 + 3n2 + 100. [(CO2)(Apply/IOCQ)] (6 + 1) + 3 + 2 = 12"
+  },
+  {
+    "question_instance_id": "DOC-12-P02-Q04-sub-a",
+    "document_id": "DOC-12",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Write a small C function (no need for main, header files etc.) to print the moves of the well-known Tower of Hanoi probl"
+  },
+  {
+    "question_instance_id": "DOC-12-P02-Q04-sub-b",
+    "document_id": "DOC-12",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Now just write the output of your function if it is called with n = 4, where n is the number of discs. [(CO3)(Apply/IOCQ"
+  },
+  {
+    "question_instance_id": "DOC-12-P02-Q04-sub-c",
+    "document_id": "DOC-12",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "What will the following function return if it is called from the main as fun(5, 0, 1)? Can you identify what the followi"
+  },
+  {
+    "question_instance_id": "DOC-12-P02-Q05-sub-a",
+    "document_id": "DOC-12",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Why is it beneficial to use a circular array to implement a queue? Explain with an example. [(CO4)(Remember/LOCQ)]"
+  },
+  {
+    "question_instance_id": "DOC-12-P02-Q05-sub-b",
+    "document_id": "DOC-12",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "How is a circular linked list with a head pointer different from a circular linked list with a tail pointer? Which of th"
+  },
+  {
+    "question_instance_id": "DOC-12-P03-Q05-sub-c",
+    "document_id": "DOC-12",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Stepwise show how the following infix expression is converted to its corresponding postfix expression. ((5+7)-(4*3))+(6/"
+  },
+  {
+    "question_instance_id": "DOC-12-P03-Q06-sub-a",
+    "document_id": "DOC-12",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Define Binary Search Tree. [(CO1)(Remember/LOCQ)] Consider a Binary Search Tree (BST) consisting of distinct integers ly"
+  },
+  {
+    "question_instance_id": "DOC-12-P03-Q06-sub-b",
+    "document_id": "DOC-12",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "The square of a directed graph G=(V,E) is the graph G2 =(V,E2) such that (u,w) in E2 if and only if for some v in V, bot"
+  },
+  {
+    "question_instance_id": "DOC-12-P03-Q07-sub-a",
+    "document_id": "DOC-12",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "(i) Consider a binary tree with n (i.e., n >= 0) nodes, which has been constructed using linked representation, where th"
+  },
+  {
+    "question_instance_id": "DOC-12-P03-Q07-sub-b",
+    "document_id": "DOC-12",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Consider a search binary tree with n (i.e., n >= 0) nodes, which has been constructed using linked representation, where"
+  },
+  {
+    "question_instance_id": "DOC-12-P03-Q07-sub-c",
+    "document_id": "DOC-12",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Given an undirected graph G=(V,E), let d(u, v) be the minimum number of edges on a path between u and v. Let the diamete"
+  },
+  {
+    "question_instance_id": "DOC-12-P03-Q08-sub-a",
+    "document_id": "DOC-12",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Show that the expected number of comparisons required to find an element from an array of n elements using sequential se"
+  },
+  {
+    "question_instance_id": "DOC-12-P03-Q08-sub-b",
+    "document_id": "DOC-12",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "In the following pseudo-code for Heapsort, it is assumed that the array index starts from 1. Can you write the modified "
+  },
+  {
+    "question_instance_id": "DOC-12-P03-Q08-sub-c",
+    "document_id": "DOC-12",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "If a Heap is stored in an array starting with index = 1, (i) What will be the index of the left child of a node whose in"
+  },
+  {
+    "question_instance_id": "DOC-12-P03-Q09-sub-a",
+    "document_id": "DOC-12",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Write the non-recursive pseudo-code for Binary-search? State its best-case and average case complexity. [(CO2)(Remember/"
+  },
+  {
+    "question_instance_id": "DOC-12-P03-Q09-sub-b",
+    "document_id": "DOC-12",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Give an example of a situation where using counting sort is better than using any other comparison-sort technique? State"
+  },
+  {
+    "question_instance_id": "DOC-12-P04-Q09-sub-c",
+    "document_id": "DOC-12",
+    "page": 4,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "In a closed hashing we are using an array of size 10 whose 0, 1, 2, 5, 6, 9 indexed positions are already filled and the"
+  },
+  {
+    "question_instance_id": "DOC-13-P02-Q02-sub-a",
+    "document_id": "DOC-13",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Prove: n2 + 100 n = \uf071(n2). [(CO1)(Understand & Remember/LOCQ)]"
+  },
+  {
+    "question_instance_id": "DOC-13-P02-Q02-sub-b",
+    "document_id": "DOC-13",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Write the pseudo-code of inserting an element after a given value in a doubly linked list. Your code should work for any"
   },
   {
     "question_instance_id": "DOC-13-P02-Q04",
     "document_id": "DOC-13",
     "page": 2,
     "issues": [
-      "Extremely short text / arithmetic fragment: '+ 4 + (1 + 1 + 2) = 12'"
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
     ],
-    "text_snippet": "+ 4 + (1 + 1 + 2) = 12"
+    "text_snippet": "0 2 0 0 0 3 0 7 0 Compute its triplet array equivalent. Is it beneficial to store this matrix as a triplet array? Justif"
   },
   {
-    "question_instance_id": "DOC-13-P02-Q07",
+    "question_instance_id": "DOC-13-P02-Q03-sub-a",
     "document_id": "DOC-13",
     "page": 2,
     "issues": [
-      "Extremely short text / arithmetic fragment: '+ (2 + 3) = 12'"
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
     ],
-    "text_snippet": "+ (2 + 3) = 12"
+    "text_snippet": "Write a function which will take any number n as its argument. The function will break this number into its individual d"
   },
   {
-    "question_instance_id": "DOC-13-P02-Q04",
+    "question_instance_id": "DOC-13-P02-Q03-sub-b",
     "document_id": "DOC-13",
     "page": 2,
     "issues": [
-      "Extremely short text / arithmetic fragment: '+ 4 + 4 = 12'"
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
     ],
-    "text_snippet": "+ 4 + 4 = 12"
+    "text_snippet": "How can you represent the polynomial 5x5 + 4x2 \u2013 25x + 10 with array(s)? Additionally, if a singly linked list is used t"
   },
   {
-    "question_instance_id": "DOC-13-P03-Q03",
+    "question_instance_id": "DOC-13-P02-Q04-sub-a",
+    "document_id": "DOC-13",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Write an algorithm to merge eight sorted queues into one single queue in such a way that duplicates are removed and the "
+  },
+  {
+    "question_instance_id": "DOC-13-P02-Q04-sub-b",
+    "document_id": "DOC-13",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Convert the Infix expression ((A + B) * C \u2013 (D \u2013 E) ^ (F + G)) to equivalent Prefix and Postfix notations using stack. ["
+  },
+  {
+    "question_instance_id": "DOC-13-P02-Q04-sub-c",
+    "document_id": "DOC-13",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Write algorithm for inserting into an input restricted deque. Show the working of this algorithm by the input sequence: "
+  },
+  {
+    "question_instance_id": "DOC-13-P02-Q05-sub-a",
+    "document_id": "DOC-13",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "There are n elements in a stack, stored in a sorted way. Move these elements to another stack so that the final stack is"
+  },
+  {
+    "question_instance_id": "DOC-13-P02-Q05-sub-b",
+    "document_id": "DOC-13",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Suppose you want to implement a queue and a stack using an unrestricted deque. Describe the deque methods that need to b"
+  },
+  {
+    "question_instance_id": "DOC-13-P02-Q05-sub-c",
+    "document_id": "DOC-13",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Explain what will be the output when fibo(5) is called: [(CO2)(Apply/IOCQ)]"
+  },
+  {
+    "question_instance_id": "DOC-13-P02-Q06-sub-a",
+    "document_id": "DOC-13",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Briefly explain the difference between a full binary tree and a complete binary tree with suitable examples. [(CO1, CO2)"
+  },
+  {
+    "question_instance_id": "DOC-13-P03-Q06-sub-c",
     "document_id": "DOC-13",
     "page": 3,
     "issues": [
-      "Extremely short text / arithmetic fragment: '+ 5 + 4 = 12'"
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
     ],
-    "text_snippet": "+ 5 + 4 = 12"
+    "text_snippet": "Describe the outline of an algorithm for topological sort on a DAG which operates by repeatedly finding a vertex of zero"
   },
   {
-    "question_instance_id": "DOC-13-P03-Q02",
+    "question_instance_id": "DOC-13-P03-Q07-sub-a",
     "document_id": "DOC-13",
     "page": 3,
     "issues": [
-      "Extremely short text / arithmetic fragment: '+ (5 + 1) + 4 = 12'"
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
     ],
-    "text_snippet": "+ (5 + 1) + 4 = 12"
+    "text_snippet": "Define a B-Tree of order m. [(CO1)(Remember/LOCQ)]"
+  },
+  {
+    "question_instance_id": "DOC-13-P03-Q07-sub-b",
+    "document_id": "DOC-13",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "(i)Show each step of insertions (along with any height balancing steps, if required), to construct an AVL tree using the"
+  },
+  {
+    "question_instance_id": "DOC-13-P03-Q07-sub-c",
+    "document_id": "DOC-13",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "You are trapped in a network of tunnels with only one exit. The network is connected in that all points are reachable. Y"
+  },
+  {
+    "question_instance_id": "DOC-13-P03-Q08-sub-a",
+    "document_id": "DOC-13",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "(i) What is the expression for Load factor (\u03b1) in the context of Hashing by Open Addressing? Also, write what the terms "
+  },
+  {
+    "question_instance_id": "DOC-13-P03-Q08-sub-b",
+    "document_id": "DOC-13",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Fill up the following table with the appropriate asymptotic complexities: Type of Sorting Best Case Average Case Worst C"
+  },
+  {
+    "question_instance_id": "DOC-13-P03-Q09-sub-a",
+    "document_id": "DOC-13",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Suppose you want to sort the whole population of West Bengal, which is about 90 millions,in terms of their age in months"
+  },
+  {
+    "question_instance_id": "DOC-13-P03-Q09-sub-b",
+    "document_id": "DOC-13",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Can you give a suitable example array with 10 integers on which interpolation search will have the same worst-case time "
+  },
+  {
+    "question_instance_id": "DOC-13-P03-Q09-sub-c",
+    "document_id": "DOC-13",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Suppose you are given an array containing 0s and 1s in the following manner \u2013 a string of 0s trapped between two strings"
+  },
+  {
+    "question_instance_id": "DOC-14-P02-Q02-sub-a",
+    "document_id": "DOC-14",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Prove: n2 + 100 n = \uf071(n2). [(CO1)(Understand & Remember/LOCQ)]"
+  },
+  {
+    "question_instance_id": "DOC-14-P02-Q02-sub-b",
+    "document_id": "DOC-14",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Write the pseudo-code of inserting an element after a given value in a doubly linked list. Your code should work for any"
   },
   {
     "question_instance_id": "DOC-14-P02-Q04",
     "document_id": "DOC-14",
     "page": 2,
     "issues": [
-      "Extremely short text / arithmetic fragment: '+ 4 + (1 + 1 + 2) = 12'"
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
     ],
-    "text_snippet": "+ 4 + (1 + 1 + 2) = 12"
+    "text_snippet": "0 2 0 0 0 3 0 7 0 Compute its triplet array equivalent. Is it beneficial to store this matrix as a triplet array? Justif"
   },
   {
-    "question_instance_id": "DOC-14-P02-Q07",
+    "question_instance_id": "DOC-14-P02-Q03-sub-a",
     "document_id": "DOC-14",
     "page": 2,
     "issues": [
-      "Extremely short text / arithmetic fragment: '+ (2 + 3) = 12'"
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
     ],
-    "text_snippet": "+ (2 + 3) = 12"
+    "text_snippet": "Write a function which will take any number n as its argument. The function will break this number into its individual d"
   },
   {
-    "question_instance_id": "DOC-14-P02-Q04",
+    "question_instance_id": "DOC-14-P02-Q03-sub-b",
     "document_id": "DOC-14",
     "page": 2,
     "issues": [
-      "Extremely short text / arithmetic fragment: '+ 4 + 4 = 12'"
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
     ],
-    "text_snippet": "+ 4 + 4 = 12"
+    "text_snippet": "How can you represent the polynomial 5x5 + 4x2 \u2013 25x + 10 with array(s)? Additionally, if a singly linked list is used t"
   },
   {
-    "question_instance_id": "DOC-14-P03-Q03",
+    "question_instance_id": "DOC-14-P02-Q04-sub-a",
+    "document_id": "DOC-14",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Write an algorithm to merge eight sorted queues into one single queue in such a way that duplicates are removed and the "
+  },
+  {
+    "question_instance_id": "DOC-14-P02-Q04-sub-b",
+    "document_id": "DOC-14",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Convert the Infix expression ((A + B) * C \u2013 (D \u2013 E) ^ (F + G)) to equivalent Prefix and Postfix notations using stack. ["
+  },
+  {
+    "question_instance_id": "DOC-14-P02-Q04-sub-c",
+    "document_id": "DOC-14",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Write algorithm for inserting into an input restricted deque. Show the working of this algorithm by the input sequence: "
+  },
+  {
+    "question_instance_id": "DOC-14-P02-Q05-sub-a",
+    "document_id": "DOC-14",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "There are n elements in a stack, stored in a sorted way. Move these elements to another stack so that the final stack is"
+  },
+  {
+    "question_instance_id": "DOC-14-P02-Q05-sub-b",
+    "document_id": "DOC-14",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Suppose you want to implement a queue and a stack using an unrestricted deque. Describe the deque methods that need to b"
+  },
+  {
+    "question_instance_id": "DOC-14-P02-Q05-sub-c",
+    "document_id": "DOC-14",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Explain what will be the output when fibo(5) is called: [(CO2)(Apply/IOCQ)]"
+  },
+  {
+    "question_instance_id": "DOC-14-P02-Q06-sub-a",
+    "document_id": "DOC-14",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Briefly explain the difference between a full binary tree and a complete binary tree with suitable examples. [(CO1, CO2)"
+  },
+  {
+    "question_instance_id": "DOC-14-P03-Q06-sub-c",
     "document_id": "DOC-14",
     "page": 3,
     "issues": [
-      "Extremely short text / arithmetic fragment: '+ 5 + 4 = 12'"
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
     ],
-    "text_snippet": "+ 5 + 4 = 12"
+    "text_snippet": "Describe the outline of an algorithm for topological sort on a DAG which operates by repeatedly finding a vertex of zero"
   },
   {
-    "question_instance_id": "DOC-14-P03-Q02",
+    "question_instance_id": "DOC-14-P03-Q07-sub-a",
     "document_id": "DOC-14",
     "page": 3,
     "issues": [
-      "Extremely short text / arithmetic fragment: '+ (5 + 1) + 4 = 12'"
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
     ],
-    "text_snippet": "+ (5 + 1) + 4 = 12"
+    "text_snippet": "Define a B-Tree of order m. [(CO1)(Remember/LOCQ)]"
+  },
+  {
+    "question_instance_id": "DOC-14-P03-Q07-sub-b",
+    "document_id": "DOC-14",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "(i)Show each step of insertions (along with any height balancing steps, if required), to construct an AVL tree using the"
+  },
+  {
+    "question_instance_id": "DOC-14-P03-Q07-sub-c",
+    "document_id": "DOC-14",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "You are trapped in a network of tunnels with only one exit. The network is connected in that all points are reachable. Y"
+  },
+  {
+    "question_instance_id": "DOC-14-P03-Q08-sub-a",
+    "document_id": "DOC-14",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "(i) What is the expression for Load factor (\u03b1) in the context of Hashing by Open Addressing? Also, write what the terms "
+  },
+  {
+    "question_instance_id": "DOC-14-P03-Q08-sub-b",
+    "document_id": "DOC-14",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Fill up the following table with the appropriate asymptotic complexities: Type of Sorting Best Case Average Case Worst C"
+  },
+  {
+    "question_instance_id": "DOC-14-P03-Q09-sub-a",
+    "document_id": "DOC-14",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Suppose you want to sort the whole population of West Bengal, which is about 90 millions,in terms of their age in months"
+  },
+  {
+    "question_instance_id": "DOC-14-P03-Q09-sub-b",
+    "document_id": "DOC-14",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Can you give a suitable example array with 10 integers on which interpolation search will have the same worst-case time "
+  },
+  {
+    "question_instance_id": "DOC-14-P03-Q09-sub-c",
+    "document_id": "DOC-14",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Suppose you are given an array containing 0s and 1s in the following manner \u2013 a string of 0s trapped between two strings"
+  },
+  {
+    "question_instance_id": "DOC-15-P02-Q02-sub-a",
+    "document_id": "DOC-15",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Prove: n2 + 100 n = \uf071(n2). [(CO1)(Understand & Remember/LOCQ)]"
+  },
+  {
+    "question_instance_id": "DOC-15-P02-Q02-sub-b",
+    "document_id": "DOC-15",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Write the pseudo-code of inserting an element after a given value in a doubly linked list. Your code should work for any"
   },
   {
     "question_instance_id": "DOC-15-P02-Q04",
     "document_id": "DOC-15",
     "page": 2,
     "issues": [
-      "Extremely short text / arithmetic fragment: '+ 4 + (1 + 1 + 2) = 12'"
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
     ],
-    "text_snippet": "+ 4 + (1 + 1 + 2) = 12"
+    "text_snippet": "0 2 0 0 0 3 0 7 0 Compute its triplet array equivalent. Is it beneficial to store this matrix as a triplet array? Justif"
   },
   {
-    "question_instance_id": "DOC-15-P02-Q07",
+    "question_instance_id": "DOC-15-P02-Q03-sub-a",
     "document_id": "DOC-15",
     "page": 2,
     "issues": [
-      "Extremely short text / arithmetic fragment: '+ (2 + 3) = 12'"
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
     ],
-    "text_snippet": "+ (2 + 3) = 12"
+    "text_snippet": "Write a function which will take any number n as its argument. The function will break this number into its individual d"
   },
   {
-    "question_instance_id": "DOC-15-P02-Q04",
+    "question_instance_id": "DOC-15-P02-Q03-sub-b",
     "document_id": "DOC-15",
     "page": 2,
     "issues": [
-      "Extremely short text / arithmetic fragment: '+ 4 + 4 = 12'"
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
     ],
-    "text_snippet": "+ 4 + 4 = 12"
+    "text_snippet": "How can you represent the polynomial 5x5 + 4x2 \u2013 25x + 10 with array(s)? Additionally, if a singly linked list is used t"
   },
   {
-    "question_instance_id": "DOC-15-P03-Q03",
+    "question_instance_id": "DOC-15-P02-Q04-sub-a",
+    "document_id": "DOC-15",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Write an algorithm to merge eight sorted queues into one single queue in such a way that duplicates are removed and the "
+  },
+  {
+    "question_instance_id": "DOC-15-P02-Q04-sub-b",
+    "document_id": "DOC-15",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Convert the Infix expression ((A + B) * C \u2013 (D \u2013 E) ^ (F + G)) to equivalent Prefix and Postfix notations using stack. ["
+  },
+  {
+    "question_instance_id": "DOC-15-P02-Q04-sub-c",
+    "document_id": "DOC-15",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Write algorithm for inserting into an input restricted deque. Show the working of this algorithm by the input sequence: "
+  },
+  {
+    "question_instance_id": "DOC-15-P02-Q05-sub-a",
+    "document_id": "DOC-15",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "There are n elements in a stack, stored in a sorted way. Move these elements to another stack so that the final stack is"
+  },
+  {
+    "question_instance_id": "DOC-15-P02-Q05-sub-b",
+    "document_id": "DOC-15",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Suppose you want to implement a queue and a stack using an unrestricted deque. Describe the deque methods that need to b"
+  },
+  {
+    "question_instance_id": "DOC-15-P02-Q05-sub-c",
+    "document_id": "DOC-15",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Explain what will be the output when fibo(5) is called: [(CO2)(Apply/IOCQ)]"
+  },
+  {
+    "question_instance_id": "DOC-15-P02-Q06-sub-a",
+    "document_id": "DOC-15",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Briefly explain the difference between a full binary tree and a complete binary tree with suitable examples. [(CO1, CO2)"
+  },
+  {
+    "question_instance_id": "DOC-15-P03-Q06-sub-c",
     "document_id": "DOC-15",
     "page": 3,
     "issues": [
-      "Extremely short text / arithmetic fragment: '+ 5 + 4 = 12'"
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
     ],
-    "text_snippet": "+ 5 + 4 = 12"
+    "text_snippet": "Describe the outline of an algorithm for topological sort on a DAG which operates by repeatedly finding a vertex of zero"
   },
   {
-    "question_instance_id": "DOC-15-P03-Q02",
+    "question_instance_id": "DOC-15-P03-Q07-sub-a",
     "document_id": "DOC-15",
     "page": 3,
     "issues": [
-      "Extremely short text / arithmetic fragment: '+ (5 + 1) + 4 = 12'"
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
     ],
-    "text_snippet": "+ (5 + 1) + 4 = 12"
+    "text_snippet": "Define a B-Tree of order m. [(CO1)(Remember/LOCQ)]"
+  },
+  {
+    "question_instance_id": "DOC-15-P03-Q07-sub-b",
+    "document_id": "DOC-15",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "(i)Show each step of insertions (along with any height balancing steps, if required), to construct an AVL tree using the"
+  },
+  {
+    "question_instance_id": "DOC-15-P03-Q07-sub-c",
+    "document_id": "DOC-15",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "You are trapped in a network of tunnels with only one exit. The network is connected in that all points are reachable. Y"
+  },
+  {
+    "question_instance_id": "DOC-15-P03-Q08-sub-a",
+    "document_id": "DOC-15",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "(i) What is the expression for Load factor (\u03b1) in the context of Hashing by Open Addressing? Also, write what the terms "
+  },
+  {
+    "question_instance_id": "DOC-15-P03-Q08-sub-b",
+    "document_id": "DOC-15",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Fill up the following table with the appropriate asymptotic complexities: Type of Sorting Best Case Average Case Worst C"
+  },
+  {
+    "question_instance_id": "DOC-15-P03-Q09-sub-a",
+    "document_id": "DOC-15",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Suppose you want to sort the whole population of West Bengal, which is about 90 millions,in terms of their age in months"
+  },
+  {
+    "question_instance_id": "DOC-15-P03-Q09-sub-b",
+    "document_id": "DOC-15",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Can you give a suitable example array with 10 integers on which interpolation search will have the same worst-case time "
+  },
+  {
+    "question_instance_id": "DOC-15-P03-Q09-sub-c",
+    "document_id": "DOC-15",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Suppose you are given an array containing 0s and 1s in the following manner \u2013 a string of 0s trapped between two strings"
+  },
+  {
+    "question_instance_id": "DOC-16-P02-Q02-sub-a",
+    "document_id": "DOC-16",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Prove: n2 + 100 n = \uf071(n2). [(CO1)(Understand & Remember/LOCQ)]"
+  },
+  {
+    "question_instance_id": "DOC-16-P02-Q02-sub-b",
+    "document_id": "DOC-16",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Write the pseudo-code of inserting an element after a given value in a doubly linked list. Your code should work for any"
   },
   {
     "question_instance_id": "DOC-16-P02-Q04",
     "document_id": "DOC-16",
     "page": 2,
     "issues": [
-      "Extremely short text / arithmetic fragment: '+ 4 + (1 + 1 + 2) = 12'"
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
     ],
-    "text_snippet": "+ 4 + (1 + 1 + 2) = 12"
+    "text_snippet": "0 2 0 0 0 3 0 7 0 Compute its triplet array equivalent. Is it beneficial to store this matrix as a triplet array? Justif"
   },
   {
-    "question_instance_id": "DOC-16-P02-Q07",
+    "question_instance_id": "DOC-16-P02-Q03-sub-a",
     "document_id": "DOC-16",
     "page": 2,
     "issues": [
-      "Extremely short text / arithmetic fragment: '+ (2 + 3) = 12'"
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
     ],
-    "text_snippet": "+ (2 + 3) = 12"
+    "text_snippet": "Write a function which will take any number n as its argument. The function will break this number into its individual d"
   },
   {
-    "question_instance_id": "DOC-16-P02-Q04",
+    "question_instance_id": "DOC-16-P02-Q03-sub-b",
     "document_id": "DOC-16",
     "page": 2,
     "issues": [
-      "Extremely short text / arithmetic fragment: '+ 4 + 4 = 12'"
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
     ],
-    "text_snippet": "+ 4 + 4 = 12"
+    "text_snippet": "How can you represent the polynomial 5x5 + 4x2 \u2013 25x + 10 with array(s)? Additionally, if a singly linked list is used t"
   },
   {
-    "question_instance_id": "DOC-16-P03-Q03",
+    "question_instance_id": "DOC-16-P02-Q04-sub-a",
+    "document_id": "DOC-16",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Write an algorithm to merge eight sorted queues into one single queue in such a way that duplicates are removed and the "
+  },
+  {
+    "question_instance_id": "DOC-16-P02-Q04-sub-b",
+    "document_id": "DOC-16",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Convert the Infix expression ((A + B) * C \u2013 (D \u2013 E) ^ (F + G)) to equivalent Prefix and Postfix notations using stack. ["
+  },
+  {
+    "question_instance_id": "DOC-16-P02-Q04-sub-c",
+    "document_id": "DOC-16",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Write algorithm for inserting into an input restricted deque. Show the working of this algorithm by the input sequence: "
+  },
+  {
+    "question_instance_id": "DOC-16-P02-Q05-sub-a",
+    "document_id": "DOC-16",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "There are n elements in a stack, stored in a sorted way. Move these elements to another stack so that the final stack is"
+  },
+  {
+    "question_instance_id": "DOC-16-P02-Q05-sub-b",
+    "document_id": "DOC-16",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Suppose you want to implement a queue and a stack using an unrestricted deque. Describe the deque methods that need to b"
+  },
+  {
+    "question_instance_id": "DOC-16-P02-Q05-sub-c",
+    "document_id": "DOC-16",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Explain what will be the output when fibo(5) is called: [(CO2)(Apply/IOCQ)]"
+  },
+  {
+    "question_instance_id": "DOC-16-P02-Q06-sub-a",
+    "document_id": "DOC-16",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Briefly explain the difference between a full binary tree and a complete binary tree with suitable examples. [(CO1, CO2)"
+  },
+  {
+    "question_instance_id": "DOC-16-P03-Q06-sub-c",
     "document_id": "DOC-16",
     "page": 3,
     "issues": [
-      "Extremely short text / arithmetic fragment: '+ 5 + 4 = 12'"
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
     ],
-    "text_snippet": "+ 5 + 4 = 12"
+    "text_snippet": "Describe the outline of an algorithm for topological sort on a DAG which operates by repeatedly finding a vertex of zero"
   },
   {
-    "question_instance_id": "DOC-16-P03-Q02",
+    "question_instance_id": "DOC-16-P03-Q07-sub-a",
     "document_id": "DOC-16",
     "page": 3,
     "issues": [
-      "Extremely short text / arithmetic fragment: '+ (5 + 1) + 4 = 12'"
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
     ],
-    "text_snippet": "+ (5 + 1) + 4 = 12"
+    "text_snippet": "Define a B-Tree of order m. [(CO1)(Remember/LOCQ)]"
   },
   {
-    "question_instance_id": "DOC-18-P04-Q05",
-    "document_id": "DOC-18",
+    "question_instance_id": "DOC-16-P03-Q07-sub-b",
+    "document_id": "DOC-16",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "(i)Show each step of insertions (along with any height balancing steps, if required), to construct an AVL tree using the"
+  },
+  {
+    "question_instance_id": "DOC-16-P03-Q07-sub-c",
+    "document_id": "DOC-16",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "You are trapped in a network of tunnels with only one exit. The network is connected in that all points are reachable. Y"
+  },
+  {
+    "question_instance_id": "DOC-16-P03-Q08-sub-a",
+    "document_id": "DOC-16",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "(i) What is the expression for Load factor (\u03b1) in the context of Hashing by Open Addressing? Also, write what the terms "
+  },
+  {
+    "question_instance_id": "DOC-16-P03-Q08-sub-b",
+    "document_id": "DOC-16",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Fill up the following table with the appropriate asymptotic complexities: Type of Sorting Best Case Average Case Worst C"
+  },
+  {
+    "question_instance_id": "DOC-16-P03-Q09-sub-a",
+    "document_id": "DOC-16",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Suppose you want to sort the whole population of West Bengal, which is about 90 millions,in terms of their age in months"
+  },
+  {
+    "question_instance_id": "DOC-16-P03-Q09-sub-b",
+    "document_id": "DOC-16",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Can you give a suitable example array with 10 integers on which interpolation search will have the same worst-case time "
+  },
+  {
+    "question_instance_id": "DOC-16-P03-Q09-sub-c",
+    "document_id": "DOC-16",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Suppose you are given an array containing 0s and 1s in the following manner \u2013 a string of 0s trapped between two strings"
+  },
+  {
+    "question_instance_id": "DOC-19-P03-Q02-sub-a",
+    "document_id": "DOC-19",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "What is a sparse matrix?                                                                          [(CO1) (Remember/LOCQ)"
+  },
+  {
+    "question_instance_id": "DOC-19-P03-Q04",
+    "document_id": "DOC-19",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "0  2  0  0 0  3  0  7  0 Compute its triplet array equivalent.                                                          "
+  },
+  {
+    "question_instance_id": "DOC-19-P04-Q04-sub-b",
+    "document_id": "DOC-19",
     "page": 4,
     "issues": [
-      "Extremely short text / arithmetic fragment: '+ 2 + (4 + 1) = 12'"
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
     ],
-    "text_snippet": "+ 2 + (4 + 1) = 12"
+    "text_snippet": "Given a singly-linked list with an odd number of elements, develop a pseudo-code or C-code to split it into two nearly e"
   },
   {
-    "question_instance_id": "DOC-18-P05-Q03",
-    "document_id": "DOC-18",
+    "question_instance_id": "DOC-19-P04-Q04-sub-c",
+    "document_id": "DOC-19",
+    "page": 4,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "If for an algorithm, f(n) = 3n2+10, state the worst case asymptotic time complexity of the algorithm. Show that it follo"
+  },
+  {
+    "question_instance_id": "DOC-19-P05-Q03-sub-a",
+    "document_id": "DOC-19",
     "page": 5,
     "issues": [
-      "Extremely short text / arithmetic fragment: '+ 4 + 5 = 12'"
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
     ],
-    "text_snippet": "+ 4 + 5 = 12"
+    "text_snippet": "State if the following statement is correct. Justify your answer. O(n2) = 2n2+100 [(CO1) (Apply/IOCQ)]"
   },
   {
-    "question_instance_id": "DOC-18-P05-Q06",
-    "document_id": "DOC-18",
+    "question_instance_id": "DOC-19-P05-Q03-sub-b",
+    "document_id": "DOC-19",
     "page": 5,
     "issues": [
-      "Extremely short text / arithmetic fragment: '+ (4 + 1) + 1 = 12 Department & Section Submission Link CSE A https://classroom.google.com/c/MjYzNzg3MDAw/a/Mjg4NDMzNzM3 MjA5/details CSE B https://classroom.google.com/c/MTE4NzY4MjM4NjM4/a/Mjg4NDI0O DA2NzY5/details CSE C https://classroom.google.com/u/0/w/MTMwMDU2NDk2NDI1/tc/Mjk 0MzczNjYwMTc4 LATERAL https://classroom.google.com/c/MjUzMzUzMDg1MzI1/a/Mjg4NDI3Mz gwNTQy/details'"
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
     ],
-    "text_snippet": "+ (4 + 1) + 1 = 12 Department & Section Submission Link CSE A https://classroom.google.com/c/MjYzNzg3MDAw/a/Mjg4NDMzNzM3"
+    "text_snippet": "Construct a an iterative function in C named reverse() that accepts the start node of a doubly- linked list as argument "
   },
   {
-    "question_instance_id": "DOC-19-P13-Q02",
+    "question_instance_id": "DOC-19-P05-Q03-sub-c",
     "document_id": "DOC-19",
-    "page": 13,
+    "page": 5,
     "issues": [
-      "Extremely short text / arithmetic fragment: 'r \u2190 RIGHT(i)'"
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
     ],
-    "text_snippet": "r \u2190 RIGHT(i)"
+    "text_snippet": "Given a 2D matrix of dimension 100 x 200 and also given that the base address of the 2D array is 2020. Assume that the a"
   },
   {
-    "question_instance_id": "DOC-19-P13-Q04",
+    "question_instance_id": "DOC-19-P06-Q04-sub-a",
     "document_id": "DOC-19",
-    "page": 13,
-    "issues": [
-      "Extremely short text / arithmetic fragment: 'smallest \u2190 l'"
-    ],
-    "text_snippet": "smallest \u2190 l"
-  },
-  {
-    "question_instance_id": "DOC-19-P13-Q05",
-    "document_id": "DOC-19",
-    "page": 13,
-    "issues": [
-      "Extremely short text / arithmetic fragment: 'else'"
-    ],
-    "text_snippet": "else"
-  },
-  {
-    "question_instance_id": "DOC-19-P13-Q06",
-    "document_id": "DOC-19",
-    "page": 13,
-    "issues": [
-      "Extremely short text / arithmetic fragment: 'smallest \u2190 i'"
-    ],
-    "text_snippet": "smallest \u2190 i"
-  },
-  {
-    "question_instance_id": "DOC-20-P03-Q03",
-    "document_id": "DOC-20",
-    "page": 3,
-    "issues": [
-      "Extremely short text / arithmetic fragment: '+ 6 + 3 = 12'"
-    ],
-    "text_snippet": "+ 6 + 3 = 12"
-  },
-  {
-    "question_instance_id": "DOC-20-P04-Q04",
-    "document_id": "DOC-20",
-    "page": 4,
-    "issues": [
-      "Extremely short text / arithmetic fragment: '+ 2 + (5 + 1) = 12'"
-    ],
-    "text_snippet": "+ 2 + (5 + 1) = 12"
-  },
-  {
-    "question_instance_id": "DOC-20-P04-Q06",
-    "document_id": "DOC-20",
-    "page": 4,
-    "issues": [
-      "Extremely short text / arithmetic fragment: '+ (3 + 3) = 12'"
-    ],
-    "text_snippet": "+ (3 + 3) = 12"
-  },
-  {
-    "question_instance_id": "DOC-20-P06-Q04",
-    "document_id": "DOC-20",
     "page": 6,
     "issues": [
-      "Extremely short text / arithmetic fragment: '+ (2 + 2) + (3 + 1) = 12 Cognition Level LOCQ IOCQ HOCQ Percentage distribution 21.35% 57.3% 21.35% Course Outcome (CO): After the completion of this course students will be able to CO 1:  Understand and remember the basics of data structures and how time complexity analysis is applicable to different types of algorithms. CO 2: Understand the significance and utility of different data structures and the context of their application. (For example, the queue in front of ticket counters uses first-in-first-out paradigm in a linear data structure) CO 3:  Apply different types of data structures in algorithms and understand how the data structures can be useful in those algorithms. CO 4:  Analyze the behaviour of different data structures in algorithms. (For example, given an algorithm that uses a particular data structure, how to calculate its space and time complexity.) CO 5: Evaluate solutions of a problem with different data structures and thereby understand how to select suitable data structures for a solution. (For example, what are the different ways to find the second largest number from a list of integers and which solution is the best.) CO 6:  Evaluate different types of solutions (e.g. sorting) to the same problem. *LOCQ: Lower Order Cognitive Question; IOCQ: Intermediate Order Cognitive Question; HOCQ: Higher Order Cognitive Question Department & Section Submission Link CSE - A https://classroom.google.com/c/NDA1MjAwMDY1NjAw/a/NDc0ODQzNDc4NDk1/details CSE - B https://classroom.google.com/c/NDA1MjUyMDYzMDM5/a/NDc0ODI5MTg5NDk0/details CSE - C https://classroom.google.com/c/NDA1MjA1MzAxNzQz/a/NDc0ODI5MDM2MzQ4/details'"
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
     ],
-    "text_snippet": "+ (2 + 2) + (3 + 1) = 12 Cognition Level LOCQ IOCQ HOCQ Percentage distribution 21.35% 57.3% 21.35% Course Outcome (CO):"
+    "text_snippet": "Why is it beneficial to use a circular array to implement a queue? Explain with an example. [(CO4) (Remember/LOCQ)]"
   },
   {
-    "question_instance_id": "DOC-21-P03-Q07",
-    "document_id": "DOC-21",
-    "page": 3,
-    "issues": [
-      "Extremely short text / arithmetic fragment: '+ (1 + (2 + 2)) = 12'"
-    ],
-    "text_snippet": "+ (1 + (2 + 2)) = 12"
-  },
-  {
-    "question_instance_id": "DOC-22-P02-Q04",
-    "document_id": "DOC-22",
-    "page": 2,
-    "issues": [
-      "Extremely short text / arithmetic fragment: '+ 4 + (2 + 2) = 12'"
-    ],
-    "text_snippet": "+ 4 + (2 + 2) = 12"
-  },
-  {
-    "question_instance_id": "DOC-22-P02-Q05",
-    "document_id": "DOC-22",
-    "page": 2,
-    "issues": [
-      "Extremely short text / arithmetic fragment: '+ 4 + (1 + 2) = 12'"
-    ],
-    "text_snippet": "+ 4 + (1 + 2) = 12"
-  },
-  {
-    "question_instance_id": "DOC-22-P03-Q02",
-    "document_id": "DOC-22",
-    "page": 3,
-    "issues": [
-      "Extremely short text / arithmetic fragment: '+ 3 + 5 + 2 =12 g c h f e d b a'"
-    ],
-    "text_snippet": "+ 3 + 5 + 2 =12 g c h f e d b a"
-  },
-  {
-    "question_instance_id": "DOC-23-P02-Q04",
-    "document_id": "DOC-23",
-    "page": 2,
-    "issues": [
-      "Extremely short text / arithmetic fragment: '+ 4 + (2 + 2) = 12'"
-    ],
-    "text_snippet": "+ 4 + (2 + 2) = 12"
-  },
-  {
-    "question_instance_id": "DOC-23-P02-Q05",
-    "document_id": "DOC-23",
-    "page": 2,
-    "issues": [
-      "Extremely short text / arithmetic fragment: '+ 4 + (1 + 2) = 12'"
-    ],
-    "text_snippet": "+ 4 + (1 + 2) = 12"
-  },
-  {
-    "question_instance_id": "DOC-23-P03-Q02",
-    "document_id": "DOC-23",
-    "page": 3,
-    "issues": [
-      "Extremely short text / arithmetic fragment: '+ 3 + 5 + 2 =12 g c h f e d b a'"
-    ],
-    "text_snippet": "+ 3 + 5 + 2 =12 g c h f e d b a"
-  },
-  {
-    "question_instance_id": "DOC-25-P02-Q06",
-    "document_id": "DOC-25",
-    "page": 2,
-    "issues": [
-      "Extremely short text / arithmetic fragment: '+ (2 + 4) = 12'"
-    ],
-    "text_snippet": "+ (2 + 4) = 12"
-  },
-  {
-    "question_instance_id": "DOC-25-P02-Q08",
-    "document_id": "DOC-25",
-    "page": 2,
-    "issues": [
-      "Extremely short text / arithmetic fragment: '+ 4 = 12'"
-    ],
-    "text_snippet": "+ 4 = 12"
-  },
-  {
-    "question_instance_id": "DOC-25-P03-Q04",
-    "document_id": "DOC-25",
-    "page": 3,
-    "issues": [
-      "Extremely short text / arithmetic fragment: '+ (7 + 1) = 12'"
-    ],
-    "text_snippet": "+ (7 + 1) = 12"
-  },
-  {
-    "question_instance_id": "DOC-26-P03-Q03",
-    "document_id": "DOC-26",
-    "page": 3,
-    "issues": [
-      "Extremely short text / arithmetic fragment: '+ 6 + 3 = 12'"
-    ],
-    "text_snippet": "+ 6 + 3 = 12"
-  },
-  {
-    "question_instance_id": "DOC-26-P04-Q04",
-    "document_id": "DOC-26",
-    "page": 4,
-    "issues": [
-      "Extremely short text / arithmetic fragment: '+ 2 + (5 + 1) = 12'"
-    ],
-    "text_snippet": "+ 2 + (5 + 1) = 12"
-  },
-  {
-    "question_instance_id": "DOC-26-P04-Q06",
-    "document_id": "DOC-26",
-    "page": 4,
-    "issues": [
-      "Extremely short text / arithmetic fragment: '+ (3 + 3) = 12'"
-    ],
-    "text_snippet": "+ (3 + 3) = 12"
-  },
-  {
-    "question_instance_id": "DOC-26-P06-Q04",
-    "document_id": "DOC-26",
+    "question_instance_id": "DOC-19-P06-Q04-sub-b",
+    "document_id": "DOC-19",
     "page": 6,
     "issues": [
-      "Extremely short text / arithmetic fragment: '+ (2 + 2) + (3 + 1) = 12 Cognition Level LOCQ IOCQ HOCQ Percentage distribution 21.35% 57.3% 21.35% Course Outcome (CO): After the completion of this course students will be able to CO 1:  Understand and remember the basics of data structures and how time complexity analysis is applicable to different types of algorithms. CO 2: Understand the significance and utility of different data structures and the context of their application. (For example, the queue in front of ticket counters uses first-in-first-out paradigm in a linear data structure) CO 3:  Apply different types of data structures in algorithms and understand how the data structures can be useful in those algorithms. CO 4:  Analyze the behaviour of different data structures in algorithms. (For example, given an algorithm that uses a particular data structure, how to calculate its space and time complexity.) CO 5: Evaluate solutions of a problem with different data structures and thereby understand how to select suitable data structures for a solution. (For example, what are the different ways to find the second largest number from a list of integers and which solution is the best.) CO 6:  Evaluate different types of solutions (e.g. sorting) to the same problem. *LOCQ: Lower Order Cognitive Question; IOCQ: Intermediate Order Cognitive Question; HOCQ: Higher Order Cognitive Question Department & Section Submission Link CSE - A https://classroom.google.com/c/NDA1MjAwMDY1NjAw/a/NDc0ODQzNDc4NDk1/details CSE - B https://classroom.google.com/c/NDA1MjUyMDYzMDM5/a/NDc0ODI5MTg5NDk0/details CSE - C https://classroom.google.com/c/NDA1MjA1MzAxNzQz/a/NDc0ODI5MDM2MzQ4/details'"
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
     ],
-    "text_snippet": "+ (2 + 2) + (3 + 1) = 12 Cognition Level LOCQ IOCQ HOCQ Percentage distribution 21.35% 57.3% 21.35% Course Outcome (CO):"
+    "text_snippet": "How is a circular linked list with a head pointer different from a circular linked list with a tail pointer? Which of th"
+  },
+  {
+    "question_instance_id": "DOC-19-P06-Q04-sub-c",
+    "document_id": "DOC-19",
+    "page": 6,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Stepwise show how the following infix expression is converted to its corresponding postfix expression. ((5+7)-(4*3))+(6/"
+  },
+  {
+    "question_instance_id": "DOC-19-P07-Q05-sub-a",
+    "document_id": "DOC-19",
+    "page": 7,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Implement (either pseudo-code or c-code is fine) the functionality of a queue using 2 stacks. You will only get full-mar"
+  },
+  {
+    "question_instance_id": "DOC-19-P08-Q05-sub-b",
+    "document_id": "DOC-19",
+    "page": 8,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Why is a Tail recursive function more efficient compared to a normal recursive function? Ans. It is because the spaces o"
+  },
+  {
+    "question_instance_id": "DOC-19-P09-Q06-sub-a",
+    "document_id": "DOC-19",
+    "page": 9,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "What are the most well-known two ways of representing a graph? State their mutual benefits and drawbacks. State the time"
+  },
+  {
+    "question_instance_id": "DOC-19-P09-Q06-sub-b",
+    "document_id": "DOC-19",
+    "page": 9,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Construct a Binary Search Tree, an AVL tree and a B-Tree (m = 2) using the following keys. [(CO5) ( Apply/IOCQ)] Which o"
+  },
+  {
+    "question_instance_id": "DOC-19-P11-Q07-sub-a",
+    "document_id": "DOC-19",
+    "page": 11,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Perform depth-first traversal on the given graph, with A as the starting node. If more than one vertex can be visited at"
+  },
+  {
+    "question_instance_id": "DOC-19-P11-Q07-sub-b",
+    "document_id": "DOC-19",
+    "page": 11,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "(i) Construct a Binary Search Tree using the following traversals. Inorder: 7, 11, 20, 23, 30, 45, 56, 59, 60, 76, 92, 1"
+  },
+  {
+    "question_instance_id": "DOC-19-P13-Q08-sub-a",
+    "document_id": "DOC-19",
+    "page": 13,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "i) Write the pseudo-code for Min-heapify(A, i) routine, where A is an array containing integers and i is an index of the"
+  },
+  {
+    "question_instance_id": "DOC-19-P14-Q09-sub-b",
+    "document_id": "DOC-19",
+    "page": 14,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Fill up the table with asymptotic time complexities, some of them are shown for you \u2013 Best case Average Case Worst Case "
+  },
+  {
+    "question_instance_id": "DOC-19-P14-Q09-sub-c",
+    "document_id": "DOC-19",
+    "page": 14,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "i) Suppose you are performing an insertion sort on the following elements stored in an array. 22, 29, 35, 42, 39, 25, 15"
+  },
+  {
+    "question_instance_id": "DOC-19-P15-Q09-sub-a",
+    "document_id": "DOC-19",
+    "page": 15,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Do an average case analysis for finding the time complexity  of Binary Search. Assume that the element you are trying to"
+  },
+  {
+    "question_instance_id": "DOC-19-P16-Q09-sub-b",
+    "document_id": "DOC-19",
+    "page": 16,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "i) Suppose we are doing Radix Sort of 128 integers and the integers have hexadecimal digits, how would we lose if do not"
+  },
+  {
+    "question_instance_id": "DOC-19-P16-Q02-sub-c",
+    "document_id": "DOC-19",
+    "page": 16,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "i) Use \u2018linear probing with skipping\u2019 method to insert the following numbers in a table of size 6 in the order given: 76"
+  },
+  {
+    "question_instance_id": "DOC-20-P02-Q02-sub-a",
+    "document_id": "DOC-20",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "What is a sparse matrix?     [(CO1) (Remember/LOCQ)] Given the following 4 \u00d7 5 matrix: 0  0  6  0  0 0  0  0  0  0"
+  },
+  {
+    "question_instance_id": "DOC-20-P02-Q04",
+    "document_id": "DOC-20",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "0  2  0  0 0  3  0  7  0 Compute its triplet array equivalent.  [(CO1) (Compute/LOCQ)] Is it beneficial to store this ma"
+  },
+  {
+    "question_instance_id": "DOC-20-P02-Q04-sub-b",
+    "document_id": "DOC-20",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Given a singly-linked list with an odd number of elements, develop a pseudo- code or C-code  to split it into two nearly"
+  },
+  {
+    "question_instance_id": "DOC-20-P02-Q04-sub-c",
+    "document_id": "DOC-20",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "If for an algorithm, f(n) = 3n2+10, state the worst case asymptotic time complexity of the algorithm. Show that it follo"
+  },
+  {
+    "question_instance_id": "DOC-20-P02-Q03-sub-a",
+    "document_id": "DOC-20",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "State if the following statement is correct. Justify your answer. O(n2) = 2n2+100. [(CO1) (Apply/IOCQ)]"
+  },
+  {
+    "question_instance_id": "DOC-20-P02-Q03-sub-b",
+    "document_id": "DOC-20",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Construct a an iterative function in C named reverse() that accepts the start node of a doubly-linked list as argument a"
+  },
+  {
+    "question_instance_id": "DOC-20-P03-Q03-sub-c",
+    "document_id": "DOC-20",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Given a 2D matrix of dimension 100 x 200 and also given that the base address of the 2D array is 2020. Assume that the a"
+  },
+  {
+    "question_instance_id": "DOC-20-P03-Q04-sub-a",
+    "document_id": "DOC-20",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Why is it beneficial to use a circular array to implement a queue? Explain with an example.     [(CO4) (Remember/LOCQ)]"
+  },
+  {
+    "question_instance_id": "DOC-20-P03-Q04-sub-b",
+    "document_id": "DOC-20",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "How is a circular linked list with a head pointer different from a circular linked list with a tail pointer? Which of th"
+  },
+  {
+    "question_instance_id": "DOC-20-P03-Q04-sub-c",
+    "document_id": "DOC-20",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Stepwise show how the following infix expression is converted to its corresponding postfix expression. ((5+7)-(4*3))+(6/"
+  },
+  {
+    "question_instance_id": "DOC-20-P03-Q05-sub-a",
+    "document_id": "DOC-20",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Implement (either pseudo-code or c-code is fine) the functionality of a queue using 2 stacks.  You will only get full-ma"
+  },
+  {
+    "question_instance_id": "DOC-20-P03-Q05-sub-b",
+    "document_id": "DOC-20",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Why is a Tail recursive function more efficient compared to normal recursive function? [(CO1) (Remember/LOCQ)]"
+  },
+  {
+    "question_instance_id": "DOC-20-P04-Q06-sub-a",
+    "document_id": "DOC-20",
+    "page": 4,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "What are the most well-known two ways of representing a graph? State their mutual benefits and drawbacks. State the time"
+  },
+  {
+    "question_instance_id": "DOC-20-P04-Q06-sub-b",
+    "document_id": "DOC-20",
+    "page": 4,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Construct a Binary Search Tree, an AVL tree and a B-Tree (m = 2) using the following keys.  [(CO5) ( Apply/IOCQ)] Which "
+  },
+  {
+    "question_instance_id": "DOC-20-P04-Q07-sub-a",
+    "document_id": "DOC-20",
+    "page": 4,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Perform depth-first traversal on the given graph, with A as the starting node. If more than one vertex can be visited at"
+  },
+  {
+    "question_instance_id": "DOC-20-P04-Q07-sub-b",
+    "document_id": "DOC-20",
+    "page": 4,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "(i)  Construct a Binary Search Tree using the following traversals. Inorder: 7, 11, 20, 23, 30, 45, 56, 59, 60, 76, 92, "
+  },
+  {
+    "question_instance_id": "DOC-20-P04-Q08-sub-a",
+    "document_id": "DOC-20",
+    "page": 4,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "(i)  Write the pseudo-code for Min-heapify(A, i) routine, where A is an array containing integers and i is an index of t"
+  },
+  {
+    "question_instance_id": "DOC-20-P05-Q08-sub-b",
+    "document_id": "DOC-20",
+    "page": 5,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Fill up the table with asymptotic time complexities, some of them are shown for you \u2013 Best case Average Case Worst Case "
+  },
+  {
+    "question_instance_id": "DOC-20-P05-Q08-sub-c",
+    "document_id": "DOC-20",
+    "page": 5,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "(i) Suppose you are performing an insertion sort on the following elements stored in an array. 22, 29, 35, 42, 39, 25, 1"
+  },
+  {
+    "question_instance_id": "DOC-20-P05-Q09-sub-a",
+    "document_id": "DOC-20",
+    "page": 5,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Do an average case analysis for finding the time complexity  of Binary Search. Assume that the element you are trying to"
+  },
+  {
+    "question_instance_id": "DOC-20-P05-Q09-sub-b",
+    "document_id": "DOC-20",
+    "page": 5,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "(i)  Suppose we are doing Radix Sort of 128 integers and the integers have hexadecimal digits,  how would we lose if do "
+  },
+  {
+    "question_instance_id": "DOC-20-P05-Q09-sub-c",
+    "document_id": "DOC-20",
+    "page": 5,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "(i)  Use \u2018linear probing with skipping\u2019 method to insert the following numbers in a table of size 6 in the order given: "
+  },
+  {
+    "question_instance_id": "DOC-26-P02-Q02-sub-a",
+    "document_id": "DOC-26",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "What is a sparse matrix?     [(CO1) (Remember/LOCQ)] Given the following 4 \u00d7 5 matrix: 0  0  6  0  0 0  0  0  0  0"
+  },
+  {
+    "question_instance_id": "DOC-26-P02-Q04",
+    "document_id": "DOC-26",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "0  2  0  0 0  3  0  7  0 Compute its triplet array equivalent.  [(CO1) (Compute/LOCQ)] Is it beneficial to store this ma"
+  },
+  {
+    "question_instance_id": "DOC-26-P02-Q04-sub-b",
+    "document_id": "DOC-26",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Given a singly-linked list with an odd number of elements, develop a pseudo- code or C-code  to split it into two nearly"
+  },
+  {
+    "question_instance_id": "DOC-26-P02-Q04-sub-c",
+    "document_id": "DOC-26",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "If for an algorithm, f(n) = 3n2+10, state the worst case asymptotic time complexity of the algorithm. Show that it follo"
+  },
+  {
+    "question_instance_id": "DOC-26-P02-Q03-sub-a",
+    "document_id": "DOC-26",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "State if the following statement is correct. Justify your answer. O(n2) = 2n2+100. [(CO1) (Apply/IOCQ)]"
+  },
+  {
+    "question_instance_id": "DOC-26-P02-Q03-sub-b",
+    "document_id": "DOC-26",
+    "page": 2,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Construct a an iterative function in C named reverse() that accepts the start node of a doubly-linked list as argument a"
+  },
+  {
+    "question_instance_id": "DOC-26-P03-Q03-sub-c",
+    "document_id": "DOC-26",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Given a 2D matrix of dimension 100 x 200 and also given that the base address of the 2D array is 2020. Assume that the a"
+  },
+  {
+    "question_instance_id": "DOC-26-P03-Q04-sub-a",
+    "document_id": "DOC-26",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Why is it beneficial to use a circular array to implement a queue? Explain with an example.     [(CO4) (Remember/LOCQ)]"
+  },
+  {
+    "question_instance_id": "DOC-26-P03-Q04-sub-b",
+    "document_id": "DOC-26",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "How is a circular linked list with a head pointer different from a circular linked list with a tail pointer? Which of th"
+  },
+  {
+    "question_instance_id": "DOC-26-P03-Q04-sub-c",
+    "document_id": "DOC-26",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Stepwise show how the following infix expression is converted to its corresponding postfix expression. ((5+7)-(4*3))+(6/"
+  },
+  {
+    "question_instance_id": "DOC-26-P03-Q05-sub-a",
+    "document_id": "DOC-26",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Implement (either pseudo-code or c-code is fine) the functionality of a queue using 2 stacks.  You will only get full-ma"
+  },
+  {
+    "question_instance_id": "DOC-26-P03-Q05-sub-b",
+    "document_id": "DOC-26",
+    "page": 3,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Why is a Tail recursive function more efficient compared to normal recursive function? [(CO1) (Remember/LOCQ)]"
+  },
+  {
+    "question_instance_id": "DOC-26-P04-Q06-sub-a",
+    "document_id": "DOC-26",
+    "page": 4,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "What are the most well-known two ways of representing a graph? State their mutual benefits and drawbacks. State the time"
+  },
+  {
+    "question_instance_id": "DOC-26-P04-Q06-sub-b",
+    "document_id": "DOC-26",
+    "page": 4,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Construct a Binary Search Tree, an AVL tree and a B-Tree (m = 2) using the following keys.  [(CO5) ( Apply/IOCQ)] Which "
+  },
+  {
+    "question_instance_id": "DOC-26-P04-Q07-sub-a",
+    "document_id": "DOC-26",
+    "page": 4,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Perform depth-first traversal on the given graph, with A as the starting node. If more than one vertex can be visited at"
+  },
+  {
+    "question_instance_id": "DOC-26-P04-Q07-sub-b",
+    "document_id": "DOC-26",
+    "page": 4,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "(i)  Construct a Binary Search Tree using the following traversals. Inorder: 7, 11, 20, 23, 30, 45, 56, 59, 60, 76, 92, "
+  },
+  {
+    "question_instance_id": "DOC-26-P04-Q08-sub-a",
+    "document_id": "DOC-26",
+    "page": 4,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "(i)  Write the pseudo-code for Min-heapify(A, i) routine, where A is an array containing integers and i is an index of t"
+  },
+  {
+    "question_instance_id": "DOC-26-P05-Q08-sub-b",
+    "document_id": "DOC-26",
+    "page": 5,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Fill up the table with asymptotic time complexities, some of them are shown for you \u2013 Best case Average Case Worst Case "
+  },
+  {
+    "question_instance_id": "DOC-26-P05-Q08-sub-c",
+    "document_id": "DOC-26",
+    "page": 5,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "(i) Suppose you are performing an insertion sort on the following elements stored in an array. 22, 29, 35, 42, 39, 25, 1"
+  },
+  {
+    "question_instance_id": "DOC-26-P05-Q09-sub-a",
+    "document_id": "DOC-26",
+    "page": 5,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "Do an average case analysis for finding the time complexity  of Binary Search. Assume that the element you are trying to"
+  },
+  {
+    "question_instance_id": "DOC-26-P05-Q09-sub-b",
+    "document_id": "DOC-26",
+    "page": 5,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "(i)  Suppose we are doing Radix Sort of 128 integers and the integers have hexadecimal digits,  how would we lose if do "
+  },
+  {
+    "question_instance_id": "DOC-26-P05-Q09-sub-c",
+    "document_id": "DOC-26",
+    "page": 5,
+    "issues": [
+      "Institutional Bloom's taxonomy tags / CO metadata in question text"
+    ],
+    "text_snippet": "(i)  Use \u2018linear probing with skipping\u2019 method to insert the following numbers in a table of size 6 in the order given: "
   }
 ]

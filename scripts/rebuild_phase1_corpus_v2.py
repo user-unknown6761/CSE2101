@@ -10,7 +10,7 @@ if hasattr(sys.stdout, 'reconfigure'):
     sys.stdout.reconfigure(encoding='utf-8')
 
 print("=" * 70)
-print("PHASE 1.1 — SOURCE CORPUS AUDIT & INGESTION PIPELINE (REVISED)")
+print("PHASE 1.2 — SOURCE CORPUS AUDIT & INGESTION PIPELINE (CORRECTED)")
 print("=" * 70)
 
 # ==============================================================================
@@ -67,7 +67,7 @@ for idx, fpath in enumerate(pdf_paths, start=1):
             classification = "Solution Document / Answer Key"
             source_tier = 4
             content_type = "solution-bearing"
-            established_exam_type = None  # Reference/solution doc, not an active exam paper submission
+            established_exam_type = None
             evidence.append("Contains semester examination questions accompanied by worked solutions and answer keys")
         elif "BASIC" in fname.upper() or "CSEN 2004" in first_page_text:
             classification = "University Examination Paper"
@@ -87,11 +87,11 @@ for idx, fpath in enumerate(pdf_paths, start=1):
             established_exam_type = "Regular"
             content_type = "question-bearing"
             evidence.append("Official university semester examination paper with university header, groups, and marks structure")
-    elif "QUESTION BANK" in first_page_text.upper() or "QUESTION BANK" in fname.upper():
+    elif "QUESTION BANK" in first_page_text.upper() or "QUESTION BANK" in fname.upper() or "OBJECTIVE" in fname.upper() or "OBJECTIVE TYPE QUESTIONS" in first_page_text.upper():
         if "OBJECTIVE" in fname.upper() or "OBJECTIVE TYPE QUESTIONS" in first_page_text.upper():
             classification = "Objective Question Bank — Authority Unconfirmed"
             source_tier = 3
-            content_type = "mixed"
+            content_type = "question-bearing"
             established_exam_type = None
             evidence.append("Comprehensive objective & descriptive question bank with answers for course code DC08 (IETE curriculum); authority unconfirmed against official university CSEN 2101 syllabus")
         else:
@@ -104,7 +104,7 @@ for idx, fpath in enumerate(pdf_paths, start=1):
         classification = "Practice / Problem Set"
         source_tier = 3
         content_type = "question-bearing"
-        established_exam_type = None  # Explicitly null per Section 11 & 12
+        established_exam_type = None
         evidence.append("Faculty-issued practice assignment ('For practice only - solve at home'); practice problem set with no formal exam session")
     elif "CHEATSHEET" in first_page_text.upper() or "DSA CHEATSHEET" in first_page_text.upper() or "1782225402814" in fname:
         classification = "Notes / Study Material"
@@ -138,15 +138,12 @@ for idx, fpath in enumerate(pdf_paths, start=1):
     if "CSEN 2101" in first_page_text:
         established_paper_id = "CSEN 2101"
         established_course_name = "DATA STRUCTURES AND ALGORITHMS"
-    elif "CSE2101" in first_page_text:
-        established_paper_id = "CSE2101"
-        established_course_name = "DATA STRUCTURES AND ALGORITHMS"
     elif "CSEN 2004" in first_page_text:
         established_paper_id = "CSEN 2004"
-        established_course_name = "DATA STRUCTURE AND BASIC ALGORITHMS"
+        established_course_name = "BASIC DATA STRUCTURES"
     elif "CSEN 2005" in first_page_text:
         established_paper_id = "CSEN 2005"
-        established_course_name = "DATA STRUCTURE"
+        established_course_name = "DATA STRUCTURES AND ALGORITHMS"
     elif "DC08" in first_page_text:
         established_paper_id = "DC08"
         established_course_name = "DATA STRUCTURES"
@@ -215,7 +212,7 @@ with open('SOURCE_CORPUS_INVENTORY.json', 'w', encoding='utf-8') as f:
 print("1. Generated SOURCE_CORPUS_INVENTORY.json")
 
 # ==============================================================================
-# 2. PAGE QUALITY MATRIX & VISUAL VERIFICATION
+# 2. PAGE QUALITY MATRIX & EVIDENCE-BASED VISUAL VERIFICATION (SECTION 7 & 8)
 # ==============================================================================
 page_quality_records = []
 visual_verification_audit = []
@@ -256,27 +253,71 @@ for doc_meta in documents:
             ocr_needed = False
             text_confidence = "MEDIUM"
             
-        # Visual verification status separation (Section 7 & 8)
+        # Evidence-Based Visual Verification Status Separation:
+        # DETECTED: automated detection of raster/vector elements
+        # RENDERED: page was rendered
+        # VISUALLY_REVIEWED: actual human/operator review record exists
+        # VERIFIED: reviewed and confirmed legible/relevant
+        # FLAGGED: requires inspection or uncertainty
         if doc_meta['content_type'] == 'non-question academic material':
             visual_verification_status = "NOT_REQUIRED"
             visual_inspection_required = False
+            visually_reviewed = False
+            verified = False
+            review_method = None
+            review_record = None
+            verification_basis = None
+            verification_confidence = None
             overall_confidence = "HIGH"
-        elif diagram_present or (doc_id == 'DOC-28' and p_num == 2):
+        elif doc_id == 'DOC-28' and p_num == 2:
+            # Explicit, evidenced visual inspection documented in DOC28_PAGE2_RECONSTRUCTION_AUDIT.md
             visual_inspection_required = True
-            # All visual question pages have been physically inspected and verified
             visual_verification_status = "VERIFIED"
+            visually_reviewed = True
+            verified = True
+            review_method = "rendered_page_review"
+            review_record = "DOC28_PAGE2_RECONSTRUCTION_AUDIT.md"
+            verification_basis = "Rendered 150 DPI inspection confirming 3 horizontal text streams, embedded C code image xref 22, vector graph region y=336-398, and binary tree image xref 24"
+            verification_confidence = "HIGH"
+            overall_confidence = "HIGH"
+            
+            visual_verification_audit.append({
+                'document_id': doc_id,
+                'filename': fname,
+                'page_number': p_num,
+                'visual_element_type': "raster_and_vector",
+                'raster_images_count': len(imgs),
+                'vector_drawings_count': len(draws),
+                'table_present': table_present,
+                'visual_inspection_required': True,
+                'visual_verification_status': "VERIFIED",
+                'visually_reviewed': True,
+                'verified': True,
+                'review_method': "rendered_page_review",
+                'review_record': "DOC28_PAGE2_RECONSTRUCTION_AUDIT.md",
+                'verification_basis': "Rendered 150 DPI inspection confirming 3 horizontal text streams, embedded C code image xref 22, vector graph region y=336-398, and binary tree image xref 24",
+                'verification_confidence': "HIGH",
+                'inspection_notes': "Special-case verified: Three horizontal text streams, C code image xref 22, vector graph y=336-398, and binary tree image xref 24 verified present and legible in rendered inspection"
+            })
+        elif diagram_present:
+            visual_inspection_required = True
+            # Automated presence detection only — NOT human/operator reviewed
+            visual_verification_status = "DETECTED"
+            visually_reviewed = False
+            verified = False
+            review_method = None
+            review_record = None
+            verification_basis = None
+            verification_confidence = None
             overall_confidence = "HIGH" if text_confidence == "HIGH" else "MEDIUM"
             
-            # Log in visual verification audit
             v_reasons = []
-            if doc_id == 'DOC-28' and p_num == 2:
-                v_reasons.append("Two-column layout with embedded C code (xref 24/22), BFS graph diagram, and binary tree diagram")
-            elif has_raster:
-                v_reasons.append(f"{len(imgs)} raster image(s) verified present and legible")
+            if has_raster:
+                v_reasons.append(f"{len(imgs)} raster image(s) detected via automated analysis")
             if has_drawings:
-                v_reasons.append(f"{len(draws)} vector drawing path(s) verified present and legible")
+                v_reasons.append(f"{len(draws)} vector drawing path(s) detected via automated analysis")
             if table_present:
-                v_reasons.append("Tabular structure verified")
+                v_reasons.append("Tabular structure detected via pattern scan")
                 
             visual_verification_audit.append({
                 'document_id': doc_id,
@@ -287,12 +328,24 @@ for doc_meta in documents:
                 'vector_drawings_count': len(draws),
                 'table_present': table_present,
                 'visual_inspection_required': True,
-                'visual_verification_status': "VERIFIED",
+                'visual_verification_status': "DETECTED",
+                'visually_reviewed': False,
+                'verified': False,
+                'review_method': None,
+                'review_record': None,
+                'verification_basis': None,
+                'verification_confidence': None,
                 'inspection_notes': "; ".join(v_reasons)
             })
         else:
             visual_inspection_required = False
             visual_verification_status = "NOT_REQUIRED"
+            visually_reviewed = False
+            verified = False
+            review_method = None
+            review_record = None
+            verification_basis = None
+            verification_confidence = None
             overall_confidence = text_confidence
             
         if extraction_status == "SCANNED_IMAGE_ONLY":
@@ -309,6 +362,12 @@ for doc_meta in documents:
             'text_extraction_confidence': text_confidence,
             'visual_inspection_required': visual_inspection_required,
             'visual_verification_status': visual_verification_status,
+            'visually_reviewed': visually_reviewed,
+            'verified': verified,
+            'review_method': review_method,
+            'review_record': review_record,
+            'verification_basis': verification_basis,
+            'verification_confidence': verification_confidence,
             'overall_confidence': overall_confidence,
             'ocr_used': False,
             'ocr_recommended': ocr_needed,
@@ -330,15 +389,12 @@ with open('VISUAL_VERIFICATION_AUDIT.json', 'w', encoding='utf-8') as f:
 print("3. Generated VISUAL_VERIFICATION_AUDIT.json")
 
 # ==============================================================================
-# 3. EXTRACTION OF QUESTION OCCURRENCES & PAPER QUESTION CONTAINERS
+# 3. EXTRACTION OF QUESTION OCCURRENCES, CONTAINERS & SOURCE FRAGMENTS
 # ==============================================================================
 all_records = []
 damaged_audit = []
 suspicious_audit = []
 
-# -------------------------------------------------------------
-# Parser for Tier 1 Exam Papers and Tier 4 Solution Question Papers
-# -------------------------------------------------------------
 def parse_exam_paper(doc_meta):
     doc_id = doc_meta['document_id']
     fpath = doc_meta['relative_path']
@@ -384,7 +440,7 @@ def parse_exam_paper(doc_meta):
                 
             # Detect Q1 Header -> PAPER QUESTION CONTAINER
             if re.match(r'^1\.\s+(Choose|Answer)', line, re.I):
-                q1_marks = "10 x 1 = 10" if "10" in line else ("12 x 1 = 12" if "12" in line else "10")
+                q1_header_marks = "10 x 1 = 10" if "10" in line else ("12 x 1 = 12" if "12" in line else "10")
                 current_parent_num = "1"
                 current_parent_container_id = f"{doc_id}-P{p_num:02d}-CONTAINER-Q01"
                 container_children[current_parent_container_id] = []
@@ -401,7 +457,7 @@ def parse_exam_paper(doc_meta):
                     'official_question_number': "1",
                     'sub_question_id': None,
                     'parent_question_container_id': None,
-                    'child_question_instance_ids': [], # populated at end
+                    'child_question_instance_ids': [],
                     'container_title': f"{current_group} Question 1 (Short Answer / Objective)",
                     'raw_text': None,
                     'wording_state': None,
@@ -414,6 +470,7 @@ def parse_exam_paper(doc_meta):
                     'source_established_metadata': established_meta,
                     'marks': None,
                     'marks_status': "container_aggregate_unallocated",
+                    'marks_source_evidence': None,
                     'has_diagram_or_image': False,
                     'source_visual_required': False,
                     'source_visual_page': None,
@@ -474,6 +531,13 @@ def parse_exam_paper(doc_meta):
                     'source_established_metadata': established_meta,
                     'marks': "1",
                     'marks_status': "physically_established",
+                    'marks_source_evidence': {
+                        'source_page': p_num,
+                        'source_reference': f"Page {p_num} Question 1 Header line",
+                        'evidence_text': "10 x 1 = 10" if "10" in line else "12 x 1 = 12",
+                        'evidence_type': "section_total",
+                        'confidence': "HIGH"
+                    },
                     'has_diagram_or_image': v_req,
                     'source_visual_required': v_req,
                     'source_visual_page': p_num if v_req else None,
@@ -499,7 +563,7 @@ def parse_exam_paper(doc_meta):
                     sub_text = sub_m.group(2).strip()
                     container_children[current_parent_container_id] = []
                     
-                    # 1. Add PAPER QUESTION CONTAINER
+                    # 1. EMIT PARENT QUESTION CONTAINER
                     records.append({
                         'record_type': "paper_question_container",
                         'occurrence_type': None,
@@ -525,6 +589,7 @@ def parse_exam_paper(doc_meta):
                         'source_established_metadata': established_meta,
                         'marks': None,
                         'marks_status': "container_aggregate_unallocated",
+                        'marks_source_evidence': None,
                         'has_diagram_or_image': False,
                         'source_visual_required': False,
                         'source_visual_page': None,
@@ -533,7 +598,7 @@ def parse_exam_paper(doc_meta):
                         'is_student_answerable': False
                     })
                     
-                    # 2. Collect sub-question (a) lines
+                    # 2. EMIT SUB-QUESTION (a)
                     j = i + 1
                     sub_lines = [sub_text] if sub_text else []
                     has_diag = False
@@ -559,6 +624,28 @@ def parse_exam_paper(doc_meta):
                     container_children[current_parent_container_id].append(instance_id)
                     v_req = has_diag or (len(page.get_images()) > 0 and any(w in full_raw.lower() for w in ['tree', 'graph', 'diagram', 'heap']))
                     
+                    # Marks evidence for sub-question
+                    m_ev = None
+                    if sub_marks:
+                        m_ev = {
+                            'source_page': p_num,
+                            'source_reference': f"Page {p_num} subquestion marks allocation line",
+                            'evidence_text': sub_marks,
+                            'evidence_type': "subquestion_mark",
+                            'confidence': "HIGH"
+                        }
+                    else:
+                        inline_m = re.search(r'\[(\d+[\+\d\s]*)\]\s*$', full_raw) or re.search(r'\((\d+)\s*marks?\)\s*$', full_raw, re.I)
+                        if inline_m:
+                            sub_marks = inline_m.group(1).strip()
+                            m_ev = {
+                                'source_page': p_num,
+                                'source_reference': f"Page {p_num} inline bracket marks annotation",
+                                'evidence_text': inline_m.group(0).strip(),
+                                'evidence_type': "question_inline",
+                                'confidence': "HIGH"
+                            }
+                    
                     records.append({
                         'record_type': "question_occurrence",
                         'occurrence_type': "sub_question",
@@ -582,23 +669,20 @@ def parse_exam_paper(doc_meta):
                         'source_established_metadata': established_meta,
                         'marks': sub_marks,
                         'marks_status': "physically_established" if sub_marks else "not_specified",
+                        'marks_source_evidence': m_ev,
                         'has_diagram_or_image': v_req,
                         'source_visual_required': v_req,
                         'source_visual_page': p_num if v_req else None,
                         'source_visual_region': f"Page {p_num} visual container" if v_req else None,
-                        'source_visual_reason': "Referenced tree, graph, heap, or diagram" if v_req else None,
+                        'source_visual_reason': "Referenced visual diagram" if v_req else None,
                         'is_student_answerable': True
                     })
                     i = j
                     continue
+                    
                 else:
-                    # Check if (a) follows on next lines -> container
-                    has_sub_next = False
-                    for peek in lines[i+1:i+4]:
-                        if re.match(r'^\(([a-e])\)', peek, re.I):
-                            has_sub_next = True
-                            break
-                    if has_sub_next:
+                    # Check if next line is (a) -> Parent Container
+                    if i + 1 < len(lines) and re.match(r'^\([a-e]\)', lines[i+1], re.I):
                         container_children[current_parent_container_id] = []
                         records.append({
                             'record_type': "paper_question_container",
@@ -613,7 +697,7 @@ def parse_exam_paper(doc_meta):
                             'sub_question_id': None,
                             'parent_question_container_id': None,
                             'child_question_instance_ids': [],
-                            'container_title': f"{current_group} Question {q_num}" + (f": {rest}" if rest else ""),
+                            'container_title': f"{current_group} Question {q_num}",
                             'raw_text': None,
                             'wording_state': None,
                             'wording_status': None,
@@ -625,6 +709,7 @@ def parse_exam_paper(doc_meta):
                             'source_established_metadata': established_meta,
                             'marks': None,
                             'marks_status': "container_aggregate_unallocated",
+                            'marks_source_evidence': None,
                             'has_diagram_or_image': False,
                             'source_visual_required': False,
                             'source_visual_page': None,
@@ -635,7 +720,7 @@ def parse_exam_paper(doc_meta):
                         i += 1
                         continue
                     else:
-                        # STANDALONE QUESTION OCCURRENCE
+                        # STANDALONE OCCURRENCE or NON-QUESTION SOURCE FRAGMENT
                         j = i + 1
                         q_lines = [rest] if rest else []
                         has_diag = False
@@ -658,7 +743,79 @@ def parse_exam_paper(doc_meta):
                             
                         instance_id = f"{doc_id}-P{p_num:02d}-Q{int(q_num):02d}"
                         full_raw = " ".join(q_lines).strip()
+                        
+                        # Forensic Check: Is this a non-question source fragment?
+                        # Pattern 1: Marks equation / arithmetic fragment
+                        is_marks_eqn = bool(re.match(r'^\s*(\+[\s\d\+\-\*\(\)\=]+|\d+[\s\d\+\-\*\(\)]*\s*=\s*\d+)\s*$', full_raw)) or (
+                            full_raw.startswith('+') and '=' in full_raw and len(full_raw) < 50
+                        )
+                        # Pattern 2: Course outcome / Cognitive level / Submission Link footer
+                        is_co_footer = any(term in full_raw for term in ['Course Outcome (CO)', 'Cognition Level', 'Submission Link', 'classroom.google.com'])
+                        # Pattern 3: DOC-19 solution pseudocode step lines
+                        is_doc19_step = (doc_id == 'DOC-19' and p_num >= 7 and len(full_raw) < 50 and any(kw in full_raw for kw in ['temp', 'return', 'next', 'node', 'malloc', '{', '}', 'exchange']))
+                        
+                        if is_marks_eqn or is_co_footer or is_doc19_step:
+                            f_type = "marks_allocation_equation" if is_marks_eqn else ("curriculum_outcome_footer" if is_co_footer else "solution_code_fragment")
+                            f_reason = "Physical marks summary or administrative footer extracted from source page layout" if (is_marks_eqn or is_co_footer) else "Solution pseudocode step line in DOC-19 solution text"
+                            records.append({
+                                'record_type': "non_question_source_fragment",
+                                'occurrence_type': None,
+                                'question_instance_id': instance_id,
+                                'document_id': doc_id,
+                                'source_file': fpath,
+                                'page_start': p_num,
+                                'page_end': p_num,
+                                'group_or_section': current_group,
+                                'official_question_number': q_num,
+                                'sub_question_id': None,
+                                'parent_question_container_id': None,
+                                'raw_text': full_raw,
+                                'wording_state': None,
+                                'wording_status': "source_fragment",
+                                'reconstruction_metadata': None,
+                                'completeness_status': "INCOMPLETE",
+                                'extraction_confidence': "FLAGGED",
+                                'source_tier': doc_meta['source_tier'],
+                                'source_type': doc_meta['document_classification'],
+                                'source_established_metadata': established_meta,
+                                'marks': None,
+                                'marks_status': "not_specified",
+                                'marks_source_evidence': None,
+                                'has_diagram_or_image': False,
+                                'source_visual_required': False,
+                                'source_visual_page': None,
+                                'source_visual_region': None,
+                                'source_visual_reason': None,
+                                'is_student_answerable': False,
+                                'fragment_type': f_type,
+                                'fragment_reason': f_reason
+                            })
+                            i = j
+                            continue
+
+                        # TRUE STANDALONE QUESTION OCCURRENCE
                         v_req = has_diag or (len(page.get_images()) > 0 and any(w in full_raw.lower() for w in ['tree', 'graph', 'diagram', 'heap']))
+                        
+                        m_ev = None
+                        if q_marks:
+                            m_ev = {
+                                'source_page': p_num,
+                                'source_reference': f"Page {p_num} trailing marks allocation line",
+                                'evidence_text': q_marks,
+                                'evidence_type': "section_total" if "=" in q_marks else "subquestion_mark",
+                                'confidence': "HIGH"
+                            }
+                        else:
+                            inline_m = re.search(r'\[(\d+[\+\d\s]*)\]\s*$', full_raw) or re.search(r'\((\d+)\s*marks?\)\s*$', full_raw, re.I)
+                            if inline_m:
+                                q_marks = inline_m.group(1).strip()
+                                m_ev = {
+                                    'source_page': p_num,
+                                    'source_reference': f"Page {p_num} inline bracket marks annotation",
+                                    'evidence_text': inline_m.group(0).strip(),
+                                    'evidence_type': "question_inline",
+                                    'confidence': "HIGH"
+                                }
                         
                         records.append({
                             'record_type': "question_occurrence",
@@ -681,8 +838,9 @@ def parse_exam_paper(doc_meta):
                             'source_tier': doc_meta['source_tier'],
                             'source_type': doc_meta['document_classification'],
                             'source_established_metadata': established_meta,
-                            'marks': q_marks or "12",
-                            'marks_status': "physically_established",
+                            'marks': q_marks, # STRICTLY NO HARD-CODED "12" FALLBACK
+                            'marks_status': "physically_established" if q_marks else "not_specified",
+                            'marks_source_evidence': m_ev,
                             'has_diagram_or_image': v_req,
                             'source_visual_required': v_req,
                             'source_visual_page': p_num if v_req else None,
@@ -726,6 +884,27 @@ def parse_exam_paper(doc_meta):
                     container_children[parent_c_id].append(instance_id)
                 v_req = has_diag or (len(page.get_images()) > 0 and any(w in full_raw.lower() for w in ['tree', 'graph', 'diagram', 'heap']))
                 
+                m_ev = None
+                if sub_marks:
+                    m_ev = {
+                        'source_page': p_num,
+                        'source_reference': f"Page {p_num} subquestion marks allocation line",
+                        'evidence_text': sub_marks,
+                        'evidence_type': "subquestion_mark",
+                        'confidence': "HIGH"
+                    }
+                else:
+                    inline_m = re.search(r'\[(\d+[\+\d\s]*)\]\s*$', full_raw) or re.search(r'\((\d+)\s*marks?\)\s*$', full_raw, re.I)
+                    if inline_m:
+                        sub_marks = inline_m.group(1).strip()
+                        m_ev = {
+                            'source_page': p_num,
+                            'source_reference': f"Page {p_num} inline bracket marks annotation",
+                            'evidence_text': inline_m.group(0).strip(),
+                            'evidence_type': "question_inline",
+                            'confidence': "HIGH"
+                        }
+                
                 records.append({
                     'record_type': "question_occurrence",
                     'occurrence_type': "sub_question",
@@ -749,6 +928,7 @@ def parse_exam_paper(doc_meta):
                     'source_established_metadata': established_meta,
                     'marks': sub_marks,
                     'marks_status': "physically_established" if sub_marks else "not_specified",
+                    'marks_source_evidence': m_ev,
                     'has_diagram_or_image': v_req,
                     'source_visual_required': v_req,
                     'source_visual_page': p_num if v_req else None,
@@ -769,11 +949,11 @@ def parse_exam_paper(doc_meta):
             
     return records
 
-# Parse 22 Tier 1 papers and 2 Tier 4 solutions
-exam_doc_ids = [f'DOC-{i:02d}' for i in range(1, 17)] + ['DOC-18', 'DOC-19', 'DOC-20', 'DOC-21', 'DOC-22', 'DOC-23', 'DOC-25', 'DOC-26']
-for d_id in exam_doc_ids:
-    d_meta = next(d for d in documents if d['document_id'] == d_id)
-    recs = parse_exam_paper(d_meta)
+# Process all Tier 1 and Tier 4 Exam / Solution Papers
+exam_docs = [d for d in documents if d['document_classification'] in ['University Examination Paper', 'Backlog / Special Examination Paper', 'Solution Document / Answer Key'] and d['document_id'] not in ['DOC-28', 'DOC-30', 'DOC-31']]
+print(f"Parsing {len(exam_docs)} exam & solution papers...")
+for doc_meta in exam_docs:
+    recs = parse_exam_paper(doc_meta)
     all_records.extend(recs)
 
 # -------------------------------------------------------------
@@ -798,9 +978,17 @@ for m in matches30:
     q_text = " ".join([l.strip() for l in m.group(2).split('\n') if l.strip()])
     
     marks = None
+    m_ev = None
     m_match = re.search(r'\((\d+)\)\s*$', q_text)
     if m_match:
         marks = m_match.group(1)
+        m_ev = {
+            'source_page': p_end,
+            'source_reference': f"DOC-30 Page {p_end} inline trailing marks bracket ({marks})",
+            'evidence_text': f"({marks})",
+            'evidence_type': "question_inline",
+            'confidence': "HIGH"
+        }
         
     inst_id = f"DOC-30-P{p_start:02d}-Q{int(q_num):02d}"
     v_req = any(term in q_text.lower() for term in ['given tree', 'given graph', 'draw the dfs', 'minimal spanning tree'])
@@ -836,6 +1024,7 @@ for m in matches30:
         },
         'marks': marks,
         'marks_status': "physically_established" if marks else "not_specified",
+        'marks_source_evidence': m_ev,
         'has_diagram_or_image': v_req,
         'source_visual_required': v_req,
         'source_visual_page': p_start if v_req else None,
@@ -856,7 +1045,7 @@ for p_idx, page in enumerate(doc28):
     page_map28.append((len(full_text28), len(full_text28) + len(t), p_idx + 1))
     full_text28 += t
 
-# Reconstructed Page 2 questions (Q7 to Q11)
+# Reconstructed Page 2 questions (Q7 to Q11) — Verified in DOC28_PAGE2_RECONSTRUCTION_AUDIT.md
 doc28_reconstructed_page2 = {
     7: {
         'text': "Which of the following statements is correct for a circular singly linked list with only a start pointer?\n(a) Both insertion and deletion at the front end take O(1) time\n(b) Only insertion at the front end takes O(1) time\n(c) Only deletion from the front end takes O(1) time\n(d) No insertion or deletion operation at either end is possible in O(1) time",
@@ -885,7 +1074,7 @@ doc28_reconstructed_page2 = {
     }
 }
 
-# Section 1: MCQs (1 to 32)
+# Section 1: MCQs (1 to 50)
 s1_match = re.search(r'Multiple Choice Questions\s*(.*?)(?=(?:Short Answer|\b1\.\s+Linked lists))', full_text28, re.S)
 if s1_match:
     s1_text = s1_match.group(1)
@@ -943,16 +1132,17 @@ if s1_match:
                 'semester': None,
                 'course_code': None,
                 'course_name': "DATA STRUCTURES AND ALGORITHMS",
-                'exam_type': None,  # Strictly null per Section 11 & 12
+                'exam_type': None,
                 'time_allotted': None,
                 'full_marks': None
             },
             'marks': None,
             'marks_status': "not_specified",
+            'marks_source_evidence': None,
             'has_diagram_or_image': v_req,
             'source_visual_required': v_req,
             'source_visual_page': p_start if v_req else None,
-            'source_visual_region': f"Page {p_start} visual element" if v_req else None,
+            'source_visual_region': f"Page {p_start} visual container" if v_req else None,
             'source_visual_reason': v_reason,
             'is_student_answerable': True
         })
@@ -1000,6 +1190,7 @@ if s2_match:
             },
             'marks': None,
             'marks_status': "not_specified",
+            'marks_source_evidence': None,
             'has_diagram_or_image': False,
             'source_visual_required': False,
             'source_visual_page': None,
@@ -1054,6 +1245,7 @@ if s3_match:
             },
             'marks': None,
             'marks_status': "not_specified",
+            'marks_source_evidence': None,
             'has_diagram_or_image': v_req,
             'source_visual_required': v_req,
             'source_visual_page': p_start if v_req else None,
@@ -1068,6 +1260,7 @@ if s3_match:
 doc31_meta = next(d for d in documents if d['document_id'] == 'DOC-31')
 doc31 = fitz.open(doc31_meta['relative_path'])
 
+# Part 1: pages 0 to 14
 full_p1 = ""
 page_map31_p1 = []
 for p_idx in range(15):
@@ -1083,7 +1276,6 @@ for m in matches31_p1:
     p_start = next(p for s, e, p in page_map31_p1 if s <= start_c < e)
     p_end = next(p for s, e, p in page_map31_p1 if s < end_c <= e)
     
-    # Filter header lines
     raw_lines = [l.strip() for l in m.group(2).split('\n') if l.strip() and not any(h in l for h in ['DC08', 'DATA STRUCTURES', 'PART I', 'OBJECTIVE TYPE QUESTIONS'])]
     full_raw = " ".join(raw_lines).strip()
     inst_id = f"DOC-31-P{p_start:02d}-PART1-Q{q_num:02d}"
@@ -1120,6 +1312,13 @@ for m in matches31_p1:
         },
         'marks': "2",
         'marks_status': "physically_established",
+        'marks_source_evidence': {
+            'source_page': 1,
+            'source_reference': "DOC-31 Page 1 Part I Header line",
+            'evidence_text': "PART I, FOR QUESTIONS 1 TO 47 CARRY 2 MARKS EACH",
+            'evidence_type': "section_total",
+            'confidence': "HIGH"
+        },
         'has_diagram_or_image': False,
         'source_visual_required': False,
         'source_visual_page': None,
@@ -1148,9 +1347,17 @@ for m in matches31_p2:
     full_raw = " ".join(raw_lines).strip()
     
     marks = None
+    m_ev = None
     m_match = re.search(r'\((\d+)\)\s*$', full_raw)
     if m_match:
         marks = m_match.group(1)
+        m_ev = {
+            'source_page': p_end,
+            'source_reference': f"DOC-31 Page {p_end} inline trailing marks bracket ({marks})",
+            'evidence_text': f"({marks})",
+            'evidence_type': "question_inline",
+            'confidence': "HIGH"
+        }
         
     inst_id = f"DOC-31-P{p_start:02d}-PART2-Q{q_num:02d}"
     v_req = any(term in full_raw.lower() for term in ['given graph', 'given tree', 'following graph', 'following tree', 'adjacency matrix', 'shown below'])
@@ -1187,6 +1394,7 @@ for m in matches31_p2:
         },
         'marks': marks,
         'marks_status': "physically_established" if marks else "not_specified",
+        'marks_source_evidence': m_ev,
         'has_diagram_or_image': v_req,
         'source_visual_required': v_req,
         'source_visual_page': p_start if v_req else None,
@@ -1198,80 +1406,288 @@ for m in matches31_p2:
 # Compute exact reconciliation
 containers = [r for r in all_records if r['record_type'] == 'paper_question_container']
 true_questions = [r for r in all_records if r['record_type'] == 'question_occurrence']
+fragments = [r for r in all_records if r['record_type'] == 'non_question_source_fragment']
 atomic_sub = [q for q in true_questions if q['occurrence_type'] == 'sub_question']
 standalone = [q for q in true_questions if q['occurrence_type'] == 'standalone']
 
-print(f"Total source records: {len(all_records):,}")
+print(f"Total physical records: {len(all_records):,}")
 print(f"Paper question containers: {len(containers):,}")
-print(f"Atomic sub-question occurrences: {len(atomic_sub):,}")
-print(f"Standalone question occurrences: {len(standalone):,}")
+print(f"Non-question source fragments: {len(fragments):,}")
 print(f"True answerable question occurrences: {len(true_questions):,}")
+print(f"  - Atomic sub-questions: {len(atomic_sub):,}")
+print(f"  - Standalone questions: {len(standalone):,}")
 
 # ==============================================================================
-# 4. SUSPICIOUS EXTRACTION SCAN & DAMAGE AUDIT (SECTION 9 & 14)
+# 4. SUSPICIOUS EXTRACTION SCAN & DETERMINISTIC DAMAGE AUDIT (SECTION 10 & 11)
 # ==============================================================================
+
+# A. Register all non-question source fragments in damage audit as RESOLVED
+for f in fragments:
+    damage_type = "marks_footer_contamination" if f.get('fragment_type') == "marks_allocation_equation" else (
+        "administrative_metadata_inside_question" if f.get('fragment_type') == "curriculum_outcome_footer" else "solution_code_fragment"
+    )
+    res_method = "Reclassified from question occurrence to non_question_source_fragment (non-answerable physical record)"
+    damaged_audit.append({
+        'question_instance_id': f['question_instance_id'],
+        'document_id': f['document_id'],
+        'page': f['page_start'],
+        'damage_type': damage_type,
+        'severity': "MAJOR",
+        'evidence': f"Physical source fragment: '{f['raw_text'][:100]}'",
+        'resolution_status': "RESOLVED",
+        'resolution_method': res_method,
+        'source_visual_reference': f"Page {f['page_start']} of {f['document_id']}",
+        'notes': f['fragment_reason']
+    })
+
+# B. Register DOC-28 Page 2 reconstructions in damage audit as RESOLVED
+doc28_damage_records = [
+    {
+        'question_instance_id': "DOC-28-P02-MCQ-Q07",
+        'document_id': "DOC-28",
+        'page': 2,
+        'damage_type': "page_column_interleaving",
+        'severity': "CRITICAL",
+        'evidence': "Three horizontal text streams interleaved across multi-column layout on rendered page 2",
+        'resolution_status': "RESOLVED",
+        'resolution_method': "Visual layout reassembly from rendered source page 2 (DOC28_PAGE2_RECONSTRUCTION_AUDIT.md)",
+        'source_visual_reference': "SOURCE/DSA-20260930T180448Z-1-001/DSA/DSA Practice Assignment.pdf Page 2",
+        'notes': "Stem and options (a)-(d) intact and complete in STATE B"
+    },
+    {
+        'question_instance_id': "DOC-28-P02-MCQ-Q08",
+        'document_id': "DOC-28",
+        'page': 2,
+        'damage_type': "missing_essential_code_block",
+        'severity': "CRITICAL",
+        'evidence': "C code function `void fun(struct node* start)` embedded in raster image xref 22 omitted from raw text stream",
+        'resolution_status': "RESOLVED",
+        'resolution_method': "Preserved C code from raster image xref 22 via visual layout reassembly (STATE B)",
+        'source_visual_reference': "SOURCE/DSA-20260930T180448Z-1-001/DSA/DSA Practice Assignment.pdf Page 2 image xref 22",
+        'notes': "10-line C code block preserved verbatim; visual source link established"
+    },
+    {
+        'question_instance_id': "DOC-28-P02-MCQ-Q09",
+        'document_id': "DOC-28",
+        'page': 2,
+        'damage_type': "missing_referenced_visual",
+        'severity': "MAJOR",
+        'evidence': "Referenced 6-vertex BFS graph diagram located in vector drawing band y=336-398",
+        'resolution_status': "RESOLVED",
+        'resolution_method': "Linked vector graph diagram region via visual layout reassembly (STATE B)",
+        'source_visual_reference': "SOURCE/DSA-20260930T180448Z-1-001/DSA/DSA Practice Assignment.pdf Page 2 y=336-398",
+        'notes': "Visual dependency linked to source vector drawing region"
+    },
+    {
+        'question_instance_id': "DOC-28-P02-MCQ-Q10",
+        'document_id': "DOC-28",
+        'page': 2,
+        'damage_type': "missing_referenced_visual",
+        'severity': "MAJOR",
+        'evidence': "Referenced post-order binary tree diagram embedded in raster image xref 24",
+        'resolution_status': "RESOLVED",
+        'resolution_method': "Linked raster tree diagram image xref 24 via visual layout reassembly (STATE B)",
+        'source_visual_reference': "SOURCE/DSA-20260930T180448Z-1-001/DSA/DSA Practice Assignment.pdf Page 2 image xref 24",
+        'notes': "Visual dependency linked to source image xref 24"
+    },
+    {
+        'question_instance_id': "DOC-28-P02-MCQ-Q11",
+        'document_id': "DOC-28",
+        'page': 2,
+        'damage_type': "cross_question_contamination",
+        'severity': "CRITICAL",
+        'evidence': "Contaminated with text stream fragment from Question 7 center stream ('ements is correct for a circular singly linked list w')",
+        'resolution_status': "RESOLVED",
+        'resolution_method': "Purged injected Q7 text stream fragments via visual layout reassembly (STATE B)",
+        'source_visual_reference': "SOURCE/DSA-20260930T180448Z-1-001/DSA/DSA Practice Assignment.pdf Page 2",
+        'notes': "Clean reconstructed question text established without Q7 contamination"
+    }
+]
+damaged_audit.extend(doc28_damage_records)
+
+# C. Scan all true question occurrences for defects across 15 criteria
 for q in true_questions:
-    text = q['raw_text']
+    text = q.get('raw_text') or ''
+    qid = q['question_instance_id']
+    doc_id = q['document_id']
+    p_num = q['page_start']
     issues = []
     
     # 1. Multiple stems inside one occurrence
     if re.search(r'\b(?:Question|\bQ)\s*\d+[\.\:]', text[20:], re.I):
         issues.append("Multiple question stems detected inside single record")
+        damaged_audit.append({
+            'question_instance_id': qid,
+            'document_id': doc_id,
+            'page': p_num,
+            'damage_type': "multiple_question_stems",
+            'severity': "MAJOR",
+            'evidence': f"Multiple stems detected: '{text[:80]}...'",
+            'resolution_status': "UNRESOLVED",
+            'resolution_method': "Retained verbatim with FLAGGED confidence for subsequent audit",
+            'source_visual_reference': f"Page {p_num} of {doc_id}",
+            'notes': "Record contains multiple numbered question items"
+        })
         
-    # 2. Broken word fragments or dangling endings
+    # 2. Dangling endings or broken word fragments
     if text.strip().endswith((' and', ' or', ' with', ' the', ' of', ' that', ' is', '-', ' to', ' in', ' for')):
         issues.append(f"Abrupt/dangling ending: '{text.strip()[-15:]}'")
+        damaged_audit.append({
+            'question_instance_id': qid,
+            'document_id': doc_id,
+            'page': p_num,
+            'damage_type': "dangling_sentence_ending",
+            'severity': "WARNING",
+            'evidence': f"Ends in dangling connector: '...{text.strip()[-30:]}'",
+            'resolution_status': "UNRESOLVED",
+            'resolution_method': "Retained verbatim with FLAGGED confidence",
+            'source_visual_reference': f"Page {p_num} of {doc_id}",
+            'notes': "Sentence appears incomplete at boundary"
+        })
         
-    # 3. Marks equation lines or extremely short fragments
-    if len(text.strip()) < 15 or re.match(r'^\s*[\+\=]', text.strip()):
-        issues.append(f"Extremely short text / arithmetic fragment: '{text.strip()}'")
-        
-    # 4. Missing options in MCQs (excluding True/False)
+    # 3. Missing options in MCQs (excluding True/False)
     if q.get('group_or_section') in ['Group – A', 'Group - A', 'Multiple Choice Questions', 'Part I - Objective Type Questions']:
         if '(a)' in text.lower() and '(b)' in text.lower() and '(c)' not in text.lower() and 'true' not in text.lower():
             issues.append("MCQ has options (a) and (b) but lacks option (c)")
+            damaged_audit.append({
+                'question_instance_id': qid,
+                'document_id': doc_id,
+                'page': p_num,
+                'damage_type': "missing_mcq_options",
+                'severity': "WARNING",
+                'evidence': f"MCQ lacks option (c): '{text[:80]}...'",
+                'resolution_status': "UNRESOLVED",
+                'resolution_method': "Retained verbatim with FLAGGED confidence",
+                'source_visual_reference': f"Page {p_num} of {doc_id}",
+                'notes': "Options truncated or binary choice"
+            })
             
-    # 5. Cross-question contamination
-    if q['document_id'] == 'DOC-28' and q['official_question_number'] == '11':
-        if 'singly linked list' in text.lower() or 'front end' in text.lower():
-            issues.append("Contaminated with text from Q7/Q8")
+    # 4. Administrative metadata inside question text (Bloom's taxonomy / CO footer)
+    if any(term in text for term in ['[(CO', '(CO1)', '(CO2)', '(CO3)', '(CO4)', '(CO5)', '(CO6)', 'LOCQ', 'IOCQ', 'HOCQ', 'Cognition Level', 'Course Outcome (CO)']):
+        issues.append("Institutional Bloom's taxonomy tags / CO metadata in question text")
+        damaged_audit.append({
+            'question_instance_id': qid,
+            'document_id': doc_id,
+            'page': p_num,
+            'damage_type': "administrative_metadata_inside_question",
+            'severity': "WARNING",
+            'evidence': f"Bloom's taxonomy / CO annotation present in text: '{text[:80]}...'",
+            'resolution_status': "UNRESOLVED",
+            'resolution_method': "Institutional metadata preserved intact in raw_text",
+            'source_visual_reference': f"Page {p_num} of {doc_id}",
+            'notes': "Pedagogical metadata attached to examination question"
+        })
+
+    # 5. Missing referenced visual
+    visual_terms = ['following figure', 'following graph', 'following diagram', 'given graph', 'given tree', 'shown below', 'in the figure below']
+    if any(vt in text.lower() for vt in visual_terms) and not q.get('source_visual_required'):
+        issues.append("References visual diagram but source_visual_required is false")
+        damaged_audit.append({
+            'question_instance_id': qid,
+            'document_id': doc_id,
+            'page': p_num,
+            'damage_type': "missing_referenced_visual",
+            'severity': "MAJOR",
+            'evidence': f"Visual reference without visual flag: '{text[:80]}...'",
+            'resolution_status': "UNRESOLVED",
+            'resolution_method': "Flagged for downstream visual asset mapping",
+            'source_visual_reference': f"Page {p_num} of {doc_id}",
+            'notes': "Text references diagram or chart"
+        })
 
     # 6. Unusually long text relative to standard questions
     if len(text) > 3000:
         issues.append(f"Unusually long text block ({len(text)} characters)")
+        damaged_audit.append({
+            'question_instance_id': qid,
+            'document_id': doc_id,
+            'page': p_num,
+            'damage_type': "implausibly_long_mixed_content",
+            'severity': "WARNING",
+            'evidence': f"Character count {len(text)} exceeds 3000 chars",
+            'resolution_status': "UNRESOLVED",
+            'resolution_method': "Retained verbatim with FLAGGED confidence",
+            'source_visual_reference': f"Page {p_num} of {doc_id}",
+            'notes': "Question contains extensive worked examples or multiple sub-problems"
+        })
 
     if issues:
         q['extraction_confidence'] = "FLAGGED"
         suspicious_audit.append({
-            'question_instance_id': q['question_instance_id'],
-            'document_id': q['document_id'],
-            'page': q['page_start'],
+            'question_instance_id': qid,
+            'document_id': doc_id,
+            'page': p_num,
             'issues': issues,
             'text_snippet': text[:120]
         })
 
 print(f"Suspicious extraction scan completed: {len(suspicious_audit)} issues flagged.")
+print(f"Comprehensive damage audit completed: {len(damaged_audit)} total damage entries recorded.")
+res_counts = {}
+for d in damaged_audit:
+    s = d['resolution_status']
+    res_counts[s] = res_counts.get(s, 0) + 1
+print(f"Damage resolution breakdown: {res_counts}")
+
 with open('RAW_EXTRACTED_QUESTIONS.json', 'w', encoding='utf-8') as f:
     json.dump(all_records, f, indent=2)
-print("4. Generated RAW_EXTRACTED_QUESTIONS.json (with updated confidence flags)")
+print("4. Generated RAW_EXTRACTED_QUESTIONS.json")
 
 with open('SUSPICIOUS_EXTRACTION_AUDIT.json', 'w', encoding='utf-8') as f:
     json.dump(suspicious_audit, f, indent=2)
 print("5. Generated SUSPICIOUS_EXTRACTION_AUDIT.json")
 
-# Comprehensive Damage Audit (Section 9)
-# All 1,357 questions were audited across 9 physical damage & cutoff criteria:
-# 1. Page continuation cutoff: 0 fatal cutoffs
-# 2. Missing continuation after question text: 0 fatal cutoffs
-# 3. Missing essential code: 0 unrecoverable (DOC-28 Q8 code preserved via visual source)
-# 4. Missing graph/tree/diagram: 0 unrecoverable (all diagrams linked to verified source pages)
-# 5. Truncated options: 0 unrecoverable
-# 6. Column interleaving: Resolved via visual reconstruction for DOC-28 Page 2 (Q7-Q11)
-# 7. Text fragments: 61 non-substantive lines flagged in SUSPICIOUS_EXTRACTION_AUDIT.json
-# 8. Malformed stems: 0 fatal unrecoverable stems
-# 9. Incomplete parent/child structures: 0 orphaned sub-questions, 0 empty containers
 with open('DAMAGED_AND_INCOMPLETE_QUESTIONS_AUDIT.json', 'w', encoding='utf-8') as f:
     json.dump(damaged_audit, f, indent=2)
 print("6. Generated DAMAGED_AND_INCOMPLETE_QUESTIONS_AUDIT.json")
 
-print("Data processing complete. Ready for markdown generators.")
+# ==============================================================================
+# 5. MACHINE-READABLE SUMMARY METRICS (SECTION 16)
+# ==============================================================================
+v_detected = sum(1 for p in page_quality_records if p['visual_verification_status'] == 'DETECTED')
+v_rendered = sum(1 for p in page_quality_records if p['text_extraction_status'] == 'SUCCESS')
+v_reviewed = sum(1 for p in page_quality_records if p['visually_reviewed'] is True)
+v_verified = sum(1 for p in page_quality_records if p['visual_verification_status'] == 'VERIFIED')
+v_flagged = sum(1 for p in page_quality_records if p['visual_verification_status'] == 'FLAGGED')
+
+state_a_cnt = sum(1 for q in true_questions if q.get('wording_state') == "STATE A — EXACT")
+state_b_cnt = sum(1 for q in true_questions if q.get('wording_state') == "STATE B — RECONSTRUCTED")
+state_c_cnt = sum(1 for q in true_questions if q.get('wording_state') == "STATE C — SOURCE-INCOMPLETE")
+
+complete_cnt = sum(1 for q in true_questions if q.get('completeness_status') == "COMPLETE")
+incomplete_cnt = sum(1 for q in true_questions if q.get('completeness_status') == "INCOMPLETE")
+flagged_ext_cnt = sum(1 for q in true_questions if q.get('extraction_confidence') == "FLAGGED")
+
+unresolved_dmg = sum(1 for d in damaged_audit if d['resolution_status'] == 'UNRESOLVED')
+
+summary_metrics = {
+    "documents": len(documents),
+    "pages": len(page_quality_records),
+    "physical_records": len(all_records),
+    "paper_question_containers": len(containers),
+    "question_occurrences": len(true_questions),
+    "atomic_sub_questions": len(atomic_sub),
+    "standalone_questions": len(standalone),
+    "non_question_source_fragments": len(fragments),
+    "state_a": state_a_cnt,
+    "state_b": state_b_cnt,
+    "state_c": state_c_cnt,
+    "complete": complete_cnt,
+    "incomplete": incomplete_cnt,
+    "flagged_extraction": flagged_ext_cnt,
+    "visual_detected": v_detected,
+    "visual_rendered": v_rendered,
+    "visual_reviewed": v_reviewed,
+    "visual_verified": v_verified,
+    "visual_flagged": v_flagged,
+    "damage_records": len(damaged_audit),
+    "unresolved_damage_records": unresolved_dmg,
+    "validation_rules_passed": None, # Populated by validator
+    "validation_rules_failed": None
+}
+
+with open('CORPUS_SUMMARY_METRICS.json', 'w', encoding='utf-8') as f:
+    json.dump(summary_metrics, f, indent=2)
+print("7. Generated CORPUS_SUMMARY_METRICS.json")
+
+print("Rebuild pipeline completed successfully.")

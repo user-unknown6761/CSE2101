@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "CSE2101_Phase1_Corpus_Schema",
-  "description": "Authoritative machine-readable schema for Phase 1.1 Source Corpus Audit & Ingestion deliverables.",
+  "description": "Authoritative machine-readable schema for Phase 1.2 Source Corpus Audit & Ingestion deliverables.",
   "definitions": {
     "Document": {
       "type": "object",
@@ -103,14 +103,20 @@
         },
         "text_extraction_status": {
           "type": "string",
-          "enum": ["SUCCESS", "SCANNED_IMAGE_ONLY", "MINIMAL_TEXT"]
+          "enum": ["SUCCESS", "PARTIAL", "FAILED"]
         },
-        "duplicate_group": {
-          "type": ["string", "null"]
+        "visual_presence": {
+          "type": "boolean"
         },
-        "is_duplicate_of": {
-          "type": ["array", "null"],
-          "items": { "type": "string" }
+        "visual_elements_count": {
+          "type": "integer"
+        },
+        "extraction_confidence": {
+          "type": "string",
+          "enum": ["HIGH", "MEDIUM", "LOW", "FLAGGED"]
+        },
+        "provisional_notes": {
+          "type": "string"
         }
       }
     },
@@ -125,18 +131,20 @@
         "page_end",
         "group_or_section",
         "official_question_number",
-        "container_title",
         "child_question_instance_ids",
-        "is_student_answerable",
-        "marks_status"
+        "container_title",
+        "completeness_status",
+        "extraction_confidence",
+        "source_tier",
+        "source_type",
+        "source_established_metadata",
+        "marks_status",
+        "is_student_answerable"
       ],
       "properties": {
         "record_type": {
           "type": "string",
           "const": "paper_question_container"
-        },
-        "occurrence_type": {
-          "type": "null"
         },
         "question_instance_id": {
           "type": "string"
@@ -207,6 +215,9 @@
         "marks_status": {
           "type": "string",
           "const": "container_aggregate_unallocated"
+        },
+        "marks_source_evidence": {
+          "type": "null"
         },
         "has_diagram_or_image": {
           "type": "boolean",
@@ -353,7 +364,17 @@
         },
         "marks_status": {
           "type": "string",
-          "enum": ["physically_established", "not_specified"]
+          "enum": ["physically_established", "not_specified", "container_aggregate_unallocated"]
+        },
+        "marks_source_evidence": {
+          "type": ["object", "null"],
+          "properties": {
+            "source_page": { "type": "integer" },
+            "source_reference": { "type": "string" },
+            "evidence_text": { "type": "string" },
+            "evidence_type": { "type": "string" },
+            "confidence": { "type": "string", "enum": ["HIGH", "MEDIUM", "LOW"] }
+          }
         },
         "has_diagram_or_image": {
           "type": "boolean"
@@ -376,10 +397,128 @@
         }
       }
     },
+    "NonQuestionSourceFragment": {
+      "type": "object",
+      "required": [
+        "record_type",
+        "question_instance_id",
+        "document_id",
+        "source_file",
+        "page_start",
+        "page_end",
+        "raw_text",
+        "fragment_category",
+        "is_student_answerable"
+      ],
+      "properties": {
+        "record_type": {
+          "type": "string",
+          "const": "non_question_source_fragment"
+        },
+        "occurrence_type": {
+          "type": "string",
+          "const": "non_question_fragment"
+        },
+        "question_instance_id": {
+          "type": "string"
+        },
+        "document_id": {
+          "type": "string"
+        },
+        "source_file": {
+          "type": "string"
+        },
+        "page_start": {
+          "type": "integer"
+        },
+        "page_end": {
+          "type": "integer"
+        },
+        "group_or_section": {
+          "type": ["string", "null"]
+        },
+        "official_question_number": {
+          "type": ["string", "null"]
+        },
+        "sub_question_id": {
+          "type": ["string", "null"]
+        },
+        "parent_question_container_id": {
+          "type": ["string", "null"]
+        },
+        "raw_text": {
+          "type": "string"
+        },
+        "fragment_category": {
+          "type": "string",
+          "enum": [
+            "marks_allocation_equation",
+            "marks_summary_fragment",
+            "course_outcome_footer",
+            "administrative_footer",
+            "solution_answer_key_fragment",
+            "page_boundary_noise"
+          ]
+        },
+        "wording_state": {
+          "type": ["string", "null"]
+        },
+        "wording_status": {
+          "type": ["string", "null"]
+        },
+        "reconstruction_metadata": {
+          "type": "null"
+        },
+        "completeness_status": {
+          "type": "string"
+        },
+        "extraction_confidence": {
+          "type": "string"
+        },
+        "source_tier": {
+          "type": "integer"
+        },
+        "source_type": {
+          "type": "string"
+        },
+        "source_established_metadata": {
+          "type": "object"
+        },
+        "marks": {
+          "type": ["string", "null"]
+        },
+        "marks_status": {
+          "type": "string"
+        },
+        "marks_source_evidence": {
+          "type": ["object", "null"]
+        },
+        "has_diagram_or_image": {
+          "type": "boolean"
+        },
+        "source_visual_required": {
+          "type": "boolean"
+        },
+        "source_visual_page": {
+          "type": ["integer", "null"]
+        },
+        "source_visual_region": {
+          "type": ["string", "null"]
+        },
+        "source_visual_reason": {
+          "type": ["string", "null"]
+        },
+        "is_student_answerable": {
+          "type": "boolean",
+          "const": false
+        }
+      }
+    },
     "Record": {
       "oneOf": [
         { "$ref": "#/definitions/PaperQuestionContainer" },
-        { "$ref": "#/definitions/QuestionOccurrence" }
+        { "$ref": "#/definitions/QuestionOccurrence" },
+        { "$ref": "#/definitions/NonQuestionSourceFragment" }
       ]
     },
     "PageAudit": {
@@ -394,6 +533,8 @@
         "text_extraction_confidence",
         "visual_inspection_required",
         "visual_verification_status",
+        "visually_reviewed",
+        "verified",
         "overall_confidence",
         "ocr_used",
         "ocr_recommended",
@@ -413,7 +554,16 @@
         "text_extraction_status": { "type": "string" },
         "text_extraction_confidence": { "type": "string", "enum": ["HIGH", "MEDIUM", "LOW"] },
         "visual_inspection_required": { "type": "boolean" },
-        "visual_verification_status": { "type": "string", "enum": ["NOT_REQUIRED", "REQUIRED", "VERIFIED", "FLAGGED"] },
+        "visual_verification_status": {
+          "type": "string",
+          "enum": ["NOT_REQUIRED", "DETECTED", "RENDERED", "VISUALLY_REVIEWED", "VERIFIED", "FLAGGED"]
+        },
+        "visually_reviewed": { "type": "boolean" },
+        "verified": { "type": "boolean" },
+        "review_method": { "type": ["string", "null"] },
+        "review_record": { "type": ["string", "null"] },
+        "verification_basis": { "type": ["string", "null"] },
+        "verification_confidence": { "type": ["string", "null"] },
         "overall_confidence": { "type": "string", "enum": ["HIGH", "MEDIUM", "FLAGGED"] },
         "ocr_used": { "type": "boolean" },
         "ocr_recommended": { "type": "boolean" },
@@ -437,6 +587,8 @@
         "table_present",
         "visual_inspection_required",
         "visual_verification_status",
+        "visually_reviewed",
+        "verified",
         "inspection_notes"
       ],
       "properties": {
@@ -448,7 +600,16 @@
         "vector_drawings_count": { "type": "integer" },
         "table_present": { "type": "boolean" },
         "visual_inspection_required": { "type": "boolean" },
-        "visual_verification_status": { "type": "string", "enum": ["NOT_REQUIRED", "REQUIRED", "VERIFIED", "FLAGGED"] },
+        "visual_verification_status": {
+          "type": "string",
+          "enum": ["DETECTED", "RENDERED", "VISUALLY_REVIEWED", "VERIFIED", "FLAGGED"]
+        },
+        "visually_reviewed": { "type": "boolean" },
+        "verified": { "type": "boolean" },
+        "review_method": { "type": ["string", "null"] },
+        "review_record": { "type": ["string", "null"] },
+        "verification_basis": { "type": ["string", "null"] },
+        "verification_confidence": { "type": ["string", "null"] },
         "inspection_notes": { "type": "string" }
       }
     },
@@ -475,26 +636,31 @@
         "question_instance_id",
         "document_id",
         "page",
-        "source_file",
-        "visible_content",
-        "missing_component",
-        "exclusion_reason",
+        "damage_type",
         "severity",
-        "complete_occurrence_exists_elsewhere"
+        "evidence",
+        "resolution_status",
+        "resolution_method",
+        "source_visual_reference",
+        "notes"
       ],
       "properties": {
         "question_instance_id": { "type": "string" },
         "document_id": { "type": "string" },
         "page": { "type": "integer" },
-        "source_file": { "type": "string" },
-        "visible_content": { "type": "string" },
-        "missing_component": { "type": "string" },
-        "exclusion_reason": { "type": "string" },
+        "damage_type": { "type": "string" },
         "severity": {
           "type": "string",
-          "enum": ["FATAL", "HIGH", "MEDIUM"]
+          "enum": ["WARNING", "MAJOR", "CRITICAL"]
         },
-        "complete_occurrence_exists_elsewhere": { "type": "boolean" }
+        "evidence": { "type": "string" },
+        "resolution_status": {
+          "type": "string",
+          "enum": ["RESOLVED", "UNRESOLVED", "NOT_APPLICABLE"]
+        },
+        "resolution_method": { "type": "string" },
+        "source_visual_reference": { "type": "string" },
+        "notes": { "type": "string" }
       }
     }
   }

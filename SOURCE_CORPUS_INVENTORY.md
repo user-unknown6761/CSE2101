@@ -1,5 +1,5 @@
 # CSE2101 — Source Corpus Inventory
-**Phase 1.1: Extraction Integrity Correction**  
+**Phase 1.2: Extraction Provenance, Damage Audit & Validator Integrity Correction**  
 **Curriculum / Course Context:** CSE / CSEN 2101 Data Structures and Algorithms  
 **Generated On:** 2026-10-02  
 **Status:** Authoritative Source Inventory Complete (33 Discovered PDFs)
@@ -17,10 +17,10 @@ This inventory establishes the baseline physical corpus for the CSE/CSEN 2101 Da
 - **Byte-Identical Duplicate Groups:** 7 groups (19 duplicate files across 33 instances)
 - **Question-Bearing Documents:** 27
 - **Non-Question Academic Material (Slides/Notes):** 6
-- **Tier 1 (Official University Exam Papers):** 22 documents (1,071 source records, 864 true questions)
+- **Tier 1 (Official University Exam Papers):** 22 documents (1,071 physical records: 196 containers, 769 true questions, 106 non-question fragments)
 - **Tier 2 (Confirmed Institutional Question Banks):** 0 documents (unconfirmed authority relegated to Tier 3)
-- **Tier 3 (Practice Sets & Unconfirmed Question Banks):** 3 documents (416 source records, 416 true questions)
-- **Tier 4 (Solutions & Academic Study Notes):** 8 documents (97 source records, 77 true questions in solution docs)
+- **Tier 3 (Practice Sets & Unconfirmed Question Banks):** 3 documents (416 physical records: 416 true questions)
+- **Tier 4 (Solutions & Academic Study Notes):** 8 documents (97 physical records: 17 containers, 75 true questions, 5 non-question fragments)
 
 ---
 

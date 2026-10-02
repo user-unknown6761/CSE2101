@@ -8,8 +8,14 @@
     "vector_drawings_count": 19,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "19 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "19 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-01",
@@ -20,8 +26,14 @@
     "vector_drawings_count": 0,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "1 raster image(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "1 raster image(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-01",
@@ -32,8 +44,14 @@
     "vector_drawings_count": 27,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "2 raster image(s) verified present and legible; 27 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "2 raster image(s) detected via automated analysis; 27 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-02",
@@ -44,8 +62,14 @@
     "vector_drawings_count": 7,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "1 raster image(s) verified present and legible; 7 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "1 raster image(s) detected via automated analysis; 7 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-02",
@@ -56,8 +80,14 @@
     "vector_drawings_count": 0,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "2 raster image(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "2 raster image(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-02",
@@ -68,8 +98,14 @@
     "vector_drawings_count": 0,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "1 raster image(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "1 raster image(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-02",
@@ -80,8 +116,14 @@
     "vector_drawings_count": 0,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "2 raster image(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "2 raster image(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-02",
@@ -92,8 +134,14 @@
     "vector_drawings_count": 88,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "1 raster image(s) verified present and legible; 88 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "1 raster image(s) detected via automated analysis; 88 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-02",
@@ -104,8 +152,14 @@
     "vector_drawings_count": 94,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "1 raster image(s) verified present and legible; 94 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "1 raster image(s) detected via automated analysis; 94 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-03",
@@ -116,8 +170,14 @@
     "vector_drawings_count": 6,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "1 raster image(s) verified present and legible; 6 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "1 raster image(s) detected via automated analysis; 6 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-03",
@@ -128,8 +188,14 @@
     "vector_drawings_count": 0,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "1 raster image(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "1 raster image(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-03",
@@ -140,8 +206,14 @@
     "vector_drawings_count": 42,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "42 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "42 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-04",
@@ -152,8 +224,14 @@
     "vector_drawings_count": 6,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "1 raster image(s) verified present and legible; 6 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "1 raster image(s) detected via automated analysis; 6 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-04",
@@ -164,8 +242,14 @@
     "vector_drawings_count": 0,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "1 raster image(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "1 raster image(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-04",
@@ -176,8 +260,14 @@
     "vector_drawings_count": 42,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "42 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "42 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-05",
@@ -188,8 +278,14 @@
     "vector_drawings_count": 6,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "1 raster image(s) verified present and legible; 6 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "1 raster image(s) detected via automated analysis; 6 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-05",
@@ -200,8 +296,14 @@
     "vector_drawings_count": 0,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "1 raster image(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "1 raster image(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-05",
@@ -212,8 +314,14 @@
     "vector_drawings_count": 42,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "42 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "42 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-06",
@@ -224,8 +332,14 @@
     "vector_drawings_count": 11,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "11 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "11 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-06",
@@ -236,8 +350,14 @@
     "vector_drawings_count": 7,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "1 raster image(s) verified present and legible; 7 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "1 raster image(s) detected via automated analysis; 7 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-06",
@@ -248,8 +368,14 @@
     "vector_drawings_count": 45,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "45 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "45 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-07",
@@ -260,8 +386,14 @@
     "vector_drawings_count": 11,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "11 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "11 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-07",
@@ -272,8 +404,14 @@
     "vector_drawings_count": 7,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "1 raster image(s) verified present and legible; 7 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "1 raster image(s) detected via automated analysis; 7 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-07",
@@ -284,8 +422,14 @@
     "vector_drawings_count": 45,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "45 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "45 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-08",
@@ -296,8 +440,14 @@
     "vector_drawings_count": 11,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "11 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "11 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-08",
@@ -308,8 +458,14 @@
     "vector_drawings_count": 7,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "1 raster image(s) verified present and legible; 7 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "1 raster image(s) detected via automated analysis; 7 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-08",
@@ -320,8 +476,14 @@
     "vector_drawings_count": 45,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "45 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "45 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-09",
@@ -332,8 +494,14 @@
     "vector_drawings_count": 11,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "11 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "11 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-09",
@@ -344,8 +512,14 @@
     "vector_drawings_count": 7,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "1 raster image(s) verified present and legible; 7 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "1 raster image(s) detected via automated analysis; 7 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-09",
@@ -356,8 +530,14 @@
     "vector_drawings_count": 45,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "45 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "45 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-10",
@@ -368,8 +548,14 @@
     "vector_drawings_count": 6,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "2 raster image(s) verified present and legible; 6 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "2 raster image(s) detected via automated analysis; 6 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-10",
@@ -380,8 +566,14 @@
     "vector_drawings_count": 4,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "1 raster image(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "1 raster image(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-10",
@@ -392,8 +584,14 @@
     "vector_drawings_count": 0,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "2 raster image(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "2 raster image(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-10",
@@ -404,8 +602,14 @@
     "vector_drawings_count": 42,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "42 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "42 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-11",
@@ -416,8 +620,14 @@
     "vector_drawings_count": 6,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "2 raster image(s) verified present and legible; 6 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "2 raster image(s) detected via automated analysis; 6 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-11",
@@ -428,8 +638,14 @@
     "vector_drawings_count": 4,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "1 raster image(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "1 raster image(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-11",
@@ -440,8 +656,14 @@
     "vector_drawings_count": 0,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "2 raster image(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "2 raster image(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-11",
@@ -452,8 +674,14 @@
     "vector_drawings_count": 42,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "42 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "42 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-12",
@@ -464,8 +692,14 @@
     "vector_drawings_count": 6,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "2 raster image(s) verified present and legible; 6 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "2 raster image(s) detected via automated analysis; 6 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-12",
@@ -476,8 +710,14 @@
     "vector_drawings_count": 4,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "1 raster image(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "1 raster image(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-12",
@@ -488,8 +728,14 @@
     "vector_drawings_count": 0,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "2 raster image(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "2 raster image(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-12",
@@ -500,8 +746,14 @@
     "vector_drawings_count": 42,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "42 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "42 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-13",
@@ -512,8 +764,14 @@
     "vector_drawings_count": 11,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "1 raster image(s) verified present and legible; 11 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "1 raster image(s) detected via automated analysis; 11 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-13",
@@ -524,8 +782,14 @@
     "vector_drawings_count": 2,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "1 raster image(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "1 raster image(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-13",
@@ -536,8 +800,14 @@
     "vector_drawings_count": 139,
     "table_present": true,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "139 vector drawing path(s) verified present and legible; Tabular structure verified"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "139 vector drawing path(s) detected via automated analysis; Tabular structure detected via pattern scan"
   },
   {
     "document_id": "DOC-14",
@@ -548,8 +818,14 @@
     "vector_drawings_count": 11,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "1 raster image(s) verified present and legible; 11 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "1 raster image(s) detected via automated analysis; 11 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-14",
@@ -560,8 +836,14 @@
     "vector_drawings_count": 2,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "1 raster image(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "1 raster image(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-14",
@@ -572,8 +854,14 @@
     "vector_drawings_count": 139,
     "table_present": true,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "139 vector drawing path(s) verified present and legible; Tabular structure verified"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "139 vector drawing path(s) detected via automated analysis; Tabular structure detected via pattern scan"
   },
   {
     "document_id": "DOC-15",
@@ -584,8 +872,14 @@
     "vector_drawings_count": 11,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "1 raster image(s) verified present and legible; 11 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "1 raster image(s) detected via automated analysis; 11 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-15",
@@ -596,8 +890,14 @@
     "vector_drawings_count": 2,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "1 raster image(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "1 raster image(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-15",
@@ -608,8 +908,14 @@
     "vector_drawings_count": 139,
     "table_present": true,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "139 vector drawing path(s) verified present and legible; Tabular structure verified"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "139 vector drawing path(s) detected via automated analysis; Tabular structure detected via pattern scan"
   },
   {
     "document_id": "DOC-16",
@@ -620,8 +926,14 @@
     "vector_drawings_count": 11,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "1 raster image(s) verified present and legible; 11 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "1 raster image(s) detected via automated analysis; 11 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-16",
@@ -632,8 +944,14 @@
     "vector_drawings_count": 2,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "1 raster image(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "1 raster image(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-16",
@@ -644,8 +962,14 @@
     "vector_drawings_count": 139,
     "table_present": true,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "139 vector drawing path(s) verified present and legible; Tabular structure verified"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "139 vector drawing path(s) detected via automated analysis; Tabular structure detected via pattern scan"
   },
   {
     "document_id": "DOC-18",
@@ -656,8 +980,14 @@
     "vector_drawings_count": 3,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "1 raster image(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "1 raster image(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-18",
@@ -668,8 +998,14 @@
     "vector_drawings_count": 13,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "13 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "13 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-18",
@@ -680,8 +1016,14 @@
     "vector_drawings_count": 0,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "1 raster image(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "1 raster image(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-18",
@@ -692,8 +1034,14 @@
     "vector_drawings_count": 59,
     "table_present": true,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "59 vector drawing path(s) verified present and legible; Tabular structure verified"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "59 vector drawing path(s) detected via automated analysis; Tabular structure detected via pattern scan"
   },
   {
     "document_id": "DOC-18",
@@ -704,8 +1052,14 @@
     "vector_drawings_count": 0,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "1 raster image(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "1 raster image(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-18",
@@ -716,8 +1070,14 @@
     "vector_drawings_count": 0,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "1 raster image(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "1 raster image(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-18",
@@ -728,8 +1088,14 @@
     "vector_drawings_count": 0,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "1 raster image(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "1 raster image(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-18",
@@ -740,8 +1106,14 @@
     "vector_drawings_count": 0,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "1 raster image(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "1 raster image(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-18",
@@ -752,8 +1124,14 @@
     "vector_drawings_count": 0,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "2 raster image(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "2 raster image(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-18",
@@ -764,8 +1142,14 @@
     "vector_drawings_count": 0,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "1 raster image(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "1 raster image(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-18",
@@ -776,8 +1160,14 @@
     "vector_drawings_count": 0,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "1 raster image(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "1 raster image(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-18",
@@ -788,8 +1178,14 @@
     "vector_drawings_count": 0,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "2 raster image(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "2 raster image(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-18",
@@ -800,8 +1196,14 @@
     "vector_drawings_count": 0,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "1 raster image(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "1 raster image(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-18",
@@ -812,8 +1214,14 @@
     "vector_drawings_count": 0,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "1 raster image(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "1 raster image(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-18",
@@ -824,8 +1232,14 @@
     "vector_drawings_count": 0,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "1 raster image(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "1 raster image(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-18",
@@ -836,8 +1250,14 @@
     "vector_drawings_count": 0,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "1 raster image(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "1 raster image(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-19",
@@ -848,8 +1268,14 @@
     "vector_drawings_count": 40,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "1 raster image(s) verified present and legible; 40 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "1 raster image(s) detected via automated analysis; 40 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-19",
@@ -860,8 +1286,14 @@
     "vector_drawings_count": 45,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "1 raster image(s) verified present and legible; 45 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "1 raster image(s) detected via automated analysis; 45 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-19",
@@ -872,8 +1304,14 @@
     "vector_drawings_count": 31,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "2 raster image(s) verified present and legible; 31 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "2 raster image(s) detected via automated analysis; 31 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-19",
@@ -884,8 +1322,14 @@
     "vector_drawings_count": 3,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "2 raster image(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "2 raster image(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-19",
@@ -896,8 +1340,14 @@
     "vector_drawings_count": 4,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "2 raster image(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "2 raster image(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-19",
@@ -908,8 +1358,14 @@
     "vector_drawings_count": 3,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "2 raster image(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "2 raster image(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-19",
@@ -920,8 +1376,14 @@
     "vector_drawings_count": 3,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "2 raster image(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "2 raster image(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-19",
@@ -932,8 +1394,14 @@
     "vector_drawings_count": 4,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "2 raster image(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "2 raster image(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-19",
@@ -944,8 +1412,14 @@
     "vector_drawings_count": 4,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "1 raster image(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "1 raster image(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-19",
@@ -956,8 +1430,14 @@
     "vector_drawings_count": 3,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "3 raster image(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "3 raster image(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-19",
@@ -968,8 +1448,14 @@
     "vector_drawings_count": 3,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "2 raster image(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "2 raster image(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-19",
@@ -980,8 +1466,14 @@
     "vector_drawings_count": 3,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "3 raster image(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "3 raster image(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-19",
@@ -992,8 +1484,14 @@
     "vector_drawings_count": 4,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "2 raster image(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "2 raster image(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-19",
@@ -1004,8 +1502,14 @@
     "vector_drawings_count": 83,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "1 raster image(s) verified present and legible; 83 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "1 raster image(s) detected via automated analysis; 83 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-19",
@@ -1016,8 +1520,14 @@
     "vector_drawings_count": 5,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "1 raster image(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "1 raster image(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-19",
@@ -1028,8 +1538,14 @@
     "vector_drawings_count": 6,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "1 raster image(s) verified present and legible; 6 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "1 raster image(s) detected via automated analysis; 6 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-19",
@@ -1040,8 +1556,14 @@
     "vector_drawings_count": 47,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "1 raster image(s) verified present and legible; 47 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "1 raster image(s) detected via automated analysis; 47 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-20",
@@ -1052,8 +1574,14 @@
     "vector_drawings_count": 7,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "1 raster image(s) verified present and legible; 7 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "1 raster image(s) detected via automated analysis; 7 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-20",
@@ -1064,8 +1592,14 @@
     "vector_drawings_count": 0,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "2 raster image(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "2 raster image(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-20",
@@ -1076,8 +1610,14 @@
     "vector_drawings_count": 0,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "1 raster image(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "1 raster image(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-20",
@@ -1088,8 +1628,14 @@
     "vector_drawings_count": 0,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "2 raster image(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "2 raster image(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-20",
@@ -1100,8 +1646,14 @@
     "vector_drawings_count": 88,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "1 raster image(s) verified present and legible; 88 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "1 raster image(s) detected via automated analysis; 88 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-20",
@@ -1112,8 +1664,14 @@
     "vector_drawings_count": 94,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "1 raster image(s) verified present and legible; 94 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "1 raster image(s) detected via automated analysis; 94 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-21",
@@ -1124,8 +1682,14 @@
     "vector_drawings_count": 19,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "19 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "19 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-21",
@@ -1136,8 +1700,14 @@
     "vector_drawings_count": 0,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "1 raster image(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "1 raster image(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-21",
@@ -1148,8 +1718,14 @@
     "vector_drawings_count": 27,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "2 raster image(s) verified present and legible; 27 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "2 raster image(s) detected via automated analysis; 27 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-22",
@@ -1160,8 +1736,14 @@
     "vector_drawings_count": 17,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "17 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "17 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-22",
@@ -1172,8 +1754,14 @@
     "vector_drawings_count": 20,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "20 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "20 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-22",
@@ -1184,8 +1772,14 @@
     "vector_drawings_count": 39,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "39 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "39 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-23",
@@ -1196,8 +1790,14 @@
     "vector_drawings_count": 17,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "17 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "17 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-23",
@@ -1208,8 +1808,14 @@
     "vector_drawings_count": 20,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "20 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "20 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-23",
@@ -1220,8 +1826,14 @@
     "vector_drawings_count": 39,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "39 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "39 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-25",
@@ -1232,8 +1844,14 @@
     "vector_drawings_count": 27,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "1 raster image(s) verified present and legible; 27 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "1 raster image(s) detected via automated analysis; 27 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-26",
@@ -1244,8 +1862,14 @@
     "vector_drawings_count": 7,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "1 raster image(s) verified present and legible; 7 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "1 raster image(s) detected via automated analysis; 7 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-26",
@@ -1256,8 +1880,14 @@
     "vector_drawings_count": 0,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "2 raster image(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "2 raster image(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-26",
@@ -1268,8 +1898,14 @@
     "vector_drawings_count": 0,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "1 raster image(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "1 raster image(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-26",
@@ -1280,8 +1916,14 @@
     "vector_drawings_count": 0,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "2 raster image(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "2 raster image(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-26",
@@ -1292,8 +1934,14 @@
     "vector_drawings_count": 88,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "1 raster image(s) verified present and legible; 88 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "1 raster image(s) detected via automated analysis; 88 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-26",
@@ -1304,20 +1952,32 @@
     "vector_drawings_count": 94,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "1 raster image(s) verified present and legible; 94 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "1 raster image(s) detected via automated analysis; 94 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-28",
     "filename": "DSA Practice Assignment.pdf",
     "page_number": 2,
-    "visual_element_type": "raster_image",
+    "visual_element_type": "raster_and_vector",
     "raster_images_count": 2,
     "vector_drawings_count": 0,
     "table_present": false,
     "visual_inspection_required": true,
     "visual_verification_status": "VERIFIED",
-    "inspection_notes": "Two-column layout with embedded C code (xref 24/22), BFS graph diagram, and binary tree diagram"
+    "visually_reviewed": true,
+    "verified": true,
+    "review_method": "rendered_page_review",
+    "review_record": "DOC28_PAGE2_RECONSTRUCTION_AUDIT.md",
+    "verification_basis": "Rendered 150 DPI inspection confirming 3 horizontal text streams, embedded C code image xref 22, vector graph region y=336-398, and binary tree image xref 24",
+    "verification_confidence": "HIGH",
+    "inspection_notes": "Special-case verified: Three horizontal text streams, C code image xref 22, vector graph y=336-398, and binary tree image xref 24 verified present and legible in rendered inspection"
   },
   {
     "document_id": "DOC-28",
@@ -1328,8 +1988,14 @@
     "vector_drawings_count": 88,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "88 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "88 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-28",
@@ -1340,8 +2006,14 @@
     "vector_drawings_count": 0,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "2 raster image(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "2 raster image(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-28",
@@ -1352,8 +2024,14 @@
     "vector_drawings_count": 21,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "21 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "21 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-28",
@@ -1364,8 +2042,14 @@
     "vector_drawings_count": 0,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "2 raster image(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "2 raster image(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-28",
@@ -1376,8 +2060,14 @@
     "vector_drawings_count": 0,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "2 raster image(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "2 raster image(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-28",
@@ -1388,8 +2078,14 @@
     "vector_drawings_count": 97,
     "table_present": true,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "97 vector drawing path(s) verified present and legible; Tabular structure verified"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "97 vector drawing path(s) detected via automated analysis; Tabular structure detected via pattern scan"
   },
   {
     "document_id": "DOC-30",
@@ -1400,8 +2096,14 @@
     "vector_drawings_count": 0,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "1 raster image(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "1 raster image(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-30",
@@ -1412,8 +2114,14 @@
     "vector_drawings_count": 0,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "2 raster image(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "2 raster image(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-30",
@@ -1424,8 +2132,14 @@
     "vector_drawings_count": 702,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "2 raster image(s) verified present and legible; 702 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "2 raster image(s) detected via automated analysis; 702 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-30",
@@ -1436,8 +2150,14 @@
     "vector_drawings_count": 0,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "1 raster image(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "1 raster image(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-30",
@@ -1448,8 +2168,14 @@
     "vector_drawings_count": 0,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "3 raster image(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "3 raster image(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-30",
@@ -1460,8 +2186,14 @@
     "vector_drawings_count": 0,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "2 raster image(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "2 raster image(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-30",
@@ -1472,8 +2204,14 @@
     "vector_drawings_count": 136,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "136 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "136 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-30",
@@ -1484,8 +2222,14 @@
     "vector_drawings_count": 0,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "4 raster image(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "4 raster image(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-30",
@@ -1496,8 +2240,14 @@
     "vector_drawings_count": 0,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "2 raster image(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "2 raster image(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-30",
@@ -1508,8 +2258,14 @@
     "vector_drawings_count": 0,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "2 raster image(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "2 raster image(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-30",
@@ -1520,8 +2276,14 @@
     "vector_drawings_count": 0,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "1 raster image(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "1 raster image(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-30",
@@ -1532,8 +2294,14 @@
     "vector_drawings_count": 0,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "1 raster image(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "1 raster image(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-31",
@@ -1544,8 +2312,14 @@
     "vector_drawings_count": 78,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "78 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "78 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-31",
@@ -1556,8 +2330,14 @@
     "vector_drawings_count": 35,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "35 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "35 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-31",
@@ -1568,8 +2348,14 @@
     "vector_drawings_count": 24,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "24 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "24 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-31",
@@ -1580,8 +2366,14 @@
     "vector_drawings_count": 18,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "18 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "18 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-31",
@@ -1592,8 +2384,14 @@
     "vector_drawings_count": 80,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "80 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "80 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-31",
@@ -1604,8 +2402,14 @@
     "vector_drawings_count": 51,
     "table_present": true,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "1 raster image(s) verified present and legible; 51 vector drawing path(s) verified present and legible; Tabular structure verified"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "1 raster image(s) detected via automated analysis; 51 vector drawing path(s) detected via automated analysis; Tabular structure detected via pattern scan"
   },
   {
     "document_id": "DOC-31",
@@ -1616,8 +2420,14 @@
     "vector_drawings_count": 67,
     "table_present": true,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "1 raster image(s) verified present and legible; 67 vector drawing path(s) verified present and legible; Tabular structure verified"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "1 raster image(s) detected via automated analysis; 67 vector drawing path(s) detected via automated analysis; Tabular structure detected via pattern scan"
   },
   {
     "document_id": "DOC-31",
@@ -1628,8 +2438,14 @@
     "vector_drawings_count": 71,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "71 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "71 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-31",
@@ -1640,8 +2456,14 @@
     "vector_drawings_count": 16,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "16 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "16 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-31",
@@ -1652,8 +2474,14 @@
     "vector_drawings_count": 2,
     "table_present": true,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "3 raster image(s) verified present and legible; Tabular structure verified"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "3 raster image(s) detected via automated analysis; Tabular structure detected via pattern scan"
   },
   {
     "document_id": "DOC-31",
@@ -1664,8 +2492,14 @@
     "vector_drawings_count": 1,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "2 raster image(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "2 raster image(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-31",
@@ -1676,8 +2510,14 @@
     "vector_drawings_count": 30,
     "table_present": true,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "30 vector drawing path(s) verified present and legible; Tabular structure verified"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "30 vector drawing path(s) detected via automated analysis; Tabular structure detected via pattern scan"
   },
   {
     "document_id": "DOC-31",
@@ -1688,8 +2528,14 @@
     "vector_drawings_count": 23,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "23 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "23 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-31",
@@ -1700,8 +2546,14 @@
     "vector_drawings_count": 4,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "1 raster image(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "1 raster image(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-31",
@@ -1712,8 +2564,14 @@
     "vector_drawings_count": 20,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "20 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "20 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-31",
@@ -1724,8 +2582,14 @@
     "vector_drawings_count": 16,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "16 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "16 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-31",
@@ -1736,8 +2600,14 @@
     "vector_drawings_count": 44,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "1 raster image(s) verified present and legible; 44 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "1 raster image(s) detected via automated analysis; 44 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-31",
@@ -1748,8 +2618,14 @@
     "vector_drawings_count": 10,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "1 raster image(s) verified present and legible; 10 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "1 raster image(s) detected via automated analysis; 10 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-31",
@@ -1760,8 +2636,14 @@
     "vector_drawings_count": 22,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "22 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "22 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-31",
@@ -1772,8 +2654,14 @@
     "vector_drawings_count": 117,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "1 raster image(s) verified present and legible; 117 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "1 raster image(s) detected via automated analysis; 117 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-31",
@@ -1784,8 +2672,14 @@
     "vector_drawings_count": 246,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "246 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "246 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-31",
@@ -1796,8 +2690,14 @@
     "vector_drawings_count": 134,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "134 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "134 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-31",
@@ -1808,8 +2708,14 @@
     "vector_drawings_count": 36,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "36 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "36 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-31",
@@ -1820,8 +2726,14 @@
     "vector_drawings_count": 18,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "18 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "18 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-31",
@@ -1832,8 +2744,14 @@
     "vector_drawings_count": 26,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "26 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "26 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-31",
@@ -1844,8 +2762,14 @@
     "vector_drawings_count": 12,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "1 raster image(s) verified present and legible; 12 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "1 raster image(s) detected via automated analysis; 12 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-31",
@@ -1856,8 +2780,14 @@
     "vector_drawings_count": 36,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "36 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "36 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-31",
@@ -1868,8 +2798,14 @@
     "vector_drawings_count": 63,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "63 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "63 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-31",
@@ -1880,8 +2816,14 @@
     "vector_drawings_count": 1,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "2 raster image(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "2 raster image(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-31",
@@ -1892,8 +2834,14 @@
     "vector_drawings_count": 32,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "1 raster image(s) verified present and legible; 32 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "1 raster image(s) detected via automated analysis; 32 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-31",
@@ -1904,8 +2852,14 @@
     "vector_drawings_count": 131,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "131 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "131 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-31",
@@ -1916,8 +2870,14 @@
     "vector_drawings_count": 44,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "44 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "44 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-31",
@@ -1928,8 +2888,14 @@
     "vector_drawings_count": 2,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "1 raster image(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "1 raster image(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-31",
@@ -1940,8 +2906,14 @@
     "vector_drawings_count": 25,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "1 raster image(s) verified present and legible; 25 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "1 raster image(s) detected via automated analysis; 25 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-31",
@@ -1952,8 +2924,14 @@
     "vector_drawings_count": 2,
     "table_present": true,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "2 raster image(s) verified present and legible; Tabular structure verified"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "2 raster image(s) detected via automated analysis; Tabular structure detected via pattern scan"
   },
   {
     "document_id": "DOC-31",
@@ -1964,8 +2942,14 @@
     "vector_drawings_count": 10,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "10 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "10 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-31",
@@ -1976,8 +2960,14 @@
     "vector_drawings_count": 1,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "1 raster image(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "1 raster image(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-31",
@@ -1988,8 +2978,14 @@
     "vector_drawings_count": 20,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "20 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "20 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-31",
@@ -2000,8 +2996,14 @@
     "vector_drawings_count": 30,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "30 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "30 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-31",
@@ -2012,8 +3014,14 @@
     "vector_drawings_count": 47,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "47 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "47 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-31",
@@ -2024,8 +3032,14 @@
     "vector_drawings_count": 259,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "259 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "259 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-31",
@@ -2036,8 +3050,14 @@
     "vector_drawings_count": 3,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "1 raster image(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "1 raster image(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-31",
@@ -2048,8 +3068,14 @@
     "vector_drawings_count": 3,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "1 raster image(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "1 raster image(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-31",
@@ -2060,8 +3086,14 @@
     "vector_drawings_count": 34,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "34 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "34 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-31",
@@ -2072,8 +3104,14 @@
     "vector_drawings_count": 122,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "122 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "122 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-31",
@@ -2084,8 +3122,14 @@
     "vector_drawings_count": 58,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "58 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "58 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-31",
@@ -2096,8 +3140,14 @@
     "vector_drawings_count": 30,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "30 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "30 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-31",
@@ -2108,8 +3158,14 @@
     "vector_drawings_count": 41,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "1 raster image(s) verified present and legible; 41 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "1 raster image(s) detected via automated analysis; 41 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-31",
@@ -2120,8 +3176,14 @@
     "vector_drawings_count": 12,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "12 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "12 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-31",
@@ -2132,8 +3194,14 @@
     "vector_drawings_count": 43,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "43 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "43 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-31",
@@ -2144,8 +3212,14 @@
     "vector_drawings_count": 42,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "42 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "42 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-31",
@@ -2156,8 +3230,14 @@
     "vector_drawings_count": 59,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "59 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "59 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-31",
@@ -2168,8 +3248,14 @@
     "vector_drawings_count": 7,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "7 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "7 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-31",
@@ -2180,8 +3266,14 @@
     "vector_drawings_count": 64,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "64 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "64 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-31",
@@ -2192,8 +3284,14 @@
     "vector_drawings_count": 59,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "59 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "59 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-31",
@@ -2204,8 +3302,14 @@
     "vector_drawings_count": 49,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "49 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "49 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-31",
@@ -2216,8 +3320,14 @@
     "vector_drawings_count": 28,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "28 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "28 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-31",
@@ -2228,8 +3338,14 @@
     "vector_drawings_count": 10,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "10 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "10 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-31",
@@ -2240,8 +3356,14 @@
     "vector_drawings_count": 16,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "16 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "16 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-31",
@@ -2252,8 +3374,14 @@
     "vector_drawings_count": 34,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "34 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "34 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-31",
@@ -2264,8 +3392,14 @@
     "vector_drawings_count": 90,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "90 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "90 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-31",
@@ -2276,8 +3410,14 @@
     "vector_drawings_count": 45,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "45 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "45 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-31",
@@ -2288,8 +3428,14 @@
     "vector_drawings_count": 16,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "16 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "16 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-31",
@@ -2300,8 +3446,14 @@
     "vector_drawings_count": 19,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "19 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "19 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-31",
@@ -2312,8 +3464,14 @@
     "vector_drawings_count": 151,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "1 raster image(s) verified present and legible; 151 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "1 raster image(s) detected via automated analysis; 151 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-31",
@@ -2324,8 +3482,14 @@
     "vector_drawings_count": 194,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "194 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "194 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-31",
@@ -2336,8 +3500,14 @@
     "vector_drawings_count": 3,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "1 raster image(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "1 raster image(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-31",
@@ -2348,8 +3518,14 @@
     "vector_drawings_count": 1,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "2 raster image(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "2 raster image(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-31",
@@ -2360,8 +3536,14 @@
     "vector_drawings_count": 49,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "49 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "49 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-31",
@@ -2372,8 +3554,14 @@
     "vector_drawings_count": 45,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "45 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "45 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-31",
@@ -2384,8 +3572,14 @@
     "vector_drawings_count": 288,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "288 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "288 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-31",
@@ -2396,8 +3590,14 @@
     "vector_drawings_count": 117,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "117 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "117 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-31",
@@ -2408,8 +3608,14 @@
     "vector_drawings_count": 23,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "23 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "23 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-31",
@@ -2420,8 +3626,14 @@
     "vector_drawings_count": 38,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "38 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "38 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-31",
@@ -2432,8 +3644,14 @@
     "vector_drawings_count": 40,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "40 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "40 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-31",
@@ -2444,8 +3662,14 @@
     "vector_drawings_count": 76,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "76 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "76 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-31",
@@ -2456,8 +3680,14 @@
     "vector_drawings_count": 77,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "77 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "77 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-31",
@@ -2468,8 +3698,14 @@
     "vector_drawings_count": 57,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "57 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "57 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-31",
@@ -2480,8 +3716,14 @@
     "vector_drawings_count": 70,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "70 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "70 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-31",
@@ -2492,8 +3734,14 @@
     "vector_drawings_count": 62,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "62 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "62 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-31",
@@ -2504,8 +3752,14 @@
     "vector_drawings_count": 19,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "19 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "19 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-31",
@@ -2516,8 +3770,14 @@
     "vector_drawings_count": 99,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "99 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "99 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-31",
@@ -2528,8 +3788,14 @@
     "vector_drawings_count": 14,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "14 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "14 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-31",
@@ -2540,8 +3806,14 @@
     "vector_drawings_count": 20,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "20 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "20 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-31",
@@ -2552,8 +3824,14 @@
     "vector_drawings_count": 30,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "30 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "30 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-31",
@@ -2564,8 +3842,14 @@
     "vector_drawings_count": 76,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "76 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "76 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-31",
@@ -2576,8 +3860,14 @@
     "vector_drawings_count": 45,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "45 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "45 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-31",
@@ -2588,8 +3878,14 @@
     "vector_drawings_count": 56,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "56 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "56 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-31",
@@ -2600,8 +3896,14 @@
     "vector_drawings_count": 41,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "41 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "41 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-31",
@@ -2612,8 +3914,14 @@
     "vector_drawings_count": 46,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "46 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "46 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-31",
@@ -2624,8 +3932,14 @@
     "vector_drawings_count": 34,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "34 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "34 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-31",
@@ -2636,8 +3950,14 @@
     "vector_drawings_count": 29,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "29 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "29 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-31",
@@ -2648,8 +3968,14 @@
     "vector_drawings_count": 8,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "8 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "8 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-31",
@@ -2660,8 +3986,14 @@
     "vector_drawings_count": 25,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "25 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "25 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-31",
@@ -2672,8 +4004,14 @@
     "vector_drawings_count": 33,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "33 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "33 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-31",
@@ -2684,8 +4022,14 @@
     "vector_drawings_count": 25,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "25 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "25 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-31",
@@ -2696,8 +4040,14 @@
     "vector_drawings_count": 25,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "25 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "25 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-31",
@@ -2708,8 +4058,14 @@
     "vector_drawings_count": 17,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "17 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "17 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-31",
@@ -2720,8 +4076,14 @@
     "vector_drawings_count": 42,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "42 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "42 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-31",
@@ -2732,8 +4094,14 @@
     "vector_drawings_count": 14,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "1 raster image(s) verified present and legible; 14 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "1 raster image(s) detected via automated analysis; 14 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-31",
@@ -2744,8 +4112,14 @@
     "vector_drawings_count": 91,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "91 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "91 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-31",
@@ -2756,8 +4130,14 @@
     "vector_drawings_count": 31,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "1 raster image(s) verified present and legible; 31 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "1 raster image(s) detected via automated analysis; 31 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-31",
@@ -2768,8 +4148,14 @@
     "vector_drawings_count": 129,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "129 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "129 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-31",
@@ -2780,8 +4166,14 @@
     "vector_drawings_count": 13,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "13 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "13 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-31",
@@ -2792,8 +4184,14 @@
     "vector_drawings_count": 11,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "11 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "11 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-31",
@@ -2804,8 +4202,14 @@
     "vector_drawings_count": 15,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "15 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "15 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-31",
@@ -2816,8 +4220,14 @@
     "vector_drawings_count": 17,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "17 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "17 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-31",
@@ -2828,8 +4238,14 @@
     "vector_drawings_count": 62,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "62 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "62 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-31",
@@ -2840,8 +4256,14 @@
     "vector_drawings_count": 46,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "46 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "46 vector drawing path(s) detected via automated analysis"
   },
   {
     "document_id": "DOC-31",
@@ -2852,7 +4274,13 @@
     "vector_drawings_count": 33,
     "table_present": false,
     "visual_inspection_required": true,
-    "visual_verification_status": "VERIFIED",
-    "inspection_notes": "33 vector drawing path(s) verified present and legible"
+    "visual_verification_status": "DETECTED",
+    "visually_reviewed": false,
+    "verified": false,
+    "review_method": null,
+    "review_record": null,
+    "verification_basis": null,
+    "verification_confidence": null,
+    "inspection_notes": "33 vector drawing path(s) detected via automated analysis"
   }
 ]

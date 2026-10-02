@@ -1,7 +1,7 @@
 # CSE2101 — Document Classification Audit
-**Phase 1: Source Corpus Audit & Ingestion**  
+**Phase 1.2: Extraction Provenance, Damage Audit & Validator Integrity Correction**  
 **Curriculum / Course Context:** CSE / CSEN 2101 Data Structures and Algorithms  
-**Generated On:** 2026-10-01  
+**Generated On:** 2026-10-02  
 
 ---
 
