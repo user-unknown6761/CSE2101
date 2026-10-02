@@ -15,17 +15,20 @@ if script_dir not in sys.path:
     sys.path.insert(0, script_dir)
 
 from scripts.validate_phase1 import (
+    validate_crypto_hashes,
     validate_marks_integrity,
     validate_answerability,
     validate_visual_pages,
     validate_damage_audit,
     validate_governance_tiers,
     validate_state_b_semantics,
+    validate_document_lifecycle,
+    validate_formal_schemas,
     validate_reconciliation_and_counts
 )
 
 print("=" * 70)
-print("RUNNING TRUE ADVERSARIAL VALIDATOR MUTATION SUITE (7 IN-MEMORY MUTATIONS)")
+print("RUNNING TRUE ADVERSARIAL VALIDATOR MUTATION SUITE (19 IN-MEMORY MUTATIONS)")
 print("=" * 70)
 
 # Load authoritative production artifacts
@@ -48,7 +51,7 @@ with open('CORPUS_SUMMARY_METRICS.json', 'r', encoding='utf-8') as f:
     prod_metrics = json.load(f)
 
 passed_mutations = 0
-total_mutations = 7
+total_mutations = 19
 mutation_results = []
 
 def record_test(test_id, name, rule_failed, caught, error_msg):
@@ -114,8 +117,8 @@ mut_page_d = copy.deepcopy(prod_page_quality)
 target_d = next(p for p in mut_page_d if p.get('detection_status') == 'DETECTED' and p.get('verification_status') != 'VERIFIED')
 target_d['verification_status'] = "VERIFIED"
 target_d['visual_verification_status'] = "VERIFIED"
-target_d['visually_reviewed'] = False
-target_d['verified'] = False
+target_d['visually_reviewed'] = True
+target_d['verified'] = True
 target_d['review_record'] = None
 target_d['verification_basis'] = None
 
@@ -145,26 +148,150 @@ record_test("TEST F", "Classification Mismatch (DOC-31 Tier 2 Promotion)", "Rule
 # ------------------------------------------------------------------------------
 mut_records_g = copy.deepcopy(prod_records)
 target_g = next(r for r in mut_records_g if r['question_instance_id'] == 'DOC-28-P02-MCQ-Q09')
-# Mutate reconstructed text back to erroneous vertex R
 target_g['raw_text'] = (
     "The Breadth First Search algorithm has been implemented using the queue data structure. "
     "One possible order of visiting the nodes of the following graph is\n"
-    "[Graph with 6 nodes {M, N, O, R, Q, P} and edges (M,N), (N,O), (M,R), (M,Q), (N,Q), (O,P), (Q,P)]\n"
+    "[Graph with 6 nodes {M, N, O, R, Q, P} and 7 edges (M,K), (M,N), (M,Q), (N,O), (N,Q), (Q,P), (P,O)]\n"
     "(a) MNOPQR\n(b) NQMPOR\n(c) QMNPRO\n(d) QMNPOR"
 )
 target_g['reconstruction_metadata']['reconstructed_text'] = target_g['raw_text']
-# Mutate finding to falsely report match
-target_g['reconstruction_metadata']['visual_semantic_verification']['element_level_findings'] = [
-    {
-        'element': "vertex_labels",
-        'source': "6 circular nodes: {M, N, O, K, Q, P}",
-        'reconstructed': "6 nodes {M, N, O, R, Q, P}",
-        'match': True # False match claim
-    }
-]
+target_g['reconstruction_metadata']['visual_semantic_verification']['graph_semantics']['vertices'] = ["M", "N", "O", "R", "Q", "P"]
 
 ok_g, msg_g = validate_state_b_semantics(mut_records_g)
 record_test("TEST G", "Incorrect STATE B Visual Semantics (DOC-28 Q9 Vertex K -> R)", "Rule 31", not ok_g, msg_g)
+
+# ------------------------------------------------------------------------------
+# TEST H1: Delete Legitimate Damage Entry
+# ------------------------------------------------------------------------------
+mut_damaged_h1 = copy.deepcopy(prod_damaged)
+mut_damaged_h1.pop(0)
+
+ok_h1, msg_h1 = validate_damage_audit(prod_records, mut_damaged_h1)
+record_test("TEST H1", "Delete Legitimate Damage Entry", "Rule 06", not ok_h1, msg_h1)
+
+# ------------------------------------------------------------------------------
+# TEST H2: Change Damage Type
+# ------------------------------------------------------------------------------
+mut_damaged_h2 = copy.deepcopy(prod_damaged)
+mut_damaged_h2[0]['damage_type'] = "corrupted_damage_type"
+
+ok_h2, msg_h2 = validate_damage_audit(prod_records, mut_damaged_h2)
+record_test("TEST H2", "Mutate Damage Type", "Rule 06", not ok_h2, msg_h2)
+
+# ------------------------------------------------------------------------------
+# TEST H3: Change Damage Severity
+# ------------------------------------------------------------------------------
+mut_damaged_h3 = copy.deepcopy(prod_damaged)
+target_h3 = next(d for d in mut_damaged_h3 if d['severity'] == 'WARNING')
+target_h3['severity'] = "CRITICAL"
+
+ok_h3, msg_h3 = validate_damage_audit(prod_records, mut_damaged_h3)
+record_test("TEST H3", "Mutate Damage Severity", "Rule 06", not ok_h3, msg_h3)
+
+# ------------------------------------------------------------------------------
+# TEST H4: Insert Fabricated Damage Entry
+# ------------------------------------------------------------------------------
+mut_damaged_h4 = copy.deepcopy(prod_damaged)
+mut_damaged_h4.append({
+    'question_instance_id': "DOC-01-P01-Q99-FABRICATED",
+    'document_id': "DOC-01",
+    'page': 1,
+    'detector_id': "DET_FABRICATED",
+    'damage_type': "fabricated_damage",
+    'severity': "MAJOR",
+    'evidence': "Fabricated non-existent damage condition",
+    'resolution_status': "UNRESOLVED",
+    'resolution_method': "None",
+    'source_visual_reference': "None",
+    'notes': "Fabricated"
+})
+
+ok_h4, msg_h4 = validate_damage_audit(prod_records, mut_damaged_h4)
+record_test("TEST H4", "Insert Fabricated Damage Entry", "Rule 06", not ok_h4, msg_h4)
+
+# ------------------------------------------------------------------------------
+# TEST H5: Duplicate Legitimate Damage Entry
+# ------------------------------------------------------------------------------
+mut_damaged_h5 = copy.deepcopy(prod_damaged)
+mut_damaged_h5.append(copy.deepcopy(mut_damaged_h5[0]))
+
+ok_h5, msg_h5 = validate_damage_audit(prod_records, mut_damaged_h5)
+record_test("TEST H5", "Duplicate Legitimate Damage Entry", "Rule 06", not ok_h5, msg_h5)
+
+# ------------------------------------------------------------------------------
+# TEST H6: Q8 C Code Semantic Corruption (keep match=true)
+# ------------------------------------------------------------------------------
+mut_records_h6 = copy.deepcopy(prod_records)
+target_h6 = next(r for r in mut_records_h6 if r['question_instance_id'] == 'DOC-28-P02-MCQ-Q08')
+# Corrupt one C code line while leaving all match=True
+target_h6['reconstruction_metadata']['visual_semantic_verification']['code_semantics']['lines'][4] = '    printf("%s ", start->data);'
+
+ok_h6, msg_h6 = validate_state_b_semantics(mut_records_h6)
+record_test("TEST H6", "Q8 C Code Semantic Corruption (match=True preserved)", "Rule 31", not ok_h6, msg_h6)
+
+# ------------------------------------------------------------------------------
+# TEST H7: Q9 Graph Edge Semantic Corruption (keep match=true)
+# ------------------------------------------------------------------------------
+mut_records_h7 = copy.deepcopy(prod_records)
+target_h7 = next(r for r in mut_records_h7 if r['question_instance_id'] == 'DOC-28-P02-MCQ-Q09')
+# Mutate one edge from (M,K) to (M,Z) while leaving all match=True
+target_h7['reconstruction_metadata']['visual_semantic_verification']['graph_semantics']['edges'][0] = ["M", "Z"]
+
+ok_h7, msg_h7 = validate_state_b_semantics(mut_records_h7)
+record_test("TEST H7", "Q9 Graph Edge Semantic Corruption (match=True preserved)", "Rule 31", not ok_h7, msg_h7)
+
+# ------------------------------------------------------------------------------
+# TEST H8: Q10 Tree Relationship Semantic Corruption (keep match=true)
+# ------------------------------------------------------------------------------
+mut_records_h8 = copy.deepcopy(prod_records)
+target_h8 = next(r for r in mut_records_h8 if r['question_instance_id'] == 'DOC-28-P02-MCQ-Q10')
+# Mutate parent-child relationship (parent 5 -> child 99) while leaving all match=True
+target_h8['reconstruction_metadata']['visual_semantic_verification']['tree_semantics']['parent_child_relationships'][2]['child'] = "99"
+
+ok_h8, msg_h8 = validate_state_b_semantics(mut_records_h8)
+record_test("TEST H8", "Q10 Tree Relationship Corruption (match=True preserved)", "Rule 31", not ok_h8, msg_h8)
+
+# ------------------------------------------------------------------------------
+# TEST H9: Recorded SHA-256 Mutation
+# ------------------------------------------------------------------------------
+mut_inventory_h9 = copy.deepcopy(prod_inventory)
+# Mutate last character of SHA-256 for DOC-01
+old_sha = mut_inventory_h9[0]['sha256']
+mut_sha = old_sha[:-1] + ('0' if old_sha[-1] != '0' else '1')
+mut_inventory_h9[0]['sha256'] = mut_sha
+
+ok_h9, msg_h9 = validate_crypto_hashes(mut_inventory_h9)
+record_test("TEST H9", "Recorded SHA-256 Hash Byte Mutation", "Rule 01", not ok_h9, msg_h9)
+
+# ------------------------------------------------------------------------------
+# TEST H10: Canonical Visual-Status Contradiction (VERIFIED but verified=False)
+# ------------------------------------------------------------------------------
+mut_page_h10 = copy.deepcopy(prod_page_quality)
+target_h10 = next(p for p in mut_page_h10 if p.get('verification_status') == 'VERIFIED')
+target_h10['verified'] = False  # Direct contradiction with canonical verification_status
+
+ok_h10, msg_h10 = validate_visual_pages(mut_page_h10, prod_visual_audit)
+record_test("TEST H10", "Canonical Visual Lifecycle Contradiction (VERIFIED vs verified=False)", "Rules 14 & 27", not ok_h10, msg_h10)
+
+# ------------------------------------------------------------------------------
+# TEST H11: Render-Status / Artifact Reference Contradiction
+# ------------------------------------------------------------------------------
+mut_page_h11 = copy.deepcopy(prod_page_quality)
+target_h11 = next(p for p in mut_page_h11 if p.get('render_status') == 'NOT_RENDERED')
+target_h11['render_artifact_reference'] = "rendered_pages/phantom_render_page.png"  # Contradiction
+
+ok_h11, msg_h11 = validate_visual_pages(mut_page_h11, prod_visual_audit)
+record_test("TEST H11", "Render-Status / Artifact Contradiction (NOT_RENDERED with artifact)", "Rule 25", not ok_h11, msg_h11)
+
+# ------------------------------------------------------------------------------
+# TEST H12: Formal Schema Violation in Production Deliverables
+# ------------------------------------------------------------------------------
+mut_records_h12 = copy.deepcopy(prod_records)
+# Invalidate record schema by setting record_type to an illegal string
+mut_records_h12[0]['record_type'] = "corrupted_illegal_record_type"
+
+ok_h12, msg_h12 = validate_formal_schemas(prod_inventory, mut_records_h12, prod_page_quality, prod_visual_audit, prod_damaged)
+record_test("TEST H12", "Formal Schema Violation in Production Records", "Rule 33", not ok_h12, msg_h12)
 
 print("=" * 70)
 print(f"ADVERSARIAL MUTATION SUITE: {passed_mutations}/{total_mutations} CORRUPTIONS SUCCESSFULLY CAUGHT & REJECTED")
@@ -185,5 +312,5 @@ if passed_mutations < total_mutations:
     print("\nADVERSARIAL TEST SUITE FAILED")
     sys.exit(1)
 else:
-    print("\nALL 7 ADVERSARIAL MUTATIONS PASSED GENUINE VALIDATOR REJECTION")
+    print(f"\nALL {total_mutations} ADVERSARIAL MUTATIONS PASSED GENUINE VALIDATOR REJECTION")
     sys.exit(0)

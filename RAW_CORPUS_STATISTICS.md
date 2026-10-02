@@ -1,8 +1,8 @@
 # CSE2101 — Raw Corpus Statistics
-**Phase 1.3: Source-Visual Reconstruction Accuracy & True Validator Testing**  
+**Phase 1.3A: Final Integrity Closure & Release Gate Certification**  
 **Corpus Name:** user-unknown6761/CSE2101  
 **Generated On:** 2026-10-02  
-**Status:** FULLY RECONCILED & INDEPENDENTLY VALIDATED (31/31 Core Rules Passed, 7/7 Adversarial Mutations Passed)
+**Status:** FULLY RECONCILED & INDEPENDENTLY VALIDATED (33/33 Core Rules Passed, 19/19 Adversarial Mutations Passed)
 
 ---
 
@@ -11,7 +11,7 @@
 | Metric | Count | Governance / Source Rule |
 | :--- | :---: | :--- |
 | **Total Source Documents** | **33** | Discovered across repository root and nested subdirectories |
-| **Total Source PDFs** | **33** | Canonical immutable PDF artifacts |
+| **Total Source PDFs** | **33** | Canonical immutable PDF artifacts with recomputed SHA-256 byte validation |
 | **Total Corpus Pages** | **579** | Audited across all 33 documents |
 | **Total Raw Characters Extracted** | **660,272** | Digital text extracted directly via PyMuPDF |
 | **Total Physical Source Records** | **1,584** | Every physical entry preserved in `RAW_EXTRACTED_QUESTIONS.json` |
@@ -28,10 +28,14 @@
 | **Visual Pages Reviewed** | **1** | DOC-28 Page 2 reviewed via `DOC28_PAGE2_RECONSTRUCTION_AUDIT.md` and `DOC28_Q9_VISUAL_SEMANTIC_AUDIT.md` |
 | **Visual Pages Verified** | **1** | DOC-28 Page 2 verified with full review record and verification basis |
 | **Visual Pages Flagged** | **154** | Pages with complex vector/raster graphics or scanned elements requiring review |
-| **Deterministic Damage Records** | **507** | Fully audited in `DAMAGED_AND_INCOMPLETE_QUESTIONS_AUDIT.json` (116 Resolved, 391 Warnings) |
+| **Document Rendering Status (DOC-28)** | **PARTIALLY_RENDERED** | 1 of 14 pages physically rendered (`rendering_complete: false` across all 33 docs) |
+| **Document Rendering Status (Others)** | **NOT_RENDERED (32)** | Remaining 32 documents have no rendered pages |
+| **Deterministic Damage Audit Entries** | **507** | Fully audited in `DAMAGED_AND_INCOMPLETE_QUESTIONS_AUDIT.json` (116 Resolved, 391 Warnings) |
+| **Deterministic Damage Conditions** | **507** | Exact bijection with independent detector `(qid, detector_id, damage_type, severity, resolution_status)` |
 | **Total Flagged Heuristic Anomalies** | **391** | Tracked in `SUSPICIOUS_EXTRACTION_AUDIT.json` without silent deletion |
-| **Core Validation Rules Passed** | **31 / 31** | Certified by `validate_phase1.py` (Rules 01 through 31) |
-| **Adversarial Mutation Tests Passed** | **7 / 7** | True in-memory mutation test suite (`test_phase1_validator_mutations.py`) |
+| **Core Validation Rules Passed** | **33 / 33** | Certified by `validate_phase1.py` (Rules 01 through 33) |
+| **Adversarial Mutation Tests Passed** | **19 / 19** | True in-memory mutation test suite (`test_phase1_validator_mutations.py`) |
+| **Formal Schema Validation** | **PASS** | `PHASE1_SCHEMA.json` validated across all 4 production deliverables |
 
 ---
 

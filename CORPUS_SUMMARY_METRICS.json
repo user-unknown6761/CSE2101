@@ -27,9 +27,15 @@
   "visual_verified": 1,
   "visual_flagged": 154,
   "damage_records": 507,
+  "damage_audit_entries": 507,
+  "deterministic_damage_conditions": 507,
   "unresolved_damage_records": 391,
-  "validation_rules_passed": 31,
+  "core_validation_rules_passed": 33,
+  "core_validation_rules_failed": 0,
+  "validation_rules_passed": 33,
   "validation_rules_failed": 0,
-  "adversarial_tests_passed": 7,
-  "adversarial_tests_total": 7
+  "adversarial_tests_passed": 19,
+  "adversarial_tests_total": 19,
+  "schema_validation_passed": 1,
+  "schema_validation_failed": 0
 }

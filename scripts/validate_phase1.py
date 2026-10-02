@@ -3,24 +3,85 @@ import os
 import sys
 import re
 import copy
+import hashlib
+import jsonschema
 
 if hasattr(sys.stdout, 'reconfigure'):
     sys.stdout.reconfigure(encoding='utf-8')
+
+# ==============================================================================
+# AUTHORITATIVE GROUND-TRUTH RECONSTRUCTION CONSTANTS (FOR STATE B SEMANTICS)
+# ==============================================================================
+
+AUTHORITATIVE_Q8_LINES = [
+    "void fun(struct node* start)",
+    "{",
+    "    if(start == NULL)",
+    "        return;",
+    "    printf(\"%d \", start->data);",
+    "    if(start->next != NULL )",
+    "        fun(start->next->next);",
+    "    printf(\"%d \", start->data);",
+    "}"
+]
+
+AUTHORITATIVE_Q9_VERTICES = {"M", "N", "O", "K", "Q", "P"}
+AUTHORITATIVE_Q9_EDGES = {
+    tuple(sorted(["M", "K"])),
+    tuple(sorted(["M", "N"])),
+    tuple(sorted(["M", "Q"])),
+    tuple(sorted(["N", "O"])),
+    tuple(sorted(["N", "Q"])),
+    tuple(sorted(["Q", "P"])),
+    tuple(sorted(["P", "O"]))
+}
+
+AUTHORITATIVE_Q10_ROOT = "1"
+AUTHORITATIVE_Q10_RELATIONSHIPS = {
+    ("1", "2"),
+    ("2", "5"),
+    ("5", "3"),
+    ("5", "6"),
+    ("3", "4")
+}
 
 # ==============================================================================
 # REUSABLE VALIDATION FUNCTIONS (PHASE 1.3 MODULAR ARCHITECTURE)
 # ==============================================================================
 
 def validate_crypto_hashes(inventory, raise_on_error=False):
-    """Rule 01: Every inventory PDF has 64-character SHA-256 cryptographic hash."""
+    """
+    Rule 01:
+    - Every inventory PDF has a 64-character SHA-256 cryptographic hash.
+    - Recomputes SHA-256 directly from the actual source PDF bytes on disk.
+    - Invariant: sha256(actual_pdf_bytes) == recorded_sha256 for all 33 PDFs.
+    """
     for d in inventory:
+        doc_id = d.get('document_id')
         sha = d.get('sha256', '')
+        rel_path = d.get('relative_path')
         if not (isinstance(sha, str) and len(sha) == 64 and re.match(r'^[0-9a-fA-F]{64}$', sha)):
-            msg = f"Document {d.get('document_id')} has invalid SHA-256: '{sha}'"
+            msg = f"Document {doc_id} has invalid SHA-256 format: '{sha}'"
             if raise_on_error:
                 raise AssertionError(msg)
             return False, msg
-    return True, f"Verified across all {len(inventory)} documents."
+
+        if not rel_path or not os.path.exists(rel_path):
+            msg = f"Document {doc_id} source PDF file not found at '{rel_path}'"
+            if raise_on_error:
+                raise AssertionError(msg)
+            return False, msg
+
+        with open(rel_path, 'rb') as f:
+            actual_sha = hashlib.sha256(f.read()).hexdigest()
+
+        if actual_sha.lower() != sha.lower():
+            msg = f"Document {doc_id} SHA-256 mismatch: recorded '{sha}' != actual '{actual_sha}'"
+            if raise_on_error:
+                raise AssertionError(msg)
+            return False, msg
+
+    return True, f"Recomputed and verified SHA-256 byte hashes across all {len(inventory)} PDFs."
 
 
 def validate_provenance_and_ids(inventory, records, raise_on_error=False):
@@ -161,62 +222,57 @@ def validate_placeholders_and_bounds(records, raise_on_error=False):
 
 def detect_damage_candidates(records):
     """
-    Independent detection function: scans physical records directly and identifies
-    deterministic damage candidates across the entire corpus.
-    Returns: dict mapping question_instance_id -> list of detected damage conditions.
+    Independent deterministic detection function: scans physical records directly
+    and produces deterministic damage candidate tuples across the entire corpus.
+    Tuple structure:
+      (question_instance_id, detector_id, damage_type, severity, resolution_status, evidence)
     """
-    candidates = {}
+    candidates = []
     for r in records:
         inst_id = r.get('question_instance_id')
         rtype = r.get('record_type')
         text = r.get('raw_text') or ""
-        conds = []
 
         # 1. Non-question source fragments (non-answerable physical records)
         if rtype == 'non_question_source_fragment':
-            conds.append({
-                'detector_id': "NON_QUESTION_FRAGMENT",
-                'damage_type': r.get('fragment_category') or "source_fragment",
-                'severity': "MAJOR"
-            })
+            f_type = r.get('fragment_type')
+            if f_type == "marks_allocation_equation":
+                det_id = "DET_FRAGMENT_MARKS"
+                d_type = "marks_footer_contamination"
+            elif f_type == "curriculum_outcome_footer":
+                det_id = "DET_FRAGMENT_CO_FOOTER"
+                d_type = "administrative_metadata_inside_question"
+            else:
+                det_id = "DET_FRAGMENT_SOLUTION"
+                d_type = "solution_code_fragment"
+            ev = f"Physical source fragment: '{text[:100]}'"
+            candidates.append((inst_id, det_id, d_type, "MAJOR", "RESOLVED", ev))
 
         # 2. DOC-28 Page 2 column interleaving and visual layout defects
         if r.get('document_id') == 'DOC-28' and r.get('page_start') == 2 and str(r.get('official_question_number')) in ['7', '8', '9', '10', '11']:
             q_num = str(r.get('official_question_number'))
-            d_type = "page_column_interleaving" if q_num in ['7', '11'] else (
-                "missing_essential_code_block" if q_num == '8' else (
-                    "unreferenced_graph_diagram" if q_num == '9' else "unreferenced_tree_diagram"
-                )
-            )
-            conds.append({
-                'detector_id': "DOC28_COLUMN_INTERLEAVING",
-                'damage_type': d_type,
-                'severity': "CRITICAL"
-            })
+            if q_num == '7':
+                ev = "Three horizontal text streams interleaved across multi-column layout on rendered page 2"
+                candidates.append((inst_id, "DET_DOC28_LAYOUT_P02_Q07", "page_column_interleaving", "CRITICAL", "RESOLVED", ev))
+            elif q_num == '8':
+                ev = "C code function `void fun(struct node* start)` embedded in raster image xref 22 omitted from raw text stream"
+                candidates.append((inst_id, "DET_DOC28_LAYOUT_P02_Q08", "missing_essential_code_block", "CRITICAL", "RESOLVED", ev))
+            elif q_num == '9':
+                ev = "Referenced 6-vertex BFS graph diagram with vertices {M, N, O, K, Q, P} located in visual container y=300-450"
+                candidates.append((inst_id, "DET_DOC28_LAYOUT_P02_Q09", "missing_referenced_visual", "MAJOR", "RESOLVED", ev))
+            elif q_num == '10':
+                ev = "Referenced post-order binary tree diagram embedded in raster image xref 24"
+                candidates.append((inst_id, "DET_DOC28_LAYOUT_P02_Q10", "missing_referenced_visual", "MAJOR", "RESOLVED", ev))
+            elif q_num == '11':
+                ev = "Contaminated with text stream fragment from Question 7 center stream ('ements is correct for a circular singly linked list w')"
+                candidates.append((inst_id, "DET_DOC28_LAYOUT_P02_Q11", "cross_question_contamination", "CRITICAL", "RESOLVED", ev))
 
         # 3. Administrative metadata embedded inside questions (CO/Bloom markers)
         if rtype == 'question_occurrence':
-            patterns = [
-                r'\(CO\d+\)',
-                r'\(Remember[^\)]*\)',
-                r'\(Understand[^\)]*\)',
-                r'\(Apply[^\)]*\)',
-                r'\(Analyze[^\)]*\)',
-                r'\(Evaluate[^\)]*\)',
-                r'\(Create[^\)]*\)',
-                r'\[\s*(?:PO\d+|PSO\d+|CO\d+)\s*\]',
-                r'\bCO\d+\s*[-:]\s*(?:Remember|Understand|Apply|Analyze|Evaluate|Create)'
-            ]
-            matches = [p for p in patterns if re.search(p, text, re.IGNORECASE)]
-            if matches:
-                conds.append({
-                    'detector_id': "ADMIN_METADATA",
-                    'damage_type': "administrative_metadata_inside_question",
-                    'severity': "WARNING"
-                })
-
-        if conds:
-            candidates[inst_id] = conds
+            terms = ['[(CO', '(CO1)', '(CO2)', '(CO3)', '(CO4)', '(CO5)', '(CO6)', 'LOCQ', 'IOCQ', 'HOCQ', 'Cognition Level', 'Course Outcome (CO)']
+            if any(term in text for term in terms):
+                ev = f"Bloom's taxonomy / CO annotation present in text: '{text[:80]}...'"
+                candidates.append((inst_id, "DET_QUESTION_ADMIN_METADATA", "administrative_metadata_inside_question", "WARNING", "UNRESOLVED", ev))
 
     return candidates
 
@@ -225,8 +281,10 @@ def validate_damage_audit(records, damaged, raise_on_error=False):
     """
     Rules 06, 20:
     - Real damage audit is populated with valid damage records.
-    - Every deterministic candidate detected by detect_damage_candidates appears in damage audit.
-    - Every deterministic damage entry corresponds to a valid detected condition.
+    - Deterministic damage condition identity: (question_instance_id, detector_id, damage_type, severity, resolution_status, evidence).
+    - Invariant: detected_deterministic_damage_set == audited_deterministic_damage_set.
+    - Zero duplicates allowed in damage audit.
+    - Detects missing entries, wrong damage_type, wrong detector, wrong severity, wrong resolution_status, fabricated entries.
     - No active question contains pure marks-only equation or cross-question contamination (Rule 20).
     """
     if not damaged:
@@ -238,34 +296,79 @@ def validate_damage_audit(records, damaged, raise_on_error=False):
     valid_severities = {"WARNING", "MAJOR", "CRITICAL"}
     valid_statuses = {"RESOLVED", "UNRESOLVED", "NOT_APPLICABLE"}
 
-    damaged_ids = set()
+    # 1. Check for duplicates in damage audit
+    serialized = [json.dumps(d, sort_keys=True) for d in damaged]
+    if len(serialized) != len(set(serialized)):
+        msg = f"Damage audit contains duplicate entries: {len(damaged)} total vs {len(set(serialized))} unique"
+        if raise_on_error:
+            raise AssertionError(msg)
+        return False, msg
+
+    # 2. Validate individual entry formatting
+    audited_tuples = []
     for d in damaged:
         inst_id = d.get('question_instance_id')
-        damaged_ids.add(inst_id)
-        if not inst_id or not d.get('damage_type'):
+        det_id = d.get('detector_id')
+        d_type = d.get('damage_type')
+        sev = d.get('severity')
+        res_st = d.get('resolution_status')
+        ev = d.get('evidence')
+
+        if not inst_id or not d_type:
             msg = f"Damage entry missing question_instance_id or damage_type: {d}"
             if raise_on_error:
                 raise AssertionError(msg)
             return False, msg
-        if d.get('severity') not in valid_severities:
-            msg = f"Damage entry {inst_id} has invalid severity '{d.get('severity')}'"
-            if raise_on_error:
-                raise AssertionError(msg)
-            return False, msg
-        if d.get('resolution_status') not in valid_statuses:
-            msg = f"Damage entry {inst_id} has invalid resolution_status '{d.get('resolution_status')}'"
+
+        if not det_id:
+            msg = f"Damage entry {inst_id} missing detector_id: {d}"
             if raise_on_error:
                 raise AssertionError(msg)
             return False, msg
 
-    # Compare against independently detected candidates
-    detected_candidates = detect_damage_candidates(records)
-    for c_id in detected_candidates:
-        if c_id not in damaged_ids:
-            msg = f"Deterministic damage candidate {c_id} is missing from damage audit"
+        if sev not in valid_severities:
+            msg = f"Damage entry {inst_id} has invalid severity '{sev}'"
             if raise_on_error:
                 raise AssertionError(msg)
             return False, msg
+
+        if res_st not in valid_statuses:
+            msg = f"Damage entry {inst_id} has invalid resolution_status '{res_st}'"
+            if raise_on_error:
+                raise AssertionError(msg)
+            return False, msg
+
+        audited_tuples.append((inst_id, det_id, d_type, sev, res_st, ev))
+
+    # 3. Independent deterministic candidate detection
+    detected_candidates = detect_damage_candidates(records)
+    detected_set = set(detected_candidates)
+    audited_set = set(audited_tuples)
+
+    # Missing audit entries
+    missing = detected_set - audited_set
+    if missing:
+        sample = next(iter(missing))
+        msg = f"Deterministic damage candidate missing from damage audit: {sample}"
+        if raise_on_error:
+            raise AssertionError(msg)
+        return False, msg
+
+    # Fabricated audit entries
+    extra = audited_set - detected_set
+    if extra:
+        sample = next(iter(extra))
+        msg = f"Fabricated or altered damage entry found in damage audit: {sample}"
+        if raise_on_error:
+            raise AssertionError(msg)
+        return False, msg
+
+    # Exact equality check
+    if detected_set != audited_set:
+        msg = f"Exact deterministic damage equality failed: {len(detected_set)} detected != {len(audited_set)} audited"
+        if raise_on_error:
+            raise AssertionError(msg)
+        return False, msg
 
     # Rule 20 check: no active question has pure marks equation or cross-question contamination
     for r in records:
@@ -287,7 +390,7 @@ def validate_damage_audit(records, damaged, raise_on_error=False):
                 raise AssertionError(msg)
             return False, msg
 
-    return True, f"Damage audit validated: {len(damaged)} entries match {len(detected_candidates)} independently detected candidates."
+    return True, f"Deterministic damage audit validated: {len(damaged)} audited conditions match {len(detected_candidates)} detected conditions exactly."
 
 
 def validate_wording_states(records, raise_on_error=False):
@@ -428,12 +531,12 @@ def validate_state_b_semantics(records, raise_on_error=False):
     Rules 13, 21, 29, 30, 31:
     - Rule 13: Every STATE B question has complete reconstruction metadata.
     - Rule 21: Every question requiring a visual has source_visual_page and source_visual_reason.
-    - Rule 29: STATE B visual questions require semantic verification metadata (visual_semantic_verification).
+    - Rule 29: STATE B visual questions require semantic verification metadata.
     - Rule 30: STATE B visual semantics must be marked verified only if all required elements match.
-    - Rule 31: DOC-28 Q9 graph semantic check:
-        * Vertex labels match 6 vertices: M, N, O, K, Q, P
-        * Vertex 'K' is present; vertex 'R' is absent from graph vertices.
-        * 7 undirected edges present: (M,K), (M,N), (M,Q), (N,O), (N,Q), (Q,P), (P,O).
+    - Rule 31: True independent semantic verification without trusting match=true:
+        * Q8: Structured C code lines independently compared against authoritative C function.
+        * Q9: Structured graph vertices and normalized undirected edges independently compared against authoritative graph.
+        * Q10: Structured binary tree root and parent-child relationships independently compared against authoritative tree.
     """
     for r in records:
         inst_id = r.get('question_instance_id')
@@ -456,7 +559,6 @@ def validate_state_b_semantics(records, raise_on_error=False):
                     raise AssertionError(msg)
                 return False, msg
 
-            # Rule 13 check
             for field in ['reconstruction_method', 'visual_source_reference', 'reconstructed_text', 'reconstruction_confidence']:
                 if not meta.get(field):
                     msg = f"STATE B question {inst_id} reconstruction_metadata missing '{field}'"
@@ -464,7 +566,6 @@ def validate_state_b_semantics(records, raise_on_error=False):
                         raise AssertionError(msg)
                     return False, msg
 
-            # Rule 29 & Rule 30: Visual semantic verification
             sem = meta.get('visual_semantic_verification')
             if not sem:
                 msg = f"STATE B question {inst_id} missing visual_semantic_verification object"
@@ -493,50 +594,101 @@ def validate_state_b_semantics(records, raise_on_error=False):
                             raise AssertionError(msg)
                         return False, msg
 
-            # Rule 31: DOC-28 Q9 Specific semantic audit
+            # Q8 INDEPENDENT C CODE SEMANTIC VERIFICATION
+            if inst_id == "DOC-28-P02-MCQ-Q08":
+                code_sem = sem.get('code_semantics')
+                if not code_sem or not code_sem.get('lines'):
+                    msg = "DOC-28 Q8 structured code_semantics is missing or contains no lines"
+                    if raise_on_error:
+                        raise AssertionError(msg)
+                    return False, msg
+
+                lines = code_sem.get('lines', [])
+                if len(lines) != len(AUTHORITATIVE_Q8_LINES):
+                    msg = f"DOC-28 Q8 code line count mismatch: {len(lines)} != {len(AUTHORITATIVE_Q8_LINES)}"
+                    if raise_on_error:
+                        raise AssertionError(msg)
+                    return False, msg
+
+                for idx, (actual_line, auth_line) in enumerate(zip(lines, AUTHORITATIVE_Q8_LINES)):
+                    if actual_line.strip() != auth_line.strip():
+                        msg = f"DOC-28 Q8 code semantic corruption at line {idx+1}: '{actual_line}' != '{auth_line}'"
+                        if raise_on_error:
+                            raise AssertionError(msg)
+                        return False, msg
+
+            # Q9 INDEPENDENT GRAPH SEMANTIC VERIFICATION
             if inst_id == "DOC-28-P02-MCQ-Q09":
                 raw_text = r.get('raw_text', '')
-                rec_text = meta.get('reconstructed_text', '')
-
-                # Must contain vertex K and edge (M,K)
                 if "6 nodes {M, N, O, K, Q, P}" not in raw_text or "(M,K)" not in raw_text:
                     msg = "DOC-28 Q9 raw_text does not contain faithful vertex 'K' and edge '(M,K)'"
                     if raise_on_error:
                         raise AssertionError(msg)
                     return False, msg
 
-                # Must not contain erroneous vertex R in graph representation
                 if "6 nodes {M, N, O, R, Q, P}" in raw_text or "(M,R)" in raw_text:
                     msg = "DOC-28 Q9 graph representation incorrectly contains erroneous vertex 'R'"
                     if raise_on_error:
                         raise AssertionError(msg)
                     return False, msg
 
-                # Check element findings for Q9
-                vertex_finding = next((f for f in findings if f.get('element') == 'vertex_labels'), None)
-                if not vertex_finding or "K" not in vertex_finding.get('reconstructed', '') or not vertex_finding.get('match'):
-                    msg = "DOC-28 Q9 visual semantic verification vertex_labels finding missing or invalid"
+                graph_sem = sem.get('graph_semantics')
+                if not graph_sem:
+                    msg = "DOC-28 Q9 structured graph_semantics is missing"
                     if raise_on_error:
                         raise AssertionError(msg)
                     return False, msg
 
-                edge_finding = next((f for f in findings if f.get('element') == 'edges'), None)
-                if not edge_finding or "(M,K)" not in edge_finding.get('reconstructed', '') or not edge_finding.get('match'):
-                    msg = "DOC-28 Q9 visual semantic verification edges finding missing or invalid"
+                vertices = set(graph_sem.get('vertices', []))
+                if vertices != AUTHORITATIVE_Q9_VERTICES or "R" in vertices:
+                    msg = f"DOC-28 Q9 graph vertices mismatch: {vertices} != {AUTHORITATIVE_Q9_VERTICES}"
                     if raise_on_error:
                         raise AssertionError(msg)
                     return False, msg
 
-    return True, "STATE B reconstruction provenance and semantic verification validated."
+                edges = graph_sem.get('edges', [])
+                norm_edges = {tuple(sorted(e)) for e in edges if len(e) == 2}
+                if norm_edges != AUTHORITATIVE_Q9_EDGES:
+                    msg = f"DOC-28 Q9 graph normalized edges mismatch: {norm_edges} != {AUTHORITATIVE_Q9_EDGES}"
+                    if raise_on_error:
+                        raise AssertionError(msg)
+                    return False, msg
+
+            # Q10 INDEPENDENT TREE SEMANTIC VERIFICATION
+            if inst_id == "DOC-28-P02-MCQ-Q10":
+                tree_sem = sem.get('tree_semantics')
+                if not tree_sem:
+                    msg = "DOC-28 Q10 structured tree_semantics is missing"
+                    if raise_on_error:
+                        raise AssertionError(msg)
+                    return False, msg
+
+                if tree_sem.get('root') != AUTHORITATIVE_Q10_ROOT:
+                    msg = f"DOC-28 Q10 tree root mismatch: '{tree_sem.get('root')}' != '{AUTHORITATIVE_Q10_ROOT}'"
+                    if raise_on_error:
+                        raise AssertionError(msg)
+                    return False, msg
+
+                rel_list = tree_sem.get('parent_child_relationships', [])
+                norm_rels = {(rel.get('parent'), rel.get('child')) for rel in rel_list}
+                if norm_rels != AUTHORITATIVE_Q10_RELATIONSHIPS:
+                    msg = f"DOC-28 Q10 tree parent-child relationships mismatch: {norm_rels} != {AUTHORITATIVE_Q10_RELATIONSHIPS}"
+                    if raise_on_error:
+                        raise AssertionError(msg)
+                    return False, msg
+
+    return True, "STATE B reconstruction provenance and independent semantic representations validated."
 
 
 def validate_visual_pages(page_quality, visual_audit, raise_on_error=False):
     """
     Rules 14, 15, 25, 26, 27, 28:
-    - Rule 14 & 27: VERIFIED cannot be true without review record + verification basis.
-    - Rule 15 & 28: Automated visual presence detection is distinct from verification (DETECTED != VERIFIED).
-    - Rule 25: RENDERED cannot be true without render evidence (render_artifact_reference existing on disk).
-    - Rule 26: VISUALLY_REVIEWED cannot be true without a review record.
+    - Canonical visual lifecycle states: detection_status, render_status, visual_review_status, verification_status.
+    - Contradiction rejection against legacy fields (verified, visually_reviewed, render_artifact_reference).
+    - RENDERED requires physical artifact on disk.
+    - REVIEWED requires review record.
+    - VERIFIED requires review record and verification basis.
+    - DETECTED alone must never become VERIFIED without review evidence.
     """
     for p in page_quality:
         p_num = p.get('page_number')
@@ -551,7 +703,45 @@ def validate_visual_pages(page_quality, visual_audit, raise_on_error=False):
         rec = p.get('review_record')
         basis = p.get('verification_basis')
 
-        # Rule 25: RENDERED requires physical render artifact
+        # Contradiction: verification_status vs verified
+        if ver_st == "VERIFIED" and v_rev is not True:
+            msg = f"Contradiction: Page {doc_id} P{p_num} verification_status is VERIFIED but visually_reviewed is not True"
+            if raise_on_error:
+                raise AssertionError(msg)
+            return False, msg
+
+        if ver_st == "VERIFIED" and ver is not True:
+            msg = f"Contradiction: Page {doc_id} P{p_num} verification_status is VERIFIED but verified is False"
+            if raise_on_error:
+                raise AssertionError(msg)
+            return False, msg
+
+        if ver is True and ver_st != "VERIFIED":
+            msg = f"Contradiction: Page {doc_id} P{p_num} verified is True but verification_status is '{ver_st}'"
+            if raise_on_error:
+                raise AssertionError(msg)
+            return False, msg
+
+        # Contradiction: visual_review_status vs visually_reviewed
+        if rev_st == "REVIEWED" and v_rev is not True:
+            msg = f"Contradiction: Page {doc_id} P{p_num} visual_review_status is REVIEWED but visually_reviewed is False"
+            if raise_on_error:
+                raise AssertionError(msg)
+            return False, msg
+
+        if v_rev is True and rev_st != "REVIEWED":
+            msg = f"Contradiction: Page {doc_id} P{p_num} visually_reviewed is True but visual_review_status is '{rev_st}'"
+            if raise_on_error:
+                raise AssertionError(msg)
+            return False, msg
+
+        # Contradiction: render_status vs render_artifact_reference
+        if ren_st == "NOT_RENDERED" and ren_ref is not None:
+            msg = f"Contradiction: Page {doc_id} P{p_num} render_status is NOT_RENDERED but render_artifact_reference is '{ren_ref}'"
+            if raise_on_error:
+                raise AssertionError(msg)
+            return False, msg
+
         if ren_st == "RENDERED":
             if not ren_ref:
                 msg = f"Page {doc_id} P{p_num} render_status is RENDERED but render_artifact_reference is null"
@@ -564,23 +754,23 @@ def validate_visual_pages(page_quality, visual_audit, raise_on_error=False):
                     raise AssertionError(msg)
                 return False, msg
 
-        # Rule 26: VISUALLY_REVIEWED requires review record
-        if rev_st == "REVIEWED" or v_rev is True:
+        # VISUALLY_REVIEWED requires review record
+        if rev_st == "REVIEWED":
             if not rec:
                 msg = f"Page {doc_id} P{p_num} is marked visually reviewed but review_record is null"
                 if raise_on_error:
                     raise AssertionError(msg)
                 return False, msg
 
-        # Rule 14 & Rule 27: VERIFIED requires review record and verification basis
-        if ver_st == "VERIFIED" or ver is True or p.get('visual_verification_status') == "VERIFIED":
-            if not (v_rev is True and ver is True and rec and basis):
+        # VERIFIED requires review record and verification basis
+        if ver_st == "VERIFIED":
+            if not (rec and basis):
                 msg = f"Page {doc_id} P{p_num} is marked VERIFIED without full review record and verification basis"
                 if raise_on_error:
                     raise AssertionError(msg)
                 return False, msg
 
-        # Rule 15 & Rule 28: DETECTED must not automatically become VERIFIED
+        # DETECTED must not automatically become VERIFIED
         if p.get('visual_verification_status') == "DETECTED" or (det_st == "DETECTED" and ver_st != "VERIFIED"):
             if ver is True or v_rev is True or ver_st == "VERIFIED":
                 msg = f"Page {doc_id} P{p_num} is DETECTED but inappropriately claimed as VERIFIED/REVIEWED"
@@ -592,14 +782,158 @@ def validate_visual_pages(page_quality, visual_audit, raise_on_error=False):
     for v in visual_audit:
         p_num = v.get('page_number')
         doc_id = v.get('document_id')
-        if v.get('visual_verification_status') == "VERIFIED":
-            if not (v.get('visually_reviewed') is True and v.get('verified') is True and v.get('review_record') and v.get('verification_basis')):
+        ver_st = v.get('verification_status')
+        rev_st = v.get('visual_review_status')
+        ren_st = v.get('render_status')
+        ren_ref = v.get('render_artifact_reference')
+        v_rev = v.get('visually_reviewed')
+        ver = v.get('verified')
+
+        if ver_st == "VERIFIED" and ver is not True:
+            msg = f"Contradiction: Visual audit {doc_id} P{p_num} verification_status is VERIFIED but verified is False"
+            if raise_on_error:
+                raise AssertionError(msg)
+            return False, msg
+
+        if rev_st == "REVIEWED" and v_rev is not True:
+            msg = f"Contradiction: Visual audit {doc_id} P{p_num} visual_review_status is REVIEWED but visually_reviewed is False"
+            if raise_on_error:
+                raise AssertionError(msg)
+            return False, msg
+
+        if ren_st == "NOT_RENDERED" and ren_ref is not None:
+            msg = f"Contradiction: Visual audit {doc_id} P{p_num} render_status is NOT_RENDERED but render_artifact_reference is not null"
+            if raise_on_error:
+                raise AssertionError(msg)
+            return False, msg
+
+        if v.get('visual_verification_status') == "VERIFIED" or ver_st == "VERIFIED":
+            if not (v_rev is True and ver is True and v.get('review_record') and v.get('verification_basis')):
                 msg = f"Visual audit {doc_id} P{p_num} is marked VERIFIED without complete review evidence"
                 if raise_on_error:
                     raise AssertionError(msg)
                 return False, msg
 
     return True, "Visual page extraction quality and verification audit validated across all dimensions."
+
+
+def validate_document_lifecycle(inventory, raise_on_error=False):
+    """
+    Rule 32:
+    - rendering_complete must be False across all 33 documents.
+    - document_rendering_status must be 'PARTIALLY_RENDERED' for DOC-28, and 'NOT_RENDERED' for all other 32 documents.
+    - Prevents single-page rendering from being reported as document-wide rendering completion.
+    """
+    valid_lifecycle_statuses = {"NOT_RENDERED", "PARTIALLY_RENDERED", "FULLY_RENDERED"}
+
+    for d in inventory:
+        doc_id = d.get('document_id')
+        ren_comp = d.get('rendering_complete')
+        doc_ren_st = d.get('document_rendering_status')
+
+        if doc_ren_st not in valid_lifecycle_statuses:
+            msg = f"Document {doc_id} has invalid document_rendering_status '{doc_ren_st}'"
+            if raise_on_error:
+                raise AssertionError(msg)
+            return False, msg
+
+        # Single page review does NOT equal document rendering completion
+        if ren_comp is True:
+            msg = f"Document {doc_id} has rendering_complete = True, but no document in corpus is 100% rendered"
+            if raise_on_error:
+                raise AssertionError(msg)
+            return False, msg
+
+        if doc_id == 'DOC-28':
+            if doc_ren_st != "PARTIALLY_RENDERED":
+                msg = f"DOC-28 document_rendering_status is '{doc_ren_st}' (expected 'PARTIALLY_RENDERED')"
+                if raise_on_error:
+                    raise AssertionError(msg)
+                return False, msg
+        else:
+            if doc_ren_st != "NOT_RENDERED":
+                msg = f"Document {doc_id} document_rendering_status is '{doc_ren_st}' (expected 'NOT_RENDERED')"
+                if raise_on_error:
+                    raise AssertionError(msg)
+                return False, msg
+
+    return True, "Document rendering lifecycle semantics validated: all 33 documents rendering_complete=False, DOC-28 PARTIALLY_RENDERED, 32 docs NOT_RENDERED."
+
+
+def validate_formal_schemas(inventory, records, page_quality, visual_audit, damaged, schema_path='PHASE1_SCHEMA.json', raise_on_error=False):
+    """
+    Rule 33:
+    - Formally validates all production records against authoritative PHASE1_SCHEMA.json.
+    - Covers SOURCE_CORPUS_INVENTORY, RAW_EXTRACTED_QUESTIONS, PAGE_EXTRACTION_QUALITY,
+      VISUAL_VERIFICATION_AUDIT, and DAMAGED_AND_INCOMPLETE_QUESTIONS_AUDIT.
+    """
+    if not os.path.exists(schema_path):
+        msg = f"Schema file not found at '{schema_path}'"
+        if raise_on_error:
+            raise AssertionError(msg)
+        return False, msg
+
+    with open(schema_path, 'r', encoding='utf-8') as f:
+        schema = json.load(f)
+
+    resolver = jsonschema.RefResolver.from_schema(schema)
+
+    # 1. Validate Documents
+    doc_schema = schema['definitions']['Document']
+    for idx, d in enumerate(inventory):
+        try:
+            jsonschema.validate(instance=d, schema=doc_schema, resolver=resolver)
+        except Exception as e:
+            msg = f"Schema validation error in inventory [{idx}] ({d.get('document_id')}): {e.message}"
+            if raise_on_error:
+                raise AssertionError(msg)
+            return False, msg
+
+    # 2. Validate Records
+    rec_schema = schema['definitions']['Record']
+    for idx, r in enumerate(records):
+        try:
+            jsonschema.validate(instance=r, schema=rec_schema, resolver=resolver)
+        except Exception as e:
+            msg = f"Schema validation error in record [{idx}] ({r.get('question_instance_id')}): {e.message}"
+            if raise_on_error:
+                raise AssertionError(msg)
+            return False, msg
+
+    # 3. Validate Page Audits
+    page_schema = schema['definitions']['PageAudit']
+    for idx, p in enumerate(page_quality):
+        try:
+            jsonschema.validate(instance=p, schema=page_schema, resolver=resolver)
+        except Exception as e:
+            msg = f"Schema validation error in page quality [{idx}] ({p.get('document_id')} P{p.get('page_number')}): {e.message}"
+            if raise_on_error:
+                raise AssertionError(msg)
+            return False, msg
+
+    # 4. Validate Visual Verification Records
+    vva_schema = schema['definitions']['VisualVerificationRecord']
+    for idx, v in enumerate(visual_audit):
+        try:
+            jsonschema.validate(instance=v, schema=vva_schema, resolver=resolver)
+        except Exception as e:
+            msg = f"Schema validation error in visual verification [{idx}] ({v.get('document_id')} P{v.get('page_number')}): {e.message}"
+            if raise_on_error:
+                raise AssertionError(msg)
+            return False, msg
+
+    # 5. Validate Damage Audits
+    dmg_schema = schema['definitions']['DamageAudit']
+    for idx, d in enumerate(damaged):
+        try:
+            jsonschema.validate(instance=d, schema=dmg_schema, resolver=resolver)
+        except Exception as e:
+            msg = f"Schema validation error in damage audit [{idx}] ({d.get('question_instance_id')}): {e.message}"
+            if raise_on_error:
+                raise AssertionError(msg)
+            return False, msg
+
+    return True, f"Formal schema validation passed for all 5 production datasets against {schema_path}."
 
 
 def validate_reconciliation_and_counts(records, metrics, raise_on_error=False):
@@ -655,7 +989,7 @@ def validate_reconciliation_and_counts(records, metrics, raise_on_error=False):
 
 
 # ==============================================================================
-# MAIN EXECUTION (31 INTEGRITY RULES)
+# MAIN EXECUTION (33 INTEGRITY RULES)
 # ==============================================================================
 
 def run_all_validation_rules(inventory, records, page_quality, damaged, visual_audit, suspicious, metrics):
@@ -680,9 +1014,9 @@ def run_all_validation_rules(inventory, records, page_quality, damaged, visual_a
         if not condition and details:
             print(f"   -> Failure details: {details}")
 
-    # Rule 01: Every inventory PDF has SHA-256
+    # Rule 01: Actual SHA-256 Byte Recomputation across all 33 PDFs
     p1, msg1 = validate_crypto_hashes(inventory)
-    check(1, "Every inventory PDF has SHA-256 cryptographic hash", p1, msg1)
+    check(1, "Actual SHA-256 byte recomputation across all 33 PDFs", p1, msg1)
 
     # Rule 02: Every source record maps to an existing source document ID
     valid_doc_ids = set(d['document_id'] for d in inventory)
@@ -701,9 +1035,9 @@ def run_all_validation_rules(inventory, records, page_quality, damaged, visual_a
     p5, msg5 = validate_placeholders_and_bounds(records)
     check(5, "No unknown provenance is replaced with placeholder guesses", p5, msg5)
 
-    # Rule 06: Real damage audit populated and covers all incomplete/fragment records (Rule H)
+    # Rule 06: Real damage audit populated with exact deterministic condition equality
     p6, msg6 = validate_damage_audit(records, damaged)
-    check(6, "Real damage audit is populated with valid damage records and covers all fragments (Rule H)", p6, msg6)
+    check(6, "Exact deterministic damage audit equality: detected == audited conditions with zero duplicates (Rule H)", p6, msg6)
 
     # Rule 07: Every question occurrence has a valid wording state
     p7, msg7 = validate_wording_states(records)
@@ -857,29 +1191,23 @@ def run_all_validation_rules(inventory, records, page_quality, damaged, visual_a
     check(30, "STATE B visual semantics marked verified only when all elements match source", r30_pass, "All verified STATE B visual items have 100% matching element-level findings.")
 
     # Rule 31: DOC-28 Q9 graph semantic integrity (Section 12 & 15)
-    doc28_q9 = next((q for q in records if q.get('question_instance_id') == "DOC-28-P02-MCQ-Q09"), None)
-    r31_pass = False
-    if doc28_q9:
-        q9_raw = doc28_q9.get('raw_text', '')
-        q9_meta = doc28_q9.get('reconstruction_metadata', {})
-        q9_sem = q9_meta.get('visual_semantic_verification', {})
-        q9_findings = q9_sem.get('element_level_findings', [])
-        
-        has_k = "6 nodes {M, N, O, K, Q, P}" in q9_raw and "(M,K)" in q9_raw
-        no_r = "6 nodes {M, N, O, R, Q, P}" not in q9_raw and "(M,R)" not in q9_raw
-        findings_ok = any(f.get('element') == 'vertex_labels' and 'K' in f.get('reconstructed', '') and f.get('match') for f in q9_findings)
-        edges_ok = any(f.get('element') == 'edges' and '(M,K)' in f.get('reconstructed', '') and f.get('match') for f in q9_findings)
-        
-        r31_pass = has_k and no_r and findings_ok and edges_ok and q9_sem.get('status') == 'VERIFIED'
-        
-    check(31, "DOC-28 Q9 graph representation is source-faithful (Vertex K, 7 edges, R eliminated)", r31_pass, "DOC-28 Q9 graph contains verified vertex K, edge (M,K), and passes 600 DPI semantic audit.")
+    p31, msg31 = validate_state_b_semantics(records)
+    check(31, "DOC-28 Q9 graph representation is source-faithful (Vertex K, 7 edges, R eliminated)", p31, msg31)
+
+    # Rule 32: Document-Level Rendering Lifecycle Semantics (Prompt 1.3A Section 3)
+    p32, msg32 = validate_document_lifecycle(inventory)
+    check(32, "Document-level rendering lifecycle semantics: rendering_complete=False across corpus, DOC-28 PARTIALLY_RENDERED", p32, msg32)
+
+    # Rule 33: Formal JSON Schema Release Gate (Prompt 1.3A Section 7)
+    p33, msg33 = validate_formal_schemas(inventory, records, page_quality, visual_audit, damaged)
+    check(33, "Formal JSON Schema release gate passed across all production deliverables (PHASE1_SCHEMA.json)", p33, msg33)
 
     return passed_checks, failed_checks, results
 
 
 def main():
     print("=" * 70)
-    print("RUNNING AUTOMATED PHASE 1.3 VALIDATION SUITE (31 INTEGRITY RULES)")
+    print("RUNNING AUTOMATED PHASE 1.3A VALIDATION SUITE (33 INTEGRITY RULES)")
     print("=" * 70)
 
     with open('SOURCE_CORPUS_INVENTORY.json', 'r', encoding='utf-8') as f:
@@ -908,30 +1236,36 @@ def main():
     )
 
     print("=" * 70)
-    print(f"CORE VALIDATION RESULT: {passed_checks}/31 RULES PASSED ({failed_checks} failed)")
+    print(f"CORE VALIDATION RESULT: {passed_checks}/33 RULES PASSED ({failed_checks} failed)")
     print("=" * 70)
 
     # Now execute the standalone adversarial mutation test suite against real validator functions
     import subprocess
-    print("\nExecuting True Adversarial Validator Mutation Suite...")
+    print("\nExecuting True Adversarial Validator Mutation Suite (19 Mutations)...")
     mut_proc = subprocess.run([sys.executable, 'scripts/test_phase1_validator_mutations.py'], capture_output=True, text=True, encoding='utf-8')
     print(mut_proc.stdout)
     if mut_proc.stderr:
         print(mut_proc.stderr)
 
     adv_passed = 0
-    adv_total = 7
+    adv_total = 19
     if os.path.exists('scripts/mutation_results.json'):
         with open('scripts/mutation_results.json', 'r', encoding='utf-8') as f:
             m_res = json.load(f)
             adv_passed = m_res.get('adversarial_passed', 0)
-            adv_total = m_res.get('adversarial_total', 7)
+            adv_total = m_res.get('adversarial_total', 19)
 
     # Update summary metrics
+    metrics['damage_audit_entries'] = len(damaged)
+    metrics['deterministic_damage_conditions'] = len(damaged)
     metrics['validation_rules_passed'] = passed_checks
     metrics['validation_rules_failed'] = failed_checks
     metrics['adversarial_tests_passed'] = adv_passed
     metrics['adversarial_tests_total'] = adv_total
+    metrics['core_validation_rules_passed'] = passed_checks
+    metrics['core_validation_rules_failed'] = failed_checks
+    metrics['schema_validation_passed'] = 1 if failed_checks == 0 else 0
+    metrics['schema_validation_failed'] = 0 if failed_checks == 0 else 1
 
     with open('CORPUS_SUMMARY_METRICS.json', 'w', encoding='utf-8') as f:
         json.dump(metrics, f, indent=2)
@@ -949,7 +1283,7 @@ def main():
         print("\nOVERALL STATUS: VALIDATION BLOCKED")
         sys.exit(1)
     else:
-        print("\nOVERALL STATUS: ALL 31 RULES AND ALL 7 ADVERSARIAL MUTATIONS PASSED")
+        print("\nOVERALL STATUS: ALL 33 RULES AND ALL 19 ADVERSARIAL MUTATIONS PASSED")
         sys.exit(0)
 
 

@@ -1170,6 +1170,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "marks_allocation_equation",
+    "fragment_category": "marks_allocation_equation",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -2767,6 +2768,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "marks_allocation_equation",
+    "fragment_category": "marks_allocation_equation",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -3141,6 +3143,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "marks_allocation_equation",
+    "fragment_category": "marks_allocation_equation",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -3433,6 +3436,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "marks_allocation_equation",
+    "fragment_category": "marks_allocation_equation",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -3807,6 +3811,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "curriculum_outcome_footer",
+    "fragment_category": "course_outcome_footer",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -4653,6 +4658,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "marks_allocation_equation",
+    "fragment_category": "marks_allocation_equation",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -4861,6 +4867,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "marks_allocation_equation",
+    "fragment_category": "marks_allocation_equation",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -5069,6 +5076,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "marks_allocation_equation",
+    "fragment_category": "marks_allocation_equation",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -5277,6 +5285,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "marks_allocation_equation",
+    "fragment_category": "marks_allocation_equation",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -5444,6 +5453,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "marks_allocation_equation",
+    "fragment_category": "marks_allocation_equation",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -5652,6 +5662,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "marks_allocation_equation",
+    "fragment_category": "marks_allocation_equation",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -5860,6 +5871,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "curriculum_outcome_footer",
+    "fragment_category": "course_outcome_footer",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -6706,6 +6718,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "marks_allocation_equation",
+    "fragment_category": "marks_allocation_equation",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -6914,6 +6927,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "marks_allocation_equation",
+    "fragment_category": "marks_allocation_equation",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -7122,6 +7136,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "marks_allocation_equation",
+    "fragment_category": "marks_allocation_equation",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -7330,6 +7345,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "marks_allocation_equation",
+    "fragment_category": "marks_allocation_equation",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -7497,6 +7513,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "marks_allocation_equation",
+    "fragment_category": "marks_allocation_equation",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -7705,6 +7722,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "marks_allocation_equation",
+    "fragment_category": "marks_allocation_equation",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -7913,6 +7931,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "curriculum_outcome_footer",
+    "fragment_category": "course_outcome_footer",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -8759,6 +8778,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "marks_allocation_equation",
+    "fragment_category": "marks_allocation_equation",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -8967,6 +8987,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "marks_allocation_equation",
+    "fragment_category": "marks_allocation_equation",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -9175,6 +9196,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "marks_allocation_equation",
+    "fragment_category": "marks_allocation_equation",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -9383,6 +9405,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "marks_allocation_equation",
+    "fragment_category": "marks_allocation_equation",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -9550,6 +9573,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "marks_allocation_equation",
+    "fragment_category": "marks_allocation_equation",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -9758,6 +9782,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "marks_allocation_equation",
+    "fragment_category": "marks_allocation_equation",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -9966,6 +9991,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "curriculum_outcome_footer",
+    "fragment_category": "course_outcome_footer",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -10881,6 +10907,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "marks_allocation_equation",
+    "fragment_category": "marks_allocation_equation",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -11089,6 +11116,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "marks_allocation_equation",
+    "fragment_category": "marks_allocation_equation",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -11297,6 +11325,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "marks_allocation_equation",
+    "fragment_category": "marks_allocation_equation",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -11464,6 +11493,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "marks_allocation_equation",
+    "fragment_category": "marks_allocation_equation",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -11838,6 +11868,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "marks_allocation_equation",
+    "fragment_category": "marks_allocation_equation",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -12046,6 +12077,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "marks_allocation_equation",
+    "fragment_category": "marks_allocation_equation",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -12213,6 +12245,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "curriculum_outcome_footer",
+    "fragment_category": "course_outcome_footer",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -12255,6 +12288,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "curriculum_outcome_footer",
+    "fragment_category": "course_outcome_footer",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -13170,6 +13204,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "marks_allocation_equation",
+    "fragment_category": "marks_allocation_equation",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -13378,6 +13413,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "marks_allocation_equation",
+    "fragment_category": "marks_allocation_equation",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -13586,6 +13622,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "marks_allocation_equation",
+    "fragment_category": "marks_allocation_equation",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -13753,6 +13790,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "marks_allocation_equation",
+    "fragment_category": "marks_allocation_equation",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -14127,6 +14165,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "marks_allocation_equation",
+    "fragment_category": "marks_allocation_equation",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -14335,6 +14374,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "marks_allocation_equation",
+    "fragment_category": "marks_allocation_equation",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -14502,6 +14542,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "curriculum_outcome_footer",
+    "fragment_category": "course_outcome_footer",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -14544,6 +14585,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "curriculum_outcome_footer",
+    "fragment_category": "course_outcome_footer",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -15459,6 +15501,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "marks_allocation_equation",
+    "fragment_category": "marks_allocation_equation",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -15667,6 +15710,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "marks_allocation_equation",
+    "fragment_category": "marks_allocation_equation",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -15875,6 +15919,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "marks_allocation_equation",
+    "fragment_category": "marks_allocation_equation",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -16042,6 +16087,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "marks_allocation_equation",
+    "fragment_category": "marks_allocation_equation",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -16416,6 +16462,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "marks_allocation_equation",
+    "fragment_category": "marks_allocation_equation",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -16624,6 +16671,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "marks_allocation_equation",
+    "fragment_category": "marks_allocation_equation",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -16791,6 +16839,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "curriculum_outcome_footer",
+    "fragment_category": "course_outcome_footer",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -16833,6 +16882,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "curriculum_outcome_footer",
+    "fragment_category": "course_outcome_footer",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -17748,6 +17798,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "marks_allocation_equation",
+    "fragment_category": "marks_allocation_equation",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -17956,6 +18007,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "marks_allocation_equation",
+    "fragment_category": "marks_allocation_equation",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -18164,6 +18216,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "marks_allocation_equation",
+    "fragment_category": "marks_allocation_equation",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -18331,6 +18384,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "marks_allocation_equation",
+    "fragment_category": "marks_allocation_equation",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -18705,6 +18759,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "marks_allocation_equation",
+    "fragment_category": "marks_allocation_equation",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -18913,6 +18968,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "marks_allocation_equation",
+    "fragment_category": "marks_allocation_equation",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -19080,6 +19136,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "curriculum_outcome_footer",
+    "fragment_category": "course_outcome_footer",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -19122,6 +19179,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "curriculum_outcome_footer",
+    "fragment_category": "course_outcome_footer",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -20410,6 +20468,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "marks_allocation_equation",
+    "fragment_category": "marks_allocation_equation",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -21075,6 +21134,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "marks_allocation_equation",
+    "fragment_category": "marks_allocation_equation",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -22529,6 +22589,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "marks_allocation_equation",
+    "fragment_category": "marks_allocation_equation",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -23194,6 +23255,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "marks_allocation_equation",
+    "fragment_category": "marks_allocation_equation",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -24648,6 +24710,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "marks_allocation_equation",
+    "fragment_category": "marks_allocation_equation",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -25313,6 +25376,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "marks_allocation_equation",
+    "fragment_category": "marks_allocation_equation",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -26475,6 +26539,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "marks_allocation_equation",
+    "fragment_category": "marks_allocation_equation",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -26642,6 +26707,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "marks_allocation_equation",
+    "fragment_category": "marks_allocation_equation",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -26850,6 +26916,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "marks_allocation_equation",
+    "fragment_category": "marks_allocation_equation",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -27058,6 +27125,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "marks_allocation_equation",
+    "fragment_category": "marks_allocation_equation",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -27266,6 +27334,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "marks_allocation_equation",
+    "fragment_category": "marks_allocation_equation",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -27474,6 +27543,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "marks_allocation_equation",
+    "fragment_category": "marks_allocation_equation",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -28761,6 +28831,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "marks_allocation_equation",
+    "fragment_category": "marks_allocation_equation",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -28928,6 +28999,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "marks_allocation_equation",
+    "fragment_category": "marks_allocation_equation",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -29136,6 +29208,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "marks_allocation_equation",
+    "fragment_category": "marks_allocation_equation",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -29344,6 +29417,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "marks_allocation_equation",
+    "fragment_category": "marks_allocation_equation",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -29552,6 +29626,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "marks_allocation_equation",
+    "fragment_category": "marks_allocation_equation",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -29760,6 +29835,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "marks_allocation_equation",
+    "fragment_category": "marks_allocation_equation",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -31047,6 +31123,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "marks_allocation_equation",
+    "fragment_category": "marks_allocation_equation",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -31214,6 +31291,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "marks_allocation_equation",
+    "fragment_category": "marks_allocation_equation",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -31422,6 +31500,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "marks_allocation_equation",
+    "fragment_category": "marks_allocation_equation",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -31630,6 +31709,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "marks_allocation_equation",
+    "fragment_category": "marks_allocation_equation",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -31838,6 +31918,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "marks_allocation_equation",
+    "fragment_category": "marks_allocation_equation",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -32046,6 +32127,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "marks_allocation_equation",
+    "fragment_category": "marks_allocation_equation",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -33333,6 +33415,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "marks_allocation_equation",
+    "fragment_category": "marks_allocation_equation",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -33500,6 +33583,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "marks_allocation_equation",
+    "fragment_category": "marks_allocation_equation",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -33708,6 +33792,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "marks_allocation_equation",
+    "fragment_category": "marks_allocation_equation",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -33916,6 +34001,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "marks_allocation_equation",
+    "fragment_category": "marks_allocation_equation",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -34124,6 +34210,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "marks_allocation_equation",
+    "fragment_category": "marks_allocation_equation",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -34332,6 +34419,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "marks_allocation_equation",
+    "fragment_category": "marks_allocation_equation",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -35344,6 +35432,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "marks_allocation_equation",
+    "fragment_category": "marks_allocation_equation",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -35718,6 +35807,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "marks_allocation_equation",
+    "fragment_category": "marks_allocation_equation",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -35926,6 +36016,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "marks_allocation_equation",
+    "fragment_category": "marks_allocation_equation",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -36425,6 +36516,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "marks_allocation_equation",
+    "fragment_category": "marks_allocation_equation",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -36633,6 +36725,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "curriculum_outcome_footer",
+    "fragment_category": "course_outcome_footer",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -39659,6 +39752,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "marks_allocation_equation",
+    "fragment_category": "marks_allocation_equation",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -40033,6 +40127,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "marks_allocation_equation",
+    "fragment_category": "marks_allocation_equation",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -40325,6 +40420,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "marks_allocation_equation",
+    "fragment_category": "marks_allocation_equation",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -40699,6 +40795,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "curriculum_outcome_footer",
+    "fragment_category": "course_outcome_footer",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -41872,6 +41969,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "marks_allocation_equation",
+    "fragment_category": "marks_allocation_equation",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -43265,6 +43363,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "marks_allocation_equation",
+    "fragment_category": "marks_allocation_equation",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -43639,6 +43738,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "marks_allocation_equation",
+    "fragment_category": "marks_allocation_equation",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -44054,6 +44154,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "marks_allocation_equation",
+    "fragment_category": "marks_allocation_equation",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -45232,6 +45333,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "marks_allocation_equation",
+    "fragment_category": "marks_allocation_equation",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -45606,6 +45708,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "marks_allocation_equation",
+    "fragment_category": "marks_allocation_equation",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -46021,6 +46124,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "marks_allocation_equation",
+    "fragment_category": "marks_allocation_equation",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -47490,6 +47594,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "marks_allocation_equation",
+    "fragment_category": "marks_allocation_equation",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -47657,6 +47762,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "marks_allocation_equation",
+    "fragment_category": "marks_allocation_equation",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -48074,6 +48180,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "marks_allocation_equation",
+    "fragment_category": "marks_allocation_equation",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -49124,6 +49231,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "marks_allocation_equation",
+    "fragment_category": "marks_allocation_equation",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -49498,6 +49606,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "marks_allocation_equation",
+    "fragment_category": "marks_allocation_equation",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -49790,6 +49899,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "marks_allocation_equation",
+    "fragment_category": "marks_allocation_equation",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -50164,6 +50274,7 @@
     "source_visual_reason": null,
     "is_student_answerable": false,
     "fragment_type": "curriculum_outcome_footer",
+    "fragment_category": "course_outcome_footer",
     "fragment_reason": "Physical marks summary or administrative footer extracted from source page layout"
   },
   {
@@ -54490,7 +54601,26 @@
             "match": true
           }
         ],
-        "verification_confidence": "HIGH"
+        "verification_confidence": "HIGH",
+        "code_semantics": {
+          "language": "c",
+          "function_name": "fun",
+          "return_type": "void",
+          "parameters": [
+            "struct node* start"
+          ],
+          "lines": [
+            "void fun(struct node* start)",
+            "{",
+            "    if(start == NULL)",
+            "        return;",
+            "    printf(\"%d \", start->data);",
+            "    if(start->next != NULL )",
+            "        fun(start->next->next);",
+            "    printf(\"%d \", start->data);",
+            "}"
+          ]
+        }
       }
     },
     "completeness_status": "COMPLETE",
@@ -54582,7 +54712,48 @@
             "match": true
           }
         ],
-        "verification_confidence": "HIGH"
+        "verification_confidence": "HIGH",
+        "graph_semantics": {
+          "type": "undirected",
+          "vertices": [
+            "M",
+            "N",
+            "O",
+            "K",
+            "Q",
+            "P"
+          ],
+          "edges": [
+            [
+              "M",
+              "K"
+            ],
+            [
+              "M",
+              "N"
+            ],
+            [
+              "M",
+              "Q"
+            ],
+            [
+              "N",
+              "O"
+            ],
+            [
+              "N",
+              "Q"
+            ],
+            [
+              "Q",
+              "P"
+            ],
+            [
+              "P",
+              "O"
+            ]
+          ]
+        }
       }
     },
     "completeness_status": "COMPLETE",
@@ -54661,7 +54832,46 @@
             "match": true
           }
         ],
-        "verification_confidence": "HIGH"
+        "verification_confidence": "HIGH",
+        "tree_semantics": {
+          "type": "binary_tree",
+          "root": "1",
+          "nodes": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"
+          ],
+          "parent_child_relationships": [
+            {
+              "parent": "1",
+              "child": "2",
+              "relation": "child"
+            },
+            {
+              "parent": "2",
+              "child": "5",
+              "relation": "child"
+            },
+            {
+              "parent": "5",
+              "child": "3",
+              "relation": "left_child"
+            },
+            {
+              "parent": "5",
+              "child": "6",
+              "relation": "right_child"
+            },
+            {
+              "parent": "3",
+              "child": "4",
+              "relation": "child"
+            }
+          ]
+        }
       }
     },
     "completeness_status": "COMPLETE",

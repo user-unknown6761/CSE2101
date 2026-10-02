@@ -1,6 +1,6 @@
 {
-  "adversarial_passed": 7,
-  "adversarial_total": 7,
+  "adversarial_passed": 19,
+  "adversarial_total": 19,
   "test_results": [
     {
       "test_id": "TEST A",
@@ -32,7 +32,7 @@
       "rule_failed": "Rules 14 & 27",
       "caught": true,
       "status": "PASS",
-      "validator_rejection_reason": "Page DOC-01 P1 is marked VERIFIED without full review record and verification basis"
+      "validator_rejection_reason": "Contradiction: Page DOC-01 P1 visually_reviewed is True but visual_review_status is 'NOT_REVIEWED'"
     },
     {
       "test_id": "TEST E",
@@ -57,6 +57,102 @@
       "caught": true,
       "status": "PASS",
       "validator_rejection_reason": "DOC-28 Q9 raw_text does not contain faithful vertex 'K' and edge '(M,K)'"
+    },
+    {
+      "test_id": "TEST H1",
+      "name": "Delete Legitimate Damage Entry",
+      "rule_failed": "Rule 06",
+      "caught": true,
+      "status": "PASS",
+      "validator_rejection_reason": "Deterministic damage candidate missing from damage audit: ('DOC-01-P03-Q07', 'DET_FRAGMENT_MARKS', 'marks_footer_contamination', 'MAJOR', 'RESOLVED', \"Physical source fragment: '+ (1 + (2 + 2)) = 12'\")"
+    },
+    {
+      "test_id": "TEST H2",
+      "name": "Mutate Damage Type",
+      "rule_failed": "Rule 06",
+      "caught": true,
+      "status": "PASS",
+      "validator_rejection_reason": "Deterministic damage candidate missing from damage audit: ('DOC-01-P03-Q07', 'DET_FRAGMENT_MARKS', 'marks_footer_contamination', 'MAJOR', 'RESOLVED', \"Physical source fragment: '+ (1 + (2 + 2)) = 12'\")"
+    },
+    {
+      "test_id": "TEST H3",
+      "name": "Mutate Damage Severity",
+      "rule_failed": "Rule 06",
+      "caught": true,
+      "status": "PASS",
+      "validator_rejection_reason": "Deterministic damage candidate missing from damage audit: ('DOC-02-P02-Q02-sub-a', 'DET_QUESTION_ADMIN_METADATA', 'administrative_metadata_inside_question', 'WARNING', 'UNRESOLVED', \"Bloom's taxonomy / CO annotation present in text: 'What is a sparse matrix?     [(CO1) (Remember/LOCQ)] Given the following 4 \u00d7 5 m...'\")"
+    },
+    {
+      "test_id": "TEST H4",
+      "name": "Insert Fabricated Damage Entry",
+      "rule_failed": "Rule 06",
+      "caught": true,
+      "status": "PASS",
+      "validator_rejection_reason": "Fabricated or altered damage entry found in damage audit: ('DOC-01-P01-Q99-FABRICATED', 'DET_FABRICATED', 'fabricated_damage', 'MAJOR', 'UNRESOLVED', 'Fabricated non-existent damage condition')"
+    },
+    {
+      "test_id": "TEST H5",
+      "name": "Duplicate Legitimate Damage Entry",
+      "rule_failed": "Rule 06",
+      "caught": true,
+      "status": "PASS",
+      "validator_rejection_reason": "Damage audit contains duplicate entries: 508 total vs 507 unique"
+    },
+    {
+      "test_id": "TEST H6",
+      "name": "Q8 C Code Semantic Corruption (match=True preserved)",
+      "rule_failed": "Rule 31",
+      "caught": true,
+      "status": "PASS",
+      "validator_rejection_reason": "DOC-28 Q8 code semantic corruption at line 5: '    printf(\"%s \", start->data);' != '    printf(\"%d \", start->data);'"
+    },
+    {
+      "test_id": "TEST H7",
+      "name": "Q9 Graph Edge Semantic Corruption (match=True preserved)",
+      "rule_failed": "Rule 31",
+      "caught": true,
+      "status": "PASS",
+      "validator_rejection_reason": "DOC-28 Q9 graph normalized edges mismatch: {('M', 'Z'), ('N', 'O'), ('N', 'Q'), ('M', 'N'), ('P', 'Q'), ('M', 'Q'), ('O', 'P')} != {('M', 'N'), ('N', 'O'), ('N', 'Q'), ('P', 'Q'), ('K', 'M'), ('M', 'Q'), ('O', 'P')}"
+    },
+    {
+      "test_id": "TEST H8",
+      "name": "Q10 Tree Relationship Corruption (match=True preserved)",
+      "rule_failed": "Rule 31",
+      "caught": true,
+      "status": "PASS",
+      "validator_rejection_reason": "DOC-28 Q10 tree parent-child relationships mismatch: {('3', '4'), ('1', '2'), ('2', '5'), ('5', '6'), ('5', '99')} != {('2', '5'), ('5', '6'), ('3', '4'), ('5', '3'), ('1', '2')}"
+    },
+    {
+      "test_id": "TEST H9",
+      "name": "Recorded SHA-256 Hash Byte Mutation",
+      "rule_failed": "Rule 01",
+      "caught": true,
+      "status": "PASS",
+      "validator_rejection_reason": "Document DOC-01 SHA-256 mismatch: recorded '427b828f8028033bd1ab7a6e19b4aaa6c3e4d34edcf3fc675d0821c1cd778f60' != actual '427b828f8028033bd1ab7a6e19b4aaa6c3e4d34edcf3fc675d0821c1cd778f6a'"
+    },
+    {
+      "test_id": "TEST H10",
+      "name": "Canonical Visual Lifecycle Contradiction (VERIFIED vs verified=False)",
+      "rule_failed": "Rules 14 & 27",
+      "caught": true,
+      "status": "PASS",
+      "validator_rejection_reason": "Contradiction: Page DOC-28 P2 verification_status is VERIFIED but verified is False"
+    },
+    {
+      "test_id": "TEST H11",
+      "name": "Render-Status / Artifact Contradiction (NOT_RENDERED with artifact)",
+      "rule_failed": "Rule 25",
+      "caught": true,
+      "status": "PASS",
+      "validator_rejection_reason": "Contradiction: Page DOC-01 P1 render_status is NOT_RENDERED but render_artifact_reference is 'rendered_pages/phantom_render_page.png'"
+    },
+    {
+      "test_id": "TEST H12",
+      "name": "Formal Schema Violation in Production Records",
+      "rule_failed": "Rule 33",
+      "caught": true,
+      "status": "PASS",
+      "validator_rejection_reason": "Schema validation error in record [0] (DOC-01-P01-CONTAINER-Q01): True was expected"
     }
   ]
 }

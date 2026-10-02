@@ -31,13 +31,14 @@ Phase 1.2 introduced a sound tripartite record model and eliminated fabricated d
 - **Forensic Graph Inspection:**
   - **Node Labels:** 6 circular nodes. Top row: `M`, `N`, `O`. Bottom row: `K`, `Q`, `P`. The bottom-left node, previously mislabeled `R`, is unmistakably the Latin capital letter **`K`** (vertical stem with two angled diagonal arms meeting at the midpoint).
   - **Undirected Edges (7 total):**
-    1. `(M, K)` — Vertical edge connecting top-left `M` to bottom-left `K`.
+    1. `(M, K)` — Diagonal edge extending downwards to the left from top-left `M` to lower-level `K`.
     2. `(M, N)` — Horizontal edge connecting top-left `M` to top-center `N`.
-    3. `(M, Q)` — Diagonal edge connecting top-left `M` to bottom-center `Q`.
+    3. `(M, Q)` — Diagonal edge extending downwards to the right from top-left `M` to bottom-center `Q`.
     4. `(N, O)` — Horizontal edge connecting top-center `N` to top-right `O`.
-    5. `(N, Q)` — Vertical edge connecting top-center `N` to bottom-center `Q`.
+    5. `(N, Q)` — Diagonal edge extending downwards to the left from top-center `N` to bottom-center `Q`.
     6. `(Q, P)` — Horizontal edge connecting bottom-center `Q` to bottom-right `P`.
-    7. `(P, O)` — Vertical edge connecting bottom-right `P` to top-right `O`.
+    7. `(P, O)` — Diagonal edge extending upwards to the right from bottom-right `P` to top-right `O`.
+  - **Edge Geometry Breakdown:** Exactly 3 horizontal edges `(M, N), (N, O), (Q, P)`, 4 diagonal edges `(M, K), (M, Q), (N, Q), (P, O)`, and 0 vertical edges.
   - **Planarity & Crossing:** Planar graph with 0 edge crossings.
   - **Degree Sequence:** $K: 1, M: 3, N: 3, Q: 3, P: 2, O: 2$ ($\sum \deg = 14 = 2 \times 7$).
   - **MCQ Printed Options Reconciliation:** The four options in the source PDF (`(a) MNOPQR`, `(b) NQMPOR`, `(c) QMNPRO`, `(d) QMNPOR`) print `R` due to a historical authorial typo in the source question paper. Per Section 2 of Prompt 1.3, the source visual diagram is authoritative: the graph representation must strictly preserve `K`, while options preserve verbatim text.

@@ -192,7 +192,8 @@ for idx, fpath in enumerate(pdf_paths, start=1):
         'text_extraction_status': "SUCCESS",
         'ocr_needed_status': False,
         'extraction_complete': True,
-        'rendering_complete': (doc_id == 'DOC-28'),
+        'rendering_complete': False,
+        'document_rendering_status': "PARTIALLY_RENDERED" if doc_id == 'DOC-28' else "NOT_RENDERED",
         'visual_review_complete': False,
         'verification_complete': False,
         'document_visual_review_status': "PARTIALLY_REVIEWED" if doc_id == 'DOC-28' else "NOT_ESTABLISHED"
@@ -841,6 +842,7 @@ def parse_exam_paper(doc_meta):
                                 'source_visual_reason': None,
                                 'is_student_answerable': False,
                                 'fragment_type': f_type,
+                                'fragment_category': "marks_allocation_equation" if f_type == "marks_allocation_equation" else ("course_outcome_footer" if f_type == "curriculum_outcome_footer" else "solution_code_fragment"),
                                 'fragment_reason': f_reason
                             })
                             i = j
@@ -1168,7 +1170,24 @@ doc28_reconstructed_page2 = {
                     'match': True
                 }
             ],
-            'verification_confidence': "HIGH"
+            'verification_confidence': "HIGH",
+            'code_semantics': {
+                'language': "c",
+                'function_name': "fun",
+                'return_type': "void",
+                'parameters': ["struct node* start"],
+                'lines': [
+                    "void fun(struct node* start)",
+                    "{",
+                    "    if(start == NULL)",
+                    "        return;",
+                    "    printf(\"%d \", start->data);",
+                    "    if(start->next != NULL )",
+                    "        fun(start->next->next);",
+                    "    printf(\"%d \", start->data);",
+                    "}"
+                ]
+            }
         }
     },
     9: {
@@ -1220,7 +1239,20 @@ doc28_reconstructed_page2 = {
                     'match': True
                 }
             ],
-            'verification_confidence': "HIGH"
+            'verification_confidence': "HIGH",
+            'graph_semantics': {
+                'type': "undirected",
+                'vertices': ["M", "N", "O", "K", "Q", "P"],
+                'edges': [
+                    ["M", "K"],
+                    ["M", "N"],
+                    ["M", "Q"],
+                    ["N", "O"],
+                    ["N", "Q"],
+                    ["Q", "P"],
+                    ["P", "O"]
+                ]
+            }
         }
     },
     10: {
@@ -1259,7 +1291,19 @@ doc28_reconstructed_page2 = {
                     'match': True
                 }
             ],
-            'verification_confidence': "HIGH"
+            'verification_confidence': "HIGH",
+            'tree_semantics': {
+                'type': "binary_tree",
+                'root': "1",
+                'nodes': ["1", "2", "3", "4", "5", "6"],
+                'parent_child_relationships': [
+                    {"parent": "1", "child": "2", "relation": "child"},
+                    {"parent": "2", "child": "5", "relation": "child"},
+                    {"parent": "5", "child": "3", "relation": "left_child"},
+                    {"parent": "5", "child": "6", "relation": "right_child"},
+                    {"parent": "3", "child": "4", "relation": "child"}
+                ]
+            }
         }
     },
     11: {
@@ -1651,14 +1695,19 @@ print(f"  - Standalone questions: {len(standalone):,}")
 
 # A. Register all non-question source fragments in damage audit as RESOLVED
 for f in fragments:
-    damage_type = "marks_footer_contamination" if f.get('fragment_type') == "marks_allocation_equation" else (
-        "administrative_metadata_inside_question" if f.get('fragment_type') == "curriculum_outcome_footer" else "solution_code_fragment"
+    f_type = f.get('fragment_type')
+    detector_id = "DET_FRAGMENT_MARKS" if f_type == "marks_allocation_equation" else (
+        "DET_FRAGMENT_CO_FOOTER" if f_type == "curriculum_outcome_footer" else "DET_FRAGMENT_SOLUTION"
+    )
+    damage_type = "marks_footer_contamination" if f_type == "marks_allocation_equation" else (
+        "administrative_metadata_inside_question" if f_type == "curriculum_outcome_footer" else "solution_code_fragment"
     )
     res_method = "Reclassified from question occurrence to non_question_source_fragment (non-answerable physical record)"
     damaged_audit.append({
         'question_instance_id': f['question_instance_id'],
         'document_id': f['document_id'],
         'page': f['page_start'],
+        'detector_id': detector_id,
         'damage_type': damage_type,
         'severity': "MAJOR",
         'evidence': f"Physical source fragment: '{f['raw_text'][:100]}'",
@@ -1674,6 +1723,7 @@ doc28_damage_records = [
         'question_instance_id': "DOC-28-P02-MCQ-Q07",
         'document_id': "DOC-28",
         'page': 2,
+        'detector_id': "DET_DOC28_LAYOUT_P02_Q07",
         'damage_type': "page_column_interleaving",
         'severity': "CRITICAL",
         'evidence': "Three horizontal text streams interleaved across multi-column layout on rendered page 2",
@@ -1686,6 +1736,7 @@ doc28_damage_records = [
         'question_instance_id': "DOC-28-P02-MCQ-Q08",
         'document_id': "DOC-28",
         'page': 2,
+        'detector_id': "DET_DOC28_LAYOUT_P02_Q08",
         'damage_type': "missing_essential_code_block",
         'severity': "CRITICAL",
         'evidence': "C code function `void fun(struct node* start)` embedded in raster image xref 22 omitted from raw text stream",
@@ -1698,6 +1749,7 @@ doc28_damage_records = [
         'question_instance_id': "DOC-28-P02-MCQ-Q09",
         'document_id': "DOC-28",
         'page': 2,
+        'detector_id': "DET_DOC28_LAYOUT_P02_Q09",
         'damage_type': "missing_referenced_visual",
         'severity': "MAJOR",
         'evidence': "Referenced 6-vertex BFS graph diagram with vertices {M, N, O, K, Q, P} located in visual container y=300-450",
@@ -1710,6 +1762,7 @@ doc28_damage_records = [
         'question_instance_id': "DOC-28-P02-MCQ-Q10",
         'document_id': "DOC-28",
         'page': 2,
+        'detector_id': "DET_DOC28_LAYOUT_P02_Q10",
         'damage_type': "missing_referenced_visual",
         'severity': "MAJOR",
         'evidence': "Referenced post-order binary tree diagram embedded in raster image xref 24",
@@ -1722,6 +1775,7 @@ doc28_damage_records = [
         'question_instance_id': "DOC-28-P02-MCQ-Q11",
         'document_id': "DOC-28",
         'page': 2,
+        'detector_id': "DET_DOC28_LAYOUT_P02_Q11",
         'damage_type': "cross_question_contamination",
         'severity': "CRITICAL",
         'evidence': "Contaminated with text stream fragment from Question 7 center stream ('ements is correct for a circular singly linked list w')",
@@ -1748,6 +1802,7 @@ for q in true_questions:
             'question_instance_id': qid,
             'document_id': doc_id,
             'page': p_num,
+            'detector_id': "DET_MULTIPLE_STEMS",
             'damage_type': "multiple_question_stems",
             'severity': "MAJOR",
             'evidence': f"Multiple stems detected: '{text[:80]}...'",
@@ -1764,6 +1819,7 @@ for q in true_questions:
             'question_instance_id': qid,
             'document_id': doc_id,
             'page': p_num,
+            'detector_id': "DET_DANGLING_ENDING",
             'damage_type': "dangling_sentence_ending",
             'severity': "WARNING",
             'evidence': f"Ends in dangling connector: '...{text.strip()[-30:]}'",
@@ -1781,6 +1837,7 @@ for q in true_questions:
                 'question_instance_id': qid,
                 'document_id': doc_id,
                 'page': p_num,
+                'detector_id': "DET_MISSING_MCQ_OPTIONS",
                 'damage_type': "missing_mcq_options",
                 'severity': "WARNING",
                 'evidence': f"MCQ lacks option (c): '{text[:80]}...'",
@@ -1797,6 +1854,7 @@ for q in true_questions:
             'question_instance_id': qid,
             'document_id': doc_id,
             'page': p_num,
+            'detector_id': "DET_QUESTION_ADMIN_METADATA",
             'damage_type': "administrative_metadata_inside_question",
             'severity': "WARNING",
             'evidence': f"Bloom's taxonomy / CO annotation present in text: '{text[:80]}...'",
@@ -1814,6 +1872,7 @@ for q in true_questions:
             'question_instance_id': qid,
             'document_id': doc_id,
             'page': p_num,
+            'detector_id': "DET_MISSING_REFERENCED_VISUAL",
             'damage_type': "missing_referenced_visual",
             'severity': "MAJOR",
             'evidence': f"Visual reference without visual flag: '{text[:80]}...'",
@@ -1830,6 +1889,7 @@ for q in true_questions:
             'question_instance_id': qid,
             'document_id': doc_id,
             'page': p_num,
+            'detector_id': "DET_LONG_TEXT_BLOCK",
             'damage_type': "implausibly_long_mixed_content",
             'severity': "WARNING",
             'evidence': f"Character count {len(text)} exceeds 3000 chars",
@@ -1923,12 +1983,18 @@ summary_metrics = {
     "visual_flagged": v_flagged,
 
     "damage_records": len(damaged_audit),
+    "damage_audit_entries": len(damaged_audit),
+    "deterministic_damage_conditions": len(damaged_audit),
     "unresolved_damage_records": unresolved_dmg,
 
+    "core_validation_rules_passed": None,
+    "core_validation_rules_failed": None,
     "validation_rules_passed": None, # Populated by validator
     "validation_rules_failed": None,
     "adversarial_tests_passed": None, # Populated by mutation test suite
-    "adversarial_tests_total": None
+    "adversarial_tests_total": None,
+    "schema_validation_passed": None,
+    "schema_validation_failed": None
 }
 
 with open('CORPUS_SUMMARY_METRICS.json', 'w', encoding='utf-8') as f:

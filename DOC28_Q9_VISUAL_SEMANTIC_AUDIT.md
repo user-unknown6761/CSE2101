@@ -61,6 +61,7 @@ Careful inspection of line paths connecting the node boundaries reveals exactly 
 7. **Edge `(P, O)`:** Extends diagonally upwards to the right from node `P` to node `O`.
 
 - **Total Edges:** 7
+- **Edge Geometry Breakdown:** Exactly 3 horizontal edges `(M, N), (N, O), (Q, P)`, 4 diagonal edges `(M, K), (M, Q), (N, Q), (P, O)`, and 0 vertical edges.
 - **Handshaking Lemma Verification:**
   $$\sum \text{deg}(v) = \text{deg}(K) + \text{deg}(M) + \text{deg}(N) + \text{deg}(Q) + \text{deg}(P) + \text{deg}(O) = 1 + 3 + 3 + 3 + 2 + 2 = 14 = 2 \times 7$$
 - **Edge Crossings:** Exactly 0. Edges `(M, Q)` and `(N, Q)` terminate at common vertex `Q` and do not intersect other edges. The graph is planar.
