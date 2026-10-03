@@ -1,0 +1,186 @@
+{
+  "summary": {
+    "total_source_questions": 1260,
+    "in_scope_count": 780,
+    "out_of_scope_count": 479,
+    "ambiguous_count": 1,
+    "accounting_check_passed": true,
+    "accounting_equation": "780 (IN_SCOPE) + 479 (OUT_OF_SCOPE) + 1 (AMBIGUOUS) == 1260"
+  },
+  "in_scope_by_topic": {
+    "M1_LL_SINGLY": 111,
+    "M1_LL_CIRCULAR": 71,
+    "M4_SORT_HEAPIFY": 58,
+    "M2_STACK_APPLICATIONS": 57,
+    "M1_INTRO_ASYMPTOTIC": 48,
+    "M1_LL_DOUBLY": 47,
+    "M1_ARRAY_REPRESENTATION": 45,
+    "M2_STACK_IMPL": 45,
+    "M1_ARRAY_SPARSE": 28,
+    "M4_SORT_INSERTION": 27,
+    "M2_DEQUE": 26,
+    "M2_QUEUE_LINEAR_CIRCULAR": 25,
+    "M1_INTRO_ALGO_PROG": 23,
+    "M4_SEARCH_BINARY": 22,
+    "M4_SORT_BUBBLE": 20,
+    "M4_SEARCH_INTERPOLATION": 19,
+    "M4_SEARCH_SEQUENTIAL": 18,
+    "M2_REC_APPLICATIONS": 17,
+    "M4_SORT_QUICK": 16,
+    "M1_INTRO_EFFICIENCY": 11,
+    "M1_INTRO_CONCEPTS": 11,
+    "M2_REC_PRINCIPLES": 10,
+    "M4_SORT_SELECTION": 7,
+    "M1_ARRAY_POLYNOMIAL": 6,
+    "M2_REC_TAIL": 4,
+    "M1_LL_APPLICATIONS": 4,
+    "M2_QUEUE_APPLICATIONS": 2,
+    "M1_INTRO_NEED": 1,
+    "M4_SORT_COCKTAIL": 1
+  },
+  "out_of_scope_by_category": {
+    "OOS_MODULE_3_TREE": 226,
+    "OOS_MODULE_3_GRAPH": 125,
+    "OOS_MODULE_3_HASHING": 67,
+    "OOS_MODULE_4_EXCLUDED_SORT": 45,
+    "OOS_GENERAL_OUTSIDE_SYLLABUS": 12,
+    "OOS_M4_QUICK_SORT_COMPLEXITY": 4
+  },
+  "document_breakdown": {
+    "DOC-01": {
+      "in_scope": 25,
+      "out_of_scope": 9,
+      "ambiguous": 0
+    },
+    "DOC-02": {
+      "in_scope": 23,
+      "out_of_scope": 10,
+      "ambiguous": 0
+    },
+    "DOC-03": {
+      "in_scope": 18,
+      "out_of_scope": 14,
+      "ambiguous": 0
+    },
+    "DOC-04": {
+      "in_scope": 18,
+      "out_of_scope": 14,
+      "ambiguous": 0
+    },
+    "DOC-05": {
+      "in_scope": 18,
+      "out_of_scope": 14,
+      "ambiguous": 0
+    },
+    "DOC-06": {
+      "in_scope": 23,
+      "out_of_scope": 13,
+      "ambiguous": 0
+    },
+    "DOC-07": {
+      "in_scope": 23,
+      "out_of_scope": 13,
+      "ambiguous": 0
+    },
+    "DOC-08": {
+      "in_scope": 23,
+      "out_of_scope": 13,
+      "ambiguous": 0
+    },
+    "DOC-09": {
+      "in_scope": 23,
+      "out_of_scope": 13,
+      "ambiguous": 0
+    },
+    "DOC-10": {
+      "in_scope": 25,
+      "out_of_scope": 13,
+      "ambiguous": 0
+    },
+    "DOC-11": {
+      "in_scope": 25,
+      "out_of_scope": 13,
+      "ambiguous": 0
+    },
+    "DOC-12": {
+      "in_scope": 25,
+      "out_of_scope": 13,
+      "ambiguous": 0
+    },
+    "DOC-13": {
+      "in_scope": 22,
+      "out_of_scope": 16,
+      "ambiguous": 0
+    },
+    "DOC-14": {
+      "in_scope": 22,
+      "out_of_scope": 16,
+      "ambiguous": 0
+    },
+    "DOC-15": {
+      "in_scope": 22,
+      "out_of_scope": 16,
+      "ambiguous": 0
+    },
+    "DOC-16": {
+      "in_scope": 22,
+      "out_of_scope": 16,
+      "ambiguous": 0
+    },
+    "DOC-18": {
+      "in_scope": 23,
+      "out_of_scope": 10,
+      "ambiguous": 0
+    },
+    "DOC-19": {
+      "in_scope": 31,
+      "out_of_scope": 10,
+      "ambiguous": 1
+    },
+    "DOC-20": {
+      "in_scope": 23,
+      "out_of_scope": 10,
+      "ambiguous": 0
+    },
+    "DOC-21": {
+      "in_scope": 25,
+      "out_of_scope": 9,
+      "ambiguous": 0
+    },
+    "DOC-22": {
+      "in_scope": 22,
+      "out_of_scope": 12,
+      "ambiguous": 0
+    },
+    "DOC-23": {
+      "in_scope": 22,
+      "out_of_scope": 12,
+      "ambiguous": 0
+    },
+    "DOC-25": {
+      "in_scope": 17,
+      "out_of_scope": 11,
+      "ambiguous": 0
+    },
+    "DOC-26": {
+      "in_scope": 23,
+      "out_of_scope": 10,
+      "ambiguous": 0
+    },
+    "DOC-28": {
+      "in_scope": 78,
+      "out_of_scope": 48,
+      "ambiguous": 0
+    },
+    "DOC-30": {
+      "in_scope": 55,
+      "out_of_scope": 44,
+      "ambiguous": 0
+    },
+    "DOC-31": {
+      "in_scope": 104,
+      "out_of_scope": 87,
+      "ambiguous": 0
+    }
+  }
+}

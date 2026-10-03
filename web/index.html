@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSE2101 / CSEN2101 DSA — Master Exam-Eve Preparation System</title>
+  <meta name="description" content="Complete, source-grounded exam preparation digital textbook and question bank for CSE2101 Data Structures & Algorithms.">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/components.css">
+</head>
+<body>
+  <!-- Header Bar -->
+  <header class="app-header">
+    <div class="brand">
+      <span class="brand-badge">CSE2101</span>
+      <div class="brand-title">DSA Master <span>ExamPrep</span></div>
+    </div>
+
+    <!-- Navigation Menu -->
+    <nav aria-label="Main Navigation">
+      <ul class="nav-menu">
+        <li>
+          <a class="nav-link active" data-tab="study" id="nav-study">
+            📖 Study
+          </a>
+        </li>
+        <li>
+          <a class="nav-link" data-tab="questions" id="nav-questions">
+            📚 Questions <span class="badge-counter" id="badge-question-count">780</span>
+          </a>
+        </li>
+        <li>
+          <a class="nav-link" data-tab="pyq" id="nav-pyq">
+            📑 PYQs <span class="badge-counter" id="badge-pyq-count">27</span>
+          </a>
+        </li>
+        <li>
+          <a class="nav-link" data-tab="revision" id="nav-revision">
+            ⚡ Revision
+          </a>
+        </li>
+        <li>
+          <a class="nav-link" data-tab="mock" id="nav-mock">
+            🎯 Mock Exam
+          </a>
+        </li>
+        <li>
+          <a class="nav-link" data-tab="progress" id="nav-progress">
+            📊 Progress <span class="badge-counter" id="badge-progress-pct">0%</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Header Actions -->
+    <div class="header-actions">
+      <div class="search-box-header">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="global-search-input" placeholder="Search questions, topics..." aria-label="Global search">
+      </div>
+      <button class="btn-icon" id="btn-theme-toggle" title="Toggle Dark/Light Mode" aria-label="Toggle theme">
+        <span id="theme-icon">🌙</span>
+      </button>
+      <button class="btn-icon" id="btn-print" title="Print Current View" aria-label="Print view">
+        <span>🖨️</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- App Main Container -->
+  <div class="app-container">
+    <!-- Contextual Sidebar -->
+    <aside class="sidebar" id="app-sidebar">
+      <div id="sidebar-study-content">
+        <div style="font-size: 0.8rem; font-weight: 700; text-transform: uppercase; color: var(--text-muted); margin-bottom: 0.75rem; letter-spacing: 0.5px;">
+          Syllabus Navigation
+        </div>
+        <div id="syllabus-tree-container">
+          <!-- Populated by study.js -->
+        </div>
+      </div>
+
+      <div id="sidebar-filter-content" style="display: none;">
+        <!-- Populated for question filtering -->
+      </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="main-content" id="main-viewport">
+      <!-- 1. STUDY VIEW -->
+      <section class="view-panel active" id="panel-study">
+        <div id="study-topic-container">
+          <!-- Populated by study.js -->
+          <div style="text-align: center; padding: 3rem; color: var(--text-muted);">
+            Loading authoritative syllabus and textbook content...
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. QUESTIONS VIEW -->
+      <section class="view-panel" id="panel-questions">
+        <div class="card" style="margin-bottom: 1.5rem;">
+          <div class="card-header">
+            <div>
+              <h2 class="card-title">Verified Source Question Bank</h2>
+              <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.25rem;">
+                Every practice question originates from the 1,260 real source occurrences. Zero synthetic questions.
+              </p>
+            </div>
+            <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;" id="scope-summary-badges">
+              <span class="badge badge-in-scope">780 In Scope</span>
+              <span class="badge badge-out-of-scope">479 Out of Scope</span>
+              <span class="badge badge-ambiguous">1 Ambiguous</span>
+            </div>
+          </div>
+
+          <!-- Question Filters -->
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 0.75rem; margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border-subtle);">
+            <div>
+              <label style="font-size: 0.75rem; font-weight: 700; color: var(--text-muted); display: block; margin-bottom: 0.25rem;">MODULE</label>
+              <select id="filter-module" style="width: 100%; padding: 0.45rem; background: var(--bg-secondary); border: 1px solid var(--border-subtle); color: var(--text-primary); border-radius: var(--radius-sm);">
+                <option value="ALL">All Modules</option>
+                <option value="MODULE_1">Module 1 (Arrays & Linked Lists)</option>
+                <option value="MODULE_2">Module 2 (Stacks, Queues & Recursion)</option>
+                <option value="MODULE_4">Module 4 (Sorting & Searching)</option>
+              </select>
+            </div>
+
+            <div>
+              <label style="font-size: 0.75rem; font-weight: 700; color: var(--text-muted); display: block; margin-bottom: 0.25rem;">SCOPE</label>
+              <select id="filter-scope" style="width: 100%; padding: 0.45rem; background: var(--bg-secondary); border: 1px solid var(--border-subtle); color: var(--text-primary); border-radius: var(--radius-sm);">
+                <option value="IN_SCOPE" selected>In Scope Only (780)</option>
+                <option value="OUT_OF_SCOPE">Out of Scope (479)</option>
+                <option value="AMBIGUOUS">Ambiguous (1)</option>
+                <option value="ALL">All Occurrences (1,260)</option>
+              </select>
+            </div>
+
+            <div>
+              <label style="font-size: 0.75rem; font-weight: 700; color: var(--text-muted); display: block; margin-bottom: 0.25rem;">RECURRENCE TIER</label>
+              <select id="filter-tier" style="width: 100%; padding: 0.45rem; background: var(--bg-secondary); border: 1px solid var(--border-subtle); color: var(--text-primary); border-radius: var(--radius-sm);">
+                <option value="ALL">All Recurrence Tiers</option>
+                <option value="HIGH">High Recurrence (15+ occurrences)</option>
+                <option value="MODERATE">Moderate (5-14 occurrences)</option>
+                <option value="SPORADIC">Sporadic (1-4 occurrences)</option>
+              </select>
+            </div>
+
+            <div>
+              <label style="font-size: 0.75rem; font-weight: 700; color: var(--text-muted); display: block; margin-bottom: 0.25rem;">SEARCH</label>
+              <input type="text" id="filter-search" placeholder="Search question text..." style="width: 100%; padding: 0.45rem 0.6rem; background: var(--bg-secondary); border: 1px solid var(--border-subtle); color: var(--text-primary); border-radius: var(--radius-sm);">
+            </div>
+          </div>
+        </div>
+
+        <div id="questions-list-container">
+          <!-- Populated by questions.js -->
+        </div>
+      </section>
+
+      <!-- 3. PYQ VIEW -->
+      <section class="view-panel" id="panel-pyq">
+        <div class="card" style="margin-bottom: 1.5rem;">
+          <div class="card-header">
+            <div>
+              <h2 class="card-title">Historical Past-Year Exam Papers (PYQs)</h2>
+              <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.25rem;">
+                Browse original exam question papers preserved in their exact historical structure.
+              </p>
+            </div>
+            <div style="display: flex; gap: 0.5rem;">
+              <select id="pyq-paper-select" style="padding: 0.45rem 0.8rem; background: var(--bg-secondary); border: 1px solid var(--border-subtle); color: var(--text-primary); border-radius: var(--radius-sm); font-weight: 600;">
+                <!-- Populated by pyq.js -->
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div id="pyq-content-container">
+          <!-- Populated by pyq.js -->
+        </div>
+      </section>
+
+      <!-- 4. REVISION VIEW -->
+      <section class="view-panel" id="panel-revision">
+        <div class="card" style="margin-bottom: 1.5rem;">
+          <div class="card-header">
+            <div>
+              <h2 class="card-title">⚡ Rapid Exam Revision Engine</h2>
+              <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.25rem;">
+                Tailored for exam eve: zero-fluff formulas, triggers, complexity tables, and common traps.
+              </p>
+            </div>
+            <div style="display: flex; gap: 0.5rem;" class="status-pill-group">
+              <button class="status-pill active" data-rev-mode="5min" id="btn-rev-5min">5-Min Final Look</button>
+              <button class="status-pill" data-rev-mode="15min" id="btn-rev-15min">15-Min Comparisons</button>
+              <button class="status-pill" data-rev-mode="30min" id="btn-rev-30min">30-Min High-Yield</button>
+            </div>
+          </div>
+        </div>
+
+        <div id="revision-content-container">
+          <!-- Populated by revision.js -->
+        </div>
+      </section>
+
+      <!-- 5. MOCK EXAM VIEW -->
+      <section class="view-panel" id="panel-mock">
+        <div class="card" style="margin-bottom: 1.5rem;">
+          <div class="card-header">
+            <div>
+              <h2 class="card-title">🎯 Exam Simulator & Timed Practice</h2>
+              <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.25rem;">
+                Practice under real exam conditions using verified source questions. Zero fabricated items.
+              </p>
+            </div>
+            <div id="mock-timer-display" style="font-family: var(--font-mono); font-size: 1.25rem; font-weight: 700; color: var(--accent-cyan); background: var(--bg-tertiary); padding: 0.35rem 0.85rem; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle);">
+              45:00
+            </div>
+          </div>
+        </div>
+
+        <div id="mock-content-container">
+          <!-- Populated by mock.js -->
+        </div>
+      </section>
+
+      <!-- 6. PROGRESS VIEW -->
+      <section class="view-panel" id="panel-progress">
+        <div class="card" style="margin-bottom: 1.5rem;">
+          <div class="card-header">
+            <div>
+              <h2 class="card-title">📊 Master Syllabus Checklist & Mastery Tracking</h2>
+              <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.25rem;">
+                Tracks your learning state across all 31 syllabus topics. Persisted in localStorage.
+              </p>
+            </div>
+            <button class="btn-reveal" id="btn-reset-progress" style="background: rgba(239, 68, 68, 0.15); color: #f87171; border-color: rgba(239, 68, 68, 0.3);">
+              Reset Progress
+            </button>
+          </div>
+
+          <div style="margin: 1rem 0;">
+            <div style="display: flex; justify-content: space-between; font-size: 0.85rem; font-weight: 600; margin-bottom: 0.35rem;">
+              <span>Overall Syllabus Mastery</span>
+              <span id="progress-percent-label">0% Complete (0 / 31 Topics Mastered)</span>
+            </div>
+            <div class="progress-bar-container">
+              <div class="progress-bar-fill" id="progress-bar-master" style="width: 0%;"></div>
+            </div>
+          </div>
+        </div>
+
+        <div id="progress-tree-container">
+          <!-- Populated by progress.js -->
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- Global Question Solution Modal -->
+  <div class="modal-backdrop" id="solution-modal" role="dialog" aria-modal="true" aria-labelledby="modal-q-title">
+    <div class="modal-container">
+      <div class="modal-header">
+        <div>
+          <span class="badge badge-module" id="modal-q-module">MODULE 1</span>
+          <span class="badge badge-in-scope" id="modal-q-id" style="margin-left: 0.5rem;">DOC-01-P01-Q01</span>
+        </div>
+        <button class="btn-close" id="btn-modal-close" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-body" id="modal-body-content">
+        <!-- Populated dynamically when question clicked -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/app.js"></script>
+  <script src="js/study.js"></script>
+  <script src="js/questions.js"></script>
+  <script src="js/pyq.js"></script>
+  <script src="js/revision.js"></script>
+  <script src="js/mock.js"></script>
+  <script src="js/progress.js"></script>
+</body>
+</html>

@@ -1,0 +1,169 @@
+{
+  "five_minute_cram": {
+    "title": "5-Minute Final Exam Countdown",
+    "description": "Essential formulas, triggers, invariants, and zero-mistake rules for the immediate minutes before entering the exam hall.",
+    "formulas": [
+      {
+        "name": "2D Array Row-Major Address",
+        "formula": "Addr(A[i][j]) = B + w · [ (i - L1) · C + (j - L2) ]"
+      },
+      {
+        "name": "2D Array Column-Major Address",
+        "formula": "Addr(A[i][j]) = B + w · [ (j - L2) · R + (i - L1) ]"
+      },
+      {
+        "name": "Upper Triangular Matrix Entries",
+        "formula": "Total non-zero entries = n(n + 1) / 2"
+      },
+      {
+        "name": "Sparse Triplet Benefit Threshold",
+        "formula": "Beneficial iff 3 · (k + 1) < m · n  (non-zero ratio < 33.3%)"
+      },
+      {
+        "name": "Circular Queue Full Condition",
+        "formula": "(rear + 1) % MAX == front"
+      },
+      {
+        "name": "Circular Queue Empty Condition",
+        "formula": "front == -1 && rear == -1  (or front == rear)"
+      },
+      {
+        "name": "Tower of Hanoi Total Moves",
+        "formula": "Total moves = 2ⁿ - 1  (Recurrence: T(n) = 2T(n-1) + 1, O(2ⁿ))"
+      },
+      {
+        "name": "1-Based Heap Array Indices",
+        "formula": "Parent(i) = ⌊i/2⌋, LeftChild(i) = 2i, RightChild(i) = 2i + 1"
+      },
+      {
+        "name": "Build-Max-Heap Complexity",
+        "formula": "O(n) linear time  (Proof: ∑_{h=0}^∞ h/2^h = 2)"
+      },
+      {
+        "name": "Binary Search Worst Case",
+        "formula": "⌊log2 n⌋ + 1 comparisons = O(log n)"
+      },
+      {
+        "name": "Sequential Search Average Comparisons",
+        "formula": "(n + 1) / 2  (or (n + 1) / 3 if item appears twice)"
+      },
+      {
+        "name": "Interpolation Search Probe Position",
+        "formula": "pos = low + ⌊((key - A[low]) · (high - low)) / (A[high] - A[low])⌋"
+      }
+    ],
+    "complexity_table": [
+      {
+        "algorithm": "Bubble Sort (Optimized)",
+        "best": "O(n)",
+        "worst": "O(n²)",
+        "avg": "O(n²)",
+        "space": "O(1)",
+        "stable": "Yes"
+      },
+      {
+        "algorithm": "Cocktail Shaker Sort",
+        "best": "O(n)",
+        "worst": "O(n²)",
+        "avg": "O(n²)",
+        "space": "O(1)",
+        "stable": "Yes"
+      },
+      {
+        "algorithm": "Insertion Sort",
+        "best": "O(n)",
+        "worst": "O(n²)",
+        "avg": "O(n²)",
+        "space": "O(1)",
+        "stable": "Yes"
+      },
+      {
+        "algorithm": "Selection Sort",
+        "best": "O(n²)",
+        "worst": "O(n²)",
+        "avg": "O(n²)",
+        "space": "O(1)",
+        "stable": "No"
+      },
+      {
+        "algorithm": "Build-Max-Heap",
+        "best": "O(n)",
+        "worst": "O(n)",
+        "avg": "O(n)",
+        "space": "O(1)",
+        "stable": "No"
+      },
+      {
+        "algorithm": "Binary Search",
+        "best": "O(1)",
+        "worst": "O(log n)",
+        "avg": "O(log n)",
+        "space": "O(1)",
+        "stable": "N/A"
+      },
+      {
+        "algorithm": "Sequential Search",
+        "best": "O(1)",
+        "worst": "O(n)",
+        "avg": "O(n)",
+        "space": "O(1)",
+        "stable": "N/A"
+      },
+      {
+        "algorithm": "Interpolation Search",
+        "best": "O(1)",
+        "worst": "O(n)",
+        "avg": "O(log log n)",
+        "space": "O(1)",
+        "stable": "N/A"
+      }
+    ],
+    "common_traps": [
+      "Quick Sort complexity analysis is OUT OF SCOPE — do not write recurrence derivations for it!",
+      "In Postfix Evaluation, pop op2 first, then op1. Compute op1 - op2 (NOT op2 - op1).",
+      "In Circular Queue, always use modulo arithmetic `(rear + 1) % MAX`. Never do simple `rear++`.",
+      "In Singly Linked List reversal, use 3 pointers (prev, curr, next). Save `next = curr->next` before breaking link!",
+      "Selection sort always performs exactly n(n-1)/2 comparisons even if the array is already sorted."
+    ]
+  },
+  "fifteen_minute_review": {
+    "title": "15-Minute Core Comparisons and Tracing Review",
+    "comparisons": [
+      {
+        "topic": "Linear vs Non-Linear Data Structures",
+        "points": [
+          "Elements arranged in sequential order vs hierarchical/interconnected order.",
+          "Single level traversal vs multiple level traversal.",
+          "Memory allocation is straightforward vs complex node allocations.",
+          "Examples: Array, Linked List, Stack, Queue vs Tree, Graph."
+        ]
+      },
+      {
+        "topic": "Array vs Linked List",
+        "points": [
+          "Static fixed size vs Dynamic runtime resizing.",
+          "O(1) random index access A[i] vs O(n) sequential pointer traversal.",
+          "Costly O(n) element shifting for inserts/deletes vs O(1) pointer updates if node known.",
+          "Zero pointer memory overhead vs extra 4-8 bytes per node for links."
+        ]
+      },
+      {
+        "topic": "Recursion vs Iteration",
+        "points": [
+          "Repeated self-calls vs repeated execution of loop control structure.",
+          "Consumes O(n) call stack memory vs consumes O(1) auxiliary space.",
+          "Has function call activation record overhead vs fast direct jump instructions.",
+          "Tail recursion can be optimized by compilers to eliminate stack frames."
+        ]
+      },
+      {
+        "topic": "Stack vs Queue",
+        "points": [
+          "LIFO (Last-In, First-Out) vs FIFO (First-In, First-Out).",
+          "Single access point (Top) vs Two access points (Front for delete, Rear for insert).",
+          "Applications: Infix-to-postfix, parentheses, call stack vs Scheduling, spooling, buffers."
+        ]
+      }
+    ]
+  }
+}
