@@ -112,7 +112,7 @@
       "rule_failed": "Rule 31",
       "caught": true,
       "status": "PASS",
-      "validator_rejection_reason": "DOC-28 Q9 graph normalized edges mismatch: {('N', 'Q'), ('M', 'N'), ('O', 'P'), ('N', 'O'), ('M', 'Q'), ('P', 'Q'), ('M', 'Z')} != {('K', 'M'), ('N', 'Q'), ('M', 'N'), ('O', 'P'), ('N', 'O'), ('M', 'Q'), ('P', 'Q')}"
+      "validator_rejection_reason": "DOC-28 Q9 graph normalized edges mismatch: {('N', 'Q'), ('N', 'O'), ('O', 'P'), ('M', 'Z'), ('M', 'N'), ('P', 'Q'), ('M', 'Q')} != {('N', 'Q'), ('N', 'O'), ('K', 'M'), ('O', 'P'), ('M', 'N'), ('P', 'Q'), ('M', 'Q')}"
     },
     {
       "test_id": "TEST H8",
@@ -120,7 +120,7 @@
       "rule_failed": "Rule 31",
       "caught": true,
       "status": "PASS",
-      "validator_rejection_reason": "DOC-28 Q10 tree parent-child relationships mismatch: {('3', '4'), ('5', '99'), ('1', '2'), ('2', '5'), ('5', '6')} != {('1', '2'), ('2', '5'), ('5', '6'), ('3', '4'), ('5', '3')}"
+      "validator_rejection_reason": "DOC-28 Q10 tree parent-child relationships mismatch: {('5', '6'), ('1', '2'), ('5', '99'), ('2', '5'), ('3', '4')} != {('5', '6'), ('5', '3'), ('1', '2'), ('2', '5'), ('3', '4')}"
     },
     {
       "test_id": "TEST H9",

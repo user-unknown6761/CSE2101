@@ -106,7 +106,7 @@
       "rule": 18,
       "description": "All question records have valid record_type",
       "status": "PASS",
-      "details": "All 1584 records have record_type in {'question_occurrence', 'paper_question_container', 'non_question_source_fragment'}."
+      "details": "All 1584 records have record_type in {'paper_question_container', 'question_occurrence', 'non_question_source_fragment'}."
     },
     {
       "rule": 19,
