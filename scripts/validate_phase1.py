@@ -4,7 +4,18 @@ import sys
 import re
 import copy
 import hashlib
+import warnings
 from collections import defaultdict
+
+# Suppress the known jsonschema RefResolver deprecation warning so that no
+# output is emitted to stderr on a clean run. This prevents PowerShell from
+# treating the warning as a NativeCommandError and misreporting exit code 1.
+warnings.filterwarnings(
+    "ignore",
+    message="jsonschema.RefResolver is deprecated",
+    category=DeprecationWarning,
+)
+
 import jsonschema
 
 if hasattr(sys.stdout, 'reconfigure'):
