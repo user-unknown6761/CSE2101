@@ -28,11 +28,14 @@ from scripts.validate_phase1 import (
     validate_page_audit_bijection,
     validate_page_quality_and_visual_audit_consistency,
     validate_summary_metrics,
-    validate_reconciliation_and_counts
+    validate_reconciliation_and_counts,
+    validate_page_corpus_completeness,
+    validate_validation_run_metrics,
+    validate_visual_state_contract
 )
 
 print("=" * 70)
-print("RUNNING TRUE ADVERSARIAL VALIDATOR MUTATION SUITE (36 MUTATIONS)")
+print("RUNNING TRUE ADVERSARIAL VALIDATOR MUTATION SUITE (48 MUTATIONS)")
 print("=" * 70)
 
 # Load authoritative production artifacts
@@ -523,6 +526,154 @@ try:
     record_test("MUTATION M17", "verified=True While verification_status Is Not VERIFIED", "Rule 15", False, "Validator did not raise")
 except Exception as e:
     record_test("MUTATION M17", "verified=True While verification_status Is Not VERIFIED", "Rule 15", True, str(e))
+
+# ==============================================================================
+# SECTION 4: HARDENING VALIDATOR MUTATIONS (P1 - P12)
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# AREA A: Page Completeness Mutations (P1 - P4)
+# ------------------------------------------------------------------------------
+
+# MUTATION P1: Delete one legitimate page-quality record
+mut_pq_p1 = copy.deepcopy(prod_page_quality)
+del mut_pq_p1[0]  # remove DOC-01 P1
+
+try:
+    p, msg = validate_page_corpus_completeness(prod_inventory, mut_pq_p1, raise_on_error=True)
+    record_test("MUTATION P1", "Delete One Legitimate Page-Quality Record", "Rule 35", False, "Validator did not raise")
+except Exception as e:
+    record_test("MUTATION P1", "Delete One Legitimate Page-Quality Record", "Rule 35", True, str(e))
+
+# MUTATION P2: Duplicate an existing page-quality record
+mut_pq_p2 = copy.deepcopy(prod_page_quality)
+mut_pq_p2.append(copy.deepcopy(mut_pq_p2[0]))  # duplicate DOC-01 P1
+
+try:
+    p, msg = validate_page_corpus_completeness(prod_inventory, mut_pq_p2, raise_on_error=True)
+    record_test("MUTATION P2", "Duplicate an Existing Page-Quality Record", "Rule 35", False, "Validator did not raise")
+except Exception as e:
+    record_test("MUTATION P2", "Duplicate an Existing Page-Quality Record", "Rule 35", True, str(e))
+
+# MUTATION P3: Insert an out-of-range page number
+mut_pq_p3 = copy.deepcopy(prod_page_quality)
+target_pq_p3 = next(p for p in mut_pq_p3 if p.get('document_id') == 'DOC-01' and p.get('page_number') == 4)
+target_pq_p3['page_number'] = 99  # DOC-01 only has 4 pages
+
+try:
+    p, msg = validate_page_corpus_completeness(prod_inventory, mut_pq_p3, raise_on_error=True)
+    record_test("MUTATION P3", "Insert an Out-of-Range Page Number", "Rule 35", False, "Validator did not raise")
+except Exception as e:
+    record_test("MUTATION P3", "Insert an Out-of-Range Page Number", "Rule 35", True, str(e))
+
+# MUTATION P4: Modify an inventory page_count so it disagrees with physical page-quality corpus
+mut_inv_p4 = copy.deepcopy(prod_inventory)
+target_doc_p4 = next(d for d in mut_inv_p4 if d.get('document_id') == 'DOC-01')
+target_doc_p4['page_count'] = target_doc_p4.get('page_count', 4) + 1  # 5 instead of 4
+
+try:
+    p, msg = validate_page_corpus_completeness(mut_inv_p4, prod_page_quality, raise_on_error=True)
+    record_test("MUTATION P4", "Modify Inventory page_count Disagreeing with Page Quality", "Rule 35", False, "Validator did not raise")
+except Exception as e:
+    record_test("MUTATION P4", "Modify Inventory page_count Disagreeing with Page Quality", "Rule 35", True, str(e))
+
+# ------------------------------------------------------------------------------
+# AREA B: Metric Epistemology Mutations (P5 - P8)
+# ------------------------------------------------------------------------------
+
+# MUTATION P5: Corrupt one corpus-derived metric
+mut_metrics_p5 = copy.deepcopy(prod_metrics)
+mut_metrics_p5['pages'] = 9999
+
+try:
+    p, msg = validate_summary_metrics(mut_metrics_p5, prod_inventory, prod_records, prod_page_quality, prod_visual_audit, prod_damaged, raise_on_error=True)
+    record_test("MUTATION P5", "Corrupt One Corpus-Derived Metric (pages)", "Rule 24", False, "Validator did not raise")
+except Exception as e:
+    record_test("MUTATION P5", "Corrupt One Corpus-Derived Metric (pages)", "Rule 24", True, str(e))
+
+# MUTATION P6: Corrupt one validation-run metric
+mut_metrics_p6 = copy.deepcopy(prod_metrics)
+mut_metrics_p6['core_validation_rules_passed'] = 9999
+
+try:
+    p, msg = validate_validation_run_metrics(mut_metrics_p6, passed_rules=37, failed_rules=0, adv_passed=48, adv_total=48, raise_on_error=True)
+    record_test("MUTATION P6", "Corrupt One Validation-Run Metric (core_validation_rules_passed)", "Rule 36", False, "Validator did not raise")
+except Exception as e:
+    record_test("MUTATION P6", "Corrupt One Validation-Run Metric (core_validation_rules_passed)", "Rule 36", True, str(e))
+
+# MUTATION P7: Remove a required validation-run metric
+mut_metrics_p7 = copy.deepcopy(prod_metrics)
+if 'core_validation_rules_passed' in mut_metrics_p7:
+    del mut_metrics_p7['core_validation_rules_passed']
+
+try:
+    p, msg = validate_validation_run_metrics(mut_metrics_p7, passed_rules=37, failed_rules=0, adv_passed=48, adv_total=48, raise_on_error=True)
+    record_test("MUTATION P7", "Remove a Required Validation-Run Metric", "Rule 36", False, "Validator did not raise")
+except Exception as e:
+    record_test("MUTATION P7", "Remove a Required Validation-Run Metric", "Rule 36", True, str(e))
+
+# MUTATION P8: Insert an unexpected/unsupported validation-run metric when schema/contract forbids it
+mut_metrics_p8 = copy.deepcopy(prod_metrics)
+mut_metrics_p8['unexpected_unsupported_validation_metric'] = 12345
+
+try:
+    p, msg = validate_validation_run_metrics(mut_metrics_p8, passed_rules=37, failed_rules=0, adv_passed=48, adv_total=48, raise_on_error=True)
+    record_test("MUTATION P8", "Insert Unexpected/Unsupported Validation-Run Metric", "Rule 36", False, "Validator did not raise")
+except Exception as e:
+    record_test("MUTATION P8", "Insert Unexpected/Unsupported Validation-Run Metric", "Rule 36", True, str(e))
+
+# ------------------------------------------------------------------------------
+# AREA C: Visual State Mutations (P9 - P12)
+# ------------------------------------------------------------------------------
+
+# MUTATION P9: Canonical state = VERIFIED, Legacy state = DETECTED
+mut_pq_p9 = copy.deepcopy(prod_page_quality)
+target_pq_p9 = next(p for p in mut_pq_p9 if p.get('document_id') == 'DOC-28' and p.get('page_number') == 2)
+target_pq_p9['verification_status'] = "VERIFIED"
+target_pq_p9['visual_verification_status'] = "DETECTED"
+
+try:
+    p, msg = validate_visual_state_contract(mut_pq_p9, raise_on_error=True)
+    record_test("MUTATION P9", "Canonical state VERIFIED with Legacy state DETECTED", "Rule 37", False, "Validator did not raise")
+except Exception as e:
+    record_test("MUTATION P9", "Canonical state VERIFIED with Legacy state DETECTED", "Rule 37", True, str(e))
+
+# MUTATION P10: Canonical state = VERIFIED, Legacy state = FLAGGED
+mut_pq_p10 = copy.deepcopy(prod_page_quality)
+target_pq_p10 = next(p for p in mut_pq_p10 if p.get('document_id') == 'DOC-28' and p.get('page_number') == 2)
+target_pq_p10['verification_status'] = "VERIFIED"
+target_pq_p10['visual_verification_status'] = "FLAGGED"
+
+try:
+    p, msg = validate_visual_state_contract(mut_pq_p10, raise_on_error=True)
+    record_test("MUTATION P10", "Canonical state VERIFIED with Legacy state FLAGGED", "Rule 37", False, "Validator did not raise")
+except Exception as e:
+    record_test("MUTATION P10", "Canonical state VERIFIED with Legacy state FLAGGED", "Rule 37", True, str(e))
+
+# MUTATION P11: Canonical state = REVIEWED, Legacy state = DETECTED
+mut_pq_p11 = copy.deepcopy(prod_page_quality)
+target_pq_p11 = next(p for p in mut_pq_p11 if p.get('document_id') == 'DOC-28' and p.get('page_number') == 2)
+target_pq_p11['visual_review_status'] = "REVIEWED"
+target_pq_p11['verification_status'] = "UNVERIFIED"
+target_pq_p11['visually_reviewed'] = False
+
+try:
+    p, msg = validate_visual_state_contract(mut_pq_p11, raise_on_error=True)
+    record_test("MUTATION P11", "Canonical state REVIEWED with Legacy state DETECTED", "Rule 37", False, "Validator did not raise")
+except Exception as e:
+    record_test("MUTATION P11", "Canonical state REVIEWED with Legacy state DETECTED", "Rule 37", True, str(e))
+
+# MUTATION P12: Canonical state = RENDERED, Legacy state = contradictory/non-rendered state
+mut_pq_p12 = copy.deepcopy(prod_page_quality)
+target_pq_p12 = next(p for p in mut_pq_p12 if p.get('document_id') == 'DOC-28' and p.get('page_number') == 2)
+target_pq_p12['render_status'] = "RENDERED"
+target_pq_p12['visual_verification_status'] = "NOT_REQUIRED"
+
+try:
+    p, msg = validate_visual_state_contract(mut_pq_p12, raise_on_error=True)
+    record_test("MUTATION P12", "Canonical state RENDERED with Contradictory Non-Rendered Legacy State", "Rule 37", False, "Validator did not raise")
+except Exception as e:
+    record_test("MUTATION P12", "Canonical state RENDERED with Contradictory Non-Rendered Legacy State", "Rule 37", True, str(e))
 
 # ==============================================================================
 # SUMMARY & ARTIFACT EXPORT

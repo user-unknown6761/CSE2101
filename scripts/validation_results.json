@@ -106,7 +106,7 @@
       "rule": 18,
       "description": "All question records have valid record_type",
       "status": "PASS",
-      "details": "All 1584 records have record_type in {'paper_question_container', 'question_occurrence', 'non_question_source_fragment'}."
+      "details": "All 1584 records have record_type in {'question_occurrence', 'non_question_source_fragment', 'paper_question_container'}."
     },
     {
       "rule": 19,
@@ -203,10 +203,28 @@
       "description": "Cross-artifact visual evidence consistency between PAGE_EXTRACTION_QUALITY and VISUAL_VERIFICATION_AUDIT",
       "status": "PASS",
       "details": "Page audit bijection validated: all 238 visual pages agree exactly across all canonical fields."
+    },
+    {
+      "rule": 35,
+      "description": "Physical page corpus completeness \u2014 every inventory page_count reconciles with PAGE_EXTRACTION_QUALITY (independent of lifecycle derivation)",
+      "status": "PASS",
+      "details": "Physical page corpus completeness verified: 579 pages across 33 documents. Every inventory page_count reconciles exactly with PAGE_EXTRACTION_QUALITY. No missing, duplicate, or out-of-range pages."
+    },
+    {
+      "rule": 36,
+      "description": "Validation-run metrics integrity \u2014 corpus/run-result metrics are categorically separated, all required run-result keys present, no unexpected keys, self-consistent counts",
+      "status": "PASS",
+      "details": "Validation-run metrics verified (structural mode): all required run-result keys present; no unexpected keys; adversarial 48/48 self-consistent; schema_validation coherent."
+    },
+    {
+      "rule": 37,
+      "description": "Bidirectional canonical\u2194legacy visual state contract \u2014 all forward and backward mapping invariants satisfied across all page records",
+      "status": "PASS",
+      "details": "Bidirectional canonical\u2194legacy visual state contract verified across all 579 page records (238 detected, 1 verified). All forward and backward mapping invariants satisfied."
     }
   ],
-  "passed_rules": 34,
+  "passed_rules": 37,
   "failed_rules": 0,
-  "adversarial_passed": 36,
-  "adversarial_total": 36
+  "adversarial_passed": 48,
+  "adversarial_total": 48
 }

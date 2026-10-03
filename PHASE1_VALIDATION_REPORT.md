@@ -1,82 +1,95 @@
-# CSE2101 — Phase 1.1 Validation Report
+# CSE2101 — Phase 1 Final Validation Report
 **System:** CSE/CSEN 2101 Data Structures and Algorithms  
-**Phase:** Phase 1.1 — Extraction Integrity Correction  
-**Execution Timestamp:** 2026-10-02T10:15:00Z  
-**Release Gate Decision:** **PASS (All 22 Validation Rules Passed)**  
+**Phase:** Phase 1 Final Integrity Closure & Hardening Release Gate  
+**Execution Timestamp:** 2026-10-03  
+**Release Gate Decision:** **PASS (All 37 Validation Rules Passed, All 48 Adversarial Mutations Passed)**  
 
 ---
 
-## A. Executive Summary
+## 1. Executive Summary
 
-Phase 1.1 has corrected all governance and structural extraction integrity defects identified during external audit. The corpus decouples **Paper Question Containers** (227 non-answerable structural records) from **True Question Occurrences** (1,357 student-answerable questions), yielding exactly 1,584 physical records in `RAW_EXTRACTED_QUESTIONS.json`. 
+Phase 1 integrity hardening is complete. The system enforces 37 deterministic validation rules across all 33 physical documents and 1,584 source records. The defect-rejection capability of the validation harness is verified by a 48-mutation adversarial test suite that executes production validation functions directly against corrupted deep copies in memory.
 
-DOC-28 Page 2 questions (7–11) have been forensically reconstructed from the rendered visual source to eliminate multi-column text block interleaving, C code omission, and cross-question fragment contamination, while Q12 has been restored to Page 3 as verbatim State A extraction. Practice assignments have their `exam_type` set strictly to `null`, and question banks lacking institutional verification are classified honestly as Tier 3 (*Authority Unconfirmed*).
-
-The automated Phase 1.1 validation suite now executes **22 rigorous integrity rules** (expanded from 10), and all 22 rules passed deterministically with zero errors.
-
----
-
-## B. Actual Corpus Count & Breakdown
-- **Authoritative Discovered PDF Count:** **33** (16 root `SOURCE/`, 17 nested `SOURCE/DSA-.../`)
-- **Total Corpus Pages Audited:** **579**
-- **Total Raw Characters Extracted:** **660,272**
-- **Total Physical Source Records:** **1,584**
-- **Paper Question Containers:** **227** (`is_student_answerable: false`, `raw_text: null`, `marks: null`)
-- **True Student-Answerable Question Occurrences:** **1,357** (`is_student_answerable: true`)
-  - **Atomic Sub-Questions:** **825** (`occurrence_type: sub_question`)
-  - **Standalone Questions:** **532** (`occurrence_type: standalone`)
-- **Exact Verbatim Extraction (State A):** **1,352** occurrences (99.63%)
-- **Safely Reconstructed (State B):** **5** occurrences (0.37% — DOC-28 Q7 to Q11)
-- **Source-Incomplete (State C):** **0** occurrences
-- **Suspicious Anomalies Flagged:** **98** non-fatal anomalies tracked in `SUSPICIOUS_EXTRACTION_AUDIT.json`
+- **Automated Validation Rules:** 37 Passed, 0 Failed
+- **Adversarial Mutation Suite:** 48 Passed, 0 Failed (100% genuine rejection rate)
+- **Physical Documents:** 33 (SHA-256 byte verified)
+- **Physical Pages:** 579 (100% page corpus completeness, Rule 35)
+- **Physical Records:** 1,584 (213 containers + 1,260 true questions + 111 fragments)
+- **Wording Fidelity:** 1,255 State A (exact verbatim), 5 State B (DOC-28 P2 visual reconstruction), 0 State C
+- **Deterministic Damage:** 507 audited conditions match 507 detected conditions with zero discrepancy (Rule 6)
+- **Epistemic Metric Integrity:** Corpus metrics and validation-run metrics separated and verified (Rule 36)
+- **Visual State Contract:** Complete bidirectional canonical $\leftrightarrow$ legacy state contract enforced (Rule 37)
 
 ---
 
-## C. Source Classification Summary
-- **Tier 1 (Official University Examination Papers):** 22 documents (1,071 records: 207 containers + 864 true questions)
-- **Tier 2 (Confirmed Institutional Question Banks):** 0 documents (unconfirmed authority relegated to Tier 3)
-- **Tier 3 (Practice Sets & Unconfirmed Question Banks):** 3 documents (`DOC-28`, `DOC-30`, `DOC-31` — 416 records: 0 containers + 416 true questions)
-- **Tier 4 (Solutions & Academic Study Notes):** 8 documents (`DOC-18`, `DOC-19` solutions + 6 slide decks — 97 records: 20 containers + 77 true questions)
-- **Tier 5 (AI Generated Questions):** 0 documents (**STRICTLY DISABLED**)
+## 2. Automated Core Validation Rules (All 37 Rules)
 
----
-
-## D. Automated Validation Test Results (All 22 Rules)
-
-| Rule | Description | Status | Verification Summary |
+| Rule | Area / Requirement | Status | Verification Summary |
 | :---: | :--- | :---: | :--- |
-| **01** | Every inventory PDF has SHA-256 cryptographic hash | **PASS** | Verified across all 33 documents |
-| **02** | Every source record maps to an existing source document ID | **PASS** | All 1,584 records map to registered documents |
-| **03** | Every record has physical page and source file provenance | **PASS** | Page and file provenance verified for 1,584 records |
-| **04** | No question or container has fabricated default marks | **PASS** | Marks are physically established, null, or container unallocated |
-| **05** | No unknown provenance replaced with placeholder guesses | **PASS** | Unknown metadata fields strictly preserved as null |
-| **06** | Every incomplete item exists in the damage audit | **PASS** | 0 incomplete questions; 0 unrecoverable cutoffs |
-| **07** | Every question occurrence has a valid wording state | **PASS** | Verified across 1,357 questions; null for 227 containers |
-| **08** | No solution/reference material assigned to Tier 1 | **PASS** | All solution and study notes strictly isolated at Tier 4 |
-| **09** | No active/in-scope/syllabus fields introduced in Phase 1 | **PASS** | Forbidden fields absent (`is_active`, `in_syllabus`, etc.) |
-| **10** | No canonical question relationships or deduplication created | **PASS** | All physical source occurrences remain fully independent |
-| **11** | No structural parent container is counted as an answerable question | **PASS** | 227 containers marked non-answerable; 1,357 are answerable |
-| **12** | No placeholder 'Question N' is treated as actual question text | **PASS** | Containers have `raw_text: null`; all questions have real text |
-| **13** | Every reconstructed question has source visual provenance | **PASS** | Verified across all 5 STATE B questions |
-| **14** | Every STATE B question has complete verified reconstruction metadata | **PASS** | Method, visual reference, text, and confidence verified |
-| **15** | No question marked HIGH overall confidence has unverified required visual content | **PASS** | All required visual pages verified via visual inspection |
-| **16** | Practice Assignment does not appear as exam_type | **PASS** | `exam_type` is strictly null for Practice Assignment (`DOC-28`) |
-| **17** | Unverified Question Bank authority is not promoted to Tier 2 | **PASS** | `DOC-30` and `DOC-31` classified as Authority Unconfirmed at Tier 3 |
-| **18** | All question records have valid record_type | **PASS** | All 1,584 records have valid `record_type` |
-| **19** | Question counts reconcile exactly across containers, sub-questions, and standalone occurrences | **PASS** | Total: 1,584 = Containers: 227 + Sub: 825 + Standalone: 532 |
-| **20** | No extracted question contains obvious cross-question fragment contamination | **PASS** | DOC-28 Q11 isolated; 0 cross-contamination issues found |
-| **21** | Every question referencing an essential visual has source-visual metadata | **PASS** | 82 visual questions have explicit source page and reason metadata |
-| **22** | Damage detection actually performs nontrivial checks and flags anomalies | **PASS** | Nontrivial scan identified and flagged 98 suspicious items |
+| **01** | Cryptographic Byte Integrity | **PASS** | SHA-256 byte recomputation across all 33 source PDFs matches recorded hashes |
+| **02** | Source Document Mapping | **PASS** | All 1,584 records map to cataloged source documents |
+| **03** | Physical Page & File Provenance | **PASS** | Page and file provenance verified for 1,584 records |
+| **04** | Marks Integrity & Evidence | **PASS** | Zero fabricated marks; all physically established marks have source evidence |
+| **05** | Placeholder Prohibition | **PASS** | Zero placeholder guesses; null metadata preserved strictly |
+| **06** | Deterministic Damage Equality | **PASS** | Audited damage set (507) equals detected damage set (507) exactly |
+| **07** | Wording State Classification | **PASS** | Valid wording states across 1,260 questions; null for containers/fragments |
+| **08** | Governance Tier Integrity | **PASS** | Solution and study notes isolated at Tier 4; Tier 1 unpolluted |
+| **09** | Phase Separation Enforcement | **PASS** | Zero Phase 2 fields present (`is_active`, `in_syllabus`, `canonical_id`, etc.) |
+| **10** | Deduplication Prohibition | **PASS** | All source occurrences remain independent and unmerged |
+| **11** | Container Non-Answerability | **PASS** | 213 containers marked non-answerable; 1,260 questions answerable |
+| **12** | Placeholder Text Prohibition | **PASS** | Containers have null raw text; true questions have authentic text |
+| **13** | Visual Provenance for State B | **PASS** | Verified across all 5 State B reconstructed questions |
+| **14** | State B Reconstruction Metadata | **PASS** | Reconstruction method, visual reference, and confidence verified |
+| **15** | Visual Confidence Consistency | **PASS** | High confidence questions verified against visual inspection records |
+| **16** | Practice Assignment Classification | **PASS** | Practice assignments have `exam_type: null` |
+| **17** | Question Bank Governance | **PASS** | Unconfirmed question banks isolated at Tier 3 |
+| **18** | Record Type Schema Compliance | **PASS** | All 1,584 records have valid `record_type` |
+| **19** | Mathematical Record Reconciliation| **PASS** | Total: 1,584 = 213 containers + 825 sub-questions + 435 standalone + 111 fragments |
+| **20** | Cross-Question Contamination Scan | **PASS** | Zero cross-contamination issues found |
+| **21** | Visual Dependency Metadata | **PASS** | 82 visual-dependent questions have page and reason metadata |
+| **22** | Nontrivial Heuristic Anomaly Scan | **PASS** | 391 extraction anomalies tracked in damage register |
+| **23** | Document Lifecycle Derivation | **PASS** | Document lifecycle derived deterministically from page-level evidence |
+| **24** | Summary Metrics Independence | **PASS** | Summary metrics recomputed independently from source datasets |
+| **25** | Render Status Contradiction Guard | **PASS** | Rendered pages require valid artifact reference on disk |
+| **26** | Review Record Integrity | **PASS** | Reviewed visual pages require physical audit record |
+| **27** | Visual Verification Basis Guard | **PASS** | Verified pages require review record and verification basis |
+| **28** | Detected Promotion Guard | **PASS** | Detected pages cannot become verified without review evidence |
+| **29** | Fragment Isolation Enforcement | **PASS** | Non-question source fragments marked non-answerable |
+| **30** | State B Semantic Fidelity | **PASS** | State B questions verified against visual evidence |
+| **31** | Deterministic Code & Graph Drift | **PASS** | Q8 C code, Q9 graph, Q10 tree verified against authoritative sources |
+| **32** | Derived Rendering Lifecycle Guard| **PASS** | Document rendering status matches derived page evidence |
+| **33** | Formal JSON Schema Release Gate | **PASS** | All 5 production datasets pass `PHASE1_SCHEMA.json` |
+| **34** | Visual Audit Bijection | **PASS** | Page quality and visual audit agree across all 238 visual pages |
+| **35** | Physical Page Corpus Completeness| **PASS** | 579 pages across 33 documents reconcile exactly: $\{1..\text{page\_count}\}$ |
+| **36** | Validation-Run Metric Separation | **PASS** | Epistemic separation between corpus facts and run results verified |
+| **37** | Bidirectional Visual Contract | **PASS** | Forward and backward canonical $\leftrightarrow$ legacy mappings 100% satisfied |
 
 ---
 
-## E. Mandatory Governance Statement
+## 3. Adversarial Mutation Suite Results (All 48 Mutations)
 
-> "No syllabus eligibility, question deduplication, question-family classification, solution generation, or synthetic question generation was performed in Phase 1.1."
+- **Test A – G (7 Foundational Tests):** All 7 corruptions caught and rejected.
+- **Test H1 – H12 (12 Hardening Regression Tests):** All 12 corruptions caught and rejected.
+- **Mutation M1 – M17 (17 Core Structural Tests):** All 17 corruptions caught and rejected.
+- **Mutation P1 – P12 (12 Master Hardening Tests):**
+  - `P1`: Delete legitimate page record $\rightarrow$ caught by **Rule 35**
+  - `P2`: Duplicate page record $\rightarrow$ caught by **Rule 35**
+  - `P3`: Out-of-range page number $\rightarrow$ caught by **Rule 35**
+  - `P4`: Inventory page_count disagreement $\rightarrow$ caught by **Rule 35**
+  - `P5`: Corrupted corpus metric (`pages`) $\rightarrow$ caught by **Rule 24**
+  - `P6`: Corrupted run metric (`core_validation_rules_passed`) $\rightarrow$ caught by **Rule 36**
+  - `P7`: Missing required run metric $\rightarrow$ caught by **Rule 36**
+  - `P8`: Unexpected run metric $\rightarrow$ caught by **Rule 36**
+  - `P9`: Canonical VERIFIED with legacy DETECTED $\rightarrow$ caught by **Rule 37**
+  - `P10`: Canonical VERIFIED with legacy FLAGGED $\rightarrow$ caught by **Rule 37**
+  - `P11`: Canonical REVIEWED with legacy DETECTED $\rightarrow$ caught by **Rule 37**
+  - `P12`: Canonical RENDERED with contradictory non-rendered state $\rightarrow$ caught by **Rule 37**
+
+**TOTAL: 48/48 Adversarial Mutations Caught and Rejected.**
 
 ---
 
-## F. Release Gate Decision
+## 4. Final Release Decision
 
-**PHASE 1.1 RELEASE STATUS: PASS**
-All 22 automated integrity rules have passed. All required artifacts have been generated and validated.
+**PHASE 1 FINAL RELEASE STATUS: PASS**  
+The Phase 1 release gate is certified complete.

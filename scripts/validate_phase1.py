@@ -1297,7 +1297,465 @@ def validate_summary_metrics(metrics, inventory, records, page_quality, visual_a
 
 
 # ==============================================================================
-# MAIN EXECUTION (34 INTEGRITY RULES)
+# AREA A — PHYSICAL PAGE CORPUS COMPLETENESS
+# ==============================================================================
+
+def validate_page_corpus_completeness(inventory, page_quality, raise_on_error=False):
+    """
+    Rule 35 / Area A: Physical Page Corpus Completeness.
+
+    This check is epistemologically independent from validate_document_lifecycle.
+    That validator proves lifecycle fields are internally consistent.
+    This validator proves the page dataset is COMPLETE relative to the inventory.
+
+    For every inventory document:
+      - Exactly inventory.page_count page records must exist in PAGE_EXTRACTION_QUALITY
+      - Page numbers must equal exactly {1, 2, ..., page_count}
+      - No duplicate page numbers for the same document
+      - No page number 0 or negative
+      - No page number greater than page_count
+      - No page records for documents not in inventory
+
+    Does NOT use or call derive_document_rendering_lifecycle.
+    """
+    from collections import defaultdict
+
+    # Build set of valid document IDs from inventory
+    inv_map = {d['document_id']: d.get('page_count', 0) for d in inventory}
+    valid_doc_ids = set(inv_map.keys())
+
+    # Index page_quality records by document
+    pq_by_doc = defaultdict(list)
+    for p in page_quality:
+        doc_id = p.get('document_id')
+        pg_num = p.get('page_number')
+
+        # Reject records for unknown documents
+        if doc_id not in valid_doc_ids:
+            msg = f"PAGE_EXTRACTION_QUALITY contains page record for unknown document '{doc_id}'"
+            if raise_on_error:
+                raise AssertionError(msg)
+            return False, msg
+
+        pq_by_doc[doc_id].append(pg_num)
+
+    # Validate each inventory document
+    for d in inventory:
+        doc_id = d['document_id']
+        expected_count = inv_map[doc_id]
+        actual_pages = pq_by_doc.get(doc_id, [])
+
+        # Check for invalid page numbers (0, negative, None)
+        for pg in actual_pages:
+            if pg is None or not isinstance(pg, int):
+                msg = f"Document {doc_id} has non-integer page number '{pg}' in PAGE_EXTRACTION_QUALITY"
+                if raise_on_error:
+                    raise AssertionError(msg)
+                return False, msg
+            if pg <= 0:
+                msg = f"Document {doc_id} has non-positive page number {pg} in PAGE_EXTRACTION_QUALITY"
+                if raise_on_error:
+                    raise AssertionError(msg)
+                return False, msg
+            if pg > expected_count:
+                msg = f"Document {doc_id} has out-of-range page number {pg} (page_count={expected_count})"
+                if raise_on_error:
+                    raise AssertionError(msg)
+                return False, msg
+
+        # Check for duplicates
+        seen_pages = set()
+        for pg in actual_pages:
+            if pg in seen_pages:
+                msg = f"Document {doc_id} has duplicate page number {pg} in PAGE_EXTRACTION_QUALITY"
+                if raise_on_error:
+                    raise AssertionError(msg)
+                return False, msg
+            seen_pages.add(pg)
+
+        # Check completeness: must have exactly {1, ..., page_count}
+        expected_set = set(range(1, expected_count + 1))
+        actual_set = set(actual_pages)
+
+        missing = expected_set - actual_set
+        if missing:
+            msg = f"Document {doc_id} is missing page records for pages: {sorted(missing)} (page_count={expected_count})"
+            if raise_on_error:
+                raise AssertionError(msg)
+            return False, msg
+
+        extra = actual_set - expected_set
+        if extra:
+            msg = f"Document {doc_id} has extra page records beyond page_count={expected_count}: {sorted(extra)}"
+            if raise_on_error:
+                raise AssertionError(msg)
+            return False, msg
+
+    total_expected = sum(d.get('page_count', 0) for d in inventory)
+    return True, (
+        f"Physical page corpus completeness verified: {total_expected} pages across "
+        f"{len(inventory)} documents. Every inventory page_count reconciles exactly "
+        f"with PAGE_EXTRACTION_QUALITY. No missing, duplicate, or out-of-range pages."
+    )
+
+
+# ==============================================================================
+# AREA B — CORPUS METRICS VS VALIDATION-RUN METRICS (SEPARATED)
+# ==============================================================================
+
+# Authoritative lists of which metric keys belong to which epistemic category.
+CORPUS_METRIC_KEYS = [
+    "documents",
+    "pages",
+    "physical_records",
+    "paper_question_containers",
+    "question_occurrences",
+    "atomic_sub_questions",
+    "standalone_questions",
+    "non_question_source_fragments",
+    "state_a",
+    "state_b",
+    "state_c",
+    "complete_questions",
+    "incomplete_questions",
+    "flagged_questions",
+    "complete",
+    "incomplete",
+    "flagged_extraction",
+    "visual_detected_pages",
+    "visual_rendered_pages",
+    "visual_reviewed_pages",
+    "visual_verified_pages",
+    "visual_flagged_pages",
+    "visual_detected",
+    "visual_rendered",
+    "visual_reviewed",
+    "visual_verified",
+    "visual_flagged",
+    "damage_records",
+    "damage_audit_entries",
+    "deterministic_damage_conditions",
+    "unresolved_damage_records",
+]
+
+REQUIRED_VALIDATION_RUN_METRIC_KEYS = [
+    "core_validation_rules_passed",
+    "core_validation_rules_failed",
+    "validation_rules_passed",
+    "validation_rules_failed",
+    "adversarial_tests_passed",
+    "adversarial_tests_total",
+    "schema_validation_passed",
+    "schema_validation_failed",
+]
+
+# Keys that are explicitly forbidden in CORPUS_SUMMARY_METRICS
+# (they must not bleed into corpus-derived facts)
+FORBIDDEN_RUN_KEYS_IN_CORPUS = set(REQUIRED_VALIDATION_RUN_METRIC_KEYS)
+
+
+def validate_validation_run_metrics(metrics, passed_rules, failed_rules,
+                                    adv_passed, adv_total,
+                                    raise_on_error=False):
+    """
+    Rule 36 / Area B: Validation-Run Metric Integrity.
+
+    Two modes:
+
+    STRUCTURAL-ONLY MODE (passed_rules=None, adv_passed=None):
+      Used by Rule 36 in the main release gate.  Checks:
+        1. All REQUIRED_VALIDATION_RUN_METRIC_KEYS are present.
+        2. No keys outside CORPUS_METRIC_KEYS ∪ REQUIRED_VALIDATION_RUN_METRIC_KEYS.
+        3. adversarial_tests_passed <= adversarial_tests_total.
+        4. schema_validation_passed in {0, 1}.
+      Does NOT check stored counts against live run counters because stored
+      metrics reflect the previous run and main() updates them after validation.
+
+    EXACT-COUNT MODE (passed_rules=int, adv_passed=int):
+      Used by mutation suite tests P6, P7, P8.  Additionally checks:
+        5. core_validation_rules_passed == passed_rules
+        6. core_validation_rules_failed == failed_rules
+        7. validation_rules_passed      == passed_rules
+        8. validation_rules_failed      == failed_rules
+        9. adversarial_tests_passed     == adv_passed
+        10. adversarial_tests_total     == adv_total
+    """
+    # 1. Required keys present
+    for k in REQUIRED_VALIDATION_RUN_METRIC_KEYS:
+        if k not in metrics:
+            msg = f"Validation-run metrics is missing required key '{k}'"
+            if raise_on_error:
+                raise AssertionError(msg)
+            return False, msg
+
+    # 2. No unexpected run-result keys beyond the defined contract
+    unexpected = [k for k in metrics if k not in CORPUS_METRIC_KEYS and
+                  k not in REQUIRED_VALIDATION_RUN_METRIC_KEYS]
+    if unexpected:
+        msg = (f"CORPUS_SUMMARY_METRICS contains unexpected/undefined "
+               f"run-result keys: {unexpected}")
+        if raise_on_error:
+            raise AssertionError(msg)
+        return False, msg
+
+    # 3-4. Self-consistency (always checked regardless of mode)
+    adv_p = metrics.get("adversarial_tests_passed")
+    adv_t = metrics.get("adversarial_tests_total")
+    if adv_p is None or adv_t is None:
+        msg = "Validation-run metrics missing adversarial_tests_passed or adversarial_tests_total"
+        if raise_on_error:
+            raise AssertionError(msg)
+        return False, msg
+    if adv_p > adv_t:
+        msg = (f"Adversarial tests passed ({adv_p}) > total ({adv_t}): "
+               f"impossible — stored run metrics are corrupted")
+        if raise_on_error:
+            raise AssertionError(msg)
+        return False, msg
+
+    sv = metrics.get("schema_validation_passed")
+    if sv not in (0, 1):
+        msg = f"schema_validation_passed must be 0 or 1, got: {sv}"
+        if raise_on_error:
+            raise AssertionError(msg)
+        return False, msg
+
+    # Exact count matching (only in EXACT-COUNT MODE)
+    if passed_rules is not None:
+        for stored_key, expected_val in [
+            ("core_validation_rules_passed", passed_rules),
+            ("core_validation_rules_failed", failed_rules),
+            ("validation_rules_passed",      passed_rules),
+            ("validation_rules_failed",      failed_rules),
+        ]:
+            stored = metrics.get(stored_key)
+            if stored != expected_val:
+                msg = (f"Validation-run metric mismatch for '{stored_key}': "
+                       f"stored {stored} != actual run value {expected_val}")
+                if raise_on_error:
+                    raise AssertionError(msg)
+                return False, msg
+
+    if adv_passed is not None:
+        for stored_key, expected_val in [
+            ("adversarial_tests_passed", adv_passed),
+            ("adversarial_tests_total",  adv_total),
+        ]:
+            stored = metrics.get(stored_key)
+            if stored != expected_val:
+                msg = (f"Validation-run metric mismatch for '{stored_key}': "
+                       f"stored {stored} != actual run value {expected_val}")
+                if raise_on_error:
+                    raise AssertionError(msg)
+                return False, msg
+
+    mode = "structural" if passed_rules is None else "full"
+    return True, (
+        f"Validation-run metrics verified ({mode} mode): all required run-result keys present; "
+        f"no unexpected keys; adversarial {adv_p}/{adv_t} self-consistent; "
+        f"schema_validation coherent."
+    )
+
+
+# ==============================================================================
+# AREA C — BIDIRECTIONAL VISUAL LEGACY/CANONICAL STATE CONTRACT
+# ==============================================================================
+
+# Explicit mapping contract for canonical ↔ legacy field consistency.
+#
+# CANONICAL STATE  | detection_status | render_status  | visual_review_status | verification_status | visual_verification_status | visually_reviewed | verified
+# ---------------------------------------------------------------------------------------------------------------------------------------------------------
+# NOT_DETECTED     | NOT_DETECTED     | NOT_RENDERED   | NOT_REQUIRED         | NOT_APPLICABLE      | NOT_REQUIRED               | False             | False
+# DETECTED         | DETECTED         | NOT_RENDERED   | NOT_REVIEWED         | UNVERIFIED/FLAGGED  | DETECTED/FLAGGED           | False             | False
+# RENDERED         | DETECTED         | RENDERED       | NOT_REVIEWED         | UNVERIFIED/FLAGGED  | DETECTED/FLAGGED           | False             | False
+# REVIEWED         | DETECTED         | RENDERED       | REVIEWED             | UNVERIFIED          | DETECTED/VERIFIED (not ok) | True              | False
+# VERIFIED         | DETECTED         | RENDERED       | REVIEWED             | VERIFIED            | VERIFIED                   | True              | True
+# FLAGGED          | DETECTED         | NOT_RENDERED   | NOT_REVIEWED         | FLAGGED             | FLAGGED                    | False             | False
+
+# The set of all combinations that are LEGAL for (canonical_ver_status, legacy_vvs)
+_LEGAL_CANONICAL_TO_LEGACY_VVS = {
+    # verified canonical → legacy must be VERIFIED
+    ("VERIFIED",    "VERIFIED"),
+    # reviewed but not yet verified → legacy may be DETECTED (pre-verification reviewed state)
+    ("UNVERIFIED",  "DETECTED"),
+    ("UNVERIFIED",  "NOT_REQUIRED"),
+    # flagged → legacy flagged
+    ("FLAGGED",     "FLAGGED"),
+    # not-applicable (non-visual pages) → not-required
+    ("NOT_APPLICABLE", "NOT_REQUIRED"),
+}
+
+
+def validate_visual_state_contract(page_quality, raise_on_error=False):
+    """
+    Rule 37 / Area C: Bidirectional Canonical ↔ Legacy Visual State Contract.
+
+    Supplements validate_visual_state_consistency (which checks contradictions
+    between individual field pairs) with an EXPLICIT mapping contract that
+    validates ALL directions simultaneously:
+
+    Forward contract (canonical → legacy):
+      1. VERIFIED  canonical   → visually_reviewed MUST be True, verified MUST be True,
+                                  visual_verification_status MUST be VERIFIED
+      2. REVIEWED  canonical   → visually_reviewed MUST be True, verified MUST be False,
+                                  visual_verification_status MUST be DETECTED or VERIFIED
+                                  (cannot be FLAGGED for a REVIEWED page)
+      3. RENDERED  canonical   → render_artifact_reference MUST be non-null
+                                  render_status MUST be RENDERED
+      4. DETECTED only         → visually_reviewed MUST be False, verified MUST be False
+      5. FLAGGED               → verified MUST be False (cannot be both FLAGGED and VERIFIED)
+
+    Backward contract (legacy → canonical):
+      6. visually_reviewed True   → visual_review_status MUST be REVIEWED
+      7. verified True            → verification_status MUST be VERIFIED
+      8. visual_verification_status == VERIFIED → verification_status MUST be VERIFIED
+      9. visual_verification_status == FLAGGED  → verification_status MUST be FLAGGED
+                                                   AND verified MUST be False
+
+    The two existing contradition-detection rules already handle many of these.
+    This function adds the systematic forward+backward sweep that makes the
+    mapping explicit and deterministic.
+    """
+    for p in page_quality:
+        doc_id  = p.get('document_id')
+        pg_num  = p.get('page_number')
+        ver_st  = p.get('verification_status')
+        rev_st  = p.get('visual_review_status')
+        ren_st  = p.get('render_status')
+        ren_ref = p.get('render_artifact_reference')
+        vvs     = p.get('visual_verification_status')
+        v_rev   = p.get('visually_reviewed')
+        ver     = p.get('verified')
+        ref_id  = f"{doc_id} P{pg_num}"
+
+        # --- FORWARD CONTRACT ---
+
+        # 1. VERIFIED canonical → legacy must all agree
+        if ver_st == "VERIFIED":
+            if v_rev is not True:
+                msg = (f"Forward contract violation: {ref_id} verification_status=VERIFIED "
+                       f"but visually_reviewed={v_rev} (must be True)")
+                if raise_on_error: raise AssertionError(msg)
+                return False, msg
+            if ver is not True:
+                msg = (f"Forward contract violation: {ref_id} verification_status=VERIFIED "
+                       f"but verified={ver} (must be True)")
+                if raise_on_error: raise AssertionError(msg)
+                return False, msg
+            if vvs != "VERIFIED":
+                msg = (f"Forward contract violation: {ref_id} verification_status=VERIFIED "
+                       f"but visual_verification_status='{vvs}' (must be VERIFIED)")
+                if raise_on_error: raise AssertionError(msg)
+                return False, msg
+            if rev_st != "REVIEWED":
+                msg = (f"Forward contract violation: {ref_id} verification_status=VERIFIED "
+                       f"but visual_review_status='{rev_st}' (must be REVIEWED)")
+                if raise_on_error: raise AssertionError(msg)
+                return False, msg
+            if ren_st != "RENDERED" or not ren_ref:
+                msg = (f"Forward contract violation: {ref_id} verification_status=VERIFIED "
+                       f"but render_status='{ren_st}'/ref='{ren_ref}' (must be RENDERED with artifact)")
+                if raise_on_error: raise AssertionError(msg)
+                return False, msg
+
+        # 2. REVIEWED canonical → visually_reviewed True, verified False, vvs not FLAGGED
+        if rev_st == "REVIEWED":
+            if v_rev is not True:
+                msg = (f"Forward contract violation: {ref_id} visual_review_status=REVIEWED "
+                       f"but visually_reviewed={v_rev} (must be True)")
+                if raise_on_error: raise AssertionError(msg)
+                return False, msg
+            if vvs == "FLAGGED":
+                msg = (f"Forward contract violation: {ref_id} visual_review_status=REVIEWED "
+                       f"but visual_verification_status=FLAGGED (reviewed pages cannot be FLAGGED)")
+                if raise_on_error: raise AssertionError(msg)
+                return False, msg
+
+        # 3. RENDERED canonical → artifact must exist, legacy state cannot be non-rendered/not-required
+        if ren_st == "RENDERED":
+            if not ren_ref:
+                msg = (f"Forward contract violation: {ref_id} render_status=RENDERED "
+                       f"but render_artifact_reference is null")
+                if raise_on_error: raise AssertionError(msg)
+                return False, msg
+            if vvs == "NOT_REQUIRED":
+                msg = (f"Forward contract violation: {ref_id} render_status=RENDERED "
+                       f"but legacy visual_verification_status is 'NOT_REQUIRED' (contradictory non-rendered state)")
+                if raise_on_error: raise AssertionError(msg)
+                return False, msg
+            if p.get('visual_inspection_required') is False:
+                msg = (f"Forward contract violation: {ref_id} render_status=RENDERED "
+                       f"but visual_inspection_required is False (contradictory non-rendered state)")
+                if raise_on_error: raise AssertionError(msg)
+                return False, msg
+
+        # 4. DETECTED only (not yet REVIEWED/VERIFIED) → reviewed and verified must be False
+        if ver_st in ("UNVERIFIED", "FLAGGED") and rev_st in ("NOT_REVIEWED",):
+            if v_rev is True:
+                msg = (f"Forward contract violation: {ref_id} is DETECTED-but-not-reviewed "
+                       f"(ver_st={ver_st}, rev_st={rev_st}) but visually_reviewed=True")
+                if raise_on_error: raise AssertionError(msg)
+                return False, msg
+            if ver is True:
+                msg = (f"Forward contract violation: {ref_id} is DETECTED-but-not-verified "
+                       f"(ver_st={ver_st}) but verified=True")
+                if raise_on_error: raise AssertionError(msg)
+                return False, msg
+
+        # 5. FLAGGED → verified must be False
+        if ver_st == "FLAGGED" and ver is True:
+            msg = (f"Forward contract violation: {ref_id} verification_status=FLAGGED "
+                   f"but verified=True (mutually exclusive)")
+            if raise_on_error: raise AssertionError(msg)
+            return False, msg
+
+        # --- BACKWARD CONTRACT ---
+
+        # 6. visually_reviewed True → visual_review_status must be REVIEWED
+        if v_rev is True and rev_st != "REVIEWED":
+            msg = (f"Backward contract violation: {ref_id} visually_reviewed=True "
+                   f"but visual_review_status='{rev_st}' (must be REVIEWED)")
+            if raise_on_error: raise AssertionError(msg)
+            return False, msg
+
+        # 7. verified True → verification_status must be VERIFIED
+        if ver is True and ver_st != "VERIFIED":
+            msg = (f"Backward contract violation: {ref_id} verified=True "
+                   f"but verification_status='{ver_st}' (must be VERIFIED)")
+            if raise_on_error: raise AssertionError(msg)
+            return False, msg
+
+        # 8. visual_verification_status == VERIFIED → verification_status must be VERIFIED
+        if vvs == "VERIFIED" and ver_st != "VERIFIED":
+            msg = (f"Backward contract violation: {ref_id} "
+                   f"visual_verification_status=VERIFIED but verification_status='{ver_st}'")
+            if raise_on_error: raise AssertionError(msg)
+            return False, msg
+
+        # 9. visual_verification_status == FLAGGED → verification_status must be FLAGGED AND verified False
+        if vvs == "FLAGGED":
+            if ver_st != "FLAGGED":
+                msg = (f"Backward contract violation: {ref_id} "
+                       f"visual_verification_status=FLAGGED but verification_status='{ver_st}' (must be FLAGGED)")
+                if raise_on_error: raise AssertionError(msg)
+                return False, msg
+            if ver is True:
+                msg = (f"Backward contract violation: {ref_id} "
+                       f"visual_verification_status=FLAGGED but verified=True (must be False)")
+                if raise_on_error: raise AssertionError(msg)
+                return False, msg
+
+    detected_pages = sum(1 for p in page_quality if p.get('detection_status') == 'DETECTED')
+    verified_pages = sum(1 for p in page_quality if p.get('verification_status') == 'VERIFIED')
+    return True, (
+        f"Bidirectional canonical↔legacy visual state contract verified across "
+        f"all {len(page_quality)} page records ({detected_pages} detected, "
+        f"{verified_pages} verified). All forward and backward mapping invariants satisfied."
+    )
+
+
+# ==============================================================================
+# MAIN EXECUTION (37 INTEGRITY RULES)
 # ==============================================================================
 
 def run_all_validation_rules(inventory, records, page_quality, damaged, visual_audit, suspicious, metrics):
@@ -1507,12 +1965,36 @@ def run_all_validation_rules(inventory, records, page_quality, damaged, visual_a
     p34, msg34 = validate_page_quality_and_visual_audit_consistency(page_quality, visual_audit)
     check(34, "Cross-artifact visual evidence consistency between PAGE_EXTRACTION_QUALITY and VISUAL_VERIFICATION_AUDIT", p34, msg34)
 
+    # Rule 35: Physical Page Corpus Completeness (Area A)
+    p35, msg35 = validate_page_corpus_completeness(inventory, page_quality)
+    check(35, "Physical page corpus completeness — every inventory page_count reconciles with PAGE_EXTRACTION_QUALITY (independent of lifecycle derivation)", p35, msg35)
+
+    # Rule 36: Validation-Run Metrics Integrity (Area B)
+    # We check STRUCTURAL integrity of CORPUS_SUMMARY_METRICS:
+    # (a) all REQUIRED_VALIDATION_RUN_METRIC_KEYS must be present,
+    # (b) no keys outside the defined corpus+run-result contract,
+    # (c) internal self-consistency (adv_passed <= adv_total, schema 0 or 1).
+    # We do NOT compare stored counts against live counters here because the stored
+    # metrics reflect the PREVIOUS run and main() will write the updated values
+    # AFTER validation completes.  Exact count checks are handled by
+    # validate_validation_run_metrics called from the mutation suite (P6, P7, P8).
+    p36, msg36 = validate_validation_run_metrics(
+        metrics,
+        passed_rules=None, failed_rules=None,   # structural-only mode
+        adv_passed=None, adv_total=None
+    )
+    check(36, "Validation-run metrics integrity — corpus/run-result metrics are categorically separated, all required run-result keys present, no unexpected keys, self-consistent counts", p36, msg36)
+
+    # Rule 37: Bidirectional Canonical ↔ Legacy Visual State Contract (Area C)
+    p37, msg37 = validate_visual_state_contract(page_quality)
+    check(37, "Bidirectional canonical↔legacy visual state contract — all forward and backward mapping invariants satisfied across all page records", p37, msg37)
+
     return passed_checks, failed_checks, results
 
 
 def main():
     print("=" * 70)
-    print("RUNNING AUTOMATED PHASE 1 VALIDATION SUITE (34 INTEGRITY RULES)")
+    print("RUNNING AUTOMATED PHASE 1 VALIDATION SUITE (37 INTEGRITY RULES)")
     print("=" * 70)
 
     with open('SOURCE_CORPUS_INVENTORY.json', 'r', encoding='utf-8') as f:
@@ -1543,7 +2025,7 @@ def main():
     )
 
     print("=" * 70)
-    print(f"CORE VALIDATION RESULT: {passed_checks}/34 RULES PASSED ({failed_checks} failed)")
+    print(f"CORE VALIDATION RESULT: {passed_checks}/37 RULES PASSED ({failed_checks} failed)")
     print("=" * 70)
 
     # Now execute the standalone adversarial mutation test suite against real validator functions

@@ -1,6 +1,6 @@
 {
-  "adversarial_passed": 36,
-  "adversarial_total": 36,
+  "adversarial_passed": 48,
+  "adversarial_total": 48,
   "test_results": [
     {
       "test_id": "TEST A",
@@ -112,7 +112,7 @@
       "rule_failed": "Rule 31",
       "caught": true,
       "status": "PASS",
-      "validator_rejection_reason": "DOC-28 Q9 graph normalized edges mismatch: {('N', 'Q'), ('N', 'O'), ('O', 'P'), ('M', 'Z'), ('M', 'N'), ('P', 'Q'), ('M', 'Q')} != {('N', 'Q'), ('N', 'O'), ('K', 'M'), ('O', 'P'), ('M', 'N'), ('P', 'Q'), ('M', 'Q')}"
+      "validator_rejection_reason": "DOC-28 Q9 graph normalized edges mismatch: {('M', 'Z'), ('N', 'Q'), ('M', 'N'), ('N', 'O'), ('M', 'Q'), ('P', 'Q'), ('O', 'P')} != {('N', 'Q'), ('M', 'N'), ('N', 'O'), ('M', 'Q'), ('K', 'M'), ('P', 'Q'), ('O', 'P')}"
     },
     {
       "test_id": "TEST H8",
@@ -120,7 +120,7 @@
       "rule_failed": "Rule 31",
       "caught": true,
       "status": "PASS",
-      "validator_rejection_reason": "DOC-28 Q10 tree parent-child relationships mismatch: {('5', '6'), ('1', '2'), ('5', '99'), ('2', '5'), ('3', '4')} != {('5', '6'), ('5', '3'), ('1', '2'), ('2', '5'), ('3', '4')}"
+      "validator_rejection_reason": "DOC-28 Q10 tree parent-child relationships mismatch: {('5', '6'), ('5', '99'), ('1', '2'), ('3', '4'), ('2', '5')} != {('1', '2'), ('3', '4'), ('5', '6'), ('5', '3'), ('2', '5')}"
     },
     {
       "test_id": "TEST H9",
@@ -289,6 +289,102 @@
       "caught": true,
       "status": "PASS",
       "validator_rejection_reason": "Contradiction: Page DOC-01 P1 verified is True but verification_status is 'UNVERIFIED'"
+    },
+    {
+      "test_id": "MUTATION P1",
+      "name": "Delete One Legitimate Page-Quality Record",
+      "rule_failed": "Rule 35",
+      "caught": true,
+      "status": "PASS",
+      "validator_rejection_reason": "Document DOC-01 is missing page records for pages: [1] (page_count=4)"
+    },
+    {
+      "test_id": "MUTATION P2",
+      "name": "Duplicate an Existing Page-Quality Record",
+      "rule_failed": "Rule 35",
+      "caught": true,
+      "status": "PASS",
+      "validator_rejection_reason": "Document DOC-01 has duplicate page number 1 in PAGE_EXTRACTION_QUALITY"
+    },
+    {
+      "test_id": "MUTATION P3",
+      "name": "Insert an Out-of-Range Page Number",
+      "rule_failed": "Rule 35",
+      "caught": true,
+      "status": "PASS",
+      "validator_rejection_reason": "Document DOC-01 has out-of-range page number 99 (page_count=4)"
+    },
+    {
+      "test_id": "MUTATION P4",
+      "name": "Modify Inventory page_count Disagreeing with Page Quality",
+      "rule_failed": "Rule 35",
+      "caught": true,
+      "status": "PASS",
+      "validator_rejection_reason": "Document DOC-01 is missing page records for pages: [5] (page_count=5)"
+    },
+    {
+      "test_id": "MUTATION P5",
+      "name": "Corrupt One Corpus-Derived Metric (pages)",
+      "rule_failed": "Rule 24",
+      "caught": true,
+      "status": "PASS",
+      "validator_rejection_reason": "Summary metric mismatch for key 'pages': stored 9999 != independently derived 579"
+    },
+    {
+      "test_id": "MUTATION P6",
+      "name": "Corrupt One Validation-Run Metric (core_validation_rules_passed)",
+      "rule_failed": "Rule 36",
+      "caught": true,
+      "status": "PASS",
+      "validator_rejection_reason": "Validation-run metric mismatch for 'core_validation_rules_passed': stored 9999 != actual run value 37"
+    },
+    {
+      "test_id": "MUTATION P7",
+      "name": "Remove a Required Validation-Run Metric",
+      "rule_failed": "Rule 36",
+      "caught": true,
+      "status": "PASS",
+      "validator_rejection_reason": "Validation-run metrics is missing required key 'core_validation_rules_passed'"
+    },
+    {
+      "test_id": "MUTATION P8",
+      "name": "Insert Unexpected/Unsupported Validation-Run Metric",
+      "rule_failed": "Rule 36",
+      "caught": true,
+      "status": "PASS",
+      "validator_rejection_reason": "CORPUS_SUMMARY_METRICS contains unexpected/undefined run-result keys: ['unexpected_unsupported_validation_metric']"
+    },
+    {
+      "test_id": "MUTATION P9",
+      "name": "Canonical state VERIFIED with Legacy state DETECTED",
+      "rule_failed": "Rule 37",
+      "caught": true,
+      "status": "PASS",
+      "validator_rejection_reason": "Forward contract violation: DOC-28 P2 verification_status=VERIFIED but visual_verification_status='DETECTED' (must be VERIFIED)"
+    },
+    {
+      "test_id": "MUTATION P10",
+      "name": "Canonical state VERIFIED with Legacy state FLAGGED",
+      "rule_failed": "Rule 37",
+      "caught": true,
+      "status": "PASS",
+      "validator_rejection_reason": "Forward contract violation: DOC-28 P2 verification_status=VERIFIED but visual_verification_status='FLAGGED' (must be VERIFIED)"
+    },
+    {
+      "test_id": "MUTATION P11",
+      "name": "Canonical state REVIEWED with Legacy state DETECTED",
+      "rule_failed": "Rule 37",
+      "caught": true,
+      "status": "PASS",
+      "validator_rejection_reason": "Forward contract violation: DOC-28 P2 visual_review_status=REVIEWED but visually_reviewed=False (must be True)"
+    },
+    {
+      "test_id": "MUTATION P12",
+      "name": "Canonical state RENDERED with Contradictory Non-Rendered Legacy State",
+      "rule_failed": "Rule 37",
+      "caught": true,
+      "status": "PASS",
+      "validator_rejection_reason": "Forward contract violation: DOC-28 P2 verification_status=VERIFIED but visual_verification_status='NOT_REQUIRED' (must be VERIFIED)"
     }
   ]
 }

@@ -30,12 +30,12 @@
   "damage_audit_entries": 507,
   "deterministic_damage_conditions": 507,
   "unresolved_damage_records": 391,
-  "core_validation_rules_passed": 34,
+  "core_validation_rules_passed": 37,
   "core_validation_rules_failed": 0,
-  "validation_rules_passed": 34,
+  "validation_rules_passed": 37,
   "validation_rules_failed": 0,
-  "adversarial_tests_passed": 36,
-  "adversarial_tests_total": 36,
+  "adversarial_tests_passed": 48,
+  "adversarial_tests_total": 48,
   "schema_validation_passed": 1,
   "schema_validation_failed": 0
 }
