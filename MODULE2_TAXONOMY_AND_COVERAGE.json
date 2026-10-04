@@ -1,0 +1,2562 @@
+{
+  "metadata": {
+    "course": "CSE2101 / CSEN2101",
+    "module": 2,
+    "branch": "module2-ultimate-handbook-2026-10-05",
+    "base_branch": "phase-1-source-corpus-audit",
+    "source_occurrences": 186,
+    "unique_exact_normalized": 115,
+    "duplicate_occurrences": 71
+  },
+  "master_patterns": [
+    {
+      "master": "1. Stack Core & Advanced Operations",
+      "subpatterns": [
+        {
+          "id": "STACK_CORE",
+          "name": "Stack fundamentals, representation, operations, and state tracing",
+          "unique": 12,
+          "occurrences": 15,
+          "independent_sources": 9
+        },
+        {
+          "id": "STACK_QUEUE_CONCEPT_COMPARE",
+          "name": "Stack vs Queue: LIFO/FIFO recognition and comparison",
+          "unique": 3,
+          "occurrences": 6,
+          "independent_sources": 6
+        },
+        {
+          "id": "STACK_QUEUE_INTERCONVERT",
+          "name": "Implementing one ADT using the other (queue with stacks)",
+          "unique": 3,
+          "occurrences": 8,
+          "independent_sources": 8
+        },
+        {
+          "id": "STACK_MIN",
+          "name": "Augmented stack: minimum element retrieval",
+          "unique": 1,
+          "occurrences": 3,
+          "independent_sources": 3
+        },
+        {
+          "id": "STACK_TRANSFER_TRANSFORM",
+          "name": "Stack transformations: sorted movement and reversal",
+          "unique": 3,
+          "occurrences": 6,
+          "independent_sources": 6
+        },
+        {
+          "id": "STACK_PERMUTATION",
+          "name": "Stack-generated output sequences",
+          "unique": 1,
+          "occurrences": 1,
+          "independent_sources": 1
+        },
+        {
+          "id": "STACK_APP_DUPLICATE_REDUCTION",
+          "name": "Stack-style reduction of adjacent duplicates",
+          "unique": 1,
+          "occurrences": 3,
+          "independent_sources": 3
+        }
+      ]
+    },
+    {
+      "master": "2. Expression Processing with Stacks",
+      "subpatterns": [
+        {
+          "id": "EXPR_CONCEPTS",
+          "name": "Expression notation concepts and recognition",
+          "unique": 1,
+          "occurrences": 2,
+          "independent_sources": 2
+        },
+        {
+          "id": "EXPR_INFIX_POSTFIX",
+          "name": "Infix → postfix conversion",
+          "unique": 21,
+          "occurrences": 28,
+          "independent_sources": 12
+        },
+        {
+          "id": "EXPR_PREFIX_POSTFIX_TRANSFORM",
+          "name": "Prefix/postfix transformations",
+          "unique": 9,
+          "occurrences": 15,
+          "independent_sources": 11
+        },
+        {
+          "id": "EXPR_POSTFIX_EVAL",
+          "name": "Postfix evaluation",
+          "unique": 5,
+          "occurrences": 6,
+          "independent_sources": 4
+        },
+        {
+          "id": "EXPR_COMBINED_CONVERSION_EVAL",
+          "name": "Combined infix conversion + evaluation",
+          "unique": 1,
+          "occurrences": 2,
+          "independent_sources": 2
+        },
+        {
+          "id": "PAREN_MATCH",
+          "name": "Balanced-parentheses / parenthesis matching",
+          "unique": 4,
+          "occurrences": 5,
+          "independent_sources": 4
+        }
+      ]
+    },
+    {
+      "master": "3. Queue & Circular Queue",
+      "subpatterns": [
+        {
+          "id": "QUEUE_LINEAR",
+          "name": "Linear queue operations and state tracing",
+          "unique": 7,
+          "occurrences": 9,
+          "independent_sources": 5
+        },
+        {
+          "id": "QUEUE_CIRCULAR",
+          "name": "Circular queue wrap-around and empty/full states",
+          "unique": 8,
+          "occurrences": 16,
+          "independent_sources": 14
+        },
+        {
+          "id": "QUEUE_APPLICATIONS",
+          "name": "Queue applications",
+          "unique": 2,
+          "occurrences": 2,
+          "independent_sources": 1
+        }
+      ]
+    },
+    {
+      "master": "4. Deque",
+      "subpatterns": [
+        {
+          "id": "DEQUE",
+          "name": "Deque, restricted deques, and two-ended operations",
+          "unique": 5,
+          "occurrences": 8,
+          "independent_sources": 7
+        }
+      ]
+    },
+    {
+      "master": "5. Recursion",
+      "subpatterns": [
+        {
+          "id": "REC_CORE_TRACE",
+          "name": "Recursion principles, call stack, tracing, and recursive construction",
+          "unique": 10,
+          "occurrences": 19,
+          "independent_sources": 16
+        },
+        {
+          "id": "REC_TAIL",
+          "name": "Tail recursion and recursion→iteration reasoning",
+          "unique": 9,
+          "occurrences": 18,
+          "independent_sources": 14
+        }
+      ]
+    },
+    {
+      "master": "6. Recursive Applications & Backtracking",
+      "subpatterns": [
+        {
+          "id": "REC_APP_TOWER_HANOI",
+          "name": "Tower of Hanoi",
+          "unique": 7,
+          "occurrences": 11,
+          "independent_sources": 6
+        },
+        {
+          "id": "REC_APP_BACKTRACKING_8Q",
+          "name": "Eight Queens and backtracking",
+          "unique": 2,
+          "occurrences": 2,
+          "independent_sources": 2
+        }
+      ]
+    }
+  ],
+  "coverage_matrix": [
+    {
+      "canonical_key": "write a program or pseudo code or algorithm that should continue removing adjacent duplicates from the string given a string till no duplicate is present in the result for example input string is dbaabdab the string left after the removal of all adjacent duplicates is ab co3 co5 evaluate hocq",
+      "question_id": "DOC-03-P02-Q04-sub-c",
+      "exact_question": "Write a program or pseudo code or algorithm that should continue removing adjacent duplicates from the string given a string, till no duplicate is present in the result. For example input string is 'DBAABDAB'. The string left after the removal of all adjacent duplicates is 'AB'. [(CO3, CO5)(Evaluate/HOCQ)]",
+      "master_pattern": "1. Stack Core & Advanced Operations",
+      "subpattern_id": "STACK_APP_DUPLICATE_REDUCTION",
+      "subpattern": "Stack-style reduction of adjacent duplicates",
+      "source": "DOC-03",
+      "page": 2,
+      "year": 2022,
+      "marks": null,
+      "occurrences": 3,
+      "independent_sources": 3,
+      "priority": "P2",
+      "difficulty": "D3",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-03-P02-Q04-sub-c",
+        "DOC-04-P02-Q04-sub-c",
+        "DOC-05-P02-Q04-sub-c"
+      ]
+    },
+    {
+      "canonical_key": "represent the following equation in post fix form and evaluate the value use a stack data structure and show each step 10 5 2 7 3 5 2 co2 understand iocq",
+      "question_id": "DOC-06-P03-Q05-sub-a",
+      "exact_question": "Represent the following equation in post-fix form and evaluate the value. Use a stack data structure and show each step. 10 – (5*2) + 7 / 3.5 * 2 [(CO2)(Understand/IOCQ)]",
+      "master_pattern": "1. Stack Core & Advanced Operations",
+      "subpattern_id": "STACK_CORE",
+      "subpattern": "Stack fundamentals, representation, operations, and state tracing",
+      "source": "DOC-06",
+      "page": 3,
+      "year": 2023,
+      "marks": null,
+      "occurrences": 4,
+      "independent_sources": 4,
+      "priority": "P1",
+      "difficulty": "D3",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-06-P03-Q05-sub-a",
+        "DOC-07-P03-Q05-sub-a",
+        "DOC-08-P03-Q05-sub-a",
+        "DOC-09-P03-Q05-sub-a"
+      ]
+    },
+    {
+      "canonical_key": "a stack s has the entries a b c with a on the top another stack t is empty an entry popped out of the stack s can be printed immediately or pushed in to the stack t finally popped out of the stack t and printed then which sequence can never be printed a b a c b b c a c c a b d a b c",
+      "question_id": "DOC-18-P01-Q01-sub-iii",
+      "exact_question": "A stack S has the entries a,b,c with ‘a’ on the top. Another stack T is empty. An entry popped out of the Stack S can be printed immediately or pushed in to the stack T, finally popped out of the Stack T and printed. Then which sequence can never be printed (a) b a c (b) b c a (c) c a b (d) a b c",
+      "master_pattern": "1. Stack Core & Advanced Operations",
+      "subpattern_id": "STACK_CORE",
+      "subpattern": "Stack fundamentals, representation, operations, and state tracing",
+      "source": "DOC-18",
+      "page": 1,
+      "year": 2020,
+      "marks": "1",
+      "occurrences": 1,
+      "independent_sources": 1,
+      "priority": "P2",
+      "difficulty": "D1",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-18-P01-Q01-sub-iii"
+      ]
+    },
+    {
+      "canonical_key": "which function places an element on the stack a pop b push c peek d isempty",
+      "question_id": "DOC-25-P01-Q01-sub-ix",
+      "exact_question": "Which function places an element on the stack? (a) Pop() (b) Push() (c) Peek() (d) isEmpty()",
+      "master_pattern": "1. Stack Core & Advanced Operations",
+      "subpattern_id": "STACK_CORE",
+      "subpattern": "Stack fundamentals, representation, operations, and state tracing",
+      "source": "DOC-25",
+      "page": 1,
+      "year": 2021,
+      "marks": "1",
+      "occurrences": 1,
+      "independent_sources": 1,
+      "priority": "P2",
+      "difficulty": "D1",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-25-P01-Q01-sub-ix"
+      ]
+    },
+    {
+      "canonical_key": "a stack s has the entries a b c with a on the top another stack t is empty an entry popped out of the stack s can be printed immediately or pushed in to the stack t finally popped out of the stack t and printed then which sequence can never be printed a a b c b b a c c b c a d c a b",
+      "question_id": "DOC-28-P04-MCQ-Q24",
+      "exact_question": "A stack S has the entries a,b,c with ‘a’ on the top. Another stack T is empty. An entry popped out of the Stack S can be printed immediately or pushed in to the stack T, finally popped out of the Stack T and printed. Then which sequence can never be printed? (a) a b c (b) b a c (c) b c a (d) c a b",
+      "master_pattern": "1. Stack Core & Advanced Operations",
+      "subpattern_id": "STACK_CORE",
+      "subpattern": "Stack fundamentals, representation, operations, and state tracing",
+      "source": "DOC-28",
+      "page": 4,
+      "year": null,
+      "marks": null,
+      "occurrences": 1,
+      "independent_sources": 1,
+      "priority": "P2",
+      "difficulty": "D1",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-28-P04-MCQ-Q24"
+      ]
+    },
+    {
+      "canonical_key": "implement two stacks on the same array managing space most efficiently",
+      "question_id": "DOC-28-P07-LA-Q19",
+      "exact_question": "Implement two stacks on the same array, managing space most efficiently.",
+      "master_pattern": "1. Stack Core & Advanced Operations",
+      "subpattern_id": "STACK_CORE",
+      "subpattern": "Stack fundamentals, representation, operations, and state tracing",
+      "source": "DOC-28",
+      "page": 7,
+      "year": null,
+      "marks": null,
+      "occurrences": 1,
+      "independent_sources": 1,
+      "priority": "P2",
+      "difficulty": "D3",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-28-P07-LA-Q19"
+      ]
+    },
+    {
+      "canonical_key": "what is the difference between storing data on the heap vs on the stack",
+      "question_id": "DOC-30-P07-Q29",
+      "exact_question": "What is the difference between storing data on the heap vs. on the stack?",
+      "master_pattern": "1. Stack Core & Advanced Operations",
+      "subpattern_id": "STACK_CORE",
+      "subpattern": "Stack fundamentals, representation, operations, and state tracing",
+      "source": "DOC-30",
+      "page": 7,
+      "year": null,
+      "marks": null,
+      "occurrences": 1,
+      "independent_sources": 1,
+      "priority": "P2",
+      "difficulty": "D2",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-30-P07-Q29"
+      ]
+    },
+    {
+      "canonical_key": "consider the following stack of characters where stack is allocated n 8 mmory cells stack a c d f k means empty allocated cell describe the stack as the following operations takes place a pop stack item b pop stack item c pop stack item d push stack r e push stack l f push stack s g push stack p h pop stack item",
+      "question_id": "DOC-30-P08-Q32",
+      "exact_question": "Consider the following stack of characters, where STACK is allocated N = 8 mmory cells STACK : A,C,D,F,K,_,_,_. ( _ means empty allocated cell) Describe the stack as the following operations takes place: (a) POP(STACK, ITEM) (b) POP(STACK, ITEM) (c) POP(STACK, ITEM) (d) PUSH(STACK, R) (e) PUSH(STACK,L) (f) PUSH(STACK, S) (g) PUSH(STACK,P) (h) POP(STACK, ITEM)",
+      "master_pattern": "1. Stack Core & Advanced Operations",
+      "subpattern_id": "STACK_CORE",
+      "subpattern": "Stack fundamentals, representation, operations, and state tracing",
+      "source": "DOC-30",
+      "page": 8,
+      "year": null,
+      "marks": null,
+      "occurrences": 1,
+      "independent_sources": 1,
+      "priority": "P2",
+      "difficulty": "D1",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-30-P08-Q32"
+      ]
+    },
+    {
+      "canonical_key": "consider the problem in q 32 a when will overflow occur b when will c be deleted before r ans a since the stack has been allocated 8 memory cells overflow will occur when stack contains 8 elements and there is a push operation to add an element b since stack is implemented as a stack c will never be deleted before r",
+      "question_id": "DOC-30-P08-Q33",
+      "exact_question": "Consider the problem in Q-32. (a) When will overflow occur? (b) When will C be deleted before R? Ans : (a) Since the stack has been allocated 8 memory cells, overflow will occur when STACK contains 8 elements and there is a PUSH operation to add an element (b) Since STACK is implemented as a STACK, C will never be deleted before R.",
+      "master_pattern": "1. Stack Core & Advanced Operations",
+      "subpattern_id": "STACK_CORE",
+      "subpattern": "Stack fundamentals, representation, operations, and state tracing",
+      "source": "DOC-30",
+      "page": 8,
+      "year": null,
+      "marks": null,
+      "occurrences": 1,
+      "independent_sources": 1,
+      "priority": "P2",
+      "difficulty": "D3",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-30-P08-Q33"
+      ]
+    },
+    {
+      "canonical_key": "evaluate p 12 7 3 2 1 5 ans symbol stack 12 12 7 12 7 3 12 7 3 12 4 3 2 3 2 1 3 2 1 5 3 2 1 5 3 2 6 3 12 15 15",
+      "question_id": "DOC-30-P09-Q39",
+      "exact_question": "Evaluate P:  12 , 7 , 3 , - , / , 2 , 1 , 5 , + , * , + , ) Ans : Symbol STACK 12 12 7 12,7 3 12,7,3 - 12,4 / 3 2 3,2 1 3,2,1 5 3,2,1,5 + 3,2,6 * 3,12 + 15 ) 15",
+      "master_pattern": "1. Stack Core & Advanced Operations",
+      "subpattern_id": "STACK_CORE",
+      "subpattern": "Stack fundamentals, representation, operations, and state tracing",
+      "source": "DOC-30",
+      "page": 9,
+      "year": null,
+      "marks": null,
+      "occurrences": 1,
+      "independent_sources": 1,
+      "priority": "P2",
+      "difficulty": "D2",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-30-P09-Q39"
+      ]
+    },
+    {
+      "canonical_key": "a stack is to be implemented using an array the associated declarations are int stack 100 int top 0 give the statement to perform push operation",
+      "question_id": "DOC-31-P10-PART1-Q67",
+      "exact_question": "A stack is to be implemented using an array. The associated declarations are: int stack [100]; int top = 0; Give the statement to perform push operation.",
+      "master_pattern": "1. Stack Core & Advanced Operations",
+      "subpattern_id": "STACK_CORE",
+      "subpattern": "Stack fundamentals, representation, operations, and state tracing",
+      "source": "DOC-31",
+      "page": 10,
+      "year": null,
+      "marks": "2",
+      "occurrences": 1,
+      "independent_sources": 1,
+      "priority": "P2",
+      "difficulty": "D3",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-31-P10-PART1-Q67"
+      ]
+    },
+    {
+      "canonical_key": "what is the result of the following operation top push s x a x b null c s d none of these",
+      "question_id": "DOC-31-P13-PART1-Q82",
+      "exact_question": "What is the result of the following operation Top (Push (S, X)) (A)  X (B)  null (C)  S (D)  None of these.",
+      "master_pattern": "1. Stack Core & Advanced Operations",
+      "subpattern_id": "STACK_CORE",
+      "subpattern": "Stack fundamentals, representation, operations, and state tracing",
+      "source": "DOC-31",
+      "page": 13,
+      "year": null,
+      "marks": "2",
+      "occurrences": 1,
+      "independent_sources": 1,
+      "priority": "P2",
+      "difficulty": "D1",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-31-P13-PART1-Q82"
+      ]
+    },
+    {
+      "canonical_key": "which data structure is used for implementing recursion a queue b stack c arrays d list",
+      "question_id": "DOC-31-P14-PART1-Q87",
+      "exact_question": "Which data structure is used for implementing recursion? (A)  Queue. (B)  Stack. (C)  Arrays. (D)  List.",
+      "master_pattern": "1. Stack Core & Advanced Operations",
+      "subpattern_id": "STACK_CORE",
+      "subpattern": "Stack fundamentals, representation, operations, and state tracing",
+      "source": "DOC-31",
+      "page": 14,
+      "year": null,
+      "marks": "2",
+      "occurrences": 1,
+      "independent_sources": 1,
+      "priority": "P2",
+      "difficulty": "D1",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-31-P14-PART1-Q87"
+      ]
+    },
+    {
+      "canonical_key": "write a program or pseudo code or algorithm to design a stack that returns a minimum element without using an auxiliary stack co3 analyze iocq",
+      "question_id": "DOC-03-P03-Q05-sub-b",
+      "exact_question": "Write a program or pseudo code or algorithm to design a stack that returns a minimum element without using an auxiliary stack. [(CO3)(Analyze/IOCQ)]",
+      "master_pattern": "1. Stack Core & Advanced Operations",
+      "subpattern_id": "STACK_MIN",
+      "subpattern": "Augmented stack: minimum element retrieval",
+      "source": "DOC-03",
+      "page": 3,
+      "year": 2022,
+      "marks": null,
+      "occurrences": 3,
+      "independent_sources": 3,
+      "priority": "P2",
+      "difficulty": "D4",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-03-P03-Q05-sub-b",
+        "DOC-04-P03-Q05-sub-b",
+        "DOC-05-P03-Q05-sub-b"
+      ]
+    },
+    {
+      "canonical_key": "give an example of an output sequence that cannot be generated from an input sequence via a series of push and pop operations on an initially empty stack",
+      "question_id": "DOC-28-P07-LA-Q20",
+      "exact_question": "Give an example of an output sequence that cannot be generated from an input sequence via a series of push and pop operations on an initially empty stack.",
+      "master_pattern": "1. Stack Core & Advanced Operations",
+      "subpattern_id": "STACK_PERMUTATION",
+      "subpattern": "Stack-generated output sequences",
+      "source": "DOC-28",
+      "page": 7,
+      "year": null,
+      "marks": null,
+      "occurrences": 1,
+      "independent_sources": 1,
+      "priority": "P3",
+      "difficulty": "D2",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-28-P07-LA-Q20"
+      ]
+    },
+    {
+      "canonical_key": "recursion uses the data structure as it follows ordering a stack fifo b queue lifo c stack lifo d queue fifo",
+      "question_id": "DOC-02-P02-Q01-sub-viii",
+      "exact_question": "Recursion uses the ____ data structure as it follows ____ ordering. (a) Stack, FIFO (b) Queue, LIFO (c) Stack, LIFO (d) Queue, FIFO",
+      "master_pattern": "1. Stack Core & Advanced Operations",
+      "subpattern_id": "STACK_QUEUE_CONCEPT_COMPARE",
+      "subpattern": "Stack vs Queue: LIFO/FIFO recognition and comparison",
+      "source": "DOC-02",
+      "page": 2,
+      "year": 2021,
+      "marks": "1",
+      "occurrences": 4,
+      "independent_sources": 4,
+      "priority": "P2",
+      "difficulty": "D1",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-02-P02-Q01-sub-viii",
+        "DOC-19-P03-Q01-sub-viii",
+        "DOC-20-P02-Q01-sub-viii",
+        "DOC-26-P02-Q01-sub-viii"
+      ]
+    },
+    {
+      "canonical_key": "recursion uses the data structure as it follows ordering a queue lifo b queue fifo c stack lifo d stack fifo",
+      "question_id": "DOC-28-P04-MCQ-Q22",
+      "exact_question": "Recursion uses the ____ data structure as it follows ____ ordering. (a) Queue, LIFO (b) Queue, FIFO (c) Stack, LIFO (d) Stack, FIFO",
+      "master_pattern": "1. Stack Core & Advanced Operations",
+      "subpattern_id": "STACK_QUEUE_CONCEPT_COMPARE",
+      "subpattern": "Stack vs Queue: LIFO/FIFO recognition and comparison",
+      "source": "DOC-28",
+      "page": 4,
+      "year": null,
+      "marks": null,
+      "occurrences": 1,
+      "independent_sources": 1,
+      "priority": "P3",
+      "difficulty": "D1",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-28-P04-MCQ-Q22"
+      ]
+    },
+    {
+      "canonical_key": "what is the difference between a queue and a stack",
+      "question_id": "DOC-30-P07-Q28",
+      "exact_question": "What is the difference between a queue and a stack?",
+      "master_pattern": "1. Stack Core & Advanced Operations",
+      "subpattern_id": "STACK_QUEUE_CONCEPT_COMPARE",
+      "subpattern": "Stack vs Queue: LIFO/FIFO recognition and comparison",
+      "source": "DOC-30",
+      "page": 7,
+      "year": null,
+      "marks": null,
+      "occurrences": 1,
+      "independent_sources": 1,
+      "priority": "P3",
+      "difficulty": "D2",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-30-P07-Q28"
+      ]
+    },
+    {
+      "canonical_key": "to implement a queue using stack show how to implement enqueue and dequeue operations using a sequence of given operations as push and pop for a stack co2 co6 remember locq",
+      "question_id": "DOC-03-P02-Q04-sub-a",
+      "exact_question": "To implement a queue using Stack, show how to implement ENQUEUE and DEQUEUE operations using a sequence of given operations as PUSH and POP for a Stack? [(CO2,CO6)(Remember/LOCQ)]",
+      "master_pattern": "1. Stack Core & Advanced Operations",
+      "subpattern_id": "STACK_QUEUE_INTERCONVERT",
+      "subpattern": "Implementing one ADT using the other (queue with stacks)",
+      "source": "DOC-03",
+      "page": 2,
+      "year": 2022,
+      "marks": null,
+      "occurrences": 3,
+      "independent_sources": 3,
+      "priority": "P2",
+      "difficulty": "D3",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-03-P02-Q04-sub-a",
+        "DOC-04-P02-Q04-sub-a",
+        "DOC-05-P02-Q04-sub-a"
+      ]
+    },
+    {
+      "canonical_key": "suppose you want to implement a queue and a stack using an unrestricted deque describe the deque methods that need to be reused to implement standard stack and queue operations co2 apply iocq",
+      "question_id": "DOC-13-P02-Q05-sub-b",
+      "exact_question": "Suppose you want to implement a queue and a stack using an unrestricted deque. Describe the deque methods that need to be reused to implement standard stack and queue operations. [(CO2)(Apply/IOCQ)]",
+      "master_pattern": "1. Stack Core & Advanced Operations",
+      "subpattern_id": "STACK_QUEUE_INTERCONVERT",
+      "subpattern": "Implementing one ADT using the other (queue with stacks)",
+      "source": "DOC-13",
+      "page": 2,
+      "year": 2025,
+      "marks": null,
+      "occurrences": 4,
+      "independent_sources": 4,
+      "priority": "P2",
+      "difficulty": "D3",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-13-P02-Q05-sub-b",
+        "DOC-14-P02-Q05-sub-b",
+        "DOC-15-P02-Q05-sub-b",
+        "DOC-16-P02-Q05-sub-b"
+      ]
+    },
+    {
+      "canonical_key": "suppose you want to implement a queue and a stack using an unrestricted deque describe the deque methods that need to be reused to implement standard stack and queue operations",
+      "question_id": "DOC-28-P07-LA-Q18",
+      "exact_question": "Suppose you want to implement a queue and a stack using an unrestricted deque. Describe the deque methods that need to be reused to implement standard stack and queue operations.",
+      "master_pattern": "1. Stack Core & Advanced Operations",
+      "subpattern_id": "STACK_QUEUE_INTERCONVERT",
+      "subpattern": "Implementing one ADT using the other (queue with stacks)",
+      "source": "DOC-28",
+      "page": 7,
+      "year": null,
+      "marks": null,
+      "occurrences": 1,
+      "independent_sources": 1,
+      "priority": "P3",
+      "difficulty": "D3",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-28-P07-LA-Q18"
+      ]
+    },
+    {
+      "canonical_key": "there are n elements in a stack stored in a sorted way move these elements to another stack so that the final stack is always sorted during the entire movement you may additionally use another stack but the sorted property has to be maintained there all the time an iterative version will fetch you additional credits co2 analyse iocq",
+      "question_id": "DOC-13-P02-Q05-sub-a",
+      "exact_question": "There are n elements in a stack, stored in a sorted way. Move these elements to another stack so that the final stack is always sorted during the entire movement. You may additionally use another stack but the sorted property has to be maintained there all the time. An iterative version will fetch you additional credits. [(CO2)(Analyse/IOCQ)]",
+      "master_pattern": "1. Stack Core & Advanced Operations",
+      "subpattern_id": "STACK_TRANSFER_TRANSFORM",
+      "subpattern": "Stack transformations: sorted movement and reversal",
+      "source": "DOC-13",
+      "page": 2,
+      "year": 2025,
+      "marks": null,
+      "occurrences": 4,
+      "independent_sources": 4,
+      "priority": "P2",
+      "difficulty": "D4",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-13-P02-Q05-sub-a",
+        "DOC-14-P02-Q05-sub-a",
+        "DOC-15-P02-Q05-sub-a",
+        "DOC-16-P02-Q05-sub-a"
+      ]
+    },
+    {
+      "canonical_key": "there are n elements in a stack stored in a sorted way move these elements to another stack so that the final stack is always sorted during the entire movement you may additionally use another stack but the sorted property has to be maintained there all the time an iterative version will fetch you additional credits",
+      "question_id": "DOC-28-P07-LA-Q17",
+      "exact_question": "There are n elements in a stack, stored in a sorted way. Move these elements to another stack so that the final stack is always sorted during the entire movement. You may additionally use another stack but the sorted property has to be maintained there all the time. An iterative version will fetch you additional credits.",
+      "master_pattern": "1. Stack Core & Advanced Operations",
+      "subpattern_id": "STACK_TRANSFER_TRANSFORM",
+      "subpattern": "Stack transformations: sorted movement and reversal",
+      "source": "DOC-28",
+      "page": 7,
+      "year": null,
+      "marks": null,
+      "occurrences": 1,
+      "independent_sources": 1,
+      "priority": "P3",
+      "difficulty": "D4",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-28-P07-LA-Q17"
+      ]
+    },
+    {
+      "canonical_key": "reverse the order of elements on a stack s i using two additional stacks ii using one additional queue 9",
+      "question_id": "DOC-31-P29-PART2-Q17",
+      "exact_question": "Reverse the order of elements on a stack S (i)  using two additional stacks. (ii) using one additional queue. (9)",
+      "master_pattern": "1. Stack Core & Advanced Operations",
+      "subpattern_id": "STACK_TRANSFER_TRANSFORM",
+      "subpattern": "Stack transformations: sorted movement and reversal",
+      "source": "DOC-31",
+      "page": 29,
+      "year": null,
+      "marks": "9",
+      "occurrences": 1,
+      "independent_sources": 1,
+      "priority": "P3",
+      "difficulty": "D3",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-31-P29-PART2-Q17"
+      ]
+    },
+    {
+      "canonical_key": "evaluate the result of the given infix expression using proper data structure 2 5 3 6 15 2 show every step clearly",
+      "question_id": "DOC-18-P03-Q04-sub-a",
+      "exact_question": "Evaluate the result of the given infix expression using proper data structure: 2*(5*(3+6))/15 - 2. Show every step clearly.",
+      "master_pattern": "2. Expression Processing with Stacks",
+      "subpattern_id": "EXPR_COMBINED_CONVERSION_EVAL",
+      "subpattern": "Combined infix conversion + evaluation",
+      "source": "DOC-18",
+      "page": 3,
+      "year": 2020,
+      "marks": null,
+      "occurrences": 2,
+      "independent_sources": 2,
+      "priority": "P3",
+      "difficulty": "D3",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-18-P03-Q04-sub-a",
+        "DOC-28-P06-LA-Q10"
+      ]
+    },
+    {
+      "canonical_key": "reverse polish notation is preferred over infix notation because a the knowledge of precedence is not needed b brackets will not be needed c both of the above d none of the above",
+      "question_id": "DOC-01-P02-Q01-sub-vii",
+      "exact_question": "Reverse Polish notation is preferred over infix notation because (a)  The knowledge of precedence is not needed (b)  Brackets will not be needed (c)  Both of the above (d)  None of the above.",
+      "master_pattern": "2. Expression Processing with Stacks",
+      "subpattern_id": "EXPR_CONCEPTS",
+      "subpattern": "Expression notation concepts and recognition",
+      "source": "DOC-01",
+      "page": 2,
+      "year": 2020,
+      "marks": "1",
+      "occurrences": 2,
+      "independent_sources": 2,
+      "priority": "P3",
+      "difficulty": "D1",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-01-P02-Q01-sub-vii",
+        "DOC-21-P02-Q01-sub-vii"
+      ]
+    },
+    {
+      "canonical_key": "explain step by step how the following infix expression will be changed to postfix expression using stack 7 2 3 5 8 show the status of remaining infix string stack postfix string and rule used in each step",
+      "question_id": "DOC-01-P03-Q04-sub-a",
+      "exact_question": "Explain step by step how the following infix expression will be changed to postfix expression using stack: 7-(2^3+5)*8 Show the status of Remaining Infix String, Stack, Postfix String and Rule used in each step.",
+      "master_pattern": "2. Expression Processing with Stacks",
+      "subpattern_id": "EXPR_INFIX_POSTFIX",
+      "subpattern": "Infix → postfix conversion",
+      "source": "DOC-01",
+      "page": 3,
+      "year": 2020,
+      "marks": null,
+      "occurrences": 2,
+      "independent_sources": 2,
+      "priority": "P2",
+      "difficulty": "D2",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-01-P03-Q04-sub-a",
+        "DOC-21-P03-Q04-sub-a"
+      ]
+    },
+    {
+      "canonical_key": "which of the following is essential for converting an infix expression to the postfix form efficiently a an operator stack b an operand stack c an operator stack and an operand stack d a parse tree",
+      "question_id": "DOC-03-P01-Q01-sub-iv",
+      "exact_question": "Which of the following is essential for converting an infix expression to the postfix form efficiently? (a) An operator stack (b) An operand stack (c) An operator stack and an operand stack (d) A parse tree.",
+      "master_pattern": "2. Expression Processing with Stacks",
+      "subpattern_id": "EXPR_INFIX_POSTFIX",
+      "subpattern": "Infix → postfix conversion",
+      "source": "DOC-03",
+      "page": 1,
+      "year": 2022,
+      "marks": "1",
+      "occurrences": 3,
+      "independent_sources": 3,
+      "priority": "P1",
+      "difficulty": "D1",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-03-P01-Q01-sub-iv",
+        "DOC-04-P01-Q01-sub-iv",
+        "DOC-05-P01-Q01-sub-iv"
+      ]
+    },
+    {
+      "canonical_key": "the postfix form of the expression a b c d e f g is a ab cd e fg b ab cd e f g c ab cd e f g d ab cde f g",
+      "question_id": "DOC-03-P01-Q01-sub-vii",
+      "exact_question": "The postfix form of the expression (A+ B)*(C*D- E)*F / G is? (a) AB+ CD*E - FG /** (b) AB + CD* E - F **G / (c) AB + CD* E - *F *G / (d) AB + CDE * - * F *G /",
+      "master_pattern": "2. Expression Processing with Stacks",
+      "subpattern_id": "EXPR_INFIX_POSTFIX",
+      "subpattern": "Infix → postfix conversion",
+      "source": "DOC-03",
+      "page": 1,
+      "year": 2022,
+      "marks": "1",
+      "occurrences": 3,
+      "independent_sources": 3,
+      "priority": "P1",
+      "difficulty": "D1",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-03-P01-Q01-sub-vii",
+        "DOC-04-P01-Q01-sub-vii",
+        "DOC-05-P01-Q01-sub-vii"
+      ]
+    },
+    {
+      "canonical_key": "what would be the postfix notation for the given equation a b c d e f g h a ab cdef g h b abcdef g h c abcd ed g h d abc de fg h",
+      "question_id": "DOC-18-P02-Q01-sub-iv",
+      "exact_question": "What would be the Postfix notation for the given equation? a+(b*c(d/e^f)*g)*h) (a) ab*cdef/^*g-h+ (b) abcdef^/*g*h*+ (c) abcd*^ed/g*-h*+ (d) abc*de^fg/*-*h+",
+      "master_pattern": "2. Expression Processing with Stacks",
+      "subpattern_id": "EXPR_INFIX_POSTFIX",
+      "subpattern": "Infix → postfix conversion",
+      "source": "DOC-18",
+      "page": 2,
+      "year": 2020,
+      "marks": "1",
+      "occurrences": 1,
+      "independent_sources": 1,
+      "priority": "P2",
+      "difficulty": "D1",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-18-P02-Q01-sub-iv"
+      ]
+    },
+    {
+      "canonical_key": "which of the following data structure is essential for the conversion of an infix expression to postfix a queue b operator stack c operand stack d none of these",
+      "question_id": "DOC-22-P01-Q01-sub-v",
+      "exact_question": "Which of the following Data Structure is essential for the conversion of an infix expression to postfix? (a) Queue       (b) Operator Stack (c) Operand Stack (d) None of these.",
+      "master_pattern": "2. Expression Processing with Stacks",
+      "subpattern_id": "EXPR_INFIX_POSTFIX",
+      "subpattern": "Infix → postfix conversion",
+      "source": "DOC-22",
+      "page": 1,
+      "year": 2021,
+      "marks": "1",
+      "occurrences": 2,
+      "independent_sources": 2,
+      "priority": "P2",
+      "difficulty": "D1",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-22-P01-Q01-sub-v",
+        "DOC-23-P01-Q01-sub-v"
+      ]
+    },
+    {
+      "canonical_key": "write an algorithm to convert an infix expression to postfix convert the expression given below into its corresponding postfix expression show each step of the conversion 10 7 5 2 3 2 2 2",
+      "question_id": "DOC-22-P03-Q05-sub-a",
+      "exact_question": "Write an algorithm to convert an infix expression to postfix. Convert the expression given below into its corresponding postfix expression. Show each step of the conversion. 10 + ((75) +2* 3^2^2)/2",
+      "master_pattern": "2. Expression Processing with Stacks",
+      "subpattern_id": "EXPR_INFIX_POSTFIX",
+      "subpattern": "Infix → postfix conversion",
+      "source": "DOC-22",
+      "page": 3,
+      "year": 2021,
+      "marks": null,
+      "occurrences": 2,
+      "independent_sources": 2,
+      "priority": "P2",
+      "difficulty": "D3",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-22-P03-Q05-sub-a",
+        "DOC-23-P03-Q05-sub-a"
+      ]
+    },
+    {
+      "canonical_key": "convert the following infix expression to its postfix expression using a stack show all the intermediate steps clearly a 2 b c d e f",
+      "question_id": "DOC-25-P02-Q05-sub-a",
+      "exact_question": "Convert the following Infix expression to its Postfix expression using a stack. Show all the intermediate steps clearly. (A – 2 * (B + C) / D * E) + F",
+      "master_pattern": "2. Expression Processing with Stacks",
+      "subpattern_id": "EXPR_INFIX_POSTFIX",
+      "subpattern": "Infix → postfix conversion",
+      "source": "DOC-25",
+      "page": 2,
+      "year": 2021,
+      "marks": null,
+      "occurrences": 1,
+      "independent_sources": 1,
+      "priority": "P2",
+      "difficulty": "D2",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-25-P02-Q05-sub-a"
+      ]
+    },
+    {
+      "canonical_key": "the equivalent postfix notation for a b c d e f g is a ab c de fg b abc de fg c ab cde fg d ab de fg",
+      "question_id": "DOC-28-P03-MCQ-Q17",
+      "exact_question": "The equivalent Postfix notation for ((A + B) *  C – (D – E) ^ (F + G)) is: (a) AB+C*DE–FG+^– (b) ^-*+ABC-DE+FG (c)(AB)+CDE*--FG+^ (d) AB*+DE--FG+^",
+      "master_pattern": "2. Expression Processing with Stacks",
+      "subpattern_id": "EXPR_INFIX_POSTFIX",
+      "subpattern": "Infix → postfix conversion",
+      "source": "DOC-28",
+      "page": 3,
+      "year": null,
+      "marks": null,
+      "occurrences": 1,
+      "independent_sources": 1,
+      "priority": "P2",
+      "difficulty": "D1",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-28-P03-MCQ-Q17"
+      ]
+    },
+    {
+      "canonical_key": "when using a stack to convert an infix expression into its postfix equivalent which of the following is true a the stack may contain both opening and closing brackets b a plus operator can be pushed on top of a binary minus operator c a division operator can be pushed on top of a plus operator d an open bracket can be popped off the stack when a division operator is processed",
+      "question_id": "DOC-28-P04-MCQ-Q21",
+      "exact_question": "When using a stack to convert an infix expression into its postfix equivalent, which of the following is true? (a) The stack may contain both opening and closing brackets (b) A plus operator can be pushed on top of a binary minus operator (c) A division operator can be pushed on top of a plus operator (d) An open bracket can be popped off the stack when a division operator is processed",
+      "master_pattern": "2. Expression Processing with Stacks",
+      "subpattern_id": "EXPR_INFIX_POSTFIX",
+      "subpattern": "Infix → postfix conversion",
+      "source": "DOC-28",
+      "page": 4,
+      "year": null,
+      "marks": null,
+      "occurrences": 1,
+      "independent_sources": 1,
+      "priority": "P2",
+      "difficulty": "D1",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-28-P04-MCQ-Q21"
+      ]
+    },
+    {
+      "canonical_key": "what would be the postfix notation for the given equation a b c d e f g h a abcdef g h b ab cdef g h c abc de fg h d abcd ed g h",
+      "question_id": "DOC-28-P04-MCQ-Q23",
+      "exact_question": "What would be the Postfix notation for the given equation? a+(b*c(d/e^f)*g)*h) (a) abcdef^/*g*h*+ (b) ab*cdef/^*g-h+ (c) abc*de^fg/*-*h+ (d) abcd*^ed/g*-h*+",
+      "master_pattern": "2. Expression Processing with Stacks",
+      "subpattern_id": "EXPR_INFIX_POSTFIX",
+      "subpattern": "Infix → postfix conversion",
+      "source": "DOC-28",
+      "page": 4,
+      "year": null,
+      "marks": null,
+      "occurrences": 1,
+      "independent_sources": 1,
+      "priority": "P2",
+      "difficulty": "D1",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-28-P04-MCQ-Q23"
+      ]
+    },
+    {
+      "canonical_key": "translate infix expression into its equivalent post fix expression a b d e",
+      "question_id": "DOC-30-P09-Q34",
+      "exact_question": "Translate infix expression into its equivalent post fix expression: (A-B)*(D/E)",
+      "master_pattern": "2. Expression Processing with Stacks",
+      "subpattern_id": "EXPR_INFIX_POSTFIX",
+      "subpattern": "Infix → postfix conversion",
+      "source": "DOC-30",
+      "page": 9,
+      "year": null,
+      "marks": null,
+      "occurrences": 1,
+      "independent_sources": 1,
+      "priority": "P2",
+      "difficulty": "D2",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-30-P09-Q34"
+      ]
+    },
+    {
+      "canonical_key": "translate infix expression into its equivalent post fix expression a b d e f g ans a b d e f g a bd ef g abd ef g abd ef g abd ef g",
+      "question_id": "DOC-30-P09-Q35",
+      "exact_question": "Translate infix expression into its equivalent post fix expression: (A+B^D)/(E- F)+G Ans : (A+B^D)/(E-F)+G = (A+BD^])/[EF-]+G = [ABD^+]/[EF-]+G = [ABD^+EF-/]+G = ABD^+EF-/G",
+      "master_pattern": "2. Expression Processing with Stacks",
+      "subpattern_id": "EXPR_INFIX_POSTFIX",
+      "subpattern": "Infix → postfix conversion",
+      "source": "DOC-30",
+      "page": 9,
+      "year": null,
+      "marks": null,
+      "occurrences": 1,
+      "independent_sources": 1,
+      "priority": "P2",
+      "difficulty": "D2",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-30-P09-Q35"
+      ]
+    },
+    {
+      "canonical_key": "translate infix expression into its equivalent post fix expression a b d e f g h k",
+      "question_id": "DOC-30-P09-Q36",
+      "exact_question": "Translate infix expression into its equivalent post fix expression: A*(B+D)/E-F*(G+H/K)",
+      "master_pattern": "2. Expression Processing with Stacks",
+      "subpattern_id": "EXPR_INFIX_POSTFIX",
+      "subpattern": "Infix → postfix conversion",
+      "source": "DOC-30",
+      "page": 9,
+      "year": null,
+      "marks": null,
+      "occurrences": 1,
+      "independent_sources": 1,
+      "priority": "P2",
+      "difficulty": "D2",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-30-P09-Q36"
+      ]
+    },
+    {
+      "canonical_key": "consider the following arithmetic expression p written in postfix notation p 12 7 3 2 1 5 translate p into infix expression ans p 12 7 3 2 1 5 12 7 3 2 1 5 12 7 3 2 1 5 12 7 3 2 1 5 12 7 3 2 1 5",
+      "question_id": "DOC-30-P09-Q37",
+      "exact_question": "Consider the following arithmetic expression P, written in postfix notation : P: 12 , 7 , 3 , - , / , 2 , 1 , 5 , + , * , + Translate P into infix expression. Ans : P: 12,[7-3],/,2,1,5,+,*,+ = [12/(7-3)],2,1,5,+,*,+ = [12/(7- 3)],2,[1+5],*,+ = [12/(7- 3)],[2*(1+5)],+ =12/(7- 3)+2*(1+5)",
+      "master_pattern": "2. Expression Processing with Stacks",
+      "subpattern_id": "EXPR_INFIX_POSTFIX",
+      "subpattern": "Infix → postfix conversion",
+      "source": "DOC-30",
+      "page": 9,
+      "year": null,
+      "marks": null,
+      "occurrences": 1,
+      "independent_sources": 1,
+      "priority": "P2",
+      "difficulty": "D2",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-30-P09-Q37"
+      ]
+    },
+    {
+      "canonical_key": "the postfix form of the expression g f e d c b a is a fg e cd ab b g f e cd ab c g f e cd ab d g f cde ab 3",
+      "question_id": "DOC-31-P02-PART1-Q12",
+      "exact_question": "The postfix form of the expression ( ) ( ) G / F E D C B A ∗ − ∗ ∗ + is (A) ∗ ∗ − ∗ + / FG E CD AB (B) / G F E CD AB ∗ ∗ − ∗ + (C) / G F E CD AB ∗ ∗ − ∗ + (D) / G F CDE AB ∗ ∗ − ∗ + 3",
+      "master_pattern": "2. Expression Processing with Stacks",
+      "subpattern_id": "EXPR_INFIX_POSTFIX",
+      "subpattern": "Infix → postfix conversion",
+      "source": "DOC-31",
+      "page": 2,
+      "year": null,
+      "marks": "2",
+      "occurrences": 1,
+      "independent_sources": 1,
+      "priority": "P2",
+      "difficulty": "D1",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-31-P02-PART1-Q12"
+      ]
+    },
+    {
+      "canonical_key": "the postfix form of a b c d is a ab cd b ab cd c a bc d d abcd",
+      "question_id": "DOC-31-P07-PART1-Q49",
+      "exact_question": "The postfix form of A*B+C/D is (A)  *AB/CD+ (B) AB*CD/+ (C)  A*BC+/D (D) ABCD+/*",
+      "master_pattern": "2. Expression Processing with Stacks",
+      "subpattern_id": "EXPR_INFIX_POSTFIX",
+      "subpattern": "Infix → postfix conversion",
+      "source": "DOC-31",
+      "page": 7,
+      "year": null,
+      "marks": "2",
+      "occurrences": 1,
+      "independent_sources": 1,
+      "priority": "P2",
+      "difficulty": "D1",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-31-P07-PART1-Q49"
+      ]
+    },
+    {
+      "canonical_key": "which data structure is needed to convert infix notation to postfix notation a branch b queue c tree d stack",
+      "question_id": "DOC-31-P12-PART1-Q74",
+      "exact_question": "Which data structure is needed to convert infix notation to postfix notation? (A)  Branch (B)  Queue (C)  Tree (D)  Stack",
+      "master_pattern": "2. Expression Processing with Stacks",
+      "subpattern_id": "EXPR_INFIX_POSTFIX",
+      "subpattern": "Infix → postfix conversion",
+      "source": "DOC-31",
+      "page": 12,
+      "year": null,
+      "marks": "2",
+      "occurrences": 1,
+      "independent_sources": 1,
+      "priority": "P2",
+      "difficulty": "D1",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-31-P12-PART1-Q74"
+      ]
+    },
+    {
+      "canonical_key": "convert the following infix expressions into its equivalent postfix expressions i g f e d b a ii k h g f e d b a 8",
+      "question_id": "DOC-31-P43-PART2-Q39",
+      "exact_question": "Convert the following infix expressions into its equivalent postfix expressions; (i)  ( ) ( ) G F E / D B A + − ↑ + (ii) ( ) ( ) K H G * F E / D B * A + − + (8)",
+      "master_pattern": "2. Expression Processing with Stacks",
+      "subpattern_id": "EXPR_INFIX_POSTFIX",
+      "subpattern": "Infix → postfix conversion",
+      "source": "DOC-31",
+      "page": 43,
+      "year": null,
+      "marks": "8",
+      "occurrences": 1,
+      "independent_sources": 1,
+      "priority": "P2",
+      "difficulty": "D3",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-31-P43-PART2-Q39"
+      ]
+    },
+    {
+      "canonical_key": "illustrate the steps for converting an infix expression into a postfix expression for the following expression g f e d c b a 8",
+      "question_id": "DOC-31-P50-PART2-Q51",
+      "exact_question": "Illustrate the steps for converting an infix expression into a postfix expression for the following expression ( ) ( ) ( ) g f e / d c b a ↑ + + ∗ + . (8)",
+      "master_pattern": "2. Expression Processing with Stacks",
+      "subpattern_id": "EXPR_INFIX_POSTFIX",
+      "subpattern": "Infix → postfix conversion",
+      "source": "DOC-31",
+      "page": 50,
+      "year": null,
+      "marks": "8",
+      "occurrences": 1,
+      "independent_sources": 1,
+      "priority": "P2",
+      "difficulty": "D3",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-31-P50-PART2-Q51"
+      ]
+    },
+    {
+      "canonical_key": "execute your algorithm to convert an infix expression to a post fix expression with the following infix expression on your input c b a b g p k n m 8",
+      "question_id": "DOC-31-P53-PART2-Q56",
+      "exact_question": "Execute your algorithm to convert an infix expression to a post fix expression with the following infix expression on your input ( ) ( ) ( ) ( ) c / b a b / g / p k * n m ↑ ↑ + + (8)",
+      "master_pattern": "2. Expression Processing with Stacks",
+      "subpattern_id": "EXPR_INFIX_POSTFIX",
+      "subpattern": "Infix → postfix conversion",
+      "source": "DOC-31",
+      "page": 53,
+      "year": null,
+      "marks": "8",
+      "occurrences": 1,
+      "independent_sources": 1,
+      "priority": "P2",
+      "difficulty": "D3",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-31-P53-PART2-Q56"
+      ]
+    },
+    {
+      "canonical_key": "execute your algorithm to convert an infix expression to a post fix expression with the following infix expression as input i h g f e d c b a q 8",
+      "question_id": "DOC-31-P77-PART2-Q80",
+      "exact_question": "Execute your algorithm to convert an infix expression to a post fix expression with the following infix expression as input ( ) ( ) ( ) [ ] ( ) I / H G F / E D C / B A Q + + ↑ + + = (8)",
+      "master_pattern": "2. Expression Processing with Stacks",
+      "subpattern_id": "EXPR_INFIX_POSTFIX",
+      "subpattern": "Infix → postfix conversion",
+      "source": "DOC-31",
+      "page": 77,
+      "year": null,
+      "marks": "8",
+      "occurrences": 1,
+      "independent_sources": 1,
+      "priority": "P2",
+      "difficulty": "D3",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-31-P77-PART2-Q80"
+      ]
+    },
+    {
+      "canonical_key": "the following postfix expression with single digit operands is evaluated using a stack",
+      "question_id": "DOC-01-P02-Q01-sub-vi",
+      "exact_question": "The following postfix expression with single digit operands is evaluated using a stack:",
+      "master_pattern": "2. Expression Processing with Stacks",
+      "subpattern_id": "EXPR_POSTFIX_EVAL",
+      "subpattern": "Postfix evaluation",
+      "source": "DOC-01",
+      "page": 2,
+      "year": 2020,
+      "marks": "1",
+      "occurrences": 2,
+      "independent_sources": 2,
+      "priority": "P3",
+      "difficulty": "D2",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-01-P02-Q01-sub-vi",
+        "DOC-21-P02-Q01-sub-vi"
+      ]
+    },
+    {
+      "canonical_key": "stepwise show how the following infix expression is converted to its corresponding postfix expression 5 7 4 3 6 3 2 9 next use a suitable data structure to evaluate the generated postfix expression",
+      "question_id": "DOC-28-P06-LA-Q11",
+      "exact_question": "Stepwise show how the following infix expression is converted to its corresponding postfix expression. ((5+7)-(4*3))+(6/3)/2-9 Next, Use a suitable data structure to evaluate the generated postfix expression.",
+      "master_pattern": "2. Expression Processing with Stacks",
+      "subpattern_id": "EXPR_POSTFIX_EVAL",
+      "subpattern": "Postfix evaluation",
+      "source": "DOC-28",
+      "page": 6,
+      "year": null,
+      "marks": null,
+      "occurrences": 1,
+      "independent_sources": 1,
+      "priority": "P3",
+      "difficulty": "D2",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-28-P06-LA-Q11"
+      ]
+    },
+    {
+      "canonical_key": "the data structure required to evaluate a postfix expression is a queue b stack c array d linked list",
+      "question_id": "DOC-31-P06-PART1-Q38",
+      "exact_question": "The data structure required to evaluate a postfix expression is (A) queue (B)  stack (C) array (D)  linked-list",
+      "master_pattern": "2. Expression Processing with Stacks",
+      "subpattern_id": "EXPR_POSTFIX_EVAL",
+      "subpattern": "Postfix evaluation",
+      "source": "DOC-31",
+      "page": 6,
+      "year": null,
+      "marks": "2",
+      "occurrences": 1,
+      "independent_sources": 1,
+      "priority": "P3",
+      "difficulty": "D1",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-31-P06-PART1-Q38"
+      ]
+    },
+    {
+      "canonical_key": "the result of evaluating the postfix expression 5 4 6 4 9 3 is a 600 b 350 c 650 d 588",
+      "question_id": "DOC-31-P15-PART1-Q93",
+      "exact_question": "The result of evaluating the postfix expression 5, 4, 6, +, *, 4, 9, 3, /, +, * is (A)  600. (B) 350. (C)  650. (D)  588.",
+      "master_pattern": "2. Expression Processing with Stacks",
+      "subpattern_id": "EXPR_POSTFIX_EVAL",
+      "subpattern": "Postfix evaluation",
+      "source": "DOC-31",
+      "page": 15,
+      "year": null,
+      "marks": "2",
+      "occurrences": 1,
+      "independent_sources": 1,
+      "priority": "P3",
+      "difficulty": "D1",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-31-P15-PART1-Q93"
+      ]
+    },
+    {
+      "canonical_key": "write an algorithm to evaluate a postfix expression execute your algorithm using the following postfix expression as your input a b c d f 7",
+      "question_id": "DOC-31-P19-PART2-Q06",
+      "exact_question": "Write an algorithm to evaluate a postfix expression.  Execute your algorithm using the following postfix expression as your input : a b + c d +*f ↑. (7)",
+      "master_pattern": "2. Expression Processing with Stacks",
+      "subpattern_id": "EXPR_POSTFIX_EVAL",
+      "subpattern": "Postfix evaluation",
+      "source": "DOC-31",
+      "page": 19,
+      "year": null,
+      "marks": "7",
+      "occurrences": 1,
+      "independent_sources": 1,
+      "priority": "P3",
+      "difficulty": "D3",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-31-P19-PART2-Q06"
+      ]
+    },
+    {
+      "canonical_key": "the postfix equivalent of ab cd is a ab cd b ab cd c abcd d ab cd",
+      "question_id": "DOC-02-P01-Q01-sub-iii",
+      "exact_question": "The postfix equivalent of *+ab-cd is (a) ab+cd-* (b) ab+cd*- (c) abcd+-* (d) ab+-cd*",
+      "master_pattern": "2. Expression Processing with Stacks",
+      "subpattern_id": "EXPR_PREFIX_POSTFIX_TRANSFORM",
+      "subpattern": "Prefix/postfix transformations",
+      "source": "DOC-02",
+      "page": 1,
+      "year": 2021,
+      "marks": "1",
+      "occurrences": 4,
+      "independent_sources": 4,
+      "priority": "P2",
+      "difficulty": "D1",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-02-P01-Q01-sub-iii",
+        "DOC-19-P02-Q01-sub-iii",
+        "DOC-20-P01-Q01-sub-iii",
+        "DOC-26-P01-Q01-sub-iii"
+      ]
+    },
+    {
+      "canonical_key": "convert the infix expression a b c d e f g to equivalent prefix and postfix notations using stack co2 apply iocq",
+      "question_id": "DOC-13-P02-Q04-sub-b",
+      "exact_question": "Convert the Infix expression ((A + B) * C – (D – E) ^ (F + G)) to equivalent Prefix and Postfix notations using stack. [(CO2)(Apply/IOCQ)]",
+      "master_pattern": "2. Expression Processing with Stacks",
+      "subpattern_id": "EXPR_PREFIX_POSTFIX_TRANSFORM",
+      "subpattern": "Prefix/postfix transformations",
+      "source": "DOC-13",
+      "page": 2,
+      "year": 2025,
+      "marks": null,
+      "occurrences": 4,
+      "independent_sources": 4,
+      "priority": "P2",
+      "difficulty": "D2",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-13-P02-Q04-sub-b",
+        "DOC-14-P02-Q04-sub-b",
+        "DOC-15-P02-Q04-sub-b",
+        "DOC-16-P02-Q04-sub-b"
+      ]
+    },
+    {
+      "canonical_key": "what would be the prefix notation for a b c d a ab cd b ab cd c ab cd d ba cd",
+      "question_id": "DOC-25-P01-Q01-sub-v",
+      "exact_question": "What would be the Prefix notation for (A*B)+(C*D)? (a) *+AB*CD (b) +*AB*CD                 (c) **AB+CD (d) +*BA*CD",
+      "master_pattern": "2. Expression Processing with Stacks",
+      "subpattern_id": "EXPR_PREFIX_POSTFIX_TRANSFORM",
+      "subpattern": "Prefix/postfix transformations",
+      "source": "DOC-25",
+      "page": 1,
+      "year": 2021,
+      "marks": "1",
+      "occurrences": 1,
+      "independent_sources": 1,
+      "priority": "P3",
+      "difficulty": "D1",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-25-P01-Q01-sub-v"
+      ]
+    },
+    {
+      "canonical_key": "what are the notations used in evaluation of arithmetic expressions using prefix and postfix forms",
+      "question_id": "DOC-30-P01-Q06",
+      "exact_question": "What are the notations used in Evaluation of Arithmetic Expressions using prefix and postfix forms?",
+      "master_pattern": "2. Expression Processing with Stacks",
+      "subpattern_id": "EXPR_PREFIX_POSTFIX_TRANSFORM",
+      "subpattern": "Prefix/postfix transformations",
+      "source": "DOC-30",
+      "page": 1,
+      "year": null,
+      "marks": null,
+      "occurrences": 1,
+      "independent_sources": 1,
+      "priority": "P3",
+      "difficulty": "D2",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-30-P01-Q06"
+      ]
+    },
+    {
+      "canonical_key": "what is the postfix form of the following prefix expression a b c de a abcde b a bcde c abc ed d a bcde",
+      "question_id": "DOC-31-P04-PART1-Q21",
+      "exact_question": "What is the postfix form of the following prefix expression -A/B*C$DE (A) ABCDE$*/- (B)  A-BCDE$*/- (C) ABC$ED*/- (D)  A-BCDE$*/",
+      "master_pattern": "2. Expression Processing with Stacks",
+      "subpattern_id": "EXPR_PREFIX_POSTFIX_TRANSFORM",
+      "subpattern": "Prefix/postfix transformations",
+      "source": "DOC-31",
+      "page": 4,
+      "year": null,
+      "marks": "2",
+      "occurrences": 1,
+      "independent_sources": 1,
+      "priority": "P3",
+      "difficulty": "D1",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-31-P04-PART1-Q21"
+      ]
+    },
+    {
+      "canonical_key": "what is the postfix form of the following prefix ab cd a ab cd b abc c ab cd d ab cd",
+      "question_id": "DOC-31-P10-PART1-Q63",
+      "exact_question": "What is the postfix form of the following prefix *+ab–cd (A) ab+cd–* (B) abc+*– (C) ab+*cd– (D) ab+*cd–",
+      "master_pattern": "2. Expression Processing with Stacks",
+      "subpattern_id": "EXPR_PREFIX_POSTFIX_TRANSFORM",
+      "subpattern": "Prefix/postfix transformations",
+      "source": "DOC-31",
+      "page": 10,
+      "year": null,
+      "marks": "2",
+      "occurrences": 1,
+      "independent_sources": 1,
+      "priority": "P3",
+      "difficulty": "D1",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-31-P10-PART1-Q63"
+      ]
+    },
+    {
+      "canonical_key": "the prefix form of a b c d e is a acbde b abcd de c a b c de d a bc de",
+      "question_id": "DOC-31-P12-PART1-Q77",
+      "exact_question": "The prefix form of A-B/ (C * D ^ E) is, (A)   -/*^ACBDE (B)  -ABCD*^DE (C)  -A/B*C^DE (D)  -A/BC*^DE",
+      "master_pattern": "2. Expression Processing with Stacks",
+      "subpattern_id": "EXPR_PREFIX_POSTFIX_TRANSFORM",
+      "subpattern": "Prefix/postfix transformations",
+      "source": "DOC-31",
+      "page": 12,
+      "year": null,
+      "marks": "2",
+      "occurrences": 1,
+      "independent_sources": 1,
+      "priority": "P3",
+      "difficulty": "D1",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-31-P12-PART1-Q77"
+      ]
+    },
+    {
+      "canonical_key": "the prefix form of an infix expression t r q p is 14 a rt pq b t pqr c rt pq d pqrt",
+      "question_id": "DOC-31-P13-PART1-Q86",
+      "exact_question": "The prefix form of an infix expression t * r q p − + is 14 (A) rt * pq − + . (B) t * pqr + − . (C) rt * pq + − . (D) pqrt * + − .",
+      "master_pattern": "2. Expression Processing with Stacks",
+      "subpattern_id": "EXPR_PREFIX_POSTFIX_TRANSFORM",
+      "subpattern": "Prefix/postfix transformations",
+      "source": "DOC-31",
+      "page": 13,
+      "year": null,
+      "marks": "2",
+      "occurrences": 1,
+      "independent_sources": 1,
+      "priority": "P3",
+      "difficulty": "D1",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-31-P13-PART1-Q86"
+      ]
+    },
+    {
+      "canonical_key": "the equivalent prefix expression for the following infix expression a b c d e f g is a ab c defg b ab c defg c ab cde fg d ab cde fg",
+      "question_id": "DOC-31-P14-PART1-Q90",
+      "exact_question": "The equivalent prefix expression for the following infix expression  (A+B)-(C+D*E)/F*G is (A)  -+AB*/+C*DEFG (B)  /-+AB*+C*DEFG (C)  -/+AB*+CDE*FG (D)  -+AB*/+CDE*FG",
+      "master_pattern": "2. Expression Processing with Stacks",
+      "subpattern_id": "EXPR_PREFIX_POSTFIX_TRANSFORM",
+      "subpattern": "Prefix/postfix transformations",
+      "source": "DOC-31",
+      "page": 14,
+      "year": null,
+      "marks": "2",
+      "occurrences": 1,
+      "independent_sources": 1,
+      "priority": "P3",
+      "difficulty": "D1",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-31-P14-PART1-Q90"
+      ]
+    },
+    {
+      "canonical_key": "write an algorithm to check whether a given expression contains balanced parentheses or not note that only and are allowed here as parentheses 3 3 3 3 12",
+      "question_id": "DOC-22-P03-Q05-sub-c",
+      "exact_question": "Write an algorithm to check whether a given expression contains balanced parentheses or not, note that only ‘(’and ‘)’ are allowed here as parentheses. (3 + 3) + 3 + 3 = 12",
+      "master_pattern": "2. Expression Processing with Stacks",
+      "subpattern_id": "PAREN_MATCH",
+      "subpattern": "Balanced-parentheses / parenthesis matching",
+      "source": "DOC-22",
+      "page": 3,
+      "year": 2021,
+      "marks": null,
+      "occurrences": 2,
+      "independent_sources": 2,
+      "priority": "P3",
+      "difficulty": "D3",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-22-P03-Q05-sub-c",
+        "DOC-23-P03-Q05-sub-c"
+      ]
+    },
+    {
+      "canonical_key": "using a suitable data structure write a c function to determine whether a sequence of parentheses is balanced or not",
+      "question_id": "DOC-28-P07-LA-Q15",
+      "exact_question": "Using a suitable data structure, write a C function to determine whether a sequence of parentheses is balanced or not.",
+      "master_pattern": "2. Expression Processing with Stacks",
+      "subpattern_id": "PAREN_MATCH",
+      "subpattern": "Balanced-parentheses / parenthesis matching",
+      "source": "DOC-28",
+      "page": 7,
+      "year": null,
+      "marks": null,
+      "occurrences": 1,
+      "independent_sources": 1,
+      "priority": "P3",
+      "difficulty": "D3",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-28-P07-LA-Q15"
+      ]
+    },
+    {
+      "canonical_key": "the data structure required to check whether an expression contains balanced parenthesis is a stack b queue c tree d array",
+      "question_id": "DOC-31-P06-PART1-Q39",
+      "exact_question": "The data structure required to check whether an expression contains balanced parenthesis is (A)  Stack (B) Queue (C)  Tree (D) Array",
+      "master_pattern": "2. Expression Processing with Stacks",
+      "subpattern_id": "PAREN_MATCH",
+      "subpattern": "Balanced-parentheses / parenthesis matching",
+      "source": "DOC-31",
+      "page": 6,
+      "year": null,
+      "marks": "2",
+      "occurrences": 1,
+      "independent_sources": 1,
+      "priority": "P3",
+      "difficulty": "D1",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-31-P06-PART1-Q39"
+      ]
+    },
+    {
+      "canonical_key": "what are stacks how can stacks be used to check whether an expression is correctly parenthized or not for eg is well formed but or is not 7",
+      "question_id": "DOC-31-P63-PART2-Q64",
+      "exact_question": "What are stacks? How can stacks be used to check whether an expression is correctly parenthized or not.  For eg(()) is well formed but (() or )()( is not. (7)",
+      "master_pattern": "2. Expression Processing with Stacks",
+      "subpattern_id": "PAREN_MATCH",
+      "subpattern": "Balanced-parentheses / parenthesis matching",
+      "source": "DOC-31",
+      "page": 63,
+      "year": null,
+      "marks": "7",
+      "occurrences": 1,
+      "independent_sources": 1,
+      "priority": "P3",
+      "difficulty": "D3",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-31-P63-PART2-Q64"
+      ]
+    },
+    {
+      "canonical_key": "minimum number of queues needed to implement the priority queue",
+      "question_id": "DOC-30-P01-Q04",
+      "exact_question": "Minimum number of queues needed to implement the priority queue?",
+      "master_pattern": "3. Queue & Circular Queue",
+      "subpattern_id": "QUEUE_APPLICATIONS",
+      "subpattern": "Queue applications",
+      "source": "DOC-30",
+      "page": 1,
+      "year": null,
+      "marks": null,
+      "occurrences": 1,
+      "independent_sources": 1,
+      "priority": "P3",
+      "difficulty": "D3",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-30-P01-Q04"
+      ]
+    },
+    {
+      "canonical_key": "what are priority queues",
+      "question_id": "DOC-30-P10-Q41",
+      "exact_question": "What are priority queues?",
+      "master_pattern": "3. Queue & Circular Queue",
+      "subpattern_id": "QUEUE_APPLICATIONS",
+      "subpattern": "Queue applications",
+      "source": "DOC-30",
+      "page": 10,
+      "year": null,
+      "marks": null,
+      "occurrences": 1,
+      "independent_sources": 1,
+      "priority": "P3",
+      "difficulty": "D2",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-30-P10-Q41"
+      ]
+    },
+    {
+      "canonical_key": "write an application of queue what is a circular queue state the advantage of a circular queue over a normal queue",
+      "question_id": "DOC-01-P03-Q04-sub-b",
+      "exact_question": "Write an application of queue. What is a circular queue? State the advantage of a circular queue over a normal queue.",
+      "master_pattern": "3. Queue & Circular Queue",
+      "subpattern_id": "QUEUE_CIRCULAR",
+      "subpattern": "Circular queue wrap-around and empty/full states",
+      "source": "DOC-01",
+      "page": 3,
+      "year": 2020,
+      "marks": null,
+      "occurrences": 2,
+      "independent_sources": 2,
+      "priority": "P2",
+      "difficulty": "D2",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-01-P03-Q04-sub-b",
+        "DOC-21-P03-Q04-sub-b"
+      ]
+    },
+    {
+      "canonical_key": "why is it beneficial to use a circular array to implement a queue explain with an example co4 remember locq",
+      "question_id": "DOC-02-P03-Q04-sub-a",
+      "exact_question": "Why is it beneficial to use a circular array to implement a queue? Explain with an example.     [(CO4) (Remember/LOCQ)]",
+      "master_pattern": "3. Queue & Circular Queue",
+      "subpattern_id": "QUEUE_CIRCULAR",
+      "subpattern": "Circular queue wrap-around and empty/full states",
+      "source": "DOC-02",
+      "page": 3,
+      "year": 2021,
+      "marks": null,
+      "occurrences": 7,
+      "independent_sources": 7,
+      "priority": "P1",
+      "difficulty": "D3",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-02-P03-Q04-sub-a",
+        "DOC-10-P02-Q05-sub-a",
+        "DOC-11-P02-Q05-sub-a",
+        "DOC-12-P02-Q05-sub-a",
+        "DOC-19-P06-Q04-sub-a",
+        "DOC-20-P03-Q04-sub-a",
+        "DOC-26-P03-Q04-sub-a"
+      ]
+    },
+    {
+      "canonical_key": "write a program to implement insertion and deletion of elements in a circular queue using array also incorporate the checking for underflow and overflow",
+      "question_id": "DOC-22-P02-Q04-sub-a",
+      "exact_question": "Write a program to implement insertion and deletion of elements in a circular queue (using array). Also, incorporate the checking for underflow and overflow.",
+      "master_pattern": "3. Queue & Circular Queue",
+      "subpattern_id": "QUEUE_CIRCULAR",
+      "subpattern": "Circular queue wrap-around and empty/full states",
+      "source": "DOC-22",
+      "page": 2,
+      "year": 2021,
+      "marks": null,
+      "occurrences": 2,
+      "independent_sources": 2,
+      "priority": "P2",
+      "difficulty": "D3",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-22-P02-Q04-sub-a",
+        "DOC-23-P02-Q04-sub-a"
+      ]
+    },
+    {
+      "canonical_key": "what are the advantages of a circular queue over linear queue",
+      "question_id": "DOC-25-P02-Q05-sub-b",
+      "exact_question": "What are the advantages of a circular queue over linear queue?",
+      "master_pattern": "3. Queue & Circular Queue",
+      "subpattern_id": "QUEUE_CIRCULAR",
+      "subpattern": "Circular queue wrap-around and empty/full states",
+      "source": "DOC-25",
+      "page": 2,
+      "year": 2021,
+      "marks": null,
+      "occurrences": 1,
+      "independent_sources": 1,
+      "priority": "P2",
+      "difficulty": "D2",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-25-P02-Q05-sub-b"
+      ]
+    },
+    {
+      "canonical_key": "if front is equal to rear in a circular queue which is not empty the queue has element s",
+      "question_id": "DOC-28-P05-SA-Q05",
+      "exact_question": "If front is equal to rear in a circular queue which is not empty, the queue has _______ element(s).",
+      "master_pattern": "3. Queue & Circular Queue",
+      "subpattern_id": "QUEUE_CIRCULAR",
+      "subpattern": "Circular queue wrap-around and empty/full states",
+      "source": "DOC-28",
+      "page": 5,
+      "year": null,
+      "marks": null,
+      "occurrences": 1,
+      "independent_sources": 1,
+      "priority": "P2",
+      "difficulty": "D2",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-28-P05-SA-Q05"
+      ]
+    },
+    {
+      "canonical_key": "there are n integers in a circular queue we search for every d th element starting from the queue beginning and mark it invalid so after the first round the d th element is marked invalid and there are only n 1 valid items remaining in the queue starting from the first invalid element this process continues i e every d th element is searched and marked invalid invalid items are no longer taken into account and skipped that means if you come across an invalid item when you try to find the d th element you try the d 1 th element if that is valid if invalid you try d 2 th element this continues till you find the first valid item or terminate if no valid items could be found find after x rounds the element that will be marked invalid and return the element",
+      "question_id": "DOC-28-P07-LA-Q16",
+      "exact_question": "There are ‘n’ integers in a circular queue. We search for every ‘d’-th element starting from the queue beginning and mark it invalid. So after the first round, the ‘d’-th element is marked invalid and there are only (n-1) valid items remaining in the queue. Starting from the first invalid element, this process continues, i.e., every ‘d’-th element is searched and marked invalid. Invalid items are no longer taken into account and skipped. That means if you come across an invalid item when you try to find the ‘d’-th element, you try the ‘d+1’-th element, if that is valid. If invalid, you try ‘d+2’-th element. This continues till you find the first valid item or terminate if no valid items could be found. Find after ‘x’ rounds, the element that will be marked invalid and return the element.",
+      "master_pattern": "3. Queue & Circular Queue",
+      "subpattern_id": "QUEUE_CIRCULAR",
+      "subpattern": "Circular queue wrap-around and empty/full states",
+      "source": "DOC-28",
+      "page": 7,
+      "year": null,
+      "marks": null,
+      "occurrences": 1,
+      "independent_sources": 1,
+      "priority": "P2",
+      "difficulty": "D2",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-28-P07-LA-Q16"
+      ]
+    },
+    {
+      "canonical_key": "let the following circular queue can accommodate maximum six elements with the following data front 2 rear 4 queue l m n what will happen after add o operation takes place a front 2 rear 5 queue l m n o b front 3 rear 5 queue l m n o c front 3 rear 4 queue l m n o d front 2 rear 4 queue l m n o",
+      "question_id": "DOC-31-P08-PART1-Q50",
+      "exact_question": "Let the following circular queue can accommodate maximum six elements with the following data front = 2 rear = 4 queue = _______; L, M, N, ___, ___ What will happen after ADD O operation takes place? (A) front = 2 rear = 5 queue = ______; L, M, N, O, ___ (B)  front = 3 rear = 5 queue = L, M, N, O, ___ (C)  front = 3 rear = 4 queue = ______; L, M, N, O, ___ (D)  front = 2 rear = 4 queue = L, M, N, O, ___",
+      "master_pattern": "3. Queue & Circular Queue",
+      "subpattern_id": "QUEUE_CIRCULAR",
+      "subpattern": "Circular queue wrap-around and empty/full states",
+      "source": "DOC-31",
+      "page": 8,
+      "year": null,
+      "marks": "2",
+      "occurrences": 1,
+      "independent_sources": 1,
+      "priority": "P2",
+      "difficulty": "D1",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-31-P08-PART1-Q50"
+      ]
+    },
+    {
+      "canonical_key": "what are circular queues write down routines for inserting and deleting elements from a circular queue implemented using arrays 7",
+      "question_id": "DOC-31-P19-PART2-Q07",
+      "exact_question": "What are circular queues?  Write down routines for inserting and deleting elements from a circular queue implemented using arrays. (7)",
+      "master_pattern": "3. Queue & Circular Queue",
+      "subpattern_id": "QUEUE_CIRCULAR",
+      "subpattern": "Circular queue wrap-around and empty/full states",
+      "source": "DOC-31",
+      "page": 19,
+      "year": null,
+      "marks": "7",
+      "occurrences": 1,
+      "independent_sources": 1,
+      "priority": "P2",
+      "difficulty": "D3",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-31-P19-PART2-Q07"
+      ]
+    },
+    {
+      "canonical_key": "write a program or pseudo code or algorithm to generate binary numbers between 1 to n using a queue co4 analyze locq",
+      "question_id": "DOC-03-P03-Q05-sub-c",
+      "exact_question": "Write a program or pseudo code or algorithm to generate binary numbers between 1 to `n` using a queue. (CO4)(Analyze/LOCQ)]",
+      "master_pattern": "3. Queue & Circular Queue",
+      "subpattern_id": "QUEUE_LINEAR",
+      "subpattern": "Linear queue operations and state tracing",
+      "source": "DOC-03",
+      "page": 3,
+      "year": 2022,
+      "marks": null,
+      "occurrences": 3,
+      "independent_sources": 3,
+      "priority": "P1",
+      "difficulty": "D3",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-03-P03-Q05-sub-c",
+        "DOC-04-P03-Q05-sub-c",
+        "DOC-05-P03-Q05-sub-c"
+      ]
+    },
+    {
+      "canonical_key": "in a queue insertion is done at a rear b front c back d top",
+      "question_id": "DOC-25-P01-Q01-sub-ii",
+      "exact_question": "In a queue, insertion is done at __________. (a) Rear (b) Front (c) Back (d) Top.",
+      "master_pattern": "3. Queue & Circular Queue",
+      "subpattern_id": "QUEUE_LINEAR",
+      "subpattern": "Linear queue operations and state tracing",
+      "source": "DOC-25",
+      "page": 1,
+      "year": 2021,
+      "marks": "1",
+      "occurrences": 1,
+      "independent_sources": 1,
+      "priority": "P2",
+      "difficulty": "D1",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-25-P01-Q01-sub-ii"
+      ]
+    },
+    {
+      "canonical_key": "draw the queue structure in each case when the following operations are performed on an empty queue show the values of front and rear in each case",
+      "question_id": "DOC-25-P02-Q04-sub-a",
+      "exact_question": "Add 1, 2, 3, 4, 5, 6         (b) Delete two numbers          (c) Add 7",
+      "master_pattern": "3. Queue & Circular Queue",
+      "subpattern_id": "QUEUE_LINEAR",
+      "subpattern": "Linear queue operations and state tracing",
+      "source": "DOC-25",
+      "page": 2,
+      "year": 2021,
+      "marks": null,
+      "occurrences": 1,
+      "independent_sources": 1,
+      "priority": "P2",
+      "difficulty": "D2",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-25-P02-Q04-sub-a"
+      ]
+    },
+    {
+      "canonical_key": "add 1 2 3 4 5 6 b delete two numbers c add 7",
+      "question_id": "DOC-25-P02-Q04-sub-a",
+      "exact_question": "Add 1, 2, 3, 4, 5, 6         (b) Delete two numbers          (c) Add 7",
+      "master_pattern": "3. Queue & Circular Queue",
+      "subpattern_id": "QUEUE_LINEAR",
+      "subpattern": "Linear queue operations and state tracing",
+      "source": "DOC-25",
+      "page": 2,
+      "year": 2021,
+      "marks": null,
+      "occurrences": 1,
+      "independent_sources": 1,
+      "priority": "P2",
+      "difficulty": "D2",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-25-P02-Q04-sub-a"
+      ]
+    },
+    {
+      "canonical_key": "add 8 e delete four numbers f add 9",
+      "question_id": "DOC-25-P02-Q04-sub-d",
+      "exact_question": "Add 8                               (e) Delete four numbers          (f) Add 9",
+      "master_pattern": "3. Queue & Circular Queue",
+      "subpattern_id": "QUEUE_LINEAR",
+      "subpattern": "Linear queue operations and state tracing",
+      "source": "DOC-25",
+      "page": 2,
+      "year": 2021,
+      "marks": null,
+      "occurrences": 1,
+      "independent_sources": 1,
+      "priority": "P2",
+      "difficulty": "D2",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-25-P02-Q04-sub-d"
+      ]
+    },
+    {
+      "canonical_key": "assume that a queue is available for pushing and popping elements given an input sequence a b c c be the first element give the output sequence of elements if the rightmost element given above is the first to be popped from the queue",
+      "question_id": "DOC-31-P11-PART1-Q68",
+      "exact_question": "Assume that a queue is available for pushing and popping elements. Given an input sequence a, b, c, (c be the first element), give the output sequence of elements if the rightmost element given above is the first to be popped from the queue.",
+      "master_pattern": "3. Queue & Circular Queue",
+      "subpattern_id": "QUEUE_LINEAR",
+      "subpattern": "Linear queue operations and state tracing",
+      "source": "DOC-31",
+      "page": 11,
+      "year": null,
+      "marks": "2",
+      "occurrences": 1,
+      "independent_sources": 1,
+      "priority": "P2",
+      "difficulty": "D2",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-31-P11-PART1-Q68"
+      ]
+    },
+    {
+      "canonical_key": "a queue is a a fifo first in first out list b lifo last in first out list c ordered array d linear tree",
+      "question_id": "DOC-31-P12-PART1-Q73",
+      "exact_question": "A queue is a, (A)  FIFO (First In First Out) list. (B)  LIFO (Last In First Out) list. (C)  Ordered array. (D)  Linear tree.",
+      "master_pattern": "3. Queue & Circular Queue",
+      "subpattern_id": "QUEUE_LINEAR",
+      "subpattern": "Linear queue operations and state tracing",
+      "source": "DOC-31",
+      "page": 12,
+      "year": null,
+      "marks": "2",
+      "occurrences": 1,
+      "independent_sources": 1,
+      "priority": "P2",
+      "difficulty": "D1",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-31-P12-PART1-Q73"
+      ]
+    },
+    {
+      "canonical_key": "write algorithm for inserting into an input restricted deque show the working of this algorithm by the input sequence 1 2 3 4 5 6 co2 remember locq",
+      "question_id": "DOC-13-P02-Q04-sub-c",
+      "exact_question": "Write algorithm for inserting into an input restricted deque. Show the working of this algorithm by the input sequence: 1, 2 ,3 ,4, 5, 6. [(CO2)(Remember/LOCQ)]",
+      "master_pattern": "4. Deque",
+      "subpattern_id": "DEQUE",
+      "subpattern": "Deque, restricted deques, and two-ended operations",
+      "source": "DOC-13",
+      "page": 2,
+      "year": 2025,
+      "marks": null,
+      "occurrences": 4,
+      "independent_sources": 4,
+      "priority": "P2",
+      "difficulty": "D3",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-13-P02-Q04-sub-c",
+        "DOC-14-P02-Q04-sub-c",
+        "DOC-15-P02-Q04-sub-c",
+        "DOC-16-P02-Q04-sub-c"
+      ]
+    },
+    {
+      "canonical_key": "is deque a fifo data structure explain",
+      "question_id": "DOC-18-P03-Q04-sub-c",
+      "exact_question": "Is deque a FIFO data structure? Explain.",
+      "master_pattern": "4. Deque",
+      "subpattern_id": "DEQUE",
+      "subpattern": "Deque, restricted deques, and two-ended operations",
+      "source": "DOC-18",
+      "page": 3,
+      "year": 2020,
+      "marks": null,
+      "occurrences": 1,
+      "independent_sources": 1,
+      "priority": "P3",
+      "difficulty": "D2",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-18-P03-Q04-sub-c"
+      ]
+    },
+    {
+      "canonical_key": "write an algorithm for inserting into an input restricted deque show the working of this algorithm by the input sequence 1 2 3 4 5 6",
+      "question_id": "DOC-28-P07-LA-Q14",
+      "exact_question": "Write an algorithm for inserting into an input restricted deque. Show the working of this algorithm by the input sequence:        1, 2 ,3 ,4, 5, 6.",
+      "master_pattern": "4. Deque",
+      "subpattern_id": "DEQUE",
+      "subpattern": "Deque, restricted deques, and two-ended operations",
+      "source": "DOC-28",
+      "page": 7,
+      "year": null,
+      "marks": null,
+      "occurrences": 1,
+      "independent_sources": 1,
+      "priority": "P3",
+      "difficulty": "D3",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-28-P07-LA-Q14"
+      ]
+    },
+    {
+      "canonical_key": "a double ended queue is a linear list where additions and deletions can be performed at either end represent a double ended queue using an array to store elements and write modules for additions and deletions 8",
+      "question_id": "DOC-31-P54-PART2-Q57",
+      "exact_question": "A double ended queue is a linear list where additions and deletions can be performed at either end. Represent a double ended queue using an array to store elements and write modules for additions and deletions. (8)",
+      "master_pattern": "4. Deque",
+      "subpattern_id": "DEQUE",
+      "subpattern": "Deque, restricted deques, and two-ended operations",
+      "source": "DOC-31",
+      "page": 54,
+      "year": null,
+      "marks": "8",
+      "occurrences": 1,
+      "independent_sources": 1,
+      "priority": "P3",
+      "difficulty": "D3",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-31-P54-PART2-Q57"
+      ]
+    },
+    {
+      "canonical_key": "devise a representation for a list where insertions and deletions can be made at either end such a structure is called deque double ended queue write functions for inserting and deleting at either end 8",
+      "question_id": "DOC-31-P69-PART2-Q70",
+      "exact_question": "Devise a representation for a list where insertions and deletions can be made at either end. Such a structure is called Deque (Double ended queue). Write functions for inserting and deleting at either end. (8)",
+      "master_pattern": "4. Deque",
+      "subpattern_id": "DEQUE",
+      "subpattern": "Deque, restricted deques, and two-ended operations",
+      "source": "DOC-31",
+      "page": 69,
+      "year": null,
+      "marks": "8",
+      "occurrences": 1,
+      "independent_sources": 1,
+      "priority": "P3",
+      "difficulty": "D3",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-31-P69-PART2-Q70"
+      ]
+    },
+    {
+      "canonical_key": "consider the following code snippet and illustrate in detail how f 5 is calculated int f int n static int r 0 if n 0 return 1 if n 3 r n return f n 2 2 return f n 1 r co4 analyze locq",
+      "question_id": "DOC-03-P03-Q05-sub-a",
+      "exact_question": "Consider the following code snippet and illustrate in detail how f(5) is calculated? int f(int n) { static int r=0; if(n<=0) return 1; if(n>3) { r=n; return f(n-2)+2; } return f(n-1)+r; } [(CO4) (Analyze/LOCQ)]",
+      "master_pattern": "5. Recursion",
+      "subpattern_id": "REC_CORE_TRACE",
+      "subpattern": "Recursion principles, call stack, tracing, and recursive construction",
+      "source": "DOC-03",
+      "page": 3,
+      "year": 2022,
+      "marks": null,
+      "occurrences": 3,
+      "independent_sources": 3,
+      "priority": "P1",
+      "difficulty": "D3",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-03-P03-Q05-sub-a",
+        "DOC-04-P03-Q05-sub-a",
+        "DOC-05-P03-Q05-sub-a"
+      ]
+    },
+    {
+      "canonical_key": "what will the following function return if it is called from the main as fun 5 0 1 can you identify what the following function is calculating it is something well known co3 analyse iocq",
+      "question_id": "DOC-10-P02-Q04-sub-c",
+      "exact_question": "What will the following function return if it is called from the main as fun(5, 0, 1)? Can you identify what the following function is calculating? It is something well-known. [(CO3)(Analyse/IOCQ)]",
+      "master_pattern": "5. Recursion",
+      "subpattern_id": "REC_CORE_TRACE",
+      "subpattern": "Recursion principles, call stack, tracing, and recursive construction",
+      "source": "DOC-10",
+      "page": 2,
+      "year": 2024,
+      "marks": null,
+      "occurrences": 3,
+      "independent_sources": 3,
+      "priority": "P1",
+      "difficulty": "D3",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-10-P02-Q04-sub-c",
+        "DOC-11-P02-Q04-sub-c",
+        "DOC-12-P02-Q04-sub-c"
+      ]
+    },
+    {
+      "canonical_key": "explain what will be the output when fibo 5 is called co2 apply iocq",
+      "question_id": "DOC-13-P02-Q05-sub-c",
+      "exact_question": "Explain what will be the output when fibo(5) is called: [(CO2)(Apply/IOCQ)]",
+      "master_pattern": "5. Recursion",
+      "subpattern_id": "REC_CORE_TRACE",
+      "subpattern": "Recursion principles, call stack, tracing, and recursive construction",
+      "source": "DOC-13",
+      "page": 2,
+      "year": 2025,
+      "marks": null,
+      "occurrences": 4,
+      "independent_sources": 4,
+      "priority": "P1",
+      "difficulty": "D2",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-13-P02-Q05-sub-c",
+        "DOC-14-P02-Q05-sub-c",
+        "DOC-15-P02-Q05-sub-c",
+        "DOC-16-P02-Q05-sub-c"
+      ]
+    },
+    {
+      "canonical_key": "what will the following function return if it is called from the main as xxxx 5 0 1 can you identify what the following function is calculating it is something well known int xxxx int n int a int b if n 0 return a if n 1 return b return xxxx n 1 b a b",
+      "question_id": "DOC-18-P04-Q05-sub-c",
+      "exact_question": "What will the following function return if it is called from the main as XXXX(5, 0, 1)? Can you identify what the following function is calculating? It is something well-known. int XXXX(int n, int a, int b) { if (n == 0) return a; if (n == 1) return b; return XXXX(n - 1, b, a + b); }",
+      "master_pattern": "5. Recursion",
+      "subpattern_id": "REC_CORE_TRACE",
+      "subpattern": "Recursion principles, call stack, tracing, and recursive construction",
+      "source": "DOC-18",
+      "page": 4,
+      "year": 2020,
+      "marks": null,
+      "occurrences": 1,
+      "independent_sources": 1,
+      "priority": "P2",
+      "difficulty": "D3",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-18-P04-Q05-sub-c"
+      ]
+    },
+    {
+      "canonical_key": "write a program to find gcd greatest common devisor of two integers using recursion",
+      "question_id": "DOC-22-P02-Q04-sub-b",
+      "exact_question": "Write a program to find gcd (greatest common devisor) of two integers using recursion.",
+      "master_pattern": "5. Recursion",
+      "subpattern_id": "REC_CORE_TRACE",
+      "subpattern": "Recursion principles, call stack, tracing, and recursive construction",
+      "source": "DOC-22",
+      "page": 2,
+      "year": 2021,
+      "marks": null,
+      "occurrences": 2,
+      "independent_sources": 2,
+      "priority": "P2",
+      "difficulty": "D3",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-22-P02-Q04-sub-b",
+        "DOC-23-P02-Q04-sub-b"
+      ]
+    },
+    {
+      "canonical_key": "predict the output of the following program and explain include stdio h int fun int n if n 4 return n else return 2 fun n 1 int main printf d fun 2 return 0",
+      "question_id": "DOC-22-P03-Q05-sub-b",
+      "exact_question": "Predict the output of the following program and explain. #include <stdio.h> int fun(int n) { if (n == 4) return n; else return 2*fun(n+1); } int main() { printf(\"%d \", fun(2)); return 0; }",
+      "master_pattern": "5. Recursion",
+      "subpattern_id": "REC_CORE_TRACE",
+      "subpattern": "Recursion principles, call stack, tracing, and recursive construction",
+      "source": "DOC-22",
+      "page": 3,
+      "year": 2021,
+      "marks": null,
+      "occurrences": 2,
+      "independent_sources": 2,
+      "priority": "P2",
+      "difficulty": "D3",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-22-P03-Q05-sub-b",
+        "DOC-23-P03-Q05-sub-b"
+      ]
+    },
+    {
+      "canonical_key": "write a recursive function to determine whether a given string is a palindrome draw the recursion tree when the string abcba is passed to the function",
+      "question_id": "DOC-28-P07-LA-Q23",
+      "exact_question": "Write a recursive function to determine whether a given string is a palindrome. Draw the recursion tree when the string \"ABCBA” is passed to the function.",
+      "master_pattern": "5. Recursion",
+      "subpattern_id": "REC_CORE_TRACE",
+      "subpattern": "Recursion principles, call stack, tracing, and recursive construction",
+      "source": "DOC-28",
+      "page": 7,
+      "year": null,
+      "marks": null,
+      "occurrences": 1,
+      "independent_sources": 1,
+      "priority": "P2",
+      "difficulty": "D3",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-28-P07-LA-Q23"
+      ]
+    },
+    {
+      "canonical_key": "what will the following function return if it is called from the main as fun 5 0 1 can you identify what the following function is calculating it is something well known",
+      "question_id": "DOC-28-P08-LA-Q25",
+      "exact_question": "What will the following function return if it is called from the main as fun(5, 0, 1)? Can you identify what the following function is calculating? It is something well-known.",
+      "master_pattern": "5. Recursion",
+      "subpattern_id": "REC_CORE_TRACE",
+      "subpattern": "Recursion principles, call stack, tracing, and recursive construction",
+      "source": "DOC-28",
+      "page": 8,
+      "year": null,
+      "marks": null,
+      "occurrences": 1,
+      "independent_sources": 1,
+      "priority": "P2",
+      "difficulty": "D3",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-28-P08-LA-Q25"
+      ]
+    },
+    {
+      "canonical_key": "what is the data structures used to perform recursion",
+      "question_id": "DOC-30-P01-Q05",
+      "exact_question": "What is the data structures used to perform recursion?",
+      "master_pattern": "5. Recursion",
+      "subpattern_id": "REC_CORE_TRACE",
+      "subpattern": "Recursion principles, call stack, tracing, and recursive construction",
+      "source": "DOC-30",
+      "page": 1,
+      "year": null,
+      "marks": null,
+      "occurrences": 1,
+      "independent_sources": 1,
+      "priority": "P2",
+      "difficulty": "D2",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-30-P01-Q05"
+      ]
+    },
+    {
+      "canonical_key": "ackerman s function is defined on the non negative integers as follows a m n n 1 if m 0 a m 1 1 if m 0 n 0 a m 1 a m n 1 if m 0 n 0 the value of a 1 3 is a 4 b 5 c 6 d 7",
+      "question_id": "DOC-31-P14-PART1-Q92",
+      "exact_question": "Ackerman’s function is defined on the non-negative integers as follows a (m,n)      = n+1 if m=0 = a (m-1, 1) if m ≠0, n=0 = a (m-1, a(m, n-1)) if  m ≠0, n ≠0 The value of a (1, 3) is (A)  4. (B)  5. (C)  6. (D)  7.",
+      "master_pattern": "5. Recursion",
+      "subpattern_id": "REC_CORE_TRACE",
+      "subpattern": "Recursion principles, call stack, tracing, and recursive construction",
+      "source": "DOC-31",
+      "page": 14,
+      "year": null,
+      "marks": "2",
+      "occurrences": 1,
+      "independent_sources": 1,
+      "priority": "P2",
+      "difficulty": "D1",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-31-P14-PART1-Q92"
+      ]
+    },
+    {
+      "canonical_key": "which data structure do we use for recursive algorithm implementation what is difference between recursion and iteration what is tail recursion 3 1 2 1 3 2 12",
+      "question_id": "DOC-01-P03-Q05-sub-b",
+      "exact_question": "Which data structure do we use for recursive algorithm implementation? What is difference between recursion and iteration? What is tail recursion? (3 + 1 + 2) + (1 + 3 + 2) = 12",
+      "master_pattern": "5. Recursion",
+      "subpattern_id": "REC_TAIL",
+      "subpattern": "Tail recursion and recursion→iteration reasoning",
+      "source": "DOC-01",
+      "page": 3,
+      "year": 2020,
+      "marks": null,
+      "occurrences": 2,
+      "independent_sources": 2,
+      "priority": "P2",
+      "difficulty": "D3",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-01-P03-Q05-sub-b",
+        "DOC-21-P03-Q05-sub-b"
+      ]
+    },
+    {
+      "canonical_key": "why is a tail recursive function more efficient compared to normal recursive function co1 remember locq",
+      "question_id": "DOC-02-P03-Q05-sub-b",
+      "exact_question": "Why is a Tail recursive function more efficient compared to normal recursive function? [(CO1) (Remember/LOCQ)]",
+      "master_pattern": "5. Recursion",
+      "subpattern_id": "REC_TAIL",
+      "subpattern": "Tail recursion and recursion→iteration reasoning",
+      "source": "DOC-02",
+      "page": 3,
+      "year": 2021,
+      "marks": null,
+      "occurrences": 3,
+      "independent_sources": 3,
+      "priority": "P1",
+      "difficulty": "D2",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-02-P03-Q05-sub-b",
+        "DOC-20-P03-Q05-sub-b",
+        "DOC-26-P03-Q05-sub-b"
+      ]
+    },
+    {
+      "canonical_key": "an experienced professor asked his students in the class to write a tail recursive function in c for a very popular series named after a famous italian mathematician and asked them to display the 100th number of the series using it one student just wrote a four line function and left in five minutes while others were writing many lines of code for half an hour the professor first ignored it thinking it to be some junk produced by an over smart hitan but after going to his room he found that it displays the correct number when he called it from his main he is still trying to figure out what happened the codes are given below with some vital parts of the code being replaced by x if you just do not want to be such an unsuccessful professor then figure out what might have been written you may just re write the following few lines of code filling out the eight missing x parts also just write in max two sentences why it works the student wrote like this int fibotailrec int n int a int b if 1 2 return 3 else return fibotailrec 4 5 6",
+      "question_id": "DOC-02-P03-Q05-sub-c",
+      "exact_question": "An experienced Professor asked his students in the class to write a tail recursive function in C for a very popular series named after a famous Italian mathematician and asked them to display the 100th number of  the series using it. One student just wrote a four-line function  and left in five minutes while others were writing many lines of code for half an hour. The Professor first ignored it thinking it to be some junk produced by an over- smart HITan. But after going to his room he found that it displays the correct number when he called it from his main(). He is still trying to figure out what happened. The codes are given below with some vital parts of the code being replaced by ‘?x’. If you just do not want to be such an unsuccessful  Professor, then figure out what might have been written. You may just re-write  the following few lines of code, filling out the eight missing ?x parts. Also, just write in max  two sentences, why it works. The student wrote like this - int fiboTailRec(int n, int a, int b) { if(?1  < ?2 ) return ?3; else return fiboTailRec (?4, ?5, ?6); }",
+      "master_pattern": "5. Recursion",
+      "subpattern_id": "REC_TAIL",
+      "subpattern": "Tail recursion and recursion→iteration reasoning",
+      "source": "DOC-02",
+      "page": 3,
+      "year": 2021,
+      "marks": null,
+      "occurrences": 3,
+      "independent_sources": 3,
+      "priority": "P1",
+      "difficulty": "D4",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-02-P03-Q05-sub-c",
+        "DOC-20-P03-Q05-sub-c",
+        "DOC-26-P03-Q05-sub-c"
+      ]
+    },
+    {
+      "canonical_key": "write a function insert that is tail recursive it should take in a list lst an item and an index and insert the item into the list at the given index illustrate with an example co3 co4 analyze iocq",
+      "question_id": "DOC-03-P02-Q04-sub-b",
+      "exact_question": "Write a function “insert” that is tail recursive. It should take in a list “lst”, an “item”, and an “index”, and insert the item into the list at the given index.  Illustrate with an example. [(CO3, CO4)(Analyze/IOCQ)]",
+      "master_pattern": "5. Recursion",
+      "subpattern_id": "REC_TAIL",
+      "subpattern": "Tail recursion and recursion→iteration reasoning",
+      "source": "DOC-03",
+      "page": 2,
+      "year": 2022,
+      "marks": null,
+      "occurrences": 3,
+      "independent_sources": 3,
+      "priority": "P1",
+      "difficulty": "D3",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-03-P02-Q04-sub-b",
+        "DOC-04-P02-Q04-sub-b",
+        "DOC-05-P02-Q04-sub-b"
+      ]
+    },
+    {
+      "canonical_key": "discuss the key features of tail recursion explain with suitable example how it is different from a normal recursive function",
+      "question_id": "DOC-18-P03-Q04-sub-b",
+      "exact_question": "Discuss the key features of tail recursion. Explain with suitable example how it is different from a normal recursive function.",
+      "master_pattern": "5. Recursion",
+      "subpattern_id": "REC_TAIL",
+      "subpattern": "Tail recursion and recursion→iteration reasoning",
+      "source": "DOC-18",
+      "page": 3,
+      "year": 2020,
+      "marks": null,
+      "occurrences": 2,
+      "independent_sources": 2,
+      "priority": "P2",
+      "difficulty": "D2",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-18-P03-Q04-sub-b",
+        "DOC-28-P07-LA-Q22"
+      ]
+    },
+    {
+      "canonical_key": "why is a tail recursive function more efficient compared to a normal recursive function ans it is because the spaces of the local variables defined in the first call can be reused in every call as the scope of those variables of the earlier call ends before the next call is made this is so because the recursive call is the last call in the function and hence the variable instances of the earlier call cannot be used after the next call is made this saves a significant amount of overhead that is otherwise required whenever a function call is made co1 remember locq",
+      "question_id": "DOC-19-P08-Q05-sub-b",
+      "exact_question": "Why is a Tail recursive function more efficient compared to a normal recursive function? Ans. It is because the spaces of the local variables defined in the first call can be reused in every call as the scope of those variables of the earlier call ends before the next call is made. This is so because the recursive call is the last call in the function and hence the variable instances of the earlier call cannot be used after the next call is made. This saves a significant amount of overhead that is otherwise required whenever a function call is made. [(CO1) (Remember/LOCQ)]",
+      "master_pattern": "5. Recursion",
+      "subpattern_id": "REC_TAIL",
+      "subpattern": "Tail recursion and recursion→iteration reasoning",
+      "source": "DOC-19",
+      "page": 8,
+      "year": 2021,
+      "marks": null,
+      "occurrences": 1,
+      "independent_sources": 1,
+      "priority": "P2",
+      "difficulty": "D2",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-19-P08-Q05-sub-b"
+      ]
+    },
+    {
+      "canonical_key": "an experienced professor asked his students in the class to write a tail recursive function in c for a very popular series named after a famous italian mathematician and asked them to display the 100th number of the series using it one student just wrote a four line function and left in five minutes while others were writing many lines of code for half an hour the professor first ignored it thinking it to be some junk produced by an over smart hitan but after going to his room he found that it displays the correct number when he called it from his main he is still trying to figure out what happened the codes are given below with some vital parts of the code being replaced by x if you just do not want to be such an unsuccessful professor then figure out what might have been written you may just re write the following few lines of code filling out the eight missing x parts also just write in max two sentences why it works the student wrote like this int fibotailrec int n int a int b",
+      "question_id": "DOC-19-P08-Q05-sub-c",
+      "exact_question": "An experienced Professor asked his students in the class to write a tail recursive function in C for a very popular series named after a famous Italian mathematician and asked them to display the 100th number of  the series using it. One student just wrote a four-line function and left in five minutes while others were writing many lines of code for half an hour. The Professor first ignored it thinking it to be some junk produced by an over-smart HITan. But after going to his room he found that it displays the correct number when he called it from his main(). He is still trying to figure out what happened. The codes are given below with some vital parts of the code being replaced by ‘?x’. If you just do not want to be such an unsuccessful  Professor, then figure out what might have been written. You may just re-write the following few lines of code, filling out the eight missing ?x parts. Also, just write in max two sentences, why it works. The student wrote like this - int fiboTailRec(int n, int a, int b) {",
+      "master_pattern": "5. Recursion",
+      "subpattern_id": "REC_TAIL",
+      "subpattern": "Tail recursion and recursion→iteration reasoning",
+      "source": "DOC-19",
+      "page": 8,
+      "year": 2021,
+      "marks": null,
+      "occurrences": 1,
+      "independent_sources": 1,
+      "priority": "P2",
+      "difficulty": "D4",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-19-P08-Q05-sub-c"
+      ]
+    },
+    {
+      "canonical_key": "what is tail recursion explain with example",
+      "question_id": "DOC-22-P02-Q04-sub-c",
+      "exact_question": "What is tail recursion? Explain with example.",
+      "master_pattern": "5. Recursion",
+      "subpattern_id": "REC_TAIL",
+      "subpattern": "Tail recursion and recursion→iteration reasoning",
+      "source": "DOC-22",
+      "page": 2,
+      "year": 2021,
+      "marks": null,
+      "occurrences": 2,
+      "independent_sources": 2,
+      "priority": "P2",
+      "difficulty": "D2",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-22-P02-Q04-sub-c",
+        "DOC-23-P02-Q04-sub-c"
+      ]
+    },
+    {
+      "canonical_key": "what is tail recursion write a program in c to find the factorial of a given number using recursion",
+      "question_id": "DOC-25-P02-Q04-sub-b",
+      "exact_question": "What is Tail recursion? Write a program in C to find the factorial of a given number using Recursion.",
+      "master_pattern": "5. Recursion",
+      "subpattern_id": "REC_TAIL",
+      "subpattern": "Tail recursion and recursion→iteration reasoning",
+      "source": "DOC-25",
+      "page": 2,
+      "year": 2021,
+      "marks": null,
+      "occurrences": 1,
+      "independent_sources": 1,
+      "priority": "P2",
+      "difficulty": "D3",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-25-P02-Q04-sub-b"
+      ]
+    },
+    {
+      "canonical_key": "what is the type of the algorithm used in solving the 8 queens problem a divide and conquer b backtracking c greedy d none of the above",
+      "question_id": "DOC-28-P03-MCQ-Q18",
+      "exact_question": "What is the type of the algorithm used in solving the 8 Queens problem? (a) Divide and conquer (b) Backtracking (c)  Greedy (d) None of the above",
+      "master_pattern": "6. Recursive Applications & Backtracking",
+      "subpattern_id": "REC_APP_BACKTRACKING_8Q",
+      "subpattern": "Eight Queens and backtracking",
+      "source": "DOC-28",
+      "page": 3,
+      "year": null,
+      "marks": null,
+      "occurrences": 1,
+      "independent_sources": 1,
+      "priority": "P3",
+      "difficulty": "D1",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-28-P03-MCQ-Q18"
+      ]
+    },
+    {
+      "canonical_key": "what is the type of the algorithm used in solving the 8 queens problem",
+      "question_id": "DOC-30-P03-Q12",
+      "exact_question": "What is the type of the algorithm used in solving the 8 Queens problem?",
+      "master_pattern": "6. Recursive Applications & Backtracking",
+      "subpattern_id": "REC_APP_BACKTRACKING_8Q",
+      "subpattern": "Eight Queens and backtracking",
+      "source": "DOC-30",
+      "page": 3,
+      "year": null,
+      "marks": null,
+      "occurrences": 1,
+      "independent_sources": 1,
+      "priority": "P3",
+      "difficulty": "D2",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-30-P03-Q12"
+      ]
+    },
+    {
+      "canonical_key": "write a small c function no need for main header files etc to print the moves of the well known tower of hanoi problem using recursion assume that the smallest disc is numbered as disc 1 and the largest is disc n each of the three pegs is represented by a char datatype source s destination d and temporary t given below are some examples of the moves that you will print move the disc 12 from t to d move the disc 4 from s to t co3 understand iocq",
+      "question_id": "DOC-10-P02-Q04-sub-a",
+      "exact_question": "Write a small C function (no need for main, header files etc.) to print the moves of the well-known Tower of Hanoi problem using recursion. Assume that the smallest disc is numbered as ‘disc 1’ and the largest is ‘disc n’. Each of the three pegs is represented by a char (datatype): source (‘S’), destination (‘D’) and temporary (‘T’). Given below are some examples of the moves that you will print: Move the disc # 12 from T to D Move the disc # 4 from S to T. [(CO3)(Understand/IOCQ)]",
+      "master_pattern": "6. Recursive Applications & Backtracking",
+      "subpattern_id": "REC_APP_TOWER_HANOI",
+      "subpattern": "Tower of Hanoi",
+      "source": "DOC-10",
+      "page": 2,
+      "year": 2024,
+      "marks": null,
+      "occurrences": 3,
+      "independent_sources": 3,
+      "priority": "P2",
+      "difficulty": "D4",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-10-P02-Q04-sub-a",
+        "DOC-11-P02-Q04-sub-a",
+        "DOC-12-P02-Q04-sub-a"
+      ]
+    },
+    {
+      "canonical_key": "now just write the output of your function if it is called with n 4 where n is the number of discs co3 apply iocq",
+      "question_id": "DOC-10-P02-Q04-sub-b",
+      "exact_question": "Now just write the output of your function if it is called with n = 4, where n is the number of discs. [(CO3)(Apply/IOCQ)]",
+      "master_pattern": "6. Recursive Applications & Backtracking",
+      "subpattern_id": "REC_APP_TOWER_HANOI",
+      "subpattern": "Tower of Hanoi",
+      "source": "DOC-10",
+      "page": 2,
+      "year": 2024,
+      "marks": null,
+      "occurrences": 3,
+      "independent_sources": 3,
+      "priority": "P2",
+      "difficulty": "D3",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-10-P02-Q04-sub-b",
+        "DOC-11-P02-Q04-sub-b",
+        "DOC-12-P02-Q04-sub-b"
+      ]
+    },
+    {
+      "canonical_key": "write a small c function no need for main header files etc to print the moves of the well known tower of hanoi problem using recursion assume that the smallest disc is numbered as disc 1 and the largest is disc n each of the three pegs is represented by a char datatype source s destination d and temporary t given below are some examples of the moves that you will print move the disc 12 from t to d",
+      "question_id": "DOC-18-P03-Q05-sub-a",
+      "exact_question": "Write a small C function (no need for main, header files etc.) to print the moves of the well-known Tower of Hanoi problem using recursion. Assume that the smallest disc is numbered as ‘disc 1’ and the largest is ‘disc n’. Each of the three pegs is represented by a char (datatype) – source (‘S’), destination (‘D’) and temporary (‘T’). Given below are some examples of the moves that you will print – Move the disc # 12 from T to D",
+      "master_pattern": "6. Recursive Applications & Backtracking",
+      "subpattern_id": "REC_APP_TOWER_HANOI",
+      "subpattern": "Tower of Hanoi",
+      "source": "DOC-18",
+      "page": 3,
+      "year": 2020,
+      "marks": null,
+      "occurrences": 1,
+      "independent_sources": 1,
+      "priority": "P3",
+      "difficulty": "D4",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-18-P03-Q05-sub-a"
+      ]
+    },
+    {
+      "canonical_key": "now just write the output of your function if it is called with n 4 where n is the number of discs",
+      "question_id": "DOC-18-P04-Q05-sub-b",
+      "exact_question": "Now just write the output of your function if it is called with n = 4, where n is the number of discs.",
+      "master_pattern": "6. Recursive Applications & Backtracking",
+      "subpattern_id": "REC_APP_TOWER_HANOI",
+      "subpattern": "Tower of Hanoi",
+      "source": "DOC-18",
+      "page": 4,
+      "year": 2020,
+      "marks": null,
+      "occurrences": 1,
+      "independent_sources": 1,
+      "priority": "P3",
+      "difficulty": "D3",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-18-P04-Q05-sub-b"
+      ]
+    },
+    {
+      "canonical_key": "the optimal data structure used to solve the tower of hanoi problem is",
+      "question_id": "DOC-28-P05-SA-Q06",
+      "exact_question": "The optimal data structure used to solve the Tower of Hanoi problem is _________.",
+      "master_pattern": "6. Recursive Applications & Backtracking",
+      "subpattern_id": "REC_APP_TOWER_HANOI",
+      "subpattern": "Tower of Hanoi",
+      "source": "DOC-28",
+      "page": 5,
+      "year": null,
+      "marks": null,
+      "occurrences": 1,
+      "independent_sources": 1,
+      "priority": "P3",
+      "difficulty": "D2",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-28-P05-SA-Q06"
+      ]
+    },
+    {
+      "canonical_key": "write a small c function no need for main header files etc to print the moves of the well known tower of hanoi problem using recursion assume that the smallest disc is numbered as disc 1 and the largest is disc n each of the three pegs is represented by a char datatype source s destination d and temporary t given below are some examples of the moves that you will print move the disc 12 from t to d move the disc 4 from s to t now just write the output of your function if it is called with n 4 where n is the number of discs",
+      "question_id": "DOC-28-P08-LA-Q24",
+      "exact_question": "Write a small C function (no need for main, header files etc.) to print the moves of the well-known Tower of Hanoi problem using recursion. Assume that the smallest disc is numbered as ‘disc 1’ and the largest is ‘disc n’. Each of the three pegs is represented by a char (datatype): source (‘S’), destination (‘D’) and temporary (‘T’). Given below are some examples of the moves that you will print: Move the disc # 12 from T to D Move the disc # 4 from S to T. Now just write the output of your function if it is called with n = 4, where n is the number of discs.",
+      "master_pattern": "6. Recursive Applications & Backtracking",
+      "subpattern_id": "REC_APP_TOWER_HANOI",
+      "subpattern": "Tower of Hanoi",
+      "source": "DOC-28",
+      "page": 8,
+      "year": null,
+      "marks": null,
+      "occurrences": 1,
+      "independent_sources": 1,
+      "priority": "P3",
+      "difficulty": "D4",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-28-P08-LA-Q24"
+      ]
+    },
+    {
+      "canonical_key": "write an algorithm for finding solution to the tower s of hanoi problem explain the working of your algorithm with 4 disks with diagrams 5",
+      "question_id": "DOC-31-P28-PART2-Q16",
+      "exact_question": "Write an algorithm for finding solution to the Tower’s of Hanoi problem. Explain the working of your algorithm (with 4 disks) with diagrams. (5)",
+      "master_pattern": "6. Recursive Applications & Backtracking",
+      "subpattern_id": "REC_APP_TOWER_HANOI",
+      "subpattern": "Tower of Hanoi",
+      "source": "DOC-31",
+      "page": 28,
+      "year": null,
+      "marks": "5",
+      "occurrences": 1,
+      "independent_sources": 1,
+      "priority": "P3",
+      "difficulty": "D4",
+      "solution_status": "ALIGNED_QID_AND_COMPLETE_FIELDS",
+      "occurrence_qids": [
+        "DOC-31-P28-PART2-Q16"
+      ]
+    }
+  ]
+}
